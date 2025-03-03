@@ -1,0 +1,2 @@
+
+give @s music_disc_strad[item_name=[{text:"5K",color:"aqua"},{text:" 灵魂割舍",color:"white"}],lore=[{text:"神迹牌",color:"white",italic:false},[{text:"斩杀敌方生命低于",color:"gray",italic:false},{text:"25♥",color:"red",italic:false},{text:"的所有玩家",color:"gray",italic:false}]],jukebox_playable="pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'灵魂割舍'}]

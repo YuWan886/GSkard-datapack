@@ -1,0 +1,2 @@
+
+give @s music_disc_stal[item_name=[{text:"4K",color:"aqua"},{text:" 枯竭",color:"dark_gray"}],lore=[{text:"诅咒牌",color:"dark_gray",italic:false},{text:"对手下一回合使用牌后多消耗1点(不可叠加)",color:"gray",italic:false}],jukebox_playable="pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'枯竭'}]

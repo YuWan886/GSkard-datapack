@@ -1,0 +1,2 @@
+
+give @s music_disc_mall[item_name=[{text:"4K",color:"aqua"},{text:" 寂静山羊",color:"blue"}],lore=[{text:"基本牌",color:"blue",italic:false},[{text:"召唤一只",color:"gray",italic:false},{text:"无声的不停冲撞的尖叫山羊 它出场时携带两秒隐身",color:"gold",italic:false}]],jukebox_playable="pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'寂静山羊'}]

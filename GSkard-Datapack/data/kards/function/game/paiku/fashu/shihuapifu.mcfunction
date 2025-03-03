@@ -1,0 +1,2 @@
+
+give @s music_disc_mellohi[item_name=[{text:"5K",color:"aqua"},{text:" 石化皮肤",color:"light_purple"}],lore=[{text:"法术牌",color:"light_purple",italic:false},[{text:"友方队伍玩家获得90s",color:"gray",italic:false},{text:"额外生命20♥",color:"gold",italic:false}]],jukebox_playable="pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'石化皮肤'}]

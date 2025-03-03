@@ -1,0 +1,2 @@
+
+give @s music_disc_wait[item_name=[{text:"5K",color:"aqua"},{text:" 遥远的桥",color:"dark_aqua"}],lore=[{text:"陷阱卡",color:"dark_aqua",italic:false},{text:"使用后埋下陷阱 敌方在达到条件时触发 触发后失效",color:"gray",italic:false},[{text:"条件：敌方回合结束时",color:"gray",italic:false}],[{text:"触发：清除",color:"gray",italic:false},{text: "友方区域",color: "green",italic:false},{text: "所有",color: "gray",italic:false},{text: "敌对生物",color: "red",italic:false}]],jukebox_playable="pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'遥远的桥'}]

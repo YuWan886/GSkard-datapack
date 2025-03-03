@@ -1,0 +1,25 @@
+#侦测贝
+execute if entity @s[team=red] if entity @e[tag=tuteng,team=red,type=shulker] run return fail
+execute if entity @s[team=blue] if entity @e[tag=tuteng,team=blue,type=shulker] run return fail
+#来自深处
+execute if entity @s[team=red] if score 红队 xianjin_laizishenchu matches 1 run effect give @a[team=blue] instant_health 1 3 true
+execute if entity @s[team=red] if score 红队 xianjin_laizishenchu matches 1 run tellraw @a [{selector: "@s"},{text: "触发了",color: "gray"},{text: "<来自深处>",color: "dark_aqua",hover_event:{action:"show_text",value:"触发时让使用该陷阱牌队伍所有玩家回复血量16♥"}}]
+execute if entity @s[team=red] if score 红队 xianjin_laizishenchu matches 1 as @a at @s run playsound minecraft:entity.witch.celebrate master @s ~ ~ ~ 100 0
+execute if entity @s[team=red] if score 红队 xianjin_laizishenchu matches 1 run scoreboard players set 红队 xianjin_laizishenchu 0
+
+execute if entity @s[team=blue] if score 蓝队 xianjin_laizishenchu matches 1 run effect give @a[team=red] instant_health 1 3 true
+execute if entity @s[team=blue] if score 蓝队 xianjin_laizishenchu matches 1 run tellraw @a [{selector: "@s"},{text: "触发了",color: "gray"},{text: "<来自深处>",color: "dark_aqua",hover_event:{action:"show_text",value:"触发时让使用该陷阱牌队伍所有玩家回复血量16♥"}}]
+execute if entity @s[team=blue] if score 蓝队 xianjin_laizishenchu matches 1 as @a at @s run playsound minecraft:entity.witch.celebrate master @s ~ ~ ~ 100 0
+execute if entity @s[team=blue] if score 蓝队 xianjin_laizishenchu matches 1 run scoreboard players set 蓝队 xianjin_laizishenchu 0
+#千钧一发
+execute if entity @s[team=red] if score 红队 xianjin_qianjunyifa matches 1 run team join blue @e[tag=!tuteng,type=!minecraft:player]
+execute if entity @s[team=red] if score 红队 xianjin_qianjunyifa matches 1 at @e[tag=7b] run tp @e[type=!minecraft:player,tag=!tuteng,team=blue,type=!minecraft:armor_stand] ~ 0 ~
+execute if entity @s[team=red] if score 红队 xianjin_qianjunyifa matches 1 run tellraw @a [{selector: "@s"},{text: "触发了",color: "gray"},{text: "<千钧一发>",color: "dark_aqua",hover_event:{action:"show_text",value:"触发时让使用该陷阱牌队伍场地所有敌对怪物传送至触发者队伍场地"}}]
+execute if entity @s[team=red] if score 红队 xianjin_qianjunyifa matches 1 as @a at @s run playsound minecraft:entity.witch.celebrate master @s ~ ~ ~ 100 0
+execute if entity @s[team=red] if score 红队 xianjin_qianjunyifa matches 1 run scoreboard players set 红队 xianjin_qianjunyifa 0
+
+execute if entity @s[team=blue] if score 蓝队 xianjin_qianjunyifa matches 1 run team join red @e[tag=!tuteng,type=!minecraft:player]
+execute if entity @s[team=blue] if score 蓝队 xianjin_qianjunyifa matches 1 at @e[tag=7r] run tp @e[type=!minecraft:player,tag=!tuteng,team=red,type=!minecraft:armor_stand] ~ 0 ~
+execute if entity @s[team=blue] if score 蓝队 xianjin_qianjunyifa matches 1 run tellraw @a [{selector: "@s"},{text: "触发了",color: "gray"},{text: "<千钧一发>",color: "dark_aqua",hover_event:{action:"show_text",value:"触发时让使用该陷阱牌队伍场地所有敌对怪物传送至触发者队伍场地"}}]
+execute if entity @s[team=blue] if score 蓝队 xianjin_qianjunyifa matches 1 as @a at @s run playsound minecraft:entity.witch.celebrate master @s ~ ~ ~ 100 0
+execute if entity @s[team=blue] if score 蓝队 xianjin_qianjunyifa matches 1 run scoreboard players set 蓝队 xianjin_qianjunyifa 0

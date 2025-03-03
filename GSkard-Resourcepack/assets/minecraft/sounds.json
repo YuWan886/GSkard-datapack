@@ -1,0 +1,12 @@
+{
+    "entity.endermite.death": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "mob/silverfish/kill",
+                "stream": true,
+                "volume": 0.5
+            }
+        ]
+    }
+}

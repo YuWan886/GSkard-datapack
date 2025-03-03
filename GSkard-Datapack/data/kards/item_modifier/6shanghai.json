@@ -1,0 +1,16 @@
+[
+    {
+      "function": "minecraft:set_attributes",
+      "modifiers": [
+        {
+          "id": "0-0-6",
+          "attribute": "minecraft:attack_damage",
+          "amount": 6,
+          "operation": "add_value",
+          "slot": "mainhand"
+        }
+      ],
+      "replace": false
+    }
+  ]
+  

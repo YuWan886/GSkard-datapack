@@ -1,0 +1,2 @@
+
+give @s music_disc_mellohi[item_name=[{text:"0K",color:"aqua"},{text:" 洗牌",color:"light_purple"}],lore=[{text:"法术牌",color:"light_purple",italic:false},[{text:"依照从左到右 从物品栏到背包的顺序",color:"gray",italic:false},{text:"洗2张牌",color:"gold",italic:false}]],jukebox_playable="pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'洗牌'}]

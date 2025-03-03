@@ -1,0 +1,7 @@
+{
+    "message_id": "火焰图腾",
+    "exhaustion": 0,
+    "scaling": "never",
+    "effects": "burning",
+    "death_message_type": "default"
+}

@@ -1,0 +1,2 @@
+
+give @s music_disc_strad[item_name=[{text:"0K",color:"aqua"},{text:" 飞雷神",color:"white"}],lore=[{text:"神迹牌",color:"white",italic:false},[{text:"使用后你传送到",color:"gray",italic:false},{text:"敌方区域",color:"red",italic:false},{text:" 10s后折回",color:"gray",italic:false}]],jukebox_playable="pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'飞雷神'}]

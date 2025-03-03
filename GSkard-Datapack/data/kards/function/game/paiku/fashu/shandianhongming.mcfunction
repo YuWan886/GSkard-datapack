@@ -1,0 +1,2 @@
+
+give @s music_disc_mellohi[item_name=[{text:"4K",color:"aqua"},{text:" 闪电轰鸣",color:"light_purple"}],lore=[{text:"法术牌",color:"light_purple",italic:false},[{text:"召唤闪电劈向敌方所有玩家 造成",color:"gray",italic:false},{text:"1s眩晕",color:"red",italic:false}]],jukebox_playable="pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'闪电轰鸣'}]

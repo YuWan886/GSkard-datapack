@@ -1,0 +1,18 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:used_totem",
+        "conditions": {
+          "item": {
+            "components": {
+              "custom_data": "{kards:'冰冻图腾'}"
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "kards:game/yongpaiku/yansheng/totem/bingdong"
+    }
+  }
+  

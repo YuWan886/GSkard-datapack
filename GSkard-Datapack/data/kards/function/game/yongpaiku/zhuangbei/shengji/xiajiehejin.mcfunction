@@ -1,0 +1,12 @@
+execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text:"使用了",color:"gold"},{text:"[下界合金升级]",color:"dark_gray",hover_event:{action:"show_text",value:"获得一件下界合金护甲"}}]
+scoreboard players add @s xiajiehejinhujia 1
+execute if score @s xiajiehejinhujia matches 1 run give @s minecraft:netherite_chestplate[minecraft:item_name={text:"下界合金胸甲",color:"dark_gray"},minecraft:unbreakable={},lore=[{text:"套装效果：",color:"gray",italic:false},[{text:"穿戴2件时 获得",color:"gray",italic:false},{text:"抗性提升1",color:"gold",italic:false}],[{text:"穿戴3件时 获得",color:"gray",italic:false},{text:"抗性提升2",color:"gold",italic:false}],[{text:"穿戴4件时 获得",color:"gray",italic:false},{text:"抗性提升3",color:"gold",italic:false}]],custom_data={kards:'下界合金护甲'}]
+execute if score @s xiajiehejinhujia matches 2 run give @s minecraft:netherite_leggings[minecraft:item_name={text:"下界合金护腿",color:"dark_gray"},minecraft:unbreakable={},lore=[{text:"套装效果：",color:"gray",italic:false},[{text:"穿戴2件时 获得",color:"gray",italic:false},{text:"抗性提升1",color:"gold",italic:false}],[{text:"穿戴3件时 获得",color:"gray",italic:false},{text:"抗性提升2",color:"gold",italic:false}],[{text:"穿戴4件时 获得",color:"gray",italic:false},{text:"抗性提升3",color:"gold",italic:false}]],custom_data={kards:'下界合金护甲'}]
+execute if score @s xiajiehejinhujia matches 3 run give @s minecraft:netherite_helmet[minecraft:item_name={text:"下界合金头盔",color:"dark_gray"},minecraft:unbreakable={},lore=[{text:"套装效果：",color:"gray",italic:false},[{text:"穿戴2件时 获得",color:"gray",italic:false},{text:"抗性提升1",color:"gold",italic:false}],[{text:"穿戴3件时 获得",color:"gray",italic:false},{text:"抗性提升2",color:"gold",italic:false}],[{text:"穿戴4件时 获得",color:"gray",italic:false},{text:"抗性提升3",color:"gold",italic:false}]],custom_data={kards:'下界合金护甲'}]
+execute if score @s xiajiehejinhujia matches 4 run give @s minecraft:netherite_boots[minecraft:item_name={text:"下界合金靴子",color:"dark_gray"},minecraft:unbreakable={},lore=[{text:"套装效果：",color:"gray",italic:false},[{text:"穿戴2件时 获得",color:"gray",italic:false},{text:"抗性提升1",color:"gold",italic:false}],[{text:"穿戴3件时 获得",color:"gray",italic:false},{text:"抗性提升2",color:"gold",italic:false}],[{text:"穿戴4件时 获得",color:"gray",italic:false},{text:"抗性提升3",color:"gold",italic:false}]],custom_data={kards:'下界合金护甲'}]
+scoreboard players set @s[scores={xiajiehejinhujia=4..}] xiajiehejinhujia 0
+item replace entity @s weapon.offhand with air
+scoreboard players remove @s kardCount 8
+scoreboard players remove @s[scores={kujie=1..}] kardCount 1
+scoreboard players set @s pingbi 0
+scoreboard players add @s use_kard 1

@@ -1,0 +1,2 @@
+
+give @s music_disc_blocks[item_name=[{text:"9K",color:"aqua"},{text:" 兔",color:"red"}],lore=[{text:"图腾牌",color:"red",italic:false},{text:"在队伍图腾区生成兔",color:"gray",italic:false},{text:"图腾存活效果：",color:"gray",italic:false},[{text:"1.队伍玩家获得",color:"gray",italic:false},{text:"跳跃提升3",color:"gold",italic:false}]],jukebox_playable="pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'兔'}]

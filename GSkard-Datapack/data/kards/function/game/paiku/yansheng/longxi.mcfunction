@@ -1,0 +1,1 @@
+give @s dragon_breath[item_name=[{text:"龙息",color:"gold"}],lore=[[{text:"Q键",color:"gold",italic:false},{text:"使用 一次性物品",color:"gray",italic:false}],[{text:"净化队伍玩家",color:"gray",italic:false},{text:"负面效果",color:"gold",italic:false}],[{text:"周围敌对怪物获得飘浮",color:"gray",italic:false}]],custom_data={kards:'龙息'}]

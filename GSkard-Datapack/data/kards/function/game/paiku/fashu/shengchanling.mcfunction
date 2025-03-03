@@ -1,0 +1,2 @@
+
+give @s music_disc_mellohi[item_name=[{text:"5K",color:"aqua"},{text:" 生产令",color:"light_purple"}],lore=[{text:"法术牌",color:"light_purple",italic:false},[{text:"获得",color:"gray",italic:false},{text:"2Kmax",color:"gold",italic:false},{text:" 下回合多抽",color:"gray",italic:false},{text:"2张牌",color:"gold",italic:false}]],jukebox_playable="pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'生产令'}]

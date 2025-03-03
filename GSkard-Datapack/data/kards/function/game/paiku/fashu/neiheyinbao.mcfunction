@@ -1,0 +1,2 @@
+
+give @s music_disc_mellohi[item_name=[{text:"5K",color:"aqua"},{text:" 内核引爆",color:"light_purple"}],lore=[{text:"法术牌",color:"light_purple",italic:false},[{text:"随机",color:"gray",italic:false},{text:"引爆",color:"red",italic:false},{text:"一个敌方队伍玩家",color:"gray",italic:false}]],jukebox_playable="pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'内核引爆'}]

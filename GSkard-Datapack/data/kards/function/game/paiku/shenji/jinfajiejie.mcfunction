@@ -1,0 +1,2 @@
+
+give @s music_disc_strad[item_name=[{text:"8K",color:"aqua"},{text:" 禁法结界",color:"white"}],lore=[{text:"神迹牌",color:"white",italic:false},[{text:"敌方随机2位玩家",color:"gray",italic:false},{text:"-4Kmax",color:"red",italic:false}]],jukebox_playable="pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'禁法结界'}]

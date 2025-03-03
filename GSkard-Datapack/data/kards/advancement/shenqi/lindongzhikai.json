@@ -1,0 +1,22 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:player_hurt_entity",
+        "conditions": {
+          "entity": {
+            "equipment": {
+              "chest": {
+                "components": {
+                  "minecraft:custom_data": "{kards:'凛冬之铠'}"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "kards:game/yongpaiku/shenji/wangzhibaoku/lindongzhikai/1"
+    }
+  }
+  

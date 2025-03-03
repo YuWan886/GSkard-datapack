@@ -1,0 +1,7 @@
+{
+    "message_id": "自爆图腾",
+    "exhaustion": 0,
+    "scaling": "never",
+    "effects": "hurt",
+    "death_message_type": "default"
+}

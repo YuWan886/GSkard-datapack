@@ -1,0 +1,1 @@
+scoreboard players set @s stophurt_kunanyaolan 100

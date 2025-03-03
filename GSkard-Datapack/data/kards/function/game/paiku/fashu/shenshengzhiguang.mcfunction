@@ -1,0 +1,2 @@
+
+give @s music_disc_mellohi[item_name=[{text:"0K",color:"aqua"},{text:" 神圣之光",color:"light_purple"}],lore=[{text:"法术牌",color:"light_purple",italic:false},[{text:"为自身回复",color:"gray",italic:false},{text:"16♥",color:"green",italic:false}]],jukebox_playable="pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'神圣之光'}]

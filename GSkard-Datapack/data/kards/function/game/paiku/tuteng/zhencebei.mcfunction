@@ -1,0 +1,2 @@
+
+give @s music_disc_blocks[item_name=[{text:"18K",color:"aqua"},{text:" 侦测贝",color:"red"}],lore=[{text:"图腾牌",color:"red",italic:false},{text:"在队伍图腾区生成潜影贝",color:"gray",italic:false},{text:"图腾存活效果：",color:"gray",italic:false},[{text:"1.你的队伍",color:"gray",italic:false},{text:"不会触发陷阱",color:"gold",italic:false}]],jukebox_playable="pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'侦测贝'}]

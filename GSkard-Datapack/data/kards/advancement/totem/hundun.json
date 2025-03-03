@@ -1,0 +1,19 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:used_totem",
+        "conditions": {
+          "item": {
+            "items": "minecraft:totem_of_undying",
+            "components": {
+              "custom_data": "{kards:'混沌图腾'}"
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "kards:game/yongpaiku/yansheng/totem/hundun/hundun"
+    }
+  }
+  

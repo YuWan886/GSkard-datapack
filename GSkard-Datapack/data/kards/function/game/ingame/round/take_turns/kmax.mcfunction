@@ -1,0 +1,10 @@
+execute if score system kardCountmax matches 1 run scoreboard players add @a[scores={canuse=0}] kardCountmax 1
+execute if score system kardCountmax matches 2 run scoreboard players add @a[scores={canuse=0}] kardCountmax 2
+execute if score system kardCountmax matches 3 run scoreboard players add @a[scores={canuse=0}] kardCountmax 3
+execute if score system kardCountmax matches 4 run scoreboard players add @a[scores={canuse=0}] kardCountmax 4
+execute if score system kardCountmax matches 5 run scoreboard players add @a[scores={canuse=0}] kardCountmax 5
+execute if score system kardCountmax matches 6 run scoreboard players add @a[scores={canuse=0}] kardCountmax 6
+execute if score system kardCountmax matches 7 run scoreboard players add @a[scores={canuse=0}] kardCountmax 7
+execute if score system kardCountmax matches 8 run scoreboard players add @a[scores={canuse=0}] kardCountmax 8
+execute if score system kardCountmax matches 9 run scoreboard players add @a[scores={canuse=0}] kardCountmax 9
+execute if score system kardCountmax matches 10 run scoreboard players add @a[scores={canuse=0}] kardCountmax 10

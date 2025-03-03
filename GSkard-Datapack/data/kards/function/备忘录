@@ -1,0 +1,51 @@
+属性uuid
+jump_strength 跳跃力度
+    眩晕 001
+    断腿 002
+    冻结 003
+
+max_health 最大生命//森林之护本质上是盔甲自带的属性 不在此处记录
+    禁字决 001-0010
+    飞升护符 0011
+
+attack_knockback 击退
+    轻灵之语 001
+    便携活塞 002
+
+movement_speed 移速
+    轻灵之语 001
+    迅捷之羽 005
+
+minecraft:entity_interaction_range 实体距离
+    天神石板甲 001
+    寄生粘液 002
+
+armor 护甲值
+    海龟鳞甲 001
+
+armor_toughness 盔甲韧性
+    海龟鳞甲 001
+
+minecraft:attack_speed 攻击速度
+    破碎剑刃 001
+   
+minecraft:knockback_resistance
+    鞋钉 001
+
+虚拟实体相关
+大多数用"system"
+回合数由"回合数"控制
+讲述者由"[队伍名]_讲述者"控制
+
+场地坐标 相对镜像
+13  12  11     
+    10        
+9 8 7 6 5
+    4
+3   2   1
+
+1   2   3      
+    4        
+5 6 7 8 9
+    10
+11  12  13

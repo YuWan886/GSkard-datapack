@@ -1,0 +1,5 @@
+function kards:game/armor_stand/general
+#检测胜利
+execute if score system status matches 1..2 run function kards:game/end/general
+function kards:game/end/wait_end
+function kards:game/ingame/general

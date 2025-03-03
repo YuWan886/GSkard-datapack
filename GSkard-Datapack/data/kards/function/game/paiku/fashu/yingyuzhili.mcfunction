@@ -1,0 +1,2 @@
+
+give @s music_disc_mellohi[item_name=[{text:"0K",color:"aqua"},{text:" 盈余之力",color:"light_purple"}],lore=[{text:"法术牌",color:"light_purple",italic:false},[{text:"消耗你所有的K",color:"gray",italic:false},{text:" 每消耗2K就给队伍所有玩家治疗1♥",color:"gold",italic:false}]],jukebox_playable="pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'盈余之力'}]

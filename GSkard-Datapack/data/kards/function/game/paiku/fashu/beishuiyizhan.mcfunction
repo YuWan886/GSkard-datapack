@@ -1,0 +1,2 @@
+
+give @s music_disc_mellohi[item_name=[{text:"5K",color:"aqua"},{text:" 背水一战",color:"light_purple"}],lore=[{text:"法术牌",color:"light_purple",italic:false},{text:"抽2张牌",color:"gray",italic:false},{text:"此外队伍中每有一个玩家死亡 你就获得10点数 抽2张牌",color:"gray",italic:false},{text:"(最多一次获得30K 8张牌)",color:"dark_gray",italic:true}],jukebox_playable="pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'背水一战'}]

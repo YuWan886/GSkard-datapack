@@ -1,0 +1,2 @@
+
+give @s music_disc_mellohi[item_name=[{text:"10K",color:"aqua"},{text:" 隐匿仓库",color:"light_purple"}],lore=[{text:"法术牌",color:"light_purple",italic:false},[{text:"下回合开始时多",color:"gray",italic:false},{text:"8K",color:"gold",italic:false}]],jukebox_playable="pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'隐匿仓库'}]

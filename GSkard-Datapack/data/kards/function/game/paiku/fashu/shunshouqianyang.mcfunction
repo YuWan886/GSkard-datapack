@@ -1,0 +1,2 @@
+
+give @s music_disc_mellohi[item_name=[{text:"4K",color:"aqua"},{text:" 顺手牵羊",color:"light_purple"}],lore=[{text:"法术牌",color:"light_purple",italic:false},[{text:"抽",color:"gray",italic:false},{text:"1张牌",color:"gold",italic:false},{text:" 敌方1名玩家弃掉1张牌",color:"gray",italic:false}]],jukebox_playable="pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'顺手牵羊'}]

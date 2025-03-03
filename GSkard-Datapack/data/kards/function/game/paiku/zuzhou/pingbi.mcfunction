@@ -1,0 +1,2 @@
+
+give @s music_disc_stal[item_name=[{text:"0K",color:"aqua"},{text:" 屏蔽",color:"dark_gray"}],lore=[{text:"诅咒牌",color:"dark_gray",italic:false},{text:"你使用的下一张牌 没有用牌信息 但使用该卡的后续其他信息不会屏蔽 且仍会触发陷阱",color:"gray",italic:false}],jukebox_playable="pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'屏蔽'}]

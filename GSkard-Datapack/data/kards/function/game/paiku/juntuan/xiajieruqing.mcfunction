@@ -1,0 +1,2 @@
+
+give @s music_disc_cat[item_name=[{text:"4K",color:"aqua"},{text:" 下界入侵",color:"dark_green"}],lore=[{text:"军团牌",color:"dark_green",italic:false},[{text:"召唤1只",color:"gray",italic:false},{text:"猪灵",color:"gold",italic:false}],[{text:"回收你所有的",color:"gray",italic:false},{text:"基本牌",color:"blue",italic:false},{text:" 每回收1张基础牌 则多召唤1只猪灵",color:"gray",italic:false}]],jukebox_playable="pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'下界入侵'}]
