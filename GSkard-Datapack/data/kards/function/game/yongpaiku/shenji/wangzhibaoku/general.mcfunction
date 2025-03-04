@@ -1,4 +1,5 @@
 #森林之护
+
 execute as @a if items entity @s armor.chest *[custom_data={kards:'森林之护'}] run tag @s add senlinzhihu
 effect give @a[tag=senlinzhihu] minecraft:regeneration infinite 0 true
 scoreboard players add @a[tag=senlinzhihu] senlinzhihu 1
@@ -6,7 +7,9 @@ execute as @a[tag=senlinzhihu] if score @s senlinzhihu matches 1200.. run effect
 execute as @a[tag=senlinzhihu] if score @s senlinzhihu matches 1200.. run scoreboard players set @s senlinzhihu 0
 execute as @a[tag=senlinzhihu] unless items entity @s armor.chest *[custom_data={kards:'森林之护'}] run effect clear @s regeneration
 execute as @a[tag=senlinzhihu] unless items entity @s armor.chest *[custom_data={kards:'森林之护'}] run tag @s remove senlinzhihu
+
 #天神石板甲
+
 execute as @a if items entity @s armor.chest *[custom_data={kards:'天神石板甲'}] run tag @s add tianshenshibanjia
 scoreboard players add @a[tag=tianshenshibanjia] damage_tianshenshibanjia 1
 execute as @a[team=red,tag=tianshenshibanjia] if score @s damage_tianshenshibanjia matches 30 at @s as @e[team=blue,distance=..5] run damage @s 6 kards:tianshenshibanjia by @p[team=red,tag=tianshenshibanjia]
@@ -16,26 +19,32 @@ execute as @a[tag=tianshenshibanjia] if score @s damage_tianshenshibanjia matche
 execute as @a[tag=tianshenshibanjia] run attribute @s minecraft:entity_interaction_range modifier add 0-0-1 -3 add_value
 execute as @a[tag=tianshenshibanjia] unless items entity @s armor.chest *[custom_data={kards:'天神石板甲'}] run attribute @s minecraft:entity_interaction_range modifier remove 0-0-1 
 execute as @a[tag=tianshenshibanjia] unless items entity @s armor.chest *[custom_data={kards:'天神石板甲'}] run tag @s remove tianshenshibanjia
+
 #凛冬之铠
+
 execute as @a if items entity @s armor.chest *[custom_data={kards:'凛冬之铠'}] run tag @s add lindongzhikai
+# 冰霜之护
+# 红
 execute as @a[team=red,tag=lindongzhikai] at @s run scoreboard players add @e[team=blue,distance=..4] in_lindongzhikai 1
-execute as @a[team=red,tag=lindongzhikai] at @s run scoreboard players set @e[team=blue,distance=..4] leave_lindongzhikai 160
+execute as @a[team=red,tag=lindongzhikai] at @s run scoreboard players set @e[team=blue,distance=..4] leave_lindongzhikai 200
+# 蓝
 execute as @a[team=blue,tag=lindongzhikai] at @s run scoreboard players add @e[team=red,distance=..4] in_lindongzhikai 1
-execute as @a[team=blue,tag=lindongzhikai] at @s run scoreboard players set @e[team=red,distance=..4] leave_lindongzhikai 160
+execute as @a[team=blue,tag=lindongzhikai] at @s run scoreboard players set @e[team=red,distance=..4] leave_lindongzhikai 200
+
 execute as @e if score @s leave_lindongzhikai matches 1.. run scoreboard players remove @s leave_lindongzhikai 1
 execute as @e if score @s leave_lindongzhikai matches 0 run scoreboard players set @s in_lindongzhikai 0
-execute as @e if score @s in_lindongzhikai matches 160 run scoreboard players set @s DongJie 60
-execute as @e if score @s in_lindongzhikai matches 160 run tag @s add DongJie
-execute as @e if score @s in_lindongzhikai matches 160 at @s run playsound minecraft:entity.player.hurt_freeze player @s ~ ~ ~ 100 0
-execute as @e if score @s in_lindongzhikai matches 160 run scoreboard players set @s in_lindongzhikai 0
+execute as @e if score @s in_lindongzhikai matches 200 run scoreboard players set @s DongJie 50
+execute as @e if score @s in_lindongzhikai matches 200 run tag @s add DongJie
+execute as @e if score @s in_lindongzhikai matches 200 at @s run playsound minecraft:entity.player.hurt_freeze player @s ~ ~ ~ 100 0
+execute as @e if score @s in_lindongzhikai matches 200 run scoreboard players set @s in_lindongzhikai 0
 
 execute as @a if score @s stophurt_lindongzhikai matches 1.. run scoreboard players remove @s stophurt_lindongzhikai 1
 execute as @a if score @s stophurt_lindongzhikai matches 0 run scoreboard players set @s hurt_lindongzhikai 0
 
-execute as @a if score @s hurt_lindongzhikai matches 5 run scoreboard players set @s DongJie 30
-execute as @a if score @s hurt_lindongzhikai matches 5 run tag @s add DongJie
-execute as @a if score @s hurt_lindongzhikai matches 5 at @s run playsound minecraft:entity.player.hurt_freeze player @s ~ ~ ~ 100 0
-execute as @a if score @s hurt_lindongzhikai matches 5 run scoreboard players set @s hurt_lindongzhikai 0
+execute as @a if score @s hurt_lindongzhikai matches 7 run scoreboard players set @s DongJie 20
+execute as @a if score @s hurt_lindongzhikai matches 7 run tag @s add DongJie
+execute as @a if score @s hurt_lindongzhikai matches 7 at @s run playsound minecraft:entity.player.hurt_freeze player @s ~ ~ ~ 100 0
+execute as @a if score @s hurt_lindongzhikai matches 7 run scoreboard players set @s hurt_lindongzhikai 0
 
 execute as @a[tag=lindongzhikai] unless items entity @s armor.chest *[custom_data={kards:'凛冬之铠'}] run tag @s remove lindongzhikai
 
@@ -103,7 +112,9 @@ execute as @a[tag=feishenhufu] unless items entity @s container.* *[custom_data=
 execute as @a if items entity @s container.* *[custom_data={kards:'讲述者'}] run tag @s add jiangshuzhe
 execute if entity @a[tag=jiangshuzhe] run function kards:game/yongpaiku/shenji/wangzhibaoku/jiangshuzhe/event/general
 execute as @a[tag=jiangshuzhe] unless items entity @s container.* *[custom_data={kards:'讲述者'}] run tag @s remove jiangshuzhe
+
 #寄生粘液
+
 execute as @a[tag=jishengnianye] run scoreboard players set @s jinzijue 0
 execute as @a[tag=jishengnianye] run attribute @s max_health base set 200
 execute as @a[tag=jishengnianye] if score @s health matches 101.. run effect give @s strength 1 4 true
@@ -113,12 +124,16 @@ execute as @a[tag=jishengnianye] if score @s health matches 30..100 run effect g
 execute as @a[tag=jishengnianye] if score @s health matches 30..100 run effect give @s slowness 1 1 true
 execute as @a[tag=jishengnianye] if score @s health matches 30.. run effect clear @s regeneration
 execute as @a[tag=jishengnianye] if score @s health matches ..29 run effect give @s minecraft:regeneration infinite 2 true
-execute as @a[tag=jishengnianye] if score @s health matches ..29 run effect give @s minecraft:speed 1 1 true
-execute as @a[tag=jishengnianye] if score @s health matches ..29 run attribute @s minecraft:entity_interaction_range modifier add 0-0-2 -3 add_value
-execute as @a[tag=jishengnianye] unless score @s health matches ..29 run attribute @s minecraft:entity_interaction_range modifier remove 0-0-2
+# 缓慢
+# 红
+execute as @a[tag=jishengnianye,team=red] at @s if score @s health matches ..29 run effect give @e[team=!red,distance=..4] slowness infinite 1 true
+# 蓝
+execute as @a[tag=jishengnianye,team=blue] at @s if score @s health matches ..29 run effect give @e[team=!blue,distance=..4] slowness infinite 1 true
 execute as @a[tag=jishengnianye] if score @s death matches 1.. run attribute @s max_health base set 20
 execute as @a[tag=jishengnianye] if score @s death matches 1.. run tag @s remove jishengnianye
+
 #无休之火
+
 execute as @a if items entity @s container.* *[custom_data={kards:'无休之火'}] run tag @s add wuxiuzhihuo
 scoreboard players set @a[tag=!wuxiuzhihuo] wuxiuzhihuo_jiben 0
 scoreboard players set @a[tag=!wuxiuzhihuo] wuxiuzhihuo_juntuan 0
@@ -164,16 +179,22 @@ execute as @a[tag=wuxiuzhihuo] if items entity @s weapon.mainhand lantern[custom
 execute as @a[tag=wuxiuzhihuo] unless items entity @s container.* *[custom_data={kards:'无休之火'}] run scoreboard players set @s wuxiuzhihuo_shengji 0
 execute as @a[tag=wuxiuzhihuo] unless items entity @s container.* *[custom_data={kards:'无休之火'}] run scoreboard players set @s wuxiuzhihuo 0
 execute as @a[tag=wuxiuzhihuo] unless items entity @s container.* *[custom_data={kards:'无休之火'}] run tag @s remove wuxiuzhihuo
+
 #石中剑
+
 execute as @a if items entity @s weapon.mainhand *[custom_data={kards:'石中剑'}] run tag @s add shizhongjian
 effect give @a[tag=shizhongjian] strength infinite 1 true
 execute as @a[tag=shizhongjian] unless items entity @s weapon.mainhand *[custom_data={kards:'石中剑'}] run effect clear @s strength
 execute as @a[tag=shizhongjian] unless items entity @s weapon.mainhand *[custom_data={kards:'石中剑'}] run tag @s remove shizhongjian
+
 #正义之锤
+
 execute as @a if items entity @s container.* *[custom_data={kards:'正义之锤'}] run tag @s add zhengyizhichui
 execute as @a[tag=zhengyizhichui] if score @s used_zhengyizhichui matches 1.. run function kards:game/yongpaiku/shenji/wangzhibaoku/zhengyizhichui/1
 execute as @a[tag=zhengyizhichui] unless items entity @s container.* *[custom_data={kards:'正义之锤'}] run tag @s remove zhengyizhichui
+
 #死神之镰
+
 execute as @a if items entity @s weapon.mainhand *[custom_data={kards:'死神之镰'}] run tag @s add sishenzhilian
 scoreboard players set @a[tag=!sishenzhilian] sishenzhilian_damage 0
 execute as @a[tag=sishenzhilian] run scoreboard players operation @s sishenzhilian_damage_tongji += @s sishenzhilian_damage
@@ -204,14 +225,19 @@ execute as @a if score @s used_chuancichangji matches 1 at @s run playsound mine
 execute as @a if items entity @s weapon.* *[custom_data={kards:'轻灵之语'}] run tag @s add qinglingzhiyu
 execute as @a if items entity @s container.* *[custom_data={kards:'轻灵之语'}] run tag @s add qinglingzhiyu_skill
 execute as @a if items entity @s weapon.* *[custom_data={kards:'轻灵之语'}] run tag @s add qinglingzhiyu_skill
+# 抗拒
 execute as @a[tag=qinglingzhiyu_skill] if score @s jitui_qinglingzhiyu matches 1 run tellraw @s [{text:"[轻灵之语] ",color:"aqua"},{text:"抗拒效果冷却完毕!",color:"green"}]
 execute as @a[tag=qinglingzhiyu_skill] if score @s jitui_qinglingzhiyu matches 1 at @s run playsound minecraft:entity.phantom.flap player @s ~ ~ ~ 100 2
-execute as @a[tag=qinglingzhiyu_skill] if score @s jitui_qinglingzhiyu matches 0 run attribute @s attack_knockback modifier add 0-0-1 5 add_value
+execute as @a[tag=qinglingzhiyu_skill] if score @s jitui_qinglingzhiyu matches 0 run attribute @s attack_knockback modifier add 0-0-1 4 add_value
 execute as @a[tag=qinglingzhiyu_skill] if score @s jitui_qinglingzhiyu matches 1.. run attribute @s attack_knockback modifier remove 0-0-1
 execute as @a[tag=qinglingzhiyu_skill] if score @s jitui_qinglingzhiyu matches 1.. run scoreboard players remove @s jitui_qinglingzhiyu 1
 scoreboard players add @a[tag=qinglingzhiyu_skill] jitui_qinglingzhiyu 0
 scoreboard players add @a right_used_qinglingzhiyu 0
-execute as @a[tag=qinglingzhiyu] run attribute @s minecraft:movement_speed modifier add 0-0-1 0.35 add_multiplied_base
+# 速度
+# 红
+execute as @a[tag=qinglingzhiyu,team=red] at @s if entity @e[team=!red,distance=..7] run attribute @s minecraft:movement_speed modifier add 0-0-1 0.35 add_multiplied_base
+# 蓝
+execute as @a[tag=qinglingzhiyu,team=blue] at @s if entity @e[team=!blue,distance=..7] run attribute @s minecraft:movement_speed modifier add 0-0-1 0.35 add_multiplied_base
 
 execute as @a[tag=qinglingzhiyu] unless items entity @s weapon.* *[custom_data={kards:'轻灵之语'}] run attribute @s attack_knockback modifier remove 0-0-1
 execute as @a[tag=qinglingzhiyu] unless items entity @s weapon.* *[custom_data={kards:'轻灵之语'}] run attribute @s movement_speed modifier remove 0-0-1

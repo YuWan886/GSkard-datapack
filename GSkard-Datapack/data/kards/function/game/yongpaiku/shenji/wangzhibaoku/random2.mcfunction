@@ -15,4 +15,3 @@ execute if score @s wangzhibaoku matches 12 run function kards:game/yongpaiku/sh
 execute if score @s wangzhibaoku matches 13 run function kards:game/yongpaiku/shenji/wangzhibaoku/jishengnianye/give
 execute if score @s wangzhibaoku matches 14 run function kards:game/yongpaiku/shenji/wangzhibaoku/wuxiuzhihuo/give
 scoreboard players set @s wangzhibaoku 0
-

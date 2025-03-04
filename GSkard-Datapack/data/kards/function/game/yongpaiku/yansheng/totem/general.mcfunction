@@ -27,7 +27,7 @@ execute at @a[tag=bingdongtuteng,team=blue] run scoreboard players add @e[team=r
 execute at @a[tag=bingdongtuteng] run playsound minecraft:entity.player.hurt_freeze player @s ~ ~ ~ 100 0
 execute at @a[tag=bingdongtuteng,team=red] run tag @e[team=blue,distance=..5] add DongJie
 execute at @a[tag=bingdongtuteng,team=blue] run tag @e[team=red,distance=..5] add DongJie
-
+# 凛冬之铠
 scoreboard players remove @e[tag=DongJie,scores={DongJie=1..}] DongJie 1
 effect give @e[tag=DongJie,scores={DongJie=1..}] slowness 1 100 true
 effect give @e[tag=DongJie,scores={DongJie=1..}] weakness 1 128 true
