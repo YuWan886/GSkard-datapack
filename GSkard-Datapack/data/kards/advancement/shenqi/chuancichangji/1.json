@@ -8,7 +8,7 @@
             "equipment": {
               "mainhand": {
                 "components": {
-                  "minecraft:custom_data": "{kards:'正义长戟'}"
+                  "minecraft:custom_data": "{kards:'穿刺长戟'}"
                 }
               }
             }
@@ -18,6 +18,6 @@
     }
   },
   "rewards": {
-    "function": "kards:game/yongpaiku/shenji/wangzhibaoku/zhengyichangji/1"
+    "function": "kards:game/yongpaiku/shenji/wangzhibaoku/chuancichangji/1"
   }
 }

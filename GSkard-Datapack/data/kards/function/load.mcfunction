@@ -114,7 +114,7 @@ scoreboard objectives add used_zhengyizhichui2 dummy
 scoreboard objectives add sishenzhilian_soul_small dummy
 scoreboard objectives add sishenzhilian_soul_medium dummy
 scoreboard objectives add used_sishenzhilian dummy
-scoreboard objectives add used_zhengyichangji dummy
+scoreboard objectives add used_chuancichangji dummy
 scoreboard objectives add used_qinglingzhiyu dummy
 scoreboard objectives add right_used_qinglingzhiyu minecraft.used:minecraft.bow
 scoreboard objectives add jitui_qinglingzhiyu dummy
@@ -173,8 +173,12 @@ scoreboard objectives add yingyuzhili dummy
 scoreboard objectives add end dummy
 scoreboard objectives add sishenzhilian_damage minecraft.custom:minecraft.damage_dealt
 scoreboard objectives add sishenzhilian_damage_tongji dummy
-scoreboard objectives add jinghuashuijing dummy
+scoreboard objectives add xiangzhaoyushi dummy
 scoreboard objectives add senlinzhihu dummy
 scoreboard objectives add oiiaioiiiiai dummy
+# 死神之镰
+
+# 处决 生物
+scoreboard objectives add sishenzhilian_chujuemob dummy
 #
 tellraw @a [{text:"数据包加载完毕",color:"gray"}]

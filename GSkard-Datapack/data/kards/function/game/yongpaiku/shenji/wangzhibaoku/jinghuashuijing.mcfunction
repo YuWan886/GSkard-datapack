@@ -1,4 +1,0 @@
-execute unless score system status matches 0 run tellraw @a [{selector:"@s"},{text:"获得了",color:"gold"},{text:"净化水晶",color:"dark_aqua"}]
-
-give @s emerald[item_name={color:"dark_aqua",text:"净化水晶"},lore=[[{text:"魔免",color:"gray",italic:false}],[{text:"免疫负面效果",color:"dark_gray",italic:false}],[{text:"生息",color:"gray",italic:false}],[{text:"每60s获得10♥额外生命",color:"dark_gray",italic:false}],[{text:"净化",color:"gray",italic:false}],[{text:"周围敌对生物持续获得缓慢III",color:"dark_gray",italic:false}],{color:"white",text:"传奇护符(背包内生效)",italic:false}],max_stack_size=1,custom_data={kards:'净化水晶'}]
-scoreboard players set @s jinghuashuijing 1199

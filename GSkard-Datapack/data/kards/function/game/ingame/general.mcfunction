@@ -32,7 +32,7 @@ function kards:game/yongpaiku/tuteng/buff
 #神器
 function kards:game/yongpaiku/shenji/wangzhibaoku/general
 #PVP
-execute positioned -219 -65 -173 run effect give @a[dx=19,dz=18,dy=55,gamemode=adventure,tag=jinghuashuijing] minecraft:levitation infinite 20 true
+execute positioned -219 -65 -173 run effect give @a[dx=19,dz=18,dy=55,gamemode=adventure,tag=xiangzhaoyushi] minecraft:levitation infinite 20 true
 execute positioned -219 -65 -173 run effect give @a[dx=19,dz=18,dy=15,gamemode=adventure] minecraft:levitation infinite 20 true
 execute positioned -219 -60 -173 as @a[dx=19,dz=18,dy=49,gamemode=adventure] run damage @s 2 minecraft:out_of_world
 execute positioned -219 -9 -173 run effect clear @a[dx=19,dz=18,gamemode=adventure] levitation
@@ -166,7 +166,7 @@ execute if score 蓝队 manshui matches 0 at @e[tag=b_dw] run fill ~ 0 ~ ~24 0 ~
 #清弹射物
 kill @e[nbt={Item:{id:"minecraft:arrow"}}]
 kill @e[type=minecraft:arrow,nbt={inGround:1b}]
-kill @e[type=minecraft:trident,nbt={inGround:1b},nbt=!{item:{components:{"minecraft:custom_data":{kards:"正义长戟"}}}}]
+kill @e[type=minecraft:trident,nbt={inGround:1b},nbt=!{item:{components:{"minecraft:custom_data":{kards:"穿刺长戟"}}}}]
 
 #检测指定方块并清除
 execute positioned as @e[tag=r_dw] run fill ~ ~ ~ ~25 ~25 ~25 air replace fire
