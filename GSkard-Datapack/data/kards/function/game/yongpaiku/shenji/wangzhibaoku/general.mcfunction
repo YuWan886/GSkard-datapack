@@ -248,3 +248,11 @@ execute as @a unless items entity @s weapon.* *[custom_data={kards:'轻灵之语
 execute as @a[tag=qinglingzhiyu] unless items entity @s container.* arrow unless items entity @s weapon.* arrow run give @s arrow 1
 kill @e[type=item,nbt={Item:{id:"minecraft:arrow"}}]
 execute as @a[tag=!qinglingzhiyu] run clear @s arrow
+
+# 炎阳大剑
+
+execute as @a if items entity @s weapon.* iron_sword[custom_data={kards:'炎阳大剑'}] run tag @s add yanyangdajian
+execute as @a[tag=yanyangdajian] unless items entity @s container.* iron_sword[custom_data={kards:'炎阳大剑'}] run tag @s remove yanyangdajian
+# 炎护
+execute as @a[tag=yanyangdajian] if items entity @s weapon.* iron_sword[custom_data={kards:'炎阳大剑'}] run effect give @s fire_resistance infinite 0 true
+execute as @a[tag=yanyangdajian] unless items entity @a weapon.* iron_sword[custom_data={kards:'炎阳大剑'}] run effect clear @s fire_resistance

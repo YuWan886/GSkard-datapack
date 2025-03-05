@@ -177,8 +177,13 @@ scoreboard objectives add xiangzhaoyushi dummy
 scoreboard objectives add senlinzhihu dummy
 scoreboard objectives add oiiaioiiiiai dummy
 # 死神之镰
-
-# 处决 生物
+#   处决 生物
 scoreboard objectives add sishenzhilian_chujuemob dummy
+# 炎阳大剑
+#   热血吸收
+scoreboard objectives add yanyangdajian_jisha dummy
+#   火球骰子
+scoreboard objectives add huoyantouzi dummy
+
 #
 tellraw @a [{text:"数据包加载完毕",color:"gray"}]

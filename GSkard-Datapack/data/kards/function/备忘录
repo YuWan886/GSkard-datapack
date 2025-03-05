@@ -49,3 +49,16 @@ minecraft:knockback_resistance
 5 6 7 8 9
     10
 11  12  13
+
+
+添加牌库需要修改的文件
+
+1.王之宝库
+  1.1 直接使用
+    GSkard-Datapack\data\kards\function\game\yongpaiku\shenji\wangzhibaoku\random1.mcfunction
+  1.2 无 无休之火
+   GSkard-Datapack\data\kards\function\game\yongpaiku\shenji\wangzhibaoku\random2.mcfunction
+  1.3 PVP开局用
+    GSkard-Datapack\data\kards\function\game\yongpaiku\shenji\wangzhibaoku\random3.mcfunction
+  1.4 general
+    效果

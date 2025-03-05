@@ -14,6 +14,7 @@ execute as @a[scores={kardCount=8..,canuse=1}] if items entity @s weapon.offhand
 execute as @a[scores={kardCount=8..,canuse=1}] if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'射手部队'}] run function kards:game/yongpaiku/juntuan/sheshoubudui
 execute as @a[scores={kardCount=8..,canuse=1}] if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'我即浪潮'}] run function kards:game/yongpaiku/juntuan/wojilangchao
 execute as @a[scores={kardCount=8..,canuse=1}] if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'小鬼当家'}] run function kards:game/yongpaiku/juntuan/xiaoguidangjia
+execute as @a[scores={kardCount=8..,canuse=1}] if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'焰火骑士团'}] run function kards:game/yongpaiku/juntuan/yanhuoqishituan
 execute as @a[scores={kardCount=9..,canuse=1}] if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'死灵巫师'}] run function kards:game/yongpaiku/juntuan/silingwushi/1
 execute as @a[scores={kardCount=10..,canuse=1}] if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'飓风过境'}] run function kards:game/yongpaiku/juntuan/jufengguojing
 execute as @a[scores={kardCount=10..,canuse=1}] if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'巫法联会'}] run function kards:game/yongpaiku/juntuan/wufalianhui

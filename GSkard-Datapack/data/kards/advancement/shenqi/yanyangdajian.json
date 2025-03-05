@@ -1,0 +1,21 @@
+{
+    "criteria": {
+        "yydj_jisa": {
+            "trigger": "player_killed_entity",
+            "conditions": {
+                "player": {
+                    "equipment": {
+                        "mainhand": {
+                            "components": {
+                                "custom_data": "{kards:'炎阳大剑'}"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "kards:game/yongpaiku/shenji/wangzhibaoku/yanyangdajian/1"
+    }
+}

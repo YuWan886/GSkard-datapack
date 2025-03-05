@@ -1,0 +1,2 @@
+# 火球骰子
+give @s ward_armor_trim_smithing_template[item_name=[{text:"6K",color:"aqua"},{text:" 火球骰子",color:"blue"}],lore=[{text:"待补充", strikethrough:true}],tooltip_display={hidden_components:["minecraft:tooltip_display"]},custom_data={kards:'火球骰子'}]

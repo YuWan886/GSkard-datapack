@@ -1,0 +1,5 @@
+# 炎阳大剑
+
+execute unless score system status matches 0 run tellraw @a [{selector:"@s"},{text:"获得了",color:"gold"},{text:"炎阳大剑",color:"dark_red"}]
+
+give @s iron_sword[custom_name={text:"炎阳大剑",color:"dark_red"},lore=[{text:"炎护",color:"#e36c09",italic:false},{text:"手持获得火焰保护",color:"gray",italic:false},{text:"热血吸收",color:"dark_red",italic:false},{text:"每击杀3只生物获得 2m伤害吸收I",color:"gray",italic:false},{text:"焚烧转化",color:"#690101",italic:false},{text:"己方回合开始时 随机转化两张基础牌和两张军团牌为[火球骰子]和[烟火骑士团]",color:"gray",italic:false},"",{color:"gray",text:"在主手时：",italic:false},{color:"dark_green",text:" 13 攻击伤害",italic:false},{color:"dark_green",text:" 0.9 攻击速度",italic:false}],attribute_modifiers=[{"type":"attack_damage",amount:13d,operation:"add_value",slot:"mainhand",id:""},{type:"attack_speed",amount:-3.1d,operation:"add_value",slot:"mainhand",id:""}],unbreakable={},custom_data={kards:'炎阳大剑'},custom_model_data={strings:["yanyangdajian"]},tooltip_display={hidden_components:["attribute_modifiers","unbreakable"]}]
