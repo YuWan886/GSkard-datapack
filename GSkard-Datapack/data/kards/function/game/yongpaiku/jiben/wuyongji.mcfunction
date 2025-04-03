@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.paiku.fashu.wuyongfa.1",color:"gold"},{translate: "game.yongpaiku.jiben.wuyongji.1",color:"blue",hover_event:{action:"show_text","value":"没有作用"}}]
+=======
+execute if score @s pingbi matches 0 run tellraw @a [{"selector":"@s"},{"text":"使用了","color":"gold"},{"text":"[无用•基]","color":"blue","hoverEvent":{"action":"show_text","value":"没有作用"}}]
+>>>>>>> c337d2e (加入一些卡牌)
 
 
 function kards:game/yongpaiku/xianjin/jiance/mobjiance

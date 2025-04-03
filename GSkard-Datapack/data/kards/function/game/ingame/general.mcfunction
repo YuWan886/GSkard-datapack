@@ -170,6 +170,13 @@ execute if score 红队 manshui matches 1 at @e[tag=r_dw] run fill ~ 0 ~ ~24 0 ~
 execute if score 红队 manshui matches 0 at @e[tag=r_dw] run fill ~ 0 ~ ~24 0 ~24 air replace water
 execute if score 蓝队 manshui matches 1 at @e[tag=b_dw] run fill ~ 0 ~ ~24 0 ~24 water replace air
 execute if score 蓝队 manshui matches 0 at @e[tag=b_dw] run fill ~ 0 ~ ~24 0 ~24 air replace water
+#地狱
+scoreboard players add 红队 diyu 0
+scoreboard players add 蓝队 diyu 0
+execute if score 红队 diyu matches 1 at @e[tag=r_dw] run fill ~ 0 ~ ~16 0 ~16 lava replace air
+execute if score 红队 diyu matches 0 at @e[tag=r_dw] run fill ~ 0 ~ ~16 0 ~16 air replace lava
+execute if score 蓝队 diyu matches 1 at @e[tag=b_dw] run fill ~ 0 ~ ~16 0 ~16 lava replace air
+execute if score 蓝队 diyu matches 0 at @e[tag=b_dw] run fill ~ 0 ~ ~16 0 ~16 air replace lava
 #清弹射物
 kill @e[nbt={Item:{id:"minecraft:arrow"}}]
 kill @e[type=minecraft:arrow,nbt={inGround:1b}]

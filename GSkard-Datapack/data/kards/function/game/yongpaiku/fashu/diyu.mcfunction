@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.paiku.fashu.wuyongfa.1",color:"gold"},{translate: "game.yongpaiku.fashu.diyu.1",color:"red",hover_event:{action:"show_text","value":"对敌方角落各放一格岩浆 怪物获得火焰抗性效果 持续至回合结束 不可叠加"}}]
 item replace entity @s weapon.offhand with air
 scoreboard players operation @s kardCount -= #kard_diyu kardCount
+=======
+execute if score @s pingbi matches 0 run tellraw @a [{"selector":"@s"},{"text":"使用了","color":"gold"},{"text":"[地狱]","color":"red","hoverEvent":{"action":"show_text","value":"对敌方角落各放一格岩浆 怪物获得火焰抗性效果 持续至回合结束 不可叠加"}}]
+item replace entity @s weapon.offhand with air
+scoreboard players remove @s kardCount 6
+>>>>>>> c337d2e (加入一些卡牌)
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1
 scoreboard players set @s pingbi 0
 scoreboard players add @s use_kard 1

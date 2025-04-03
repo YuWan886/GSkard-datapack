@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'僵尸'}] if score @s kardCount >= #kard_jiangshi kardCount run function kards:game/yongpaiku/jiben/jiangshi
 execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'骷髅'}] if score @s kardCount >= #kard_kulou kardCount run function kards:game/yongpaiku/jiben/kulou
 execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'末影螨'}] if score @s kardCount >= #kard_moyingman kardCount run function kards:game/yongpaiku/jiben/moyingman
@@ -23,3 +24,31 @@ execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[cu
 execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'卫道士'}] if score @s kardCount >= #kard_weidaoshi kardCount run function kards:game/yongpaiku/jiben/weidaoshi
 execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'寂静山羊'}] if score @s kardCount >= #kard_jijingshanyang kardCount run function kards:game/yongpaiku/jiben/jijingshanyang
 execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'蛮兵'}] if score @s kardCount >= #kard_manbing kardCount run function kards:game/yongpaiku/jiben/manbing
+=======
+execute as @a[scores={kardCount=1..,canuse=1}] if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'僵尸'}] run function kards:game/yongpaiku/jiben/jiangshi
+execute as @a[scores={kardCount=1..,canuse=1}] if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'骷髅'}] run function kards:game/yongpaiku/jiben/kulou
+execute as @a[scores={kardCount=1..,canuse=1}] if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'末影螨'}] run function kards:game/yongpaiku/jiben/moyingman
+execute as @a[scores={kardCount=1..,canuse=1}] if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'蜘蛛'}] run function kards:game/yongpaiku/jiben/zhizhu
+execute as @a[scores={kardCount=1..,canuse=1}] if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'蜜蜂'}] run function kards:game/yongpaiku/jiben/mifeng
+execute as @a[scores={kardCount=1..,canuse=1}] if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'杀手兔'}] run function kards:game/yongpaiku/jiben/shashoutu
+execute as @a[scores={kardCount=1..,canuse=1}] if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'恼鬼'}] run function kards:game/yongpaiku/jiben/naogui
+execute as @a[scores={kardCount=2..,canuse=1}] if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'剧毒蜘蛛'}] run function kards:game/yongpaiku/jiben/juduzhizhu
+execute as @a[scores={kardCount=2..,canuse=1}] if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'苦力怕'}] run function kards:game/yongpaiku/jiben/kulipa
+execute as @a[scores={kardCount=2..,canuse=1}] if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'烈焰人'}] run function kards:game/yongpaiku/jiben/lieyanren
+execute as @a[scores={kardCount=2..,canuse=1}] if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'沼骸'}] run function kards:game/yongpaiku/jiben/zhaohai
+execute as @a[scores={kardCount=2..,canuse=1}] if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'旋风人'}] run function kards:game/yongpaiku/jiben/xuanfengren
+execute as @a[scores={kardCount=2..,canuse=1}] if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'流浪者'}] run function kards:game/yongpaiku/jiben/liulangzhe
+execute as @a[scores={kardCount=2..,canuse=1}] if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'末影人'}] run function kards:game/yongpaiku/jiben/moyingren
+execute as @a[scores={kardCount=3..,canuse=1}] if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'溺尸'}] run function kards:game/yongpaiku/jiben/nishi
+execute as @a[scores={kardCount=3..,canuse=1}] if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'凋零骷髅'}] run function kards:game/yongpaiku/jiben/diaolingkulou
+execute as @a[scores={kardCount=3..,canuse=1}] if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'女巫'}] run function kards:game/yongpaiku/jiben/nvwu
+execute as @a[scores={kardCount=3..,canuse=1}] if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'疣猪兽'}] run function kards:game/yongpaiku/jiben/youzhushou
+execute as @a[scores={kardCount=3..,canuse=1}] if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'无人机'}] run function kards:game/yongpaiku/jiben/wurenji
+execute as @a[scores={kardCount=3..,canuse=1}] if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'恶魂'}] run function kards:game/yongpaiku/jiben/ehun
+execute as @a[scores={kardCount=3..,canuse=1}] if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'小幻翼'}] run function kards:game/yongpaiku/jiben/xiaohuanyi
+execute as @a[scores={kardCount=4..,canuse=1}] if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'卫道士'}] run function kards:game/yongpaiku/jiben/weidaoshi
+execute as @a[scores={kardCount=4..,canuse=1}] if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'寂静山羊'}] run function kards:game/yongpaiku/jiben/jijingshanyang
+execute as @a[scores={kardCount=5..,canuse=1}] if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'蛮兵'}] run function kards:game/yongpaiku/jiben/manbing
+execute as @a[scores={kardCount=8..,canuse=1}] if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'远古守卫者'}] run function kards:game/yongpaiku/jiben/yuangushouweizhe
+execute as @a[scores={kardCount=0..,canuse=1}] if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'无用•基'}] run function kards:game/yongpaiku/jiben/wuyongji
+>>>>>>> c337d2e (加入一些卡牌)

@@ -47,5 +47,7 @@ execute if score @s random5 matches 35 run function kards:game/paiku/fashu/dumin
 execute if score @s random5 matches 36 run function kards:game/paiku/fashu/manshui
 execute if score @s random5 matches 37 run function kards:game/paiku/fashu/heishanyangzhiyong
 execute if score @s random5 matches 38 run function kards:game/paiku/fashu/yingyuzhili
+execute if score @s random5 matches 39 run function kards:game/paiku/fashu/zuzhouhujia
+execute if score @s random5 matches 40 run function kards:game/paiku/fashu/wuyong
 scoreboard players set @s random5 0
 scoreboard players remove @s fashucishu 1
