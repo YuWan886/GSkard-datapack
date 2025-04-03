@@ -1,0 +1,2 @@
+
+give @s music_disc_mellohi[item_name='[{"text":"2K","color":"aqua"},{"text":" 无用","color":"light_purple"}]',lore=['{"text":"法术牌•月","color":"light_purple","italic":false}','{"text":"获得三张没有用的牌","color":"gray","italic":false}','{"text":"可以用来触发陷阱","color":"gray","italic":false}'],jukebox_playable={song:'pigstep',show_in_tooltip:false},custom_data={kards:'无用'}]

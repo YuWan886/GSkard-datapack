@@ -1,0 +1,2 @@
+
+give @s music_disc_mall[item_name='[{"text":"8K","color":"aqua"},{"text":" 远古守卫者","color":"gray"}]',lore=['{"text":"基本牌•月","color":"blue","italic":false}','[{"text":"召唤一只","color":"gray","italic":false},{"text":"远古守卫者","color":"gray","italic":false}]'],jukebox_playable={song:'pigstep',show_in_tooltip:false},custom_data={kards:'远古守卫者'}]

@@ -1,0 +1,2 @@
+
+give @s music_disc_strad[item_name='[{"text":"0K","color":"aqua"},{"text":" 飞雷神•反","color":"white"}]',lore=['{"text":"神迹牌•月","color":"white","italic":false}','[{"text":"将地方一位玩家传到我方阵营","color":"gray","italic":false},{"text":"10秒后返回","color":"gold","italic":false}]'],jukebox_playable={song:'pigstep',show_in_tooltip:false},custom_data={kards:'飞雷神•反'}]

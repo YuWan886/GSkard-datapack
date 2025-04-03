@@ -22,3 +22,5 @@ execute as @a[scores={kardCount=3..,canuse=1}] if items entity @s weapon.offhand
 execute as @a[scores={kardCount=4..,canuse=1}] if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'卫道士'}] run function kards:game/yongpaiku/jiben/weidaoshi
 execute as @a[scores={kardCount=4..,canuse=1}] if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'寂静山羊'}] run function kards:game/yongpaiku/jiben/jijingshanyang
 execute as @a[scores={kardCount=5..,canuse=1}] if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'蛮兵'}] run function kards:game/yongpaiku/jiben/manbing
+execute as @a[scores={kardCount=8..,canuse=1}] if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'远古守卫者'}] run function kards:game/yongpaiku/jiben/yuangushouweizhe
+execute as @a[scores={kardCount=0..,canuse=1}] if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'无用•基'}] run function kards:game/yongpaiku/jiben/wuyongji

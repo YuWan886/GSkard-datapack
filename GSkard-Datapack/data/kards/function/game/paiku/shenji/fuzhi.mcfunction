@@ -1,0 +1,2 @@
+
+give @s music_disc_strad[item_name='[{"text":"0K","color":"aqua"},{"text":" 复制","color":"white"}]',lore=['{"text":"神迹牌•月","color":"white","italic":false}','[{"text":"将物品栏第一个物品","color":"gray","italic":false},{"text":"复制一份","color":"gold","italic":false}]'],jukebox_playable={song:'pigstep',show_in_tooltip:false},custom_data={kards:'复制'}]

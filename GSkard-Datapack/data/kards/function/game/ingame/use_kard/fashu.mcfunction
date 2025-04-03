@@ -36,3 +36,7 @@ execute as @a[scores={kardCount=8..,canuse=1}] if items entity @s weapon.offhand
 execute as @a[scores={kardCount=9..,canuse=1}] if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'骤然引爆'}] run function kards:game/yongpaiku/fashu/zhouranyingbao
 execute as @a[scores={kardCount=10..,canuse=1}] if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'隐匿仓库'}] run function kards:game/yongpaiku/fashu/yinnicangku
 execute as @a[scores={kardCount=10..,canuse=1}] if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'反转'}] run function kards:game/yongpaiku/fashu/fanzhuan/1
+execute as @a[scores={kardCount=5..,canuse=1}] if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'诅咒护甲'}] run function kards:game/yongpaiku/fashu/zuzhouhujia
+execute as @a[scores={kardCount=0..,canuse=1}] if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'无用•法'}] run function kards:game/yongpaiku/fashu/wuyongfa
+execute as @a[scores={kardCount=0..,canuse=1}] if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'无用'}] run function kards:game/yongpaiku/fashu/wuyong
+execute as @a[scores={kardCount=6..,canuse=1}] if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'地狱'}] run function kards:game/yongpaiku/fashu/diyu
