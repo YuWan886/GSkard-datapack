@@ -1,0 +1,2 @@
+
+give @s music_disc_mall[item_name='[{"text":"3K","color":"aqua"},{"text":" 猪灵","color":"blue"}]',lore=['{"text":"基本牌","color":"blue","italic":false}','[{"text":"召唤一只","color":"gray","italic":false},{"text":"穿着金套的猪灵","color":"gold","italic":false}]'],jukebox_playable={song:'pigstep',show_in_tooltip:false},custom_data={kards:'猪灵'}]

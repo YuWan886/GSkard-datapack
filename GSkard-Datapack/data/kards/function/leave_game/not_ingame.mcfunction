@@ -25,5 +25,5 @@ attribute @s minecraft:jump_strength base set 0.42
 attribute @s minecraft:entity_interaction_range base set 3
 execute at @s run summon minecraft:firework_rocket ~ ~ ~
 team leave @s
-tellraw @a [{text:"欢迎老登",color:"gold"},{selector:"@s",color:"white"},{text:"再次进入游戏",color:"gold"}]
+tellraw @a [{"text":"欢迎老登","color":"gold"},{"selector":"@s","color":"white"},{"text":"再次进入游戏","color":"gold"}]
 team join lobby @s

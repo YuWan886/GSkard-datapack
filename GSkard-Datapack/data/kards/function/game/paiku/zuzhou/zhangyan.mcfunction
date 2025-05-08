@@ -1,2 +1,2 @@
 
-give @s music_disc_stal[item_name=[{text:"3K",color:"aqua"},{text:" 障眼",color:"dark_gray"}],lore=[{text:"诅咒牌",color:"dark_gray",italic:false},{text:"给敌方玩家施加失明 持续20s",color:"gray",italic:false}],jukebox_playable="pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'障眼'}]
+give @s music_disc_stal[item_name='[{"text":"3K","color":"aqua"},{"text":" 障眼","color":"dark_gray"}]',lore=['{"text":"诅咒牌","color":"dark_gray","italic":false}','{"text":"给敌方玩家施加失明 持续20s","color":"gray","italic":false}'],jukebox_playable={song:'pigstep',show_in_tooltip:false},custom_data={kards:'障眼'}]

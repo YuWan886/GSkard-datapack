@@ -36,13 +36,13 @@ execute as @a if score @s stopsound matches 1.. run function kards:music/stop
 advancement grant @a only kards:first_join_game
 #整着玩的
 scoreboard players add system Color 1
-execute if score system Color matches 5 run team modify First prefix [{text:"[",color:"red"},{text:"萌",color:"yellow"},{text:"新",color:"green"},{text:"]",color:"aqua"}]
+execute if score system Color matches 5 run team modify First prefix [{"text":"[","color":"red"},{"text":"萌","color":"yellow"},{"text":"新","color":"green"},{"text":"]","color":"aqua"}]
 execute if score system Color matches 5 run team modify First color red
-execute if score system Color matches 10 run team modify First prefix [{text:"[",color:"aqua"},{text:"萌",color:"red"},{text:"新",color:"yellow"},{text:"]",color:"green"}]
+execute if score system Color matches 10 run team modify First prefix [{"text":"[","color":"aqua"},{"text":"萌","color":"red"},{"text":"新","color":"yellow"},{"text":"]","color":"green"}]
 execute if score system Color matches 10 run team modify First color yellow
-execute if score system Color matches 15 run team modify First prefix [{text:"[",color:"green"},{text:"萌",color:"aqua"},{text:"新",color:"red"},{text:"]",color:"yellow"}]
+execute if score system Color matches 15 run team modify First prefix [{"text":"[","color":"green"},{"text":"萌","color":"aqua"},{"text":"新","color":"red"},{"text":"]","color":"yellow"}]
 execute if score system Color matches 15 run team modify First color green
-execute if score system Color matches 20 run team modify First prefix [{text:"[",color:"yellow"},{text:"萌",color:"green"},{text:"新",color:"aqua"},{text:"]",color:"red"}]
+execute if score system Color matches 20 run team modify First prefix [{"text":"[","color":"yellow"},{"text":"萌","color":"green"},{"text":"新","color":"aqua"},{"text":"]","color":"red"}]
 execute if score system Color matches 20 run team modify First color aqua
 execute if score system Color matches 20 run scoreboard players set system Color 0
 

@@ -25,5 +25,5 @@ execute if items entity @s weapon.mainhand *[custom_data={kards:'下界合金剑
 execute if items entity @s weapon.mainhand *[custom_data={kards:'铁斧'}] run scoreboard players set @s level_tiefu 3
 execute if items entity @s weapon.mainhand *[custom_data={kards:'钻石斧'}] run scoreboard players set @s level_zuanshifu 3
 
-tellraw @s {text: "达到指定击杀数量 武器获得升级！附魔",color: "gray"}
+tellraw @s {"text": "达到指定击杀数量 武器获得升级！附魔","color": "gray"}
 execute at @s run playsound minecraft:block.enchantment_table.use master @s ~ ~ ~ 100 1

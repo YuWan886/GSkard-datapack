@@ -1,2 +1,2 @@
 
-give @s music_disc_cat[item_name=[{text:"6K",color:"aqua"},{text:" 爆炸军团",color:"dark_green"}],lore=[{text:"军团牌",color:"dark_green",italic:false},[{text:"召唤4只",color:"gray",italic:false},{text:"苦力怕",color:"gold",italic:false}]],jukebox_playable="pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'爆炸军团'}]
+give @s music_disc_cat[item_name='[{"text":"6K","color":"aqua"},{"text":" 爆炸军团","color":"dark_green"}]',lore=['{"text":"军团牌","color":"dark_green","italic":false}','[{"text":"召唤4只","color":"gray","italic":false},{"text":"苦力怕","color":"gold","italic":false}]'],jukebox_playable={song:'pigstep',show_in_tooltip:false},custom_data={kards:'爆炸军团'}]

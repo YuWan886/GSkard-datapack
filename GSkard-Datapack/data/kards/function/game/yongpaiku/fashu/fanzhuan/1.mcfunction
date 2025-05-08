@@ -1,4 +1,4 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text:"使用了",color:"gold"},{text:"[反转]",color:"dark_purple",hover_event:{action:"show_text",value:"将双方图腾交换"}}]
+execute if score @s pingbi matches 0 run tellraw @a [{"selector":"@s"},{"text":"使用了","color":"gold"},{"text":"[反转]","color":"dark_purple","hoverEvent":{"action":"show_text","value":"将双方图腾交换"}}]
 
 item replace entity @s weapon.offhand with air
 scoreboard players remove @s kardCount 10

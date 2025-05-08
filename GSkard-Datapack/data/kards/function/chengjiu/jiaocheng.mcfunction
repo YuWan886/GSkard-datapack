@@ -1,0 +1,1 @@
+tellraw @a [{"selector":"@s"},{"text":"达成了进度","color":"white"},{"text":"[搞牌,启动!]","color":"green","hoverEvent":{"action":"show_text","value":"完成新手教程"}}]

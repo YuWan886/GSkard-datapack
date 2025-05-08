@@ -14,6 +14,6 @@ scoreboard players reset 回合数
 scoreboard objectives setdisplay sidebar
 bossbar set roundtime visible false
 bossbar set pvptime visible false
-tellraw @a [{text:"10秒后返回大厅",color:"gold",bold:true}]
-title @a title [{text:"平 局",color:"gray",bold:true}]
+tellraw @a [{"text":"10秒后返回大厅","color":"gold","bold":true}]
+title @a title [{"text":"平 局","color":"gray","bold":true}]
 schedule function kards:game/end/reset 10s

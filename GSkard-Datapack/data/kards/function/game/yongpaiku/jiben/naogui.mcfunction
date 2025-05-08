@@ -1,8 +1,8 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text:"使用了",color:"gold"},{text:"[恼鬼]",color:"blue"}]
+execute if score @s pingbi matches 0 run tellraw @a [{"selector":"@s"},{"text":"使用了","color":"gold"},{"text":"[恼鬼]","color":"blue"}]
     #红队用
-    execute if entity @s[team=red] as @e[tag=7r] at @s run summon vex ~ 5 ~ {Team:red,HandItems:[{Count:1b,id:"iron_sword"}]}
+    execute if entity @s[team=red] as @e[tag=7r] at @s run summon vex ~ 5 ~ {Team:red,HandItems:[{id:"iron_sword"}]}
     #蓝队用
-    execute if entity @s[team=blue] as @e[tag=7b] at @s run summon vex ~ 5 ~ {Team:blue,HandItems:[{Count:1b,id:"iron_sword"}]}
+    execute if entity @s[team=blue] as @e[tag=7b] at @s run summon vex ~ 5 ~ {Team:blue,HandItems:[{id:"iron_sword"}]}
 function kards:game/yongpaiku/xianjin/jiance/mobjiance
 scoreboard players add @s jiben 1
 item replace entity @s weapon.offhand with air

@@ -1,4 +1,4 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text:"使用了",color:"gold"},{text:"[骤然引爆]",color:"dark_purple",hover_event:{action:"show_text",value:"在敌方区域召唤一只威力加强的加速爆炸的苦力怕"}}]
+execute if score @s pingbi matches 0 run tellraw @a [{"selector":"@s"},{"text":"使用了","color":"gold"},{"text":"[骤然引爆]","color":"dark_purple","hoverEvent":{"action":"show_text","value":"在敌方区域召唤一只威力加强的加速爆炸的苦力怕"}}]
 item replace entity @s weapon.offhand with air
 scoreboard players remove @s kardCount 9
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1

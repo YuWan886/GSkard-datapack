@@ -1,4 +1,4 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text:"使用了",color:"gold"},{text:"[隐匿仓库]",color:"dark_purple",hover_event:{action:"show_text",value:"下回合多8点使用点数(可叠加)"}}]
+execute if score @s pingbi matches 0 run tellraw @a [{"selector":"@s"},{"text":"使用了","color":"gold"},{"text":"[隐匿仓库]","color":"dark_purple","hoverEvent":{"action":"show_text","value":"下回合多8点使用点数(可叠加)"}}]
 item replace entity @s weapon.offhand with air
 scoreboard players remove @s kardCount 10
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1

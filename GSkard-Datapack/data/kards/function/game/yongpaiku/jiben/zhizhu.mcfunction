@@ -1,4 +1,4 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text:"使用了",color:"gold"},{text:"[蜘蛛]",color:"blue"}]
+execute if score @s pingbi matches 0 run tellraw @a [{"selector":"@s"},{"text":"使用了","color":"gold"},{"text":"[蜘蛛]","color":"blue"}]
     #红队用
     execute if entity @s[team=red] as @e[tag=7r] at @s run summon spider ~ 0 ~ {Team:red}
     #蓝队用

@@ -18,5 +18,13 @@ execute if score system status matches 0 run function kards:lobby/wiki/general
 execute if score system status matches 0 run function kards:lobby/bossbar/general
 execute if score system status matches 0 run bossbar set minecraft:start_game visible true
 execute unless score system status matches 0 run bossbar set minecraft:start_game visible false
-#踩到玻璃传送回去
-execute if score system status matches 0 as @a at @s if block ~ ~-1 ~ light_gray_stained_glass run tp @s 59 226 -26 -90 0
+#教程
+execute positioned 89.0 257.5 -30.0 run particle minecraft:dragon_breath ~ ~ ~ 0.5 1 0.5 0.001 5
+execute positioned 89.0 257.5 -21.0 run particle minecraft:dragon_breath ~ ~ ~ 0.5 1 0.5 0.001 5
+
+execute positioned 88.0 255 -22.0 run advancement grant @a[dx=2,dz=2,dy=3] only kards:chengjiu/zixuechengcai
+execute positioned 88.0 255 -31.0 run advancement grant @a[dx=2,dz=2,dy=3] only kards:chengjiu/zixuechengcai
+
+execute positioned 58.0 254 -27.0 run advancement grant @a[dx=3,dz=3] only kards:chengjiu/jiaocheng
+
+execute if score system status matches 0 as @a[advancements={kards:chengjiu/jiaocheng=false,kards:chengjiu/zixuechengcai=false}] positioned 56.0 256.00 -33.0 unless entity @s[dz=14,dy=10,dx=42] run tp @s 94 256 -26 90 0

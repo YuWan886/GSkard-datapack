@@ -10,9 +10,9 @@ scoreboard players operation system tongji_hurt > * tongji_hurt
 execute as @a if score @s tongji_damage = system tongji_damage run tag @s add DamageMAX
 execute as @a if score @s tongji_killed = system tongji_killed run tag @s add KillMAX
 execute as @a if score @s tongji_hurt = system tongji_hurt run tag @s add HurtMAX
-tellraw @a [{text:"[🗡]造成了最高伤害 ",color:"green"},{selector:"@a[tag=DamageMAX]",bold:true},{text:" 共造成",color:"green"},{score:{objective:"tongji_damage",name:"system"}},{text:"♥",color:"red"},{text:"伤害!",color:"green"}]
-tellraw @a [{text:"[💔]受到了最多的伤害 ",color:"green"},{selector:"@a[tag=HurtMAX]",bold:true},{text:" 共受到",color:"green"},{score:{objective:"tongji_hurt",name:"system"}},{text:"♥",color:"red"},{text:"伤害!",color:"green"}]
-tellraw @a [{text:"[💀]杀死了最多的生物 ",color:"green"},{selector:"@a[tag=KillMAX]",bold:true},{text:" 杀死了",color:"green"},{score:{objective:"tongji_killed",name:"system"}},{text:"个",color:"red"},{text:"生物!",color:"green"}]
+tellraw @a [{"text":"[🗡]造成了最高伤害 ","color":"green"},{"selector":"@a[tag=DamageMAX]","bold":true},{"text":" 共造成","color":"green"},{"score":{"objective":"tongji_damage","name":"system"}},{"text":"♥","color":"red"},{"text":"伤害!","color":"green"}]
+tellraw @a [{"text":"[💔]受到了最多的伤害 ","color":"green"},{"selector":"@a[tag=HurtMAX]","bold":true},{"text":" 共受到","color":"green"},{"score":{"objective":"tongji_hurt","name":"system"}},{"text":"♥","color":"red"},{"text":"伤害!","color":"green"}]
+tellraw @a [{"text":"[💀]杀死了最多的生物 ","color":"green"},{"selector":"@a[tag=KillMAX]","bold":true},{"text":" 杀死了","color":"green"},{"score":{"objective":"tongji_killed","name":"system"}},{"text":"个","color":"red"},{"text":"生物!","color":"green"}]
 tag @a[tag=DamageMAX] remove DamageMAX
 tag @a[tag=KillMAX] remove KillMAX
 tag @a[tag=InfectMAX] remove InfectMAX
@@ -51,12 +51,12 @@ time set day
 team empty blue
 team empty red
 team join lobby @a
+#重生点
+spawnpoint @a 59 226 -26 -90
 #设置难度为和平
 difficulty peaceful
 #清生物
-kill @e[type=!player,type=!armor_stand]
-#清掉落物
-kill @e[type=item]
+kill @e[type=!player,type=!armor_stand,type=!#kards:display]
 #tp回大厅
 tp @a 59 226 -26 -90 0
 #清tag
@@ -108,8 +108,7 @@ schedule clear kards:game/ingame/round/pvpround/countdown
 #停止音乐
 execute as @a at @s run stopsound @s
 #概率生成oiiao
-execute if predicate kards:random0.01 run summon minecraft:cat 70 227 -20 {NoAI:1b,Invulnerable:1b,variant:"minecraft:all_black",Customid:"Oiiaioiiiiai",Silent:1b}
+execute if predicate kards:random0.01 run summon minecraft:cat 70 227 -20 {NoAI:1b,Invulnerable:1b,variant:"minecraft:all_black",CustomName:"Oiiaioiiiiai",Silent:1b}
 #生成琉璃夜
-summon minecraft:pig 62 226 -26 {AbsorptionAmount:0.0f,Age:0,Air:300s,attributes:[{base:16.0d,modifiers:[{amount:0.025476123670384238d,operation:"add_value",id:"sad"}],id:"minecraft:follow_range"},{base:0.0d,id:"forge:step_height_addition"},{base:0.08d,id:"forge:entity_gravity"},{base:0.25d,id:"minecraft:movement_speed"}],Brain:{memories:{}},CanPickUpLoot:0b,CanUpdate:1b,CustomName:{text:"",extra:["",{text:"琉璃夜",color:"gold",bold:true}]},CustomNameVisible:1b,DeathTime:0s,fall_distance:0.0f,FallFlying:0b,Fire:-1s,ForcedAge:0,Health:10.0f,HurtByTimestamp:0,HurtTime:0s,InLove:0,Invulnerable:0b,LeftHanded:0b,Motion:[-0.05681209878307869d,-0.0784000015258789d,0.04549847833052194d],OnGround:1b,PersistenceRequired:0b,PortalCooldown:0,Saddle:0b,Tags:["pig"],"forge:spawn_type":"SPAWN_EGG"}
-
+summon minecraft:pig 62 226 -26 {AbsorptionAmount:0.0f,Age:0,Air:300s,ArmorDropChances:[0.085f,0.085f,0.085f,0.085f],ArmorItems:[{},{},{},{}],Attributes:[{Base:16.0d,Modifiers:[{Amount:0.025476123670384238d,Name:"Random spawn bonus",Operation:1,UUID:[I;-1098363419,-483572789,-2135863190,-66422552]}],Name:"minecraft:follow_range"},{Base:0.0d,Name:"forge:step_height_addition"},{Base:0.08d,Name:"forge:entity_gravity"},{Base:0.25d,Name:"minecraft:movement_speed"}],Brain:{memories:{}},CanPickUpLoot:0b,CanUpdate:1b,CustomName:'{"text":"","extra":["",{"text":"琉璃夜","color":"gold","bold":true}]}',CustomNameVisible:1b,DeathTime:0s,FallDistance:0.0f,FallFlying:0b,Fire:-1s,ForcedAge:0,HandDropChances:[0.085f,0.085f],HandItems:[{},{}],Health:10.0f,HurtByTimestamp:0,HurtTime:0s,InLove:0,Invulnerable:0b,LeftHanded:0b,Motion:[-0.05681209878307869d,-0.0784000015258789d,0.04549847833052194d],OnGround:1b,PersistenceRequired:0b,PortalCooldown:0,Saddle:0b,Tags:["pig"],"forge:spawn_type":"SPAWN_EGG",id:"minecraft:pig"}
 

@@ -1,4 +1,4 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text:"使用了",color:"gold"},{text:"[超脱洗礼]",color:"dark_purple",hover_event:{action:"show_text",value:"为队伍玩家回复8♥"}}]
+execute if score @s pingbi matches 0 run tellraw @a [{"selector":"@s"},{"text":"使用了","color":"gold"},{"text":"[超脱洗礼]","color":"dark_purple","hoverEvent":{"action":"show_text","value":"为队伍玩家回复8♥"}}]
 item replace entity @s weapon.offhand with air
 scoreboard players remove @s kardCount 1
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1
@@ -12,7 +12,7 @@ execute if entity @s[team=red] if score 红队 xianjin_youdi matches -1 run retu
 execute if entity @s[team=blue] if score 蓝队 xianjin_youdi matches -1 run return run scoreboard players set 蓝队 xianjin_youdi 0
 
 #红
-execute if entity @s[team=red] run effect give @a[team=red,gamemode=adventure] instant_health 1 2 true
+execute if entity @s[team=red] run scoreboard players add @a[team=red,gamemode=adventure] HealBack 8
 #蓝
-execute if entity @s[team=blue] run effect give @a[team=blue,gamemode=adventure] instant_health 1 2 true
+execute if entity @s[team=blue] run scoreboard players add @a[team=blue,gamemode=adventure] HealBack 8
 

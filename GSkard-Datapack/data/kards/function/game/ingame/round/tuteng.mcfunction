@@ -1,9 +1,9 @@
 #羊
     #蓝
-    execute if entity @e[team=blue,tag=tuteng,type=sheep] run effect give @a[team=blue] instant_health 1 1 true
+    execute if entity @e[team=blue,tag=tuteng,type=sheep] run scoreboard players add @a[team=blue] HealBack 4
     execute if entity @e[team=blue,tag=tuteng,type=sheep] run effect give @e[team=blue,tag=tuteng] minecraft:regeneration 3 1
     #红
-    execute if entity @e[team=red,tag=tuteng,type=sheep] run effect give @a[team=red] instant_health 1 1 true
+    execute if entity @e[team=red,tag=tuteng,type=sheep] run scoreboard players add @a[team=red] HealBack 4
     execute if entity @e[team=red,tag=tuteng,type=sheep] run effect give @e[team=red,tag=tuteng] minecraft:regeneration 3 1
 #鸡
     #蓝

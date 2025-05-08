@@ -1,2 +1,2 @@
 
-give @s music_disc_mall[item_name=[{text:"3K",color:"aqua"},{text:" 溺尸",color:"blue"}],lore=[{text:"基本牌",color:"blue",italic:false},[{text:"召唤一只",color:"gray",italic:false},{text:"携带三叉戟的溺尸",color:"gold",italic:false}]],jukebox_playable="pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'溺尸'}]
+give @s music_disc_mall[item_name='[{"text":"3K","color":"aqua"},{"text":" 溺尸","color":"blue"}]',lore=['{"text":"基本牌","color":"blue","italic":false}','[{"text":"召唤一只","color":"gray","italic":false},{"text":"携带三叉戟的溺尸","color":"gold","italic":false}]'],jukebox_playable={song:'pigstep',show_in_tooltip:false},custom_data={kards:'溺尸'}]

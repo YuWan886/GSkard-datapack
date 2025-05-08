@@ -93,7 +93,7 @@ scoreboard objectives add random_shijiao2 dummy
 scoreboard objectives add wait_end dummy
 scoreboard objectives add red_end dummy
 scoreboard objectives add blue_end dummy
-scoreboard objectives add Leave_Game minecraft.custom:minecraft.leave_game [{text:"离开游戏",color:"gold",bold:true}]
+scoreboard objectives add Leave_Game minecraft.custom:minecraft.leave_game [{"text":"离开游戏","color":"gold","bold":true}]
 scoreboard objectives add Ready dummy
 scoreboard objectives add Ready_count dummy
 scoreboard objectives add Ready_Num dummy
@@ -114,7 +114,7 @@ scoreboard objectives add used_zhengyizhichui2 dummy
 scoreboard objectives add sishenzhilian_soul_small dummy
 scoreboard objectives add sishenzhilian_soul_medium dummy
 scoreboard objectives add used_sishenzhilian dummy
-scoreboard objectives add used_chuancichangji dummy
+scoreboard objectives add used_zhengyichangji dummy
 scoreboard objectives add used_qinglingzhiyu dummy
 scoreboard objectives add right_used_qinglingzhiyu minecraft.used:minecraft.bow
 scoreboard objectives add jitui_qinglingzhiyu dummy
@@ -147,9 +147,9 @@ scoreboard objectives add wuxiuzhihuo_zhuangbei minecraft.dropped:minecraft.musi
 scoreboard objectives add wuxiuzhihuo_tuteng minecraft.dropped:minecraft.music_disc_blocks
 scoreboard objectives add wuxiuzhihuo_zuzhou minecraft.dropped:minecraft.music_disc_stal
 scoreboard objectives add wuxiuzhihuo_shenji minecraft.dropped:minecraft.music_disc_strad
-scoreboard objectives add music_kards trigger {text:"Kards背景音乐",color:"gold",bold:true}
-scoreboard objectives add music_lengxiao trigger {text:"楞小指定背景音乐",color:"gold",bold:true}
-scoreboard objectives add stopsound trigger {text:"停止播放",color:"gold",bold:true}
+scoreboard objectives add music_kards trigger {"text":"Kards背景音乐","color":"gold","bold":true}
+scoreboard objectives add music_lengxiao trigger {"text":"楞小指定背景音乐","color":"gold","bold":true}
+scoreboard objectives add stopsound trigger {"text":"停止播放","color":"gold","bold":true}
 scoreboard objectives add SpellTicks dummy
 scoreboard objectives add ram_cooldown_ticks dummy
 scoreboard objectives add is_panicking dummy
@@ -169,21 +169,16 @@ scoreboard objectives add YunSuan_2 dummy
 scoreboard objectives add YunSuan_3 dummy
 scoreboard objectives add YunSuan_4 dummy
 scoreboard objectives add xianjin_toulianghuanzhu dummy
-scoreboard objectives add yingyuzhili dummy
 scoreboard objectives add end dummy
 scoreboard objectives add sishenzhilian_damage minecraft.custom:minecraft.damage_dealt
 scoreboard objectives add sishenzhilian_damage_tongji dummy
-scoreboard objectives add xiangzhaoyushi dummy
+scoreboard objectives add jinghuashuijing dummy
 scoreboard objectives add senlinzhihu dummy
 scoreboard objectives add oiiaioiiiiai dummy
-# 死神之镰
-#   处决 生物
-scoreboard objectives add sishenzhilian_chujuemob dummy
-# 炎阳大剑
-#   热血吸收
-scoreboard objectives add yanyangdajian_jisha dummy
-#   火球骰子
-scoreboard objectives add huoyantouzi dummy
-
+scoreboard objectives add jinziqifeng dummy
+scoreboard objectives add wuwangchuchang dummy
+scoreboard objectives add in_wuwangjiangshi dummy
+scoreboard objectives add wait_spawn dummy
+scoreboard objectives add HealBack dummy
 #
-tellraw @a [{text:"数据包加载完毕",color:"gray"}]
+tellraw @a [{"text":"数据包加载完毕","color":"gray"}]

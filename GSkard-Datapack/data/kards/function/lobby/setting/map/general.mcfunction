@@ -1,10 +1,22 @@
 execute if score system dituxuanze matches ..0 run scoreboard players set system dituxuanze 8
-execute if score system dituxuanze matches 1 run clone 5 -60 -71 13 -53 -63 48 225 -17
-execute if score system dituxuanze matches 2 run clone 17 -60 -71 25 -53 -63 48 225 -17
-execute if score system dituxuanze matches 3 run clone 29 -60 -71 37 -53 -63 48 225 -17
-execute if score system dituxuanze matches 4 run clone 41 -60 -71 49 -53 -63 48 225 -17
-execute if score system dituxuanze matches 5 run clone 53 -60 -71 61 -53 -63 48 225 -17
-execute if score system dituxuanze matches 6 run clone 65 -60 -71 73 -53 -63 48 225 -17
-execute if score system dituxuanze matches 7 run clone 77 -60 -71 85 -53 -63 48 226 -17
-execute if score system dituxuanze matches 8 run clone 89 -60 -71 97 -53 -63 48 225 -17
+execute if score system dituxuanze matches 1 run clone 5 -60 -71 13 -52 -63 76 226 -45
+execute if score system dituxuanze matches 2 run clone 17 -60 -71 25 -52 -63 76 226 -45
+execute if score system dituxuanze matches 3 run clone 29 -60 -71 37 -52 -63 76 226 -45
+execute if score system dituxuanze matches 4 run clone 41 -60 -71 49 -52 -63 76 226 -45
+execute if score system dituxuanze matches 5 run clone 53 -60 -71 61 -52 -63 76 226 -45
+execute if score system dituxuanze matches 6 run clone 65 -60 -71 73 -52 -63 76 226 -45
+execute if score system dituxuanze matches 7 run clone 77 -60 -71 85 -52 -63 76 226 -45
+execute if score system dituxuanze matches 8 run clone 89 -60 -71 97 -52 -63 76 226 -45
 execute if score system dituxuanze matches 9.. run scoreboard players set system dituxuanze 1
+
+execute unless entity @e[type=block_display,tag=map] run summon block_display 83 228.2 -35 {block_state:{Name:"minecraft:crying_obsidian"},Tags:["map","spawn"]}
+data modify entity @e[tag=map,type=block_display,limit=1] transformation.left_rotation set value {angle:54.74f,axis:[-1.0f,0.0f,1.0f]}
+data modify entity @e[tag=map,type=block_display,limit=1] transformation.scale set value [0.6f,0.6f,0.6f]
+data modify entity @e[tag=map,type=block_display,limit=1] start_interpolation set value 0
+data modify entity @e[tag=map,type=block_display,limit=1] interpolation_duration set value 20
+
+
+execute unless entity @e[type=interaction,tag=map] run summon minecraft:interaction 83 227.2 -35 {response:1b,Tags:["map"]}
+
+execute unless entity @e[type=text_display,tag=map] run summon minecraft:text_display 83 226.7 -35 {billboard:vertical,text:'"\\u00A76点我切换至下一张地图"',Tags:["map"]}
+

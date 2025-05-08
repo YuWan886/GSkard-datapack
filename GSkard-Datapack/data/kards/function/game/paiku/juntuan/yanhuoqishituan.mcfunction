@@ -1,2 +1,0 @@
-# 焰火骑士团
-give @s music_disc_cat[item_name=[{text:"8K",color:"aqua"},{text:" 焰火骑士团",color:"dark_green"}],lore=[{text:"军团牌",color:"dark_green",italic:false},[{text:"召唤4只",color:"gray",italic:false},{text:"铁套且手持火焰附加II铁剑的",color:"gray",italic:false},{text:"猪灵",color:"gold",italic:false}]],jukebox_playable="pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'焰火骑士团'}]

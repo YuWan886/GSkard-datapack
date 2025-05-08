@@ -1,4 +1,4 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text:"使用了",color:"gold"},{text:"[来日偿还]",color:"white",hover_event:{action:"show_text",value:"记录你上一回合至使用本卡时间内的所有伤害 造成等额伤害分配至敌方所有玩家"}}]
+execute if score @s pingbi matches 0 run tellraw @a [{"selector":"@s"},{"text":"使用了","color":"gold"},{"text":"[来日偿还]","color":"white","hoverEvent":{"action":"show_text","value":"记录你上一回合至使用本卡时间内的所有伤害 造成等额伤害分配至敌方所有玩家"}}]
 function kards:game/yongpaiku/xianjin/jiance/shenjijiance
 scoreboard players operation @s damage_jilu += @s lairichanghuan
 scoreboard players set @s changhuan 1

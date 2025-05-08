@@ -1,4 +1,4 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text:"使用了",color:"gold"},{text:"[飓风过境]",color:"dark_green",hover_event:{action:"show_text",value:"在敌方召唤5只旋风人"}}]
+execute if score @s pingbi matches 0 run tellraw @a [{"selector":"@s"},{"text":"使用了","color":"gold"},{"text":"[飓风过境]","color":"dark_green","hoverEvent":{"action":"show_text","value":"在敌方召唤5只旋风人"}}]
     #红队用
     execute if entity @s[team=red] as @e[tag=4r] at @s run summon breeze ~ 0 ~ {attributes:[{id:"minecraft:max_health",base:20.0d}],Health:20.0f,Team:red}
     execute if entity @s[team=red] as @e[tag=6r] at @s run summon breeze ~ 0 ~ {attributes:[{id:"minecraft:max_health",base:20.0d}],Health:20.0f,Team:red}

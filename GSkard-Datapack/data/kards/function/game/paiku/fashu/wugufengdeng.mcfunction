@@ -1,2 +1,2 @@
 
-give @s music_disc_mellohi[item_name=[{text:"0K",color:"aqua"},{text:" 五谷丰登",color:"light_purple"}],lore=[{text:"法术牌",color:"light_purple",italic:false},[{text:"所有玩家抽",color:"gray",italic:false},{text:"1张牌",color:"gold",italic:false}]],jukebox_playable="pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'五谷丰登'}]
+give @s music_disc_mellohi[item_name='[{"text":"0K","color":"aqua"},{"text":" 五谷丰登","color":"light_purple"}]',lore=['{"text":"法术牌","color":"light_purple","italic":false}','[{"text":"所有玩家抽","color":"gray","italic":false},{"text":"1张牌","color":"gold","italic":false}]'],jukebox_playable={song:'pigstep',show_in_tooltip:false},custom_data={kards:'五谷丰登'}]

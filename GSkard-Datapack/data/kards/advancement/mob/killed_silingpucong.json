@@ -5,7 +5,7 @@
         "conditions": {
           "entity": {
             "type": "minecraft:skeleton",
-            "nbt": "{Tags:[\"undead_servant\"]}"
+            "nbt": "{Tags:[\"死灵仆从\"]}"
           }
         }
       }

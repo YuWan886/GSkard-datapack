@@ -1,4 +1,4 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text:"使用了",color:"gold"},{text:"[地狱之火]",color:"dark_green",hover_event:{action:"show_text",value:"在敌方召唤四只烈焰人"}}]
+execute if score @s pingbi matches 0 run tellraw @a [{"selector":"@s"},{"text":"使用了","color":"gold"},{"text":"[地狱之火]","color":"dark_green","hoverEvent":{"action":"show_text","value":"在敌方召唤四只烈焰人"}}]
 
     #红队用
     execute if entity @s[team=red] as @e[tag=2r] at @s run summon blaze ~ 0 ~ {Team:red}

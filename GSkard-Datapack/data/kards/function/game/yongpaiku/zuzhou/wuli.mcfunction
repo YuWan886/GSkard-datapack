@@ -1,4 +1,4 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text:"使用了",color:"gold"},{text:"[无力]",color:"dark_gray",hover_event:{action:"show_text",value:"敌方玩家获得虚弱1 持续20s"}}]
+execute if score @s pingbi matches 0 run tellraw @a [{"selector":"@s"},{"text":"使用了","color":"gold"},{"text":"[无力]","color":"dark_gray","hoverEvent":{"action":"show_text","value":"敌方玩家获得虚弱1 持续20s"}}]
 
 #红
 execute if entity @s[team=red] run effect give @a[team=blue,gamemode=adventure] weakness 20 0 true

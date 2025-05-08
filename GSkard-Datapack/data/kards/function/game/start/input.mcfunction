@@ -1,7 +1,7 @@
 #设置游戏状态为1（开启）
 scoreboard players set system status 1
 #清实体
-kill @e[type=!player,type=!armor_stand]
+kill @e[type=!player,type=!armor_stand,type=!#kards:display]
 #重设分数
 scoreboard players reset @a
 scoreboard objectives add health health ["生命值"]
@@ -21,7 +21,7 @@ scoreboard players set @a[tag=Ready] kardCountmax 10
 clear @a[tag=Ready]
 clear @a minecraft:ender_pearl
 #清非玩家生物
-kill @e[type=!player]
+kill @e[type=!player,type=!#kards:display]
 #队伍
 team join Spectator @a[tag=Un_Ready] 
 team modify blue friendlyFire false
@@ -29,7 +29,7 @@ team modify red friendlyFire false
 #物品
 schedule function kards:game/start/wait_start 1t
 #游戏规则
-function kards:game/start/gamerule/panding
+#function kards:game/start/gamerule/panding
 #重置陷阱
 function kards:game/yongpaiku/xianjin/reset
 #特殊
@@ -55,4 +55,4 @@ execute as @a at @s run playsound minecraft:entity.player.levelup master @s ~ ~ 
 #音乐
 execute as @a at @s run stopsound @s
 #execute as @a at @s run playsound minecraft:kards_music master @s ~ ~ ~ 100 1
-#tellraw @a [{text: "正在播放音乐~可使用",color: "green"},{text: "/trigger stopsound",color: "gold"},{text: "\n或是使用",color: "green"},{text: "/trigger music_kards",color: "gold"},{text: "以更换音乐",color: "green"}]
+#tellraw @a [{"text": "正在播放音乐~可使用","color": "green"},{"text": "/trigger stopsound","color": "gold"},{"text": "\n或是使用","color": "green"},{"text": "/trigger music_kards","color": "gold"},{"text": "以更换音乐","color": "green"}]

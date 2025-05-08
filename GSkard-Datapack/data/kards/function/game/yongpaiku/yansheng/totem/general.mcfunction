@@ -27,23 +27,23 @@ execute at @a[tag=bingdongtuteng,team=blue] run scoreboard players add @e[team=r
 execute at @a[tag=bingdongtuteng] run playsound minecraft:entity.player.hurt_freeze player @s ~ ~ ~ 100 0
 execute at @a[tag=bingdongtuteng,team=red] run tag @e[team=blue,distance=..5] add DongJie
 execute at @a[tag=bingdongtuteng,team=blue] run tag @e[team=red,distance=..5] add DongJie
-# 凛冬之铠
+
 scoreboard players remove @e[tag=DongJie,scores={DongJie=1..}] DongJie 1
 effect give @e[tag=DongJie,scores={DongJie=1..}] slowness 1 100 true
 effect give @e[tag=DongJie,scores={DongJie=1..}] weakness 1 128 true
 execute as @a[tag=DongJie,scores={DongJie=1..}] run attribute @s minecraft:jump_strength modifier add 0-0-3 -100 add_value
 execute as @a[tag=DongJie,scores={DongJie=1..}] run effect clear @s jump_boost
 title @a[tag=DongJie,scores={DongJie=1..}] times 0t 1s 0t
-title @a[tag=DongJie,scores={DongJie=1..}] title {text:"冻结中...",color:"aqua",bold:true}
+title @a[tag=DongJie,scores={DongJie=1..}] title {"text":"冻结中...","color":"aqua","bold":true}
 execute as @a[tag=DongJie,scores={DongJie=0}] run attribute @s minecraft:jump_strength modifier remove 0-0-3
 effect clear @e[tag=DongJie,scores={DongJie=0}] slowness
 effect clear @e[tag=DongJie,scores={DongJie=0}] weakness
-title @a[tag=DongJie,scores={DongJie=0}] title {text:""}
+title @a[tag=DongJie,scores={DongJie=0}] title {"text":""}
 tag @e[tag=DongJie,scores={DongJie=0}] remove DongJie
 tag @a[tag=bingdongtuteng] remove bingdongtuteng
 #火焰
 scoreboard players add @e[tag=fire] firedamage 1
-title @a[tag=fire] actionbar {text:"你被点燃了",color:"red"}
+title @a[tag=fire] actionbar {"text":"你被点燃了","color":"red"}
 effect give @a[tag=huoyantuteng] absorption 60 4 true
 execute as @e[scores={firedamage=5}] run damage @s 1.5 kards:huoyantuteng
 scoreboard players set @e[scores={firedamage=10..}] firedamage 0

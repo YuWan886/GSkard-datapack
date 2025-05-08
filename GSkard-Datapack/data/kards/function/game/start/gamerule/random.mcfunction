@@ -1,7 +1,7 @@
-tellraw @a [{text:"本局随机事件\n",color:"gray"}]
+tellraw @a [{"text":"本局随机事件\n","color":"gray"}]
 
 execute store result score system random_start run random value 1..5
-# execute if score system random_start matches 1 run
+execute if score system random_start matches 1 run 
 execute if score system random_start matches 2 run function kards:game/paiku/jiben/kulou
 execute if score system random_start matches 3 run function kards:game/paiku/jiben/moyingman
 execute if score system random_start matches 4 run function kards:game/paiku/jiben/juduzhizhu

@@ -1,2 +1,2 @@
 
-give @s music_disc_mellohi[item_name=[{text:"3K",color:"aqua"},{text:" 视角干扰",color:"light_purple"}],lore=[{text:"法术牌",color:"light_purple",italic:false},[{text:"将敌方所有玩家",color:"gray",italic:false},{text:"随机转向",color:"red",italic:false}]],jukebox_playable="pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'视角干扰'}]
+give @s music_disc_mellohi[item_name='[{"text":"3K","color":"aqua"},{"text":" 视角干扰","color":"light_purple"}]',lore=['{"text":"法术牌","color":"light_purple","italic":false}','[{"text":"将敌方所有玩家","color":"gray","italic":false},{"text":"随机转向","color":"red","italic":false}]'],jukebox_playable={song:'pigstep',show_in_tooltip:false},custom_data={kards:'视角干扰'}]

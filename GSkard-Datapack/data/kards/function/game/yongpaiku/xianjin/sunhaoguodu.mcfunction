@@ -1,8 +1,8 @@
-execute if entity @s[team=red] if score @s pingbi matches 0 run tellraw @a[team=red] [{selector:"@s"},{text:"使用了",color:"gold"},{text:"[损耗过度]",color:"dark_aqua",hover_event:{action:"show_text",value:"条件：敌方任意玩家使用基础牌或军团牌时\n触发：清空其剩余点数"}}]
-execute if entity @s[team=red] if score @s pingbi matches 0 run tellraw @a[team=blue] [{selector:"@s"},{text:"使用了",color:"gold"},{text:"?????",color:"dark_aqua"}]
+execute if entity @s[team=red] if score @s pingbi matches 0 run tellraw @a[team=red] [{"selector":"@s"},{"text":"使用了","color":"gold"},{"text":"[损耗过度]","color":"dark_aqua","hoverEvent":{"action":"show_text","value":"条件：敌方任意玩家使用基础牌或军团牌时\n触发：清空其剩余点数"}}]
+execute if entity @s[team=red] if score @s pingbi matches 0 run tellraw @a[team=blue] [{"selector":"@s"},{"text":"使用了","color":"gold"},{"text":"?????","color":"dark_aqua"}]
 
-execute if entity @s[team=blue] if score @s pingbi matches 0 run tellraw @a[team=blue] [{selector:"@s"},{text:"使用了",color:"gold"},{text:"[损耗过度]",color:"dark_aqua",hover_event:{action:"show_text",value:"条件：敌方任意玩家使用基础牌或军团牌时\n触发：清空其剩余点数"}}]
-execute if entity @s[team=blue] if score @s pingbi matches 0 run tellraw @a[team=red] [{selector:"@s"},{text:"使用了",color:"gold"},{text:"?????",color:"dark_aqua"}]
+execute if entity @s[team=blue] if score @s pingbi matches 0 run tellraw @a[team=blue] [{"selector":"@s"},{"text":"使用了","color":"gold"},{"text":"[损耗过度]","color":"dark_aqua","hoverEvent":{"action":"show_text","value":"条件：敌方任意玩家使用基础牌或军团牌时\n触发：清空其剩余点数"}}]
+execute if entity @s[team=blue] if score @s pingbi matches 0 run tellraw @a[team=red] [{"selector":"@s"},{"text":"使用了","color":"gold"},{"text":"?????","color":"dark_aqua"}]
 
 #红
 execute if entity @s[team=red] run scoreboard players set 蓝队 xianjin_sunhaoguodu 1
