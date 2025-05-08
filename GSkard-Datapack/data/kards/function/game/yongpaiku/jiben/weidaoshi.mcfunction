@@ -1,4 +1,4 @@
-execute if score @s pingbi matches 0 run tellraw @a [{"selector":"@s"},{"text":"使用了","color":"gold"},{"text":"[卫道士]","color":"blue"}]
+execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.yongpaiku.template.1",color:"gold"},{translate: "game.yongpaiku.jiben.weidaoshi.1",color:"blue"}]
     #红队用
     execute if entity @s[team=red] as @e[tag=7r] at @s run summon minecraft:vindicator ~ 0 ~ {Team:red,HandItems:[{id:"iron_axe"}]}
     #蓝队用

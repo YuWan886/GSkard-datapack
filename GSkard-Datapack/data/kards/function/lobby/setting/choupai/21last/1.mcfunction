@@ -1,6 +1,6 @@
 data modify storage system choupai merge value {21last:1}
 
-tellraw @a [{"text": "提示:","color": "gold"},{"text": "21回合后抽牌数量调整为","color": "green"},{"text": "1张","color": "gold"}]
+tellraw @a [{translate: "lobby.setting.choupai.11and15.1.1",color: "gold"},{translate: "lobby.setting.choupai.21last.1.1",color: "green"},{translate: "lobby.setting.choupai.11and15.1.3",color: "gold"}]
 execute as @a at @s run playsound minecraft:block.amethyst_block.hit player @s ~ ~ ~ 100 2
 setblock 61 226 -11 air
-setblock 61 226 -11 minecraft:oak_wall_sign[facing=east]{front_text:{messages:['{"clickEvent":{"action":"run_command","value":"/function kards:lobby/setting/choupai/21last/2"},"color":"gold","text":"21回合后抽牌数量"}','{"text":"1张","color":"green"}','""','""']}} replace
+setblock 61 226 -11 minecraft:oak_wall_sign[facing=east]{front_text:{messages:[{click_event:{action:"run_command",command:"/function kards:lobby/setting/choupai/21last/2"},color:"gold",translate: "lobby.setting.choupai.21last.1.2"},{translate: "lobby.setting.choupai.11and15.1.3",color:"green"},'""','""']}} replace

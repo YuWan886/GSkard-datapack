@@ -1,6 +1,6 @@
 execute store result score system Ready_Num if entity @a[tag=Ready]
 team join lobby @a[tag=Un_Ready]
-execute unless entity @a[team=red] unless entity @a[team=blue] if score system Ready_Num matches 0..1 run return run tellraw @a [{"text":"准备人数不足 无法进行分队","color":"red","bold":true}]
+execute unless entity @a[team=red] unless entity @a[team=blue] if score system Ready_Num matches 0..1 run return run tellraw @a [{translate: "lobby.team.join.random.1",color:"red",bold:true}]
 execute if score system Ready_Num matches 2.. run team join red @a[team=!sp,tag=Ready]
 execute if score system Ready_Num matches 2 run team join blue @a[team=red,limit=1,tag=Ready,sort=random]
 execute if score system Ready_Num matches 3..4 run team join blue @a[team=red,limit=2,tag=Ready,sort=random]
@@ -12,5 +12,5 @@ execute if score system Ready_Num matches 13..14 run team join blue @a[team=red,
 execute if score system Ready_Num matches 15..16 run team join blue @a[team=red,limit=8,tag=Ready,sort=random]
 execute if score system Ready_Num matches 17..18 run team join blue @a[team=red,limit=9,tag=Ready,sort=random]
 execute if score system Ready_Num matches 19..20 run team join blue @a[team=red,limit=10,tag=Ready,sort=random]
-execute if score system Ready_Num matches 21.. run tellraw @a [{"text":"准备人数过多 无法进行分队","color":"red","bold":true}]
+execute if score system Ready_Num matches 21.. run tellraw @a [{translate: "lobby.team.join.random.2",color:"red",bold:true}]
 tp @a[tag=Ready] 83 226 -26 -90 0

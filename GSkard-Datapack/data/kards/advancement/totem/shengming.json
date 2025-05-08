@@ -1,19 +1,18 @@
 {
     "criteria": {
-      "requirement": {
-        "trigger": "minecraft:used_totem",
-        "conditions": {
-          "item": {
-            "items": "minecraft:totem_of_undying",
-            "components": {
-              "custom_data": "{kards:'生命图腾'}"
+        "requirement": {
+            "trigger": "minecraft:used_totem",
+            "conditions": {
+                "item": {
+                    "items": "minecraft:totem_of_undying",
+                    "components": {
+                        "custom_data": "{kards:'生命图腾'}"
+                    }
+                }
             }
-          }
         }
-      }
     },
     "rewards": {
-      "function": "kards:game/yongpaiku/yansheng/totem/shengming"
+        "function": "kards:game/yongpaiku/yansheng/totem/shengming"
     }
-  }
-  
+}

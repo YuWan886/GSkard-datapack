@@ -1,23 +1,23 @@
 {
-  "display": {
-    "icon": {
-      "id": "minecraft:music_disc_strad",
-      "count": 1
+    "display": {
+        "icon": {
+            "id": "minecraft:music_disc_strad",
+            "count": 1
+        },
+        "title": "你管这叫卡牌对战?",
+        "description": "首次进入GSkard",
+        "background": "minecraft:textures/block/chiseled_tuff_bricks.png",
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
     },
-    "title": "你管这叫卡牌对战?",
-    "description": "首次进入GSkard",
-    "background": "minecraft:textures/block/chiseled_tuff_bricks.png",
-    "frame": "task",
-    "show_toast": true,
-    "announce_to_chat": true,
-    "hidden": false
-  },
-  "criteria": {
-    "requirement": {
-      "trigger": "minecraft:tick"
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:tick"
+        }
+    },
+    "rewards": {
+        "function": "kards:chengjiu/first_join_game"
     }
-  },
-  "rewards": {
-    "function": "kards:chengjiu/first_join_game"
-  }
 }

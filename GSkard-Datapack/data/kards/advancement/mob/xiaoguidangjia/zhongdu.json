@@ -1,17 +1,17 @@
 {
     "criteria": {
-      "requirement": {
-        "trigger": "minecraft:entity_hurt_player",
-        "conditions": {
-          "damage": {
-            "source_entity": {
-              "nbt": "{Tags:[\"中毒小鬼\"]}"
+        "requirement": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "nbt": "{Tags:[\"中毒小鬼\"]}"
+                    }
+                }
             }
-          }
         }
-      }
     },
     "rewards": {
-      "function": "kards:game/ingame/hurt/xiaoguidangjia/zhongdu"
+        "function": "kards:game/ingame/hurt/xiaoguidangjia/zhongdu"
     }
-  }
+}

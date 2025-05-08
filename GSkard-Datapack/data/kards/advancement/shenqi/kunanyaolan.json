@@ -1,12 +1,11 @@
 {
     "criteria": {
-      "requirement": {
-        "trigger": "minecraft:entity_hurt_player",
-        "conditions": {}
-      }
+        "requirement": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {}
+        }
     },
     "rewards": {
-      "function": "kards:game/yongpaiku/shenji/wangzhibaoku/kunanyaolan/1"
+        "function": "kards:game/yongpaiku/shenji/wangzhibaoku/kunanyaolan/1"
     }
-  }
-  
+}

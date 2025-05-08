@@ -4,7 +4,7 @@ function kards:game/ingame/use_kard/general
 #回合计时
 execute if score system status matches 1 run function kards:game/ingame/round/roundtime
 #分数小标题
-execute as @a[gamemode=adventure,tag=Ready] if score system status matches 1..2 unless items entity @s weapon.mainhand #kards:jinzhanwuqi unless items entity @s weapon.mainhand lantern run title @s actionbar [{"text":"K/Kmax  ","color":"dark_green"},{"score":{"objective":"kardCount","name":"@s"},"color":"red"},{"text": "/","color": "red"},{"score":{"objective":"kardCountmax","name":"@s"},"color":"red","bold": true}]
+execute as @a[gamemode=adventure,tag=Ready] if score system status matches 1..2 unless items entity @s weapon.mainhand #kards:jinzhanwuqi unless items entity @s weapon.mainhand lantern run title @s actionbar [{translate: "game.ingame.general.1",color:"dark_green"},{score:{objective:"kardCount",name:"@s"},color:"red"},{translate: "game.ingame.general.2",color: "red"},{score:{objective:"kardCountmax",name:"@s"},color:"red",bold: true}]
 #赋值
 scoreboard players add @a tanshewubuchong 0
 scoreboard players add @a zhunbei 0
@@ -47,11 +47,11 @@ effect give @a[tag=XuanYun,scores={XuanYun=1..}] blindness 2 100 true
 execute as @a[tag=XuanYun,scores={XuanYun=1..}] run attribute @s minecraft:jump_strength modifier add 0-0-1 -100 add_value
 execute as @a[tag=XuanYun,scores={XuanYun=1..}] run effect clear @s jump_boost
 execute as @a[tag=XuanYun,scores={XuanYun=1..}] at @s run tp @s ~ ~ ~ ~ 90
-title @a[tag=XuanYun,scores={XuanYun=1..}] title {"text":"眩晕中...","color":"gray","bold":true}
+title @a[tag=XuanYun,scores={XuanYun=1..}] title {translate: "game.ingame.general.3",color:"gray",bold:true}
 effect clear @a[tag=XuanYun,scores={XuanYun=0}] slowness
 effect clear @a[tag=XuanYun,scores={XuanYun=0}] blindness
 execute as @a[tag=XuanYun,scores={XuanYun=0}] run attribute @s minecraft:jump_strength modifier remove 0-0-1
-title @a[tag=XuanYun,scores={XuanYun=0}] title {"text":""}
+title @a[tag=XuanYun,scores={XuanYun=0}] title {translate: "game.end.reset.11"}
 tag @a[tag=XuanYun,scores={XuanYun=0}] remove XuanYun
 #断腿
 scoreboard players remove @a[tag=DuanTui,scores={DuanTui=1..}] DuanTui 1
@@ -123,7 +123,7 @@ execute as @a[gamemode=spectator] if score system dituxuanze matches 4 positione
 execute as @a[gamemode=spectator] if score system dituxuanze matches 5 positioned -100.00 0.00 -1.00 if score system status matches 1 if entity @s unless entity @s[dz=56,dy=18,dx=35] at @s run tp @r[gamemode=adventure]
 execute as @a[gamemode=spectator] if score system dituxuanze matches 6 positioned 264 -1.00 -378 if score system status matches 1 if entity @s unless entity @s[dz=52,dy=64,dx=87] at @s run tp @r[gamemode=adventure]
 execute as @a[gamemode=spectator] if score system dituxuanze matches 7 positioned 179.00 0.0 21.00 if score system status matches 1 if entity @s unless entity @s[dz=64,dy=9,dx=45] at @s run tp @r[gamemode=adventure]
-execute as @a[gamemode=spectator] if score system dituxuanze matches 8 positioned 59.00 0.00 104.00 if score system status matches 1 if entity @s unless entity @s[dz=54,dy=9,dx=33] at @s run tp @r[gamemode=adventure] 
+execute as @a[gamemode=spectator] if score system dituxuanze matches 8 positioned 59.00 0.00 104.00 if score system status matches 1 if entity @s unless entity @s[dz=54,dy=9,dx=33] at @s run tp @r[gamemode=adventure]
 
 execute as @a[gamemode=spectator] positioned -249.0 -10 -192.0 if score system status matches 2 if entity @s unless entity @s[dz=56,dy=60,dx=77] at @s run tp @r[gamemode=adventure]
 #沉默
@@ -230,15 +230,15 @@ scoreboard players add @e[type=skeleton,tag=silingfashi] silingzhaohuan 1
 #红
 execute as @e[type=skeleton,tag=silingfashi,team=red] at @s run scoreboard players add @a[team=blue,distance=..3] silingfashu 1
 execute as @e[type=skeleton,tag=silingfashi,team=red] if score @s silingfashu matches 40 at @s as @a[team=blue,distance=..3] at @s run damage @s 6 kards:silingfashu by @e[sort=nearest,limit=1,type=minecraft:skeleton,tag=silingfashi,team=red]
-execute as @e[type=skeleton,tag=silingfashi,team=red] if score @s silingzhaohuan matches 40 at @s run summon minecraft:skeleton ~ ~ ~ {Team:red,Tags:["死灵仆从"],active_effects:[{id:"speed",show_particles:0b,duration:-1}],ArmorItems:[{},{},{},{id: "minecraft:leather_helmet"}],attributes:[{id:"minecraft:max_health",base:2.0d},{id:"minecraft:attack_damage",base:2.0d},{id:"minecraft:scale",base:0.5d}],Health:2.0f}
-execute as @e[tag=silingfashi,type=minecraft:wither_skeleton,team=red] at @s unless entity @e[type=minecraft:skeleton,distance=..2.1,tag=silingfashi] run summon minecraft:skeleton ~ ~-0.5 ~ {Team:red,Tags:["死灵仆从"],active_effects:[{id:"speed",show_particles:0b,duration:-1}],ArmorItems:[{},{},{},{id: "minecraft:leather_helmet"}],attributes:[{id:"minecraft:max_health",base:2.0d},{id:"minecraft:attack_damage",base:2.0d},{id:"minecraft:scale",base:0.5d}],Health:2.0f}
-execute as @e[tag=silingfashi,type=minecraft:wither_skeleton,team=red] at @s unless entity @e[type=minecraft:skeleton,distance=..2.1,tag=silingfashi] run summon minecraft:skeleton ~ ~-0.5 ~ {Team:red,Tags:["死灵仆从"],active_effects:[{id:"speed",show_particles:0b,duration:-1}],ArmorItems:[{},{},{},{id: "minecraft:leather_helmet"}],attributes:[{id:"minecraft:max_health",base:2.0d},{id:"minecraft:attack_damage",base:2.0d},{id:"minecraft:scale",base:0.5d}],Health:2.0f}
+execute as @e[type=skeleton,tag=silingfashi,team=red] if score @s silingzhaohuan matches 40 at @s run summon minecraft:skeleton ~ ~ ~ {Team:red,Tags:["死灵仆从"],active_effects:[{id:"speed",show_particles:0b,duration:-1}],equipment:{head:{id:"minecraft:leather_helmet"}},attributes:[{id:"minecraft:max_health",base:2.0d},{id:"minecraft:attack_damage",base:2.0d},{id:"minecraft:scale",base:0.5d}],Health:2.0f}
+execute as @e[tag=silingfashi,type=minecraft:wither_skeleton,team=red] at @s unless entity @e[type=minecraft:skeleton,distance=..2.1,tag=silingfashi] run summon minecraft:skeleton ~ ~-0.5 ~ {Team:red,Tags:["死灵仆从"],active_effects:[{id:"speed",show_particles:0b,duration:-1}],equipment:{head:{id:"minecraft:leather_helmet"}},attributes:[{id:"minecraft:max_health",base:2.0d},{id:"minecraft:attack_damage",base:2.0d},{id:"minecraft:scale",base:0.5d}],Health:2.0f}
+execute as @e[tag=silingfashi,type=minecraft:wither_skeleton,team=red] at @s unless entity @e[type=minecraft:skeleton,distance=..2.1,tag=silingfashi] run summon minecraft:skeleton ~ ~-0.5 ~ {Team:red,Tags:["死灵仆从"],active_effects:[{id:"speed",show_particles:0b,duration:-1}],equipment:{head:{id:"minecraft:leather_helmet"}},attributes:[{id:"minecraft:max_health",base:2.0d},{id:"minecraft:attack_damage",base:2.0d},{id:"minecraft:scale",base:0.5d}],Health:2.0f}
 #蓝
 execute as @e[type=skeleton,tag=silingfashi,team=blue] at @s run scoreboard players add @a[team=red,distance=..3] silingfashu 1
 execute as @e[type=skeleton,tag=silingfashi,team=blue] if score @s silingfash matches 40 at @s as @a[team=red,distance=..5] at @s run damage @s 6 kards:silingfashu by @e[sort=nearest,limit=1,type=minecraft:skeleton,tag=silingfashi,team=blue]
-execute as @e[type=skeleton,tag=silingfashi,team=blue] if score @s silingzhaohuan matches 40 at @s run summon minecraft:skeleton ~ ~ ~ {Team:blue,Tags:["死灵仆从"],active_effects:[{id:"speed",show_particles:0b,duration:-1}],ArmorItems:[{},{},{},{id: "minecraft:leather_helmet"}],attributes:[{id:"minecraft:max_health",base:2.0d},{id:"minecraft:attack_damage",base:2.0d},{id:"minecraft:scale",base:0.5d}],Health:2.0f}
-execute as @e[tag=silingfashi,type=minecraft:wither_skeleton,team=blue] at @s unless entity @e[type=minecraft:skeleton,distance=..2.1,tag=silingfashi] run summon minecraft:skeleton ~ ~-0.5 ~ {Team:blue,Tags:["死灵仆从"],active_effects:[{id:"speed",show_particles:0b,duration:-1}],ArmorItems:[{},{},{},{id: "minecraft:leather_helmet"}],attributes:[{id:"minecraft:max_health",base:2.0d},{id:"minecraft:attack_damage",base:2.0d},{id:"minecraft:scale",base:0.5d}],Health:2.0f}
-execute as @e[tag=silingfashi,type=minecraft:wither_skeleton,team=blue] at @s unless entity @e[type=minecraft:skeleton,distance=..2.1,tag=silingfashi] run summon minecraft:skeleton ~ ~-0.5 ~ {Team:blue,Tags:["死灵仆从"],active_effects:[{id:"speed",show_particles:0b,duration:-1}],ArmorItems:[{},{},{},{id: "minecraft:leather_helmet"}],attributes:[{id:"minecraft:max_health",base:2.0d},{id:"minecraft:attack_damage",base:2.0d},{id:"minecraft:scale",base:0.5d}],Health:2.0f}
+execute as @e[type=skeleton,tag=silingfashi,team=blue] if score @s silingzhaohuan matches 40 at @s run summon minecraft:skeleton ~ ~ ~ {Team:blue,Tags:["死灵仆从"],active_effects:[{id:"speed",show_particles:0b,duration:-1}],equipment:{head:{id:"minecraft:leather_helmet"}},attributes:[{id:"minecraft:max_health",base:2.0d},{id:"minecraft:attack_damage",base:2.0d},{id:"minecraft:scale",base:0.5d}],Health:2.0f}
+execute as @e[tag=silingfashi,type=minecraft:wither_skeleton,team=blue] at @s unless entity @e[type=minecraft:skeleton,distance=..2.1,tag=silingfashi] run summon minecraft:skeleton ~ ~-0.5 ~ {Team:blue,Tags:["死灵仆从"],active_effects:[{id:"speed",show_particles:0b,duration:-1}],equipment:{head:{id:"minecraft:leather_helmet"}},attributes:[{id:"minecraft:max_health",base:2.0d},{id:"minecraft:attack_damage",base:2.0d},{id:"minecraft:scale",base:0.5d}],Health:2.0f}
+execute as @e[tag=silingfashi,type=minecraft:wither_skeleton,team=blue] at @s unless entity @e[type=minecraft:skeleton,distance=..2.1,tag=silingfashi] run summon minecraft:skeleton ~ ~-0.5 ~ {Team:blue,Tags:["死灵仆从"],active_effects:[{id:"speed",show_particles:0b,duration:-1}],equipment:{head:{id:"minecraft:leather_helmet"}},attributes:[{id:"minecraft:max_health",base:2.0d},{id:"minecraft:attack_damage",base:2.0d},{id:"minecraft:scale",base:0.5d}],Health:2.0f}
 
 execute as @e[type=skeleton,tag=silingfashi] if score @s silingfashu matches 40.. at @s run particle enchanted_hit ~ ~ ~ 3 0.1 3 0 100 force
 execute as @e[tag=silingfashi,type=minecraft:wither_skeleton] at @s unless entity @e[type=skeleton,distance=..2.1,tag=silingfashi] run kill @s

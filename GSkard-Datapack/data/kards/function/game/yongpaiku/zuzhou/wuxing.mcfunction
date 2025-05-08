@@ -1,4 +1,4 @@
-execute if score @s pingbi matches 0 run tellraw @a [{"selector":"@s"},{"text":"使用了","color":"gold"},{"text":"[无形]","color":"dark_gray","hoverEvent":{"action":"show_text","value":"敌方区域怪物隐身5s"}}]
+execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.yongpaiku.template.1",color:"gold"},{translate: "game.yongpaiku.zuzhou.wuxing.1",color:"dark_gray",hover_event:{action:"show_text","value":"敌方区域怪物隐身5s"}}]
 
     #蓝
     execute if entity @s[team=blue] run effect give @e[type=!player,type=!iron_golem,team=blue] invisibility 5 1 true

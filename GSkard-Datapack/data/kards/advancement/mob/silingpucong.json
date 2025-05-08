@@ -1,17 +1,17 @@
 {
     "criteria": {
-      "requirement": {
-        "trigger": "minecraft:entity_hurt_player",
-        "conditions": {
-          "damage": {
-            "source_entity": {
-              "nbt": "{Tags:[\"死灵仆从\"]}"
+        "requirement": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "nbt": "{Tags:[\"死灵仆从\"]}"
+                    }
+                }
             }
-          }
         }
-      }
     },
     "rewards": {
-      "function": "kards:game/ingame/hurt/silingpucong"
+        "function": "kards:game/ingame/hurt/silingpucong"
     }
-  }
+}

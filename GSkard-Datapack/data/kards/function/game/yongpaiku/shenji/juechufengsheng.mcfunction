@@ -1,4 +1,4 @@
-execute if score @s pingbi matches 0 run tellraw @a [{"selector":"@s"},{"text":"使用了","color":"gold"},{"text":"[绝处逢生]","color":"white","hoverEvent":{"action":"show_text","value":"回满自身血量"}}]
+execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.yongpaiku.template.1",color:"gold"},{translate: "game.yongpaiku.shenji.juechufengsheng.1",color:"white",hover_event:{action:"show_text","value":"回满自身血量"}}]
 function kards:game/yongpaiku/xianjin/jiance/shenjijiance
 effect give @s instant_health 5 100 true
 item replace entity @s weapon.offhand with air

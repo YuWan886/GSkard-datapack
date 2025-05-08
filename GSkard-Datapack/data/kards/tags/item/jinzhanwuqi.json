@@ -1,12 +1,11 @@
 {
     "values": [
-      "minecraft:golden_carrot",
-      "minecraft:golden_sword",
-      "minecraft:iron_sword",
-      "minecraft:diamond_sword",
-      "minecraft:netherite_sword",
-      "minecraft:iron_axe",
-      "minecraft:diamond_axe"
+        "minecraft:golden_carrot",
+        "minecraft:golden_sword",
+        "minecraft:iron_sword",
+        "minecraft:diamond_sword",
+        "minecraft:netherite_sword",
+        "minecraft:iron_axe",
+        "minecraft:diamond_axe"
     ]
-  }
-  
+}

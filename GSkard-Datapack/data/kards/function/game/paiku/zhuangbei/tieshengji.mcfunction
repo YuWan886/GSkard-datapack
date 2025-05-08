@@ -1,2 +1,2 @@
 
-give @s music_disc_13[item_name='[{"text":"7K","color":"aqua"},{"text":" 铁升级","color":"gold"}]',lore=['{"text":"装备牌","color":"gold","italic":false}','{"text":"获得一套铁护甲","color":"gray","italic":false}'],jukebox_playable={song:'pigstep',show_in_tooltip:false},custom_data={kards:'铁升级'}]
+give @s music_disc_13[item_name=[{translate: "game.paiku.fashu.sijiruchun.1",color:"aqua"},{translate: "game.paiku.zhuangbei.tieshengji.1",color:"gold"}],lore=[{translate: "game.paiku.zhuangbei.bianxiehuosai.2",color:"gold",italic:false},{translate: "game.paiku.zhuangbei.tieshengji.2",color:"gray",italic:false}],jukebox_playable="minecraft:pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'铁升级'}]

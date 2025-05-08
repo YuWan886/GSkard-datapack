@@ -93,7 +93,7 @@ scoreboard objectives add random_shijiao2 dummy
 scoreboard objectives add wait_end dummy
 scoreboard objectives add red_end dummy
 scoreboard objectives add blue_end dummy
-scoreboard objectives add Leave_Game minecraft.custom:minecraft.leave_game [{"text":"离开游戏","color":"gold","bold":true}]
+scoreboard objectives add Leave_Game minecraft.custom:minecraft.leave_game [{translate: "load.1",color:"gold",bold:true}]
 scoreboard objectives add Ready dummy
 scoreboard objectives add Ready_count dummy
 scoreboard objectives add Ready_Num dummy
@@ -147,9 +147,9 @@ scoreboard objectives add wuxiuzhihuo_zhuangbei minecraft.dropped:minecraft.musi
 scoreboard objectives add wuxiuzhihuo_tuteng minecraft.dropped:minecraft.music_disc_blocks
 scoreboard objectives add wuxiuzhihuo_zuzhou minecraft.dropped:minecraft.music_disc_stal
 scoreboard objectives add wuxiuzhihuo_shenji minecraft.dropped:minecraft.music_disc_strad
-scoreboard objectives add music_kards trigger {"text":"Kards背景音乐","color":"gold","bold":true}
-scoreboard objectives add music_lengxiao trigger {"text":"楞小指定背景音乐","color":"gold","bold":true}
-scoreboard objectives add stopsound trigger {"text":"停止播放","color":"gold","bold":true}
+scoreboard objectives add music_kards trigger {translate: "load.2",color:"gold",bold:true}
+scoreboard objectives add music_lengxiao trigger {translate: "load.3",color:"gold",bold:true}
+scoreboard objectives add stopsound trigger {translate: "load.4",color:"gold",bold:true}
 scoreboard objectives add SpellTicks dummy
 scoreboard objectives add ram_cooldown_ticks dummy
 scoreboard objectives add is_panicking dummy
@@ -181,4 +181,4 @@ scoreboard objectives add in_wuwangjiangshi dummy
 scoreboard objectives add wait_spawn dummy
 scoreboard objectives add HealBack dummy
 #
-tellraw @a [{"text":"数据包加载完毕","color":"gray"}]
+tellraw @a [{translate: "load.5",color:"gray"}]

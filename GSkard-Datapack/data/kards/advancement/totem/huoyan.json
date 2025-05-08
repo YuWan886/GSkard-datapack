@@ -1,18 +1,18 @@
 {
-  "criteria": {
-    "requirement": {
-      "trigger": "minecraft:used_totem",
-      "conditions": {
-        "item": {
-          "items": "minecraft:totem_of_undying",
-          "components": {
-            "custom_data": "{kards:'火焰图腾'}"
-          }
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:used_totem",
+            "conditions": {
+                "item": {
+                    "items": "minecraft:totem_of_undying",
+                    "components": {
+                        "custom_data": "{kards:'火焰图腾'}"
+                    }
+                }
+            }
         }
-      }
+    },
+    "rewards": {
+        "function": "kards:game/yongpaiku/yansheng/totem/huoyan"
     }
-  },
-  "rewards": {
-    "function": "kards:game/yongpaiku/yansheng/totem/huoyan"
-  }
 }

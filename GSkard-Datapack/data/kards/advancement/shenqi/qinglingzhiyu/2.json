@@ -1,28 +1,27 @@
 {
     "criteria": {
-      "requirement": {
-        "trigger": "minecraft:using_item",
-        "conditions": {
-          "player": [
-            {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "equipment": {
-                  "hand": {
-                    "components": {
-                      "minecraft:custom_data": "{kards:'轻灵之语'}"
+        "requirement": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "equipment": {
+                                "hand": {
+                                    "components": {
+                                        "minecraft:custom_data": "{kards:'轻灵之语'}"
+                                    }
+                                }
+                            }
+                        }
                     }
-                  }
-                }
-              }
+                ]
             }
-          ]
         }
-      }
     },
     "rewards": {
-      "function": "kards:game/yongpaiku/shenji/wangzhibaoku/qinglingzhiyu/2"
+        "function": "kards:game/yongpaiku/shenji/wangzhibaoku/qinglingzhiyu/2"
     }
-  }
-  
+}

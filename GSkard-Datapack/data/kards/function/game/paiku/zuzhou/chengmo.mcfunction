@@ -1,2 +1,2 @@
 
-give @s music_disc_stal[item_name='[{"text":"4K","color":"aqua"},{"text":" 沉默","color":"dark_gray"}]',lore=['{"text":"诅咒牌","color":"dark_gray","italic":false}','{"text":"持续清除敌方所有玩家身边的掉落物 持续至下回合结束","color":"gray","italic":false}'],jukebox_playable={song:'pigstep',show_in_tooltip:false},custom_data={kards:'沉默'}]
+give @s music_disc_stal[item_name=[{translate: "game.paiku.fashu.jielue.1",color:"aqua"},{translate: "game.paiku.zuzhou.chengmo.1",color:"dark_gray"}],lore=[{translate: "game.paiku.zuzhou.chengmo.2",color:"dark_gray",italic:false},{translate: "game.paiku.zuzhou.chengmo.3",color:"gray",italic:false}],jukebox_playable="minecraft:pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'沉默'}]

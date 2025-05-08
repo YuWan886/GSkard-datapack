@@ -1,4 +1,4 @@
-title @a title [{"text":"蓝方回合","color":"blue","bold":true}]
+title @a title [{translate: "game.ingame.round.turns.blue.1",color:"blue",bold:true}]
 bossbar set minecraft:roundtime color blue
 scoreboard players set @a[team=red] canuse 0
 scoreboard players set @a[team=blue] canuse 1

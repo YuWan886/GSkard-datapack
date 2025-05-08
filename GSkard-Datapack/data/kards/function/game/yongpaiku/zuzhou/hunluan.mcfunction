@@ -1,4 +1,4 @@
-execute if score @s pingbi matches 0 run tellraw @a [{"selector":"@s"},{"text":"使用了","color":"gold"},{"text":"[混乱]","color":"dark_gray","hoverEvent":{"action":"show_text","value":"敌方队伍打开友伤 持续至回合结束"}}]
+execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.yongpaiku.template.1",color:"gold"},{translate: "game.yongpaiku.zuzhou.hunluan.1",color:"dark_gray",hover_event:{action:"show_text","value":"敌方队伍打开友伤 持续至回合结束"}}]
 
 #红
 execute if entity @s[team=red] run team modify blue friendlyFire true

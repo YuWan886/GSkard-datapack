@@ -51,7 +51,7 @@ execute as @a[tag=kunanyaolan] if score @s healback_kunanyaolan matches 600 run 
 execute as @a[tag=kunanyaolan] if score @s healback_kunanyaolan matches 600 run scoreboard players set @s behurt_kunanyaolan2 0
 execute as @a[tag=kunanyaolan] if score @s healback_kunanyaolan matches 600 run scoreboard players operation @s healback_kunanyaolan2 *= system healback_kunanyaolan
 execute as @a[tag=kunanyaolan] if score @s healback_kunanyaolan matches 600 run scoreboard players operation @s healback_kunanyaolan2 /= system healback_kunanyaolan2
-execute as @a[tag=kunanyaolan] if score @s healback_kunanyaolan matches 600 run tellraw @s [{"text":"[苦难摇篮] ","color":"red"},{"text":"苦痛转化效果触发!","color":"green"}]
+execute as @a[tag=kunanyaolan] if score @s healback_kunanyaolan matches 600 run tellraw @s [{translate: "game.yongpaiku.shenji.wangzhibaoku.general.1",color:"red"},{translate: "game.yongpaiku.shenji.wangzhibaoku.general.2",color:"green"}]
 execute as @a[tag=kunanyaolan] if score @s healback_kunanyaolan matches 600 at @s run playsound minecraft:entity.arrow.hit_player player @s ~ ~ ~ 100 0
 execute as @a[tag=kunanyaolan] if score @s healback_kunanyaolan matches 600.. run scoreboard players set @s healback_kunanyaolan 0
 
@@ -138,12 +138,12 @@ execute as @a[tag=wuxiuzhihuo] if score @s wuxiuzhihuo_rongzhu matches 1 if scor
 
 execute as @a[tag=wuxiuzhihuo] if score @s wuxiuzhihuo_throw matches 1.. run function kards:game/yongpaiku/shenji/wangzhibaoku/wuxiuzhihuo/throw
 
-execute as @a[tag=wuxiuzhihuo] if items entity @s weapon.mainhand lantern[custom_data={kards:'无休之火'}] if score @s wuxiuzhihuo_shengji matches 1..45 run title @s actionbar [{"text":"初窥  ","color":"aqua"},{"score":{"objective":"wuxiuzhihuo_shengji","name":"@s"},"color":"green"}]
-execute as @a[tag=wuxiuzhihuo] if items entity @s weapon.mainhand lantern[custom_data={kards:'无休之火'}] if score @s wuxiuzhihuo_shengji matches 46..90 run title @s actionbar [{"text":"开窍  ","color":"blue"},{"score":{"objective":"wuxiuzhihuo_shengji","name":"@s"},"color":"green"}]
-execute as @a[tag=wuxiuzhihuo] if items entity @s weapon.mainhand lantern[custom_data={kards:'无休之火'}] if score @s wuxiuzhihuo_shengji matches 91..135 run title @s actionbar [{"text":"焱智  ","color":"yellow"},{"score":{"objective":"wuxiuzhihuo_shengji","name":"@s"},"color":"green"}]
-execute as @a[tag=wuxiuzhihuo] if items entity @s weapon.mainhand lantern[custom_data={kards:'无休之火'}] if score @s wuxiuzhihuo_shengji matches 136..180 run title @s actionbar [{"text":"合一  ","color":"gold"},{"score":{"objective":"wuxiuzhihuo_shengji","name":"@s"},"color":"green"}]
-execute as @a[tag=wuxiuzhihuo] if items entity @s weapon.mainhand lantern[custom_data={kards:'无休之火'}] if score @s wuxiuzhihuo_shengji matches 181..350 run title @s actionbar [{"text":"天察  ","color":"red"},{"score":{"objective":"wuxiuzhihuo_shengji","name":"@s"},"color":"green"}]
-execute as @a[tag=wuxiuzhihuo] if items entity @s weapon.mainhand lantern[custom_data={kards:'无休之火'}] if score @s wuxiuzhihuo_shengji matches 351.. run title @s actionbar [{"text":"无休  ","color":"dark_red"},{"score":{"objective":"wuxiuzhihuo_shengji","name":"@s"},"color":"green"}]
+execute as @a[tag=wuxiuzhihuo] if items entity @s weapon.mainhand lantern[custom_data={kards:'无休之火'}] if score @s wuxiuzhihuo_shengji matches 1..45 run title @s actionbar [{translate: "game.yongpaiku.shenji.wangzhibaoku.general.3",color:"aqua"},{score:{objective:"wuxiuzhihuo_shengji",name:"@s"},color:"green"}]
+execute as @a[tag=wuxiuzhihuo] if items entity @s weapon.mainhand lantern[custom_data={kards:'无休之火'}] if score @s wuxiuzhihuo_shengji matches 46..90 run title @s actionbar [{translate: "game.yongpaiku.shenji.wangzhibaoku.general.4",color:"blue"},{score:{objective:"wuxiuzhihuo_shengji",name:"@s"},color:"green"}]
+execute as @a[tag=wuxiuzhihuo] if items entity @s weapon.mainhand lantern[custom_data={kards:'无休之火'}] if score @s wuxiuzhihuo_shengji matches 91..135 run title @s actionbar [{translate: "game.yongpaiku.shenji.wangzhibaoku.general.5",color:"yellow"},{score:{objective:"wuxiuzhihuo_shengji",name:"@s"},color:"green"}]
+execute as @a[tag=wuxiuzhihuo] if items entity @s weapon.mainhand lantern[custom_data={kards:'无休之火'}] if score @s wuxiuzhihuo_shengji matches 136..180 run title @s actionbar [{translate: "game.yongpaiku.shenji.wangzhibaoku.general.6",color:"gold"},{score:{objective:"wuxiuzhihuo_shengji",name:"@s"},color:"green"}]
+execute as @a[tag=wuxiuzhihuo] if items entity @s weapon.mainhand lantern[custom_data={kards:'无休之火'}] if score @s wuxiuzhihuo_shengji matches 181..350 run title @s actionbar [{translate: "game.yongpaiku.shenji.wangzhibaoku.general.7",color:"red"},{score:{objective:"wuxiuzhihuo_shengji",name:"@s"},color:"green"}]
+execute as @a[tag=wuxiuzhihuo] if items entity @s weapon.mainhand lantern[custom_data={kards:'无休之火'}] if score @s wuxiuzhihuo_shengji matches 351.. run title @s actionbar [{translate: "game.yongpaiku.shenji.wangzhibaoku.general.8",color:"dark_red"},{score:{objective:"wuxiuzhihuo_shengji",name:"@s"},color:"green"}]
 
 execute as @a if items entity @s weapon.offhand lantern[custom_data={kards:'无休之火'}] run tag @s add fire
 execute as @a if items entity @s weapon.offhand lantern[custom_data={kards:'无休之火'}] run scoreboard players set @s fire 295
@@ -169,7 +169,7 @@ execute as @a[tag=sishenzhilian] run scoreboard players operation @s sishenzhili
 execute as @a[tag=sishenzhilian] if score @s used_sishenzhilian matches 1.. run scoreboard players set @s sishenzhilian_damage 0
 execute as @a[tag=sishenzhilian] if score @s used_sishenzhilian matches 1.. run scoreboard players set @s used_sishenzhilian 0
 execute as @a[tag=sishenzhilian] if score @s sishenzhilian_damage_tongji matches 600.. run effect give @s instant_health 1 1 true
-execute as @a[tag=sishenzhilian] if score @s sishenzhilian_damage_tongji matches 600.. run tellraw @s [{"text":"[死神之镰] ","color":"red"},{"text":"累计造成30♥伤害 回复4♥","color":"green"}]
+execute as @a[tag=sishenzhilian] if score @s sishenzhilian_damage_tongji matches 600.. run tellraw @s [{translate: "game.yongpaiku.shenji.wangzhibaoku.general.9",color:"red"},{translate: "game.yongpaiku.shenji.wangzhibaoku.general.10",color:"green"}]
 execute as @a[tag=sishenzhilian] if score @s sishenzhilian_damage_tongji matches 600.. run scoreboard players remove @s sishenzhilian_damage_tongji 600
 execute as @a[tag=sishenzhilian] unless items entity @s weapon.mainhand *[custom_data={kards:'死神之镰'}] run tag @s remove sishenzhilian
 execute as @a store result score @s sishenzhilian_soul_small run clear @s *[minecraft:custom_data={kards:'灵魂_小'}] 0
@@ -183,14 +183,14 @@ execute as @a[tag=zhengyichangji] unless items entity @s weapon.mainhand *[custo
 execute as @a[tag=used_zhengyichangji] run scoreboard players set @s used_zhengyichangji 100
 execute as @a[tag=used_zhengyichangji] run tag @s remove used_zhengyichangji
 scoreboard players add @a used_zhengyichangji 0
-execute as @a if score @s used_zhengyichangji matches 1 run tellraw @s [{"text":"[正义长戟] ","color":"aqua"},{"text":"制裁效果冷却完毕!","color":"green"}]
+execute as @a if score @s used_zhengyichangji matches 1 run tellraw @s [{translate: "game.yongpaiku.shenji.wangzhibaoku.general.11",color:"aqua"},{translate: "game.yongpaiku.shenji.wangzhibaoku.general.12",color:"green"}]
 execute as @a if score @s used_zhengyichangji matches 1 at @s run playsound minecraft:item.trident.riptide_1 player @s ~ ~ ~ 100 2
 execute as @a if score @s used_zhengyichangji matches 1.. run scoreboard players remove @s used_zhengyichangji 1
 #轻灵之语
 execute as @a if items entity @s weapon.* *[custom_data={kards:'轻灵之语'}] run tag @s add qinglingzhiyu
 execute as @a if items entity @s container.* *[custom_data={kards:'轻灵之语'}] run tag @s add qinglingzhiyu_skill
 execute as @a if items entity @s weapon.* *[custom_data={kards:'轻灵之语'}] run tag @s add qinglingzhiyu_skill
-execute as @a[tag=qinglingzhiyu_skill] if score @s jitui_qinglingzhiyu matches 1 run tellraw @s [{"text":"[轻灵之语] ","color":"aqua"},{"text":"抗拒效果冷却完毕!","color":"green"}]
+execute as @a[tag=qinglingzhiyu_skill] if score @s jitui_qinglingzhiyu matches 1 run tellraw @s [{translate: "game.yongpaiku.shenji.wangzhibaoku.general.13",color:"aqua"},{translate: "game.yongpaiku.shenji.wangzhibaoku.general.14",color:"green"}]
 execute as @a[tag=qinglingzhiyu_skill] if score @s jitui_qinglingzhiyu matches 1 at @s run playsound minecraft:entity.phantom.flap player @s ~ ~ ~ 100 2
 execute as @a[tag=qinglingzhiyu_skill] if score @s jitui_qinglingzhiyu matches 0 run attribute @s attack_knockback modifier add 0-0-1 5 add_value
 execute as @a[tag=qinglingzhiyu_skill] if score @s jitui_qinglingzhiyu matches 1.. run attribute @s attack_knockback modifier remove 0-0-1

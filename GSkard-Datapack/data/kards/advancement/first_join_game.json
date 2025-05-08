@@ -1,11 +1,10 @@
 {
     "criteria": {
-      "requirement": {
-        "trigger": "minecraft:impossible"
-      }
+        "requirement": {
+            "trigger": "minecraft:impossible"
+        }
     },
     "rewards": {
-      "function": "kards:first_join_game"
+        "function": "kards:first_join_game"
     }
-  }
-  
+}

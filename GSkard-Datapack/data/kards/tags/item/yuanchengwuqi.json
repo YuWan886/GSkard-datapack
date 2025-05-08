@@ -1,7 +1,6 @@
 {
     "values": [
-      "minecraft:fishing_rod",
-      "minecraft:bow"
+        "minecraft:fishing_rod",
+        "minecraft:bow"
     ]
-  }
-  
+}

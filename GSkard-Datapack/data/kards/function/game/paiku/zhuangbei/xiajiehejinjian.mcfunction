@@ -1,2 +1,2 @@
 
-give @s music_disc_13[item_name='[{"text":"12K","color":"aqua"},{"text":" 下界合金剑","color":"gold"}]',lore=['{"text":"装备牌","color":"gold","italic":false}','{"text":"获得一把下界合金剑","color":"gray","italic":false}'],jukebox_playable={song:'pigstep',show_in_tooltip:false},custom_data={kards:'下界合金剑'}]
+give @s music_disc_13[item_name=[{translate: "game.paiku.fashu.youchangjiedai.3",color:"aqua"},{translate: "game.paiku.zhuangbei.xiajiehejinjian.1",color:"gold"}],lore=[{translate: "game.paiku.zhuangbei.bianxiehuosai.2",color:"gold",italic:false},{translate: "game.paiku.zhuangbei.xiajiehejinjian.2",color:"gray",italic:false}],jukebox_playable="minecraft:pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'下界合金剑'}]

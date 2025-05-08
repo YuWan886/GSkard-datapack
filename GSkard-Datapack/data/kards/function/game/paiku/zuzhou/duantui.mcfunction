@@ -1,2 +1,2 @@
 
-give @s music_disc_stal[item_name='[{"text":"2K","color":"aqua"},{"text":" 断腿","color":"dark_gray"}]',lore=['{"text":"诅咒牌","color":"dark_gray","italic":false}','{"text":"给敌方玩家施加缓慢2以及不能跳跃 持续15s","color":"gray","italic":false}'],jukebox_playable={song:'pigstep',show_in_tooltip:false},custom_data={kards:'断腿'}]
+give @s music_disc_stal[item_name=[{translate: "game.paiku.fashu.chongzhu.1",color:"aqua"},{translate: "game.paiku.zuzhou.duantui.1",color:"dark_gray"}],lore=[{translate: "game.paiku.zuzhou.chengmo.2",color:"dark_gray",italic:false},{translate: "game.paiku.zuzhou.duantui.2",color:"gray",italic:false}],jukebox_playable="minecraft:pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'断腿'}]

@@ -1,15 +1,15 @@
 [
-  {
-    "function": "minecraft:set_attributes",
-    "modifiers": [
-      {
-        "id": "0-0-5",
-        "attribute": "minecraft:attack_damage",
-        "amount": 5,
-        "operation": "add_value",
-        "slot": "mainhand"
-      }
-    ],
-    "replace": false
-  }
+    {
+        "function": "minecraft:set_attributes",
+        "modifiers": [
+            {
+                "id": "0-0-5",
+                "attribute": "minecraft:attack_damage",
+                "amount": 5,
+                "operation": "add_value",
+                "slot": "mainhand"
+            }
+        ],
+        "replace": false
+    }
 ]

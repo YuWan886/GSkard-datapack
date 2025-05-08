@@ -1,4 +1,4 @@
-execute if score @s pingbi matches 0 run tellraw @a [{"selector":"@s"},{"text":"使用了","color":"gold"},{"text":"[远古守卫者]","color":"gray"}]
+execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.yongpaiku.template.1",color:"gold"},{translate: "game.yongpaiku.jiben.yuangushouweizhe.1",color:"gray"}]
 
     #红队用
    execute if entity @s[team=red] as @e[tag=7r] at @s run summon minecraft:elder_guardian ~ 0 ~ {Team:red,Health:40.0f}

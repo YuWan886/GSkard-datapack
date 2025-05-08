@@ -55,4 +55,4 @@ execute as @a at @s run playsound minecraft:entity.player.levelup master @s ~ ~ 
 #音乐
 execute as @a at @s run stopsound @s
 #execute as @a at @s run playsound minecraft:kards_music master @s ~ ~ ~ 100 1
-#tellraw @a [{"text": "正在播放音乐~可使用","color": "green"},{"text": "/trigger stopsound","color": "gold"},{"text": "\n或是使用","color": "green"},{"text": "/trigger music_kards","color": "gold"},{"text": "以更换音乐","color": "green"}]
+#tellraw @a [{translate: "game.start.input.1",color: "green"},{translate: "game.start.input.2",color: "gold"},{translate: "game.start.input.3",color: "green"},{translate: "game.start.input.4",color: "gold"},{translate: "game.start.input.5",color: "green"}]

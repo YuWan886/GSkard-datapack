@@ -18,5 +18,5 @@ data modify entity @e[tag=map,type=block_display,limit=1] interpolation_duration
 
 execute unless entity @e[type=interaction,tag=map] run summon minecraft:interaction 83 227.2 -35 {response:1b,Tags:["map"]}
 
-execute unless entity @e[type=text_display,tag=map] run summon minecraft:text_display 83 226.7 -35 {billboard:vertical,text:'"\\u00A76点我切换至下一张地图"',Tags:["map"]}
+execute unless entity @e[type=text_display,tag=map] run summon minecraft:text_display 83 226.7 -35 {billboard:vertical,translate: 'lobby.setting.map.general.1',Tags:["map"]}
 

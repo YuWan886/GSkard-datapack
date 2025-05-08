@@ -1,10 +1,10 @@
 scoreboard players set system RoundCount 50
-tellraw @a [{"text": "\n提示:","color": "gold"},{"text": "PVP回合设置为","color": "green"},{"text": " 50","color": "gold"}]
+tellraw @a [{translate: "lobby.setting.pvpround.off.1",color: "gold"},{translate: "lobby.setting.pvpround.open.3",color: "green"},{translate: "lobby.setting.roundcount.50.1",color: "gold"}]
 execute as @a at @s run playsound minecraft:block.amethyst_block.hit player @s ~ ~ ~ 100 2
 setblock 61 227 -11 air
-setblock 61 227 -11 minecraft:oak_wall_sign[facing=east]{front_text:{messages:['{"clickEvent":{"action":"run_command","value":"/function kards:lobby/setting/roundcount/10"},"color":"gold","text":"PVP回合设置为"}','{"text":"50","color":"green"}','""','""']}} replace
+setblock 61 227 -11 minecraft:oak_wall_sign[facing=east]{front_text:{messages:[{click_event:{action:"run_command",command:"/function kards:lobby/setting/roundcount/10"},color:"gold",translate: "lobby.setting.pvpround.open.3"},{translate: "lobby.setting.roundcount.50.2",color:"green"},'""','""']}} replace
 
 scoreboard players set system DifficultyRound 26
-tellraw @a [{"text": "提示:","color": "gold"},{"text": "困难模式回合设置为","color": "green"},{"text": " 26","color": "gold"}]
-setblock 61 226 -10 minecraft:oak_wall_sign[facing=east]{front_text:{messages:['{"color":"gold","text":"困难模式回合"}','{"text":"26","color":"green"}','{"text":"不可手动调整","color":"gray"}','""']}} destroy
+tellraw @a [{translate: "lobby.setting.choupai.11and15.1.1",color: "gold"},{translate: "lobby.setting.pvpround.open.6",color: "green"},{translate: "lobby.setting.roundcount.50.3",color: "gold"}]
+setblock 61 226 -10 minecraft:oak_wall_sign[facing=east]{front_text:{messages:[{color:"gold",translate: "lobby.setting.pvpround.open.8"},{translate: "lobby.setting.roundcount.50.4",color:"green"},{translate: "lobby.setting.pvpround.open.10",color:"gray"},'""']}} destroy
 kill @e[nbt={Item:{id:"minecraft:oak_sign"}}]

@@ -1,23 +1,23 @@
 {
     "display": {
-      "icon": {
-        "id": "minecraft:apple",
-        "count": 1
-      },
-      "title": "搞牌,启动!",
-      "description": "完成新手教程",
-      "frame": "task",
-      "show_toast": true,
-      "announce_to_chat": true,
-      "hidden": false
+        "icon": {
+            "id": "minecraft:apple",
+            "count": 1
+        },
+        "title": "搞牌,启动!",
+        "description": "完成新手教程",
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
     },
     "parent": "kards:chengjiu/first_join_game",
     "criteria": {
-      "requirement": {
-        "trigger": "minecraft:impossible"
-      }
+        "requirement": {
+            "trigger": "minecraft:impossible"
+        }
     },
     "rewards": {
-      "function": "kards:chengjiu/jiaocheng"
+        "function": "kards:chengjiu/jiaocheng"
     }
-  }
+}

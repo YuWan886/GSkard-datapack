@@ -1,5 +1,5 @@
-execute if score @s pingbi matches 0 run tellraw @a [{"selector":"@s"},{"text":"使用了","color":"gold"},{"text":"[便携活塞]","color":"gold"}]
-give @s minecraft:sticky_piston[item_name='{"text":"便携活塞","color":"green"}',lore=['[{"text":"放在背包最右侧一列佩戴 同个配件只生效一个","color":"gray","italic":false}]','[{"text":"","color":"gray","italic":false}]','[{"text":"佩戴时：","color":"gray","italic":false}]','[{"text":"+1 击退","color":"blue","italic":false}]'],max_stack_size=1,custom_data={kards:'便携活塞'}]
+execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.yongpaiku.template.1",color:"gold"},{translate: "game.yongpaiku.zhuangbei.bianxiehuosai.1",color:"gold"}]
+give @s minecraft:sticky_piston[item_name={translate: "game.yongpaiku.zhuangbei.bianxiehuosai.2",color:"green"},lore=[[{translate: "game.yongpaiku.zhuangbei.bianxiehuosai.3",color:"gray",italic:false}],[{translate: "game.end.reset.11",color:"gray",italic:false}],[{translate: "game.yongpaiku.zhuangbei.bianxiehuosai.4",color:"gray",italic:false}],[{translate: "game.yongpaiku.zhuangbei.bianxiehuosai.5",color:"blue",italic:false}]],max_stack_size=1,custom_data={kards:'便携活塞'}]
 
 item replace entity @s weapon.offhand with air
 scoreboard players remove @s kardCount 5

@@ -1,2 +1,2 @@
 
-give @s music_disc_mellohi[item_name='[{"text":"3K","color":"aqua"},{"text":" 过河拆桥","color":"light_purple"}]',lore=['{"text":"法术牌","color":"light_purple","italic":false}','{"text":"随机弃掉敌方1名玩家1张牌","color":"gray","italic":false}'],jukebox_playable={song:'pigstep',show_in_tooltip:false},custom_data={kards:'过河拆桥'}]
+give @s music_disc_mellohi[item_name=[{translate: "game.paiku.fashu.guohechaiqiao.1",color:"aqua"},{translate: "game.paiku.fashu.guohechaiqiao.2",color:"light_purple"}],lore=[{translate: "game.paiku.fashu.beishuiyizhan.3",color:"light_purple",italic:false},{translate: "game.paiku.fashu.guohechaiqiao.3",color:"gray",italic:false}],jukebox_playable="minecraft:pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'过河拆桥'}]

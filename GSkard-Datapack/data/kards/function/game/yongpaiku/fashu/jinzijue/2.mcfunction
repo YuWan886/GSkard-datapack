@@ -11,5 +11,5 @@ execute if score @s jinzijue matches 7 run attribute @s minecraft:max_health mod
 execute if score @s jinzijue matches 8 run attribute @s minecraft:max_health modifier add 0-0-8 -30 add_value
 execute if score @s jinzijue matches 9 run attribute @s minecraft:max_health modifier add 0-0-9 -30 add_value
 execute if score @s jinzijue matches 10 run attribute @s minecraft:max_health modifier add 0-0-10 500 add_value
-tellraw @a [{text:"禁字诀层数:",color:"dark_red",bold:false},{score:{objective:"jinzijue",name:"@s"},color:"green",bold:false}]
-execute if score @s jinzijue matches 10 run tellraw @a [{selector:"@s"},{text:"血量+250♥ 天神下凡 胜负已定"}]
+tellraw @a [{translate: "game.yongpaiku.fashu.jinzijue.2.1",color:"dark_red",bold:false},{score:{objective:"jinzijue",name:"@s"},color:"green",bold:false}]
+execute if score @s jinzijue matches 10 run tellraw @a [{selector:"@s"},{translate: "game.yongpaiku.fashu.jinzijue.2.2"}]

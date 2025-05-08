@@ -1,2 +1,2 @@
 
-give @s music_disc_stal[item_name='[{"text":"5K","color":"aqua"},{"text":" 无形","color":"dark_gray"}]',lore=['{"text":"诅咒牌","color":"dark_gray","italic":false}','{"text":"给敌方场地怪物隐身 持续5s","color":"gray","italic":false}'],jukebox_playable={song:'pigstep',show_in_tooltip:false},custom_data={kards:'无形'}]
+give @s music_disc_stal[item_name=[{translate: "game.paiku.fashu.beishuiyizhan.1",color:"aqua"},{translate: "game.paiku.zuzhou.wuxing.1",color:"dark_gray"}],lore=[{translate: "game.paiku.zuzhou.chengmo.2",color:"dark_gray",italic:false},{translate: "game.paiku.zuzhou.wuxing.2",color:"gray",italic:false}],jukebox_playable="minecraft:pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'无形'}]

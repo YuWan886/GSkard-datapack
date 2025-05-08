@@ -1,5 +1,5 @@
-execute if score @s pingbi matches 0 run tellraw @a [{"selector":"@s"},{"text":"使用了","color":"gold"},{"text":"[海龟鳞甲]","color":"gold"}]
-give @s minecraft:turtle_scute[item_name='{"text":"海龟鳞甲","color":"gold"}',lore=['[{"text":"放在背包最右侧一列佩戴 同个配件只生效一个","color":"gray","italic":false}]','[{"text":"","color":"gray","italic":false}]','[{"text":"佩戴时：","color":"gray","italic":false}]','[{"text":"+5 护甲值","color":"blue","italic":false}]','[{"text":"+1 盔甲韧性","color":"blue","italic":false}]'],max_stack_size=1,custom_data={kards:'海龟鳞甲'}]
+execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.yongpaiku.template.1",color:"gold"},{translate: "game.yongpaiku.zhuangbei.haiguilinjia.1",color:"gold"}]
+give @s minecraft:turtle_scute[item_name={translate: "game.yongpaiku.zhuangbei.haiguilinjia.2",color:"gold"},lore=[[{translate: "game.yongpaiku.zhuangbei.bianxiehuosai.3",color:"gray",italic:false}],[{translate: "game.end.reset.11",color:"gray",italic:false}],[{translate: "game.yongpaiku.zhuangbei.bianxiehuosai.4",color:"gray",italic:false}],[{translate: "game.yongpaiku.shenji.wangzhibaoku.kunanyaolan.give.7",color:"blue",italic:false}],[{translate: "game.yongpaiku.zhuangbei.haiguilinjia.3",color:"blue",italic:false}]],max_stack_size=1,custom_data={kards:'海龟鳞甲'}]
 
 item replace entity @s weapon.offhand with air
 scoreboard players remove @s kardCount 5

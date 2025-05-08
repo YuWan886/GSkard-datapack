@@ -1,2 +1,2 @@
 
-give @s music_disc_stal[item_name='[{"text":"1K","color":"aqua"},{"text":" 混乱","color":"dark_gray"}]',lore=['{"text":"诅咒牌","color":"dark_gray","italic":false}','{"text":"打开敌方队伍友伤 持续至回合结束","color":"gray","italic":false}'],jukebox_playable={song:'pigstep',show_in_tooltip:false},custom_data={kards:'混乱'}]
+give @s music_disc_stal[item_name=[{translate: "game.paiku.fashu.chaotuoxili.1",color:"aqua"},{translate: "game.paiku.zuzhou.hunluan.1",color:"dark_gray"}],lore=[{translate: "game.paiku.zuzhou.chengmo.2",color:"dark_gray",italic:false},{translate: "game.paiku.zuzhou.hunluan.2",color:"gray",italic:false}],jukebox_playable="minecraft:pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'混乱'}]

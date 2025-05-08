@@ -1,4 +1,4 @@
-execute if score @s pingbi matches 0 run tellraw @a [{"selector":"@s"},{"text":"使用了","color":"gold"},{"text":"[复制]","color":"white","hoverEvent":{"action":"show_text","value":"复制物品栏第一格物品"}}]
+execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.yongpaiku.template.1",color:"gold"},{translate: "game.yongpaiku.shenji.fuzhi.1",color:"white",hover_event:{action:"show_text","value":"复制物品栏第一格物品"}}]
 function kards:game/yongpaiku/xianjin/jiance/shenjijiance
 item replace entity @s weapon.offhand with air
 scoreboard players set @s chiniaolongyu 0

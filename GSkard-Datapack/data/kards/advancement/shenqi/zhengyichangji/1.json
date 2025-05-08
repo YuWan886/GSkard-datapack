@@ -1,23 +1,23 @@
 {
-  "criteria": {
-    "requirement": {
-      "trigger": "minecraft:entity_hurt_player",
-      "conditions": {
-        "damage": {
-          "source_entity": {
-            "equipment": {
-              "mainhand": {
-                "components": {
-                  "minecraft:custom_data": "{kards:'正义长戟'}"
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "equipment": {
+                            "mainhand": {
+                                "components": {
+                                    "minecraft:custom_data": "{kards:'正义长戟'}"
+                                }
+                            }
+                        }
+                    }
                 }
-              }
             }
-          }
         }
-      }
+    },
+    "rewards": {
+        "function": "kards:game/yongpaiku/shenji/wangzhibaoku/zhengyichangji/1"
     }
-  },
-  "rewards": {
-    "function": "kards:game/yongpaiku/shenji/wangzhibaoku/zhengyichangji/1"
-  }
 }
