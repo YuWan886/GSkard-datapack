@@ -180,5 +180,7 @@ scoreboard objectives add wuwangchuchang dummy
 scoreboard objectives add in_wuwangjiangshi dummy
 scoreboard objectives add wait_spawn dummy
 scoreboard objectives add HealBack dummy
+scoreboard objectives add MapCount dummy
+scoreboard objectives add senlinzhihu_HealBack dummy
 #
 tellraw @a [{translate: "load.5",color:"gray"}]

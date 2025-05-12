@@ -1,6 +1,9 @@
 #森林之护
 execute as @a if items entity @s armor.chest *[custom_data={kards:'森林之护'}] run tag @s add senlinzhihu
-effect give @a[tag=senlinzhihu] minecraft:regeneration infinite 0 true
+scoreboard players add @a[tag=senlinzhihu] senlinzhihu_HealBack 1
+execute as @a[tag=senlinzhihu] if score @s senlinzhihu_HealBack matches 50 run scoreboard players add @s HealBack 1
+execute as @a[tag=senlinzhihu] if score @s senlinzhihu_HealBack matches 50 run scoreboard players set @s senlinzhihu_HealBack 0
+
 scoreboard players add @a[tag=senlinzhihu] senlinzhihu 1
 execute as @a[tag=senlinzhihu] if score @s senlinzhihu matches 1200.. run effect give @s absorption 60 4 true
 execute as @a[tag=senlinzhihu] if score @s senlinzhihu matches 1200.. run scoreboard players set @s senlinzhihu 0
@@ -9,9 +12,18 @@ execute as @a[tag=senlinzhihu] unless items entity @s armor.chest *[custom_data=
 #天神石板甲
 execute as @a if items entity @s armor.chest *[custom_data={kards:'天神石板甲'}] run tag @s add tianshenshibanjia
 scoreboard players add @a[tag=tianshenshibanjia] damage_tianshenshibanjia 1
-execute as @a[team=red,tag=tianshenshibanjia] if score @s damage_tianshenshibanjia matches 30 at @s as @e[team=blue,distance=..5] run damage @s 6 kards:tianshenshibanjia by @p[team=red,tag=tianshenshibanjia]
-execute as @a[team=blue,tag=tianshenshibanjia] if score @s damage_tianshenshibanjia matches 30 at @s as @e[team=red,distance=..5] run damage @s 6 kards:tianshenshibanjia by @p[team=blue,tag=tianshenshibanjia]
-execute as @a[tag=tianshenshibanjia] if score @s damage_tianshenshibanjia matches 30.. run scoreboard players set @s damage_tianshenshibanjia 0
+execute as @a[team=red,tag=tianshenshibanjia] if score @s damage_tianshenshibanjia matches 90 at @s as @e[team=blue,distance=..5,limit=1,sort=random] run damage @s 8 kards:tianshenshibanjia by @p[team=red,tag=tianshenshibanjia]
+execute as @a[team=red,tag=tianshenshibanjia] if score @s damage_tianshenshibanjia matches 91 at @s as @e[team=blue,distance=..5,limit=1,sort=random] run damage @s 8 kards:tianshenshibanjia by @p[team=red,tag=tianshenshibanjia]
+execute as @a[team=red,tag=tianshenshibanjia] if score @s damage_tianshenshibanjia matches 92 at @s as @e[team=blue,distance=..5,limit=1,sort=random] run damage @s 8 kards:tianshenshibanjia by @p[team=red,tag=tianshenshibanjia]
+execute as @a[team=red,tag=tianshenshibanjia] if score @s damage_tianshenshibanjia matches 93 at @s as @e[team=blue,distance=..5,limit=1,sort=random] run damage @s 8 kards:tianshenshibanjia by @p[team=red,tag=tianshenshibanjia]
+execute as @a[team=red,tag=tianshenshibanjia] if score @s damage_tianshenshibanjia matches 94 at @s as @e[team=blue,distance=..5,limit=1,sort=random] run damage @s 8 kards:tianshenshibanjia by @p[team=red,tag=tianshenshibanjia]
+
+execute as @a[team=blue,tag=tianshenshibanjia] if score @s damage_tianshenshibanjia matches 90 at @s as @e[team=red,distance=..5,limit=1,sort=random] run damage @s 8 kards:tianshenshibanjia by @p[team=blue,tag=tianshenshibanjia]
+execute as @a[team=blue,tag=tianshenshibanjia] if score @s damage_tianshenshibanjia matches 91 at @s as @e[team=red,distance=..5,limit=1,sort=random] run damage @s 8 kards:tianshenshibanjia by @p[team=blue,tag=tianshenshibanjia]
+execute as @a[team=blue,tag=tianshenshibanjia] if score @s damage_tianshenshibanjia matches 92 at @s as @e[team=red,distance=..5,limit=1,sort=random] run damage @s 8 kards:tianshenshibanjia by @p[team=blue,tag=tianshenshibanjia]
+execute as @a[team=blue,tag=tianshenshibanjia] if score @s damage_tianshenshibanjia matches 93 at @s as @e[team=red,distance=..5,limit=1,sort=random] run damage @s 8 kards:tianshenshibanjia by @p[team=blue,tag=tianshenshibanjia]
+execute as @a[team=blue,tag=tianshenshibanjia] if score @s damage_tianshenshibanjia matches 94 at @s as @e[team=red,distance=..5,limit=1,sort=random] run damage @s 8 kards:tianshenshibanjia by @p[team=blue,tag=tianshenshibanjia]
+execute as @a[tag=tianshenshibanjia] if score @s damage_tianshenshibanjia matches 90.. run scoreboard players set @s damage_tianshenshibanjia 0
 
 execute as @a[tag=tianshenshibanjia] run attribute @s minecraft:entity_interaction_range modifier add 0-0-1 -3 add_value
 execute as @a[tag=tianshenshibanjia] unless items entity @s armor.chest *[custom_data={kards:'天神石板甲'}] run attribute @s minecraft:entity_interaction_range modifier remove 0-0-1 
