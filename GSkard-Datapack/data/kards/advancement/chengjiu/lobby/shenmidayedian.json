@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:dispenser",
+      "count": 1
+    },
+    "title": "神秘打野点?",
+    "description": "这是何处啊?",
+    "background": "minecraft:textures/block/chiseled_tuff_bricks.png",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "kards:chengjiu/lobby/shenmidayedain"
+  }
+}

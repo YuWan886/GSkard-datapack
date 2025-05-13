@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:golden_horse_armor",
+      "count": 1
+    },
+    "title": "神秘跑酷点",
+    "description": "LengxiaoCN:我会一直看着你..永远...",
+    "background": "minecraft:textures/block/chiseled_tuff_bricks.png",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "kards:chengjiu/lobby/find_running"
+  }
+}
