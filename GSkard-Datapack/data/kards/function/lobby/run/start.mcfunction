@@ -1,4 +1,4 @@
-tellraw @s [{"text":"[跑酷]","color":"green"},{"text":"计时开始","color":"gold"}]
+tellraw @s [{translate: "lobby.run.backpoint.1",color:"green"},{translate: "lobby.run.start.1",color:"gold"}]
 tag @s add Running
 tag @s add RunningReset
 tag @s remove Ready

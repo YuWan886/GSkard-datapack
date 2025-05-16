@@ -1,23 +1,27 @@
 {
     "display": {
-      "icon": {
-        "id": "minecraft:golden_apple",
-        "count": 1
-      },
-      "title": "老登",
-      "description": "难道他真是搞牌高手?",
-      "frame": "task",
-      "show_toast": true,
-      "announce_to_chat": true,
-      "hidden": false
+        "icon": {
+            "id": "minecraft:golden_apple",
+            "count": 1
+        },
+        "title": {
+            "translate": "chengjiu.laodeng.5"
+        },
+        "description": {
+            "translate": "chengjiu.laodeng.6"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
     },
     "parent": "kards:chengjiu/first_join_game",
     "criteria": {
-      "requirement": {
-        "trigger": "minecraft:impossible"
-      }
+        "requirement": {
+            "trigger": "minecraft:impossible"
+        }
     },
     "rewards": {
-      "function": "kards:chengjiu/laodeng"
+        "function": "kards:chengjiu/laodeng"
     }
-  }
+}

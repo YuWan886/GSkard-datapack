@@ -1,44 +1,48 @@
 {
-  "parent": "kards:chengjiu/lobby/shenmidayedian",
-  "display": {
-    "icon": {
-      "id": "minecraft:barrier",
-      "count": 1
+    "parent": "kards:chengjiu/lobby/shenmidayedian",
+    "display": {
+        "icon": {
+            "id": "minecraft:barrier",
+            "count": 1
+        },
+        "title": {
+            "translate": "chengjiu.lobby.bushizhe.7"
+        },
+        "description": {
+            "translate": "chengjiu.lobby.bushizhe.8"
+        },
+        "background": "minecraft:textures/block/chiseled_tuff_bricks.png",
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
     },
-    "title": "不是这",
-    "description": "好像走错路了 这里啥也没有",
-    "background": "minecraft:textures/block/chiseled_tuff_bricks.png",
-    "frame": "task",
-    "show_toast": true,
-    "announce_to_chat": true,
-    "hidden": false
-  },
-  "criteria": {
-    "requirement": {
-      "trigger": "minecraft:location",
-      "conditions": {
-        "player": {
-          "location": {
-            "position": {
-              "x": {
-                "min": 48,
-                "max": 48.5
-              },
-              "y": {
-                "min": 239,
-                "max": 240
-              },
-              "z": {
-                "min": -50,
-                "max": -46
-              }
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "position": {
+                            "x": {
+                                "min": 48,
+                                "max": 48.5
+                            },
+                            "y": {
+                                "min": 239,
+                                "max": 240
+                            },
+                            "z": {
+                                "min": -50,
+                                "max": -46
+                            }
+                        }
+                    }
+                }
             }
-          }
         }
-      }
+    },
+    "rewards": {
+        "function": "kards:chengjiu/lobby/bushizhe"
     }
-  },
-  "rewards": {
-    "function": "kards:chengjiu/lobby/bushizhe"
-  }
 }

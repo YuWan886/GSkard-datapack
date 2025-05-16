@@ -1,44 +1,48 @@
 {
-  "parent": "kards:chengjiu/jiaocheng",
-  "display": {
-    "icon": {
-      "id": "minecraft:dispenser",
-      "count": 1
+    "parent": "kards:chengjiu/jiaocheng",
+    "display": {
+        "icon": {
+            "id": "minecraft:dispenser",
+            "count": 1
+        },
+        "title": {
+            "translate": "chengjiu.lobby.shenmidayedian.11"
+        },
+        "description": {
+            "translate": "chengjiu.lobby.shenmidayedian.12"
+        },
+        "background": "minecraft:textures/block/chiseled_tuff_bricks.png",
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
     },
-    "title": "神秘打野点?",
-    "description": "这是何处啊?",
-    "background": "minecraft:textures/block/chiseled_tuff_bricks.png",
-    "frame": "task",
-    "show_toast": true,
-    "announce_to_chat": true,
-    "hidden": false
-  },
-  "criteria": {
-    "requirement": {
-      "trigger": "minecraft:tick",
-      "conditions": {
-        "player": {
-          "location": {
-            "position": {
-              "x": {
-                "min": 105.1,
-                "max": 106.0
-              },
-              "y": {
-                "min": 227,
-                "max": 231
-              },
-              "z": {
-                "min": -14.0,
-                "max": -10.0
-              }
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "position": {
+                            "x": {
+                                "min": 105.1,
+                                "max": 106.0
+                            },
+                            "y": {
+                                "min": 227,
+                                "max": 231
+                            },
+                            "z": {
+                                "min": -14.0,
+                                "max": -10.0
+                            }
+                        }
+                    }
+                }
             }
-          }
         }
-      }
+    },
+    "rewards": {
+        "function": "kards:chengjiu/lobby/shenmidayedian"
     }
-  },
-  "rewards": {
-    "function": "kards:chengjiu/lobby/shenmidayedian"
-  }
 }

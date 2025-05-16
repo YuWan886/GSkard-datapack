@@ -1,1 +1,1 @@
-tellraw @a [{"selector":"@s"},{"text":"达成了进度","color":"white"},{"text":"[神秘跑酷点]","color":"green","hoverEvent":{"action":"show_text","value":"LengxiaoCN:我会一直看着你..永远..."}}]
+tellraw @a [{selector:"@s"},{translate: "chengjiu.first_join_game.1",color:"white"},{translate: "chengjiu.lobby.find_running.1",color:"green","hoverEvent":{"action":"show_text","value":"LengxiaoCN:我会一直看着你..永远..."}}]

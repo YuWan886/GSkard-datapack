@@ -1,4 +1,4 @@
-tellraw @s [{"text":"[跑酷]","color":"green"},{"text":"重新计时","color":"gold"}]
+tellraw @s [{translate: "lobby.run.backpoint.1",color:"green"},{translate: "lobby.run.reset.1",color:"gold"}]
 scoreboard players set @s RunningTime 0
 scoreboard players set @s RunningTime_All 0
 scoreboard players set @s RunningTime_Sec 0
