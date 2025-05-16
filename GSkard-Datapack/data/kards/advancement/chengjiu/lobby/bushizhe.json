@@ -1,4 +1,5 @@
 {
+  "parent": "kards:chengjiu/lobby/shenmidayedian",
   "display": {
     "icon": {
       "id": "minecraft:barrier",
@@ -14,7 +15,27 @@
   },
   "criteria": {
     "requirement": {
-      "trigger": "minecraft:impossible"
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "position": {
+              "x": {
+                "min": 48,
+                "max": 48.5
+              },
+              "y": {
+                "min": 239,
+                "max": 240
+              },
+              "z": {
+                "min": -50,
+                "max": -46
+              }
+            }
+          }
+        }
+      }
     }
   },
   "rewards": {

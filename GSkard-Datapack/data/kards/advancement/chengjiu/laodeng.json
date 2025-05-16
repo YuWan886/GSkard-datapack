@@ -1,11 +1,11 @@
 {
     "display": {
       "icon": {
-        "id": "minecraft:apple",
+        "id": "minecraft:golden_apple",
         "count": 1
       },
-      "title": "搞牌,启动!",
-      "description": "完成新手教程",
+      "title": "老登",
+      "description": "难道他真是搞牌高手?",
       "frame": "task",
       "show_toast": true,
       "announce_to_chat": true,
@@ -18,6 +18,6 @@
       }
     },
     "rewards": {
-      "function": "kards:chengjiu/jiaocheng"
+      "function": "kards:chengjiu/laodeng"
     }
   }

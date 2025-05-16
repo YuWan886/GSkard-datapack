@@ -9,13 +9,8 @@ execute positioned 299.5 -59 307.00 run tp @a[dx=2,dy=4,dz=0] 59 226 -26 -90 0
 #暂定命名
 function kards:lobby/general
 function kards:game/general
-
-#玩家退出
-execute as @a if score system status matches 0 if score @s Leave_Game matches 1.. run function kards:leave_game/not_ingame
-execute as @a[team=!red,team=!blue] unless score system status matches 0 if score @s Leave_Game matches 1.. run function kards:leave_game/sp
-execute as @a[team=red] unless score system status matches 0 if score @s Leave_Game matches 1.. run function kards:leave_game/ingame
-execute as @a[team=blue] unless score system status matches 0 if score @s Leave_Game matches 1.. run function kards:leave_game/ingame
 #检测人数
+execute as @a if score @s Leave_Game matches 1.. run function kards:leave_game/all
 execute store result score 人数 p if entity @a
 execute store result score 人数 r_alive if entity @a[team=red,gamemode=adventure]
 execute store result score 人数 r_dp if entity @a[team=red,gamemode=spectator]
@@ -36,13 +31,13 @@ execute as @a if score @s stopsound matches 1.. run function kards:music/stop
 advancement grant @a only kards:first_join_game
 #整着玩的
 scoreboard players add system Color 1
-execute if score system Color matches 5 run team modify First prefix [{translate: "tick.1",color:"red"},{translate: "tick.2",color:"yellow"},{translate: "tick.3",color:"green"},{translate: "tick.4",color:"aqua"}]
+execute if score system Color matches 5 run team modify First prefix [{"text":"[","color":"red"},{"text":"萌","color":"yellow"},{"text":"新","color":"green"},{"text":"]","color":"aqua"}]
 execute if score system Color matches 5 run team modify First color red
-execute if score system Color matches 10 run team modify First prefix [{translate: "tick.1",color:"aqua"},{translate: "tick.2",color:"red"},{translate: "tick.3",color:"yellow"},{translate: "tick.4",color:"green"}]
+execute if score system Color matches 10 run team modify First prefix [{"text":"[","color":"aqua"},{"text":"萌","color":"red"},{"text":"新","color":"yellow"},{"text":"]","color":"green"}]
 execute if score system Color matches 10 run team modify First color yellow
-execute if score system Color matches 15 run team modify First prefix [{translate: "tick.1",color:"green"},{translate: "tick.2",color:"aqua"},{translate: "tick.3",color:"red"},{translate: "tick.4",color:"yellow"}]
+execute if score system Color matches 15 run team modify First prefix [{"text":"[","color":"green"},{"text":"萌","color":"aqua"},{"text":"新","color":"red"},{"text":"]","color":"yellow"}]
 execute if score system Color matches 15 run team modify First color green
-execute if score system Color matches 20 run team modify First prefix [{translate: "tick.1",color:"yellow"},{translate: "tick.2",color:"green"},{translate: "tick.3",color:"aqua"},{translate: "tick.4",color:"red"}]
+execute if score system Color matches 20 run team modify First prefix [{"text":"[","color":"yellow"},{"text":"萌","color":"green"},{"text":"新","color":"aqua"},{"text":"]","color":"red"}]
 execute if score system Color matches 20 run team modify First color aqua
 execute if score system Color matches 20 run scoreboard players set system Color 0
 
