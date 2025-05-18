@@ -1,2 +1,3 @@
 
 give @s music_disc_strad[item_name=[{translate: "game.paiku.fashu.youchangjiedai.3",color:"aqua"},{translate: "game.paiku.shenji.wangzhibaoku.1",color:"white"}],lore=[{translate: "game.paiku.shenji.feileishen.2",color:"white",italic:false},[{translate: "game.paiku.shenji.wangzhibaoku.2",color:"gray",italic:false},{translate: "game.paiku.shenji.wangzhibaoku.3",color:"gold",italic:false}]],jukebox_playable="minecraft:pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'王之宝库'}]
+scoreboard players set #kard_wangzhibaoku kardCount 12

@@ -1,5 +1,5 @@
 # 火球骰子
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.yongpaiku.template.1",color:"gold"},{translate: "game.yongpaiku.yansheng.huoqiutouzi.1",color:"dark_blue"}]
+execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.paiku.fashu.wuyongfa.1",color:"gold"},{translate: "game.yongpaiku.yansheng.huoqiutouzi.1",color:"dark_blue"}]
 
 execute store result score @s huoyantouzi run random roll 1..12
 

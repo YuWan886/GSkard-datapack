@@ -1,2 +1,2 @@
-
+scoreboard players set #kard_shengchanling kardCount 5
 give @s music_disc_mellohi[item_name=[{translate: "game.paiku.fashu.beishuiyizhan.1",color:"aqua"},{translate: "game.paiku.fashu.shengchanling.1",color:"light_purple"}],lore=[{translate: "game.paiku.fashu.beishuiyizhan.3",color:"light_purple",italic:false},[{translate: "game.paiku.fashu.jinjidiaoqian.3",color:"gray",italic:false},{translate: "game.paiku.fashu.shengchanling.2",color:"gold",italic:false},{translate: "game.paiku.fashu.shengchanling.3",color:"gray",italic:false},{translate: "game.paiku.fashu.shengchanling.4",color:"gold",italic:false}]],jukebox_playable="minecraft:pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'生产令'}]

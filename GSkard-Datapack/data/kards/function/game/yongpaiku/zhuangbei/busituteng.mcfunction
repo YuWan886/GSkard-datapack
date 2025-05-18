@@ -1,4 +1,4 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.yongpaiku.template.1",color:"gold"},{translate: "game.yongpaiku.zhuangbei.busituteng.1",color:"gold"}]
+execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.paiku.fashu.wuyongfa.1",color:"gold"},{translate: "game.yongpaiku.zhuangbei.busituteng.1",color:"gold"}]
 execute store result score @s random_busituteng run random value 1..6
 execute if score @s random_busituteng matches 1 run give @s minecraft:totem_of_undying[item_name={translate: "game.yongpaiku.zhuangbei.busituteng.2",color:"red"},lore=[{translate: "game.yongpaiku.zhuangbei.busituteng.3",color:"gray",italic:false},{translate: "game.yongpaiku.zhuangbei.busituteng.4",color:"gray",italic:false}],custom_data={kards:'自爆图腾'}]
 execute if score @s random_busituteng matches 2 run give @s minecraft:totem_of_undying[item_name={translate: "game.yongpaiku.zhuangbei.busituteng.5",color:"green"},lore=[{translate: "game.yongpaiku.yansheng.totem.hundun.5.3",color:"gray",italic:false},{translate: "game.yongpaiku.zhuangbei.busituteng.6",color:"gray",italic:false}],custom_data={kards:'生命图腾'}]

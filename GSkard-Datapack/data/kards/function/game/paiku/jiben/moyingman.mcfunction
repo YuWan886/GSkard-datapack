@@ -1,2 +1,2 @@
-
+scoreboard players set #kard_moyingman kardCount 1
 give @s music_disc_mall[item_name=[{translate: "game.paiku.fashu.chaotuoxili.1",color:"aqua"},{translate: "game.paiku.jiben.moyingman.1",color:"blue"}],lore=[{translate: "game.paiku.jiben.diaolingkulou.2",color:"blue",italic:false},[{translate: "game.paiku.fashu.zhouranyingbao.3",color:"gray",italic:false},{translate: "game.paiku.jiben.moyingman.2",color:"gold",italic:false}]],jukebox_playable="minecraft:pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'末影螨'}]

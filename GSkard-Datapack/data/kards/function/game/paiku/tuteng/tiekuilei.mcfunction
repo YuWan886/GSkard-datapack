@@ -1,2 +1,3 @@
 
 give @s music_disc_blocks[item_name=[{translate: "game.paiku.tuteng.ji.1",color:"aqua"},{translate: "game.paiku.tuteng.tiekuilei.1",color:"red"}],lore=[{translate: "game.paiku.tuteng.baomao.2",color:"red",italic:false},{translate: "game.paiku.tuteng.tiekuilei.2",color:"gray",italic:false},{translate: "game.paiku.tuteng.baomao.4",color:"gray",italic:false},[{translate: "game.paiku.tuteng.tiekuilei.3",color:"gray",italic:false},{translate: "game.paiku.tuteng.tiekuilei.4",color:"red",italic:false}],{translate: "game.paiku.tuteng.tiekuilei.5",color:"gray",italic:false}],jukebox_playable="minecraft:pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'铁傀儡'}]
+scoreboard players set #kard_tiekuilei kardCount 15

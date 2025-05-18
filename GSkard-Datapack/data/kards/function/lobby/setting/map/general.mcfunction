@@ -20,3 +20,5 @@ execute unless entity @e[type=interaction,tag=map] run summon minecraft:interact
 
 execute unless entity @e[type=text_display,tag=map] run summon minecraft:text_display 83 226.7 -35 {billboard:vertical,translate: 'lobby.setting.map.general.1',Tags:["map"]}
 
+execute store result score system MapCount if entity @e[distance=1..,tag=map]
+execute unless score system MapCount matches 3 run kill @e[tag=map]

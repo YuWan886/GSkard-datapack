@@ -1,5 +1,5 @@
 scoreboard players add @s zombie_enhance 1
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.yongpaiku.template.1",color:"gold"},{translate: "game.yongpaiku.yansheng.kuanghuanzombie.1",color:"dark_blue"}]
+execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.paiku.fashu.wuyongfa.1",color:"gold"},{translate: "game.yongpaiku.yansheng.kuanghuanzombie.1",color:"dark_blue"}]
 tellraw @a [{translate: "game.yongpaiku.yansheng.kuanghuanzombie.2",color:"white"},{score:{objective:"zombie_enhance",name:"@s"},color:"green",bold:false}]
     #红队用
     execute if score @s zombie_enhance matches 0 if entity @s[team=red] as @e[tag=7r] at @s run summon zombie ~ 0 ~ {Team:red,IsBaby:false,ArmorItems:[{},{},{},{id: "minecraft:dispenser"}]}

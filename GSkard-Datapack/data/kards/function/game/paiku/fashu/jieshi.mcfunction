@@ -1,2 +1,3 @@
+scoreboard players set #kard_jieshi kardCount 3
 
 give @s music_disc_mellohi[item_name=[{translate: "game.paiku.fashu.guohechaiqiao.1",color:"aqua"},{translate: "game.paiku.fashu.jieshi.1",color:"light_purple"}],lore=[{translate: "game.paiku.fashu.beishuiyizhan.3",color:"light_purple",italic:false},{translate: "game.paiku.fashu.jieshi.2",color:"gray",italic:false}],jukebox_playable="minecraft:pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'揭示'}]

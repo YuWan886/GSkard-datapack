@@ -1,2 +1,3 @@
 
 give @s music_disc_strad[item_name=[{translate: "game.paiku.fashu.fanzhuan.1",color:"aqua"},{translate: "game.paiku.shenji.lingjia.1",color:"white"}],lore=[{translate: "game.paiku.shenji.fanxiangfeileishen.2",color:"white",italic:false},[{translate: "game.paiku.shenji.lingjia.2",color:"gray",italic:false},{translate: "game.paiku.shenji.lingjia.3",color:"white",italic:false},{translate: "game.paiku.fashu.junlintianxia.4",color:"gray",italic:false}]],jukebox_playable="minecraft:pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'凌驾'}]
+scoreboard players set #kard_lingjia kardCount 10

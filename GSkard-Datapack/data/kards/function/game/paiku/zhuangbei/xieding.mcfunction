@@ -1,2 +1,3 @@
 
 give @s music_disc_13[item_name=[{translate: "game.paiku.fashu.jielue.1",color:"aqua"},{translate: "game.paiku.zhuangbei.xieding.1",color:"gold"}],lore=[{translate: "game.paiku.zhuangbei.bianxiehuosai.2",color:"gold",italic:false},{translate: "game.paiku.zhuangbei.xieding.2",color:"gray",italic:false}],jukebox_playable="minecraft:pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'鞋钉'}]
+scoreboard players set #kard_xieding kardCount 4

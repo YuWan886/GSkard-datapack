@@ -1,2 +1,3 @@
 
 give @s music_disc_strad[item_name=[{translate: "game.paiku.fashu.duming.1",color:"aqua"},{translate: "game.paiku.shenji.fuzhi.1",color:"white"}],lore=[{translate: "game.paiku.shenji.fanxiangfeileishen.2",color:"white",italic:false},[{translate: "game.paiku.shenji.fuzhi.2",color:"gray",italic:false},{translate: "game.paiku.shenji.fuzhi.3",color:"gold",italic:false}]],jukebox_playable="minecraft:pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'复制'}]
+scoreboard players set #kard_fuzhi kardCount 0

@@ -1,2 +1,3 @@
 
 give @s music_disc_13[item_name=[{translate: "game.paiku.fashu.youchangjiedai.3",color:"aqua"},{translate: "game.paiku.zhuangbei.xiajiehejinjian.1",color:"gold"}],lore=[{translate: "game.paiku.zhuangbei.bianxiehuosai.2",color:"gold",italic:false},{translate: "game.paiku.zhuangbei.xiajiehejinjian.2",color:"gray",italic:false}],jukebox_playable="minecraft:pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'下界合金剑'}]
+scoreboard players set #kard_xiajiehejinjian kardCount 12

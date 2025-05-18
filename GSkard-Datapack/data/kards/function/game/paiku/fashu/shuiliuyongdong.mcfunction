@@ -1,2 +1,2 @@
-
+scoreboard players set #kard_shuiliuyongdong kardCount 4
 give @s music_disc_mellohi[item_name=[{translate: "game.paiku.fashu.jielue.1",color:"aqua"},{translate: "game.paiku.fashu.shuiliuyongdong.1",color:"light_purple"}],lore=[{translate: "game.paiku.fashu.beishuiyizhan.3",color:"light_purple",italic:false},[{translate: "game.paiku.fashu.chunnuanhuakai.3",color:"gray",italic:false},{translate: "game.paiku.fashu.shuiliuyongdong.2",color:"gold",italic:false},{translate: "game.paiku.fashu.shuiliuyongdong.3",color:"gray",italic:false},{translate: "game.paiku.fashu.chaotuoxili.4",color:"green",italic:false}]],jukebox_playable="minecraft:pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'水流涌动'}]

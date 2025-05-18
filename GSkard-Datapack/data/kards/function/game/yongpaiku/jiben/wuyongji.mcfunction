@@ -1,4 +1,4 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.yongpaiku.template.1",color:"gold"},{translate: "game.yongpaiku.jiben.wuyongji.1",color:"blue",hover_event:{action:"show_text","value":"没有作用"}}]
+execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.paiku.fashu.wuyongfa.1",color:"gold"},{translate: "game.yongpaiku.jiben.wuyongji.1",color:"blue",hover_event:{action:"show_text","value":"没有作用"}}]
 
 
 function kards:game/yongpaiku/xianjin/jiance/mobjiance

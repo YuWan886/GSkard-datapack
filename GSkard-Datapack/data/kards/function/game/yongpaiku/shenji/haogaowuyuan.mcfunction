@@ -1,4 +1,4 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.yongpaiku.template.1",color:"gold"},{translate: "game.yongpaiku.shenji.haogaowuyuan.1",color:"white",hover_event:{action:"show_text","value":"弃掉所有的牌 抽数量+2的牌"}}]
+execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.paiku.fashu.wuyongfa.1",color:"gold"},{translate: "game.yongpaiku.shenji.haogaowuyuan.1",color:"white",hover_event:{action:"show_text","value":"弃掉所有的牌 抽数量+2的牌"}}]
 function kards:game/yongpaiku/xianjin/jiance/shenjijiance
 item replace entity @s weapon.offhand with air
 execute store result score @s chiniaolongyu run clear @s #minecraft:creeper_drop_music_discs 0

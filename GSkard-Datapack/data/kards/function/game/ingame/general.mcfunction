@@ -97,7 +97,6 @@ execute as @a[scores={muyuankuanghuan=1}] if score @s muyuankuanghuan2 matches 1
 execute as @a[scores={muyuankuanghuan=1}] if score @s muyuankuanghuan3 matches 1.. run scoreboard players remove @s muyuankuanghuan3 1
 
 execute as @a[scores={muyuankuanghuan=1}] if score @s newzombie matches 1.. run function kards:game/paiku/yansheng/kuanghuanzombie
-execute as @a[scores={muyuankuanghuan=1}] if score @s newzombie matches 1.. run scoreboard players remove @s newzombie 1
 #来日偿还
 execute as @a[scores={changhuan=1,damage_jilu=1..}] run function kards:game/yongpaiku/shenji/lairichanghuan/2
 #防止踩田

@@ -8,7 +8,7 @@ execute if score @s wangzhibaoku matches 5 run function kards:game/yongpaiku/she
 execute if score @s wangzhibaoku matches 6 run function kards:game/yongpaiku/shenji/wangzhibaoku/qinglingzhiyu/give
 execute if score @s wangzhibaoku matches 7 run function kards:game/yongpaiku/shenji/wangzhibaoku/jinghuashuijing
 execute if score @s wangzhibaoku matches 8 run function kards:game/yongpaiku/shenji/wangzhibaoku/lindongzhikai/give
-execute if score @s wangzhibaoku matches 9 run function kards:game/yongpaiku/shenji/wangzhibaoku/tianshenshibanjia
+execute if score @s wangzhibaoku matches 9 run function kards:game/yongpaiku/shenji/wangzhibaoku/tianshenshibanjia/give
 execute if score @s wangzhibaoku matches 10 run function kards:game/yongpaiku/shenji/wangzhibaoku/jiangshuzhe/give
 execute if score @s wangzhibaoku matches 11 run function kards:game/yongpaiku/shenji/wangzhibaoku/feishenghufu
 execute if score @s wangzhibaoku matches 12 run function kards:game/yongpaiku/shenji/wangzhibaoku/zhengyichangji/give

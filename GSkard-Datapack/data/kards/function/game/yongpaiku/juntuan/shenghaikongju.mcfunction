@@ -1,4 +1,4 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.yongpaiku.template.1",color:"gold"},{translate: "game.yongpaiku.juntuan.shenghaikongju.1",color:"dark_green",hover_event:{action:"show_text","value":"在敌方召唤三只守卫者"}}]
+execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.paiku.fashu.wuyongfa.1",color:"gold"},{translate: "game.yongpaiku.juntuan.shenghaikongju.1",color:"dark_green",hover_event:{action:"show_text","value":"在敌方召唤三只守卫者"}}]
     #红队用
     execute if entity @s[team=red] as @e[tag=2r] at @s run summon guardian ~ 0 ~ {Team:red}
     execute if entity @s[team=red] as @e[tag=11r] at @s run summon guardian ~ 0 ~ {Team:red}

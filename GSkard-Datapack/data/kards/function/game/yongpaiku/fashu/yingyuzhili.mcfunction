@@ -1,6 +1,6 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.yongpaiku.template.1",color:"gold"},{translate: "game.yongpaiku.fashu.yingyuzhili.1",color:"dark_purple",hover_event:{action:"show_text","value":"消耗你所有的K 每消耗2K就给队伍所有玩家治疗1♥"}}]
+execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.paiku.fashu.wuyongfa.1",color:"gold"},{translate: "game.yongpaiku.fashu.yingyuzhili.1",color:"dark_purple",hover_event:{action:"show_text","value":"消耗你所有的K 每消耗2K就给队伍所有玩家治疗1♥"}}]
 item replace entity @s weapon.offhand with air
-scoreboard players remove @s kardCount 0
+scoreboard players operation @s kardCount -= #kard_yingyuzhili kardCount
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1
 scoreboard players set @s pingbi 0
 scoreboard players add @s use_kard 1

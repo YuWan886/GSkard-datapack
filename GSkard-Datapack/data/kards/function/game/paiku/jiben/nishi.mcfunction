@@ -1,2 +1,2 @@
-
+scoreboard players set #kard_nishi kardCount 3
 give @s music_disc_mall[item_name=[{translate: "game.paiku.fashu.guohechaiqiao.1",color:"aqua"},{translate: "game.paiku.jiben.nishi.1",color:"blue"}],lore=[{translate: "game.paiku.jiben.diaolingkulou.2",color:"blue",italic:false},[{translate: "game.paiku.fashu.zhouranyingbao.3",color:"gray",italic:false},{translate: "game.paiku.jiben.nishi.2",color:"gold",italic:false}]],jukebox_playable="minecraft:pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'溺尸'}]

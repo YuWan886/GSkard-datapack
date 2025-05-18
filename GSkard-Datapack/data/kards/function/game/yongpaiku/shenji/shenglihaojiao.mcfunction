@@ -1,4 +1,4 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.yongpaiku.template.1",color:"gold"},{translate: "game.yongpaiku.shenji.shenglihaojiao.1",color:"white",hover_event:{action:"show_text","value":"敌方区域怪物获得3s速度4与力量4"}}]
+execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.paiku.fashu.wuyongfa.1",color:"gold"},{translate: "game.yongpaiku.shenji.shenglihaojiao.1",color:"white",hover_event:{action:"show_text","value":"敌方区域怪物获得3s速度4与力量4"}}]
 function kards:game/yongpaiku/xianjin/jiance/shenjijiance
     #蓝
     execute if entity @s[team=blue] run effect give @e[type=!player,type=!iron_golem,team=blue] speed 3 3 true

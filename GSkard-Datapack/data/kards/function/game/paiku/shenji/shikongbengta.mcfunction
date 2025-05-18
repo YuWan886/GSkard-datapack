@@ -1,2 +1,3 @@
 
 give @s music_disc_strad[item_name=[{translate: "game.paiku.fashu.jielue.1",color:"aqua"},{translate: "game.paiku.shenji.shikongbengta.1",color:"white"}],lore=[{translate: "game.paiku.shenji.feileishen.2",color:"white",italic:false},[{translate: "game.paiku.shenji.shikongbengta.2",color:"gray",italic:false},{translate: "game.paiku.shenji.shikongbengta.3",color:"gold",italic:false}]],jukebox_playable="minecraft:pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'时空崩塌'}]
+scoreboard players set #kard_shikongbengta kardCount 4

@@ -1,2 +1,3 @@
+scoreboard players set #kard_sijiruchun kardCount 7
 
 give @s music_disc_mellohi[item_name=[{translate: "game.paiku.fashu.sijiruchun.1",color:"aqua"},{translate: "game.paiku.fashu.sijiruchun.2",color:"light_purple"}],lore=[{translate: "game.paiku.fashu.beishuiyizhan.3",color:"light_purple",italic:false},[{translate: "game.paiku.fashu.chunnuanhuakai.3",color:"gray",italic:false},{translate: "game.paiku.fashu.shengchanling.4",color:"gold",italic:false},{translate: "game.paiku.fashu.sijiruchun.3",color:"gray",italic:false},{translate: "game.paiku.fashu.jielue.1",color:"gold",italic:false}]],jukebox_playable="minecraft:pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'四季如春'}]
