@@ -3,10 +3,10 @@ summon minecraft:firework_rocket ~ ~ ~
 effect clear @s
 team join First @s
 tellraw @a [{translate: "first_join_game.1",color:"gold",bold:true},{selector:"@s",color:"white"},{translate: "first_join_game.2",color:"gold"}]
-execute if score system status matches 0 run team join lobby @s
-execute unless score system status matches 0 run team join Spectator @s
-execute unless score system status matches 0 run gamemode spectator @s
-execute unless score system status matches 0 run tp @s @r[gamemode=adventure]
+execute if score system GameStatus matches 0 run team join lobby @s
+execute unless score system GameStatus matches 0 run team join Spectator @s
+execute unless score system GameStatus matches 0 run gamemode spectator @s
+execute unless score system GameStatus matches 0 run tp @s @r[gamemode=adventure]
 tellraw @s {translate: "first_join_game.3",color:"gold",bold:true}
 tellraw @s {translate: "first_join_game.4",color:"green",bold:true}
 tellraw @s {translate: "first_join_game.5",color:"gold",bold:true}

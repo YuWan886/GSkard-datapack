@@ -86,8 +86,8 @@ execute as @a[tag=jinghuashuijing] unless items entity @s container.* *[custom_d
 #飞升护符
 execute as @a if items entity @s container.* *[custom_data={kards:'飞升护符'}] run tag @s add feishenhufu
 execute as @a[tag=feishenhufu] run attribute @s minecraft:max_health modifier add 0-0-11 20 add_value
-execute if score 回合数 round matches 17.. run effect give @a[tag=feishenhufu] strength infinite 3 true
-execute if score 回合数 round matches 0 run effect give @a[tag=feishenhufu] strength infinite 3 true
+execute if score 回合数 GameRound matches 17.. run effect give @a[tag=feishenhufu] strength infinite 3 true
+execute if score 回合数 GameRound matches 0 run effect give @a[tag=feishenhufu] strength infinite 3 true
 execute as @a[tag=feishenhufu] unless items entity @s container.* *[custom_data={kards:'飞升护符'}] run attribute @s minecraft:max_health modifier remove 0-0-11
 execute as @a[tag=feishenhufu] unless items entity @s container.* *[custom_data={kards:'飞升护符'}] run effect clear @s strength
 execute as @a[tag=feishenhufu] unless items entity @s container.* *[custom_data={kards:'飞升护符'}] run tag @s remove feishenhufu

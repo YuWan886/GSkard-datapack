@@ -193,5 +193,16 @@ scoreboard objectives add RunningTime_Sec dummy
 scoreboard objectives add RunningTime_Min dummy
 scoreboard objectives add RunningTimeOper_Sec dummy
 scoreboard objectives add RunningTimeOper_Min dummy
+scoreboard objectives add touxiang dummy
+scoreboard objectives add reset dummy
+scoreboard objectives add roundtime dummy
+scoreboard objectives add jiben dummy
+scoreboard objectives add kujie dummy
+scoreboard objectives add GameStatus dummy
+scoreboard objectives add GameRound dummy
+scoreboard objectives add UUID.0 dummy
+scoreboard objectives add UUID.1 dummy
+scoreboard objectives add UUID.2 dummy
+scoreboard objectives add UUID.3 dummy
 #
 tellraw @a [{translate: "load.5",color:"gray"}]

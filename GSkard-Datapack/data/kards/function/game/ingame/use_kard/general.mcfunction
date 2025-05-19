@@ -1,9 +1,9 @@
-execute as @a[scores={canuse=1}] run function kards:game/ingame/use_kard/jiben
-execute as @a[scores={canuse=1}] run function kards:game/ingame/use_kard/juntuan
-execute as @a[scores={canuse=1}] run function kards:game/ingame/use_kard/zhuangbei
-execute as @a[scores={canuse=1}] run function kards:game/ingame/use_kard/fashu
-execute as @a[scores={canuse=1}] run function kards:game/ingame/use_kard/tuteng
-execute as @a[scores={canuse=1}] run function kards:game/ingame/use_kard/shenji
-execute as @a[scores={canuse=1}] run function kards:game/ingame/use_kard/zuzhou
-execute as @a[scores={canuse=1}] run function kards:game/ingame/use_kard/xianjing
+execute as @a[scores={CanuseKard=1}] run function kards:game/ingame/use_kard/jiben
+execute as @a[scores={CanuseKard=1}] run function kards:game/ingame/use_kard/juntuan
+execute as @a[scores={CanuseKard=1}] run function kards:game/ingame/use_kard/zhuangbei
+execute as @a[scores={CanuseKard=1}] run function kards:game/ingame/use_kard/fashu
+execute as @a[scores={CanuseKard=1}] run function kards:game/ingame/use_kard/tuteng
+execute as @a[scores={CanuseKard=1}] run function kards:game/ingame/use_kard/shenji
+execute as @a[scores={CanuseKard=1}] run function kards:game/ingame/use_kard/zuzhou
+execute as @a[scores={CanuseKard=1}] run function kards:game/ingame/use_kard/xianjing
 execute as @a run function kards:game/ingame/use_kard/yansheng

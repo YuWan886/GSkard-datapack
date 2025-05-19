@@ -28,7 +28,7 @@ scoreboard players set system worldborder -1
 #重置陷阱
 function kards:game/yongpaiku/xianjin/reset
 #设置游戏状态为0(关闭)
-scoreboard players set system status 0
+scoreboard players set system GameStatus 0
 #重置回合数
 scoreboard players reset 回合数
 scoreboard objectives setdisplay below_name
@@ -104,7 +104,7 @@ scoreboard players reset * b_death
 scoreboard players reset * r_number
 scoreboard players reset * b_number
 #计划
-schedule clear kards:game/ingame/round/pvpround/countdown
+schedule clear kards:game/ingame/GameRound/pvpround/countdown
 #停止音乐
 execute as @a at @s run stopsound @s
 #概率生成oiiao

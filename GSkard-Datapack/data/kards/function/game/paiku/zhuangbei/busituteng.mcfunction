@@ -1,3 +1,3 @@
 
-give @s music_disc_13[item_name=[{translate: "game.paiku.fashu.chunnuanhuakai.1",color:"aqua"},{translate: "game.paiku.zhuangbei.busituteng.1",color:"gold"}],lore=[{translate: "game.paiku.zhuangbei.bianxiehuosai.2",color:"gold",italic:false},{translate: "game.paiku.zhuangbei.busituteng.2",color:"gray",italic:false}],jukebox_playable="minecraft:pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'不死图腾'}]
-scoreboard players set #kard_busituteng kardCount 8
+give @s music_disc_13[item_name=[{translate: "game.paiku.fashu.yinnicangku.1",color:"aqua"},{translate: "game.paiku.zhuangbei.busituteng.1",color:"gold"}],lore=[{translate: "game.paiku.zhuangbei.bianxiehuosai.2",color:"gold",italic:false},{translate: "game.paiku.zhuangbei.busituteng.2",color:"gray",italic:false}],jukebox_playable="minecraft:pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'不死图腾'}]
+scoreboard players set #kard_busituteng kardCount 10

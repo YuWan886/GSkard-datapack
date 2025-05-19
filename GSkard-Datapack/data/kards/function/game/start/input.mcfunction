@@ -1,5 +1,5 @@
 #设置游戏状态为1（开启）
-scoreboard players set system status 1
+scoreboard players set system GameStatus 1
 #清实体
 kill @e[type=!player,type=!armor_stand,type=!#kards:display]
 #重设分数
@@ -13,7 +13,7 @@ gamemode spectator @a[tag=Un_Ready]
 #属性
 execute as @a run attribute @s minecraft:scale base set 1
 #设置回合数为1
-scoreboard objectives setdisplay sidebar round
+scoreboard objectives setdisplay sidebar GameRound
 scoreboard objectives setdisplay below_name kardCount
 scoreboard players set @a[tag=Ready] kardCountmax 10
 

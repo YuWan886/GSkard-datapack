@@ -19,7 +19,7 @@ execute store result score 人数 b_alive if entity @a[team=blue,gamemode=advent
 #启用trigger
 scoreboard players enable @a reset
 scoreboard players enable @a jiaocheng
-execute if score system status matches 1..2 run scoreboard players enable @a[scores={touxiang=0}] touxiang
+execute if score system GameStatus matches 1..2 run scoreboard players enable @a[scores={touxiang=0}] touxiang
 scoreboard players enable @a music_kards
 scoreboard players enable @a music_lengxiao
 scoreboard players enable @a stopsound

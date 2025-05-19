@@ -1,3 +1,3 @@
 
 give @s music_disc_cat[item_name=[{translate: "game.paiku.juntuan.shixuelangqun.1",color:"aqua"},{translate: "game.paiku.juntuan.shixuelangqun.2",color:"dark_green"}],lore=[{translate: "game.paiku.juntuan.baozhajuntuan.2",color:"dark_green",italic:false},[{translate: "game.paiku.juntuan.shixuelangqun.3",color:"gray",italic:false},{translate: "game.paiku.juntuan.shixuelangqun.4",color:"gold",italic:false}],[{translate: "game.paiku.juntuan.shixuelangqun.4",color:"gray",italic:false},{translate: "game.paiku.juntuan.shixuelangqun.5",color:"gold",italic:false},{translate: "game.paiku.juntuan.shixuelangqun.6",color:"gray",italic:false},{translate: "game.paiku.juntuan.shixuelangqun.7",color:"gold",italic:false}]],jukebox_playable="minecraft:pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'嗜血狼群'}]
-scoreboard players set #kard_shixuelangqun kardCount 16
+scoreboard players set #kard_shixuelangqun kardCount 156

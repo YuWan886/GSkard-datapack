@@ -1,7 +1,7 @@
-execute if entity @s[team=red] if score @s pingbi matches 0 run tellraw @a[team=red] [{selector:"@s"},{translate: "game.paiku.fashu.wuyongfa.1",color:"gold"},{translate: "game.paiku.fashu.jieshi.2.8",color:"dark_aqua",hover_event:{action:"show_text","value":"条件：敌方任意玩家使用基础牌或军团牌时\n触发：清空其剩余点数"}}]
+execute if entity @s[team=red] if score @s pingbi matches 0 run tellraw @a[team=red] [{selector:"@s"},{translate: "game.paiku.fashu.wuyongfa.1",color:"gold"},{translate: "game.yongpaiku.fashu.jieshi.2.8",color:"dark_aqua",hover_event:{action:"show_text","value":"条件：敌方任意玩家使用基础牌或军团牌时\n触发：清空其剩余点数"}}]
 execute if entity @s[team=red] if score @s pingbi matches 0 run tellraw @a[team=blue] [{selector:"@s"},{translate: "game.paiku.fashu.wuyongfa.1",color:"gold"},{translate: "game.yongpaiku.template.4",color:"dark_aqua"}]
 
-execute if entity @s[team=blue] if score @s pingbi matches 0 run tellraw @a[team=blue] [{selector:"@s"},{translate: "game.paiku.fashu.wuyongfa.1",color:"gold"},{translate: "game.paiku.fashu.jieshi.2.8",color:"dark_aqua",hover_event:{action:"show_text","value":"条件：敌方任意玩家使用基础牌或军团牌时\n触发：清空其剩余点数"}}]
+execute if entity @s[team=blue] if score @s pingbi matches 0 run tellraw @a[team=blue] [{selector:"@s"},{translate: "game.paiku.fashu.wuyongfa.1",color:"gold"},{translate: "game.yongpaiku.fashu.jieshi.2.8",color:"dark_aqua",hover_event:{action:"show_text","value":"条件：敌方任意玩家使用基础牌或军团牌时\n触发：清空其剩余点数"}}]
 execute if entity @s[team=blue] if score @s pingbi matches 0 run tellraw @a[team=red] [{selector:"@s"},{translate: "game.paiku.fashu.wuyongfa.1",color:"gold"},{translate: "game.yongpaiku.template.4",color:"dark_aqua"}]
 
 #红

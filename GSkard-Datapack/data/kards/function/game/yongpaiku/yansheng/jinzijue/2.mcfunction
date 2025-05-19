@@ -13,5 +13,5 @@ execute if score @s jinzijue matches 8 run attribute @s minecraft:max_health mod
 execute if score @s jinzijue matches 9 run attribute @s minecraft:max_health modifier add 0-0-9 -20 add_value
 execute if score @s jinzijue matches 10 run attribute @s minecraft:max_health modifier add 0-0-10 500 add_value
 execute if score @s jinzijue matches 10 run scoreboard players set @a jinziqifeng 0
-tellraw @a [{translate: "game.paiku.fashu.jinzijue.2.1",color:"dark_red",bold:false},{score:{objective:"jinzijue",name:"@s"},color:"green",bold:false}]
+tellraw @a [{translate: "game.yongpaiku.fashu.jinzijue.2.1",color:"dark_red",bold:false},{score:{objective:"jinzijue",name:"@s"},color:"green",bold:false}]
 execute if score @s jinzijue matches 10 run tellraw @a [{selector:"@s"},{translate: "game.yongpaiku.yansheng.jinzijue.2.1",color:"dark_red"}]
