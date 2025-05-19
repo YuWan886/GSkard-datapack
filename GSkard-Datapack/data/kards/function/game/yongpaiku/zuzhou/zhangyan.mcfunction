@@ -4,7 +4,7 @@ execute if entity @s[team=red] run effect give @a[team=blue,gamemode=adventure] 
 #蓝
 execute if entity @s[team=blue] run effect give @a[team=red,gamemode=adventure] blindness 20 1 true
 item replace entity @s weapon.offhand with air
-scoreboard players remove @s kardCount 3
+scoreboard players operation @s kardCount -= #kard_zhangyan kardCount
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1
 scoreboard players set @s pingbi 0
 scoreboard players add @s use_kard 1

@@ -21,7 +21,7 @@ execute as @s[team=blue,scores={huoyantouzi=9..10}] at @e[team=red] run setblock
 scoreboard players set @s huoyantouzi 0
 
 item replace entity @s weapon.offhand with air
-scoreboard players remove @s kardCount 6
+scoreboard players operation @s kardCount -= #kard_huoqiutouzi kardCount
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1
 scoreboard players set @s pingbi 0
 scoreboard players add @s use_kard 1

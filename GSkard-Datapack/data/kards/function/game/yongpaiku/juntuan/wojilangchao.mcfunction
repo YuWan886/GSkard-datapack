@@ -8,7 +8,7 @@ execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate:
    execute if entity @s[team=red] as @e[tag=8r] at @s run summon minecraft:guardian ~ 0 ~ {Team:red,Passengers:[{Color:14,id:"minecraft:drowned",HandItems:[{id:"minecraft:trident"},{}],Team:red}]}
 function kards:game/yongpaiku/xianjin/jiance/mobjiance
 item replace entity @s weapon.offhand with air
-scoreboard players remove @s kardCount 8
+scoreboard players operation @s kardCount -= #kard_wojilangchao kardCount
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1
 scoreboard players set @s pingbi 0
 scoreboard players add @s use_kard 1

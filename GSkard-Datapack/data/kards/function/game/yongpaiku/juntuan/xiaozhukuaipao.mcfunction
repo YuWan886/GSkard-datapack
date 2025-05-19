@@ -9,7 +9,7 @@ execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate:
     execute if entity @s[team=blue] as @e[tag=13b] at @s run summon hoglin ~ 0 ~ {Team:blue,IsImmuneToZombification:true,Age:0,attributes:[{id:"minecraft:max_health",base:30.0d}],Health:30.0f,CannotBeHunted:1b}
 function kards:game/yongpaiku/xianjin/jiance/mobjiance
 item replace entity @s weapon.offhand with air
-scoreboard players remove @s kardCount 7
+scoreboard players operation @s kardCount -= #kard_xiaozhukuaipao kardCount
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1
 scoreboard players set @s pingbi 0
 scoreboard players add @s use_kard 1

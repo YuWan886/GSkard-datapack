@@ -17,7 +17,7 @@ execute as @e[type=wolf] run attribute @s minecraft:knockback_resistance base se
 effect give @e[type=wolf] speed infinite 2 true
 function kards:game/yongpaiku/xianjin/jiance/mobjiance
 item replace entity @s weapon.offhand with air
-scoreboard players remove @s kardCount 16
+scoreboard players operation @s kardCount -= #kard_shixuelangqun kardCount
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1
 scoreboard players set @s pingbi 0
 scoreboard players add @s use_kard 1

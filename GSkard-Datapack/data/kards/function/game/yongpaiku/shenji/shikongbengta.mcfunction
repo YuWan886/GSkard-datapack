@@ -2,7 +2,7 @@ execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate:
 function kards:game/yongpaiku/xianjin/jiance/shenjijiance
 kill @e[type=!player,type=!armor_stand,type=!#kards:display]
 item replace entity @s weapon.offhand with air
-scoreboard players remove @s kardCount 4
+scoreboard players operation @s kardCount -= #kard_shikongbengta kardCount
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1
 scoreboard players set @s pingbi 0
 scoreboard players add @s use_kard 1

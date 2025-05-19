@@ -13,7 +13,7 @@ execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate:
 execute as @e[type=piglin,tag=yanhuoqishi] run function kards:game/yongpaiku/shenji/wangzhibaoku/yanyangdajian/2
 function kards:game/yongpaiku/xianjin/jiance/mobjiance
 item replace entity @s weapon.offhand with air
-scoreboard players remove @s kardCount 8
+scoreboard players operation @s kardCount -= #kard_yanhuoqishituan kardCount
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1
 scoreboard players set @s pingbi 0
 scoreboard players add @s use_kard 1

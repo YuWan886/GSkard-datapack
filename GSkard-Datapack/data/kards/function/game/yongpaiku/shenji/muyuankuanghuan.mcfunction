@@ -3,7 +3,7 @@ function kards:game/yongpaiku/xianjin/jiance/shenjijiance
 scoreboard players set @s muyuankuanghuan 1
 item replace entity @s weapon.offhand with air
 scoreboard players add @s kardCountmax 5
-scoreboard players remove @s kardCount 0
+scoreboard players operation @s kardCount -= #kard_muyuankuanghuan kardCount
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1
 scoreboard players set @s pingbi 0
 scoreboard players add @s use_kard 1

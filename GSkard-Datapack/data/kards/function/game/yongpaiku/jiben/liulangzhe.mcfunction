@@ -6,7 +6,7 @@ execute if entity @s[team=blue] as @e[tag=7b] at @s run summon minecraft:stray ~
 function kards:game/yongpaiku/xianjin/jiance/mobjiance
 scoreboard players add @s jiben 1
 item replace entity @s weapon.offhand with air
-scoreboard players remove @s kardCount 2
+scoreboard players operation @s kardCount -= #kard_liulangzhe kardCount
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1
 scoreboard players set @s pingbi 0
 scoreboard players add @s use_kard 1

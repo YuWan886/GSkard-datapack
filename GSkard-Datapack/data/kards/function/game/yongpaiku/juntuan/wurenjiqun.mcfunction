@@ -12,7 +12,7 @@ execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate:
     execute if entity @s[team=blue] as @e[tag=10b] at @s run summon minecraft:bat ~ 0 ~ {Team:blue,Tags:["wurenji"],Passengers:[{Color:11,id:"minecraft:shulker",Tags:["wurenji"],Team:blue}],Invulnerable:1b,Silent:1b,active_effects:[{id:"invisibility",show_particles:0b,duration:-1}]}
 function kards:game/yongpaiku/xianjin/jiance/mobjiance
 item replace entity @s weapon.offhand with air
-scoreboard players remove @s kardCount 12
+scoreboard players operation @s kardCount -= #kard_wurenjiqun kardCount
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1
 scoreboard players set @s pingbi 0
 scoreboard players add @s use_kard 1

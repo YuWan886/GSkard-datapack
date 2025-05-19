@@ -3,7 +3,8 @@ import re
 
 def replace_kardcount_in_file(filepath):
     filename = os.path.splitext(os.path.basename(filepath))[0]
-    pattern = re.compile(r'scoreboard players remove @s kardCount \\d+')
+    # 修正正则表达式，去掉多余的转义符
+    pattern = re.compile(r'scoreboard players remove @s kardCount \d+')
     replacement = f'scoreboard players operation @s kardCount -= #kard_{filename} kardCount'
     changed = False
 
@@ -31,5 +32,5 @@ def walk_and_replace(root_dir):
 
 if __name__ == "__main__":
     # 修改为你的目标目录
-    root_dir = r"C:\\Users\\Hart_GS\\Documents\\GitHub\\GSkard-datapack\\GSkard-Datapack\\data\\kards\\function\\game\\yongpaiku\\fashu"
+    root_dir = r"C:\Users\Hart_GS\Documents\GitHub\GSkard-datapack\GSkard-Datapack\data\kards\function\game\yongpaiku"
     walk_and_replace(root_dir)

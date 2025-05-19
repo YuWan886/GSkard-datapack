@@ -5,7 +5,7 @@ execute if entity @s[team=red] run kill @a[team=blue,scores={health=..50},gamemo
 #蓝
 execute if entity @s[team=blue] run kill @a[team=red,scores={health=..50},gamemode=adventure,tag=!jinzijue]
 item replace entity @s weapon.offhand with air
-scoreboard players remove @s kardCount 5
+scoreboard players operation @s kardCount -= #kard_linghungeshe kardCount
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1
 scoreboard players set @s pingbi 0
 scoreboard players add @s use_kard 1

@@ -9,7 +9,7 @@ execute if entity @s[team=blue] run effect give @a[team=red,gamemode=adventure] 
 execute if entity @s[team=blue] run scoreboard players set @a[team=red,gamemode=adventure] DuanTui 300
 execute if entity @s[team=blue] run tag @a[team=red,gamemode=adventure] add DuanTui
 item replace entity @s weapon.offhand with air
-scoreboard players remove @s kardCount 2
+scoreboard players operation @s kardCount -= #kard_duantui kardCount
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1
 scoreboard players set @s pingbi 0
 scoreboard players add @s use_kard 1

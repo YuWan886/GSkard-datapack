@@ -7,7 +7,7 @@ execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate:
     execute if entity @s[team=blue] as @e[tag=8b] at @s run summon minecraft:evoker ~ 0 ~ {Team:blue,attributes:[{id:"minecraft:max_health",base:30.0d}],Health:30.0f}
 function kards:game/yongpaiku/xianjin/jiance/mobjiance
 item replace entity @s weapon.offhand with air
-scoreboard players remove @s kardCount 12
+scoreboard players operation @s kardCount -= #kard_zaieshuangxing kardCount
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1
 scoreboard players set @s pingbi 0
 scoreboard players add @s use_kard 1

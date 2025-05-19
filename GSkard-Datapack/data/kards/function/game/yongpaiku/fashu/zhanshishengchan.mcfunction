@@ -1,6 +1,6 @@
 execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.paiku.fashu.wuyongfa.1",color:"gold"},{translate: "game.yongpaiku.fashu.zhanshishengchan.1",color:"dark_purple",hover_event:{action:"show_text","value":"获得2Kmax"}}]
 item replace entity @s weapon.offhand with air
-scoreboard players remove @s kardCount 3
+scoreboard players operation @s kardCount -= #kard_zhanshishengchan kardCount
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1
 scoreboard players set @s pingbi 0
 scoreboard players add @s use_kard 1

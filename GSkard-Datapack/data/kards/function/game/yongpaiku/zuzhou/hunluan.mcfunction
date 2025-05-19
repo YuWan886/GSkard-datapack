@@ -5,7 +5,7 @@ execute if entity @s[team=red] run team modify blue friendlyFire true
 #蓝
 execute if entity @s[team=blue] run team modify red friendlyFire true
 item replace entity @s weapon.offhand with air
-scoreboard players remove @s kardCount 1
+scoreboard players operation @s kardCount -= #kard_hunluan kardCount
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1
 scoreboard players set @s pingbi 0
 scoreboard players add @s use_kard 1

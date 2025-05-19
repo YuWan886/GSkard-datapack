@@ -12,7 +12,7 @@ execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate:
     execute if entity @s[team=blue] as @e[tag=12b] at @s run summon rabbit ~ 0 ~ {RabbitType:99,Team:blue,Age:9999999}
 function kards:game/yongpaiku/xianjin/jiance/mobjiance
 item replace entity @s weapon.offhand with air
-scoreboard players remove @s kardCount 5
+scoreboard players operation @s kardCount -= #kard_shashouxiaodui kardCount
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1
 scoreboard players set @s pingbi 0
 scoreboard players add @s use_kard 1

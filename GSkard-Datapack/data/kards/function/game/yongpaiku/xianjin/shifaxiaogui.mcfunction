@@ -9,7 +9,7 @@ execute if entity @s[team=red] run scoreboard players set 蓝队 xianjin_shifaxi
 #蓝
 execute if entity @s[team=blue] run scoreboard players set 红队 xianjin_shifaxiaogui 1
 item replace entity @s weapon.offhand with air
-scoreboard players remove @s kardCount 3
+scoreboard players operation @s kardCount -= #kard_shifaxiaogui kardCount
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1
 scoreboard players set @s pingbi 0
 scoreboard players add @s use_kard 1

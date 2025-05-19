@@ -1,7 +1,8 @@
 import os
 import re
 
-base_dir = r"C:\\Users\\Hart_GS\\Documents\\GitHub\\GSkard-datapack"
+base_dir = r"C:\\Users\\Hart_GS\\Documents\\GitHub\\GSkard-datapack\\GSkard-Datapack\\data\\kards\\function\\game\\yongpaiku"
+
 
 for root, dirs, files in os.walk(base_dir):
     for file in files:

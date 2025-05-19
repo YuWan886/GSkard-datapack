@@ -5,7 +5,7 @@ execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate:
     #红
     execute if entity @s[team=red] run effect give @e[type=!player,type=!iron_golem,team=red] invisibility 5 1 true
 item replace entity @s weapon.offhand with air
-scoreboard players remove @s kardCount 5
+scoreboard players operation @s kardCount -= #kard_wuxing kardCount
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1
 scoreboard players set @s pingbi 0
 scoreboard players add @s use_kard 1

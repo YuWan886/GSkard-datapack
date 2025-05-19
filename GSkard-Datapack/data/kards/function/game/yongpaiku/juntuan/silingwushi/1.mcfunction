@@ -6,7 +6,7 @@ execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate:
     execute if entity @s[team=blue] as @e[tag=7b] at @s run summon minecraft:skeleton ~ 0 ~ {Team:blue,Tags:["silingfashi"],Passengers:[{Color:14,id:"minecraft:wither_skeleton",Team:blue,Tags:["silingfashi"],Invulnerable:1b,Silent:1b,active_effects:[{id:"invisibility",show_particles:0b,duration:-1}],attributes:[{id:"minecraft:attack_damage",base:0.0d},{id:"minecraft:scale",base:0.01d}]}],active_effects:[{id:"speed",show_particles:0b,duration:-1}],equipment:{head:{id:"minecraft:leather_helmet"}},HandItems:[{id:"minecraft:blaze_rod"},{}],attributes:[{id:"minecraft:max_health",base:48.0d},{id:"minecraft:attack_damage",base:0.0d}],Health:48.0f}
 function kards:game/yongpaiku/xianjin/jiance/mobjiance
 item replace entity @s weapon.offhand with air
-scoreboard players remove @s kardCount 9
+scoreboard players operation @s kardCount -= #kard_1 kardCount
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1
 scoreboard players set @s pingbi 0
 scoreboard players add @s use_kard 1

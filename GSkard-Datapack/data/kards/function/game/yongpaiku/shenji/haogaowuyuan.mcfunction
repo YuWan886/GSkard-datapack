@@ -7,7 +7,7 @@ scoreboard players operation @s cishu = @s chiniaolongyu
 scoreboard players add @s cishu 2
 scoreboard players set @s chiniaolongyu 0
 
-scoreboard players remove @s kardCount 0
+scoreboard players operation @s kardCount -= #kard_haogaowuyuan kardCount
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1
 scoreboard players set @s pingbi 0
 scoreboard players add @s use_kard 1

@@ -5,7 +5,7 @@ execute if entity @s[team=red] run scoreboard players set @a[team=blue] kujie 2
 #蓝
 execute if entity @s[team=blue] run scoreboard players set @a[team=red] kujie 2
 item replace entity @s weapon.offhand with air
-scoreboard players remove @s kardCount 4
+scoreboard players operation @s kardCount -= #kard_kujie kardCount
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1
 scoreboard players set @s pingbi 0
 scoreboard players add @s use_kard 1

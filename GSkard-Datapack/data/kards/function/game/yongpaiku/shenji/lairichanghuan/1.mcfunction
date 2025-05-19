@@ -5,7 +5,7 @@ scoreboard players set @s changhuan 1
 scoreboard players add @s changhuan_times 1
 
 item replace entity @s weapon.offhand with air
-scoreboard players remove @s kardCount 5
+scoreboard players operation @s kardCount -= #kard_1 kardCount
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1
 scoreboard players set @s pingbi 0
 scoreboard players add @s use_kard 1

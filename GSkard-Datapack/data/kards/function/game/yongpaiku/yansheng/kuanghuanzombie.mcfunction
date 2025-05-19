@@ -27,5 +27,5 @@ tellraw @a [{translate: "game.yongpaiku.yansheng.kuanghuanzombie.2",color:"white
     execute if score @s zombie_enhance matches 61..75 if entity @s[team=blue] as @e[tag=7b] at @s run summon zombie ~ 0 ~ {Tags:["zombie_enhance_3"],Team:blue,IsBaby:false,HandItems:[{id:"netherite_sword"}],ArmorItems:[{id:"minecraft:diamond_boots"},{id:"minecraft:diamond_leggings"},{id:"minecraft:diamond_chestplate"},{id: "minecraft:dispenser"}]}
     execute if score @s zombie_enhance matches 76.. if entity @s[team=blue] as @e[tag=7b] at @s run summon zombie ~ 0 ~ {Tags:["zombie_enhance_3"],Team:blue,IsBaby:false,HandItems:[{id:"netherite_sword"}],ArmorItems:[{id:"minecraft:netherite_boots"},{id:"minecraft:netherite_leggings"},{id:"minecraft:netherite_chestplate"},{id: "minecraft:dragon_head"}]}
 clear @s minecraft:ward_armor_trim_smithing_template 1
-scoreboard players remove @s kardCount 2
+scoreboard players operation @s kardCount -= #kard_kuanghuanzombie kardCount
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1

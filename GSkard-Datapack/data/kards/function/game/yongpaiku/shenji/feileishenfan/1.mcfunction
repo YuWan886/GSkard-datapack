@@ -7,7 +7,7 @@ execute as @s at @s run tp @a[tag=fanxiangfeileishen] ~ ~ ~
 execute as @a[tag=fanxiangfeileishen] at @s run scoreboard players set @s feileishen 200
 tag @a remove fanxiangfeileishen
 item replace entity @s weapon.offhand with air
-scoreboard players remove @s kardCount 0
+scoreboard players operation @s kardCount -= #kard_1 kardCount
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1
 scoreboard players set @s pingbi 0
 scoreboard players add @s use_kard 1

@@ -6,7 +6,7 @@ execute if entity @s[team=red] positioned as @e[tag=7r] run tp @s ~ 0 ~
 execute if entity @s[team=blue] positioned as @e[tag=7b] run tp @s ~ 0 ~
 scoreboard players set @s feileishen 200
 item replace entity @s weapon.offhand with air
-scoreboard players remove @s kardCount 0
+scoreboard players operation @s kardCount -= #kard_1 kardCount
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1
 scoreboard players set @s pingbi 0
 scoreboard players add @s use_kard 1

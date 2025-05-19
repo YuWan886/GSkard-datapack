@@ -2,12 +2,12 @@
 execute if entity @s[team=red] if entity @e[tag=tuteng,team=red,type=shulker] run return fail
 execute if entity @s[team=blue] if entity @e[tag=tuteng,team=blue,type=shulker] run return fail
 #<损耗过度>
-execute if entity @s[team=red] if score 红队 xianjin_sunhaoguodu matches 1 run scoreboard players remove @s kardCount 7
+execute if entity @s[team=red] if score 红队 xianjin_sunhaoguodu matches 1 run scoreboard players operation @s kardCount -= #kard_mobjiance kardCount
 execute if entity @s[team=red] if score 红队 xianjin_sunhaoguodu matches 1 run tellraw @a [{selector: "@s"},{translate: "game.yongpaiku.xianjin.jiance.fashujiance.1",color: "gray"},{translate: "game.yongpaiku.xianjin.jiance.mobjiance.1",color: "dark_aqua",hover_event:{action:"show_text","value":"触发时-7K"}}]
 execute if entity @s[team=red] if score 红队 xianjin_sunhaoguodu matches 1 as @a at @s run playsound minecraft:block.beacon.activate master @s ~ ~ ~ 1 1
 execute if entity @s[team=red] if score 红队 xianjin_sunhaoguodu matches 1 run scoreboard players set 红队 xianjin_sunhaoguodu 0
 
-execute if entity @s[team=blue] if score 蓝队 xianjin_sunhaoguodu matches 1 run scoreboard players remove @s kardCount 7
+execute if entity @s[team=blue] if score 蓝队 xianjin_sunhaoguodu matches 1 run scoreboard players operation @s kardCount -= #kard_mobjiance kardCount
 execute if entity @s[team=blue] if score 蓝队 xianjin_sunhaoguodu matches 1 run tellraw @a [{selector: "@s"},{translate: "game.yongpaiku.xianjin.jiance.fashujiance.1",color: "gray"},{translate: "game.yongpaiku.xianjin.jiance.mobjiance.1",color: "dark_aqua",hover_event:{action:"show_text","value":"触发时-7K"}}]
 execute if entity @s[team=blue] if score 蓝队 xianjin_sunhaoguodu matches 1 as @a at @s run playsound minecraft:block.beacon.activate master @s ~ ~ ~ 1 1
 execute if entity @s[team=blue] if score 蓝队 xianjin_sunhaoguodu matches 1 run scoreboard players set 蓝队 xianjin_sunhaoguodu 0
