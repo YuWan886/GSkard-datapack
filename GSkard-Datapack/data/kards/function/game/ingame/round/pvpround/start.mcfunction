@@ -10,5 +10,5 @@ scoreboard players operation system worldborder = time worldborder
 execute if score system worldborder matches 6000 run tellraw @a {translate: "game.ingame.round.pvpround.start.2",color:"gray",bold:true}
 
 bossbar set minecraft:worldborder visible true
-function kards:game/ingame/GameRound/pvpround/worldborder
-schedule clear kards:game/ingame/GameRound/roundtime
+function kards:game/ingame/round/pvpround/worldborder
+schedule clear kards:game/ingame/round/roundtime

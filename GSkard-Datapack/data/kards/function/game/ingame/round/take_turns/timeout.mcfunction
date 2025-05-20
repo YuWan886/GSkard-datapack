@@ -1,1 +1,1 @@
-function kards:game/ingame/GameRound/take_turns/GameRound
+function kards:game/ingame/round/take_turns/round

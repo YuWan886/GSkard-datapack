@@ -109,7 +109,7 @@ scoreboard players set @a[scores={CanuseKard=1}] lairichanghuan 0
 scoreboard players set @a changhuan_times 0
 scoreboard players set @a[scores={CanuseKard=1}] changhuan 0
 scoreboard players set @a[scores={CanuseKard=0}] use_kard 0
-function kards:game/ingame/GameRound/take_turns/kmax
+function kards:game/ingame/round/take_turns/kmax
 scoreboard players reset 红队_讲述者
 scoreboard players reset 蓝队_讲述者
 function kards:game/yongpaiku/xianjin/jiance/roundjiance
@@ -118,10 +118,10 @@ execute if score 蓝队 xianjin_youdi matches 1 run scoreboard players set 蓝�
 #设置天气为晴天
 weather clear
 #检测pvp
-execute if score 回合数 GameRound = system RoundCount run return run function kards:game/ingame/GameRound/pvpround/waitstart
+execute if score 回合数 GameRound = system RoundCount run return run function kards:game/ingame/round/pvpround/waitstart
 #回合轮换
 scoreboard players add 回合数 GameRound 1
-function kards:game/ingame/GameRound/turns/panding
+function kards:game/ingame/round/turns/panding
 #回合轮换之后生效
 #检测回合 事件通知
 execute if score 回合数 GameRound = system RoundCount run tellraw @a [{translate: "game.ingame.round.take_turns.round.2",color:"gold",bold:true}]
@@ -129,7 +129,7 @@ execute if score 回合数 GameRound = system DifficultyRound run tellraw @a [{t
 execute if score 回合数 GameRound = system DifficultyRound run difficulty hard
 #基础生效
 execute as @a[scores={CanuseKard=1}] run scoreboard players operation @s kardCount = @s kardCountmax
-function kards:game/ingame/GameRound/take_turns/choupai with storage minecraft:system choupai
+function kards:game/ingame/round/take_turns/choupai with storage minecraft:system choupai
 #人数补偿
 execute if score system b_number > system r_number run scoreboard players add @a[team=red,scores={CanuseKard=1}] kardCount 5
 execute if score system b_number > system r_number run scoreboard players add @a[team=red,scores={CanuseKard=1}] cishu 1
@@ -184,8 +184,8 @@ execute if entity @a[team=blue,scores={kujie=1..}] run tellraw @a {translate: "g
 
 scoreboard players set @a jiben 0
 scoreboard players set @a xukonghuixiang 0
-function kards:game/ingame/GameRound/skill
-function kards:game/ingame/GameRound/tuteng
+function kards:game/ingame/round/skill
+function kards:game/ingame/round/tuteng
 scoreboard players set @a[scores={CanuseKard=0}] kardCount 0
 
 execute if score 红队 manshui matches 1 run tellraw @a {translate: "game.ingame.round.take_turns.round.14",color:"gray",bold:true}

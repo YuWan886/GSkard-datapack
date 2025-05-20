@@ -26,5 +26,5 @@ scoreboard players set time pvptime 600
 fill -188 -9 -137 -188 0 -191 minecraft:barrier replace air
 fill -233 -9 -191 -233 0 -137 minecraft:barrier replace air
 worldborder set 80
-function kards:game/ingame/GameRound/pvpround/countdown
+function kards:game/ingame/round/pvpround/countdown
 

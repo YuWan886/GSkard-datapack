@@ -2,7 +2,7 @@
 function kards:game/ingame/choupai/cishu
 function kards:game/ingame/use_kard/general
 #回合计时
-execute if score system GameStatus matches 1 run function kards:game/ingame/GameRound/roundtime
+execute if score system GameStatus matches 1 run function kards:game/ingame/round/roundtime
 #分数小标题
 execute as @a[gamemode=adventure,tag=Ready] if score system GameStatus matches 1..2 unless items entity @s weapon.mainhand #kards:jinzhanwuqi unless items entity @s weapon.mainhand lantern run title @s actionbar [{translate: "game.ingame.general.1",color:"dark_green"},{score:{objective:"kardCount",name:"@s"},color:"red"},{translate: "game.ingame.general.2",color: "red"},{score:{objective:"kardCountmax",name:"@s"},color:"red",bold: true}]
 #赋值

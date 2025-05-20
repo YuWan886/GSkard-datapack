@@ -22,4 +22,4 @@ execute if score system GameStatus matches 0 run title @a[tag=Un_Ready,advanceme
 execute if score system GameStatus matches 0 run title @a[tag=Un_Ready,advancements={kards:chengjiu/laodeng=false}] actionbar {translate: "lobby.ready.general.4",color:"red",bold:true}
 
 execute if score system GameStatus matches 0 run title @a[advancements={kards:chengjiu/jiaocheng=false,kards:chengjiu/laodeng=false}] actionbar {translate: "lobby.ready.general.5",color:"red",bold:true}
-scoreboard players set #kard_general kardCount 0 general
+scoreboard players set #kard_general kardCount 0

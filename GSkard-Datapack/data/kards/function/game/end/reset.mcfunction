@@ -104,7 +104,7 @@ scoreboard players reset * b_death
 scoreboard players reset * r_number
 scoreboard players reset * b_number
 #计划
-schedule clear kards:game/ingame/GameRound/pvpround/countdown
+schedule clear kards:game/ingame/round/pvpround/countdown
 #停止音乐
 execute as @a at @s run stopsound @s
 #概率生成oiiao

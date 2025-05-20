@@ -1,2 +1,2 @@
 execute if score @s tiaoguo matches 0 run tellraw @s {translate: "game.ingame.round.take_turns.use_sign.1",color:"gray",bold:true}
-execute if score @s tiaoguo matches 1 run function kards:game/ingame/GameRound/take_turns/GameRound
+execute if score @s tiaoguo matches 1 run function kards:game/ingame/round/take_turns/round

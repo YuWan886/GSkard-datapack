@@ -9,7 +9,7 @@ scoreboard players set @a[gamemode=adventure] cishu 5
 scoreboard players operation time roundtime = system roundtime
 scoreboard players set 回合数 GameRound 1
 
-execute if score system roundtime matches 0 run function kards:game/ingame/GameRound/pvpround/waitstart
+execute if score system roundtime matches 0 run function kards:game/ingame/round/pvpround/waitstart
 execute if score system roundtime matches 0 run difficulty hard
 execute if score system roundtime matches 0 run scoreboard players add @a[gamemode=adventure] zhuangbeicishu 10
 
