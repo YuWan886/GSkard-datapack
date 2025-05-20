@@ -1,3 +1,3 @@
 
-give @s music_disc_stal[item_name=[{translate: "game.paiku.fashu.chongzhu.1",color:"aqua"},{translate: "game.paiku.zuzhou.pingbi.1",color:"dark_gray"}],lore=[{translate: "game.paiku.zuzhou.chengmo.2",color:"dark_gray",italic:false},{translate: "game.paiku.zuzhou.pingbi.2",color:"gray",italic:false}],jukebox_playable="minecraft:pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'屏蔽'}]
+give @s music_disc_stal[item_name=[{translate: "game.paiku.fashu.chongzhu.1",color:"aqua"},{translate: "game.paiku.zuzhou.pingbi.1",color:"dark_gray"}],lore=[{translate: "game.paiku.zuzhou.chengmo.2",color:"dark_gray",italic:false},{translate: "game.paiku.zuzhou.pingbi.2",color:"gray",italic:false}],jukebox_playable="minecraft:pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'屏蔽'},tooltip_style="kard/curse"]
 scoreboard players set #kard_pingbi kardCount 0
