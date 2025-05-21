@@ -1,4 +1,4 @@
-execute unless score system GameStatus matches 0 run execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.paiku.fashu.wuyongfa.1",color:"gold"},{translate: "game.yongpaiku.shenji.wangzhibaoku.random1.1",color:"white",hover_event:{action:"show_text","value":"抽取一次王之宝库"}}]
+execute unless score #system GameStatus matches 0 run execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.paiku.fashu.wuyongfa.1",color:"gold"},{translate: "game.yongpaiku.shenji.wangzhibaoku.random1.1",color:"white",hover_event:{action:"show_text","value":"抽取一次王之宝库"}}]
 function kards:game/yongpaiku/xianjin/jiance/shenjijiance
 execute store result score @s wangzhibaoku run random value 1..14
 execute if score @s wangzhibaoku matches 1 run function kards:game/yongpaiku/shenji/wangzhibaoku/zhengyizhichui/give
@@ -17,7 +17,7 @@ execute if score @s wangzhibaoku matches 13 run function kards:game/yongpaiku/sh
 execute if score @s wangzhibaoku matches 14 run function kards:game/yongpaiku/shenji/wangzhibaoku/wuxiuzhihuo/give
 scoreboard players set @s wangzhibaoku 0
 item replace entity @s weapon.offhand with air
-scoreboard players operation @s kardCount -= #kard_random1 kardCount
+scoreboard players operation @s kardCount -= #kard_wangzhibaoku kardCount
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1
 scoreboard players set @s pingbi 0
 scoreboard players add @s use_kard 1

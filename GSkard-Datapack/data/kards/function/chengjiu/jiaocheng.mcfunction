@@ -1,1 +1,1 @@
-tellraw @a [{selector:"@s"},{translate: "chengjiu.first_join_game.1",color:"white"},{translate: "chengjiu.jiaocheng.1",color:"green",hover_event:{action:"show_text","value":"完成新手教程"}}]
+execute as @s[advancements={kards:chengjiu/laodeng=false}] run tellraw @a [{selector:"@s"},{translate: "chengjiu.first_join_game.1",color:"white"},{translate: "chengjiu.jiaocheng.1",color:"green",hover_event:{action:"show_text","value":"完成新手教程"}}]

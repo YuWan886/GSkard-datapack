@@ -48,12 +48,12 @@ execute as @a[team=blue,tag=kunanyaolan] if score @s behurt_kunanyaolan1 matches
 execute as @a[tag=kunanyaolan] if score @s behurt_kunanyaolan1 matches 200.. run scoreboard players remove @s behurt_kunanyaolan1 200
 
 scoreboard players add @a[tag=kunanyaolan] healback_kunanyaolan 1
-scoreboard players set system healback_kunanyaolan 4
-scoreboard players set system healback_kunanyaolan2 100
+scoreboard players set #system healback_kunanyaolan 4
+scoreboard players set #system healback_kunanyaolan2 100
 execute as @a[tag=kunanyaolan] if score @s healback_kunanyaolan matches 600 run scoreboard players operation @s healback_kunanyaolan2 = @s behurt_kunanyaolan2
 execute as @a[tag=kunanyaolan] if score @s healback_kunanyaolan matches 600 run scoreboard players set @s behurt_kunanyaolan2 0
-execute as @a[tag=kunanyaolan] if score @s healback_kunanyaolan matches 600 run scoreboard players operation @s healback_kunanyaolan2 *= system healback_kunanyaolan
-execute as @a[tag=kunanyaolan] if score @s healback_kunanyaolan matches 600 run scoreboard players operation @s healback_kunanyaolan2 /= system healback_kunanyaolan2
+execute as @a[tag=kunanyaolan] if score @s healback_kunanyaolan matches 600 run scoreboard players operation @s healback_kunanyaolan2 *= #system healback_kunanyaolan
+execute as @a[tag=kunanyaolan] if score @s healback_kunanyaolan matches 600 run scoreboard players operation @s healback_kunanyaolan2 /= #system healback_kunanyaolan2
 execute as @a[tag=kunanyaolan] if score @s healback_kunanyaolan matches 600 run tellraw @s [{translate: "game.yongpaiku.shenji.wangzhibaoku.general.1",color:"red"},{translate: "game.yongpaiku.shenji.wangzhibaoku.general.2",color:"green"}]
 execute as @a[tag=kunanyaolan] if score @s healback_kunanyaolan matches 600 at @s run playsound minecraft:entity.arrow.hit_player player @s ~ ~ ~ 100 0
 execute as @a[tag=kunanyaolan] if score @s healback_kunanyaolan matches 600.. run scoreboard players set @s healback_kunanyaolan 0

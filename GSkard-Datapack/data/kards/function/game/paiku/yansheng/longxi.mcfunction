@@ -1,1 +1,2 @@
 give @s dragon_breath[item_name=[{translate: "game.paiku.yansheng.longxi.1",color:"gold"}],lore=[[{translate: "game.paiku.yansheng.longxi.2",color:"gold",italic:false},{translate: "game.paiku.yansheng.longxi.3",color:"gray",italic:false}],[{translate: "game.paiku.yansheng.longxi.4",color:"gray",italic:false},{translate: "game.paiku.yansheng.longxi.5",color:"gold",italic:false}],[{translate: "game.paiku.yansheng.longxi.6",color:"gray",italic:false}]],custom_data={kards:'龙息'}]
+scoreboard players set #kard_longxi kardCount 2

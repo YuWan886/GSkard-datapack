@@ -16,6 +16,6 @@ item replace entity @a[team=blue] armor.feet from block 7 -60 -48 container.3
 #命令书
 item replace entity @a[tag=Ready] container.8 with minecraft:written_book[item_name=[{translate: "game.start.wait_start.7",color:"gold"}],written_book_content={author:"Hart_GS",title:'§6便携命令书',pages:[[{translate: "game.start.wait_start.8",color:"gray",bold:true},{translate: "game.start.wait_start.9",color:"gold",click_event:{action:"run_command",command:"/trigger touxiang"},hover_event:{action:"show_text","value":"当投降人数与队伍存活人数相同时判对手胜利,仅在第1回合结束后才能使用"}},{translate: "game.start.wait_start.10",color:"red",click_event:{action:"run_command",command:"/trigger reset"},hover_event:{action:"show_text","value":"你真的要这样做吗？"}}]]}]
 function kards:game/ingame/round/skill
-execute if score system roundtime matches 0 as @a[gamemode=adventure] run function kards:game/yongpaiku/shenji/wangzhibaoku/random3
+execute if score #system roundtime matches 0 as @a[gamemode=adventure] run function kards:game/yongpaiku/shenji/wangzhibaoku/random3
 #血量
 effect give @a[tag=Ready] instant_health 1 200 true

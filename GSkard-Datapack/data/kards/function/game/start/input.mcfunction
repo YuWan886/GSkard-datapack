@@ -1,7 +1,7 @@
 #设置游戏状态为1（开启）
-scoreboard players set system GameStatus 1
+scoreboard players set #system GameStatus 1
 #清实体
-kill @e[type=!player,type=!armor_stand,type=!#kards:display]
+kill @e[type=!player,type=!marker,type=!#kards:display]
 #重设分数
 scoreboard players reset @a
 scoreboard objectives add health health ["生命值"]
@@ -13,7 +13,6 @@ gamemode spectator @a[tag=Un_Ready]
 #属性
 execute as @a run attribute @s minecraft:scale base set 1
 #设置回合数为1
-scoreboard objectives setdisplay sidebar GameRound
 scoreboard objectives setdisplay below_name kardCount
 scoreboard players set @a[tag=Ready] kardCountmax 10
 
@@ -36,16 +35,16 @@ function kards:game/yongpaiku/xianjin/reset
 
 #显示倒计时
 bossbar set minecraft:roundtime visible true
-execute if score system roundtime matches 0 run bossbar set roundtime visible false
+execute if score #system roundtime matches 0 run bossbar set roundtime visible false
 bossbar set roundtime players @a
 #时间
 time set midnight
 #传送
 schedule function kards:game/start/tp 1t
-execute if score system roundtime matches 0 run schedule clear kards:game/start/tp
+execute if score #system roundtime matches 0 run schedule clear kards:game/start/tp
 #存储人数
-execute store result score system r_number if entity @a[team=red]
-execute store result score system b_number if entity @a[team=blue]
+execute store result score #system r_number if entity @a[team=red]
+execute store result score #system b_number if entity @a[team=blue]
 
 #神器
 tag @a remove jishengnianye

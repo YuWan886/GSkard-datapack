@@ -1,18 +1,18 @@
 #赛后统计
-scoreboard players set system tongji_damage_huansuan 20
-scoreboard players set system tongji_hurt_huansuan 20
-scoreboard players set system tongji_killed_huansuan 1
-execute as @a[tag=Ready] run scoreboard players operation @s tongji_damage /= system tongji_damage_huansuan
-execute as @a[tag=Ready] run scoreboard players operation @s tongji_hurt /= system tongji_hurt_huansuan
-scoreboard players operation system tongji_damage > * tongji_damage
-scoreboard players operation system tongji_killed > * tongji_killed
-scoreboard players operation system tongji_hurt > * tongji_hurt
-execute as @a if score @s tongji_damage = system tongji_damage run tag @s add DamageMAX
-execute as @a if score @s tongji_killed = system tongji_killed run tag @s add KillMAX
-execute as @a if score @s tongji_hurt = system tongji_hurt run tag @s add HurtMAX
-tellraw @a [{translate: "game.end.reset.1",color:"green"},{selector:"@a[tag=DamageMAX]",bold:true},{translate: "game.end.reset.2",color:"green"},{score:{objective:"tongji_damage",name:"system"}},{translate: "game.end.reset.3",color:"red"},{translate: "game.end.reset.4",color:"green"}]
-tellraw @a [{translate: "game.end.reset.5",color:"green"},{selector:"@a[tag=HurtMAX]",bold:true},{translate: "game.end.reset.6",color:"green"},{score:{objective:"tongji_hurt",name:"system"}},{translate: "game.end.reset.3",color:"red"},{translate: "game.end.reset.4",color:"green"}]
-tellraw @a [{translate: "game.end.reset.7",color:"green"},{selector:"@a[tag=KillMAX]",bold:true},{translate: "game.end.reset.8",color:"green"},{score:{objective:"tongji_killed",name:"system"}},{translate: "game.end.reset.9",color:"red"},{translate: "game.end.reset.10",color:"green"}]
+scoreboard players set #system tongji_damage_huansuan 20
+scoreboard players set #system tongji_hurt_huansuan 20
+scoreboard players set #system tongji_killed_huansuan 1
+execute as @a[tag=Ready] run scoreboard players operation @s tongji_damage /= #system tongji_damage_huansuan
+execute as @a[tag=Ready] run scoreboard players operation @s tongji_hurt /= #system tongji_hurt_huansuan
+scoreboard players operation #system tongji_damage > * tongji_damage
+scoreboard players operation #system tongji_killed > * tongji_killed
+scoreboard players operation #system tongji_hurt > * tongji_hurt
+execute as @a if score @s tongji_damage = #system tongji_damage run tag @s add DamageMAX
+execute as @a if score @s tongji_killed = #system tongji_killed run tag @s add KillMAX
+execute as @a if score @s tongji_hurt = #system tongji_hurt run tag @s add HurtMAX
+tellraw @a [{translate: "game.end.reset.1",color:"green"},{selector:"@a[tag=DamageMAX]",bold:true},{translate: "game.end.reset.2",color:"green"},{score:{objective:"tongji_damage",name:"#system"}},{translate: "game.end.reset.3",color:"red"},{translate: "game.end.reset.4",color:"green"}]
+tellraw @a [{translate: "game.end.reset.5",color:"green"},{selector:"@a[tag=HurtMAX]",bold:true},{translate: "game.end.reset.6",color:"green"},{score:{objective:"tongji_hurt",name:"#system"}},{translate: "game.end.reset.3",color:"red"},{translate: "game.end.reset.4",color:"green"}]
+tellraw @a [{translate: "game.end.reset.7",color:"green"},{selector:"@a[tag=KillMAX]",bold:true},{translate: "game.end.reset.8",color:"green"},{score:{objective:"tongji_killed",name:"#system"}},{translate: "game.end.reset.9",color:"red"},{translate: "game.end.reset.10",color:"green"}]
 tag @a[tag=DamageMAX] remove DamageMAX
 tag @a[tag=KillMAX] remove KillMAX
 tag @a[tag=InfectMAX] remove InfectMAX
@@ -24,11 +24,11 @@ scoreboard players reset * tongji_hurt
 #重置边界
 bossbar set minecraft:worldborder visible false
 worldborder set 59999968
-scoreboard players set system worldborder -1
+scoreboard players set #system worldborder -1
 #重置陷阱
 function kards:game/yongpaiku/xianjin/reset
 #设置游戏状态为0(关闭)
-scoreboard players set system GameStatus 0
+scoreboard players set #system GameStatus 0
 #重置回合数
 scoreboard players reset 回合数
 scoreboard objectives setdisplay below_name
@@ -56,7 +56,7 @@ spawnpoint @a 59 226 -26 -90
 #设置难度为和平
 difficulty peaceful
 #清生物
-kill @e[type=!player,type=!armor_stand,type=!#kards:display]
+kill @e[type=!player,type=!marker,type=!#kards:display]
 #tp回大厅
 tp @a 59 226 -26 -90 0
 #清tag

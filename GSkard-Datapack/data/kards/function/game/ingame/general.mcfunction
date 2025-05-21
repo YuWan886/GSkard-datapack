@@ -2,9 +2,9 @@
 function kards:game/ingame/choupai/cishu
 function kards:game/ingame/use_kard/general
 #回合计时
-execute if score system GameStatus matches 1 run function kards:game/ingame/round/roundtime
+execute if score #system GameStatus matches 1 run function kards:game/ingame/round/roundtime
 #分数小标题
-execute as @a[gamemode=adventure,tag=Ready] if score system GameStatus matches 1..2 unless items entity @s weapon.mainhand #kards:jinzhanwuqi unless items entity @s weapon.mainhand lantern run title @s actionbar [{translate: "game.ingame.general.1",color:"dark_green"},{score:{objective:"kardCount",name:"@s"},color:"red"},{translate: "game.ingame.general.2",color: "red"},{score:{objective:"kardCountmax",name:"@s"},color:"red",bold: true}]
+execute as @a[gamemode=adventure,tag=Ready] if score #system GameStatus matches 1..2 unless items entity @s weapon.mainhand #kards:jinzhanwuqi unless items entity @s weapon.mainhand lantern run title @s actionbar [{translate: "game.ingame.general.1",color:"dark_green"},{score:{objective:"kardCount",name:"@s"},color:"red"},{translate: "game.ingame.general.2",color: "red"},{score:{objective:"kardCountmax",name:"@s"},color:"red",bold: true}]
 #赋值
 scoreboard players add @a tanshewubuchong 0
 scoreboard players add @a zhunbei 0
@@ -115,16 +115,16 @@ execute as @a if score @s qinglvqianmou matches 1 if score @s use_kard matches 1
 execute as @a if score @s qinglvqianmou matches 1 if score @s use_kard matches 1.. run scoreboard players remove @s use_kard 1
 execute as @a if score @s qinglvqianmou matches 1 if score @s use_kard matches 0 run scoreboard players set @s qinglvqianmou 0
 #检测旁观玩家高度/限高
-execute as @a[gamemode=spectator] if score system dituxuanze matches 1 positioned -33 0.00 3 if score system GameStatus matches 1 if entity @s unless entity @s[dz=60,dy=7.2,dx=41] at @s run tp @r[gamemode=adventure]
-execute as @a[gamemode=spectator] if score system dituxuanze matches 2 positioned -188 0.00 4 if score system GameStatus matches 1 if entity @s unless entity @s[dz=67,dy=7.2,dx=45] at @s run tp @r[gamemode=adventure]
-execute as @a[gamemode=spectator] if score system dituxuanze matches 3 positioned 103 0.00 6 if score system GameStatus matches 1 if entity @s unless entity @s[dz=52,dy=8.2,dx=24] at @s run tp @r[gamemode=adventure]
-execute as @a[gamemode=spectator] if score system dituxuanze matches 4 positioned -256.00 0.00 5.00 if score system GameStatus matches 1 if entity @s unless entity @s[dz=65,dy=19,dx=42] at @s run tp @r[gamemode=adventure]
-execute as @a[gamemode=spectator] if score system dituxuanze matches 5 positioned -100.00 0.00 -1.00 if score system GameStatus matches 1 if entity @s unless entity @s[dz=56,dy=18,dx=35] at @s run tp @r[gamemode=adventure]
-execute as @a[gamemode=spectator] if score system dituxuanze matches 6 positioned 264 -1.00 -378 if score system GameStatus matches 1 if entity @s unless entity @s[dz=52,dy=64,dx=87] at @s run tp @r[gamemode=adventure]
-execute as @a[gamemode=spectator] if score system dituxuanze matches 7 positioned 179.00 0.0 21.00 if score system GameStatus matches 1 if entity @s unless entity @s[dz=64,dy=9,dx=45] at @s run tp @r[gamemode=adventure]
-execute as @a[gamemode=spectator] if score system dituxuanze matches 8 positioned 59.00 0.00 104.00 if score system GameStatus matches 1 if entity @s unless entity @s[dz=54,dy=9,dx=33] at @s run tp @r[gamemode=adventure]
+execute as @a[gamemode=spectator] if score #system dituxuanze matches 1 positioned -33 0.00 3 if score #system GameStatus matches 1 if entity @s unless entity @s[dz=60,dy=7.2,dx=41] at @s run tp @r[gamemode=adventure]
+execute as @a[gamemode=spectator] if score #system dituxuanze matches 2 positioned -188 0.00 4 if score #system GameStatus matches 1 if entity @s unless entity @s[dz=67,dy=7.2,dx=45] at @s run tp @r[gamemode=adventure]
+execute as @a[gamemode=spectator] if score #system dituxuanze matches 3 positioned 103 0.00 6 if score #system GameStatus matches 1 if entity @s unless entity @s[dz=52,dy=8.2,dx=24] at @s run tp @r[gamemode=adventure]
+execute as @a[gamemode=spectator] if score #system dituxuanze matches 4 positioned -256.00 0.00 5.00 if score #system GameStatus matches 1 if entity @s unless entity @s[dz=65,dy=19,dx=42] at @s run tp @r[gamemode=adventure]
+execute as @a[gamemode=spectator] if score #system dituxuanze matches 5 positioned -100.00 0.00 -1.00 if score #system GameStatus matches 1 if entity @s unless entity @s[dz=56,dy=18,dx=35] at @s run tp @r[gamemode=adventure]
+execute as @a[gamemode=spectator] if score #system dituxuanze matches 6 positioned 264 -1.00 -378 if score #system GameStatus matches 1 if entity @s unless entity @s[dz=52,dy=64,dx=87] at @s run tp @r[gamemode=adventure]
+execute as @a[gamemode=spectator] if score #system dituxuanze matches 7 positioned 179.00 0.0 21.00 if score #system GameStatus matches 1 if entity @s unless entity @s[dz=64,dy=9,dx=45] at @s run tp @r[gamemode=adventure]
+execute as @a[gamemode=spectator] if score #system dituxuanze matches 8 positioned 59.00 0.00 104.00 if score #system GameStatus matches 1 if entity @s unless entity @s[dz=54,dy=9,dx=33] at @s run tp @r[gamemode=adventure]
 
-execute as @a[gamemode=spectator] positioned -249.0 -10 -192.0 if score system GameStatus matches 2 if entity @s unless entity @s[dz=56,dy=60,dx=77] at @s run tp @r[gamemode=adventure]
+execute as @a[gamemode=spectator] positioned -249.0 -10 -192.0 if score #system GameStatus matches 2 if entity @s unless entity @s[dz=56,dy=60,dx=77] at @s run tp @r[gamemode=adventure]
 #沉默
 execute if score @e[tag=r_dw,limit=1] chengmo matches 1.. as @a[team=red,gamemode=adventure] at @s run kill @e[type=item,distance=..3]
 execute if score @e[tag=b_dw,limit=1] chengmo matches 1.. as @a[team=blue,gamemode=adventure] at @s run kill @e[type=item,distance=..3]
@@ -199,10 +199,15 @@ execute as @e[type=!player,nbt={AngerTime:0}] run data modify entity @s AngerTim
 #蜜蜂
 execute as @e[type=bee] run data modify entity @s HasStung set value 0b
 #防止末影人等传送离开
-execute as @e[team=red,type=minecraft:enderman] at @e[tag=b_dw] positioned ~ -1 ~ unless entity @s[dx=24,dz=24,dy=10] at @e[tag=7r] run tp @s ~ 0 ~
-execute as @e[team=blue,type=minecraft:enderman] at @e[tag=r_dw] positioned ~ -1 ~ unless entity @s[dx=24,dz=24,dy=10] at @e[tag=7b] run tp @s ~ 0 ~
-execute as @e[team=red,type=minecraft:shulker,tag=tuteng] at @e[tag=r_ttdw] positioned ~ -1 ~ unless entity @s[dx=4,dz=24,dy=1] at @e[tag=r_tuteng] run tp @s ~ 1 ~
-execute as @e[team=blue,type=minecraft:shulker,tag=tuteng] at @e[tag=b_ttdw] positioned ~ -1 ~ unless entity @s[dx=4,dz=24,dy=1] at @e[tag=b_tuteng] run tp @s ~ 1 ~
+execute if score #system dituxuanze matches 1..100 as @e[team=red,type=minecraft:enderman] at @e[tag=b_dw] positioned ~ -1 ~ unless entity @s[dx=24,dz=24,dy=10] at @e[tag=7r] run tp @s ~ 0 ~
+execute if score #system dituxuanze matches 1..100 as @e[team=blue,type=minecraft:enderman] at @e[tag=r_dw] positioned ~ -1 ~ unless entity @s[dx=24,dz=24,dy=10] at @e[tag=7b] run tp @s ~ 0 ~
+execute if score #system dituxuanze matches 1..100 as @e[team=red,type=minecraft:shulker,tag=tuteng] at @e[tag=r_ttdw] positioned ~ -1 ~ unless entity @s[dx=4,dz=24,dy=1] at @e[tag=r_tuteng] run tp @s ~ 1 ~
+execute if score #system dituxuanze matches 1..100 as @e[team=blue,type=minecraft:shulker,tag=tuteng] at @e[tag=b_ttdw] positioned ~ -1 ~ unless entity @s[dx=4,dz=24,dy=1] at @e[tag=b_tuteng] run tp @s ~ 1 ~
+
+execute if score #system dituxuanze matches 101.. as @e[team=red,type=minecraft:enderman] at @e[tag=b_dw] positioned ~ -1 ~ unless entity @s[dx=34,dz=34,dy=10] at @e[tag=7r] run tp @s ~ 0 ~
+execute if score #system dituxuanze matches 101.. as @e[team=blue,type=minecraft:enderman] at @e[tag=r_dw] positioned ~ -1 ~ unless entity @s[dx=34,dz=34,dy=10] at @e[tag=7b] run tp @s ~ 0 ~
+execute if score #system dituxuanze matches 101.. as @e[team=red,type=minecraft:shulker,tag=tuteng] at @e[tag=r_ttdw] positioned ~ -1 ~ unless entity @s[dx=4,dz=34,dy=1] at @e[tag=r_tuteng] run tp @s ~ 1 ~
+execute if score #system dituxuanze matches 101.. as @e[team=blue,type=minecraft:shulker,tag=tuteng] at @e[tag=b_ttdw] positioned ~ -1 ~ unless entity @s[dx=4,dz=34,dy=1] at @e[tag=b_tuteng] run tp @s ~ 1 ~
 
 #史莱姆
 tp @e[type=minecraft:slime,nbt={Size:0}] 0 -100 0

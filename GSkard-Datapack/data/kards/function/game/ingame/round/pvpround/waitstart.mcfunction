@@ -5,7 +5,7 @@ scoreboard players set @a kardCountmax 100
 scoreboard players set @a kardCount 100
 scoreboard players set @a CanuseKard 1
 scoreboard players set 回合数 GameRound 0
-scoreboard players set system GameStatus 2
+scoreboard players set #system GameStatus 2
 team modify red friendlyFire false
 team modify blue friendlyFire false
 effect clear @a
@@ -18,7 +18,7 @@ tellraw @a [{translate: "game.ingame.round.pvpround.waitstart.3",color:"gold"},{
 tellraw @a {translate: "game.ingame.round.pvpround.waitstart.5",color:"gray",bold:true}
 tp @a[team=red] -179 -9 -164
 tp @a[team=blue] -242 -9 -164
-kill @e[type=!player,type=!armor_stand,type=!#kards:display]
+kill @e[type=!player,type=!marker,type=!#kards:display]
 gamemode spectator @a[tag=Spectator]
 bossbar set pvptime players @a
 bossbar set pvptime visible true

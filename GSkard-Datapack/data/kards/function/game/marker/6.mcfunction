@@ -1,0 +1,34 @@
+execute if score b_dw p matches 0 run summon minecraft:marker 264 -10 -378 {Tags:["b_dw"]}
+execute if score b_ttdw p matches 0 run summon minecraft:marker 290 -10 -378 {Tags:["b_ttdw"]}
+execute if score 1r p matches 0 run summon minecraft:marker 285 -10 -357 {Tags:["1r"]}
+execute if score 2r p matches 0 run summon minecraft:marker 276 -10 -357 {Tags:["2r"]}
+execute if score 3r p matches 0 run summon minecraft:marker 267 -10 -357 {Tags:["3r"]}
+execute if score 4r p matches 0 run summon minecraft:marker 276 -10 -361 {Tags:["4r"]}
+execute if score 5r p matches 0 run summon minecraft:marker 285 -10 -366 {Tags:["5r"]}
+execute if score 6r p matches 0 run summon minecraft:marker 281 -10 -366 {Tags:["6r"]}
+execute if score 7r p matches 0 run summon minecraft:marker 276 -10 -366 {Tags:["7r"]}
+execute if score 8r p matches 0 run summon minecraft:marker 271 -10 -366 {Tags:["8r"]}
+execute if score 9r p matches 0 run summon minecraft:marker 267 -10 -366 {Tags:["9r"]}
+execute if score 10r p matches 0 run summon minecraft:marker 276 -10 -371 {Tags:["10r"]}
+execute if score 11r p matches 0 run summon minecraft:marker 285 -10 -375 {Tags:["11r"]}
+execute if score 12r p matches 0 run summon minecraft:marker 276 -10 -375 {Tags:["12r"]}
+execute if score 13r p matches 0 run summon minecraft:marker 267 -10 -375 {Tags:["13r"]}
+execute if score b_tuteng p matches 0 run summon minecraft:marker 292 -10 -366 {Tags:["b_tuteng"]}
+
+#蓝队
+execute if score r_dw p matches 0 run summon minecraft:marker 264 -10 -350 {Tags:["r_dw"]}
+execute if score r_ttdw p matches 0 run summon minecraft:marker 290 -10 -350 {Tags:["r_ttdw"]}
+execute if score 1b p matches 0 run summon minecraft:marker 267 -10 -347 {Tags:["1b"]}
+execute if score 2b p matches 0 run summon minecraft:marker 276 -10 -347 {Tags:["2b"]}
+execute if score 3b p matches 0 run summon minecraft:marker 285 -10 -347 {Tags:["3b"]}
+execute if score 4b p matches 0 run summon minecraft:marker 276 -10 -343 {Tags:["4b"]}
+execute if score 5b p matches 0 run summon minecraft:marker 267 -10 -338 {Tags:["5b"]}
+execute if score 6b p matches 0 run summon minecraft:marker 271 -10 -338 {Tags:["6b"]}
+execute if score 7b p matches 0 run summon minecraft:marker 276 -10 -338 {Tags:["7b"]}
+execute if score 8b p matches 0 run summon minecraft:marker 281 -10 -338 {Tags:["8b"]}
+execute if score 9b p matches 0 run summon minecraft:marker 285 -10 -338 {Tags:["9b"]}
+execute if score 10b p matches 0 run summon minecraft:marker 276 -10 -333 {Tags:["10b"]}
+execute if score 11b p matches 0 run summon minecraft:marker 267 -10 -329 {Tags:["11b"]}
+execute if score 12b p matches 0 run summon minecraft:marker 276 -10 -329 {Tags:["12b"]}
+execute if score 13b p matches 0 run summon minecraft:marker 285 -10 -329 {Tags:["13b"]}
+execute if score r_tuteng p matches 0 run summon minecraft:marker 292 -10 -338 {Tags:["r_tuteng"]}

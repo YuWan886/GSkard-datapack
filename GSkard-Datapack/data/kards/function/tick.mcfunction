@@ -19,7 +19,7 @@ execute store result score 人数 b_alive if entity @a[team=blue,gamemode=advent
 #启用trigger
 scoreboard players enable @a reset
 scoreboard players enable @a jiaocheng
-execute if score system GameStatus matches 1..2 run scoreboard players enable @a[scores={touxiang=0}] touxiang
+execute if score #system GameStatus matches 1..2 run scoreboard players enable @a[scores={touxiang=0}] touxiang
 scoreboard players enable @a music_kards
 scoreboard players enable @a music_lengxiao
 scoreboard players enable @a stopsound
@@ -30,19 +30,19 @@ execute as @a if score @s stopsound matches 1.. run function kards:music/stop
 #首次进入
 advancement grant @a only kards:first_join_game
 #整着玩的
-scoreboard players add system Color 1
-execute if score system Color matches 5 run team modify First prefix [{translate: "tick.1",color:"red"},{translate: "tick.2",color:"yellow"},{translate: "tick.3",color:"green"},{translate: "tick.4",color:"aqua"}]
-execute if score system Color matches 5 run team modify First color red
-execute if score system Color matches 10 run team modify First prefix [{translate: "tick.1",color:"aqua"},{translate: "tick.2",color:"red"},{translate: "tick.3",color:"yellow"},{translate: "tick.4",color:"green"}]
-execute if score system Color matches 10 run team modify First color yellow
-execute if score system Color matches 15 run team modify First prefix [{translate: "tick.1",color:"green"},{translate: "tick.2",color:"aqua"},{translate: "tick.3",color:"red"},{translate: "tick.4",color:"yellow"}]
-execute if score system Color matches 15 run team modify First color green
-execute if score system Color matches 20 run team modify First prefix [{translate: "tick.1",color:"yellow"},{translate: "tick.2",color:"green"},{translate: "tick.3",color:"aqua"},{translate: "tick.4",color:"red"}]
-execute if score system Color matches 20 run team modify First color aqua
-execute if score system Color matches 20 run scoreboard players set system Color 0
+scoreboard players add #system Color 1
+execute if score #system Color matches 5 run team modify First prefix [{translate: "tick.1",color:"red"},{translate: "tick.2",color:"yellow"},{translate: "tick.3",color:"green"},{translate: "tick.4",color:"aqua"}]
+execute if score #system Color matches 5 run team modify First color red
+execute if score #system Color matches 10 run team modify First prefix [{translate: "tick.1",color:"aqua"},{translate: "tick.2",color:"red"},{translate: "tick.3",color:"yellow"},{translate: "tick.4",color:"green"}]
+execute if score #system Color matches 10 run team modify First color yellow
+execute if score #system Color matches 15 run team modify First prefix [{translate: "tick.1",color:"green"},{translate: "tick.2",color:"aqua"},{translate: "tick.3",color:"red"},{translate: "tick.4",color:"yellow"}]
+execute if score #system Color matches 15 run team modify First color green
+execute if score #system Color matches 20 run team modify First prefix [{translate: "tick.1",color:"yellow"},{translate: "tick.2",color:"green"},{translate: "tick.3",color:"aqua"},{translate: "tick.4",color:"red"}]
+execute if score #system Color matches 20 run team modify First color aqua
+execute if score #system Color matches 20 run scoreboard players set #system Color 0
 
 #oiiaioiiiiai
-#scoreboard players add system oiiaioiiiiai 1
+#scoreboard players add #system oiiaioiiiiai 1
 execute as @e[type=cat,name=Oiiaioiiiiai] at @s run tp @s ~ ~ ~ ~50 ~
 #测试用
 

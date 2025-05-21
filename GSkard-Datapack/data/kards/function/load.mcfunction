@@ -11,6 +11,10 @@ schedule clear kards:lobby/bossbar/color/3
 schedule clear kards:lobby/bossbar/color/4
 function kards:lobby/bossbar/color/1
 #注册计分项目
+scoreboard objectives add roundtimeOper dummy
+scoreboard objectives add cishu dummy
+scoreboard objectives add CanuseKard dummy
+scoreboard objectives add MapMode dummy
 scoreboard objectives add kardCount dummy
 scoreboard objectives add kardCountmax dummy
 scoreboard objectives add Level level
