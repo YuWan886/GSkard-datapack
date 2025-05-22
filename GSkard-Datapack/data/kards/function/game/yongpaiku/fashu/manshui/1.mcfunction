@@ -1,4 +1,4 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.paiku.fashu.wuyongfa.1",color:"gold"},{translate: "game.yongpaiku.fashu.manshui.1.1",color:"dark_purple",hover_event:{action:"show_text","value":"使敌方场地一格高区域空气替换为水 持续至回合结束 不可叠加"}}]
+execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.paiku.fashu.wuyongfa.1",color:"gold"},{translate: "game.yongpaiku.fashu.manshui.1",color:"dark_purple",hover_event:{action:"show_text","value":"使敌方场地一格高区域空气替换为水 持续至回合结束 不可叠加"}}]
 item replace entity @s weapon.offhand with air
 scoreboard players operation @s kardCount -= #kard_manshui kardCount
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1
