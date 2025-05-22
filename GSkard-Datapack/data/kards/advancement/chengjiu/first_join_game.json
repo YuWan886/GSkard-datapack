@@ -10,7 +10,7 @@
         "description": {
             "translate": "chengjiu.first_join_game.2"
         },
-        "background": "minecraft:textures/block/chiseled_tuff_bricks.png",
+        "background": "minecraft:block/chiseled_tuff_bricks",
         "frame": "task",
         "show_toast": true,
         "announce_to_chat": true,

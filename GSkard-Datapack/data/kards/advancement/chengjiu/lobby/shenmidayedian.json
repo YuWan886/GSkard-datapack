@@ -11,7 +11,7 @@
         "description": {
             "translate": "chengjiu.lobby.shenmidayedian.12"
         },
-        "background": "minecraft:textures/block/chiseled_tuff_bricks.png",
+        "background": "minecraft:block/chiseled_tuff_bricks",
         "frame": "task",
         "show_toast": true,
         "announce_to_chat": true,
