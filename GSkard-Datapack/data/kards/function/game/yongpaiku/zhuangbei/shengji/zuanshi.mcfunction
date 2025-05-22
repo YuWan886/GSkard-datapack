@@ -4,7 +4,7 @@ give @s minecraft:diamond_chestplate[minecraft:item_name={translate: "game.yongp
 give @s minecraft:diamond_leggings[minecraft:item_name={translate: "game.yongpaiku.zhuangbei.shengji.zuanshi.4",color:"aqua"},minecraft:unbreakable={},tooltip_display={hidden_components:["attribute_modifiers","unbreakable"]}]
 give @s minecraft:diamond_boots[minecraft:item_name={translate: "game.yongpaiku.zhuangbei.shengji.zuanshi.5",color:"aqua"},minecraft:unbreakable={},tooltip_display={hidden_components:["attribute_modifiers","unbreakable"]}]
 item replace entity @s weapon.offhand with air
-scoreboard players remove @s kardCount 13
+scoreboard players operation @s kardCount -= #kard_zuanshishengji kardCount
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1
 scoreboard players set @s pingbi 0
 scoreboard players add @s use_kard 1

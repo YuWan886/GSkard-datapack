@@ -12,6 +12,7 @@ execute if entity @s[team=blue] if score 蓝队 xianjin_youdi matches -1 run ret
 
 execute if entity @s[team=red] run scoreboard players set 蓝队 manshui 1
 execute if entity @s[team=blue] run scoreboard players set 红队 manshui 1
+function kards:game/yongpaiku/fashu/manshui/2
 function kards:game/yongpaiku/fashu/manshui/replace with storage changdidaxiao
 
 

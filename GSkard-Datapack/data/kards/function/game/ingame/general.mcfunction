@@ -210,7 +210,7 @@ execute if score #system dituxuanze matches 101.. as @e[team=red,type=minecraft:
 execute if score #system dituxuanze matches 101.. as @e[team=blue,type=minecraft:shulker,tag=tuteng] at @e[tag=b_ttdw] positioned ~ -1 ~ unless entity @s[dx=4,dz=34,dy=1] at @e[tag=b_tuteng] run tp @s ~ 1 ~
 
 #史莱姆
-tp @e[type=minecraft:slime,nbt={Size:0}] 0 -100 0
+tp @e[type=minecraft:slime,nbt={size:0}] 0 -100 0
 #无人机
 execute as @e[type=bat,tag=wurenji] at @s unless block ~ ~1.5 ~ air run tp @s ~ ~-1 ~
 execute as @e[type=bat,tag=wurenji] at @s unless entity @e[type=shulker,distance=..1] run kill @s

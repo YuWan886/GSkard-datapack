@@ -9,7 +9,7 @@ execute if score @s random_busituteng matches 6 run give @s minecraft:totem_of_u
 
 scoreboard players set @s random_busituteng 0
 item replace entity @s weapon.offhand with air
-scoreboard players remove @s kardCount 8
+scoreboard players operation @s kardCount -= #kard_busituteng kardCount
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1
 scoreboard players set @s pingbi 0
 scoreboard players add @s use_kard 1

@@ -32,5 +32,5 @@ def walk_and_replace(root_dir):
 
 if __name__ == "__main__":
     # 修改为你的目标目录
-    root_dir = r"C:\Users\Hart_GS\Documents\GitHub\GSkard-datapack\GSkard-Datapack\data\kards\function\game\yongpaiku"
+    root_dir = r"C:\Users\Hart_GS\Documents\GitHub\GSkard-datapack\GSkard-Datapack\data\kards\function\game\yongpaiku\xianjin"
     walk_and_replace(root_dir)

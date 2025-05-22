@@ -136,7 +136,7 @@ bool drawMain(vec2 uv, vec2 resolution, float progress) {
     if (drawBoxedDot(uv, bottomRight, cornerRadius, progress, resolution)) return true;
 
     // Draw central diamond
-    float diamondSize = 0.05; // Size of the diamond (adjust as needed)
+    float diamondSize = 0.05; // size of the diamond (adjust as needed)
     if (drawBoxedDiamond(uv, center, diamondSize, thickness, progress, resolution, scale)) return true;
 
     return false;

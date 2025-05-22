@@ -2,4 +2,4 @@ execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate:
 give @s minecraft:dragon_breath[item_name={translate: "game.paiku.yansheng.longxi.1",color:"gold"},lore=[[{translate: "game.yongpaiku.zhuangbei.longxi.1",color:"gold",italic:false}],[{translate: "game.yongpaiku.zhuangbei.longxi.2",color:"gray",italic:false},{translate: "game.paiku.yansheng.longxi.5",color:"gold",italic:false},{translate: "game.yongpaiku.zhuangbei.longxi.3",color:"gray",italic:false},{translate: "game.yongpaiku.zhuangbei.longxi.4",color:"red",italic:false}]],max_stack_size=1,custom_data={kards:'龙息'}]
 
 item replace entity @s weapon.offhand with air
-scoreboard players remove @s kardCount 3
+scoreboard players operation @s kardCount -= #kard_longxi kardCount

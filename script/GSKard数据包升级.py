@@ -1,7 +1,7 @@
 import os
 import re
 
-base_dir = r"C:\\Users\\Hart_GS\\Documents\\GitHub\\GSkard-datapack\\GSkard-Datapack\\data\\kards\\function\\game\\yongpaiku"
+base_dir = r"C:\\Users\\Hart_GS\\Documents\\GitHub\\GSkard-datapack\\GSkard-Datapack\\data\\kards\\function\\game\\paiku\\xianjing"
 
 
 for root, dirs, files in os.walk(base_dir):
@@ -18,7 +18,7 @@ for root, dirs, files in os.walk(base_dir):
             match = re.search(r'item_name.*?(\d+)', content)
             if match:
                 k_value = match.group(1)
-                append_line = f"scoreboard players set #kard_{card_name} kardCount {k_value} {card_name}\n"
+                append_line = f"scoreboard players set #kard_{card_name} kardCount {k_value}\n"
                 if append_line.strip() not in content:
                     with open(file_path, 'a', encoding='utf-8') as f:
                         f.write('\n' + append_line)

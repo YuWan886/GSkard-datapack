@@ -2,9 +2,9 @@ execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate:
 #存储数量
 execute store result score @s ronghui_jiben run clear @s minecraft:music_disc_mall
 #红队用
-execute if entity @s[team=red] as @e[tag=7r] at @s run summon minecraft:piglin ~ 0 ~ {Team:red,IsBaby:0b,IsImmuneToZombification:true,HandItems:[{id:"minecraft:golden_sword"},{}],AngerTime:99999}
+execute if entity @s[team=red] as @e[tag=7r] at @s run summon minecraft:piglin ~ 0 ~ {Team:red,IsBaby:0b,IsImmuneToZombification:true,equipment:{mainhand:{id:"minecraft:golden_sword"}}}
 #蓝队用
-execute if entity @s[team=blue] as @e[tag=7b] at @s run summon minecraft:piglin ~ 0 ~ {Team:blue,IsBaby:0b,IsImmuneToZombification:true,HandItems:[{id:"minecraft:golden_sword"},{}],AngerTime:99999}
+execute if entity @s[team=blue] as @e[tag=7b] at @s run summon minecraft:piglin ~ 0 ~ {Team:blue,IsBaby:0b,IsImmuneToZombification:true,equipment:{mainhand:{id:"minecraft:golden_sword"}}}
 function kards:game/yongpaiku/xianjin/jiance/mobjiance
 tellraw @a [{translate: "game.yongpaiku.juntuan.xiajieruqing.1.2",color:"dark_red",bold:false},{score:{objective:"ronghui_jiben",name:"@s"},color:"green",bold:false}]
 execute if score @s ronghui_jiben matches 1.. run function kards:game/yongpaiku/juntuan/xiajieruqing/2

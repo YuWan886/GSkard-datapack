@@ -6,7 +6,7 @@ execute if score @s xiajiehejinhujia matches 3 run give @s minecraft:netherite_h
 execute if score @s xiajiehejinhujia matches 4 run give @s minecraft:netherite_boots[minecraft:item_name={translate: "game.yongpaiku.zhuangbei.shengji.xiajiehejin.5",color:"dark_gray"},minecraft:unbreakable={},tooltip_display={hidden_components:["attribute_modifiers","unbreakable"]},lore=[{translate: "game.paiku.zhuangbei.xiajiehejinshengji.4",color:"gray",italic:false},[{translate: "game.paiku.zhuangbei.xiajiehejinshengji.5",color:"gray",italic:false},{translate: "game.paiku.tuteng.cunmin.5",color:"gold",italic:false}],[{translate: "game.paiku.zhuangbei.xiajiehejinshengji.6",color:"gray",italic:false},{translate: "game.paiku.juntuan.wuwangjiangshi.9",color:"gold",italic:false}],[{translate: "game.paiku.zhuangbei.xiajiehejinshengji.7",color:"gray",italic:false},{translate: "game.paiku.zhuangbei.xiajiehejinshengji.8",color:"gold",italic:false}]],custom_data={kards:'下界合金护甲'}]
 scoreboard players set @s[scores={xiajiehejinhujia=4..}] xiajiehejinhujia 0
 item replace entity @s weapon.offhand with air
-scoreboard players remove @s kardCount 8
+scoreboard players operation @s kardCount -= #kard_xiajiehejinshengji kardCount
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1
 scoreboard players set @s pingbi 0
 scoreboard players add @s use_kard 1
