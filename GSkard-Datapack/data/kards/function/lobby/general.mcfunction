@@ -19,8 +19,10 @@ execute if score #system GameStatus matches 0 run function kards:lobby/bossbar/g
 execute if score #system GameStatus matches 0 run bossbar set minecraft:start_game visible true
 execute unless score #system GameStatus matches 0 run bossbar set minecraft:start_game visible false
 #神秘打野点
+execute positioned 105.5 227 -14.0 as @a[gamemode=!spectator,dx=0.5,dy=4,dz=4] run advancement grant @s only kards:chengjiu/lobby/shenmidayedian
 execute positioned 105.5 227 -14.0 as @a[gamemode=!spectator,dx=0.5,dy=4,dz=4] at @s run playsound entity.enderman.teleport player @s ~ ~ ~ 100 2
 execute positioned 105.5 227 -14.0 as @a[gamemode=!spectator,dx=0.5,dy=4,dz=4] run tp @s 103.0 239 -48.0 90 ~
+execute positioned 105.5 239 -50.0 as @a[gamemode=!spectator,dx=0.5,dy=4,dz=4] run advancement grant @s only kards:chengjiu/lobby/bushizhe
 execute positioned 105.5 239 -50.0 as @a[gamemode=!spectator,dx=0.5,dy=4,dz=4] at @s run playsound entity.enderman.teleport player @s ~ ~ ~ 100 2
 execute positioned 105.5 239 -50.0 as @a[gamemode=!spectator,dx=0.5,dy=4,dz=4] run tp @s 104.0 227 -12.0 90 ~
 
