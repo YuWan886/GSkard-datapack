@@ -1,12 +1,10 @@
 execute if score @s jinziqifeng matches 1.. store result score @s random5 run random value 1..100
-execute if score @s jinziqifeng matches 1 if score @s random5 matches 1..5 run return run function kards:game/paiku/yansheng/jinzijue
-execute if score @s jinziqifeng matches 2 if score @s random5 matches 1..10 run return run function kards:game/paiku/yansheng/jinzijue
-execute if score @s jinziqifeng matches 3 if score @s random5 matches 1..15 run return run function kards:game/paiku/yansheng/jinzijue
-execute if score @s jinziqifeng matches 4 if score @s random5 matches 1..20 run return run function kards:game/paiku/yansheng/jinzijue
-execute if score @s jinziqifeng matches 5 if score @s random5 matches 1..25 run return run function kards:game/paiku/yansheng/jinzijue
-execute if score @s jinziqifeng matches 6 if score @s random5 matches 1..30 run return run function kards:game/paiku/yansheng/jinzijue
-execute if score @s jinziqifeng matches 7 if score @s random5 matches 1..35 run return run function kards:game/paiku/yansheng/jinzijue
-execute if score @s jinziqifeng matches 8 if score @s random5 matches 1..40 run return run function kards:game/paiku/yansheng/jinzijue
+execute if score @s jinziqifeng matches 1 if score @s random5 matches 1..10 run return run function kards:game/paiku/yansheng/jinzijue
+execute if score @s jinziqifeng matches 2 if score @s random5 matches 1..20 run return run function kards:game/paiku/yansheng/jinzijue
+execute if score @s jinziqifeng matches 3 if score @s random5 matches 1..30 run return run function kards:game/paiku/yansheng/jinzijue
+execute if score @s jinziqifeng matches 4 if score @s random5 matches 1..40 run return run function kards:game/paiku/yansheng/jinzijue
+execute if score @s jinziqifeng matches 5 if score @s random5 matches 1..50 run return run function kards:game/paiku/yansheng/jinzijue
+execute if score @s jinziqifeng matches 6 if score @s random5 matches 1..60 run return run function kards:game/paiku/yansheng/jinzijue
 
 execute store result score @s random5 run random value 1..38
 execute if score @s random5 matches 1 run function kards:game/paiku/fashu/shenshengzhiguang
@@ -23,7 +21,7 @@ execute if score @s random5 matches 11 run function kards:game/paiku/fashu/zhour
 execute if score @s random5 matches 12 run function kards:game/paiku/fashu/chunnuanhuakai
 execute if score @s random5 matches 13 run function kards:game/paiku/fashu/qisihuisheng
 execute if score @s random5 matches 14 run function kards:game/paiku/fashu/xinlingfenshao
-execute if score @s random5 matches 15 run function kards:game/paiku/fashu/zaijijinghou
+execute if score @s random5 matches 15 run function kards:game/paiku/fashu/zaijijinhou
 execute if score @s random5 matches 16 run function kards:game/paiku/fashu/xipai
 execute if score @s random5 matches 17 run function kards:game/paiku/fashu/neiheyinbao
 execute if score @s random5 matches 18 run function kards:game/paiku/fashu/sijiruchun
