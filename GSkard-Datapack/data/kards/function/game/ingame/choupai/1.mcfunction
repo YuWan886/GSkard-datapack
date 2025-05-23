@@ -23,6 +23,7 @@ execute if score @s random1 matches 21 run function kards:game/paiku/jiben/jijin
 execute if score @s random1 matches 22 run function kards:game/paiku/jiben/nishi
 execute if score @s random1 matches 23 run function kards:game/paiku/jiben/ehun
 execute if score @s random1 matches 24 run function kards:game/paiku/jiben/xiaohuanyi
-execute if score @s random1 matches 24 run function kards:game/paiku/jiben/zhuling
+execute if score @s random1 matches 25 run function kards:game/paiku/jiben/zhuling
+execute if score @s random1 matches 26 run function kards:game/paiku/jiben/jifeng
 scoreboard players set @s random1 0
 scoreboard players remove @s jibencishu 1
