@@ -184,8 +184,6 @@ execute if entity @a[team=blue,scores={kujie=1..}] run tellraw @a {translate: "g
 
 execute if score 红队 manshui matches 1 run tellraw @a {translate: "game.ingame.round.take_turns.round.15",color:"gray",bold:true}
 execute if score 蓝队 manshui matches 1 run tellraw @a {translate: "game.ingame.round.take_turns.round.16",color:"gray",bold:true}
-execute if score 红队 manshui matches 1 run scoreboard players set 红队 manshui 0
-execute if score 蓝队 manshui matches 1 run scoreboard players set 蓝队 manshui 0
 
 scoreboard players set @a jiben 0
 scoreboard players set @a xukonghuixiang 0

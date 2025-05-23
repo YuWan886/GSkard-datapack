@@ -46,14 +46,8 @@
                     "type": "minecraft:all_of",
                     "effects": [
                         {
-                            "type": "minecraft:summon_entity",
-                            "entity": "minecraft:lightning_bolt"
-                        },
-                        {
-                            "type": "minecraft:play_sound",
-                            "pitch": 1,
-                            "sound": "minecraft:item.trident.thunder",
-                            "volume": 5
+                            "type": "minecraft:run_function",
+                            "function": "kards:game/yongpaiku/shenji/wangzhibaoku/zhengyichangji/3"
                         }
                     ]
                 },

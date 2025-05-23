@@ -180,7 +180,7 @@ scoreboard objectives add xianjin_toulianghuanzhu dummy
 scoreboard objectives add end dummy
 scoreboard objectives add sishenzhilian_damage minecraft.custom:minecraft.damage_dealt
 scoreboard objectives add sishenzhilian_damage_tongji dummy
-scoreboard objectives add jinghuashuijing dummy
+scoreboard objectives add xiangzhaoyushi dummy
 scoreboard objectives add senlinzhihu dummy
 scoreboard objectives add oiiaioiiiiai dummy
 scoreboard objectives add jinziqifeng dummy

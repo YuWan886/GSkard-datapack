@@ -1,5 +1,6 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.paiku.fashu.wuyongfa.1",color:"gold"},{translate: "game.paiku.fashu.wuyongfa.2",color:"dark_purple",hover_event:{action:"show_text","value":"没有作用"}}]
+execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.paiku.fashu.wuyongfa.1",color:"gold"},{translate: "game.yongpaiku.fashu.diyu.1.1",color:"red",hover_event:{action:"show_text","value":"在地方场地周围放置一圈岩浆 怪物获得火焰抗性效果 持续至回合结束"}}]
 item replace entity @s weapon.offhand with air
+scoreboard players operation @s kardCount -= #kard_diyu kardCount
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1
 scoreboard players set @s pingbi 0
 scoreboard players add @s use_kard 1
@@ -9,4 +10,7 @@ execute if entity @s[team=blue] if score 蓝队 xianjin_shufashixiao matches 1 r
 execute if entity @s[team=red] if score 红队 xianjin_youdi matches 1 run return run scoreboard players set 红队 xianjin_youdi 0
 execute if entity @s[team=blue] if score 蓝队 xianjin_youdi matches 1 run return run scoreboard players set 蓝队 xianjin_youdi 0
 
-
+execute as @s[team=red] run effect give @e[type=!player,team=red,tag=!tuteng] fire_resistance 60 0 true
+execute as @s[team=blue] run effect give @e[type=!player,team=blue,tag=!tuteng] fire_resistance 60 0 true
+function kards:game/yongpaiku/fashu/diyu/2
+function kards:game/yongpaiku/fashu/diyu/replace with storage changdidaxiao

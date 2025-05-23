@@ -1,4 +1,4 @@
-execute if entity @s[team=red] run summon minecraft:lightning_bolt ~ ~ ~ {Team:blue}
-execute if entity @s[team=blue] run summon minecraft:lightning_bolt ~ ~ ~ {Team:red}
-scoreboard players add @s XuanYun 20
+summon minecraft:lightning_bolt ~ ~ ~
+playsound minecraft:item.trident.thunder player @a ~ ~ ~ 10 1
+scoreboard players add @s XuanYun 10
 tag @s add XuanYun

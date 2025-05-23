@@ -34,7 +34,7 @@ function kards:game/yongpaiku/tuteng/buff
 #神器
 function kards:game/yongpaiku/shenji/wangzhibaoku/general
 #PVP
-execute positioned -219 -65 -173 run effect give @a[dx=19,dz=18,dy=55,gamemode=adventure,tag=jinghuashuijing] minecraft:levitation infinite 20 true
+execute positioned -219 -65 -173 run effect give @a[dx=19,dz=18,dy=55,gamemode=adventure,tag=xiangzhaoyushi] minecraft:levitation infinite 20 true
 execute positioned -219 -65 -173 run effect give @a[dx=19,dz=18,dy=15,gamemode=adventure] minecraft:levitation infinite 20 true
 execute positioned -219 -60 -173 as @a[dx=19,dz=18,dy=49,gamemode=adventure] run damage @s 2 minecraft:out_of_world
 execute positioned -219 -9 -173 run effect clear @a[dx=19,dz=18,gamemode=adventure] levitation
@@ -42,11 +42,13 @@ execute positioned -219 -9 -173 run effect clear @a[dx=19,dz=18,gamemode=adventu
 function kards:game/yongpaiku/zhuangbei/general
 #眩晕
 scoreboard players remove @a[tag=XuanYun,scores={XuanYun=1..}] XuanYun 1
+
 effect give @a[tag=XuanYun,scores={XuanYun=1..}] slowness 1 100 true
 effect give @a[tag=XuanYun,scores={XuanYun=1..}] blindness 2 100 true
 execute as @a[tag=XuanYun,scores={XuanYun=1..}] run attribute @s minecraft:jump_strength modifier add 0-0-1 -100 add_value
 execute as @a[tag=XuanYun,scores={XuanYun=1..}] run effect clear @s jump_boost
 execute as @a[tag=XuanYun,scores={XuanYun=1..}] at @s run tp @s ~ ~ ~ ~ 90
+title @a[tag=XuanYun,scores={XuanYun=1..}] times 0t 1s 0t
 title @a[tag=XuanYun,scores={XuanYun=1..}] title {translate: "game.ingame.general.3",color:"gray",bold:true}
 effect clear @a[tag=XuanYun,scores={XuanYun=0}] slowness
 effect clear @a[tag=XuanYun,scores={XuanYun=0}] blindness
@@ -163,20 +165,7 @@ effect give @a[scores={jinzijue=10..}] resistance 1 4 true
 scoreboard players add @a[scores={jinzijue=6..}] jinzijue_1 1
 effect give @a[scores={jinzijue_1=600..}] absorption 30 9 true
 scoreboard players set @a[scores={jinzijue_1=600..}] jinzijue_1 0
-#漫水
-scoreboard players add 红队 manshui 0
-scoreboard players add 蓝队 manshui 0
-execute if score 红队 manshui matches 1 at @e[tag=r_dw] run fill ~ 0 ~ ~24 0 ~24 water replace air
-execute if score 红队 manshui matches 0 at @e[tag=r_dw] run fill ~ 0 ~ ~24 0 ~24 air replace water
-execute if score 蓝队 manshui matches 1 at @e[tag=b_dw] run fill ~ 0 ~ ~24 0 ~24 water replace air
-execute if score 蓝队 manshui matches 0 at @e[tag=b_dw] run fill ~ 0 ~ ~24 0 ~24 air replace water
-#地狱
-scoreboard players add 红队 diyu 0
-scoreboard players add 蓝队 diyu 0
-execute if score 红队 diyu matches 1 at @e[tag=r_dw] run fill ~ 0 ~ ~16 0 ~16 lava replace air
-execute if score 红队 diyu matches 0 at @e[tag=r_dw] run fill ~ 0 ~ ~16 0 ~16 air replace lava
-execute if score 蓝队 diyu matches 1 at @e[tag=b_dw] run fill ~ 0 ~ ~16 0 ~16 lava replace air
-execute if score 蓝队 diyu matches 0 at @e[tag=b_dw] run fill ~ 0 ~ ~16 0 ~16 air replace lava
+
 #清弹射物
 kill @e[nbt={Item:{id:"minecraft:arrow"}}]
 kill @e[type=minecraft:arrow,nbt={inGround:1b}]

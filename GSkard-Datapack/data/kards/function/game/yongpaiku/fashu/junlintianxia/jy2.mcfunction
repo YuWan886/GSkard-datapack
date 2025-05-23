@@ -1,1 +1,0 @@
-kill @e[type=arrow,distance=..20]

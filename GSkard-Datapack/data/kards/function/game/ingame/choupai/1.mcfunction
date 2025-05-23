@@ -1,34 +1,4 @@
-<<<<<<< HEAD
-execute store result score @s random1 run random value 1..25
-execute if score @s random1 matches 1 run function kards:game/paiku/jiben/jiangshi
-execute if score @s random1 matches 2 run function kards:game/paiku/jiben/kulou
-execute if score @s random1 matches 3 run function kards:game/paiku/jiben/moyingman
-execute if score @s random1 matches 4 run function kards:game/paiku/jiben/juduzhizhu
-execute if score @s random1 matches 5 run function kards:game/paiku/jiben/zhizhu
-execute if score @s random1 matches 6 run function kards:game/paiku/jiben/lieyanren
-execute if score @s random1 matches 7 run function kards:game/paiku/jiben/nvwu
-execute if score @s random1 matches 8 run function kards:game/paiku/jiben/diaolingkulou
-execute if score @s random1 matches 9 run function kards:game/paiku/jiben/youzhushou
-execute if score @s random1 matches 10 run function kards:game/paiku/jiben/kulipa
-execute if score @s random1 matches 11 run function kards:game/paiku/jiben/shashoutu
-execute if score @s random1 matches 12 run function kards:game/paiku/jiben/manbing
-execute if score @s random1 matches 13 run function kards:game/paiku/jiben/mifeng
-execute if score @s random1 matches 14 run function kards:game/paiku/jiben/naogui
-execute if score @s random1 matches 15 run function kards:game/paiku/jiben/liulangzhe
-execute if score @s random1 matches 16 run function kards:game/paiku/jiben/xuanfengren
-execute if score @s random1 matches 17 run function kards:game/paiku/jiben/moyingren
-execute if score @s random1 matches 18 run function kards:game/paiku/jiben/zhaohai
-execute if score @s random1 matches 19 run function kards:game/paiku/jiben/weidaoshi
-execute if score @s random1 matches 20 run function kards:game/paiku/jiben/wurenji
-execute if score @s random1 matches 21 run function kards:game/paiku/jiben/jijingshanyang
-execute if score @s random1 matches 22 run function kards:game/paiku/jiben/nishi
-execute if score @s random1 matches 23 run function kards:game/paiku/jiben/ehun
-execute if score @s random1 matches 24 run function kards:game/paiku/jiben/xiaohuanyi
-execute if score @s random1 matches 25 run function kards:game/paiku/jiben/zhuling
-execute if score @s random1 matches 26 run function kards:game/paiku/jiben/jifeng
-execute if score @s random1 matches 26 run function kards:game/paiku/jiben/yuangushouweizhe
-=======
-execute as @s store result score @s random1 run random value 1..25
+execute as @s store result score @s random1 run random value 1..26
 execute as @s if score @s random1 matches 1 run function kards:game/paiku/jiben/jiangshi
 execute as @s if score @s random1 matches 2 run function kards:game/paiku/jiben/kulou
 execute as @s if score @s random1 matches 3 run function kards:game/paiku/jiben/moyingman
@@ -53,7 +23,7 @@ execute as @s if score @s random1 matches 21 run function kards:game/paiku/jiben
 execute as @s if score @s random1 matches 22 run function kards:game/paiku/jiben/nishi
 execute as @s if score @s random1 matches 23 run function kards:game/paiku/jiben/ehun
 execute as @s if score @s random1 matches 24 run function kards:game/paiku/jiben/xiaohuanyi
-execute as @s if score @s random1 matches 25 run function kards:game/paiku/jiben/yuangushouweizhe
->>>>>>> c337d2e (加入一些卡牌)
+execute as @s if score @s random1 matches 25 run function kards:game/paiku/jiben/zhuling
+execute as @s if score @s random1 matches 26 run function kards:game/paiku/jiben/yuangushouweizhe
 scoreboard players set @s random1 0
 scoreboard players remove @s jibencishu 1

@@ -5,7 +5,7 @@ execute store result score @s chiniaolongyu run clear @s #minecraft:creeper_drop
 clear @s #minecraft:creeper_drop_music_discs
 scoreboard players operation @s cishu = @s chiniaolongyu
 scoreboard players add @s cishu 2
-scoreboard players set @s chiniaolongyu 0
+
 
 scoreboard players operation @s kardCount -= #kard_haogaowuyuan kardCount
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1

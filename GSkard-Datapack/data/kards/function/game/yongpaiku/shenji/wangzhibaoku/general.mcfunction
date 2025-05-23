@@ -66,23 +66,23 @@ scoreboard players remove @a[tag=kunanyaolan,scores={healback_kunanyaolan2=0..}]
 execute as @a[tag=kunanyaolan] unless items entity @s armor.chest *[custom_data={kards:'苦难摇篮'}] run tag @s remove kunanyaolan
 scoreboard players set @a[tag=!kunanyaolan] behurt_kunanyaolan1 0
 scoreboard players set @a[tag=!kunanyaolan] behurt_kunanyaolan2 0
-#净化水晶
-execute as @a if items entity @s container.* *[custom_data={kards:'净化水晶'}] run tag @s add jinghuashuijing
-effect clear @a[tag=jinghuashuijing] slowness
-effect clear @a[tag=jinghuashuijing] mining_fatigue
-effect clear @a[tag=jinghuashuijing] blindness
-effect clear @a[tag=jinghuashuijing] weakness
-effect clear @a[tag=jinghuashuijing] poison
-effect clear @a[tag=jinghuashuijing] wither
-effect clear @a[tag=jinghuashuijing] levitation
-effect clear @a[tag=jinghuashuijing] darkness
-execute as @a[team=red,tag=jinghuashuijing] at @s run effect give @e[team=blue,distance=..4] slowness 3 2 true
-execute as @a[team=blue,tag=jinghuashuijing] at @s run effect give @e[team=red,distance=..4] slowness 3 2 true
+#祥兆玉石
+execute as @a if items entity @s container.* *[custom_data={kards:'祥兆玉石'}] run tag @s add xiangzhaoyushi
+effect clear @a[tag=xiangzhaoyushi] slowness
+effect clear @a[tag=xiangzhaoyushi] mining_fatigue
+effect clear @a[tag=xiangzhaoyushi] blindness
+effect clear @a[tag=xiangzhaoyushi] weakness
+effect clear @a[tag=xiangzhaoyushi] poison
+effect clear @a[tag=xiangzhaoyushi] wither
+effect clear @a[tag=xiangzhaoyushi] levitation
+effect clear @a[tag=xiangzhaoyushi] darkness
+execute as @a[team=red,tag=xiangzhaoyushi] at @s run effect give @e[team=blue,distance=..4] slowness 3 2 true
+execute as @a[team=blue,tag=xiangzhaoyushi] at @s run effect give @e[team=red,distance=..4] slowness 3 2 true
 
-scoreboard players add @a[tag=jinghuashuijing] jinghuashuijing 1
-execute as @a[tag=jinghuashuijing] if score @s jinghuashuijing matches 1200.. run effect give @s absorption 60 4 true
-execute as @a[tag=jinghuashuijing] if score @s jinghuashuijing matches 1200.. run scoreboard players set @s jinghuashuijing 0
-execute as @a[tag=jinghuashuijing] unless items entity @s container.* *[custom_data={kards:'净化水晶'}] run tag @s remove jinghuashuijing
+scoreboard players add @a[tag=xiangzhaoyushi] xiangzhaoyushi 1
+execute as @a[tag=xiangzhaoyushi] if score @s xiangzhaoyushi matches 1200.. run effect give @s absorption 60 4 true
+execute as @a[tag=xiangzhaoyushi] if score @s xiangzhaoyushi matches 1200.. run scoreboard players set @s xiangzhaoyushi 0
+execute as @a[tag=xiangzhaoyushi] unless items entity @s container.* *[custom_data={kards:'祥兆玉石'}] run tag @s remove xiangzhaoyushi
 #飞升护符
 execute as @a if items entity @s container.* *[custom_data={kards:'飞升护符'}] run tag @s add feishenhufu
 execute as @a[tag=feishenhufu] run attribute @s minecraft:max_health modifier add 0-0-11 20 add_value
