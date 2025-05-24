@@ -1,1 +1,1 @@
-execute as @s[advancements={kards:chengjiu/laodeng=false}] run tellraw @a [{selector:"@s"},{text: "达成了进度",color:"white"},{text: "[搞牌,启动!]",color:"green",hover_event:{action:"show_text","value":"完成新手教程"}}]
+execute as @s[advancements={kards:chengjiu/laodeng=false}] run tellraw @a [{selector:"@s"},{text: "达成了进度",color:"white"},{text: "[搞牌,启动!]",color:"green",hover_event:{action:"show_text",value:{text:"完成新手教程"}}}]

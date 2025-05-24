@@ -1,4 +1,4 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[神圣之光]",color:"dark_purple",hover_event:{action:"show_text","value":"回复自身16♥"}}]
+execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[神圣之光]",color:"dark_purple",hover_event:{action:"show_text",value:"回复自身16♥"}}]
 item replace entity @s weapon.offhand with air
 scoreboard players operation @s kardCount -= #kard_shenshengzhiguang kardCount
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1

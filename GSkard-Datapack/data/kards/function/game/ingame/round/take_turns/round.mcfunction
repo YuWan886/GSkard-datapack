@@ -155,18 +155,18 @@ execute if score #system r_death matches 4 run scoreboard players add @a[team=re
 execute if score #system r_death matches 4 run scoreboard players add @a[team=red,scores={CanuseKard=1}] cishu 4
 execute if score #system r_death matches 5.. run scoreboard players add @a[team=red,scores={CanuseKard=1}] kardCount 20
 execute if score #system r_death matches 5.. run scoreboard players add @a[team=red,scores={CanuseKard=1}] cishu 5
-#buff生效
+#> buff生效
 tellraw @a [{text: "==========事件==========",color:"gray",bold:true}]
 scoreboard players add @a[scores={muyuankuanghuan=1,CanuseKard=1}] cishu 2
-
+#沉默
 scoreboard players remove @e[scores={chengmo=1..}] chengmo 1
 execute if score @e[tag=r_dw,limit=1] chengmo matches 1.. run tellraw @a {text: "红队[沉默]生效中:清除掉落物直至回合结束",color:"gray",bold:true}
 execute if score @e[tag=b_dw,limit=1] chengmo matches 1.. run tellraw @a {text: "蓝队[沉默]生效中:清除掉落物直至回合结束",color:"gray",bold:true}
-
+#狼群战术
 execute if entity @a[scores={langqunzhanshu=1..}] run tellraw @a [{text: "[狼群战术]生效于",color:"gray",bold:true},{selector:"@a[scores={langqunzhanshu=1}]",bold:true},{text: ":本回合不抽卡",color:"gray",bold:true}]
 scoreboard players set @a[scores={langqunzhanshu=1..}] cishu 0
 scoreboard players set @a[scores={langqunzhanshu=1..}] langqunzhanshu 0
-
+#隐匿仓库
 execute if entity @a[scores={yinnicangku=1..,CanuseKard=1}] run tellraw @a [{text: "[隐匿仓库]生效于",color:"gray",bold:true},{selector:"@a[scores={yinnicangku=1,CanuseKard=1}]",bold:true},{text: ":本回合多8点使用点数(可叠加)",color:"gray",bold:true}]
 scoreboard players add @a[scores={yinnicangku=1,CanuseKard=1}] kardCount 8
 scoreboard players add @a[scores={yinnicangku=2,CanuseKard=1}] kardCount 16
@@ -174,16 +174,17 @@ scoreboard players add @a[scores={yinnicangku=3,CanuseKard=1}] kardCount 24
 scoreboard players add @a[scores={yinnicangku=4,CanuseKard=1}] kardCount 32
 scoreboard players add @a[scores={yinnicangku=5,CanuseKard=1}] kardCount 40
 scoreboard players set @a[scores={yinnicangku=1..,CanuseKard=1}] yinnicangku 0
+#生产令
 execute if entity @a[scores={shengchanling=1..,CanuseKard=1}] run tellraw @a [{text: "[生产令]生效于",color:"gray",bold:true},{selector:"@a[scores={shengchanling=1,CanuseKard=1}]",bold:true},{text: ":本回合多2张牌",color:"gray",bold:true}]
 scoreboard players add @a[scores={shengchanling=1..,CanuseKard=1}] cishu 2
 scoreboard players remove @a[scores={shengchanling=1..,CanuseKard=1}] shengchanling 1
-
+#枯竭
 scoreboard players remove @a[scores={kujie=1..}] kujie 1
 execute if entity @a[team=red,scores={kujie=1..}] run tellraw @a {text: "红队枯竭生效中:使用牌后额外扣除1K直至回合结束",color:"gray",bold:true}
 execute if entity @a[team=blue,scores={kujie=1..}] run tellraw @a {text: "蓝队枯竭生效中:使用牌后额外扣除1K直至回合结束",color:"gray",bold:true}
-
-execute if score 红队 manshui matches 1 run tellraw @a {text: "红队区域水流干涸了...",color:"gray",bold:true}
-execute if score 蓝队 manshui matches 1 run tellraw @a {text: "蓝队区域水流干涸了...",color:"gray",bold:true}
+#诅咒护甲
+execute as @a[tag=zuzhouhujia] if items entity @s armor.chest golden_chestplate[custom_data={kards:'诅咒护甲'}] run item replace entity @s armor.chest with air
+tag @a[tag=zuzhouhujia] remove zuzhuanghujia
 
 scoreboard players set @a jiben 0
 scoreboard players set @a xukonghuixiang 0

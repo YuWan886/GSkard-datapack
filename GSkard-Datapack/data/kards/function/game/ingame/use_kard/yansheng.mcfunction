@@ -8,4 +8,4 @@ execute if items entity @s weapon.offhand *[custom_data={kards:'龙息'}] run fu
 #火球骰子
 execute if items entity @s weapon.offhand *[custom_data={kards:'火球骰子'}] if score @s kardCount >= #kard_huoqiushaizi kardCount run function kards:game/yongpaiku/yansheng/huoqiutouzi
 #君临天下
-execute if items entity @s weapon.offhand *[custom_data={kards:'君临天下'}] run function kards:game/yongpaiku/fashu/junlintianxia/jy0
+execute if items entity @s weapon.offhand nether_star[custom_data={kards:'君临天下'}] run function kards:game/yongpaiku/fashu/junlintianxia/jy0

@@ -3,6 +3,7 @@ jump_strength 跳跃力度
     眩晕 001
     断腿 002
     冻结 003
+    春日影 004
 
 max_health 最大生命//森林之护本质上是盔甲自带的属性 不在此处记录
     禁字决 001-0010
@@ -14,6 +15,7 @@ attack_knockback 击退
 
 movement_speed 移速
     轻灵之语 001
+    春日影 002
     迅捷之羽 005
 
 minecraft:entity_interaction_range 实体距离
@@ -31,6 +33,9 @@ minecraft:attack_speed 攻击速度
    
 minecraft:knockback_resistance
     鞋钉 001
+
+minecraft:fly_speed
+    春日影 001
 
 虚拟实体相关
 大多数用"#system"

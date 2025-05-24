@@ -1,1 +1,0 @@
-execute positioned as @e[tag=7b] run tp @s ~ 0 ~

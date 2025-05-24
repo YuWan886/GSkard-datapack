@@ -1,4 +1,4 @@
-execute unless score #system GameStatus matches 0 run execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[王之宝库]",color:"white",hover_event:{action:"show_text","value":"抽取一次王之宝库"}}]
+execute unless score #system GameStatus matches 0 run execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[王之宝库]",color:"white",hover_event:{action:"show_text",value:"抽取一次王之宝库"}}]
 function kards:game/yongpaiku/xianjin/jiance/shenjijiance
 execute store result score @s wangzhibaoku run random value 1..14
 execute if score @s wangzhibaoku matches 1 run function kards:game/yongpaiku/shenji/wangzhibaoku/zhengyizhichui/give

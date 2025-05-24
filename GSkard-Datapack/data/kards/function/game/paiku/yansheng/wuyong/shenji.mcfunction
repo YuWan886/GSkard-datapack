@@ -1,0 +1,2 @@
+give @s music_disc_strad[item_name=[{text: "0K",color:"aqua"},{text: " 无用",color:"white"}],lore=[{text: "神迹牌",color:"white",italic:false},{text: "没有作用",color:"gray",italic:false},{text: "可以用来触发陷阱",color:"gold",italic:false}],jukebox_playable="minecraft:pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'无用'}]
+scoreboard players set #kard_wuyongshenji kardCount 0

@@ -4,7 +4,7 @@ gamemode adventure @s
 summon minecraft:firework_rocket ~ ~ ~
 effect clear @s
 team join First @s
-tellraw @a [{selector:"@s"},{text: "达成了进度",color:"white"},{text: "[你管这叫卡牌对战?]",color:"green",hover_event:{action:"show_text","value":"首次进入GSkard"}}]
+tellraw @a [{selector:"@s"},{text: "达成了进度",color:"white"},{text: "[你管这叫卡牌对战?]",color:"green",hover_event:{action:"show_text",value:{text:"首次进入GSkard"}}}]
 execute if score #system GameStatus matches 0 run team join lobby @s
 execute unless score #system GameStatus matches 0 run team join Spectator @s
 execute unless score #system GameStatus matches 0 run gamemode spectator @s

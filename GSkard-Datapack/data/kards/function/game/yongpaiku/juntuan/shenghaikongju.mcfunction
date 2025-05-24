@@ -1,4 +1,4 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[深海恐惧]",color:"dark_green",hover_event:{action:"show_text","value":"在敌方召唤三只守卫者"}}]
+execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[深海恐惧]",color:"dark_green",hover_event:{action:"show_text",value:"在敌方召唤三只守卫者"}}]
     #红队用
     execute if entity @s[team=red] as @e[tag=2r] at @s run summon guardian ~ 0 ~ {Team:red}
     execute if entity @s[team=red] as @e[tag=11r] at @s run summon guardian ~ 0 ~ {Team:red}

@@ -1,0 +1,2 @@
+give @s music_disc_mellohi[item_name=[{text: "2K",color:"aqua"},{text: " 无用",color:"light_purple"}],lore=[{text: "法术牌",color:"light_purple",italic:false},{text: "没有作用",color:"gray",italic:false},{text: "可以用来触发陷阱",color:"gold",italic:false}],jukebox_playable="minecraft:pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'无用'}]
+scoreboard players set #kard_woyongfashu kardCount 2

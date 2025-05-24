@@ -36,7 +36,8 @@ execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[cu
 execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'骤然引爆'}] if score @s kardCount >= #kard_zhouranyingbao kardCount run function kards:game/yongpaiku/fashu/zhouranyingbao
 execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'隐匿仓库'}] if score @s kardCount >= #kard_yinnicangku kardCount run function kards:game/yongpaiku/fashu/yinnicangku
 execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'反转'}] if score @s kardCount >= #kard_fanzhuan kardCount run function kards:game/yongpaiku/fashu/fanzhuan/1
-execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'诅咒护甲'}] if score @s kardCount >= #kard_zuzhouhujia kardCount run function kards:game/yongpaiku/fashu/zuzhouhujia
-execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'无用•法'}] if score @s kardCount >= #kard_wuyongfa kardCount run function kards:game/yongpaiku/fashu/wuyongfa
+execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'诅咒护甲'}] if score @s kardCount >= #kard_zuzhouhujia kardCount run function kards:game/yongpaiku/fashu/zuzhouhujia/1
+execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'无用'}] if score @s kardCount >= #kard_wuyongfa kardCount run function kards:game/yongpaiku/fashu/wuyongfa
 execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'无用'}] if score @s kardCount >= #kard_wuyong kardCount run function kards:game/yongpaiku/fashu/wuyong
 execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'地狱'}] if score @s kardCount >= #kard_diyu kardCount run function kards:game/yongpaiku/fashu/diyu/1
+execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'春日影'}] if score @s kardCount >= #kard_chunriying kardCount run function kards:game/yongpaiku/fashu/chunriying/1

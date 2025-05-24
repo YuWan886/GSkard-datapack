@@ -6,11 +6,13 @@ execute if items entity @s weapon.mainhand *[custom_data={kards:'钻石剑'}] ru
 execute if items entity @s weapon.mainhand *[custom_data={kards:'下界合金剑'}] run item replace entity @s weapon.mainhand from block 5 -60 -48 container.13 kards:4shanghai
 execute if items entity @s weapon.mainhand *[custom_data={kards:'铁斧'}] run item replace entity @s weapon.mainhand from block 5 -60 -48 container.14 kards:2shanghai
 execute if items entity @s weapon.mainhand *[custom_data={kards:'钻石斧'}] run item replace entity @s weapon.mainhand from block 5 -60 -48 container.15 kards:3shanghai
+execute if items entity @s weapon.mainhand *[custom_data={kards:'重锤'}] run item replace entity @s weapon.mainhand from block 5 -60 -48 container.16
 
 execute if items entity @s weapon.mainhand *[custom_data={kards:'金胡萝卜'}] run scoreboard players set @s level_jhlb 1
 execute if items entity @s weapon.mainhand *[custom_data={kards:'金剑'}] run scoreboard players set @s level_jinjian 1
 execute if items entity @s weapon.mainhand *[custom_data={kards:'铁剑'}] run scoreboard players set @s level_tiejian 1
 execute if items entity @s weapon.mainhand *[custom_data={kards:'钻石剑'}] run scoreboard players set @s level_zuanshijian 1
+execute if items entity @s weapon.mainhand *[custom_data={kards:'重锤'}] run scoreboard players set @s level_zhongchui 1
 execute if items entity @s weapon.mainhand *[custom_data={kards:'下界合金剑'}] run scoreboard players set @s level_xiajiehejinjian 1
 execute if items entity @s weapon.mainhand *[custom_data={kards:'铁斧'}] run scoreboard players set @s level_tiefu 1
 execute if items entity @s weapon.mainhand *[custom_data={kards:'钻石斧'}] run scoreboard players set @s level_zuanshifu 1

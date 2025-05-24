@@ -1,4 +1,4 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[赌命]",color:"dark_purple",hover_event:{action:"show_text","value":"使用后双方队伍进行一次随机点数(1~100) 出现更小值的队伍随机一个玩家将受到内核引爆"}}]
+execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[赌命]",color:"dark_purple",hover_event:{action:"show_text",value:"使用后双方队伍进行一次随机点数(1~100) 出现更小值的队伍随机一个玩家将受到内核引爆"}}]
 item replace entity @s weapon.offhand with air
 scoreboard players operation @s kardCount -= #kard_duming kardCount
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1

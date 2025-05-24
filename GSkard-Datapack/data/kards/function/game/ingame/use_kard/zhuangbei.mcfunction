@@ -17,3 +17,4 @@ execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[cu
 execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'盾牌'}] if score @s kardCount >= #kard_dunpai kardCount run function kards:game/yongpaiku/zhuangbei/dunpai
 execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'下界合金剑'}] if score @s kardCount >= #kard_xiajiehejinjian kardCount run function kards:game/yongpaiku/zhuangbei/xiajiehejinjian
 execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'钻石升级'}] if score @s kardCount >= #kard_zuanshishengji kardCount run function kards:game/yongpaiku/zhuangbei/shengji/zuanshi
+execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'重锤'}] if score @s kardCount >= #kard_zhongchui kardCount run function kards:game/yongpaiku/zhuangbei/zhongchui

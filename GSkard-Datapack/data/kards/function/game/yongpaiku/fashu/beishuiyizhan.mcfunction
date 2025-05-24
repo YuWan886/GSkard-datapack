@@ -1,4 +1,4 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[背水一战]",color:"dark_purple",hover_event:{action:"show_text","value":"每有一个友方死亡 就获得10点数 抽二张牌"}}]
+execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[背水一战]",color:"dark_purple",hover_event:{action:"show_text",value:{text:"每有一个友方死亡 就获得10点数 抽二张牌"}}}]
 item replace entity @s weapon.offhand with air
 scoreboard players operation @s kardCount -= #kard_beishuiyizhan kardCount
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1
@@ -26,4 +26,5 @@ execute if entity @s[team=blue] if score #system b_death matches 2.. run scorebo
 execute if entity @s[team=blue] if score #system b_death matches 2.. run scoreboard players add @s cishu 2
 execute if entity @s[team=blue] if score #system b_death matches 3.. run scoreboard players add @s kardCount 10
 execute if entity @s[team=blue] if score #system b_death matches 3.. run scoreboard players add @s cishu 2
+
 

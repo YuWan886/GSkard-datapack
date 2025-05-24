@@ -1,2 +1,0 @@
-scoreboard players set #kard_junlintianxia kardCount 0
-give @s music_disc_mellohi[item_name=[{text: "0K",color:"aqua"},{text: " 君临天下",color:"white"}],lore=[{text: "法术牌",color:"light_purple",italic:false},[{text: "使用时",color:"gray",italic:false},{text: "召唤天界打击",color:"gold",italic:false},{text: " 使用后对周围7格敌人造成20♥真实伤害,使其眩晕10s并回复自身32♥,抽一张卡",color:"gray",italic:false}]],jukebox_playable="minecraft:pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'君临天下'},tooltip_style="kard/spell"]

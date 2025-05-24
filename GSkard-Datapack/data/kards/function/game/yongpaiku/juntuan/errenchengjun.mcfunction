@@ -1,4 +1,4 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[二人成军]",color:"dark_green",hover_event:{action:"show_text","value":"在敌方召唤两只史莱姆"}}]
+execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[二人成军]",color:"dark_green",hover_event:{action:"show_text",value:"在敌方召唤两只史莱姆"}}]
 
     #红队用
     execute if entity @s[team=red] as @e[tag=6r] at @s run summon slime ~ 0 ~ {Size:5,Team:red}

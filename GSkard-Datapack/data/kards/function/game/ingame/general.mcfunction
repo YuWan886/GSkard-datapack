@@ -128,8 +128,8 @@ execute as @a[gamemode=spectator] if score #system dituxuanze matches 8 position
 
 execute as @a[gamemode=spectator] positioned -249.0 -10 -192.0 if score #system GameStatus matches 2 if entity @s unless entity @s[dz=56,dy=60,dx=77] at @s run tp @r[gamemode=adventure]
 #沉默
-execute if score @e[tag=r_dw,limit=1] chengmo matches 1.. as @a[team=red,gamemode=adventure] at @s run kill @e[type=item,distance=..3]
-execute if score @e[tag=b_dw,limit=1] chengmo matches 1.. as @a[team=blue,gamemode=adventure] at @s run kill @e[type=item,distance=..3]
+execute if score @e[tag=r_dw,limit=1] chengmo matches 1.. as @a[team=red,gamemode=adventure] at @s run kill @e[type=item,distance=..3,tag=!replaace_item]
+execute if score @e[tag=b_dw,limit=1] chengmo matches 1.. as @a[team=blue,gamemode=adventure] at @s run kill @e[type=item,distance=..3,tag=!replaace_item]
 #玩家死亡
 function kards:game/ingame/death/1
 #回血
@@ -168,6 +168,24 @@ scoreboard players set @a[scores={jinzijue_1=600..}] jinzijue_1 0
 #禁字启封
 execute if entity @a[scores={jinzijue=10}] as @a if items entity @s container.* #creeper_drop_music_discs[minecraft:custom_data={kards:'禁字启封'}] run scoreboard players add @s cishu 1
 execute if entity @a[scores={jinzijue=10}] as @a if items entity @s container.* #creeper_drop_music_discs[minecraft:custom_data={kards:'禁字启封'}] run clear @s #creeper_drop_music_discs[minecraft:custom_data={kards:'禁字启封'}]
+
+#音乐盒 春日影
+execute at @e[tag=droll] run particle minecraft:note ~0.5 ~ ~ 0.5 0.5 0.5 1 3
+execute as @e[tag=droll] if score @s lifetime matches 1.. at @s run tag @e[distance=..13] add droll_music
+
+effect give @e[tag=droll_music,distance=0.1..] weakness 1 255 true
+execute as @e[tag=droll_music,distance=0.1..] run attribute @s minecraft:movement_speed modifier add 0-0-2 -100 add_multiplied_total
+execute as @e[tag=droll_music,distance=0.1..] run attribute @s minecraft:jump_strength modifier add 0-0-4 -100 add_multiplied_total
+execute as @e[tag=droll_music,distance=0.1..,type=!player] run attribute @s minecraft:flying_speed modifier add 0-0-1 -100 add_multiplied_total
+execute as @e[tag=droll_music,distance=0.1..] at @s facing entity @n[tag=droll] eyes run tp @s ~ ~ ~ ~ ~
+execute as @e[tag=droll_music,distance=0.1..] at @s unless entity @e[tag=droll,distance=..13] run attribute @s minecraft:movement_speed modifier remove 0-0-2
+execute as @e[tag=droll_music,distance=0.1..] at @s unless entity @e[tag=droll,distance=..13] run attribute @s minecraft:jump_strength modifier remove 0-0-4
+execute as @e[tag=droll_music,distance=0.1..,type=!player] at @s unless entity @e[tag=droll,distance=..13] run attribute @s minecraft:flying_speed modifier remove 0-0-1
+execute as @e[tag=droll_music,distance=0.1..] at @s unless entity @e[tag=droll,distance=..13] run tag @s remove droll_music
+#存活时长
+execute as @e if score @s lifetime matches 1.. run scoreboard players remove @s lifetime 1
+execute as @e[tag=droll] if score @s lifetime matches 0 run stopsound @a music minecraft:music_disc.relic
+execute as @e[tag=droll] if score @s lifetime matches 0 run kill @s
 #清弹射物
 kill @e[nbt={Item:{id:"minecraft:arrow"}}]
 kill @e[type=minecraft:arrow,nbt={inGround:1b}]
