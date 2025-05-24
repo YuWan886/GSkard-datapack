@@ -11,6 +11,7 @@ schedule clear kards:lobby/bossbar/color/3
 schedule clear kards:lobby/bossbar/color/4
 function kards:lobby/bossbar/color/1
 #注册计分项目
+scoreboard objectives add haogaowuyuan dummy
 scoreboard objectives add diyu dummy
 scoreboard objectives add roundtimeOper dummy
 scoreboard objectives add cishu dummy

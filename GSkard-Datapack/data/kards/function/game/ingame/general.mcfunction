@@ -165,17 +165,14 @@ effect give @a[scores={jinzijue=10..}] resistance 1 4 true
 scoreboard players add @a[scores={jinzijue=6..}] jinzijue_1 1
 effect give @a[scores={jinzijue_1=600..}] absorption 30 9 true
 scoreboard players set @a[scores={jinzijue_1=600..}] jinzijue_1 0
-
+#禁字启封
+execute if entity @a[scores={jinzijue=10}] as @a if items entity @s container.* #creeper_drop_music_discs[minecraft:custom_data={kards:'禁字启封'}] run scoreboard players add @s cishu 1
+execute if entity @a[scores={jinzijue=10}] as @a if items entity @s container.* #creeper_drop_music_discs[minecraft:custom_data={kards:'禁字启封'}] run clear @s #creeper_drop_music_discs[minecraft:custom_data={kards:'禁字启封'}]
 #清弹射物
 kill @e[nbt={Item:{id:"minecraft:arrow"}}]
 kill @e[type=minecraft:arrow,nbt={inGround:1b}]
 kill @e[type=minecraft:trident,nbt={inGround:1b},nbt=!{item:{components:{"minecraft:custom_data":{kards:"正义长戟"}}}}]
 
-#检测指定方块并清除
-execute positioned as @e[tag=r_dw] run fill ~ ~ ~ ~25 ~25 ~25 air replace fire
-execute positioned as @e[tag=b_dw] run fill ~ ~ ~ ~25 ~25 ~25 air replace fire
-execute positioned as @e[tag=r_dw] run fill ~ ~ ~ ~25 ~25 ~25 air replace #anvil
-execute positioned as @e[tag=b_dw] run fill ~ ~ ~ ~25 ~25 ~25 air replace #anvil
 #投降
 scoreboard players enable @a[scores={touxiang=0}] touxiang
 execute as @a[team=red] if score @s touxiang matches 1.. run function kards:game/ingame/touxiang/r_touxiang
