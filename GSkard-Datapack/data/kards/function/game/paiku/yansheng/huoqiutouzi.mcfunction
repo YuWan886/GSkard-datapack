@@ -1,3 +1,3 @@
 # 火球骰子
-give @s ward_armor_trim_smithing_template[item_name=[{text: "6K",color:"aqua"},{text: " 火球骰子",color:"blue"}],lore=[{text: "待补充", strikethrough:true}],tooltip_display={hidden_components:["minecraft:tooltip_display"]},custom_data={kards:'火球骰子'}]
+give @s ward_armor_trim_smithing_template[item_name=[{translate: "game.paiku.fashu.jinjidiaoqian.1",color:"aqua"},{translate: "game.paiku.yansheng.huoqiutouzi.1",color:"blue"}],lore=[{translate: "game.paiku.yansheng.huoqiutouzi.2", strikethrough:true}],tooltip_display={hidden_components:["minecraft:tooltip_display"]},custom_data={kards:'火球骰子'}]
 scoreboard players set #kard_huoqiushaizi kardCount 6

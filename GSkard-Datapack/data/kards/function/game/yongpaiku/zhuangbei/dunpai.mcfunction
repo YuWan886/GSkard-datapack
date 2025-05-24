@@ -1,5 +1,5 @@
 #懒得重写图案了 以前做的图案网站也不记得了 于是用的item replace from block
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[盾牌]",color:"gold"}]
+execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.yongpaiku.template.1",color:"gold"},{translate: "game.yongpaiku.zhuangbei.dunpai.1",color:"gold"}]
 item replace entity @s weapon.offhand from block 7 -60 -48 container.8
 scoreboard players operation @s kardCount -= #kard_dunpai kardCount
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1

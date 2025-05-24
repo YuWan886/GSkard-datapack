@@ -1,4 +1,4 @@
-tellraw @a [{text: "本局随机事件",color:"gray"}]
+tellraw @a [{translate: "game.start.gamerule.random.1",color:"gray"}]
 
 execute store result score #system random_start run random value 1..5
 # execute if score #system random_start matches 1 run

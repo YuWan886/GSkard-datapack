@@ -14,5 +14,5 @@ execute if score #system dituxuanze matches 8 run forceload add 60 105 91 157
 
 execute if score #system dituxuanze matches 101 run forceload add 278 19 313 91
 
-tellraw @a [{text: "提示 ",color: "green",bold: true},{text: "地图已切换!",color: "gold"}]
+tellraw @a [{translate: "lobby.setting.map.truns_map.1",color: "green",bold: true},{translate: "lobby.setting.map.truns_map.2",color: "gold"}]
 playsound minecraft:entity.arrow.hit_player master @a ~ ~ ~ 100 2

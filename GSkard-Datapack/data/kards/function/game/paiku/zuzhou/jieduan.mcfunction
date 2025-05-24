@@ -1,3 +1,3 @@
 
-give @s music_disc_stal[item_name=[{text: "2K",color:"aqua"},{text: " 截断",color:"dark_gray"}],lore=[{text: "诅咒牌",color:"dark_gray",italic:false},{text: "给敌方玩家施加挖掘疲劳 持续20s",color:"gray",italic:false}],jukebox_playable="minecraft:pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'截断'},tooltip_style="kard/curse"]
+give @s music_disc_stal[item_name=[{translate: "game.paiku.fashu.manshui.1",color:"aqua"},{translate: "game.paiku.zuzhou.jieduan.1",color:"dark_gray"}],lore=[{translate: "game.paiku.zuzhou.chengmo.2",color:"dark_gray",italic:false},{translate: "game.paiku.zuzhou.jieduan.2",color:"gray",italic:false}],jukebox_playable="minecraft:pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'截断'},tooltip_style="kard/curse"]
 scoreboard players set #kard_jieduan kardCount 2

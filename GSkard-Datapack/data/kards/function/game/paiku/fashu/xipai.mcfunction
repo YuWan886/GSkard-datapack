@@ -1,3 +1,3 @@
 scoreboard players set #kard_xipai kardCount 0
 
-give @s music_disc_mellohi[item_name=[{text: "0K",color:"aqua"},{text: " 洗牌",color:"light_purple"}],lore=[{text: "法术牌",color:"light_purple",italic:false},[{text: "依照从左到右 从物品栏到背包的顺序",color:"gray",italic:false},{text: "洗2张牌",color:"gold",italic:false}]],jukebox_playable="minecraft:pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'洗牌'},tooltip_style="kard/spell"]
+give @s music_disc_mellohi[item_name=[{translate: "game.paiku.fashu.chongzhu.1",color:"aqua"},{translate: "game.paiku.fashu.xipai.1",color:"light_purple"}],lore=[{translate: "game.paiku.fashu.beishuiyizhan.3",color:"light_purple",italic:false},[{translate: "game.paiku.fashu.xipai.2",color:"gray",italic:false},{translate: "game.paiku.fashu.xipai.3",color:"gold",italic:false}]],jukebox_playable="minecraft:pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'洗牌'},tooltip_style="kard/spell"]

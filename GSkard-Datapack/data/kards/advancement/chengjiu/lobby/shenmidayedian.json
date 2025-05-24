@@ -19,7 +19,27 @@
     },
     "criteria": {
         "requirement": {
-            "trigger": "minecraft:impossible"
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "position": {
+                            "x": {
+                                "min": 105.1,
+                                "max": 106.0
+                            },
+                            "y": {
+                                "min": 227,
+                                "max": 231
+                            },
+                            "z": {
+                                "min": -14.0,
+                                "max": -10.0
+                            }
+                        }
+                    }
+                }
+            }
         }
     },
     "rewards": {

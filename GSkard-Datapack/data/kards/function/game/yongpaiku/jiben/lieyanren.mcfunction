@@ -1,4 +1,4 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[烈焰人]",color:"blue"}]
+execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.yongpaiku.template.1",color:"gold"},{translate: "game.yongpaiku.jiben.lieyanren.1",color:"blue"}]
     #红队用
     execute if entity @s[team=red] as @e[tag=7r] at @s run summon blaze ~ 0 ~ {Team:red}
     #蓝队用

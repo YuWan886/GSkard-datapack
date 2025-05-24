@@ -1,7 +1,6 @@
 {
     "env": {
         "gameVersion": "Latest release",
-        "dataSource": "fastly",
-        "language": "zh-cn"
+        "dataSource": "fastly"
     }
 }

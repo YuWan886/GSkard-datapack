@@ -110,5 +110,5 @@ execute if score @s random_clear matches 33 run item replace entity @s container
 execute if score @s random_clear matches 34 run item replace entity @s container.34 with air
 execute if score @s random_clear matches 35 run item replace entity @s container.35 with air
 
-tellraw @a [{selector:"@s"},{text: "的一张牌被",color:"aqua"},{selector:"@a[tag=User]"},{text: "弃掉了！",color:"aqua"}]
+tellraw @a [{selector:"@s"},{translate: "game.yongpaiku.fashu.guohechaiqiao.2.1",color:"aqua"},{selector:"@a[tag=User]"},{translate: "game.yongpaiku.fashu.guohechaiqiao.2.2",color:"aqua"}]
 tag @a remove User

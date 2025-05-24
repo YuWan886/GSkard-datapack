@@ -1,4 +1,4 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[紧急调遣]",color:"dark_purple",hover_event:{action:"show_text","value":"获得4Kmax"}}]
+execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.yongpaiku.template.1",color:"gold"},{translate: "game.yongpaiku.fashu.jinjidiaoqian.1",color:"dark_purple",hover_event:{action:"show_text","value":"获得4Kmax"}}]
 item replace entity @s weapon.offhand with air
 scoreboard players operation @s kardCount -= #kard_jinjidiaoqian kardCount
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1

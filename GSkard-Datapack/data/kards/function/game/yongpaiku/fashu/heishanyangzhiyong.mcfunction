@@ -1,4 +1,4 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[黑山羊之拥]",color:"dark_purple",hover_event:{action:"show_text","value":"使用后进行一次随机点数(1~10) 根据结果不同获得不同效果"}}]
+execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.yongpaiku.template.1",color:"gold"},{translate: "game.yongpaiku.fashu.heishanyangzhiyong.1",color:"dark_purple",hover_event:{action:"show_text","value":"使用后进行一次随机点数(1~10) 根据结果不同获得不同效果"}}]
 item replace entity @s weapon.offhand with air
 scoreboard players operation @s kardCount -= #kard_heishanyangzhiyong kardCount
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1
@@ -27,12 +27,12 @@ execute if score @s fashu_heishanyangzhiyong matches 9..10 run scoreboard player
 execute if score @s fashu_heishanyangzhiyong matches 9..10 run scoreboard players add @s shenjicishu 1
 
 
-tellraw @a [{text: "进行了一次随机点数(1~10)",color:"gold",bold:false}]
-tellraw @a [{text: "点数为 ",color:"gold",bold:false},{score:{objective:"fashu_heishanyangzhiyong",name:"@s"},color:"green",bold:false}]
+tellraw @a [{translate: "game.yongpaiku.fashu.heishanyangzhiyong.2",color:"gold",bold:false}]
+tellraw @a [{translate: "game.yongpaiku.fashu.heishanyangzhiyong.3",color:"gold",bold:false},{score:{objective:"fashu_heishanyangzhiyong",name:"@s"},color:"green",bold:false}]
 
-execute if score @s fashu_heishanyangzhiyong matches 1..3 run tellraw @a [{text: "他获得了 -2Kmax 治疗8♥ 抽1张牌",color:"gold",bold:false}]
-execute if score @s fashu_heishanyangzhiyong matches 4..6 run tellraw @a [{text: "他获得了 -4Kmax 治疗16♥ 抽3张牌",color:"gold",bold:false}]
-execute if score @s fashu_heishanyangzhiyong matches 7..8 run tellraw @a [{text: "他获得了 -6Kmax 治疗16♥ 抽5张牌",color:"gold",bold:false}]
-execute if score @s fashu_heishanyangzhiyong matches 9..10 run tellraw @a [{text: "他获得了 -6Kmax 治疗32♥ 抽2张牌与1张神迹牌",color:"gold",bold:false}]
+execute if score @s fashu_heishanyangzhiyong matches 1..3 run tellraw @a [{translate: "game.yongpaiku.fashu.heishanyangzhiyong.4",color:"gold",bold:false}]
+execute if score @s fashu_heishanyangzhiyong matches 4..6 run tellraw @a [{translate: "game.yongpaiku.fashu.heishanyangzhiyong.5",color:"gold",bold:false}]
+execute if score @s fashu_heishanyangzhiyong matches 7..8 run tellraw @a [{translate: "game.yongpaiku.fashu.heishanyangzhiyong.6",color:"gold",bold:false}]
+execute if score @s fashu_heishanyangzhiyong matches 9..10 run tellraw @a [{translate: "game.yongpaiku.fashu.heishanyangzhiyong.7",color:"gold",bold:false}]
 
 scoreboard players set @s fashu_heishanyangzhiyong 0

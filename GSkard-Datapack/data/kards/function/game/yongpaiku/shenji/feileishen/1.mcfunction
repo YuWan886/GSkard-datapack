@@ -1,4 +1,4 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[飞雷神]",color:"white",hover_event:{action:"show_text","value":"传送至敌方区域 10s后折回"}}]
+execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.yongpaiku.template.1",color:"gold"},{translate: "game.yongpaiku.shenji.feileishen.1.1",color:"white",hover_event:{action:"show_text","value":"传送至敌方区域 10s后折回"}}]
 function kards:game/yongpaiku/xianjin/jiance/shenjijiance
 #红
 execute if entity @s[team=red] positioned as @e[tag=7r] run tp @s ~ 0 ~

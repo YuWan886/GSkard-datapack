@@ -1,4 +1,4 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[亡灵大军]",color:"dark_green",hover_event:{action:"show_text","value":"在敌方召唤两只凋零骷髅、三只骷髅"}}]
+execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.yongpaiku.template.1",color:"gold"},{translate: "game.yongpaiku.juntuan.wanglingdajun.1",color:"dark_green",hover_event:{action:"show_text","value":"在敌方召唤两只凋零骷髅、三只骷髅"}}]
     #红队用
     execute if entity @s[team=blue] as @e[tag=1b] at @s run summon skeleton ~ 0 ~ {equipment:{mainhand:{id:"minecraft:bow"}},Team:blue}
     execute if entity @s[team=blue] as @e[tag=3b] at @s run summon skeleton ~ 0 ~ {equipment:{mainhand:{id:"minecraft:bow"}},Team:blue}

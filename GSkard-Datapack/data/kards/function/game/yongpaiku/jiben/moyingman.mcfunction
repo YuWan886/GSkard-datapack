@@ -1,4 +1,4 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[末影螨]",color:"blue"}]
+execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.yongpaiku.template.1",color:"gold"},{translate: "game.yongpaiku.jiben.moyingman.1",color:"blue"}]
     #红队用
     execute if entity @s[team=red] as @e[tag=7r] at @s run summon endermite ~ 0 ~ {attributes:[{id:"minecraft:max_health",base:16.0d}],Health:16.0f,Team:red}
     #蓝队用

@@ -74,6 +74,6 @@ execute if score @s random_clear matches 33 if items entity @s container.33 #min
 execute if score @s random_clear matches 34 if items entity @s container.34 #minecraft:creeper_drop_music_discs run item replace entity @s container.34 with air
 execute if score @s random_clear matches 35 if items entity @s container.35 #minecraft:creeper_drop_music_discs run item replace entity @s container.35 with air
 
-tellraw @a [{selector:"@a[tag=Be_User]"},{text: "的一张牌被",color:"aqua"},{selector:"@a[tag=User]"},{text: "弃掉了！",color:"aqua"}]
+tellraw @a [{selector:"@a[tag=Be_User]"},{translate: "game.yongpaiku.fashu.guohechaiqiao.2.1",color:"aqua"},{selector:"@a[tag=User]"},{translate: "game.yongpaiku.fashu.guohechaiqiao.2.2",color:"aqua"}]
 tag @a remove User
 tag @s remove Be_User

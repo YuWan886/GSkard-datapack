@@ -1,4 +1,4 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[无用•神]",color:"white",hover_event:{action:"show_text","value":"没有作用"}}]
+execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.yongpaiku.template.1",color:"gold"},{translate: "game.yongpaiku.shenji.wuyongshen.1",color:"white",hover_event:{action:"show_text","value":"没有作用"}}]
 function kards:game/yongpaiku/xianjin/jiance/shenjijiance
 item replace entity @s weapon.offhand with air
 

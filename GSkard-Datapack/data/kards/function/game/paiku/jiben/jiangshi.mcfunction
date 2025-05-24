@@ -1,3 +1,3 @@
 scoreboard players set #kard_jiangshi kardCount 1
 
-give @s music_disc_mall[item_name=[{text: "1K",color:"aqua"},{text: " 僵尸",color:"blue"}],lore=[{text: "基本牌",color:"blue",italic:false},[{text: "召唤一只",color:"gray",italic:false},{text: "僵尸",color:"gold",italic:false}]],jukebox_playable="minecraft:pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'僵尸'},tooltip_style="kard/common"]
+give @s music_disc_mall[item_name=[{translate: "game.paiku.fashu.chaotuoxili.1",color:"aqua"},{translate: "game.paiku.jiben.jiangshi.1",color:"blue"}],lore=[{translate: "game.paiku.jiben.diaolingkulou.2",color:"blue",italic:false},[{translate: "game.paiku.fashu.zhouranyingbao.2",color:"gray",italic:false},{translate: "game.paiku.jiben.jiangshi.2",color:"gold",italic:false}]],jukebox_playable="minecraft:pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'僵尸'},tooltip_style="kard/common"]

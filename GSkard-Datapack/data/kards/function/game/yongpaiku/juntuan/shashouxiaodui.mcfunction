@@ -1,4 +1,4 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[杀手小队]",color:"dark_green",hover_event:{action:"show_text","value":"在敌方召唤4只杀手兔"}}]
+execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.yongpaiku.template.1",color:"gold"},{translate: "game.yongpaiku.juntuan.shashouxiaodui.1",color:"dark_green",hover_event:{action:"show_text","value":"在敌方召唤4只杀手兔"}}]
 
     #红队用
     execute if entity @s[team=red] as @e[tag=2r] at @s run summon rabbit ~ 0 ~ {RabbitType:99,Team:red,Age:9999999}

@@ -1,4 +1,4 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[寂静山羊]",color:"blue"}]
+execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.yongpaiku.template.1",color:"gold"},{translate: "game.yongpaiku.jiben.jijingshanyang.1",color:"blue"}]
 
     #红队用
     execute if entity @s[team=red] as @e[tag=7r] at @s run summon minecraft:goat ~ 0 ~ {Team:red,Silent:1b,HasLeftHorn:1b,HasRightHorn:1b,IsScreamingGoat:1b,attributes:[{id:"minecraft:max_health",base:25.0d},{id:"minecraft:attack_damage",base:25.0d}],Health:25.0f,active_effects:[{id:"invisibility",show_particles:0b,duration:41}]}

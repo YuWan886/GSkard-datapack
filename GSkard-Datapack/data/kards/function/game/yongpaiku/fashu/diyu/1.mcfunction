@@ -1,4 +1,4 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[地狱]",color:"red",hover_event:{action:"show_text","value":"在地方场地周围放置一圈岩浆 怪物获得火焰抗性效果 持续至回合结束"}}]
+execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.yongpaiku.template.1",color:"gold"},{translate: "game.yongpaiku.fashu.diyu.1.1",color:"red",hover_event:{action:"show_text","value":"在地方场地周围放置一圈岩浆 怪物获得火焰抗性效果 持续至回合结束"}}]
 item replace entity @s weapon.offhand with air
 scoreboard players operation @s kardCount -= #kard_diyu kardCount
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1

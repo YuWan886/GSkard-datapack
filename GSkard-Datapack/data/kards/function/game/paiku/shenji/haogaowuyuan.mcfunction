@@ -1,3 +1,3 @@
 
-give @s music_disc_strad[item_name=[{text: "0K",color:"aqua"},{text: " 好高骛远",color:"white"}],lore=[{text: "神迹牌",color:"white",italic:false},[{text: "将身上所有牌洗掉",color:"gray",italic:false},{text: "抽洗掉牌数+2的牌",color:"gold",italic:false}]],jukebox_playable="minecraft:pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'好高骛远'},tooltip_style="kard/god"]
+give @s music_disc_strad[item_name=[{translate: "game.paiku.fashu.chongzhu.1",color:"aqua"},{translate: "game.paiku.shenji.haogaowuyuan.1",color:"white"}],lore=[{translate: "game.paiku.shenji.fanxiangfeileishen.2",color:"white",italic:false},[{translate: "game.paiku.shenji.haogaowuyuan.2",color:"gray",italic:false},{translate: "game.paiku.shenji.haogaowuyuan.3",color:"gold",italic:false}]],jukebox_playable="minecraft:pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'好高骛远'},tooltip_style="kard/god"]
 scoreboard players set #kard_haogaowuyuan kardCount 0

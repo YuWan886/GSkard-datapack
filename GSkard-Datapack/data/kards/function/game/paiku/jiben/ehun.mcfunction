@@ -1,3 +1,3 @@
 scoreboard players set #kard_ehun kardCount 3
 
-give @s music_disc_mall[item_name=[{text: "3K",color:"aqua"},{text: " 恶魂",color:"blue"}],lore=[{text: "基本牌",color:"blue",italic:false},[{text: "召唤一只",color:"gray",italic:false},{text: "体积缩小的恶魂",color:"gold",italic:false}]],jukebox_playable="minecraft:pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'恶魂'},tooltip_style="kard/common"]
+give @s music_disc_mall[item_name=[{translate: "game.paiku.fashu.guohechaiqiao.1",color:"aqua"},{translate: "game.paiku.jiben.ehun.1",color:"blue"}],lore=[{translate: "game.paiku.jiben.diaolingkulou.2",color:"blue",italic:false},[{translate: "game.paiku.fashu.zhouranyingbao.2",color:"gray",italic:false},{translate: "game.paiku.jiben.ehun.2",color:"gold",italic:false}]],jukebox_playable="minecraft:pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'恶魂'},tooltip_style="kard/common"]
