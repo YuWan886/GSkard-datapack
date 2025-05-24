@@ -1,4 +1,4 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.paiku.fashu.wuyongfa.1",color:"gold"},{translate: "game.yongpaiku.fashu.xinlingfenshao.1",color:"dark_purple",hover_event:{action:"show_text","value":"使敌方队伍所有生物凋零（包括图腾与怪物）"}}]
+execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[心灵焚烧]",color:"dark_purple",hover_event:{action:"show_text","value":"使敌方队伍所有生物凋零（包括图腾与怪物）"}}]
 item replace entity @s weapon.offhand with air
 scoreboard players operation @s kardCount -= #kard_yuhuo kardCount
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1

@@ -1,2 +1,2 @@
 
-tellraw @a [{translate: "lobby.team.check_unready.1",color:"gray"},{selector:"@a[tag=Un_Ready]"}]
+tellraw @a [{text: "未准备的玩家:",color:"gray"},{selector:"@a[tag=Un_Ready]"}]

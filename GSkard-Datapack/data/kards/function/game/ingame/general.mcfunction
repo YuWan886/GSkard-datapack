@@ -4,7 +4,7 @@ function kards:game/ingame/use_kard/general
 #回合计时
 execute if score #system GameStatus matches 1 run function kards:game/ingame/round/roundtime
 #分数小标题
-execute as @a[gamemode=adventure,tag=Ready] if score #system GameStatus matches 1..2 unless items entity @s weapon.mainhand #kards:jinzhanwuqi unless items entity @s weapon.mainhand lantern run title @s actionbar [{translate: "game.ingame.general.1",color:"dark_green"},{score:{objective:"kardCount",name:"@s"},color:"red"},{translate: "game.ingame.general.2",color: "red"},{score:{objective:"kardCountmax",name:"@s"},color:"red",bold: true}]
+execute as @a[gamemode=adventure,tag=Ready] if score #system GameStatus matches 1..2 unless items entity @s weapon.mainhand #kards:jinzhanwuqi unless items entity @s weapon.mainhand lantern run title @s actionbar [{text: "K/Kmax  ",color:"dark_green"},{score:{objective:"kardCount",name:"@s"},color:"red"},{text: "/",color: "red"},{score:{objective:"kardCountmax",name:"@s"},color:"red",bold: true}]
 #赋值
 scoreboard players add @a tanshewubuchong 0
 scoreboard players add @a zhunbei 0
@@ -49,11 +49,11 @@ execute as @a[tag=XuanYun,scores={XuanYun=1..}] run attribute @s minecraft:jump_
 execute as @a[tag=XuanYun,scores={XuanYun=1..}] run effect clear @s jump_boost
 execute as @a[tag=XuanYun,scores={XuanYun=1..}] at @s run tp @s ~ ~ ~ ~ 90
 title @a[tag=XuanYun,scores={XuanYun=1..}] times 0t 1s 0t
-title @a[tag=XuanYun,scores={XuanYun=1..}] title {translate: "game.ingame.general.3",color:"gray",bold:true}
+title @a[tag=XuanYun,scores={XuanYun=1..}] title {text: "眩晕中...",color:"gray",bold:true}
 effect clear @a[tag=XuanYun,scores={XuanYun=0}] slowness
 effect clear @a[tag=XuanYun,scores={XuanYun=0}] blindness
 execute as @a[tag=XuanYun,scores={XuanYun=0}] run attribute @s minecraft:jump_strength modifier remove 0-0-1
-title @a[tag=XuanYun,scores={XuanYun=0}] title {translate: "game.end.reset.11"}
+title @a[tag=XuanYun,scores={XuanYun=0}] title {text: ""}
 tag @a[tag=XuanYun,scores={XuanYun=0}] remove XuanYun
 #断腿
 scoreboard players remove @a[tag=DuanTui,scores={DuanTui=1..}] DuanTui 1

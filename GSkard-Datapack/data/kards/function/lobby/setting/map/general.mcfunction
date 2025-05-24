@@ -23,7 +23,7 @@ data modify entity @e[tag=map,type=block_display,limit=1] interpolation_duration
 
 execute unless entity @e[type=interaction,tag=map] run summon minecraft:interaction 83 227.2 -35 {response:1b,Tags:["map"]}
 
-execute unless entity @e[type=text_display,tag=map] run summon minecraft:text_display 83 226.7 -35 {billboard:vertical,translate: 'lobby.setting.map.general.1',Tags:["map"]}
+execute unless entity @e[type=text_display,tag=map] run summon minecraft:text_display 83 226.7 -35 {billboard:vertical,text: '§6点我切换至下一张地图',Tags:["map"]}
 
 execute store result score #system MapCount if entity @e[distance=1..,tag=map]
 execute unless score #system MapCount matches 3 run kill @e[tag=map]

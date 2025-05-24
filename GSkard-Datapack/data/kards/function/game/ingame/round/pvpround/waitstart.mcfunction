@@ -1,4 +1,4 @@
-title @a title [{translate: "game.ingame.round.pvpround.waitstart.1",color:"red",bold:true},{translate: "game.ingame.round.pvpround.waitstart.2",color:"gold",bold:true}]
+title @a title [{text: "战 斗",color:"red",bold:true},{text: " 回 合",color:"gold",bold:true}]
 scoreboard players set @a cishu 0
 scoreboard players set @a tiaoguo 0
 scoreboard players set @a kardCountmax 100
@@ -14,8 +14,8 @@ clear @a #kards:feipvp
 clear @a minecraft:music_disc_strad[custom_data={kards:'飞雷神'}]
 scoreboard players reset @a feileishen
 bossbar set roundtime visible false
-tellraw @a [{translate: "game.ingame.round.pvpround.waitstart.3",color:"gold"},{translate: "game.ingame.round.pvpround.waitstart.4",color:"red"}]
-tellraw @a {translate: "game.ingame.round.pvpround.waitstart.5",color:"gray",bold:true}
+tellraw @a [{text: "PVP回合：",color:"gold"},{text: "战斗！存活下来的队伍获胜",color:"red"}]
+tellraw @a {text: "准备时间30s",color:"gray",bold:true}
 tp @a[team=red] -179 -9 -164
 tp @a[team=blue] -242 -9 -164
 kill @e[type=!player,type=!marker,type=!#kards:display]

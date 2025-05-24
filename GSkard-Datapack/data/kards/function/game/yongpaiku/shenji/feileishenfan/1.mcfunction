@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.paiku.fashu.wuyongfa.1",color:"gold"},{translate: "game.yongpaiku.shenji.feileishenfan.1.1",color:"white",hover_event:{action:"show_text","value":"对方阵营传送至我方区域 10s后折回"}}]
-=======
-execute if score @s pingbi matches 0 run tellraw @a [{"selector":"@s"},{"text":"使用了","color":"gold"},{"text":"[飞雷神•反]","color":"white","hoverEvent":{"action":"show_text","value":"对方阵营传送至我方区域 10s后折回"}}]
->>>>>>> c337d2e (加入一些卡牌)
+execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[飞雷神•反]",color:"white",hover_event:{action:"show_text","value":"对方阵营传送至我方区域 10s后折回"}}]
 function kards:game/yongpaiku/xianjin/jiance/shenjijiance
 #红
 execute as @s at @s if entity @s[team=red] run tag @r[team=blue] add fanxiangfeileishen
@@ -11,11 +7,7 @@ execute as @s at @s run tp @a[tag=fanxiangfeileishen] ~ ~ ~
 execute as @a[tag=fanxiangfeileishen] at @s run scoreboard players set @s feileishen 200
 tag @a remove fanxiangfeileishen
 item replace entity @s weapon.offhand with air
-<<<<<<< HEAD
-scoreboard players operation @s kardCount -= #kard_1 kardCount
-=======
-scoreboard players remove @s kardCount 0
->>>>>>> c337d2e (加入一些卡牌)
+scoreboard players operation @s kardCount -= #fanxiangfeileishen kardCount
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1
 scoreboard players set @s pingbi 0
 scoreboard players add @s use_kard 1

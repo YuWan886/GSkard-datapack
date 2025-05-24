@@ -1,4 +1,4 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.paiku.fashu.wuyongfa.1",color:"gold"},{translate: "game.yongpaiku.fashu.guohechaiqiao.1.1",color:"dark_purple",hover_event:{action:"show_text","value":"你弃掉敌方一名玩家一张牌"}}]
+execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[过河拆桥]",color:"dark_purple",hover_event:{action:"show_text","value":"你弃掉敌方一名玩家一张牌"}}]
 
 item replace entity @s weapon.offhand with air
 scoreboard players operation @s kardCount -= #kard_guohechaiqiao kardCount

@@ -1,4 +1,4 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.paiku.fashu.wuyongfa.1",color:"gold"},{translate: "game.yongpaiku.jiben.manbing.1",color:"blue"}]
+execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[蛮兵]",color:"blue"}]
 #红队用
 execute if entity @s[team=red] as @e[tag=7r] at @s run summon minecraft:piglin_brute ~ 0 ~ {Team:red,IsImmuneToZombification:true,equipment:{mainhand:{id:"minecraft:golden_axe"}},Health:40.0f}
 #蓝队用

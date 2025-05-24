@@ -1,3 +1,3 @@
 
-give @s music_disc_13[item_name=[{translate: "game.paiku.fashu.beishuiyizhan.1",color:"aqua"},{translate: "game.paiku.zhuangbei.tiefu.1",color:"gold"}],lore=[{translate: "game.paiku.zhuangbei.bianxiehuosai.2",color:"gold",italic:false},{translate: "game.paiku.zhuangbei.tiefu.2",color:"gray",italic:false}],jukebox_playable="minecraft:pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'铁斧'},tooltip_style="kard/equipment"]
+give @s music_disc_13[item_name=[{text: "5K",color:"aqua"},{text: " 铁斧",color:"gold"}],lore=[{text: "装备牌",color:"gold",italic:false},{text: "获得一把铁斧",color:"gray",italic:false}],jukebox_playable="minecraft:pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'铁斧'},tooltip_style="kard/equipment"]
 scoreboard players set #kard_tiefu kardCount 5

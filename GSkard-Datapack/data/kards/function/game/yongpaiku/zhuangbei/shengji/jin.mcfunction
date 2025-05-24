@@ -1,8 +1,8 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.paiku.fashu.wuyongfa.1",color:"gold"},{translate: "game.yongpaiku.zhuangbei.shengji.jin.1",color:"gold",hover_event:{action:"show_text","value":"获得一套金护甲"}}]
-give @s minecraft:golden_helmet[minecraft:item_name={translate: "game.yongpaiku.zhuangbei.shengji.jin.2",color:"gold"},minecraft:unbreakable={},tooltip_display={hidden_components:["attribute_modifiers","unbreakable"]}]
-give @s minecraft:golden_chestplate[minecraft:item_name={translate: "game.yongpaiku.zhuangbei.shengji.jin.3",color:"gold"},minecraft:unbreakable={},tooltip_display={hidden_components:["attribute_modifiers","unbreakable"]}]
-give @s minecraft:golden_leggings[minecraft:item_name={translate: "game.yongpaiku.zhuangbei.shengji.jin.4",color:"gold"},minecraft:unbreakable={},tooltip_display={hidden_components:["attribute_modifiers","unbreakable"]}]
-give @s minecraft:golden_boots[minecraft:item_name={translate: "game.yongpaiku.zhuangbei.shengji.jin.5",color:"gold"},minecraft:unbreakable={},tooltip_display={hidden_components:["attribute_modifiers","unbreakable"]}]
+execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[金升级]",color:"gold",hover_event:{action:"show_text","value":"获得一套金护甲"}}]
+give @s minecraft:golden_helmet[minecraft:item_name={text: "金头盔",color:"gold"},minecraft:unbreakable={},tooltip_display={hidden_components:["attribute_modifiers","unbreakable"]}]
+give @s minecraft:golden_chestplate[minecraft:item_name={text: "金胸甲",color:"gold"},minecraft:unbreakable={},tooltip_display={hidden_components:["attribute_modifiers","unbreakable"]}]
+give @s minecraft:golden_leggings[minecraft:item_name={text: "金护腿",color:"gold"},minecraft:unbreakable={},tooltip_display={hidden_components:["attribute_modifiers","unbreakable"]}]
+give @s minecraft:golden_boots[minecraft:item_name={text: "金靴子",color:"gold"},minecraft:unbreakable={},tooltip_display={hidden_components:["attribute_modifiers","unbreakable"]}]
 item replace entity @s weapon.offhand with air
 scoreboard players operation @s kardCount -= #kard_jinshengji kardCount
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1

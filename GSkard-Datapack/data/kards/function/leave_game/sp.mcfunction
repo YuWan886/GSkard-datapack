@@ -25,7 +25,7 @@ attribute @s minecraft:jump_strength base set 0.42
 attribute @s minecraft:entity_interaction_range base set 3
 execute at @s run summon minecraft:firework_rocket ~ ~ ~
 team leave @s
-tellraw @a [{translate: "leave_game.not_ingame.1",color:"gold"},{selector:"@s",color:"white"},{translate: "leave_game.not_ingame.2",color:"gold"}]
+tellraw @a [{text: "欢迎老登",color:"gold"},{selector:"@s",color:"white"},{text: "再次进入游戏",color:"gold"}]
 team join Spectator @s
 gamemode spectator @s
 tp @s @r[gamemode=adventure]

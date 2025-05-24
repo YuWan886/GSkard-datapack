@@ -1,4 +1,4 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.paiku.fashu.wuyongfa.1",color:"gold"},{translate: "game.yongpaiku.juntuan.baozhajuntuan.1",color:"dark_green",hover_event:{action:"show_text","value":"在敌方召唤4只苦力怕"}}]
+execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[爆炸军团]",color:"dark_green",hover_event:{action:"show_text","value":"在敌方召唤4只苦力怕"}}]
 
     #红队用
     execute if entity @s[team=red] as @e[tag=1r] at @s run summon creeper ~ 0 ~ {Team:red}

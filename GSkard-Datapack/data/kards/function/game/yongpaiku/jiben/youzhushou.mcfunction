@@ -1,4 +1,4 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.paiku.fashu.wuyongfa.1",color:"gold"},{translate: "game.yongpaiku.jiben.youzhushou.1",color:"blue"}]
+execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[疣猪兽]",color:"blue"}]
     #红队用
     execute if entity @s[team=red] as @e[tag=7r] at @s run summon hoglin ~ 0 ~ {Team:red,IsImmuneToZombification:true,Age:0,attributes:[{id:"minecraft:max_health",base:30.0d}],Health:30.0f,CannotBeHunted:1b}
     #蓝队用

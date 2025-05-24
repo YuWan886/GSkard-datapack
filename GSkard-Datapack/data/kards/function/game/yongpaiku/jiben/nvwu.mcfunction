@@ -1,4 +1,4 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.paiku.fashu.wuyongfa.1",color:"gold"},{translate: "game.yongpaiku.jiben.nvwu.1",color:"blue"}]
+execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[女巫]",color:"blue"}]
     #红队用
     execute if entity @s[team=red] as @e[tag=7r] at @s run summon witch ~ 0 ~ {Team:red}
     #蓝队用

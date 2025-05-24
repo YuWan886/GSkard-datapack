@@ -1,4 +1,4 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.paiku.fashu.wuyongfa.1",color:"gold"},{translate: "game.yongpaiku.juntuan.fengyongerzhi.1",color:"dark_green",hover_event:{action:"show_text","value":"在敌方召唤5只蜜蜂"}}]
+execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[蜂拥而至]",color:"dark_green",hover_event:{action:"show_text","value":"在敌方召唤5只蜜蜂"}}]
     #红队用
     execute if entity @s[team=red] as @e[tag=4r] at @s run summon bee ~ 0 ~ {Team:red,AngerTime:1000000000}
     execute if entity @s[team=red] as @e[tag=6r] at @s run summon bee ~ 0 ~ {Team:red,AngerTime:1000000000}

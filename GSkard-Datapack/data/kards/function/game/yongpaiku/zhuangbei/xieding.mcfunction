@@ -1,5 +1,5 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.paiku.fashu.wuyongfa.1",color:"gold"},{translate: "game.yongpaiku.zhuangbei.xieding.1",color:"gold"}]
-give @s minecraft:lightning_rod[item_name={translate: "game.yongpaiku.zhuangbei.xieding.2",color:"gray"},lore=[[{translate: "game.yongpaiku.zhuangbei.bianxiehuosai.3",color:"gray",italic:false}],[{translate: "game.end.reset.11",color:"gray",italic:false}],[{translate: "game.yongpaiku.zhuangbei.bianxiehuosai.4",color:"gray",italic:false}],[{translate: "game.yongpaiku.zhuangbei.xieding.3",color:"blue",italic:false}]],max_stack_size=1,custom_data={kards:'鞋钉'}]
+execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[鞋钉]",color:"gold"}]
+give @s minecraft:lightning_rod[item_name={text: "鞋钉",color:"gray"},lore=[[{text: "放在背包最右侧一列佩戴 同个配件只生效一个",color:"gray",italic:false}],[{text: "",color:"gray",italic:false}],[{text: "佩戴时：",color:"gray",italic:false}],[{text: "+0.2 击退抗性",color:"blue",italic:false}]],max_stack_size=1,custom_data={kards:'鞋钉'}]
 
 item replace entity @s weapon.offhand with air
 scoreboard players operation @s kardCount -= #kard_xieding kardCount

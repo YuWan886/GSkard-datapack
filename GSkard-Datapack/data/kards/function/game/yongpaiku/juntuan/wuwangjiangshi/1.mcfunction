@@ -1,4 +1,4 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.paiku.fashu.wuyongfa.1",color:"gold"},{translate: "game.yongpaiku.juntuan.wuwangjiangshi.1.1",color:"dark_green",hover_event:{action:"show_text","value":"在敌方召唤1只舞王僵尸"}}]
+execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[舞王僵尸]",color:"dark_green",hover_event:{action:"show_text","value":"在敌方召唤1只舞王僵尸"}}]
 
     #红队用
     execute if entity @s[team=red] as @e[tag=7r] at @s positioned ~ 0 ~ summon zombie run function kards:game/yongpaiku/juntuan/wuwangjiangshi/2
