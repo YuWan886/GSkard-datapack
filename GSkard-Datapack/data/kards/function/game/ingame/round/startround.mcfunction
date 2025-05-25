@@ -8,6 +8,7 @@ execute as @a[scores={CanuseKard=1}] run scoreboard players operation @s kardCou
 scoreboard players set @a[gamemode=adventure] cishu 5
 scoreboard players operation time roundtime = #system roundtime
 scoreboard players set #system GameRound 1
+scoreboard players set 回合数 GameRound 1
 
 execute if score #system roundtime matches 0 run function kards:game/ingame/round/pvpround/waitstart
 execute if score #system roundtime matches 0 run difficulty hard
