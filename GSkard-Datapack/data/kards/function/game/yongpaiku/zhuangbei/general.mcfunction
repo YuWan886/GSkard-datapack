@@ -39,3 +39,10 @@ execute as @a if items entity @s container.35 feather[custom_data={kards:'迅捷
 execute as @a[tag=xunjiezhiyu] run attribute @s minecraft:movement_speed modifier add 0-0-5 0.2 add_multiplied_base
 execute as @a[tag=xunjiezhiyu] unless items entity @s container.17 feather[custom_data={kards:'迅捷之羽'}] unless items entity @s container.26 feather[custom_data={kards:'迅捷之羽'}] unless items entity @s container.35 feather[custom_data={kards:'迅捷之羽'}] run attribute @s minecraft:movement_speed modifier remove 0-0-5
 execute as @a unless items entity @s container.17 feather[custom_data={kards:'迅捷之羽'}] unless items entity @s container.26 feather[custom_data={kards:'迅捷之羽'}] unless items entity @s container.35 feather[custom_data={kards:'迅捷之羽'}] run tag @s remove xunjiezhiyu
+
+#灵魂收割器
+execute as @a if items entity @s container.17 cauldron[custom_data={kards:'灵魂收割器'}] run tag @s add linghunshougeqi
+execute as @a if items entity @s container.26 cauldron[custom_data={kards:'灵魂收割器'}] run tag @s add linghunshougeqi
+execute as @a if items entity @s container.35 cauldron[custom_data={kards:'灵魂收割器'}] run tag @s add linghunshougeqi
+
+execute as @a unless items entity @s container.17 cauldron[custom_data={kards:'灵魂收割器'}] unless items entity @s container.26 cauldron[custom_data={kards:'灵魂收割器'}] unless items entity @s container.35 cauldron[custom_data={kards:'灵魂收割器'}] run tag @s remove linghunshougeqi

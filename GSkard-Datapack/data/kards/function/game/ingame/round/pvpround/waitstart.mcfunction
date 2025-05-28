@@ -12,6 +12,7 @@ effect clear @a
 effect give @a minecraft:resistance 30 9 true
 clear @a #kards:feipvp
 clear @a minecraft:music_disc_strad[custom_data={kards:'飞雷神'}]
+clear @a minecraft:music_disc_strad[custom_data={kards:'飞雷神•反'}]
 scoreboard players reset @a feileishen
 bossbar set roundtime visible false
 tellraw @a [{text: "PVP回合：",color:"gold"},{text: "战斗！存活下来的队伍获胜",color:"red"}]

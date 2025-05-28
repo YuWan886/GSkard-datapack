@@ -1,0 +1,4 @@
+scoreboard players set #kard_yanhuoqishituan kardCount 8
+give @s music_disc_cat[item_name=[{text: "8K",color:"aqua"},{text: " 焰火骑士团",color:"dark_green"}],lore=[{text: "军团牌",color:"dark_green",italic:false},[{text: "召唤一支",color:"gray",italic:false},{text: "焰火骑士团",color:"gold",italic:false}]],jukebox_playable="minecraft:pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'焰火骑士团'},tooltip_style="kard/legion"]
+scoreboard players remove @s yanyangdajian_juntuan 1
+execute if score @s yanyangdajian_juntuan matches 1.. run function kards:game/paiku/yansheng/yanhuoqishituan

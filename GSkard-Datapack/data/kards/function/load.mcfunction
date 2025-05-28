@@ -11,12 +11,26 @@ schedule clear kards:lobby/bossbar/color/3
 schedule clear kards:lobby/bossbar/color/4
 function kards:lobby/bossbar/color/1
 #注册计分项目
-scoreboard objectives add haogaowuyuan dummy
-#存活时长/tick
+scoreboard objectives add random_gamerule dummy
+scoreboard objectives add linghunshougeqi totalKillCount
+scoreboard objectives add huoqiutouzi dummy
+scoreboard objectives add yanyangdajian_jiben dummy
+scoreboard objectives add yanyangdajian_juntuan dummy
 scoreboard objectives add lifetime dummy
 scoreboard objectives add level_zhongchui dummy
 scoreboard objectives add shengji_zhongchui dummy
-
+scoreboard objectives add killed_entity dummy
+scoreboard objectives add jishengnianyeHealback dummy
+scoreboard objectives add enchantment_chance_huanman dummy
+scoreboard objectives add enchantment_chance_xuruo dummy
+scoreboard objectives add enchantment_level dummy
+scoreboard objectives add enchantment_chance_diaoling dummy
+scoreboard objectives add enchantment_chance_piaofu dummy
+scoreboard objectives add enchantment_chance_zhongdu dummy
+scoreboard objectives add enchantment_chance_shiming dummy
+scoreboard objectives add enchantment_liansuo dummy
+scoreboard objectives add enchantment_liansuo_damage dummy
+scoreboard objectives add haogaowuyuan dummy
 scoreboard objectives add diyu dummy
 scoreboard objectives add roundtimeOper dummy
 scoreboard objectives add cishu dummy

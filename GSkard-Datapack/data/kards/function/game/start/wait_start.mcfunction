@@ -1,7 +1,7 @@
 #初始回合
 function kards:game/ingame/round/startround
 #发初始武器
-item replace entity @a[tag=Ready] container.0 with minecraft:golden_carrot[minecraft:item_name={text: "金胡萝卜",color:"gold"},lore=[{text: "每击杀10只生物升级[最高5级]",color:"gray",italic:false},{text: "老朋友",color:"dark_gray",italic:true},{text: ""},{text: "在主手时：",color:"gray",italic:false},{text: " 3 攻击伤害",color:"dark_green",italic:false},{text: " 3.5 攻击速度",color:"dark_green",italic:false}],minecraft:attribute_modifiers=[{type:"attack_damage",amount:3,id:"1",operation:"add_value",slot:"mainhand"},{type:"attack_speed",amount:-0.5,slot:"mainhand",operation:"add_value",id:"1"}],custom_data={kards:'金胡萝卜'},max_stack_size=1,tooltip_display={hidden_components:["attribute_modifiers","unbreakable"]}]
+item replace entity @a[tag=Ready] container.0 with minecraft:golden_carrot[minecraft:custom_name={italic:false,text: "金胡萝卜",color:"gold"},lore=[{text: "每击杀10只生物升级[最高5级]",color:"gray",italic:false},{text: "老朋友",color:"dark_gray",italic:true},{text: ""},{text: "在主手时：",color:"gray",italic:false},{text: " 3 攻击伤害",color:"dark_green",italic:false},{text: " 3.5 攻击速度",color:"dark_green",italic:false}],minecraft:attribute_modifiers=[{type:"attack_damage",amount:3,id:"1",operation:"add_value",slot:"mainhand"},{type:"attack_speed",amount:-0.5,slot:"mainhand",operation:"add_value",id:"1"}],custom_data={kards:'金胡萝卜'},max_stack_size=1,tooltip_display={hidden_components:["attribute_modifiers","unbreakable"]}]
 #发初始装备
 #红
 item replace entity @a[team=red] armor.head from block 7 -60 -48 container.9

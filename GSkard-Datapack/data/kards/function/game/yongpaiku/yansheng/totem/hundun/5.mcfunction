@@ -1,2 +1,2 @@
 tellraw @s {text: "混沌图腾炸开了！你又获得了一个混沌图腾！",color: "dark_gray"}
-give @s minecraft:totem_of_undying[item_name={text: "混沌图腾",color:"gray"},lore=[{text: "在拥有原版不死图腾效能基础上",color:"gray",italic:false},{text: "还会发生一些有趣的事情",color:"gray",italic:false}],custom_data={kards:'混沌图腾'}]
+give @s minecraft:totem_of_undying[custom_name={italic:false,text: "混沌图腾",color:"gray"},lore=[{text: "在拥有原版不死图腾效能基础上",color:"gray",italic:false},{text: "还会发生一些有趣的事情",color:"gray",italic:false}],custom_data={kards:'混沌图腾'}]

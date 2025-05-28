@@ -6,10 +6,10 @@ scoreboard players set @s pingbi 0
 scoreboard players add @s use_kard 1
 
 function kards:game/yongpaiku/xianjin/jiance/fashujiance
-execute if entity @s[team=red] if score 红队 xianjin_shufashixiao matches -1 run return run scoreboard players set 红队 xianjin_shufashixiao 0
-execute if entity @s[team=blue] if score 蓝队 xianjin_shufashixiao matches -1 run return run scoreboard players set 蓝队 xianjin_shufashixiao 0
-execute if entity @s[team=red] if score 红队 xianjin_youdi matches -1 run return run scoreboard players set 红队 xianjin_youdi 0
-execute if entity @s[team=blue] if score 蓝队 xianjin_youdi matches -1 run return run scoreboard players set 蓝队 xianjin_youdi 0
+execute if entity @s[team=red] if score 红队 xianjin_shufashixiao matches 1 run return run scoreboard players set 红队 xianjin_shufashixiao 0
+execute if entity @s[team=blue] if score 蓝队 xianjin_shufashixiao matches 1 run return run scoreboard players set 蓝队 xianjin_shufashixiao 0
+execute if entity @s[team=red] if score 红队 xianjin_youdi matches 1 run return run scoreboard players set 红队 xianjin_youdi 0
+execute if entity @s[team=blue] if score 蓝队 xianjin_youdi matches 1 run return run scoreboard players set 蓝队 xianjin_youdi 0
 
 execute if entity @s[team=blue] at @r[gamemode=adventure,team=red,sort=random] run summon minecraft:fireball ~ ~1 ~ {ExplosionPower:2,Tags:["fireball"]}
 execute if entity @s[team=red] at @r[gamemode=adventure,team=blue,sort=random] run summon minecraft:fireball ~ ~1 ~ {ExplosionPower:2,Tags:["fireball"]}

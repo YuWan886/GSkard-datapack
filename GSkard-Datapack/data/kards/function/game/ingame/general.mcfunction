@@ -109,9 +109,9 @@ execute as @a if score @s feileishen matches 1.. run scoreboard players remove @
 execute as @a if score @s feileishen matches 1 run function kards:game/yongpaiku/shenji/feileishen/2
 #下界合金套
 execute as @a store result score @s chuandai_xjhj if items entity @s armor.* *[minecraft:custom_data={kards:'下界合金护甲'}]
-effect give @a[scores={chuandai_xjhj=2}] resistance 1 0 true
-effect give @a[scores={chuandai_xjhj=3}] resistance 1 1 true
-effect give @a[scores={chuandai_xjhj=4}] resistance 1 2 true
+effect give @a[scores={chuandai_xjhj=2}] resistance 1 1 true
+effect give @a[scores={chuandai_xjhj=3}] resistance 1 2 true
+effect give @a[scores={chuandai_xjhj=4}] resistance 1 3 true
 #轻虑浅谋
 execute as @a if score @s qinglvqianmou matches 1 if score @s use_kard matches 1.. run damage @s 2 kards:qinglvqianmou
 execute as @a if score @s qinglvqianmou matches 1 if score @s use_kard matches 1.. run scoreboard players remove @s use_kard 1
@@ -128,8 +128,8 @@ execute as @a[gamemode=spectator] if score #system dituxuanze matches 8 position
 
 execute as @a[gamemode=spectator] positioned -249.0 -10 -192.0 if score #system GameStatus matches 2 if entity @s unless entity @s[dz=56,dy=60,dx=77] at @s run tp @r[gamemode=adventure]
 #沉默
-execute if score @e[tag=r_dw,limit=1] chengmo matches 1.. as @a[team=red,gamemode=adventure] at @s run kill @e[type=item,distance=..3,tag=!replaace_item]
-execute if score @e[tag=b_dw,limit=1] chengmo matches 1.. as @a[team=blue,gamemode=adventure] at @s run kill @e[type=item,distance=..3,tag=!replaace_item]
+execute if score @e[tag=r_dw,limit=1] chengmo matches 1.. as @a[team=red,gamemode=adventure] at @s run kill @e[type=item,distance=..3,tag=!replace_item,tag=!copy,tag=!copy_end]
+execute if score @e[tag=b_dw,limit=1] chengmo matches 1.. as @a[team=blue,gamemode=adventure] at @s run kill @e[type=item,distance=..3,tag=!replace_item,tag=!copy,tag=!copy_end]
 #玩家死亡
 function kards:game/ingame/death/1
 #回血
@@ -184,13 +184,12 @@ execute as @e[tag=droll_music,distance=0.1..,type=!player] at @s unless entity @
 execute as @e[tag=droll_music,distance=0.1..] at @s unless entity @e[tag=droll,distance=..13] run tag @s remove droll_music
 #存活时长
 execute as @e if score @s lifetime matches 1.. run scoreboard players remove @s lifetime 1
-execute as @e[tag=droll] if score @s lifetime matches 0 run stopsound @a music minecraft:music_disc.relic
+execute as @e[tag=droll] if score @s lifetime matches 0 run stopsound @a block minecraft:music_disc.relic
 execute as @e[tag=droll] if score @s lifetime matches 0 run kill @s
 #清弹射物
 kill @e[nbt={Item:{id:"minecraft:arrow"}}]
 kill @e[type=minecraft:arrow,nbt={inGround:1b}]
 kill @e[type=minecraft:trident,nbt={inGround:1b},nbt=!{item:{components:{"minecraft:custom_data":{kards:"正义长戟"}}}}]
-
 #投降
 scoreboard players enable @a[scores={touxiang=0}] touxiang
 execute as @a[team=red] if score @s touxiang matches 1.. run function kards:game/ingame/touxiang/r_touxiang
@@ -220,8 +219,6 @@ execute if score #system dituxuanze matches 101.. as @e[team=blue,type=minecraft
 execute if score #system dituxuanze matches 101.. as @e[team=red,type=minecraft:shulker,tag=tuteng] at @e[tag=r_ttdw] positioned ~ -1 ~ unless entity @s[dx=4,dz=34,dy=1] at @e[tag=r_tuteng] run tp @s ~ 1 ~
 execute if score #system dituxuanze matches 101.. as @e[team=blue,type=minecraft:shulker,tag=tuteng] at @e[tag=b_ttdw] positioned ~ -1 ~ unless entity @s[dx=4,dz=34,dy=1] at @e[tag=b_tuteng] run tp @s ~ 1 ~
 
-#史莱姆
-tp @e[type=minecraft:slime,nbt={size:0}] 0 -100 0
 #无人机
 execute as @e[type=bat,tag=wurenji] at @s unless block ~ ~1.5 ~ air run tp @s ~ ~-1 ~
 execute as @e[type=bat,tag=wurenji] at @s unless entity @e[type=shulker,distance=..1] run kill @s

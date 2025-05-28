@@ -1,9 +1,0 @@
-[
-    {
-        "function": "minecraft:set_enchantments",
-        "enchantments": {
-            "minecraft:knockback": 2
-        },
-        "add": true
-    }
-]

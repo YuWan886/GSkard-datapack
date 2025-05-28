@@ -1,0 +1,18 @@
+execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[焰火骑士团]",color:"dark_green",hover_event:{action:"show_text",value:"在敌方召唤一支焰火骑士团"}}]
+
+    #红队用
+    execute if entity @s[team=red] at @e[tag=1r] run summon minecraft:piglin ~ 0 ~ {Team:red,IsBaby:false,IsImmuneToZombification:true,equipment:{mainhand:{id:"minecraft:iron_sword",components:{enchantments:{fire_aspect:2}}},head:{id:"minecraft:iron_helmet"},chest:{id: "minecraft:iron_chestplate"},legs:{id: "minecraft:iron_leggings"},feet:{id: "minecraft:iron_boots"}}}
+    execute if entity @s[team=red] at @e[tag=3r] run summon minecraft:piglin ~ 0 ~ {Team:red,IsBaby:false,IsImmuneToZombification:true,equipment:{mainhand:{id:"minecraft:iron_sword",components:{enchantments:{fire_aspect:2}}},head:{id:"minecraft:iron_helmet"},chest:{id: "minecraft:iron_chestplate"},legs:{id: "minecraft:iron_leggings"},feet:{id: "minecraft:iron_boots"}}}
+    execute if entity @s[team=red] at @e[tag=11r] run summon minecraft:piglin ~ 0 ~ {Team:red,IsBaby:false,IsImmuneToZombification:true,equipment:{mainhand:{id:"minecraft:iron_sword",components:{enchantments:{fire_aspect:2}}},head:{id:"minecraft:iron_helmet"},chest:{id: "minecraft:iron_chestplate"},legs:{id: "minecraft:iron_leggings"},feet:{id: "minecraft:iron_boots"}}}
+    execute if entity @s[team=red] at @e[tag=13r] run summon minecraft:piglin ~ 0 ~ {Team:red,IsBaby:false,IsImmuneToZombification:true,equipment:{mainhand:{id:"minecraft:iron_sword",components:{enchantments:{fire_aspect:2}}},head:{id:"minecraft:iron_helmet"},chest:{id: "minecraft:iron_chestplate"},legs:{id: "minecraft:iron_leggings"},feet:{id: "minecraft:iron_boots"}}}
+    #蓝队用
+    execute if entity @s[team=blue] at @e[tag=1b] run summon minecraft:piglin ~ 0 ~ {Team:blue,IsBaby:false,IsImmuneToZombification:true,equipment:{mainhand:{id:"minecraft:iron_sword",components:{enchantments:{fire_aspect:2}}},head:{id:"minecraft:iron_helmet"},chest:{id: "minecraft:iron_chestplate"},legs:{id: "minecraft:iron_leggings"},feet:{id: "minecraft:iron_boots"}}}
+    execute if entity @s[team=blue] at @e[tag=3b] run summon minecraft:piglin ~ 0 ~ {Team:blue,IsBaby:false,IsImmuneToZombification:true,equipment:{mainhand:{id:"minecraft:iron_sword",components:{enchantments:{fire_aspect:2}}},head:{id:"minecraft:iron_helmet"},chest:{id: "minecraft:iron_chestplate"},legs:{id: "minecraft:iron_leggings"},feet:{id: "minecraft:iron_boots"}}}
+    execute if entity @s[team=blue] at @e[tag=11b] run summon minecraft:piglin ~ 0 ~ {Team:blue,IsBaby:false,IsImmuneToZombification:true,equipment:{mainhand:{id:"minecraft:iron_sword",components:{enchantments:{fire_aspect:2}}},head:{id:"minecraft:iron_helmet"},chest:{id: "minecraft:iron_chestplate"},legs:{id: "minecraft:iron_leggings"},feet:{id: "minecraft:iron_boots"}}}
+    execute if entity @s[team=blue] at @e[tag=13b] run summon minecraft:piglin ~ 0 ~ {Team:blue,IsBaby:false,IsImmuneToZombification:true,equipment:{mainhand:{id:"minecraft:iron_sword",components:{enchantments:{fire_aspect:2}}},head:{id:"minecraft:iron_helmet"},chest:{id: "minecraft:iron_chestplate"},legs:{id: "minecraft:iron_leggings"},feet:{id: "minecraft:iron_boots"}}}
+function kards:game/yongpaiku/xianjin/jiance/mobjiance
+item replace entity @s weapon.offhand with air
+scoreboard players operation @s kardCount -= #kard_baozhajuntuan kardCount
+scoreboard players remove @s[scores={kujie=1..}] kardCount 1
+scoreboard players set @s pingbi 0
+scoreboard players add @s use_kard 1

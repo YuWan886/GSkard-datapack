@@ -21,3 +21,4 @@ execute if score #system DifficultyRound matches 1 run tellraw @a [{text: "当�
 execute if score #system DifficultyRound matches 1 run return run difficulty hard
 tellraw @a [{text: "当前游戏难度：普通",color:"gold",bold:true},{text: "怪物造成的伤害为1倍",color:"gray",bold:true}]
 difficulty normal
+function kards:game/ingame/round/fashu with storage minecraft:changdidaxiao

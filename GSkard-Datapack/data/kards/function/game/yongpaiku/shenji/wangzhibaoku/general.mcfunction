@@ -12,8 +12,15 @@ execute as @a[tag=senlinzhihu] unless items entity @s armor.chest *[custom_data=
 #天神石板甲
 execute as @a if items entity @s armor.chest *[custom_data={kards:'天神石板甲'}] run tag @s add tianshenshibanjia
 scoreboard players add @a[tag=tianshenshibanjia] damage_tianshenshibanjia 1
+execute as @a[tag=tianshenshibanjia] if score @s damage_tianshenshibanjia matches 15 at @s run playsound minecraft:block.note_block.iron_xylophone player @s ~ ~ ~ 100 1
+execute as @a[tag=tianshenshibanjia] if score @s damage_tianshenshibanjia matches 30 at @s run playsound minecraft:block.note_block.iron_xylophone player @s ~ ~ ~ 100 2
+execute as @a[tag=tianshenshibanjia] if score @s damage_tianshenshibanjia matches 45 at @s run playsound minecraft:block.note_block.iron_xylophone player @s ~ ~ ~ 100 2
+execute as @a[tag=tianshenshibanjia] if score @s damage_tianshenshibanjia matches 60 at @s run playsound minecraft:block.note_block.iron_xylophone player @s ~ ~ ~ 100 2
+execute as @a[tag=tianshenshibanjia] if score @s damage_tianshenshibanjia matches 75 at @s run playsound minecraft:block.note_block.iron_xylophone player @s ~ ~ ~ 100 2
+execute as @a[tag=tianshenshibanjia] if score @s damage_tianshenshibanjia matches 90 at @s run playsound minecraft:block.note_block.iron_xylophone player @s ~ ~ ~ 100 0
+
 execute as @a[tag=tianshenshibanjia] if score @s damage_tianshenshibanjia matches 90.. run tag @s add damage_tianshenshibanjia
-execute as @a[tag=tianshenshibanjia] if score @s damage_tianshenshibanjia matches 90.. run scoreboard players set @s damage_tianshenshibanjia 30
+execute as @a[tag=tianshenshibanjia] if score @s damage_tianshenshibanjia matches 90.. run scoreboard players set @s damage_tianshenshibanjia 48
 execute as @a[tag=tianshenshibanjia,tag=damage_tianshenshibanjia] at @s run function kards:game/yongpaiku/shenji/wangzhibaoku/tianshenshibanjia/damage
 
 execute as @a[tag=tianshenshibanjia] run attribute @s minecraft:entity_interaction_range modifier add 0-0-1 -3 add_value
@@ -103,8 +110,10 @@ execute as @a[tag=jishengnianye] if score @s health matches 101.. run effect giv
 execute as @a[tag=jishengnianye] if score @s health matches 30..100 run effect give @s strength 1 3 true
 execute as @a[tag=jishengnianye] if score @s health matches 30..100 run effect give @s resistance 1 0 true
 execute as @a[tag=jishengnianye] if score @s health matches 30..100 run effect give @s slowness 1 1 true
-execute as @a[tag=jishengnianye] if score @s health matches 30.. run effect clear @s regeneration
-execute as @a[tag=jishengnianye] if score @s health matches ..29 run effect give @s minecraft:regeneration infinite 2 true
+execute as @a[tag=jishengnianye] if score @s health matches ..29 run scoreboard players add @s jishengnianyeHealback 1
+execute as @a[tag=jishengnianye] if score @s jishengnianyeHealback matches 7.. run scoreboard players add @s HealBack 1
+execute as @a[tag=jishengnianye] if score @s jishengnianyeHealback matches 7.. run scoreboard players remove @s jishengnianyeHealback 7
+
 execute as @a[tag=jishengnianye] if score @s health matches ..29 run effect give @s minecraft:speed 1 1 true
 execute as @a[tag=jishengnianye] if score @s health matches ..29 run attribute @s minecraft:entity_interaction_range modifier add 0-0-2 -3 add_value
 execute as @a[tag=jishengnianye] unless score @s health matches ..29 run attribute @s minecraft:entity_interaction_range modifier remove 0-0-2
@@ -167,13 +176,9 @@ execute as @a[tag=zhengyizhichui] if score @s used_zhengyizhichui matches 1.. ru
 execute as @a[tag=zhengyizhichui] unless items entity @s container.* *[custom_data={kards:'正义之锤'}] run tag @s remove zhengyizhichui
 #死神之镰
 execute as @a if items entity @s weapon.mainhand *[custom_data={kards:'死神之镰'}] run tag @s add sishenzhilian
-scoreboard players set @a[tag=!sishenzhilian] sishenzhilian_damage 0
-execute as @a[tag=sishenzhilian] run scoreboard players operation @s sishenzhilian_damage_tongji += @s sishenzhilian_damage
-execute as @a[tag=sishenzhilian] if score @s used_sishenzhilian matches 1.. run scoreboard players set @s sishenzhilian_damage 0
-execute as @a[tag=sishenzhilian] if score @s used_sishenzhilian matches 1.. run scoreboard players set @s used_sishenzhilian 0
-execute as @a[tag=sishenzhilian] if score @s sishenzhilian_damage_tongji matches 600.. run effect give @s instant_health 1 1 true
-execute as @a[tag=sishenzhilian] if score @s sishenzhilian_damage_tongji matches 600.. run tellraw @s [{text: "[死神之镰] ",color:"red"},{text: "累计造成30♥伤害 回复4♥",color:"green"}]
-execute as @a[tag=sishenzhilian] if score @s sishenzhilian_damage_tongji matches 600.. run scoreboard players remove @s sishenzhilian_damage_tongji 600
+
+execute as @a[tag=sishenzhilian] if score @s used_sishenzhilian matches 2.. run scoreboard players add @s HealBack 1
+execute as @a[tag=sishenzhilian] if score @s used_sishenzhilian matches 2.. run scoreboard players set @s used_sishenzhilian 0
 execute as @a[tag=sishenzhilian] unless items entity @s weapon.mainhand *[custom_data={kards:'死神之镰'}] run tag @s remove sishenzhilian
 execute as @a store result score @s sishenzhilian_soul_small run clear @s *[minecraft:custom_data={kards:'灵魂_小'}] 0
 execute as @a store result score @s sishenzhilian_soul_medium run clear @s *[minecraft:custom_data={kards:'灵魂_中'}] 0
@@ -211,3 +216,11 @@ execute as @a unless items entity @s weapon.* *[custom_data={kards:'轻灵之语
 execute as @a[tag=qinglingzhiyu] unless items entity @s container.* arrow unless items entity @s weapon.* arrow run give @s arrow 1
 kill @e[type=item,nbt={Item:{id:"minecraft:arrow"}}]
 execute as @a[tag=!qinglingzhiyu] run clear @s arrow
+
+#炎阳大剑
+execute as @a if items entity @s weapon.* iron_sword[custom_data={kards:'炎阳大剑'}] run tag @s add yanyangdajian
+
+effect give @a[tag=yanyangdajian] fire_resistance 1 0 true
+execute as @e[tag=marker_feixue,type=marker] at @s run function kards:game/yongpaiku/shenji/wangzhibaoku/yanyangdajian/3
+
+execute as @a[tag=yanyangdajian] unless items entity @s weapon.* iron_sword[custom_data={kards:'炎阳大剑'}] run tag @s remove yanyangdajian

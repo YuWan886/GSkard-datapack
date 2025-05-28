@@ -18,7 +18,6 @@ execute store result score 人数 b_dp if entity @a[team=blue,gamemode=spectator
 execute store result score 人数 b_alive if entity @a[team=blue,gamemode=adventure]
 #启用trigger
 scoreboard players enable @a reset
-scoreboard players enable @a jiaocheng
 execute if score #system GameStatus matches 1..2 run scoreboard players enable @a[scores={touxiang=0}] touxiang
 scoreboard players enable @a music_kards
 scoreboard players enable @a music_lengxiao
@@ -27,8 +26,6 @@ scoreboard players enable @a stopsound
 execute as @a if score @s music_kards matches 1.. run function kards:music/kards
 execute as @a if score @s music_lengxiao matches 1.. run function kards:music/lengxiao
 execute as @a if score @s stopsound matches 1.. run function kards:music/stop
-#首次进入
-advancement grant @a only kards:first_join_game
 #整着玩的
 scoreboard players add #system Color 1
 execute if score #system Color matches 5 run team modify First prefix [{text: "[",color:"red"},{text: "萌",color:"yellow"},{text: "新",color:"green"},{text: "]",color:"aqua"}]
@@ -46,3 +43,4 @@ execute if score #system Color matches 20 run scoreboard players set #system Col
 execute as @e[type=cat,name=Oiiaioiiiiai] at @s run tp @s ~ ~ ~ ~50 ~
 #测试用
 
+#function kards:game/ingame/shengji/general

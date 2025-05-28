@@ -1,8 +1,8 @@
 {
-    "description": "飘浮",
+    "description": "§7漂浮",
     "supported_items": "#kards:jinzhanwuqi",
     "weight": 1,
-    "max_level": 1,
+    "max_level": 5,
     "min_cost": {
         "base": 0,
         "per_level_above_first": 0
@@ -18,21 +18,12 @@
     "effects": {
         "minecraft:post_attack": [
             {
-                "enchanted": "attacker",
-                "affected": "victim",
                 "effect": {
-                    "type": "minecraft:apply_mob_effect",
-                    "to_apply": "minecraft:levitation",
-                    "min_duration": 2,
-                    "max_duration": 3,
-                    "min_amplifier": 1,
-                    "max_amplifier": 1
+                    "type": "minecraft:run_function",
+                    "function": "kards:enchantment/piaofu"
                 },
-                "requirements": {
-                    "condition": "minecraft:entity_properties",
-                    "entity": "this",
-                    "predicate": {}
-                }
+                "enchanted": "attacker",
+                "affected": "victim"
             }
         ]
     }

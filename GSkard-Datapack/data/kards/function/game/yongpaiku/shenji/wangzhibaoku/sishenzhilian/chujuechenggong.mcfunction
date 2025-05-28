@@ -1,1 +1,0 @@
-$damage @s[tag=!jinzijue] $(damage) kards:chujue by @p[tag=sishenzhilian]
