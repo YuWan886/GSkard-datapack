@@ -15,9 +15,14 @@ scoreboard players add @a level_tiefu 0
 scoreboard players add @a level_zuanshifu 0
 scoreboard players add @a level_zhongchui 0
 scoreboard players set @a[tag=!linghunshougeqi] linghunshougeqi 0
+scoreboard players set @a[tag=!linghunshouge] linghunshouge 0
 
 execute as @a[scores={linghunshougeqi=1..}] run scoreboard players add @s killed_entity 1
 execute as @a[scores={linghunshougeqi=1..}] run scoreboard players remove @s linghunshougeqi 1
+
+execute as @a[scores={linghunshouge=1..}] run scoreboard players add @s killed_entity 3
+execute as @a[scores={linghunshouge=1..}] run scoreboard players remove @s linghunshouge 1
+
 
 execute as @a[scores={killed_entity=1..}] if items entity @s weapon.mainhand #kards:jinzhanwuqi[custom_data={kards:'金胡萝卜'}] run scoreboard players add @s shengji_jhlb 1
 execute as @a[scores={killed_entity=1..}] if items entity @s weapon.mainhand #kards:jinzhanwuqi[custom_data={kards:'金剑'}] run scoreboard players add @s shengji_jinjian 1

@@ -7,4 +7,4 @@ scoreboard players add @s[gamemode=adventure] cishu 1
 scoreboard players set @s pingbi 0
 
 function kards:game/yongpaiku/xianjin/jiance/fashujiance
-effect give @s instant_health 1 3 true
+scoreboard players add @s HealBack 64

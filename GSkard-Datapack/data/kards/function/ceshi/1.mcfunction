@@ -1,3 +1,5 @@
-tag @s add Damage
-execute at @s as @a[tag=!Damage,distance=..5] run damage @s 10 player_attack by @n[tag=Damage]
-tag @s remove Damage
+give @s minecraft:shield[blocks_attacks={"block_delay_seconds":0,"disable_cooldown_scale":2,"damage_reductions": [{"base": 0,"factor": 0.8,"horizontal_blocking_angle": 90}]},unbreakable={},banner_patterns=[{pattern:"base",color:"white"},{pattern:"flower",color:"black"},{pattern:"border",color:"black"}],custom_data={kards:'盾牌'},max_stack_size=1,tooltip_display={hidden_components:["unbreakable"]}]
+
+give @s minecraft:shield[blocks_attacks={"block_delay_seconds":0,"disable_cooldown_scale":2,"damage_reductions": [{"base": 0,"factor": 0.8,"horizontal_blocking_angle": 90}]},unbreakable={},banner_patterns=[{pattern:"base",color:"white"},{pattern:"flower",color:"black"},{pattern:"border",color:"black"}],custom_data={kards:'盾牌'},max_stack_size=1,tooltip_display={hidden_components:["unbreakable"]}]
+
+give @s minecraft:shield[blocks_attacks={"block_delay_seconds":0,"disable_cooldown_scale":2,"damage_reductions": [{"base": 0,"factor": 0.8,"horizontal_blocking_angle": 90}]},unbreakable={},banner_patterns=[{pattern:"base",color:"white"},{pattern:"flower",color:"black"},{pattern:"border",color:"black"}],custom_data={kards:'盾牌'},max_stack_size=1,tooltip_display={hidden_components:["unbreakable"]}]

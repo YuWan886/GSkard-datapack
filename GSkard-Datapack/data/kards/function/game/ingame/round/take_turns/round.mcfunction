@@ -123,9 +123,11 @@ execute if score 回合数 GameRound = #system RoundCount run return run functio
 scoreboard players add 回合数 GameRound 1
 function kards:game/ingame/round/turns/panding
 #回合轮换之后生效
+#回合规则
+function kards:game/random_start/round_event
 #检测回合 事件通知
 execute if score 回合数 GameRound = #system RoundCount run tellraw @a [{text: "Final GameRound 最后回合",color:"gold",bold:true}]
-execute if score 回合数 GameRound = #system DifficultyRound run tellraw @a [{text: "当前游戏难度：困难",color:"gold",bold:true},{text: "怪物造成的伤害提升至1.5倍 玩家受到的部分伤害提升",color:"gold",bold:true}]
+execute if score 回合数 GameRound = #system DifficultyRound run tellraw @a [{text: "当前游戏难度：困难",color:"gold",bold:true},{text: "\n怪物造成的伤害提升至1.5倍 玩家受到的部分伤害提升",color:"gold",bold:true}]
 execute if score 回合数 GameRound = #system DifficultyRound run difficulty hard
 #基础生效
 execute as @a[scores={CanuseKard=1}] run scoreboard players operation @s kardCount = @s kardCountmax

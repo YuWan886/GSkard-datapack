@@ -38,6 +38,8 @@ scoreboard objectives setdisplay list
 weather clear
 #清空效果
 effect clear @a
+#重置规则
+gamerule naturalRegeneration false
 #清空背包
 clear @a
 #隐藏倒计时
@@ -64,6 +66,8 @@ tag @a remove Ready
 tag @a add Un_Ready
 tag @a remove jishengnianye
 tag @a remove TouXiang
+tag @a remove linghunshouge
+tag @a remove jinzijue
 #重置属性
 execute as @a run attribute @s minecraft:max_health modifier remove 0-0-1
 execute as @a run attribute @s minecraft:max_health modifier remove 0-0-2
@@ -79,8 +83,11 @@ execute as @a run attribute @s minecraft:max_health base set 20
 execute as @a run attribute @s minecraft:jump_strength modifier remove 0-0-1
 execute as @a run attribute @s minecraft:jump_strength modifier remove 0-0-2
 execute as @a run attribute @s minecraft:jump_strength modifier remove 0-0-3
-execute as @a run attribute @s minecraft:jump_strength base set 0.42
-execute as @a run attribute @s minecraft:scale base set 1
+execute as @a run attribute @s minecraft:jump_strength base reset
+execute as @a run attribute @s minecraft:scale base reset
+execute as @a run attribute @s minecraft:movement_speed base reset
+execute as @a run attribute @s minecraft:entity_interaction_range base reset
+execute as @a run attribute @s minecraft:gravity base reset
 #重置分数
 scoreboard players set * zhengyizhichui_1 0
 scoreboard players set * sishenzhilian 0
@@ -104,6 +111,7 @@ scoreboard players reset * b_death
 scoreboard players reset * r_number
 scoreboard players reset * b_number
 #计划
+schedule clear kards:game/random_start/event/move_or_die
 schedule clear kards:game/ingame/round/pvpround/countdown
 #停止音乐
 execute as @a at @s run stopsound @s

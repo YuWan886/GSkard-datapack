@@ -7,4 +7,4 @@ execute as @a[tag=wuxiuzhihuo] if score @s wuxiuzhihuo matches 5 run tag @s add 
 execute as @a[tag=wuxiuzhihuo] if score @s wuxiuzhihuo matches 5 run scoreboard players add @s fire 100
 scoreboard players set @a[tag=wuxiuzhihuo] wuxiuzhihuo 5
 #阳炎大剑
-execute as @a[tag=wuxiuzhihuo] if score @s wuxiuzhihuo matches 5 run function kards:game/yongpaiku/shenji/wangzhibaoku/yanyangdajian/6
+execute as @a[tag=yanyangdajian] run function kards:game/yongpaiku/shenji/wangzhibaoku/yanyangdajian/6
