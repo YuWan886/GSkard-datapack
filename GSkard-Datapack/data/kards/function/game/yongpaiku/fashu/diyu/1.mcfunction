@@ -10,7 +10,8 @@ execute if entity @s[team=blue] if score 蓝队 xianjin_shufashixiao matches 1 r
 execute if entity @s[team=red] if score 红队 xianjin_youdi matches 1 run return run scoreboard players set 红队 xianjin_youdi 0
 execute if entity @s[team=blue] if score 蓝队 xianjin_youdi matches 1 run return run scoreboard players set 蓝队 xianjin_youdi 0
 
-execute if entity @s[team=red] run effect give @e[type=!player,team=red,tag=!tuteng] fire_resistance 60 0 true
-execute if entity @s[team=blue] run effect give @e[type=!player,team=blue,tag=!tuteng] fire_resistance 60 0 true
+execute if entity @s[team=red] run scoreboard players set 蓝队 diyu 1
+execute if entity @s[team=blue] run scoreboard players set 红队 diyu 1
+
 function kards:game/yongpaiku/fashu/diyu/2
 function kards:game/yongpaiku/fashu/diyu/replace with storage changdidaxiao

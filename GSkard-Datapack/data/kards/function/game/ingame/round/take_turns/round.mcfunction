@@ -184,6 +184,12 @@ scoreboard players remove @a[scores={shengchanling=1..,CanuseKard=1}] shengchanl
 scoreboard players remove @a[scores={kujie=1..}] kujie 1
 execute if entity @a[team=red,scores={kujie=1..}] run tellraw @a {text: "红队枯竭生效中:使用牌后额外扣除1K直至回合结束",color:"gray",bold:true}
 execute if entity @a[team=blue,scores={kujie=1..}] run tellraw @a {text: "蓝队枯竭生效中:使用牌后额外扣除1K直至回合结束",color:"gray",bold:true}
+#地狱、漫水
+execute if score 红队 diyu matches 1 run scoreboard players set 红队 diyu 0
+execute if score 蓝队 diyu matches 1 run scoreboard players set 蓝队 diyu 0
+execute if score 红队 manshui matches 1 run scoreboard players set 红队 manshui 0
+execute if score 蓝队 manshui matches 1 run scoreboard players set 蓝队 manshui 0
+
 #诅咒护甲
 execute as @a[tag=zuzhouhujia] if items entity @s armor.chest golden_chestplate[custom_data={kards:'诅咒护甲'}] run item replace entity @s armor.chest with air
 tag @a[tag=zuzhouhujia] remove zuzhuanghujia
