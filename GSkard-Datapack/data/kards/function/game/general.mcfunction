@@ -4,3 +4,4 @@ execute if score #system GameStatus matches 1..2 run function kards:game/end/gen
 function kards:game/end/wait_end
 function kards:game/random_start/tick_event
 function kards:game/ingame/general
+function kards:game/shield/general

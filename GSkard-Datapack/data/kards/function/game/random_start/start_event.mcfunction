@@ -11,7 +11,7 @@ execute if score #system random_gamerule matches 14 run scoreboard players set @
 execute if score #system random_gamerule matches 15 run scoreboard players set @a jinziqifeng 4
 execute if score #system random_gamerule matches 16 run scoreboard players set @a kardCountmax 9999
 execute if score #system random_gamerule matches 17 as @a[gamemode=adventure] run attribute @s max_health base set 60
-execute if score #system random_gamerule matches 19 as @a[gamemode=adventure] run attribute @s max_health base set 60
+execute if score #system random_gamerule matches 19 run function kards:game/random_start/event/gazhikongju
 execute if score #system random_gamerule matches 21 run function kards:game/random_start/event/quanfuwuzhuang
 execute if score #system random_gamerule matches 22 run scoreboard players set @a[gamemode=adventure] muyuankuanghuan 1
 execute if score #system random_gamerule matches 24 run function kards:game/random_start/event/zainanzhixing

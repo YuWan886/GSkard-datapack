@@ -1,1 +1,1 @@
-say 1
+summon zombie ~ ~ ~ {equipment:{mainhand:{id:"diamond_sword"}}}

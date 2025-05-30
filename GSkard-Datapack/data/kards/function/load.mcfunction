@@ -11,6 +11,8 @@ schedule clear kards:lobby/bossbar/color/3
 schedule clear kards:lobby/bossbar/color/4
 function kards:lobby/bossbar/color/1
 #注册计分项目
+scoreboard objectives add shield_hold dummy
+scoreboard objectives add random_gamerule_start dummy
 scoreboard objectives add linghunshouge totalKillCount
 scoreboard objectives add sishenjianglin dummy
 scoreboard objectives add random_gamerule dummy

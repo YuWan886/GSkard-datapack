@@ -1,0 +1,23 @@
+{
+    "criteria": {
+        "requirement":{
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "blocked": true,
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "is_projectile"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "kards:game/shield/trigger_2"
+    }
+}

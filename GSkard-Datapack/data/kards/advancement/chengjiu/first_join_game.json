@@ -5,10 +5,10 @@
             "count": 1
         },
         "title": {
-            "translate": "chengjiu.first_join_game.1"
+            "text": "GSkard"
         },
         "description": {
-            "translate": "chengjiu.first_join_game.2"
+            "text": "你管这叫卡牌对战?"
         },
         "background": "minecraft:block/chiseled_tuff_bricks",
         "frame": "task",

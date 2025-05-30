@@ -13,3 +13,5 @@ execute if score @s wangzhibaoku matches 10 run function kards:game/yongpaiku/sh
 execute if score @s wangzhibaoku matches 11 run function kards:game/yongpaiku/shenji/wangzhibaoku/yanyangdajian/give
 scoreboard players set @s wangzhibaoku 0
 
+function kards:game/yongpaiku/shenji/wangzhibaoku/general
+function kards:game/ingame/round/skill

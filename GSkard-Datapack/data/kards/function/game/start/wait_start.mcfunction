@@ -19,4 +19,5 @@ function kards:game/ingame/round/skill
 execute if score #system roundtime matches 0 as @a[gamemode=adventure] run function kards:game/yongpaiku/shenji/wangzhibaoku/random3
 #血量
 effect give @a[tag=Ready] instant_health 1 200 true
-function kards:game/random_start/title/all
+execute if score #system random_gamerule matches 0.. run scoreboard players set @a cishu 0
+execute if score #system random_gamerule matches 0.. run schedule function kards:game/random_start/title/all 2s

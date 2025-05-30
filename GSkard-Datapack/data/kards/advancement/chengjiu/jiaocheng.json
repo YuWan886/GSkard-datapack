@@ -5,10 +5,10 @@
             "count": 1
         },
         "title": {
-            "translate": "chengjiu.jiaocheng.3"
+            "text": "完成新手教程"
         },
         "description": {
-            "translate": "chengjiu.jiaocheng.4"
+            "text": "搞牌,启动!"
         },
         "frame": "task",
         "show_toast": true,

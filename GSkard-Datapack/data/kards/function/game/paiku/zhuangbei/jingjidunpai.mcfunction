@@ -1,3 +1,3 @@
 
-give @s music_disc_13[item_name=[{text: "8K",color:"aqua"},{text: " 荆棘盾牌",color:"gold"}],lore=[{text: "装备牌",color:"gold",italic:false},{text: "获得一个盾牌",color:"gray",italic:false},{text: "使用时能够格挡80%的伤害",color:"gray",italic:false}],jukebox_playable="minecraft:pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'盾牌'},tooltip_style="kard/equipment"]
-scoreboard players set #kard_dunpai kardCount 8
+give @s music_disc_13[item_name=[{text: "12K",color:"aqua"},{text: " 荆棘盾牌",color:"gold"}],lore=[{text: "装备牌",color:"gold",italic:false},{text: "获得一个荆棘盾牌",color:"gray",italic:false},{text: "使用时能够格挡伤害并对前方范围1.75格范围敌人造成2♥伤害 每次格挡后禁用3s",color:"gray",italic:false}],jukebox_playable="minecraft:pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'荆棘盾牌'},tooltip_style="kard/equipment"]
+scoreboard players set #kard_jingjidunpai kardCount 12
