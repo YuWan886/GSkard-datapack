@@ -1,0 +1,1 @@
+schedule function kards:game/yongpaiku/juntuan/sanrenchengzhong/sanrenchengzhong2 5s
