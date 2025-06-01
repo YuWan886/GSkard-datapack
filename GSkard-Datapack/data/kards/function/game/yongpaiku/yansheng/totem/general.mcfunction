@@ -1,5 +1,5 @@
 #自爆
-execute as @a[tag=zibaotuteng] at @s as @e[distance=..5,tag=!zibaotuteng] run damage @s 70 kards:zibao by @p[tag=zibaotuteng]
+execute as @a[tag=zibaotuteng] at @s as @e[distance=..5,tag=!zibaotuteng] run damage @s 70 kards:zibao by @n[tag=zibaotuteng]
 effect clear @a[tag=zibaotuteng]
 execute as @a[tag=zibaotuteng] run damage @s 10 kards:zibao
 tag @a[tag=zibaotuteng] remove zibaotuteng

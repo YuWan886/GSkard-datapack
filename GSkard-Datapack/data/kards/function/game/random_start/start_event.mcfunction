@@ -17,10 +17,10 @@ execute if score #system random_gamerule matches 22 run scoreboard players set @
 execute if score #system random_gamerule matches 24 run function kards:game/random_start/event/zainanzhixing
 execute if score #system random_gamerule matches 25 run schedule function kards:game/random_start/event/move_or_die 3s append
 execute if score #system random_gamerule matches 26 as @a[gamemode=adventure] run attribute @s gravity base set 1
-execute if score #system random_gamerule matches 28 run gamerule naturalRegeneration true
+execute if score #system random_gamerule matches 28 run function kards:game/random_start/event/shengmingyuanquan
 execute if score #system random_gamerule matches 29 as @a[gamemode=adventure] run attribute @s entity_interaction_range base set 4
 execute if score #system random_gamerule matches 30 as @a[gamemode=adventure] run attribute @s entity_interaction_range base set 5
 execute if score #system random_gamerule matches 31 as @a[gamemode=adventure] run attribute @s entity_interaction_range base set 6
 execute if score #system random_gamerule matches 32 as @a[gamemode=adventure] run attribute @s entity_interaction_range base set 8
-execute if score #system random_gamerule matches 33 as @a[gamemode=adventure] run attribute @s scale base set 2.5
-execute if score #system random_gamerule matches 34 as @a[gamemode=adventure] run attribute @s scale base set 0.1
+execute if score #system random_gamerule matches 33 run function kards:game/random_start/event/jurenzhanzheng
+execute if score #system random_gamerule matches 34 run function kards:game/random_start/event/xiaorenguo

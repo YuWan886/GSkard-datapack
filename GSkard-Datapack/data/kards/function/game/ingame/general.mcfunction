@@ -34,10 +34,9 @@ function kards:game/yongpaiku/tuteng/buff
 #神器
 function kards:game/yongpaiku/shenji/wangzhibaoku/general
 #PVP
-execute positioned -219 -65 -173 run effect give @a[dx=19,dz=18,dy=55,gamemode=adventure,tag=xiangzhaoyushi] minecraft:levitation infinite 20 true
-execute positioned -219 -65 -173 run effect give @a[dx=19,dz=18,dy=15,gamemode=adventure] minecraft:levitation infinite 20 true
-execute positioned -219 -60 -173 as @a[dx=19,dz=18,dy=49,gamemode=adventure] run damage @s 2 minecraft:out_of_world
-execute positioned -219 -9 -173 run effect clear @a[dx=19,dz=18,gamemode=adventure] levitation
+execute positioned -219 -65 -173 as @a[dx=19,dz=18,dy=2,gamemode=adventure] at @s if data entity @s {OnGround:1b} run function kards:game/ingame/round/pvpround/outworld
+execute positioned -219 -65 -173 as @a[dx=19,dz=18,dy=25,gamemode=adventure] run attribute @s minecraft:safe_fall_distance modifier add 0-0-1 100 add_value
+execute as @a positioned -219 -65 -173 unless entity @s[dx=19,dz=18,dy=25,gamemode=adventure] run attribute @s minecraft:safe_fall_distance modifier remove 0-0-1
 #装备
 function kards:game/yongpaiku/zhuangbei/general
 #眩晕

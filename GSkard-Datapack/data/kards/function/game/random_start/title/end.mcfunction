@@ -4,7 +4,7 @@ tellraw @a {"text":""}
 tellraw @a [{"text":"======","color":"gray"},{"text":"随机游戏规则","color":"green","bold":true},{"text":"======","color":"gray"}]
 tellraw @a {"text":""}
 
-execute store result score #system random_gamerule run random value 1..35
+execute store result score #system random_gamerule run random value 1..36
 execute if score #system random_gamerule matches 1 run title @a title {text:"宝库现世",color:"gold",bold:true}
 execute if score #system random_gamerule matches 1 run title @a subtitle [{"text":"所有玩家抽取","color":"gray"},{"text":"[王之宝库]","color":"green","bold":true}]
 execute if score #system random_gamerule matches 1 run tellraw @a [{"text":"宝库现世\n","color":"gold","bold":true},{"text":"所有玩家抽取","color":"gray"},{"text":"[王之宝库]","color":"green","bold":true}]
@@ -145,6 +145,9 @@ execute if score #system random_gamerule matches 35 run title @a title {text:"�
 execute if score #system random_gamerule matches 35 run title @a subtitle {text:"10回合后 每回合杀死一个生命最低的玩家",color:"green",bold:true}
 execute if score #system random_gamerule matches 35 run tellraw @a [{"text":"死神降临\n","color":"gold","bold":true},{"text":"10回合后 每回合杀死","color":"gray"},{"text":"生命值最低","color":"red","bold":true}]
 
+execute if score #system random_gamerule matches 36 run title @a title {text:"头脑风暴",color:"gold",bold:true}
+execute if score #system random_gamerule matches 36 run title @a subtitle {text:"每个回合开始时 清空所有掉落物与玩家背包中的牌 回合抽牌数量固定为5",color:"green",bold:true}
+execute if score #system random_gamerule matches 36 run tellraw @a [{"text":"头脑风暴\n","color":"gold","bold":true},{"text":"每个回合开始时 清空所有掉落物与玩家背包中的牌 回合抽牌数量固定为5","color":"gray"}]
 tellraw @a {"text":""}
 tellraw @a [{"text":"======———-———======","color":"gray"}]
 tellraw @a {"text":""}

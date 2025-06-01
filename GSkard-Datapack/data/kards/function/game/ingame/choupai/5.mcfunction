@@ -1,3 +1,5 @@
+scoreboard players remove @s fashucishu 1
+
 execute if score @s jinziqifeng matches 1.. store result score @s random5 run random value 1..100
 execute if score @s jinziqifeng matches 1 if score @s random5 matches 1..10 run return run function kards:game/paiku/yansheng/jinzijue
 execute if score @s jinziqifeng matches 2 if score @s random5 matches 1..20 run return run function kards:game/paiku/yansheng/jinzijue
@@ -50,4 +52,3 @@ execute if score @s random5 matches 40 run function kards:game/paiku/fashu/wuyon
 execute if score @s random5 matches 41 run function kards:game/paiku/fashu/diyu
 execute if score @s random5 matches 42 run function kards:game/paiku/fashu/chunriying
 scoreboard players set @s random5 0
-scoreboard players remove @s fashucishu 1
