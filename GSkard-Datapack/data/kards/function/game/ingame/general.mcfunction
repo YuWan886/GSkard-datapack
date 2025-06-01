@@ -201,8 +201,8 @@ execute if score 红队 touxiang = 人数 r_p run gamemode spectator @a[team=red
 execute if score 蓝队 touxiang = 人数 b_p run gamemode spectator @a[team=blue]
 
 #地狱
-execute if score 红队 diyu matches 1 run effect give @e[type=!player,team=red,tag=!tuteng] fire_resistance 1 0 true
-execute if score 蓝队 diyu matches 1 run effect give @e[type=!player,team=blue,tag=!tuteng] fire_resistance 1 0 true
+execute if score 红队 diyu matches 1 run effect give @e[type=!player,team=blue,tag=!tuteng] fire_resistance 1 0 true
+execute if score 蓝队 diyu matches 1 run effect give @e[type=!player,team=red,tag=!tuteng] fire_resistance 1 0 true
 #reset
 scoreboard players enable @a[scores={reset=0}] reset
 execute as @a if score @s reset matches 1 run function kards:game/end/reset
