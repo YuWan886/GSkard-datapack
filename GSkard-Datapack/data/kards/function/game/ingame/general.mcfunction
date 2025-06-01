@@ -283,4 +283,4 @@ execute as @e[team=blue] at @s if entity @e[type=zombie,tag=wuwangjiangshi,team=
 execute as @e[team=blue] at @s if entity @e[type=zombie,tag=wuwangjiangshi,team=blue,distance=..5] if score @s in_wuwangjiangshi matches 0 run scoreboard players set @s in_wuwangjiangshi 100
 #三人成众
 scoreboard players add @e[tag=large_slime] sanrenchengzhong 1
-execute as @e[tag=large_slime] if score @s sanrenchengzhong matches 200 run function kards:game/yongpaiku/juntuan/sanrenchengzhong/2
+execute as @e[tag=large_slime] if score @s sanrenchengzhong matches 300 run function kards:game/yongpaiku/juntuan/sanrenchengzhong/2
