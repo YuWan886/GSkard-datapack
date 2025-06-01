@@ -16,7 +16,7 @@ execute if score @s random3 matches 226..250 run function kards:game/paiku/zhuan
 execute if score @s random3 matches 350..370 run function kards:game/paiku/zhuangbei/zhongchui
 execute if score @s random3 matches 371..375 run function kards:game/paiku/zhuangbei/quanxidunpai
 execute if score @s random3 matches 376..385 run function kards:game/paiku/zhuangbei/jianduandunpai
-execute if score @s random3 matches 386..390 run function kards:game/yongpaiku/zhuangbei/jingjidunpai
+execute if score @s random3 matches 386..390 run function kards:game/paiku/zhuangbei/jingjidunpai
 
 execute if score @s random3 matches 251..350 run function kards:game/ingame/choupai/3.1
 scoreboard players set @s random3 0
