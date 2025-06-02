@@ -11,6 +11,10 @@ schedule clear kards:lobby/bossbar/color/3
 schedule clear kards:lobby/bossbar/color/4
 function kards:lobby/bossbar/color/1
 #注册计分项目
+scoreboard objectives add kutongzhuanhua_Time dummy
+scoreboard objectives add damage_kutongzhuanhua dummy
+scoreboard objectives add kutongzhuanhua dummy
+scoreboard objectives add kunanyaolan_sneak dummy
 scoreboard objectives add VectorX dummy
 scoreboard objectives add VectorY dummy
 scoreboard objectives add VectorZ dummy

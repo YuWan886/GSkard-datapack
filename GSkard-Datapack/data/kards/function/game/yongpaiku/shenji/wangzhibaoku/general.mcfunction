@@ -54,25 +54,23 @@ execute as @a[team=red,tag=kunanyaolan] if score @s behurt_kunanyaolan1 matches 
 execute as @a[team=blue,tag=kunanyaolan] if score @s behurt_kunanyaolan1 matches 200.. as @r[team=red] run damage @s 16 kards:kunanyaolan by @p[team=blue,tag=kunanyaolan,scores={behurt_kunanyaolan1=200..}]
 execute as @a[tag=kunanyaolan] if score @s behurt_kunanyaolan1 matches 200.. run scoreboard players remove @s behurt_kunanyaolan1 200
 
-scoreboard players add @a[tag=kunanyaolan] healback_kunanyaolan 1
-scoreboard players set #system healback_kunanyaolan 4
-scoreboard players set #system healback_kunanyaolan2 100
-execute as @a[tag=kunanyaolan] if score @s healback_kunanyaolan matches 600 run scoreboard players operation @s healback_kunanyaolan2 = @s behurt_kunanyaolan2
-execute as @a[tag=kunanyaolan] if score @s healback_kunanyaolan matches 600 run scoreboard players set @s behurt_kunanyaolan2 0
-execute as @a[tag=kunanyaolan] if score @s healback_kunanyaolan matches 600 run scoreboard players operation @s healback_kunanyaolan2 *= #system healback_kunanyaolan
-execute as @a[tag=kunanyaolan] if score @s healback_kunanyaolan matches 600 run scoreboard players operation @s healback_kunanyaolan2 /= #system healback_kunanyaolan2
-execute as @a[tag=kunanyaolan] if score @s healback_kunanyaolan matches 600 run tellraw @s [{text: "[苦难摇篮] ",color:"red"},{text: "苦痛转化效果触发!",color:"green"}]
-execute as @a[tag=kunanyaolan] if score @s healback_kunanyaolan matches 600 at @s run playsound minecraft:entity.arrow.hit_player player @s ~ ~ ~ 100 0
-execute as @a[tag=kunanyaolan] if score @s healback_kunanyaolan matches 600.. run scoreboard players set @s healback_kunanyaolan 0
+execute as @a[tag=kunanyaolan,tag=!kutongzhuanhuan] unless score @s kutongzhuanhua_Time matches 1.. if predicate kards:sneak run scoreboard players add @s kunanyaolan_sneak 1
+execute as @a[tag=kunanyaolan,tag=!kutongzhuanhuan] unless predicate kards:sneak run scoreboard players set @s kunanyaolan_sneak 0
+execute as @a[tag=!kunanyaolan,tag=kutongzhuanhuan] run tag @s remove kutongzhuanhuan
+execute as @a[tag=kunanyaolan] if score @s kunanyaolan_sneak matches 60 run function kards:game/yongpaiku/shenji/wangzhibaoku/kunanyaolan/2
 
+scoreboard players remove @a[scores={kutongzhuanhua_Time=1..}] kutongzhuanhua_Time 1
+execute as @a if score @s kutongzhuanhua_Time matches 0 run tellraw @s [{text:"苦痛转化冷却完毕!"}]
+execute as @a if score @s kutongzhuanhua_Time matches 0 at @s run playsound minecraft:block.note_block.imitate.creeper player @s ~ ~ ~ 100 0
 
-effect give @a[tag=kunanyaolan,scores={healback_kunanyaolan2=1..}] minecraft:regeneration 1 5 true
-effect clear @a[tag=kunanyaolan,scores={healback_kunanyaolan2=0}] regeneration
-scoreboard players remove @a[tag=kunanyaolan,scores={healback_kunanyaolan2=0..}] healback_kunanyaolan2 1
+scoreboard players reset @a[scores={kutongzhuanhua_Time=0}] kutongzhuanhua_Time
+scoreboard players remove @a[tag=kutongzhuanhuan] kutongzhuanhua 1
+
+execute as @a[tag=kutongzhuanhuan] if score @s kutongzhuanhua matches 0 run function kards:game/yongpaiku/shenji/wangzhibaoku/kunanyaolan/3
 
 execute as @a[tag=kunanyaolan] unless items entity @s armor.chest *[custom_data={kards:'苦难摇篮'}] run tag @s remove kunanyaolan
 scoreboard players set @a[tag=!kunanyaolan] behurt_kunanyaolan1 0
-scoreboard players set @a[tag=!kunanyaolan] behurt_kunanyaolan2 0
+scoreboard players set @a[tag=!kutongzhuanhuan] behurt_kunanyaolan2 0
 #祥兆玉石
 execute as @a if items entity @s container.* *[custom_data={kards:'祥兆玉石'}] run tag @s add xiangzhaoyushi
 effect clear @a[tag=xiangzhaoyushi] slowness
