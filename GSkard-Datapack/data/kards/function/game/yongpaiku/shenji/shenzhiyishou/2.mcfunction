@@ -123,5 +123,5 @@ tag @n[tag=copy,type=item] remove copy
 execute if entity @s[team=red] if entity @a[team=red,gamemode=adventure,tag=!shenzhiyishou] as @r[team=red,gamemode=adventure,tag=!shenzhiyishou] run return run function kards:game/yongpaiku/shenji/shenzhiyishou/2
 execute if entity @s[team=blue] if entity @a[team=blue,gamemode=adventure,tag=!shenzhiyishou] as @r[team=blue,gamemode=adventure,tag=!shenzhiyishou] run return run function kards:game/yongpaiku/shenji/shenzhiyishou/2
 
-tellraw @a [{selector:"@a[tag=shenzhiyishou]"},{text: "的牌被",color:"aqua"},{selector:"@a[tag=User]"},{text: "偷走了！",color:"aqua"}]
+tellraw @a [{selector:"@a[tag=shenzhiyishou_end]"},{text: "的牌被",color:"aqua"},{selector:"@a[tag=User]"},{text: "偷走了！",color:"aqua"}]
 tag @a[tag=shenzhiyishou] remove shenzhiyishou

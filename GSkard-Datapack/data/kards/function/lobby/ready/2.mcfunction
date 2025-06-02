@@ -3,7 +3,6 @@ kill @e[type=minecraft:ender_pearl]
 
 tag @s remove Ready
 tag @s add Un_Ready
-tag @s remove Running
 clear @s
 execute store result score #system Ready_Num if entity @a[tag=Ready]
 tellraw @a [{selector:"@s"},{text: " 取消准备 ",color:"red"},{text: "[",color:"gray"},{score:{name:"#system",objective:"Ready_Num"},color:"green"},{text: "/",color:"gray"},{score:{name:"人数",objective:"p"},color:"gold"},{text: "]",color:"gray"}]

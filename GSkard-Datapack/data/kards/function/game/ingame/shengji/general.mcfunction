@@ -15,14 +15,9 @@ scoreboard players add @a level_tiefu 0
 scoreboard players add @a level_zuanshifu 0
 scoreboard players add @a level_zhongchui 0
 scoreboard players set @a[tag=!linghunshougeqi] linghunshougeqi 0
-scoreboard players set @a[tag=!linghunshouge] linghunshouge 0
 
 execute as @a[scores={linghunshougeqi=1..}] run scoreboard players add @s killed_entity 1
 execute as @a[scores={linghunshougeqi=1..}] run scoreboard players remove @s linghunshougeqi 1
-
-execute as @a[scores={linghunshouge=1..}] run scoreboard players add @s killed_entity 3
-execute as @a[scores={linghunshouge=1..}] run scoreboard players remove @s linghunshouge 1
-
 
 execute as @a[scores={killed_entity=1..}] if items entity @s weapon.mainhand #kards:jinzhanwuqi[custom_data={kards:'金胡萝卜'}] run scoreboard players add @s shengji_jhlb 1
 execute as @a[scores={killed_entity=1..}] if items entity @s weapon.mainhand #kards:jinzhanwuqi[custom_data={kards:'金剑'}] run scoreboard players add @s shengji_jinjian 1
@@ -83,12 +78,12 @@ execute as @a[scores={shengji_tiefu=15..,level_tiefu=0}] if items entity @s weap
 execute as @a[scores={shengji_tiefu=30..,level_tiefu=1}] if items entity @s weapon.mainhand #kards:jinzhanwuqi[custom_data={kards:'铁斧'}] run function kards:game/ingame/shengji/jinzhan/2
 execute as @a[scores={shengji_tiefu=45..,level_tiefu=2}] if items entity @s weapon.mainhand #kards:jinzhanwuqi[custom_data={kards:'铁斧'}] run function kards:game/ingame/shengji/jinzhan/3
 
-execute as @a[scores={shengji_zhongchui=12..,level_zhongchui=0}] if items entity @s weapon.mainhand #kards:jinzhanwuqi[custom_data={kards:'重锤'}] run function kards:game/ingame/shengji/jinzhan/1
-execute as @a[scores={shengji_zhongchui=24..,level_zhongchui=1}] if items entity @s weapon.mainhand #kards:jinzhanwuqi[custom_data={kards:'重锤'}] run function kards:game/ingame/shengji/jinzhan/2
-execute as @a[scores={shengji_zhongchui=36..,level_zhongchui=2}] if items entity @s weapon.mainhand #kards:jinzhanwuqi[custom_data={kards:'重锤'}] run function kards:game/ingame/shengji/jinzhan/3
-execute as @a[scores={shengji_zhongchui=48..,level_zhongchui=3}] if items entity @s weapon.mainhand #kards:jinzhanwuqi[custom_data={kards:'重锤'}] run function kards:game/ingame/shengji/jinzhan/4
-execute as @a[scores={shengji_zhongchui=60..,level_zhongchui=4}] if items entity @s weapon.mainhand #kards:jinzhanwuqi[custom_data={kards:'重锤'}] run function kards:game/ingame/shengji/jinzhan/5
-execute as @a[scores={shengji_zhongchui=72..,level_zhongchui=5}] if items entity @s weapon.mainhand #kards:jinzhanwuqi[custom_data={kards:'重锤'}] run function kards:game/ingame/shengji/jinzhan/6
+execute as @a[scores={shengji_zhongchui=8..,level_zhongchui=0}] if items entity @s weapon.mainhand #kards:jinzhanwuqi[custom_data={kards:'重锤'}] run function kards:game/ingame/shengji/jinzhan/1
+execute as @a[scores={shengji_zhongchui=16..,level_zhongchui=1}] if items entity @s weapon.mainhand #kards:jinzhanwuqi[custom_data={kards:'重锤'}] run function kards:game/ingame/shengji/jinzhan/2
+execute as @a[scores={shengji_zhongchui=24..,level_zhongchui=2}] if items entity @s weapon.mainhand #kards:jinzhanwuqi[custom_data={kards:'重锤'}] run function kards:game/ingame/shengji/jinzhan/3
+execute as @a[scores={shengji_zhongchui=32..,level_zhongchui=3}] if items entity @s weapon.mainhand #kards:jinzhanwuqi[custom_data={kards:'重锤'}] run function kards:game/ingame/shengji/jinzhan/4
+execute as @a[scores={shengji_zhongchui=40..,level_zhongchui=4}] if items entity @s weapon.mainhand #kards:jinzhanwuqi[custom_data={kards:'重锤'}] run function kards:game/ingame/shengji/jinzhan/5
+execute as @a[scores={shengji_zhongchui=48..,level_zhongchui=5}] if items entity @s weapon.mainhand #kards:jinzhanwuqi[custom_data={kards:'重锤'}] run function kards:game/ingame/shengji/jinzhan/6
 
 execute as @a[scores={shengji_zuanshifu=20..,level_zuanshifu=0}] if items entity @s weapon.mainhand #kards:jinzhanwuqi[custom_data={kards:'钻石斧'}] run function kards:game/ingame/shengji/jinzhan/1
 execute as @a[scores={shengji_zuanshifu=40..,level_zuanshifu=1}] if items entity @s weapon.mainhand #kards:jinzhanwuqi[custom_data={kards:'钻石斧'}] run function kards:game/ingame/shengji/jinzhan/2

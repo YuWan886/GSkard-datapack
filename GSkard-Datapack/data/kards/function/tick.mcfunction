@@ -43,4 +43,4 @@ execute if score #system Color matches 20 run scoreboard players set #system Col
 execute as @e[type=cat,name=Oiiaioiiiiai] at @s run tp @s ~ ~ ~ ~50 ~
 #测试用
 
-#execute as @a unless predicate kards:movement_check run function kards:ceshi/1
+#function kards:game/ingame/shengji/general

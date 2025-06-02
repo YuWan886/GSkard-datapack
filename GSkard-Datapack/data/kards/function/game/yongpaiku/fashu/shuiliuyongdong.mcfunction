@@ -11,8 +11,8 @@ execute if entity @s[team=red] if score 红队 xianjin_youdi matches 1 run retur
 execute if entity @s[team=blue] if score 蓝队 xianjin_youdi matches 1 run return run scoreboard players set 蓝队 xianjin_youdi 0
 
 #红
-execute if entity @s[team=red] run scoreboard players add @a[team=red] HealBack 16
+execute if entity @s[team=red] run scoreboard players add @a[team=red] HealBack 8
 #蓝
-execute if entity @s[team=blue] run scoreboard players add @a[team=blue] HealBack 16
+execute if entity @s[team=blue] run scoreboard players add @a[team=blue] HealBack 8
 
 scoreboard players add @s cishu 1

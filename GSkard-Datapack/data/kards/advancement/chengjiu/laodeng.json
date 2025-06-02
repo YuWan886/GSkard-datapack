@@ -5,10 +5,10 @@
             "count": 1
         },
         "title": {
-            "text": "老登"
+            "translate": "chengjiu.laodeng.5"
         },
         "description": {
-            "text": "搞牌牢玩家"
+            "translate": "chengjiu.laodeng.6"
         },
         "frame": "task",
         "show_toast": true,

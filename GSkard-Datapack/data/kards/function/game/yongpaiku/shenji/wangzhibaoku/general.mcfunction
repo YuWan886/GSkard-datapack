@@ -223,7 +223,6 @@ execute as @a[tag=!qinglingzhiyu] run clear @s arrow
 execute as @a if items entity @s weapon.* iron_sword[custom_data={kards:'炎阳大剑'}] run tag @s add yanyangdajian
 
 effect give @a[tag=yanyangdajian] fire_resistance 1 0 true
-
 execute as @e[tag=marker_feixue,type=marker] at @s run function kards:game/yongpaiku/shenji/wangzhibaoku/yanyangdajian/3
 
 execute as @a[tag=yanyangdajian] unless items entity @s weapon.* iron_sword[custom_data={kards:'炎阳大剑'}] run tag @s remove yanyangdajian

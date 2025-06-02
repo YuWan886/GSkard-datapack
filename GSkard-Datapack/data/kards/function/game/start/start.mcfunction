@@ -24,6 +24,5 @@ execute if score #system Ready_Num matches 16 run function kards:lobby/team/16st
 execute if score #system Ready_Num matches 17 run function kards:lobby/team/17start
 execute if score #system Ready_Num matches 18 run function kards:lobby/team/18start
 execute if score #system Ready_Num matches 19 run function kards:lobby/team/19start
-execute if score #system Ready_Num matches 20..30 run function kards:lobby/team/20start
-
-execute if score #system Ready_Num matches 31.. run tellraw @a [{text: "人数过多 无法进行游戏",color:"red",bold:true}]
+execute if score #system Ready_Num matches 20 run function kards:lobby/team/20start
+execute if score #system Ready_Num matches 21.. run tellraw @a [{text: "人数过多 无法进行游戏",color:"red",bold:true}]
