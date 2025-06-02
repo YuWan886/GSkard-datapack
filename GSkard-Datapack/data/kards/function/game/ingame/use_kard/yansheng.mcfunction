@@ -12,6 +12,6 @@ execute if items entity @s weapon.offhand *[custom_data={kards:'焰火骑士团'
 #君临天下
 execute if items entity @s weapon.offhand nether_star[custom_data={kards:'君临天下'}] run function kards:game/yongpaiku/yansheng/junlintianxia/jy0
 #无用
-execute if score @s CanuseKard matches 1 if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'无用之基'}] if score @s kardCount >= #kard_wuyongjiben kardCount run function kards:game/yongpaiku/jiben/wuyongji
-execute if score @s CanuseKard matches 1 if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'无用之法'}] if score @s kardCount >= #kard_wuyongfashu kardCount run function kards:game/yongpaiku/fashu/wuyongfa
-execute if score @s CanuseKard matches 1 if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'无用之神'}] if score @s kardCount >= #kard_wuyongshenji kardCount run function kards:game/yongpaiku/shenji/wuyongshen
+execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'无用之基'}] if score @s kardCount >= #kard_wuyongjiben kardCount run function kards:game/yongpaiku/jiben/wuyongji
+execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'无用之法'}] if score @s kardCount >= #kard_wuyongfashu kardCount run function kards:game/yongpaiku/fashu/wuyongfa
+execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'无用之神'}] if score @s kardCount >= #kard_wuyongshenji kardCount run function kards:game/yongpaiku/shenji/wuyongshen

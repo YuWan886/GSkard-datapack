@@ -12,9 +12,9 @@ execute if entity @s[team=blue] if score 蓝队 xianjin_youdi matches 1 run retu
 
 execute store result score @s fashu_heishanyangzhiyong run random value 1..10
 
-execute if score @s fashu_heishanyangzhiyong matches 1..3 run scoreboard players add @s HealBack 8
-execute if score @s fashu_heishanyangzhiyong matches 4..8 run scoreboard players add @s HealBack 16
-execute if score @s fashu_heishanyangzhiyong matches 9..10 run scoreboard players add @s HealBack 32
+execute if score @s fashu_heishanyangzhiyong matches 1..3 run scoreboard players add @s HealBack 16
+execute if score @s fashu_heishanyangzhiyong matches 4..8 run scoreboard players add @s HealBack 32
+execute if score @s fashu_heishanyangzhiyong matches 9..10 run scoreboard players add @s HealBack 64
 
 execute if score @s fashu_heishanyangzhiyong matches 1..3 run scoreboard players remove @s kardCountmax 2
 execute if score @s fashu_heishanyangzhiyong matches 4..6 run scoreboard players remove @s kardCountmax 4

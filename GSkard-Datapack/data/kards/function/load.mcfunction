@@ -11,6 +11,16 @@ schedule clear kards:lobby/bossbar/color/3
 schedule clear kards:lobby/bossbar/color/4
 function kards:lobby/bossbar/color/1
 #注册计分项目
+scoreboard objectives add VectorX dummy
+scoreboard objectives add VectorY dummy
+scoreboard objectives add VectorZ dummy
+scoreboard objectives add VectorDX dummy
+scoreboard objectives add VectorDY dummy
+scoreboard objectives add VectorDZ dummy
+scoreboard objectives add shield_hold dummy
+scoreboard objectives add random_gamerule_start dummy
+scoreboard objectives add linghunshouge totalKillCount
+scoreboard objectives add sishenjianglin dummy
 scoreboard objectives add random_gamerule dummy
 scoreboard objectives add linghunshougeqi totalKillCount
 scoreboard objectives add huoqiutouzi dummy
@@ -219,7 +229,8 @@ scoreboard objectives add RunningTime_Min dummy
 scoreboard objectives add RunningTimeOper_Sec dummy
 scoreboard objectives add RunningTimeOper_Min dummy
 scoreboard objectives add touxiang dummy
-scoreboard objectives add reset dummy
+scoreboard objectives add reset trigger
+scoreboard objectives add dituxuanze dummy
 scoreboard objectives add roundtime dummy
 scoreboard objectives add jiben dummy
 scoreboard objectives add kujie dummy
@@ -229,8 +240,5 @@ scoreboard objectives add UUID.0 dummy
 scoreboard objectives add UUID.1 dummy
 scoreboard objectives add UUID.2 dummy
 scoreboard objectives add UUID.3 dummy
-scoreboard objectives add Fire dummy
-scoreboard objectives add Fire_take_damage dummy
-
 #
 tellraw @a [{text: "数据包加载完毕",color:"gray"}]

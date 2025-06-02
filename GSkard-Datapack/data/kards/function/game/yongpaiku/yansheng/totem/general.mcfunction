@@ -1,12 +1,12 @@
 #自爆
-execute as @a[tag=zibaotuteng] at @s as @e[distance=..5,tag=!zibaotuteng] run damage @s 70 kards:zibao by @p[tag=zibaotuteng]
+execute as @a[tag=zibaotuteng] at @s as @e[distance=..5,tag=!zibaotuteng] run damage @s 70 kards:zibao by @n[tag=zibaotuteng]
 effect clear @a[tag=zibaotuteng]
 execute as @a[tag=zibaotuteng] run damage @s 10 kards:zibao
 tag @a[tag=zibaotuteng] remove zibaotuteng
 #生命
 effect give @a[tag=shengmingtuteng] minecraft:regeneration 60 1 true
-effect give @a[tag=shengmingtuteng] minecraft:instant_health 1 2 true
-effect give @a[tag=shengmingtuteng] instant_health 1 3 true
+scoreboard players add @a[tag=shengmingtuteng] HealBack 40
+
 effect give @a[tag=shengmingtuteng] absorption 60 9 true
 tag @a[tag=shengmingtuteng] remove shengmingtuteng
 #暴怒

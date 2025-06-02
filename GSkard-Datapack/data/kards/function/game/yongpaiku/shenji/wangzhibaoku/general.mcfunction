@@ -54,8 +54,6 @@ execute as @a[team=red,tag=kunanyaolan] if score @s behurt_kunanyaolan1 matches 
 execute as @a[team=blue,tag=kunanyaolan] if score @s behurt_kunanyaolan1 matches 200.. as @r[team=red] run damage @s 16 kards:kunanyaolan by @p[team=blue,tag=kunanyaolan,scores={behurt_kunanyaolan1=200..}]
 execute as @a[tag=kunanyaolan] if score @s behurt_kunanyaolan1 matches 200.. run scoreboard players remove @s behurt_kunanyaolan1 200
 
-execute as @a[tag=kunanyaolan] if predicate kards:sneak run scoreboard players add @s 
-
 scoreboard players add @a[tag=kunanyaolan] healback_kunanyaolan 1
 scoreboard players set #system healback_kunanyaolan 4
 scoreboard players set #system healback_kunanyaolan2 100
@@ -102,7 +100,7 @@ execute as @a[tag=feishenhufu] unless items entity @s container.* *[custom_data=
 execute as @a[tag=feishenhufu] unless items entity @s container.* *[custom_data={kards:'飞升护符'}] run tag @s remove feishenhufu
 #讲述者
 execute as @a if items entity @s container.* *[custom_data={kards:'讲述者'}] run tag @s add jiangshuzhe
-function kards:game/yongpaiku/shenji/wangzhibaoku/jiangshuzhe/event/general
+execute if entity @a[tag=jiangshuzhe] run function kards:game/yongpaiku/shenji/wangzhibaoku/jiangshuzhe/event/general
 execute as @a[tag=jiangshuzhe] unless items entity @s container.* *[custom_data={kards:'讲述者'}] run tag @s remove jiangshuzhe
 #寄生粘液
 execute as @a[tag=jishengnianye] run scoreboard players set @s jinzijue 0
@@ -223,6 +221,7 @@ execute as @a[tag=!qinglingzhiyu] run clear @s arrow
 execute as @a if items entity @s weapon.* iron_sword[custom_data={kards:'炎阳大剑'}] run tag @s add yanyangdajian
 
 effect give @a[tag=yanyangdajian] fire_resistance 1 0 true
+
 execute as @e[tag=marker_feixue,type=marker] at @s run function kards:game/yongpaiku/shenji/wangzhibaoku/yanyangdajian/3
 
 execute as @a[tag=yanyangdajian] unless items entity @s weapon.* iron_sword[custom_data={kards:'炎阳大剑'}] run tag @s remove yanyangdajian

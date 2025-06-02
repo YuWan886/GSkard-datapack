@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:pig",
+                    "nbt": "{Tags:[\"琉璃夜\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "kards:game/ingame/killed/liuliye"
+    }
+}

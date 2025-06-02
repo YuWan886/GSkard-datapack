@@ -26,6 +26,6 @@ tellraw @a [{text: "目前使用次数为:",color:"white"},{score:{objective:"zo
     execute if score @s zombie_enhance matches 51..60 if entity @s[team=blue] as @e[tag=7b] at @s run summon zombie ~ 0 ~ {Tags:["zombie_enhance_2"],Team:blue,IsBaby:false,equipment:{mainhand:{id:"minecraft:diamond_sword"},head:{id:"minecraft:dispenser"},chest:{id: "minecraft:diamond_chestplate"},legs:{id: "minecraft:diamond_leggings"},feet:{id: "minecraft:diamond_boots"}}}
     execute if score @s zombie_enhance matches 61..75 if entity @s[team=blue] as @e[tag=7b] at @s run summon zombie ~ 0 ~ {Tags:["zombie_enhance_3"],Team:blue,IsBaby:false,equipment:{mainhand:{id:"minecraft:netherite_sword"},head:{id:"minecraft:dispenser"},chest:{id: "minecraft:diamond_chestplate"},legs:{id: "minecraft:diamond_leggings"},feet:{id: "minecraft:diamond_boots"}}}
     execute if score @s zombie_enhance matches 76.. if entity @s[team=blue] as @e[tag=7b] at @s run summon zombie ~ 0 ~ {Tags:["zombie_enhance_3"],Team:blue,IsBaby:false,equipment:{mainhand:{id:"minecraft:netherite_sword"},head:{id:"minecraft:dragon_head"},chest:{id: "minecraft:netherite_chestplate"},legs:{id: "minecraft:netherite_leggings"},feet:{id: "minecraft:netherite_boots"}}}
-clear @s minecraft:ward_armor_trim_smithing_template 1
+clear @s minecraft:zombie_spawn_egg 1
 scoreboard players operation @s kardCount -= #kard_kuanghuanzombie kardCount
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1

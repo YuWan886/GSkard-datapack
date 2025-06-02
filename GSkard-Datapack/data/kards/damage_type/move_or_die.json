@@ -1,0 +1,7 @@
+{
+    "message_id": "移动或死亡",
+    "exhaustion": 0,
+    "scaling": "never",
+    "effects": "drowning",
+    "death_message_type": "default"
+}
