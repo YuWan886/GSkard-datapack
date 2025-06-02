@@ -1,3 +1,0 @@
-summon minecraft:pig ~ ~ ~ {Tags:["琉璃夜"],attributes:[{id:"max_health",base:200}],Health:200,CustomName:[{text:"Hart_liuli",bold:true,color:"gold"}],CustomNameVisible:true}
-scoreboard players remove @s killed_entity 1
-advancement revoke @s only kards:killed_liuliye

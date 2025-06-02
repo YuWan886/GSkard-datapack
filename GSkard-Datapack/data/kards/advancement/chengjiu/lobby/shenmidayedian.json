@@ -6,10 +6,10 @@
             "count": 1
         },
         "title": {
-            "text": "神秘打野点"
+            "translate": "chengjiu.lobby.shenmidayedian.11"
         },
         "description": {
-            "text": "这是何处阿?"
+            "translate": "chengjiu.lobby.shenmidayedian.12"
         },
         "background": "minecraft:block/chiseled_tuff_bricks",
         "frame": "task",

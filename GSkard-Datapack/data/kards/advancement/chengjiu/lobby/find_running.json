@@ -6,10 +6,10 @@
             "count": 1
         },
         "title": {
-            "text": "神秘跑酷点"
+            "translate": "chengjiu.lobby.find_running.9"
         },
         "description": {
-            "text": "lengxiaoCN:我会一直看着你的...永远"
+            "translate": "chengjiu.lobby.find_running.10"
         },
         "background": "minecraft:block/chiseled_tuff_bricks",
         "frame": "task",

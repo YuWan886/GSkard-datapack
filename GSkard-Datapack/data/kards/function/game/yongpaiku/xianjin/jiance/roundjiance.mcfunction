@@ -2,11 +2,11 @@
 execute if entity @s[team=red] if entity @e[tag=tuteng,team=red,type=shulker] run return fail
 execute if entity @s[team=blue] if entity @e[tag=tuteng,team=blue,type=shulker] run return fail
 #<遥远的桥>
-execute if score 红队 xianjin_yaoyuandeqiao matches 1 at @e[limit=1,tag=b_dw] run kill @e[type=!player,tag=!tuteng,team=red,dx=25,dz=25,dy=255,type=!creaking]
+execute if score 红队 xianjin_yaoyuandeqiao matches 1 at @e[limit=1,tag=b_dw] run kill @e[type=!player,tag=!tuteng,team=red,dx=25,dz=25,dy=255]
 execute if score 红队 xianjin_yaoyuandeqiao matches 1 run tellraw @a [{text: "红队",color: "red"},{text: "触发了",color: "gray"},{text: "<遥远的桥>",color: "dark_aqua",hover_event:{action:"show_text",value:"触发时清除使用该陷阱的队伍的场上所有敌对怪物"}}]
 execute if score 红队 xianjin_yaoyuandeqiao matches 1 as @a at @s run playsound minecraft:block.beacon.activate master @s ~ ~ ~ 1 1
 
-execute if score 蓝队 xianjin_yaoyuandeqiao matches 1 at @e[limit=1,tag=r_dw] run kill @e[type=!player,tag=!tuteng,team=blue,dx=25,dz=25,dy=255,type=!creaking]
+execute if score 蓝队 xianjin_yaoyuandeqiao matches 1 at @e[limit=1,tag=r_dw] run kill @e[type=!player,tag=!tuteng,team=blue,dx=25,dz=25,dy=255]
 execute if score 蓝队 xianjin_yaoyuandeqiao matches 1 run tellraw @a [{text: "蓝队",color: "blue"},{text: "触发了",color: "gray"},{text: "<遥远的桥>",color: "dark_aqua",hover_event:{action:"show_text",value:"触发时清除使用该陷阱的队伍的场上所有敌对怪物"}}]
 execute if score 蓝队 xianjin_yaoyuandeqiao matches 1 as @a at @s run playsound minecraft:block.beacon.activate master @s ~ ~ ~ 1 1
 

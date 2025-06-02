@@ -6,10 +6,10 @@
             "count": 1
         },
         "title": {
-            "text": "不是这"
+            "translate": "chengjiu.lobby.bushizhe.7"
         },
         "description": {
-            "text": "貌似走错路了"
+            "translate": "chengjiu.lobby.bushizhe.8"
         },
         "background": "minecraft:block/chiseled_tuff_bricks",
         "frame": "task",

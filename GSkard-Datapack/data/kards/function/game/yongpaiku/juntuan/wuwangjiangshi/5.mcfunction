@@ -1,0 +1,4 @@
+item replace entity @s weapon with air
+data modify entity @s equipment set value {}
+item replace entity @s[tag=wubanjiangshi] armor.head with minecraft:player_head[profile={id:[I;653364104,1148078264,-1275226817,-114580309],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmM5MzkwODMwY2U1NWYzODgzNDJkZjZhYjZlM2UyN2E1NjQ5ODNhNzcwM2VkNjgxNGM4MmJjMmVkZDdhMzRhIn19fQ=="}]}]
+item replace entity @s[tag=wuwangjiangshi] armor.head with minecraft:player_head[profile={id:[I;914923497,-310947989,-1841629471,-2128218946],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmY2NWY5NTRkNWEyY2RkMDA5ZDRlM2U2NzRlMTIzNGZjYmZkNjFkZWY5MTVmMjMxYmI5NDFlOGQ5MmFmMmMxYyJ9fX0="}]}] 1

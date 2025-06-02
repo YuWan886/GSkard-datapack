@@ -4,12 +4,12 @@ execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使
     execute if entity @s[team=blue] as @e[tag=6b] at @s run summon pillager ~ 0 ~ {equipment:{mainhand:{id:"minecraft:crossbow"}},Team:blue}
     execute if entity @s[team=blue] as @e[tag=8b] at @s run summon pillager ~ 0 ~ {equipment:{mainhand:{id:"minecraft:crossbow"}},Team:blue}
     execute if entity @s[team=blue] as @e[tag=10b] at @s run summon pillager ~ 0 ~ {equipment:{mainhand:{id:"minecraft:crossbow"}},Team:blue}
-   execute if entity @s[team=blue] as @e[tag=7b] at @s run summon vindicator ~ 0 ~ {equipment:{mainhand:{id:"minecraft:iron_axe"}},Team:blue,attributes:[{id:"follow_range",base:100}]}
+   execute if entity @s[team=blue] as @e[tag=7b] at @s run summon vindicator ~ 0 ~ {equipment:{mainhand:{id:"minecraft:iron_axe"}},Team:blue}
    #蓝队用
    execute if entity @s[team=red] as @e[tag=6r] at @s run summon pillager ~ 0 ~ {equipment:{mainhand:{id:"minecraft:crossbow"}},Team:red}
    execute if entity @s[team=red] as @e[tag=8r] at @s run summon pillager ~ 0 ~ {equipment:{mainhand:{id:"minecraft:crossbow"}},Team:red}
    execute if entity @s[team=red] as @e[tag=10r] at @s run summon pillager ~ 0 ~ {equipment:{mainhand:{id:"minecraft:crossbow"}},Team:red}
-   execute if entity @s[team=red] as @e[tag=7r] at @s run summon vindicator ~ 0 ~ {equipment:{mainhand:{id:"minecraft:iron_axe"}},Team:red,attributes:[{id:"follow_range",base:100}]}
+   execute if entity @s[team=red] as @e[tag=7r] at @s run summon vindicator ~ 0 ~ {equipment:{mainhand:{id:"minecraft:iron_axe"}},Team:red}
 function kards:game/yongpaiku/xianjin/jiance/mobjiance
 item replace entity @s weapon.offhand with air
 scoreboard players operation @s kardCount -= #kard_jieluexiaodui kardCount

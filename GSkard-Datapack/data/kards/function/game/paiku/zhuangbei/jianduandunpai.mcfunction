@@ -1,3 +1,0 @@
-
-give @s music_disc_13[item_name=[{text: "8K",color:"aqua"},{text: " 尖端盾牌",color:"gold"}],lore=[{text: "装备牌",color:"gold",italic:false},{text: "获得一个尖端盾牌",color:"gray",italic:false},{text: "使用时能够格挡25°的伤害 每次格挡后禁用0.2s",color:"gray",italic:false}],jukebox_playable="minecraft:pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'尖端盾牌'},tooltip_style="kard/equipment"]
-scoreboard players set #kard_jianduandunpai kardCount 8

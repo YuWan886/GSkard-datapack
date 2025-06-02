@@ -1,10 +1,18 @@
+#红队用
+execute if entity @s[team=red] as @e[tag=4r] at @s positioned ~ 0 ~ summon zombie run function kards:game/yongpaiku/juntuan/wuwangjiangshi/4
+execute if entity @s[team=red] as @e[tag=4r] at @s positioned ~ 0 ~ run team join red @e[type=zombie,distance=..3,tag=wubanjiangshi]
+execute if entity @s[team=red] as @e[tag=6r] at @s positioned ~ 0 ~ summon zombie run function kards:game/yongpaiku/juntuan/wuwangjiangshi/4
+execute if entity @s[team=red] as @e[tag=6r] at @s positioned ~ 0 ~ run team join red @e[type=zombie,distance=..3,tag=wubanjiangshi]
+execute if entity @s[team=red] as @e[tag=8r] at @s positioned ~ 0 ~ summon zombie run function kards:game/yongpaiku/juntuan/wuwangjiangshi/4
+execute if entity @s[team=red] as @e[tag=8r] at @s positioned ~ 0 ~ run team join red @e[type=zombie,distance=..3,tag=wubanjiangshi]
+execute if entity @s[team=red] as @e[tag=10r] at @s positioned ~ 0 ~ summon zombie run function kards:game/yongpaiku/juntuan/wuwangjiangshi/4
+execute if entity @s[team=red] as @e[tag=10r] at @s positioned ~ 0 ~ run team join red @e[type=zombie,distance=..3,tag=wubanjiangshi]
 #蓝队用
-data modify entity @e[limit=1,tag=wuwangjiangshi_start,team=blue] NoAI set value 0b
-data modify entity @e[limit=1,tag=wuwangjiangshi_start,team=blue] Invulnerable set value 0b
-
-tag @e[limit=1,tag=wuwangjiangshi_start,team=blue] remove wuwangjiangshi_start
-
-execute at @e[tag=4b] run summon zombie ~ 0 ~ {Team:blue,Health:30.0f,attributes:[{id:"follow_range",base:100},{id:"movement_speed",base:0.3}],IsBaby:false,equipment:{head:{id:"minecraft:player_head",components:{profile:{id:[I;914923497,-310947989,-1841629471,-2128218946],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmM5MzkwODMwY2U1NWYzODgzNDJkZjZhYjZlM2UyN2E1NjQ5ODNhNzcwM2VkNjgxNGM4MmJjMmVkZDdhMzRhIn19fQ=="}]}}},chest:{id:"chainmail_chestplate"},legs:{id:"chainmail_leggings"},feet:{id:"chainmail_boots"}}}
-execute at @e[tag=6b] run summon zombie ~ 0 ~ {Team:blue,Health:30.0f,attributes:[{id:"follow_range",base:100},{id:"movement_speed",base:0.3}],IsBaby:false,equipment:{head:{id:"minecraft:player_head",components:{profile:{id:[I;914923497,-310947989,-1841629471,-2128218946],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmM5MzkwODMwY2U1NWYzODgzNDJkZjZhYjZlM2UyN2E1NjQ5ODNhNzcwM2VkNjgxNGM4MmJjMmVkZDdhMzRhIn19fQ=="}]}}},chest:{id:"chainmail_chestplate"},legs:{id:"chainmail_leggings"},feet:{id:"chainmail_boots"}}}
-execute at @e[tag=8b] run summon zombie ~ 0 ~ {Team:blue,Health:30.0f,attributes:[{id:"follow_range",base:100},{id:"movement_speed",base:0.3}],IsBaby:false,equipment:{head:{id:"minecraft:player_head",components:{profile:{id:[I;914923497,-310947989,-1841629471,-2128218946],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmM5MzkwODMwY2U1NWYzODgzNDJkZjZhYjZlM2UyN2E1NjQ5ODNhNzcwM2VkNjgxNGM4MmJjMmVkZDdhMzRhIn19fQ=="}]}}},chest:{id:"chainmail_chestplate"},legs:{id:"chainmail_leggings"},feet:{id:"chainmail_boots"}}}
-execute at @e[tag=10b] run summon zombie ~ 0 ~ {Team:blue,Health:30.0f,attributes:[{id:"follow_range",base:100},{id:"movement_speed",base:0.3}],IsBaby:false,equipment:{head:{id:"minecraft:player_head",components:{profile:{id:[I;914923497,-310947989,-1841629471,-2128218946],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmM5MzkwODMwY2U1NWYzODgzNDJkZjZhYjZlM2UyN2E1NjQ5ODNhNzcwM2VkNjgxNGM4MmJjMmVkZDdhMzRhIn19fQ=="}]}}},chest:{id:"chainmail_chestplate"},legs:{id:"chainmail_leggings"},feet:{id:"chainmail_boots"}}}
+execute if entity @s[team=blue] as @e[tag=4b] at @s positioned ~ 0 ~ summon zombie run function kards:game/yongpaiku/juntuan/wuwangjiangshi/4
+execute if entity @s[team=blue] as @e[tag=4b] at @s positioned ~ 0 ~ run team join blue @e[type=zombie,distance=..3,tag=wubanjiangshi]
+execute if entity @s[team=blue] as @e[tag=6b] at @s positioned ~ 0 ~ summon zombie run function kards:game/yongpaiku/juntuan/wuwangjiangshi/4
+execute if entity @s[team=blue] as @e[tag=6b] at @s positioned ~ 0 ~ run team join blue @e[type=zombie,distance=..3,tag=wubanjiangshi]
+execute if entity @s[team=blue] as @e[tag=8b] at @s positioned ~ 0 ~ summon zombie run function kards:game/yongpaiku/juntuan/wuwangjiangshi/4
+execute if entity @s[team=blue] as @e[tag=8b] at @s positioned ~ 0 ~ run team join blue @e[type=zombie,distance=..3,tag=wubanjiangshi]
+execute if entity @s[team=blue] as @e[tag=10b] at @s positioned ~ 0 ~ summon zombie run function kards:game/yongpaiku/juntuan/wuwangjiangshi/4
+execute if entity @s[team=blue] as @e[tag=10b] at @s positioned ~ 0 ~ run team join blue @e[type=zombie,distance=..3,tag=wubanjiangshi]

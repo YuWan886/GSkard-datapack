@@ -27,7 +27,8 @@ team modify blue friendlyFire false
 team modify red friendlyFire false
 #物品
 schedule function kards:game/start/wait_start 1t
-
+#游戏规则
+#function kards:game/start/gamerule/panding
 #重置陷阱
 function kards:game/yongpaiku/xianjin/reset
 #特殊

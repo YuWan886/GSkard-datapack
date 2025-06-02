@@ -24,12 +24,12 @@ execute if entity @s[team=blue] if score 蓝队 xianjin_shusifangshou matches 1 
 execute if entity @s[team=blue] if score 蓝队 xianjin_shusifangshou matches 1 run scoreboard players set 蓝队 xianjin_shusifangshou 0
 
 #<合围>
-execute if entity @s[team=red] if score 红队 xianjin_hewei matches 1 at @e[limit=1,tag=b_dw] run kill @e[type=!player,tag=!tuteng,team=red,dx=25,dz=25,dy=255,type=!creaking]
+execute if entity @s[team=red] if score 红队 xianjin_hewei matches 1 at @e[limit=1,tag=b_dw] run kill @e[type=!player,tag=!tuteng,team=red,dx=25,dz=25,dy=255]
 execute if entity @s[team=red] if score 红队 xianjin_hewei matches 1 run tellraw @a [{selector: "@s"},{text: "触发了",color: "gray"},{text: "<合围>",color: "dark_aqua",hover_event:{action:"show_text",value:"触发时清除使用该陷阱的队伍的场上所有敌对怪物"}}]
 execute if entity @s[team=red] if score 红队 xianjin_hewei matches 1 as @a at @s run playsound minecraft:block.beacon.activate master @s ~ ~ ~ 1 1
 execute if entity @s[team=red] if score 红队 xianjin_hewei matches 1 run scoreboard players set 红队 xianjin_hewei 0
 
-execute if entity @s[team=blue] if score 蓝队 xianjin_hewei matches 1 at @e[limit=1,tag=r_dw] run kill @e[type=!player,tag=!tuteng,team=blue,dx=25,dz=25,dy=255,type=!creaking]
+execute if entity @s[team=blue] if score 蓝队 xianjin_hewei matches 1 at @e[limit=1,tag=r_dw] run kill @e[type=!player,tag=!tuteng,team=blue,dx=25,dz=25,dy=255]
 execute if entity @s[team=blue] if score 蓝队 xianjin_hewei matches 1 run tellraw @a [{selector: "@s"},{text: "触发了",color: "gray"},{text: "<合围>",color: "dark_aqua",hover_event:{action:"show_text",value:"触发时清除使用该陷阱的队伍的场上所有敌对怪物"}}]
 execute if entity @s[team=blue] if score 蓝队 xianjin_hewei matches 1 as @a at @s run playsound minecraft:block.beacon.activate master @s ~ ~ ~ 1 1
 execute if entity @s[team=blue] if score 蓝队 xianjin_hewei matches 1 run scoreboard players set 蓝队 xianjin_hewei 0
