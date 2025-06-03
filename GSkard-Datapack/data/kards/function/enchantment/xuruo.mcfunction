@@ -7,3 +7,4 @@ execute if score @s enchantment_chance_xuruo matches 1..45 on attacker if items 
 execute if score @s enchantment_chance_xuruo matches 1..60 on attacker if items entity @s weapon.mainhand #kards:jinzhanwuqi[enchantments~[{enchantments:'kards:xuruo',levels:4}]] run effect give @e[tag=enchantment_xuruo] blindness 5 1 true
 execute if score @s enchantment_chance_xuruo matches 1..60 on attacker if items entity @s weapon.mainhand #kards:jinzhanwuqi[enchantments~[{enchantments:'kards:xuruo',levels:{min:5}}]] run effect give @e[tag=enchantment_xuruo] blindness 10 3 true
 tag @s remove enchantment_xuruo
+advancement revoke @s only kards:enchantment/xuruo

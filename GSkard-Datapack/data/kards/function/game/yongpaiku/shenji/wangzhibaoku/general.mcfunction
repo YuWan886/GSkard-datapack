@@ -88,6 +88,7 @@ scoreboard players add @a[tag=xiangzhaoyushi] xiangzhaoyushi 1
 execute as @a[tag=xiangzhaoyushi] if score @s xiangzhaoyushi matches 1200.. run effect give @s absorption 60 4 true
 execute as @a[tag=xiangzhaoyushi] if score @s xiangzhaoyushi matches 1200.. run scoreboard players set @s xiangzhaoyushi 0
 execute as @a[tag=xiangzhaoyushi] unless items entity @s container.* *[custom_data={kards:'祥兆玉石'}] run tag @s remove xiangzhaoyushi
+
 #飞升护符
 execute as @a if items entity @s container.* *[custom_data={kards:'飞升护符'}] run tag @s add feishenhufu
 execute as @a[tag=feishenhufu] run attribute @s minecraft:max_health modifier add 0-0-11 20 add_value
@@ -184,12 +185,12 @@ execute as @a if score @s sishenzhilian_soul_small matches 10.. run function kar
 execute as @a if score @s sishenzhilian_soul_medium matches 10.. run function kards:game/yongpaiku/shenji/wangzhibaoku/sishenzhilian/4
 #正义长戟
 execute as @a if items entity @s weapon.mainhand *[custom_data={kards:'正义长戟'}] run tag @s add zhengyichangji
-execute as @a[tag=zhengyichangji] unless items entity @s weapon.mainhand *[custom_data={kards:'正义长戟'}] run tag @s remove zhengyichangji
+execute as @a[tag=zhengyichangji] unless items entity @s weapon.mainhand trident[custom_data={kards:'正义长戟'}] unless entity @e[type=trident,nbt={item:{components:{"minecraft:custom_data":{kards:'正义长戟'}}}}] run tag @s remove zhengyichangji
 
 execute as @a[tag=used_zhengyichangji] run scoreboard players set @s used_zhengyichangji 100
 execute as @a[tag=used_zhengyichangji] run tag @s remove used_zhengyichangji
 scoreboard players add @a used_zhengyichangji 0
-execute as @a if score @s used_zhengyichangji matches 1 run tellraw @s [{text: "[正义长戟] ",color:"aqua"},{text: "制裁效果冷却完毕!",color:"green"}]
+execute as @a if score @s used_zhengyichangji matches 1 run tellraw @s [{text: "[正义长戟] ",color:"aqua"},{text: "制裁效果就绪!",color:"green"}]
 execute as @a if score @s used_zhengyichangji matches 1 at @s run playsound minecraft:item.trident.riptide_1 player @s ~ ~ ~ 100 2
 execute as @a if score @s used_zhengyichangji matches 1.. run scoreboard players remove @s used_zhengyichangji 1
 #轻灵之语

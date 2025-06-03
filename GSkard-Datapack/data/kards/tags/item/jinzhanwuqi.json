@@ -7,6 +7,7 @@
         "minecraft:netherite_sword",
         "minecraft:iron_axe",
         "minecraft:diamond_axe",
-        "minecraft:mace"
+        "minecraft:mace",
+        "netherite_hoe"
     ]
 }

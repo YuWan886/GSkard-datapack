@@ -5,7 +5,7 @@ execute if score @s random_busituteng matches 2 run give @s minecraft:totem_of_u
 execute if score @s random_busituteng matches 3 run give @s minecraft:totem_of_undying[custom_name={italic:false,text: "暴怒图腾",color:"dark_red"},lore=[{text: "在拥有原版不死图腾效能基础上",color:"gray",italic:false},{text: "还会获得30s力量5速度3 10s无敌",color:"gray",italic:false}],custom_data={kards:'暴怒图腾'}]
 execute if score @s random_busituteng matches 4 run give @s minecraft:totem_of_undying[custom_name={italic:false,text: "混沌图腾",color:"gray"},lore=[{text: "在拥有原版不死图腾效能基础上",color:"gray",italic:false},{text: "还会发生一些有趣的事情",color:"gray",italic:false}],custom_data={kards:'混沌图腾'}]
 execute if score @s random_busituteng matches 5 run give @s minecraft:totem_of_undying[custom_name={italic:false,text: "冰冻图腾",color:"aqua"},lore=[{text: "在拥有原版不死图腾效能基础上",color:"gray",italic:false},{text: "还会冻结周围敌对生物 持续10s",color:"gray",italic:false}],custom_data={kards:'冰冻图腾'}]
-execute if score @s random_busituteng matches 6 run give @s minecraft:totem_of_undying[custom_name={italic:false,text: "火焰图腾",color:"red"},lore=[{text: "在拥有原版不死图腾效能基础上",color:"gray",italic:false},{text: "还会永久点燃5格内敌对生物(玩家改为点燃15s)",color:"gray",italic:false}],custom_data={kards:'火焰图腾'}]
+execute if score @s random_busituteng matches 6 run give @s minecraft:totem_of_undying[custom_name={italic:false,text: "火焰",color:"red"},lore=[{text: "在拥有原版不死图腾效能基础上",color:"gray",italic:false},{text: "还会永久点燃5格内敌对生物(玩家改为点燃15s)",color:"gray",italic:false}],custom_data={kards:'火焰'}]
 
 scoreboard players set @s random_busituteng 0
 item replace entity @s weapon.offhand with air

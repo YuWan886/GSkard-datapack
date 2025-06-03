@@ -13,3 +13,4 @@ execute if score @s enchantment_chance_shiming matches 1..100 on attacker if ite
 
 tag @e[scores={XuanYun=1..},tag=enchantment_shiming,type=!player] add XuanYun
 tag @s remove enchantment_shiming
+advancement revoke @s only kards:enchantment/shiming

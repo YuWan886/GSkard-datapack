@@ -7,3 +7,4 @@ execute if score @s enchantment_chance_huanman matches 1..45 on attacker if item
 execute if score @s enchantment_chance_huanman matches 1..60 on attacker if items entity @s weapon.mainhand #kards:jinzhanwuqi[enchantments~[{enchantments:'kards:huanman',levels:4}]] run effect give @e[tag=enchantment_huanman] slowness 5 2 true
 execute if score @s enchantment_chance_huanman matches 1..75 on attacker if items entity @s weapon.mainhand #kards:jinzhanwuqi[enchantments~[{enchantments:'kards:huanman',levels:{min:5}}]] run effect give @e[tag=enchantment_huanman] slowness 10 4 true
 tag @s remove enchantment_huanman
+advancement revoke @s only kards:enchantment/huanman

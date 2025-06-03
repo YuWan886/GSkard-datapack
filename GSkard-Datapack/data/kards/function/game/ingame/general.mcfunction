@@ -40,20 +40,21 @@ execute as @a positioned -219 -65 -173 unless entity @s[dx=19,dz=18,dy=25,gamemo
 #装备
 function kards:game/yongpaiku/zhuangbei/general
 #眩晕
-scoreboard players remove @a[tag=XuanYun,scores={XuanYun=1..}] XuanYun 1
+scoreboard players remove @e[tag=XuanYun,scores={XuanYun=1..}] XuanYun 1
 
-effect give @a[tag=XuanYun,scores={XuanYun=1..}] slowness 1 100 true
-effect give @a[tag=XuanYun,scores={XuanYun=1..}] blindness 2 100 true
-execute as @a[tag=XuanYun,scores={XuanYun=1..}] run attribute @s minecraft:jump_strength modifier add 0-0-1 -100 add_value
-execute as @a[tag=XuanYun,scores={XuanYun=1..}] run effect clear @s jump_boost
-execute as @a[tag=XuanYun,scores={XuanYun=1..}] at @s run tp @s ~ ~ ~ ~ 90
+effect give @e[tag=XuanYun,scores={XuanYun=1..}] slowness 1 100 true
+effect give @e[tag=XuanYun,scores={XuanYun=1..}] blindness 2 100 true
+execute as @e[tag=XuanYun,scores={XuanYun=1..}] run attribute @s minecraft:jump_strength modifier add 0-0-1 -100 add_value
+execute as @e[tag=XuanYun,scores={XuanYun=1..}] run effect clear @s jump_boost
+execute as @e[tag=XuanYun,scores={XuanYun=1..}] at @s run rotate @s ~ 90
 title @a[tag=XuanYun,scores={XuanYun=1..}] times 0t 1s 0t
 title @a[tag=XuanYun,scores={XuanYun=1..}] title {text: "眩晕中...",color:"gray",bold:true}
-effect clear @a[tag=XuanYun,scores={XuanYun=0}] slowness
-effect clear @a[tag=XuanYun,scores={XuanYun=0}] blindness
-execute as @a[tag=XuanYun,scores={XuanYun=0}] run attribute @s minecraft:jump_strength modifier remove 0-0-1
+effect clear @e[tag=XuanYun,scores={XuanYun=0}] slowness
+effect clear @e[tag=XuanYun,scores={XuanYun=0}] blindness
+execute as @e[tag=XuanYun,scores={XuanYun=0}] run attribute @s minecraft:jump_strength modifier remove 0-0-1
 title @a[tag=XuanYun,scores={XuanYun=0}] title {text: ""}
-tag @a[tag=XuanYun,scores={XuanYun=0}] remove XuanYun
+scoreboard players reset @e[scores={XuanYun=0}] XuanYun
+tag @e[tag=XuanYun,scores={XuanYun=0}] remove XuanYun
 
 #旋转
 scoreboard players remove @a[tag=XuanZhuan,scores={XuanZhuan=1..}] XuanZhuan 1
@@ -66,6 +67,39 @@ execute as @a[tag=DuanTui,scores={DuanTui=1..}] run attribute @s minecraft:jump_
 execute as @a[tag=DuanTui,scores={DuanTui=1..}] run effect clear @s jump_boost
 execute as @a[tag=DuanTui,scores={DuanTui=0}] run attribute @s minecraft:jump_strength modifier remove 0-0-2
 tag @a[tag=DuanTui,scores={DuanTui=0}] remove DuanTui
+
+#冰冻
+effect give @a[tag=bingdongtuteng] absorption 60 4 true
+execute at @a[tag=bingdongtuteng,team=red] run scoreboard players add @e[team=blue,distance=..5] DongJie 200
+execute at @a[tag=bingdongtuteng,team=blue] run scoreboard players add @e[team=red,distance=..5] DongJie 200
+execute at @a[tag=bingdongtuteng] run playsound minecraft:entity.player.hurt_freeze player @s ~ ~ ~ 100 0
+execute at @a[tag=bingdongtuteng,team=red] run tag @e[team=blue,distance=..5] add DongJie
+execute at @a[tag=bingdongtuteng,team=blue] run tag @e[team=red,distance=..5] add DongJie
+
+scoreboard players remove @e[tag=DongJie,scores={DongJie=1..}] DongJie 1
+effect give @e[tag=DongJie,scores={DongJie=1..}] slowness 1 100 true
+effect give @e[tag=DongJie,scores={DongJie=1..}] weakness 1 128 true
+execute as @a[tag=DongJie,scores={DongJie=1..}] run attribute @s minecraft:jump_strength modifier add 0-0-3 -100 add_value
+execute as @a[tag=DongJie,scores={DongJie=1..}] run effect clear @s jump_boost
+title @a[tag=DongJie,scores={DongJie=1..}] times 0t 1s 0t
+title @a[tag=DongJie,scores={DongJie=1..}] title {text: "冻结中...",color:"aqua",bold:true}
+execute as @a[tag=DongJie,scores={DongJie=0}] run attribute @s minecraft:jump_strength modifier remove 0-0-3
+effect clear @e[tag=DongJie,scores={DongJie=0}] slowness
+effect clear @e[tag=DongJie,scores={DongJie=0}] weakness
+title @a[tag=DongJie,scores={DongJie=0}] title {text: ""}
+tag @e[tag=DongJie,scores={DongJie=0}] remove DongJie
+tag @a[tag=bingdongtuteng] remove bingdongtuteng
+#火焰
+scoreboard players remove @e[tag=Fire] Fire 1
+title @a[tag=Fire] actionbar {text: "你被点燃了",color:"red"}
+
+scoreboard players add @e[tag=Fire,scores={Fire=1..}] Fire_take_damage 1
+execute as @e[scores={Fire_take_damage=10}] run damage @s 1.5 kards:huoyan
+execute as @e[scores={Fire_take_damage=10}] at @s run particle lava ~ ~1 ~ 0 0 0 0 2 force @a
+execute as @e[scores={Fire_take_damage=10}] run scoreboard players set @s Fire_take_damage 0
+
+tag @e[scores={Fire=0}] remove Fire
+scoreboard players reset @e[scores={Fire=0}] Fire
 #不死图腾
 function kards:game/yongpaiku/yansheng/totem/general
 #监守者bossbar
@@ -276,14 +310,6 @@ execute as @e[type=zombie,tag=wuwangjiangshi,team=red] at @s run effect give @e[
 execute as @e[type=zombie,tag=wuwangjiangshi,team=blue] at @s run effect give @e[distance=..5,team=blue] speed 1 0 true
 execute as @e[team=blue] at @s if entity @e[type=zombie,tag=wuwangjiangshi,team=blue,distance=..5] if score @s in_wuwangjiangshi matches 0 run effect give @s regeneration 5 0 true
 execute as @e[team=blue] at @s if entity @e[type=zombie,tag=wuwangjiangshi,team=blue,distance=..5] if score @s in_wuwangjiangshi matches 0 run scoreboard players set @s in_wuwangjiangshi 100
-
-#玩家燃烧判定
-execute as @a unless score @s Fire matches -2147483648..2147483647 run scoreboard players set @s Fire 0 
-execute as @a unless score @s Fire_take_damage matches -2147483648..2147483647 run scoreboard players set @s Fire_take_damage 0 
-execute as @a unless score @s Fire matches 0 run scoreboard players remove @s Fire 1
-execute as @a unless score @s Fire matches 0 run scoreboard players add @s Fire_take_damage 1
-execute as @a if score @s Fire_take_damage matches 20 unless score @s Fire matches 0 run damage @s 2 in_fire
-execute as @a if score @s Fire_take_damage matches 20 run scoreboard players set @s Fire_take_damage 0
 
 scoreboard players add @e[type=zombie,tag=wuwangjiangshi] in_wuwangjiangshi 1
 execute as @e[tag=wuwangjiangshi,type=zombie,team=red] if score @s in_wuwangjiangshi matches 20 at @s run scoreboard players add @e[team=red,distance=..5] HealBack 1

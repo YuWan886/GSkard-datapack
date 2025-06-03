@@ -10,7 +10,7 @@
                 "predicates": {
                   "minecraft:enchantments": [
                     {
-                      "enchantments": "kards:diaoling"
+                      "enchantments": "kards:shiming"
                     }
                   ]
                 }
@@ -22,6 +22,6 @@
     }
   },
   "rewards": {
-    "function": "kards:enchantment/diaoling"
+    "function": "kards:enchantment/shiming"
   }
 }

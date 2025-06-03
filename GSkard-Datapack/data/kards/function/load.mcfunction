@@ -11,6 +11,10 @@ schedule clear kards:lobby/bossbar/color/3
 schedule clear kards:lobby/bossbar/color/4
 function kards:lobby/bossbar/color/1
 #注册计分项目
+scoreboard objectives add Damage minecraft.custom:damage_dealt
+scoreboard objectives add HealBack_Wait dummy
+scoreboard objectives add enchantment_chance_shixue dummy
+scoreboard objectives add MaxHealth dummy
 scoreboard objectives add XuanZhuan dummy
 scoreboard objectives add sanrenchengzhong dummy
 scoreboard objectives add kutongzhuanhua_Time dummy
