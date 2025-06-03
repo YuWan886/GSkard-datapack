@@ -1,0 +1,23 @@
+{
+    "criteria": {
+        "magma_cube_hurt_player": {
+            "trigger": "entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "source_entity": {
+                            "type": "magma_cube",
+                            "components": {
+                                "custom_data": "{kards:'site_magma_cube'}"
+                            }
+                        }
+                    }
+                },
+                "player": []
+            }
+        }
+    },
+    "rewards": {
+        "function": "site:mob/magma_cube"
+    }
+}

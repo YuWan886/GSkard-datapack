@@ -294,4 +294,6 @@ execute as @e[tag=wuwangjiangshi,type=zombie] if score @s in_wuwangjiangshi matc
 scoreboard players add @e[tag=large_slime] sanrenchengzhong 1
 execute as @e[tag=large_slime] if score @s sanrenchengzhong matches 300 run function kards:game/yongpaiku/juntuan/sanrenchengzhong/2
 
-#幻影陀螺
+#自爆军团
+execute as @a[tag=magma_cube_hurt] at @s run summon minecraft:creeper ~ ~ ~ {Fuse:0,ExplosionRadius:5,ignited:true,CustomName:'[{"color": "red","text": "岩浆怪"}]',CustomNameVisible:true}
+execute as @a[tag=magma_cube_hurt] run tag @s remove magma_cube_hurt
