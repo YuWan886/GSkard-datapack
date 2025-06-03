@@ -1,12 +1,11 @@
 {
     "criteria": {
-        "site_endermite_was_attack": {
-            "trigger": "player_hurt_entity",
+        "requirement": {
+            "trigger": "minecraft:entity_hurt_player",
             "conditions": {
-                "entity": {
-                    "type": "endermite",
-                    "components": {
-                        "custom_data": "{kards:'site_endermite'}"
+                "damage": {
+                    "source_entity": {
+                        "nbt": "{Tags:[\"huanyingtuoluo\"]}"
                     }
                 }
             }
