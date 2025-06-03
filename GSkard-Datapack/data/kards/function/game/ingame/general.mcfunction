@@ -281,3 +281,11 @@ execute as @e[type=zombie,tag=wuwangjiangshi,team=blue] if entity @e[type=zombie
 execute as @e[type=zombie,tag=wuwangjiangshi,team=blue] at @s run effect give @e[distance=..5,team=blue] speed 1 0 true
 execute as @e[team=blue] at @s if entity @e[type=zombie,tag=wuwangjiangshi,team=blue,distance=..5] if score @s in_wuwangjiangshi matches 0 run effect give @s regeneration 5 0 true
 execute as @e[team=blue] at @s if entity @e[type=zombie,tag=wuwangjiangshi,team=blue,distance=..5] if score @s in_wuwangjiangshi matches 0 run scoreboard players set @s in_wuwangjiangshi 100
+
+#玩家燃烧判定
+execute as @a unless score @s Fire matches -2147483648..2147483647 run scoreboard players set @s Fire 0 
+execute as @a unless score @s Fire_take_damage matches -2147483648..2147483647 run scoreboard players set @s Fire_take_damage 0 
+execute as @a unless score @s Fire matches 0 run scoreboard players remove @s Fire 1
+execute as @a unless score @s Fire matches 0 run scoreboard players add @s Fire_take_damage 1
+execute as @a if score @s Fire_take_damage matches 20 unless score @s Fire matches 0 run damage @s 2 in_fire
+execute as @a if score @s Fire_take_damage matches 20 run scoreboard players set @s Fire_take_damage 0
