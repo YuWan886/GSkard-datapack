@@ -239,6 +239,8 @@ execute as @e[type=goat] store result score @s ram_cooldown_ticks run data get e
 execute as @e[type=goat] if score @s ram_cooldown_ticks matches 2.. run data modify entity @s Brain.memories.minecraft:ram_cooldown_ticks.value set value 1
 effect give @e[type=goat] speed infinite 4 true
 #死灵巫师
+execute as @e[tag=silingfashi,type=witch] unless data entity @s equipment run item replace entity @s weapon.mainhand with blaze_rod
+
 execute as @e[tag=silingfashi,type=witch] unless data entity @s {NoAI:1b} run scoreboard players add @s silingfashu 1
 execute as @e[tag=silingfashi,type=witch] unless data entity @s {NoAI:1b} run scoreboard players add @s silingzhaohuan 1
 execute as @e[tag=silingfashi,type=minecraft:wither_skeleton] at @s unless entity @e[type=minecraft:witch,distance=..2.1,tag=silingfashi] run function kards:game/yongpaiku/juntuan/silingwushi/3
