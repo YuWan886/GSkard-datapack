@@ -22,3 +22,4 @@ execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[cu
 execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'灾厄双星'}] if score @s kardCount >= #kard_zaieshuangxing kardCount run function kards:game/yongpaiku/juntuan/zaieshuangxing
 execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'无人机群'}] if score @s kardCount >= #kard_wurenjiqun kardCount run function kards:game/yongpaiku/juntuan/wurenjiqun
 execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'嗜血狼群'}] if score @s kardCount >= #kard_shixuelangqun kardCount run function kards:game/yongpaiku/juntuan/shixuelangqun
+execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'三人成众'}] if score @s kardCount >= #kard_sanrenchengzhong kardCount run function kards:game/yongpaiku/juntuan/sanrenchengzhong/1
