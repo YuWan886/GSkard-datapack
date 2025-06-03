@@ -54,6 +54,12 @@ effect clear @a[tag=XuanYun,scores={XuanYun=0}] blindness
 execute as @a[tag=XuanYun,scores={XuanYun=0}] run attribute @s minecraft:jump_strength modifier remove 0-0-1
 title @a[tag=XuanYun,scores={XuanYun=0}] title {text: ""}
 tag @a[tag=XuanYun,scores={XuanYun=0}] remove XuanYun
+
+#旋转
+scoreboard players remove @a[tag=XuanZhuan,scores={XuanZhuan=1..}] XuanZhuan 1
+execute as @a[tag=XuanZhuan,scores={XuanZhuan=1..}] at @s run rotate @s ~50 ~
+
+tag @a[tag=XuanZhuan,scores={XuanZhuan=0}] remove XuanZhuan
 #断腿
 scoreboard players remove @a[tag=DuanTui,scores={DuanTui=1..}] DuanTui 1
 execute as @a[tag=DuanTui,scores={DuanTui=1..}] run attribute @s minecraft:jump_strength modifier add 0-0-2 -100 add_value
@@ -239,17 +245,18 @@ execute as @e[type=goat] store result score @s ram_cooldown_ticks run data get e
 execute as @e[type=goat] if score @s ram_cooldown_ticks matches 2.. run data modify entity @s Brain.memories.minecraft:ram_cooldown_ticks.value set value 1
 effect give @e[type=goat] speed infinite 4 true
 #死灵巫师
-execute as @e[tag=silingfashi,type=witch] unless data entity @s equipment run item replace entity @s weapon.mainhand with blaze_rod
+execute as @e[tag=silingfashi,type=witch] unless data entity @s equipment{mainhand:{}} run item replace entity @s weapon.mainhand with blaze_rod
 
 execute as @e[tag=silingfashi,type=witch] unless data entity @s {NoAI:1b} run scoreboard players add @s silingfashu 1
 execute as @e[tag=silingfashi,type=witch] unless data entity @s {NoAI:1b} run scoreboard players add @s silingzhaohuan 1
-execute as @e[tag=silingfashi,type=minecraft:wither_skeleton] at @s unless entity @e[type=minecraft:witch,distance=..2.1,tag=silingfashi] run function kards:game/yongpaiku/juntuan/silingwushi/3
+execute as @e[tag=silingfashi,type=minecraft:wither_skeleton] at @s unless entity @e[type=minecraft:witch,distance=..3.1,tag=silingfashi] run function kards:game/yongpaiku/juntuan/silingwushi/3
 
 execute as @e[type=witch,tag=silingfashi,team=red] if score @s silingfashu matches 40 at @s as @a[team=blue,distance=..3] run damage @s 6 kards:silingfashu by @n[type=minecraft:witch,tag=silingfashi,team=red]
 execute as @e[type=witch,tag=silingfashi,team=blue] if score @s silingfash matches 40 at @s as @a[team=red,distance=..5] at @s run damage @s 6 kards:silingfashu by @n[type=minecraft:witch,tag=silingfashi,team=blue]
 execute as @e[type=witch,tag=silingfashi] if score @s silingfashu matches 40 at @s run particle enchanted_hit ~ ~ ~ 3 0.1 3 0 100 force
 scoreboard players set @e[type=witch,tag=silingfashi,scores={silingfashu=40}] silingfashu 0
 
+execute as @e[type=witch,tag=silingfashi,team=red] if score @s silingzhaohuan matches 40 at @s run particle trial_omen ~ ~ ~ 0 0.2 0 1 20
 execute as @e[type=witch,tag=silingfashi,team=red] if score @s silingzhaohuan matches 40 at @s run summon minecraft:skeleton ~ ~ ~ {Team:red,Tags:["死灵仆从"],active_effects:[{id:"speed",show_particles:0b,duration:-1}],equipment:{head:{id:"minecraft:leather_helmet"}},attributes:[{id:"follow_range",base:100},{id:"minecraft:max_health",base:2.0d},{id:"minecraft:attack_damage",base:2.0d},{id:"minecraft:scale",base:0.5d},{id:"safe_fall_distance",base:200}],Health:2.0f,Motion:[0,0.8,0]}
 execute as @e[type=witch,tag=silingfashi,team=blue] if score @s silingzhaohuan matches 40 at @s run summon minecraft:skeleton ~ ~ ~ {Team:blue,Tags:["死灵仆从"],active_effects:[{id:"speed",show_particles:0b,duration:-1}],equipment:{head:{id:"minecraft:leather_helmet"}},attributes:[{id:"follow_range",base:100},{id:"minecraft:max_health",base:2.0d},{id:"minecraft:attack_damage",base:2.0d},{id:"minecraft:scale",base:0.5d},{id:"safe_fall_distance",base:200}],Health:2.0f,Motion:[0,0.8,0]}
 scoreboard players set @e[type=witch,tag=silingfashi,scores={silingzhaohuan=40..}] silingzhaohuan 0
@@ -258,7 +265,8 @@ scoreboard players set @e[type=witch,tag=silingfashi,scores={silingzhaohuan=40..
 execute if score 人数 b_alive matches 5.. run effect give @e[type=warden] speed 1 0 true
 execute if score 人数 r_alive matches 5.. run effect give @e[type=warden] speed 1 0 true
 #舞王僵尸
-execute as @e[type=zombie,tag=wuwangjiangshi] unless data entity @s {NoAI:1b} if score @s wuwangchuchang matches 1.. run scoreboard players remove @s wuwangchuchang 1
+execute as @e[type=zombie,tag=wuwangjiangshi,team=red] if score @s wuwangchuchang matches 1.. if score #system GameRound matches 1 run scoreboard players remove @s wuwangchuchang 1
+execute as @e[type=zombie,tag=wuwangjiangshi,team=blue] if score @s wuwangchuchang matches 1.. if score #system GameRound matches 0 run scoreboard players remove @s wuwangchuchang 1
 execute as @e[type=zombie,tag=wuwangjiangshi] if entity @s[team=red] if score @s wuwangchuchang matches 0 at @s run function kards:game/yongpaiku/juntuan/wuwangjiangshi/2
 execute as @e[type=zombie,tag=wuwangjiangshi] if entity @s[team=blue] if score @s wuwangchuchang matches 0 at @s run function kards:game/yongpaiku/juntuan/wuwangjiangshi/3
 
