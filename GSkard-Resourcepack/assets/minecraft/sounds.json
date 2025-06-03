@@ -8,5 +8,16 @@
                 "volume": 0.5
             }
         ]
+    },
+    "music_disc.relic": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "music/skill/chunriying",
+                "stream": true,
+                "volume": 0.5
+            }
+        ]
     }
 }
+

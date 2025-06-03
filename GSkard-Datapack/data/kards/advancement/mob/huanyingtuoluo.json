@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "site_endermite_was_attack": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "type": "endermite",
+                    "components": {
+                        "custom_data": "{kards:'site_endermite'}"
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "kards:game/ingame/hurt/huanyingtuoluo"
+    }
+}

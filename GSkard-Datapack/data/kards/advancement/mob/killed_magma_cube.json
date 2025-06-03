@@ -4,7 +4,7 @@
       "trigger": "minecraft:player_killed_entity",
       "conditions": {
         "entity": {
-          "type": "minecraft:slime",
+          "type": "minecraft:magma_cube",
           "type_specific": {
             "type": "minecraft:slime",
             "size": 1
@@ -14,6 +14,6 @@
     }
   },
   "rewards": {
-    "function": "kards:game/ingame/killed/slime"
+    "function": "kards:game/ingame/killed/magma_cube"
   }
 }
