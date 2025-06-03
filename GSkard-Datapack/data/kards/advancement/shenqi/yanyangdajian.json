@@ -1,0 +1,23 @@
+{
+    "criteria": {
+        "yanyangdajian_hurt": {
+            "trigger": "entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "equipment": {
+                            "mainhand": {
+                                "components": {
+                                    "custom_data": "{kards:'炎阳大剑'}"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "kards:game/ingame/hurt/yanyangdajian"
+    }
+}
