@@ -12,6 +12,8 @@ schedule clear kards:lobby/bossbar/color/4
 function kards:lobby/bossbar/color/1
 #注册计分项目
 scoreboard objectives add kutongzhuanhua_Time dummy
+scoreboard objectives add damage_kutongzhuanhua_zhenshi dummy
+scoreboard objectives add damage_kutongzhuanhua_wuli dummy
 scoreboard objectives add damage_kutongzhuanhua dummy
 scoreboard objectives add kutongzhuanhua dummy
 scoreboard objectives add kunanyaolan_sneak dummy

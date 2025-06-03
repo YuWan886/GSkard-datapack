@@ -60,7 +60,7 @@ execute as @a[tag=!kunanyaolan,tag=kutongzhuanhuan] run tag @s remove kutongzhua
 execute as @a[tag=kunanyaolan] if score @s kunanyaolan_sneak matches 60 run function kards:game/yongpaiku/shenji/wangzhibaoku/kunanyaolan/2
 
 scoreboard players remove @a[scores={kutongzhuanhua_Time=1..}] kutongzhuanhua_Time 1
-execute as @a if score @s kutongzhuanhua_Time matches 0 run tellraw @s [{text:"苦痛转化冷却完毕!"}]
+execute as @a if score @s kutongzhuanhua_Time matches 0 run tellraw @s [{text:"[!]]",color:"yellow"},{text:"苦痛转化就绪",color:"red"}]
 execute as @a if score @s kutongzhuanhua_Time matches 0 at @s run playsound minecraft:block.note_block.imitate.creeper player @s ~ ~ ~ 100 0
 
 scoreboard players reset @a[scores={kutongzhuanhua_Time=0}] kutongzhuanhua_Time
