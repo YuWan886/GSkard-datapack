@@ -11,8 +11,8 @@
 #kill @e[type=item,nbt={Item:{id:"minecraft:blue_banner"}}]
 
 #踩区域选队
-execute positioned 85.0 222 -31.0 as @a[dx=5,dz=4,tag=Un_Ready] run function kards:lobby/team/join/unready
-execute positioned 85.0 222 -24.0 as @a[dx=5,dz=4,tag=Un_Ready] run function kards:lobby/team/join/unready
+execute positioned 87 230 -30 as @a[dx=5,dz=4,tag=Un_Ready] run function kards:lobby/team/join/unready
+execute positioned 87 230 -22 as @a[dx=5,dz=4,tag=Un_Ready] run function kards:lobby/team/join/unready
 
-execute positioned 85.0 222 -31.0 as @a[dx=5,dz=4,tag=Ready] run function kards:lobby/team/join/red
-execute positioned 85.0 222 -24.0 as @a[dx=5,dz=4,tag=Ready] run function kards:lobby/team/join/blue
+execute positioned 87 230 -30 as @a[distance=..1.5,tag=Ready,team=!red] run function kards:lobby/team/join/red
+execute positioned 87 230 -22 as @a[distance=..1.5,tag=Ready,team=!blue] run function kards:lobby/team/join/blue

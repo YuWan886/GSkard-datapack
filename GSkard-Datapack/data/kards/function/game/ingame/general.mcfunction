@@ -39,6 +39,12 @@ execute positioned -219 -65 -173 as @a[dx=19,dz=18,dy=25,gamemode=adventure] run
 execute as @a positioned -219 -65 -173 unless entity @s[dx=19,dz=18,dy=25,gamemode=adventure] run attribute @s minecraft:safe_fall_distance modifier remove 0-0-1
 #装备
 function kards:game/yongpaiku/zhuangbei/general
+#破碎
+scoreboard players remove @a[tag=PoSui,scores={PoSui=1..}] PoSui 1
+execute as @a[tag=PoSui,scores={PoSui=0}] run attribute @s armor modifier remove 0-0-2
+execute as @a[tag=PoSui,scores={PoSui=0}] run attribute @s armor_toughness modifier remove 0-0-2
+execute as @a[tag=PoSui,scores={PoSui=0}] run tag @s remove PoSui
+execute as @a[tag=PoSui,scores={PoSui=0}] run scoreboard players reset @s PoSui
 #眩晕
 scoreboard players remove @e[tag=XuanYun,scores={XuanYun=1..}] XuanYun 1
 

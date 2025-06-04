@@ -101,7 +101,7 @@ execute as @a run attribute @s safe_fall_distance modifier remove 0-0-2
 execute as @a run attribute @s safe_fall_distance base reset
 #重置分数
 execute if score #system random_gamerule matches 0.. run scoreboard players set #system random_gamerule 0
-scoreboard players set * zhengyizhichui_1 0
+scoreboard players set * fengbaozhanchui_1 0
 scoreboard players set * sishenzhilian 0
 scoreboard players set * yanhua 0
 scoreboard players set * yanhuanu 0

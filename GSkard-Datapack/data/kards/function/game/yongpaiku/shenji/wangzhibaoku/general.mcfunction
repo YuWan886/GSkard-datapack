@@ -165,14 +165,29 @@ execute as @a[tag=wuxiuzhihuo] unless items entity @s container.* *[custom_data=
 execute as @a[tag=wuxiuzhihuo] unless items entity @s container.* *[custom_data={kards:'无休之火'}] run scoreboard players set @s wuxiuzhihuo 0
 execute as @a[tag=wuxiuzhihuo] unless items entity @s container.* *[custom_data={kards:'无休之火'}] run tag @s remove wuxiuzhihuo
 #石中剑
-execute as @a if items entity @s weapon.mainhand *[custom_data={kards:'石中剑'}] run tag @s add shizhongjian
-effect give @a[tag=shizhongjian] strength infinite 1 true
-execute as @a[tag=shizhongjian] unless items entity @s weapon.mainhand *[custom_data={kards:'石中剑'}] run effect clear @s strength
-execute as @a[tag=shizhongjian] unless items entity @s weapon.mainhand *[custom_data={kards:'石中剑'}] run tag @s remove shizhongjian
-#正义之锤
-execute as @a if items entity @s container.* *[custom_data={kards:'正义之锤'}] run tag @s add zhengyizhichui
-execute as @a[tag=zhengyizhichui] if score @s used_zhengyizhichui matches 1.. run function kards:game/yongpaiku/shenji/wangzhibaoku/zhengyizhichui/1
-execute as @a[tag=zhengyizhichui] unless items entity @s container.* *[custom_data={kards:'正义之锤'}] run tag @s remove zhengyizhichui
+execute as @a if items entity @s weapon.mainhand stone_sword[custom_data={kards:'石中剑'}] run tag @s add shizhongjian
+
+execute as @a[tag=shizhongjian] unless items entity @s weapon.mainhand stone_sword[custom_data={kards:'石中剑'}] run tag @s remove shizhongjian
+
+execute as @a[tag=shizhongjian_true] unless items entity @s container.* stone_sword[custom_data={kards:'石中剑'}] run scoreboard players reset @s shizhongjian_template_1
+execute as @a[tag=shizhongjian_true] unless items entity @s container.* stone_sword[custom_data={kards:'石中剑'}] run tag @s remove shizhongjian_true
+
+#风暴战锤
+execute as @a if items entity @s container.* mace[custom_data={kards:'风暴战锤'}] run tag @s add fengbaozhanchui
+execute as @a[tag=fengbaozhanchui] if score @s fengbaozhanchui_lightning_bolt matches 1.. run scoreboard players remove @s fengbaozhanchui_lightning_bolt 1
+execute as @a[tag=fengbaozhanchui] if score @s fengbaozhanchui_lightning_bolt matches 0 run tellraw @s [{text:"[风暴战锤]",color:"white"},{text:"雷击已补充!",color:"gold"}]
+execute as @a[tag=fengbaozhanchui] if score @s fengbaozhanchui_lightning_bolt matches 0 run playsound minecraft:entity.lightning_bolt.impact player @s ~ ~ ~ 100 2
+execute as @a[tag=fengbaozhanchui] if score @s fengbaozhanchui_lightning_bolt matches 0 run scoreboard players reset @s fengbaozhanchui_lightning_bolt
+execute as @a[tag=fengbaozhanchui] unless items entity @s container.* mace[custom_data={kards:'风暴战锤'}] run tag @s remove fengbaozhanchui
+
+execute as @a[tag=fengbaozhanchui] if items entity @s weapon.mainhand mace[custom_data={kards:'风暴战锤'}] unless score @s fengbaozhanchui_xuneng_Time matches 1.. if predicate kards:sneak run scoreboard players add @s fengbaozhanchui_xuneng 1
+execute as @a[tag=fengbaozhanchui] if score @s fengbaozhanchui_xuneng matches 20 run function kards:game/yongpaiku/shenji/wangzhibaoku/fengbaozhanchui/5
+execute as @a[tag=fengbaozhanchui] if score @s fengbaozhanchui_xuneng_Time matches 1.. run scoreboard players remove @s fengbaozhanchui_xuneng_Time 1
+execute as @a[tag=fengbaozhanchui] if score @s fengbaozhanchui_xuneng_Time matches 0 run tellraw @s [{text:"[风暴战锤]",color:"white"},{text:"蓄能重击已补充!",color:"gold"}]
+execute as @a[tag=fengbaozhanchui] if score @s fengbaozhanchui_xuneng_Time matches 0 run playsound minecraft:entity.lightning_bolt.impact player @s ~ ~ ~ 100 2
+execute as @a[tag=fengbaozhanchui] if score @s fengbaozhanchui_xuneng_Time matches 0 run scoreboard players reset @s fengbaozhanchui_xuneng_Time
+
+execute as @a[tag=fengbaozhanchui_xunengzhongji] unless score @s fengbaozhanchui_xuneng_Time matches 299..300 if data entity @s {OnGround:1b} at @s run function kards:game/yongpaiku/shenji/wangzhibaoku/fengbaozhanchui/6
 #死神之镰
 execute as @a if items entity @s weapon.mainhand *[custom_data={kards:'死神之镰'}] run tag @s add sishenzhilian
 

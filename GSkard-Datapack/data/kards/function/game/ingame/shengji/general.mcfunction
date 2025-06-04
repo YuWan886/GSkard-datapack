@@ -32,7 +32,7 @@ execute as @a[scores={killed_entity=1..}] if items entity @s weapon.mainhand #ka
 execute as @a[scores={killed_entity=1..}] if items entity @s weapon.mainhand #kards:jinzhanwuqi[custom_data={kards:'铁斧'}] run scoreboard players add @s shengji_tiefu 1
 execute as @a[scores={killed_entity=1..}] if items entity @s weapon.mainhand #kards:jinzhanwuqi[custom_data={kards:'钻石斧'}] run scoreboard players add @s shengji_zuanshifu 1
 execute as @a[scores={killed_entity=1..}] if items entity @s weapon.mainhand #kards:jinzhanwuqi[custom_data={kards:'重锤'}] run scoreboard players add @s shengji_zhongchui 1
-execute as @a[scores={killed_entity=1..}] if items entity @s weapon.mainhand #kards:jinzhanwuqi unless items entity @s weapon.mainhand mace[custom_data={kards:'正义之锤'}] run scoreboard players remove @s killed_entity 1
+execute as @a[scores={killed_entity=1..}] if items entity @s weapon.mainhand #kards:jinzhanwuqi unless items entity @s weapon.mainhand mace[custom_data={kards:'风暴战锤'}] run scoreboard players remove @s killed_entity 1
 execute as @a run xp set @s 0 levels
 #经验值
 execute as @a[gamemode=adventure] if score #system GameStatus matches 1..2 if items entity @s weapon.mainhand #kards:jinzhanwuqi[custom_data={kards:'金胡萝卜'}] run title @s actionbar [{text: "近战武器击杀数  ",color:"dark_green"},{score:{objective:"shengji_jhlb",name:"@s"},color:"red"}]

@@ -32,9 +32,11 @@ minecraft:entity_interaction_range 实体距离
 
 armor 护甲值
     海龟鳞甲 001
+    破碎 002
 
 armor_toughness 盔甲韧性
     海龟鳞甲 001
+    破碎 002
 
 minecraft:attack_speed 攻击速度
     破碎剑刃 001
@@ -51,6 +53,9 @@ safe_fall_distance
 
 gravity
     小人国 001
+
+minecraft:attack_damage
+    石中剑 001~010
 
 虚拟实体相关
 大多数用"#system"

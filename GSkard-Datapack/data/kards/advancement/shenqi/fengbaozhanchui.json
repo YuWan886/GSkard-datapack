@@ -5,13 +5,13 @@
             "conditions": {
                 "item": {
                     "components": {
-                        "minecraft:custom_data": "{kards:'正义之锤'}"
+                        "minecraft:custom_data": "{kards:'风暴战锤'}"
                     }
                 }
             }
         }
     },
     "rewards": {
-        "function": "kards:game/yongpaiku/shenji/wangzhibaoku/zhengyizhichui/1"
+        "function": "kards:game/yongpaiku/shenji/wangzhibaoku/fengbaozhanchui/1"
     }
 }
