@@ -1,8 +1,6 @@
-particle dust{color: [0.63,0.21,0.21], scale: 1.4} ~ ~2.2 ~
-tp @s ^ ^ ^0.25
-
-execute unless entity @e[tag=marker_feixue_2,distance=..0.3] positioned ^ ^ ^0.15 run function kards:game/yongpaiku/shenji/wangzhibaoku/yanyangdajian/5
-
-execute if entity @e[tag=marker_feixue_2,distance=..0.3] run kill @n[type=marker,tag=marker_feixue_1]
-execute if entity @e[tag=marker_feixue_2,distance=..0.3] run kill @s
-
+scoreboard players set @s yanyangdajian_Time 700
+scoreboard players reset @s yangyandajian
+scoreboard players set @s yangyandajian_fenshaozhiyu 200
+effect give @s speed 10 1 true
+effect give @s resistance 10 0 true
+execute at @s run playsound minecraft:entity.evoker.prepare_summon player @a[distance=..20] ~ ~ ~ 100 1

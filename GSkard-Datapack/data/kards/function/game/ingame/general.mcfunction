@@ -96,9 +96,9 @@ title @a[tag=DongJie,scores={DongJie=0}] title {text: ""}
 tag @e[tag=DongJie,scores={DongJie=0}] remove DongJie
 tag @a[tag=bingdongtuteng] remove bingdongtuteng
 #火焰
-scoreboard players remove @e[tag=Fire] Fire 1
+scoreboard players remove @e[tag=Fire,scores={Fire=1..}] Fire 1
 title @a[tag=Fire] actionbar {text: "你被点燃了",color:"red"}
-
+tag @s remove fire
 scoreboard players add @e[tag=Fire,scores={Fire=1..}] Fire_take_damage 1
 execute as @e[scores={Fire_take_damage=10}] run damage @s 1.5 kards:huoyan
 execute as @e[scores={Fire_take_damage=10}] at @s run particle lava ~ ~1 ~ 0 0 0 0 2 force @a

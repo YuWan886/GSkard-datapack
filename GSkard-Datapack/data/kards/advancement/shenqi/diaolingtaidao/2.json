@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "components": {
+                        "minecraft:custom_data": "{kards:'凋零玫瑰'}"
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "kards:game/yongpaiku/shenji/wangzhibaoku/diaolingtaidao/6"
+    }
+}

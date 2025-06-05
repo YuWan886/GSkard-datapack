@@ -4,7 +4,7 @@ execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[cu
 execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'断腿'}] if score @s kardCount >= #kard_duantui kardCount run function kards:game/yongpaiku/zuzhou/duantui
 execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'截断'}] if score @s kardCount >= #kard_jieduan kardCount run function kards:game/yongpaiku/zuzhou/jieduan
 execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'障眼'}] if score @s kardCount >= #kard_zhangyan kardCount run function kards:game/yongpaiku/zuzhou/zhangyan
-execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'沉默'}] if score @s kardCount >= #kard_chengmo kardCount run function kards:game/yongpaiku/zuzhou/chengmo
+execute unless score #system GameStatus matches 2 if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'沉默'}] if score @s kardCount >= #kard_chengmo kardCount run function kards:game/yongpaiku/zuzhou/chengmo
 execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'无力'}] if score @s kardCount >= #kard_wuli kardCount run function kards:game/yongpaiku/zuzhou/wuli
 execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'枯竭'}] if score @s kardCount >= #kard_kujie kardCount run function kards:game/yongpaiku/zuzhou/kujie
 execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'无形'}] if score @s kardCount >= #kard_wuxing kardCount run function kards:game/yongpaiku/zuzhou/wuxing

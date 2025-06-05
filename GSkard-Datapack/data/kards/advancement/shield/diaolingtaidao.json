@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:netherite_sword"
+        }
+      }
+    }
+  },
+  "rewards": {
+        "function": "kards:game/shield/diaolingtaidao_hold"
+  }
+}

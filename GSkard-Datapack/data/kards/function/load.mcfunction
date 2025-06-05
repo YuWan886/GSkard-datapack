@@ -11,6 +11,18 @@ schedule clear kards:lobby/bossbar/color/3
 schedule clear kards:lobby/bossbar/color/4
 function kards:lobby/bossbar/color/1
 #注册计分项目
+scoreboard objectives add Fire_wait dummy
+scoreboard objectives add yangyandajian_fenshaozhiyu_damage dummy
+scoreboard objectives add yangyandajian_fenshaozhiyu dummy
+scoreboard objectives add yangyandajian dummy
+scoreboard objectives add yanyangdajian_Time dummy
+scoreboard objectives add diaolingtaidao_wither_rose_Healback dummy
+scoreboard objectives add diaolingtaidao_wither_rose dummy
+scoreboard objectives add diaolingtaidao_hold dummy
+scoreboard objectives add diaolingtaidao_tujing dummy
+scoreboard objectives add diaolingtaidao_damage dummy
+scoreboard objectives add diaolingtaidao dummy
+scoreboard objectives add diaolingtaidao_Time dummy
 scoreboard objectives add PoSui dummy
 scoreboard objectives add shizhongjian_template_1 dummy
 scoreboard objectives add shizhongjian_template_2 dummy
@@ -166,7 +178,6 @@ scoreboard objectives add leave_lindongzhikai dummy
 scoreboard objectives add behurt_kunanyaolan1 minecraft.custom:minecraft.damage_taken
 scoreboard objectives add behurt_kunanyaolan2 minecraft.custom:minecraft.damage_taken
 scoreboard objectives add healback_kunanyaolan dummy
-scoreboard objectives add used_zhengyizhichui minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add used_zhengyizhichui1 dummy
 scoreboard objectives add used_zhengyizhichui2 dummy
 scoreboard objectives add sishenzhilian_soul_small dummy
@@ -174,9 +185,7 @@ scoreboard objectives add sishenzhilian_soul_medium dummy
 scoreboard objectives add used_sishenzhilian dummy
 scoreboard objectives add used_zhengyichangji dummy
 scoreboard objectives add used_qinglingzhiyu dummy
-scoreboard objectives add right_used_qinglingzhiyu minecraft.used:minecraft.bow
-scoreboard objectives add jitui_qinglingzhiyu dummy
-scoreboard objectives add stopused_qinglingzhiyu dummy
+scoreboard objectives add qinglingzhiyu_Time dummy
 scoreboard objectives add shengchanling dummy
 scoreboard objectives add random_enchantments dummy
 scoreboard objectives add qinglvqianmou dummy
@@ -231,7 +240,8 @@ scoreboard objectives add end dummy
 scoreboard objectives add sishenzhilian_damage minecraft.custom:minecraft.damage_dealt
 scoreboard objectives add sishenzhilian_damage_tongji dummy
 scoreboard objectives add xiangzhaoyushi dummy
-scoreboard objectives add senlinzhihu dummy
+scoreboard objectives add senlinzhihu_absorbed minecraft.custom:damage_absorbed
+scoreboard objectives add senlinzhihu_taken minecraft.custom:damage_taken
 scoreboard objectives add oiiaioiiiiai dummy
 scoreboard objectives add jinziqifeng dummy
 scoreboard objectives add wuwangchuchang dummy

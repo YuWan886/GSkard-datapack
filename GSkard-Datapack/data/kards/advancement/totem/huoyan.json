@@ -6,7 +6,7 @@
                 "item": {
                     "items": "minecraft:totem_of_undying",
                     "components": {
-                        "custom_data": "{kards:'火焰'}"
+                        "custom_data": "{kards:'火焰图腾'}"
                     }
                 }
             }

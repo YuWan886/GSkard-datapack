@@ -1,12 +1,4 @@
-
-execute if entity @e[tag=hurt_for_feixue,distance=..1] run return run function kards:game/yongpaiku/shenji/wangzhibaoku/yanyangdajian/stop
-
-summon marker ~ ~ ~ {Tags:["marker_feixue_1"]}
-execute if entity @s[tag=red] as @n[tag=!hurt_for_feixue,tag=!marker_feixue,team=red] at @s run function kards:game/yongpaiku/shenji/wangzhibaoku/yanyangdajian/4
-execute if entity @s[tag=blue] as @n[tag=!hurt_for_feixue,tag=!marker_feixue,team=blue] at @s run function kards:game/yongpaiku/shenji/wangzhibaoku/yanyangdajian/4
-kill @s
-
-execute as @e[tag=marker_feixue_1,type=marker] at @s anchored eyes facing entity @n[tag=marker_feixue_2,type=marker] eyes positioned ^ ^ ^0.25 run function kards:game/yongpaiku/shenji/wangzhibaoku/yanyangdajian/5
-
-kill @e[tag=marker_feixue_1,type=marker]
-kill @e[tag=marker_feixue_2,type=marker]
+damage @s 15 kards:huoyan by @n[tag=yanyangdajian]
+kill @n[tag=marker_feixue,type=marker]
+summon marker ~ ~ ~ {Tags:["marker_feixue_2"]}
+function kards:game/yongpaiku/shenji/wangzhibaoku/yanyangdajian/1
