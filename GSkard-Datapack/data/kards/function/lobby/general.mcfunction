@@ -1,5 +1,5 @@
 #大厅buff
-#execute if score #system GameStatus matches 0 run effect give @a[team=!111,team=!222] minecraft:resistance 1 4 true
+execute if score #system GameStatus matches 0 run effect give @a[team=!111,team=!222] minecraft:resistance 1 4 true
 execute if score #system GameStatus matches 0 run effect give @a[team=!111,team=!222] instant_health 1 200 true
 #视奸buff
 execute if score #system GameStatus matches 1 run effect give @a[tag=Spectator] minecraft:resistance 1 4 true

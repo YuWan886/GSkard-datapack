@@ -276,6 +276,9 @@ execute as @a if score @s diaolingtaidao_Time matches 0 at @s run playsound enti
 execute as @a if score @s diaolingtaidao_Time matches 0 run scoreboard players reset @s diaolingtaidao_Time
 execute as @a[tag=diaolingtaidao] unless items entity @s weapon.* netherite_sword[custom_data={kards:'凋零太刀'}] run tag @s remove diaolingtaidao
 
+scoreboard players remove @a[scores={diaolingtaidao_damage_add=1..}] diaolingtaidao_damage_add 1
+scoreboard players reset @a[scores={diaolingtaidao_damage_add=0}] diaolingtaidao_damage_add
+
 execute as @e[type=block_display,tag=diaolingtaidao_wither_rose] run scoreboard players remove @s diaolingtaidao_wither_rose 1
 execute as @e[type=block_display,tag=diaolingtaidao_wither_rose] unless score @s diaolingtaidao_wither_rose matches 1.. run kill @s
 
@@ -286,3 +289,4 @@ execute as @e[type=block_display,tag=diaolingtaidao_wither_rose] if score @s dia
 
 execute as @e[type=block_display,tag=diaolingtaidao_wither_rose,team=red] at @s run effect give @e[distance=..7,team=blue] wither 1 2 true
 execute as @e[type=block_display,tag=diaolingtaidao_wither_rose,team=blue] at @s run effect give @e[distance=..7,team=red] wither 1 2 true
+

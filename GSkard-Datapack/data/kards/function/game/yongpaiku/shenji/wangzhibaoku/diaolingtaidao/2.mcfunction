@@ -10,5 +10,5 @@ execute unless block ~ ~ ~ #air run tp @s ^ ^ ^-0.25
 
 execute if score @s diaolingtaidao_tujing matches 1.. at @s run return run function kards:game/yongpaiku/shenji/wangzhibaoku/diaolingtaidao/2
 playsound entity.wither.break_block player @a[distance=..20] ~ ~ ~ 10 2
-execute if entity @e[tag=diaolingtaidao_hurt] run scoreboard players remove @s diaolingtaidao_Time 80
+execute if entity @e[tag=diaolingtaidao_hurt] run scoreboard players remove @s diaolingtaidao_Time 100
 function kards:game/yongpaiku/shenji/wangzhibaoku/diaolingtaidao/3

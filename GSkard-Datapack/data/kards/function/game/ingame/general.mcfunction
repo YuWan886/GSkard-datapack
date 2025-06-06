@@ -222,7 +222,7 @@ effect give @e[tag=droll_music,distance=0.1..] weakness 1 255 true
 execute as @e[tag=droll_music,distance=0.1..] run attribute @s minecraft:movement_speed modifier add 0-0-2 -100 add_multiplied_total
 execute as @e[tag=droll_music,distance=0.1..] run attribute @s minecraft:jump_strength modifier add 0-0-4 -100 add_multiplied_total
 execute as @e[tag=droll_music,distance=0.1..,type=!player] run attribute @s minecraft:flying_speed modifier add 0-0-1 -100 add_multiplied_total
-execute as @e[tag=droll_music,distance=0.1..] at @s facing entity @n[tag=droll] eyes run tp @s ~ ~ ~ ~ ~
+execute as @e[tag=droll_music,distance=0.1..,type=!wither_skull] at @s facing entity @n[tag=droll] eyes run tp @s ~ ~ ~ ~ ~
 execute as @e[tag=droll_music,distance=0.1..] at @s unless entity @e[tag=droll,distance=..13] run attribute @s minecraft:movement_speed modifier remove 0-0-2
 execute as @e[tag=droll_music,distance=0.1..] at @s unless entity @e[tag=droll,distance=..13] run attribute @s minecraft:jump_strength modifier remove 0-0-4
 execute as @e[tag=droll_music,distance=0.1..,type=!player] at @s unless entity @e[tag=droll,distance=..13] run attribute @s minecraft:flying_speed modifier remove 0-0-1
@@ -325,3 +325,10 @@ execute as @e[tag=wuwangjiangshi,type=zombie] if score @s in_wuwangjiangshi matc
 #三人成众
 scoreboard players add @e[tag=large_slime] sanrenchengzhong 1
 execute as @e[tag=large_slime] if score @s sanrenchengzhong matches 300 run function kards:game/yongpaiku/juntuan/sanrenchengzhong/2
+
+#尸帝
+execute as @e[tag=shidi_master,team=red] at @s run effect give @e[tag=!shidi_master,team=red,distance=..5] minecraft:strength 1 0 true
+execute as @e[tag=shidi_master,team=blue] at @s run effect give @e[tag=!shidi_master,team=blue,distance=..5] minecraft:strength 1 0 true
+
+execute as @e[tag=shidi_master,team=red] at @s run effect give @e[tag=!shidi_master,team=red,distance=..5] minecraft:speed 1 0 true
+execute as @e[tag=shidi_master,team=blue] at @s run effect give @e[tag=!shidi_master,team=blue,distance=..5] minecraft:speed 1 0 true
