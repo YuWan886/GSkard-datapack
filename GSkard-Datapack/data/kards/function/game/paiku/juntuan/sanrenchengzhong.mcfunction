@@ -1,3 +1,2 @@
-
 scoreboard players set #kard_sanrenchengzhong kardCount 11
-give @s music_disc_cat[item_name=[{text:"11K",color:"aqua"},{text:" 三人成众",color:"dark_green"}],lore=[{text:"军团牌",color:"dark_green",italic:false},[{text:"召唤3只",color:"gray",italic:false},{text:"大岩浆史莱姆",color:"gold",italic:false}],[{text:"每15s于大岩浆史莱姆处生成",color:"gray",italic:false},{text:"不计入击杀数的小岩浆史莱姆",color:"gold",italic:false}]],jukebox_playable="minecraft:pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'三人成众'},tooltip_style="kard/legion"]
+give @s music_disc_cat[item_name=[{text:"11K",color:"aqua"},{text:" 三人成众",color:"dark_green"}],lore=[{text:"军团牌",color:"dark_green",italic:false},[{text:"召唤3只",color:"gray",italic:false},{text:"岩浆史莱姆",color:"red",italic:false}]],jukebox_playable="minecraft:pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'三人成众'},tooltip_style="kard/legion"]
