@@ -12,6 +12,16 @@ execute if entity @s[team=blue] if score 蓝队 xianjin_shufashixiao matches 1 r
 execute if entity @s[team=red] if score 红队 xianjin_youdi matches 1 run return run scoreboard players set 红队 xianjin_youdi 0
 execute if entity @s[team=blue] if score 蓝队 xianjin_youdi matches 1 run return run scoreboard players set 蓝队 xianjin_youdi 0
 
-execute at @e[limit=1,tag=r_dw] run team join blue @e[tag=tuteng,dx=36,dy=255,dz=26,team=red]
-execute at @e[limit=1,tag=b_dw] run team join red @e[tag=tuteng,dx=36,dy=255,dz=26,team=blue]
-function kards:game/yongpaiku/fashu/fanzhuan/2
+tag @e[tag=tuteng] add Move
+
+tag @e[tag=Move,team=red] remove Move
+team join blue @e[team=red,tag=tuteng,tag=!Move]
+
+team join red @e[team=blue,tag=tuteng,tag=Move]
+tag @e[tag=Move,team=blue] remove Move
+
+execute as @e[team=red,tag=tuteng,type=!iron_golem] at @e[limit=1,tag=r_tuteng] run tp @s ~ 0 ~
+execute as @e[team=red,tag=tuteng,type=iron_golem] at @e[limit=1,tag=7b] run tp @s ~ 0 ~
+
+execute as @e[team=blue,tag=tuteng,type=!iron_golem] at @e[limit=1,tag=b_tuteng] run tp @s ~ 0 ~
+execute as @e[team=blue,tag=tuteng,type=iron_golem] at @e[limit=1,tag=7r] run tp @s ~ 0 ~
