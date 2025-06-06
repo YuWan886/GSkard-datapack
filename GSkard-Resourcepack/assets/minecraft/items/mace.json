@@ -12,7 +12,7 @@
                     "type": "model",
                     "model": "kingbox/leishen"
                 },
-                "when": "zhengyizhichui"
+                "when": "fengbaozhanchui"
             },
             {
                 "model": {
