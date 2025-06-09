@@ -11,7 +11,7 @@ execute if entity @s[team=red,type=player] if score 红队 xianjin_youdi matches
 execute if entity @s[team=blue,type=player] if score 蓝队 xianjin_youdi matches 1 run return run scoreboard players set 蓝队 xianjin_youdi 0
 
 #红
-execute if entity @s[team=red] at @e[tag=blue_marker_7,limit=1] run summon creeper ~ 0 ~ {Team:red,ExplosionRadius:4,Fuse:10,attributes:[{id:"follow_range",base:100},{id:"max_health",base:30.0d}],Health:30.0f}
+execute if entity @s[team=red] at @e[tag=blue_marker_7,limit=1] run summon creeper ~ 5 ~ {Team:red,ExplosionRadius:4,Fuse:10,attributes:[{id:"follow_range",base:100},{id:"safe_fall_distance",base:7},{id:"max_health",base:30.0d}],Health:30.0f}
 #蓝
-execute if entity @s[team=blue] at @e[tag=red_marker_7,limit=1] run summon creeper ~ 0 ~ {Team:blue,ExplosionRadius:4,Fuse:10,attributes:[{id:"follow_range",base:100},{id:"max_health",base:30.0d}],Health:30.0f}
+execute if entity @s[team=blue] at @e[tag=red_marker_7,limit=1] run summon creeper ~ 5 ~ {Team:blue,ExplosionRadius:4,Fuse:10,attributes:[{id:"follow_range",base:100},{id:"safe_fall_distance",base:7},{id:"max_health",base:30.0d}],Health:30.0f}
 

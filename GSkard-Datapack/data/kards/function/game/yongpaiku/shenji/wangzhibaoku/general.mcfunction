@@ -273,7 +273,7 @@ execute as @a[tag=yanyangdajian] unless items entity @s weapon.* iron_sword[cust
 execute as @a if items entity @s weapon.* netherite_sword[custom_data={kards:'凋零太刀'}] run tag @s add diaolingtaidao
 
 execute as @a[tag=diaolingtaidao] if predicate kards:sneak unless score @s diaolingtaidao_Time matches 1.. run scoreboard players add @s diaolingtaidao 1
-execute as @a[tag=diaolingtaidao] if score @s diaolingtaidao matches 15 run scoreboard players set @s diaolingtaidao_Time 160
+execute as @a[tag=diaolingtaidao] if score @s diaolingtaidao matches 15 run scoreboard players set @s diaolingtaidao_Time 120
 execute as @a[tag=diaolingtaidao] if score @s diaolingtaidao matches 15 run function kards:game/yongpaiku/shenji/wangzhibaoku/diaolingtaidao/1
 
 scoreboard players remove @a[tag=diaolingtaidao,scores={diaolingtaidao_Time=1..}] diaolingtaidao_Time 1

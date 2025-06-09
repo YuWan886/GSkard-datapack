@@ -201,6 +201,9 @@ function kards:game/ingame/round/skill
 function kards:game/ingame/round/tuteng
 function kards:game/ingame/round/fashu with storage changdidaxiao
 scoreboard players set @a[scores={CanuseKard=0}] kardCount 0
+#酸辣无骨鸡爪
+execute as @a[gamemode=adventure] store result score @s suanlawugujizhua run clear @s bone[custom_data={kards:'鸡爪'}] 0
+execute as @a[gamemode=adventure] if score @s suanlawugujizhua matches 1.. run function kards:game/yongpaiku/fashu/suanlawugujizhua/4
 
 #旁观者
 scoreboard players set @a[gamemode=spectator] cishu 0

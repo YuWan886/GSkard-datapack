@@ -1,5 +1,3 @@
-#风暴战锤
-scoreboard players set @a[tag=fengbaozhanchui] used_fengbaozhanchui1 1
 #讲述者
 execute as @a[tag=jiangshuzhe] run function kards:game/yongpaiku/shenji/wangzhibaoku/jiangshuzhe/event/random
 #无休之火

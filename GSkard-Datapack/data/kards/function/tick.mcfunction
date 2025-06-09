@@ -42,5 +42,6 @@ execute if score #system Color matches 20 run scoreboard players set #system Col
 #scoreboard players add #system oiiaioiiiiai 1
 execute as @e[type=cat,name=Oiiaioiiiiai] at @s run tp @s ~ ~ ~ ~50 ~
 #测试用
-function kards:ceshi/3
+#function kards:game/ingame/general
+
 #execute as @a unless predicate kards:movement_check run function kards:ceshi/1

@@ -1,8 +1,8 @@
 execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[末影螨]",color:"blue"}]
     #红队用
-    execute if entity @s[team=red] at @e[tag=blue_marker_7,limit=1] run summon endermite ~ 0 ~ {attributes:[{id:"follow_range",base:100},{id:"minecraft:max_health",base:16.0d}],Health:16.0f,Team:red}
+    execute if entity @s[team=red] at @e[tag=blue_marker_7,limit=1] run summon endermite ~ 5 ~ {attributes:[{id:"follow_range",base:100},{id:"safe_fall_distance",base:7},{id:"minecraft:max_health",base:16.0d}],Health:16.0f,Team:red}
     #蓝队用
-    execute if entity @s[team=blue] at @e[tag=red_marker_7,limit=1] run summon endermite ~ 0 ~ {attributes:[{id:"follow_range",base:100},{id:"minecraft:max_health",base:16.0d}],Health:16.0f,Team:blue}
+    execute if entity @s[team=blue] at @e[tag=red_marker_7,limit=1] run summon endermite ~ 5 ~ {attributes:[{id:"follow_range",base:100},{id:"safe_fall_distance",base:7},{id:"minecraft:max_health",base:16.0d}],Health:16.0f,Team:blue}
 function kards:game/yongpaiku/xianjin/jiance/mobjiance
 scoreboard players add @s jiben 1
 item replace entity @s weapon.offhand with air

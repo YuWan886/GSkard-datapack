@@ -11,6 +11,8 @@ schedule clear kards:lobby/bossbar/color/3
 schedule clear kards:lobby/bossbar/color/4
 function kards:lobby/bossbar/color/1
 #注册计分项目
+scoreboard objectives add suanlawugujizhua dummy
+scoreboard objectives add random_suanlawugujizhua dummy
 scoreboard objectives add enchantment_linghundaji_maxhealth dummy
 scoreboard objectives add enchantment_linghundaji_damage_Time dummy
 scoreboard objectives add diaolingtaidao_damage_add dummy

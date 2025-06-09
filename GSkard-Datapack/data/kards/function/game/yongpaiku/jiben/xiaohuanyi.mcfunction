@@ -1,9 +1,9 @@
 execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[小幻翼]",color:"blue"}]
 
     #红队用
-   execute if entity @s[team=red] at @e[tag=blue_marker_7,limit=1] run summon minecraft:phantom ~ 5 ~ {size:4,attributes:[{id:"follow_range",base:100},{id:"minecraft:scale",base:0.4d}],Team:red}
+   execute if entity @s[team=red] at @e[tag=blue_marker_7,limit=1] run summon minecraft:phantom ~ 5 ~ {size:4,attributes:[{id:"follow_range",base:100},{id:"safe_fall_distance",base:7},{id:"minecraft:scale",base:0.4d}],Team:red}
     #蓝队用
-   execute if entity @s[team=blue] at @e[tag=red_marker_7,limit=1] run summon minecraft:phantom ~ 5 ~ {size:4,attributes:[{id:"follow_range",base:100},{id:"minecraft:scale",base:0.4d}],Team:blue}
+   execute if entity @s[team=blue] at @e[tag=red_marker_7,limit=1] run summon minecraft:phantom ~ 5 ~ {size:4,attributes:[{id:"follow_range",base:100},{id:"safe_fall_distance",base:7},{id:"minecraft:scale",base:0.4d}],Team:blue}
 function kards:game/yongpaiku/xianjin/jiance/mobjiance
 scoreboard players add @s jiben 1
 item replace entity @s weapon.offhand with air
