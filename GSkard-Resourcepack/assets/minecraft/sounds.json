@@ -19,16 +19,6 @@
             }
         ]
     },
-    "combat": {
-        "replace": true,
-        "sounds": [
-            {
-                "name": "music/combat",
-                "stream": true,
-                "volume": 0.5
-            }
-        ]
-    },
     "dxmd": {
         "replace": true,
         "sounds": [
@@ -39,95 +29,213 @@
             }
         ]
     },
-    "maze": {
-        "replace": true,
-        "sounds": [
-            {
-                "name": "music/maze",
-                "stream": true,
-                "volume": 0.5
-            }
-        ]
-    },
-    "memory": {
-        "replace": true,
-        "sounds": [
-            {
-                "name": "music/memory",
-                "stream": true,
-                "volume": 0.5
-            }
-        ]
-    },
-    "parkour": {
-        "replace": true,
-        "sounds": [
-            {
-                "name": "music/parkour",
-                "stream": true,
-                "volume": 0.5
-            }
-        ]
-    },
-    "precision": {
-        "replace": true,
-        "sounds": [
-            {
-                "name": "music/precision",
-                "stream": true,
-                "volume": 0.5
-            }
-        ]
-    },
-    "puzzle": {
-        "replace": true,
-        "sounds": [
-            {
-                "name": "music/puzzle",
-                "stream": true,
-                "volume": 0.5
-            }
-        ]
-    },
-    "speed": {
-        "replace": true,
-        "sounds": [
-            {
-                "name": "music/speed",
-                "stream": true,
-                "volume": 0.5
-            }
-        ]
-    },
-    "strategy": {
-        "replace": true,
-        "sounds": [
-            {
-                "name": "music/strategy",
-                "stream": true,
-                "volume": 0.5
-            }
-        ]
-    },
-    "survival": {
-        "replace": true,
-        "sounds": [
-            {
-                "name": "music/survival",
-                "stream": true,
-                "volume": 0.5
-            }
-        ]
-    },
-    "timing": {
-        "replace": true,
-        "sounds": [
-            {
-                "name": "music/timing",
-                "stream": true,
-                "volume": 0.5
-            }
-        ]
-    }
+    "sandwitch" : {
+		"sounds":[
+			{
+                "name":"music/custom/sandwitch",
+				"stream": true,
+				"volume": 0.5
+			}
+		]
+	},
+	"alert" : {
+		"sounds":[
+			{
+                "name":"music/custom/alert",
+				"stream": true,
+				"volume": 0.5
+			}
+		]
+	},
+	"bra" : {
+		"sounds":[
+			{
+                "name":"music/custom/bra",
+				"stream": true,
+				"volume": 0.5
+			}
+		]
+	},
+	"brmm" : {
+		"sounds":[
+			{
+                "name":"music/custom/brmm",
+				"stream": true,
+				"volume": 0.5
+			}
+		]
+	},
+	"dogdoing" : {
+		"sounds":[
+			{
+                "name":"music/custom/dogdoing",
+				"stream": true,
+				"volume": 0.5
+			}
+		]
+	},
+	"fart1" : {
+		"sounds":[
+			{
+                "name":"music/custom/fart1",
+				"stream": true,
+				"volume": 0.5
+			}
+		]
+	},
+	"fartreverb" : {
+		"sounds":[
+			{
+                "name":"music/custom/fartreverb",
+				"stream": true,
+				"volume": 0.5
+			}
+		]
+	},
+	"fnaf" : {
+		"sounds":[
+			{
+                "name":"music/custom/fnaf",
+				"stream": true,
+				"volume": 0.5
+			}
+		]
+	},
+	"haaa" : {
+		"sounds":[
+			{
+                "name":"music/custom/haaa",
+				"stream": true,
+				"volume": 0.5
+			}
+		]
+	},
+	"icecream" : {
+		"sounds":[
+			{
+                "name":"music/custom/icecream",
+				"stream": true,
+				"volume": 0.5
+			}
+		]
+	},
+	"torok" : {
+		"sounds":[
+			{
+                "name":"music/custom/torok",
+				"stream": true,
+				"volume": 0.5
+			}
+		]
+	},
+	"travis" : {
+		"sounds":[
+			{
+                "name":"music/custom/travis",
+				"stream": true,
+				"volume": 0.5
+			}
+		]
+	},
+	"tududududu" : {
+		"sounds":[
+			{
+                "name":"music/custom/tududududu",
+				"stream": true,
+				"volume": 0.5
+			}
+		]
+	},
+	"whatfall" : {
+		"sounds":[
+			{
+                "name":"music/custom/whatfall",
+				"stream": true,
+				"volume": 0.5
+			}
+		]
+	},
+	"whop" : {
+		"sounds":[
+			{
+                "name":"music/custom/whop",
+				"stream": true,
+				"volume": 0.5
+			}
+		]
+	},
+	"fortnite_death" : {
+		"sounds":[
+			{
+                "name":"music/custom/fortnite_death",
+				"stream": true,
+				"volume": 0.5
+			}
+		]
+	},
+	"throw" : {
+		"sounds":[
+			{
+                "name":"music/custom/throw",
+				"stream": true,
+				"volume": 0.5
+			}
+		]
+	},
+	"wilhelm_scream" : {
+		"sounds":[
+			{
+                "name":"music/custom/wilhelm_scream",
+				"stream": true,
+				"volume": 0.5
+			}
+		]
+	},
+	"punch" : {
+		"sounds":[
+			{
+                "name":"music/custom/punch1",
+				"stream": true,
+				"volume": 0.5
+			},
+			{
+                "name":"music/custom/punch2",
+				"stream": true,
+				"volume": 0.5
+			},
+			{
+                "name":"music/custom/punch3",
+				"stream": true,
+				"volume": 0.5
+			}
+		]
+	},
+	"itemdie" : {
+		"sounds":[
+			{
+                "name":"music/custom/itemdie",
+				"stream": true,
+				"volume": 0.5
+			}
+		]
+	},
+	"transform" : {
+		"sounds":[
+			{
+                "name":"music/custom/transform",
+				"stream": true,
+				"volume": 0.5
+			}
+		]
+	},
+	"grenade" : {
+		"sounds":[
+			{
+                "name":"music/custom/grenade",
+				"stream": true,
+				"volume": 0.5
+			}
+		]
+	}
 }
 
