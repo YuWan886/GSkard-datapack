@@ -20,7 +20,7 @@ scoreboard players set @a[tag=Ready] kardCountmax 10
 clear @a[tag=Ready]
 clear @a minecraft:ender_pearl
 #清非玩家生物
-kill @e[type=!player,type=!#kards:display]
+kill @e[type=!player,type=!#kards:display,type=!marker]
 #队伍
 team join Spectator @a[tag=Un_Ready] 
 team modify blue friendlyFire false
@@ -28,8 +28,6 @@ team modify red friendlyFire false
 #物品
 schedule function kards:game/start/wait_start 1t
 
-#重置陷阱
-function kards:game/yongpaiku/xianjin/reset
 #特殊
 
 #显示倒计时
@@ -39,8 +37,7 @@ bossbar set roundtime players @a
 #时间
 time set midnight
 #传送
-schedule function kards:game/start/tp 1t
-execute if score #system roundtime matches 0 run schedule clear kards:game/start/tp
+execute unless score #system roundtime matches 0 run function kards:game/start/tp
 #存储人数
 execute store result score #system r_number if entity @a[team=red]
 execute store result score #system b_number if entity @a[team=blue]

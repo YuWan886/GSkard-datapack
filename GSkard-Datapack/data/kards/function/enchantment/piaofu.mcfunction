@@ -7,4 +7,4 @@ execute if score @s enchantment_chance_piaofu matches 1..55 on attacker if items
 execute if score @s enchantment_chance_piaofu matches 1..70 on attacker if items entity @s weapon.mainhand #kards:jinzhanwuqi[enchantments~[{enchantments:'kards:piaofu',levels:4}]] run effect give @e[tag=enchantment_piaofu] levitation 5 1 true
 execute if score @s enchantment_chance_piaofu matches 1..85 on attacker if items entity @s weapon.mainhand #kards:jinzhanwuqi[enchantments~[{enchantments:'kards:piaofu',levels:{min:5}}]] run effect give @e[tag=enchantment_piaofu] levitation 10 4 true
 tag @s remove enchantment_piaofu
-advancement revoke @s only kards:enchantment/piaofu
+advancement revoke @s only kards:shenqi/tianshenshibanjia/enchantment/piaofu

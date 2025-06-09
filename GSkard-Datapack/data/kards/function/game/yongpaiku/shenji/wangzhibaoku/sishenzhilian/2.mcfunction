@@ -1,0 +1,1 @@
+$damage @s $(damage) kards:chujue by @p[tag=sishenzhilian_chujue_attacker]

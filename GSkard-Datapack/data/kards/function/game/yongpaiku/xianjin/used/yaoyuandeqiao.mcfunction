@@ -5,9 +5,9 @@ execute if entity @s[team=blue] if score @s pingbi matches 0 run tellraw @a[team
 execute if entity @s[team=blue] if score @s pingbi matches 0 run tellraw @a[team=red] [{selector:"@s"},{text: "使用了",color:"gold"},{text: "?????",color:"dark_aqua"}]
 
 #红
-execute if entity @s[team=red] run scoreboard players set 蓝队 xianjin_yaoyuandeqiao 2
+execute if entity @s[team=red] run scoreboard players set 红队 xianjin_yaoyuandeqiao 1
 #蓝
-execute if entity @s[team=blue] run scoreboard players set 红队 xianjin_yaoyuandeqiao 2
+execute if entity @s[team=blue] run scoreboard players set 蓝队 xianjin_yaoyuandeqiao 1
 item replace entity @s weapon.offhand with air
 scoreboard players operation @s kardCount -= #kard_yaoyuandeqiao kardCount
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1

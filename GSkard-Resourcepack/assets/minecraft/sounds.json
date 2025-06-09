@@ -18,6 +18,116 @@
                 "volume": 0.5
             }
         ]
+    },
+    "combat": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "music/combat",
+                "stream": true,
+                "volume": 0.5
+            }
+        ]
+    },
+    "dxmd": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "music/dxmd",
+                "stream": true,
+                "volume": 0.5
+            }
+        ]
+    },
+    "maze": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "music/maze",
+                "stream": true,
+                "volume": 0.5
+            }
+        ]
+    },
+    "memory": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "music/memory",
+                "stream": true,
+                "volume": 0.5
+            }
+        ]
+    },
+    "parkour": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "music/parkour",
+                "stream": true,
+                "volume": 0.5
+            }
+        ]
+    },
+    "precision": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "music/precision",
+                "stream": true,
+                "volume": 0.5
+            }
+        ]
+    },
+    "puzzle": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "music/puzzle",
+                "stream": true,
+                "volume": 0.5
+            }
+        ]
+    },
+    "speed": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "music/speed",
+                "stream": true,
+                "volume": 0.5
+            }
+        ]
+    },
+    "strategy": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "music/strategy",
+                "stream": true,
+                "volume": 0.5
+            }
+        ]
+    },
+    "survival": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "music/survival",
+                "stream": true,
+                "volume": 0.5
+            }
+        ]
+    },
+    "timing": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "music/timing",
+                "stream": true,
+                "volume": 0.5
+            }
+        ]
     }
 }
 

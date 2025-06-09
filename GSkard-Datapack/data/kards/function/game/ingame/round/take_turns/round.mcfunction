@@ -112,7 +112,6 @@ scoreboard players set @a[scores={CanuseKard=0}] use_kard 0
 function kards:game/ingame/round/take_turns/kmax
 scoreboard players reset 红队_讲述者
 scoreboard players reset 蓝队_讲述者
-function kards:game/yongpaiku/xianjin/jiance/roundjiance
 execute if score 红队 xianjin_youdi matches 1 run scoreboard players set 红队 xianjin_youdi 2
 execute if score 蓝队 xianjin_youdi matches 1 run scoreboard players set 蓝队 xianjin_youdi 2
 #设置天气为晴天
@@ -123,6 +122,8 @@ execute if score 回合数 GameRound = #system RoundCount run return run functio
 scoreboard players add 回合数 GameRound 1
 function kards:game/ingame/round/turns/panding
 #回合轮换之后生效
+#陷阱
+function kards:game/yongpaiku/xianjin/jiance/roundjiance
 #回合规则
 function kards:game/random_start/round_event
 #检测回合 事件通知

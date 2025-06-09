@@ -18,11 +18,11 @@ execute if score @s RunningTime_Min matches ..9 if score @s RunningTime_Sec matc
 execute if score @s RunningTime_Min matches 10.. if score @s RunningTime_Sec matches ..9 run tellraw @a [{selector:"@s"},{text:"完成了跑酷 "},{score:{name:"@s",objective:"RunningTime_Min"},color:"green"},{text: ".0",color:"green"},{score:{name:"@s",objective:"RunningTime_Sec"},color:"green"},{text: ".",color:"green"},{score:{name:"@s",objective:"RunningTime_Tick"},color:"green"}]
 execute if score @s RunningTime_Min matches 10.. if score @s RunningTime_Sec matches 10.. run tellraw @a [{selector:"@s"},{text:"完成了跑酷 "},{score:{name:"@s",objective:"RunningTime_Min"},color:"green"},{text: ".",color:"green"},{score:{name:"@s",objective:"RunningTime_Sec"},color:"green"},{text: ".",color:"green"},{score:{name:"@s",objective:"RunningTime_Tick"},color:"green"}]
 
-scoreboard players set @s RunningTime 0
-scoreboard players set @s RunningTime_All 0
-scoreboard players set @s RunningTime_Sec 0
-scoreboard players set @s RunningTime_Min 0
-scoreboard players set @s RunningTime_Tick 0
+scoreboard players reset @s RunningTime
+scoreboard players reset @s RunningTime_All
+scoreboard players reset @s RunningTime_Sec
+scoreboard players reset @s RunningTime_Min
+scoreboard players reset @s RunningTime_Tick
 execute at @s run summon firework_rocket ~ ~ ~
 tag @s remove Running
 tag @s add Un_Ready

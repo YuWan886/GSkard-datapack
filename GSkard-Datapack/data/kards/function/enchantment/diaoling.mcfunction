@@ -7,4 +7,4 @@ execute if score @s enchantment_chance_diaoling matches 1..50 on attacker if ite
 execute if score @s enchantment_chance_diaoling matches 1..60 on attacker if items entity @s weapon.mainhand #kards:jinzhanwuqi[enchantments~[{enchantments:'kards:diaoling',levels:4}]] run effect give @e[tag=enchantment_diaoling] wither 5 2 true
 execute if score @s enchantment_chance_diaoling matches 1..70 on attacker if items entity @s weapon.mainhand #kards:jinzhanwuqi[enchantments~[{enchantments:'kards:diaoling',levels:{min:5}}]] run effect give @e[tag=enchantment_diaoling] wither 10 4 true
 tag @s remove enchantment_diaoling
-advancement revoke @s only kards:enchantment/diaoling
+advancement revoke @s only kards:shenqi/tianshenshibanjia/enchantment/diaoling

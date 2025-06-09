@@ -5,5 +5,5 @@ execute if score @s tutengcishu matches 1.. run function kards:game/random_start
 execute if score @s shenjicishu matches 1.. run function kards:game/random_start/event/kuanghonglanzha/5
 execute if score @s zhuangbeicishu matches 1.. run function kards:game/random_start/event/kuanghonglanzha/6
 execute if score @s zuzhoucishu matches 1.. run function kards:game/random_start/event/kuanghonglanzha/7
-execute if score @s xianjingcishu matches 1.. run function kards:game/random_start/event/kuanghonglanzha/8
+execute if score @s xianjincishu matches 1.. run function kards:game/random_start/event/kuanghonglanzha/8
 execute if score @s jibencishu matches 1.. run function kards:game/random_start/event/kuanghonglanzha/9

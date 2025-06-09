@@ -128,7 +128,7 @@ scoreboard players set @a[tag=!wuxiuzhihuo] wuxiuzhihuo_juntuan 0
 scoreboard players set @a[tag=!wuxiuzhihuo] wuxiuzhihuo_fashu 0
 scoreboard players set @a[tag=!wuxiuzhihuo] wuxiuzhihuo_zuzhou 0
 scoreboard players set @a[tag=!wuxiuzhihuo] wuxiuzhihuo_zhuangbei 0
-scoreboard players set @a[tag=!wuxiuzhihuo] wuxiuzhihuo_xianjing 0
+scoreboard players set @a[tag=!wuxiuzhihuo] wuxiuzhihuo_xianjin 0
 scoreboard players set @a[tag=!wuxiuzhihuo] wuxiuzhihuo_tuteng 0
 scoreboard players set @a[tag=!wuxiuzhihuo] wuxiuzhihuo_shenji 0
 
@@ -137,7 +137,7 @@ execute as @a[tag=wuxiuzhihuo] if score @s wuxiuzhihuo_rongzhu matches 0 run sco
 execute as @a[tag=wuxiuzhihuo] if score @s wuxiuzhihuo_rongzhu matches 0 run scoreboard players set @s wuxiuzhihuo_fashu 0
 execute as @a[tag=wuxiuzhihuo] if score @s wuxiuzhihuo_rongzhu matches 0 run scoreboard players set @s wuxiuzhihuo_zuzhou 0
 execute as @a[tag=wuxiuzhihuo] if score @s wuxiuzhihuo_rongzhu matches 0 run scoreboard players set @s wuxiuzhihuo_zhuangbei 0
-execute as @a[tag=wuxiuzhihuo] if score @s wuxiuzhihuo_rongzhu matches 0 run scoreboard players set @s wuxiuzhihuo_xianjing 0
+execute as @a[tag=wuxiuzhihuo] if score @s wuxiuzhihuo_rongzhu matches 0 run scoreboard players set @s wuxiuzhihuo_xianjin 0
 execute as @a[tag=wuxiuzhihuo] if score @s wuxiuzhihuo_rongzhu matches 0 run scoreboard players set @s wuxiuzhihuo_tuteng 0
 execute as @a[tag=wuxiuzhihuo] if score @s wuxiuzhihuo_rongzhu matches 0 run scoreboard players set @s wuxiuzhihuo_shenji 0
 
@@ -146,7 +146,7 @@ execute as @a[tag=wuxiuzhihuo] if score @s wuxiuzhihuo_rongzhu matches 1 if scor
 execute as @a[tag=wuxiuzhihuo] if score @s wuxiuzhihuo_rongzhu matches 1 if score @s wuxiuzhihuo_fashu matches 1.. run function kards:game/yongpaiku/shenji/wangzhibaoku/wuxiuzhihuo/rongzhu/fashu
 execute as @a[tag=wuxiuzhihuo] if score @s wuxiuzhihuo_rongzhu matches 1 if score @s wuxiuzhihuo_zuzhou matches 1.. run function kards:game/yongpaiku/shenji/wangzhibaoku/wuxiuzhihuo/rongzhu/zuzhou
 execute as @a[tag=wuxiuzhihuo] if score @s wuxiuzhihuo_rongzhu matches 1 if score @s wuxiuzhihuo_zhuangbei matches 1.. run function kards:game/yongpaiku/shenji/wangzhibaoku/wuxiuzhihuo/rongzhu/zhuangbei
-execute as @a[tag=wuxiuzhihuo] if score @s wuxiuzhihuo_rongzhu matches 1 if score @s wuxiuzhihuo_xianjing matches 1.. run function kards:game/yongpaiku/shenji/wangzhibaoku/wuxiuzhihuo/rongzhu/xianjing
+execute as @a[tag=wuxiuzhihuo] if score @s wuxiuzhihuo_rongzhu matches 1 if score @s wuxiuzhihuo_xianjin matches 1.. run function kards:game/yongpaiku/shenji/wangzhibaoku/wuxiuzhihuo/rongzhu/xianjin
 execute as @a[tag=wuxiuzhihuo] if score @s wuxiuzhihuo_rongzhu matches 1 if score @s wuxiuzhihuo_tuteng matches 1.. run function kards:game/yongpaiku/shenji/wangzhibaoku/wuxiuzhihuo/rongzhu/tuteng
 execute as @a[tag=wuxiuzhihuo] if score @s wuxiuzhihuo_rongzhu matches 1 if score @s wuxiuzhihuo_shenji matches 1.. run function kards:game/yongpaiku/shenji/wangzhibaoku/wuxiuzhihuo/rongzhu/shenji
 
@@ -196,6 +196,8 @@ execute as @a[tag=fengbaozhanchui_xunengzhongji] unless score @s fengbaozhanchui
 #死神之镰
 execute as @a if items entity @s weapon.mainhand *[custom_data={kards:'死神之镰'}] run tag @s add sishenzhilian
 
+scoreboard players remove @a[scores={enchantment_linghundaji_damage_Time=1..}] enchantment_linghundaji_damage_Time 1
+
 execute as @a[tag=sishenzhilian] if score @s used_sishenzhilian matches 2.. run scoreboard players add @s HealBack 1
 execute as @a[tag=sishenzhilian] if score @s used_sishenzhilian matches 2.. run scoreboard players set @s used_sishenzhilian 0
 execute as @a[tag=sishenzhilian] unless items entity @s weapon.mainhand *[custom_data={kards:'死神之镰'}] run tag @s remove sishenzhilian
@@ -240,18 +242,22 @@ execute as @e[tag=marker_feixue,type=marker] at @s run function kards:game/yongp
 execute as @a[tag=yanyangdajian] if predicate kards:sneak unless score @s yanyangdajian_Time matches 1.. run scoreboard players add @s yangyandajian 1
 execute as @a[tag=yanyangdajian] unless predicate kards:sneak run scoreboard players reset @s yangyandajian
 execute as @a[tag=yanyangdajian] if score @s yangyandajian matches 50 run function kards:game/yongpaiku/shenji/wangzhibaoku/yanyangdajian/5
-scoreboard players add @a[scores={yanyangdajian_Time=1..}] yanyangdajian_Time 1
-execute as @a if score @s yanyangdajian_Time matches 0 run tellraw @s [{text:"[阳炎大剑]",color:"dark_red"},[{text:"焚烧之域",color:"#690101"},{text:"就绪!",color:"gold"}]]
+scoreboard players remove @a[scores={yanyangdajian_Time=1..}] yanyangdajian_Time 1
+
+execute as @a if score @s yanyangdajian_Time matches 0 run tellraw @s [{text:"[炎阳大剑]",color:"dark_red"},[{text:" 焚烧之域",color:"#690101"},{text:" 就绪!",color:"gold"}]]
 execute as @a if score @s yanyangdajian_Time matches 0 at @s run playsound minecraft:entity.blaze.hurt player @s ~ ~ ~ 100 0
+execute as @a if score @s yanyangdajian_Time matches 1 at @s run playsound minecraft:entity.blaze.hurt player @s ~ ~ ~ 100 1
+execute as @a if score @s yanyangdajian_Time matches 2..3 at @s run playsound minecraft:entity.blaze.hurt player @s ~ ~ ~ 100 2
+scoreboard players reset @a[scores={yanyangdajian_Time=0}] yanyangdajian_Time
 
 scoreboard players remove @a[scores={yangyandajian_fenshaozhiyu=1..}] yangyandajian_fenshaozhiyu 1
-
 execute as @a[scores={yangyandajian_fenshaozhiyu=1..}] at @s run particle lava ~ ~ ~ 2 0.1 2 1 5 force @a
+
 
 scoreboard players add @a[scores={yangyandajian_fenshaozhiyu=1..}] yangyandajian_fenshaozhiyu_damage 1
 execute as @a[scores={yangyandajian_fenshaozhiyu_damage=20}] run tag @s add yangyandajian_fenshaozhiyu_damage
-execute as @a[team=red,scores={yangyandajian_fenshaozhiyu_damage=20}] at @s as @e[team=blue,distance=..5] run damage @s 3 kards:huoyan by @p[team=red,tag=yangyandajian_fenshaozhiyu_damage]
-execute as @a[team=blue,scores={yangyandajian_fenshaozhiyu_damage=20}] at @s as @e[team=red,distance=..5] run damage @s 3 kards:huoyan by @p[team=blue,tag=yangyandajian_fenshaozhiyu_damage]
+execute as @a[team=red,scores={yangyandajian_fenshaozhiyu_damage=20}] at @s as @e[team=blue,distance=..5] run damage @s 2 kards:huoyan by @p[team=red,tag=yangyandajian_fenshaozhiyu_damage]
+execute as @a[team=blue,scores={yangyandajian_fenshaozhiyu_damage=20}] at @s as @e[team=red,distance=..5] run damage @s 2 kards:huoyan by @p[team=blue,tag=yangyandajian_fenshaozhiyu_damage]
 execute as @a[scores={yangyandajian_fenshaozhiyu_damage=20},tag=yangyandajian_fenshaozhiyu_damage] run tag @s remove yangyandajian_fenshaozhiyu_damage
 scoreboard players reset @a[scores={yangyandajian_fenshaozhiyu_damage=20}] yangyandajian_fenshaozhiyu_damage
 

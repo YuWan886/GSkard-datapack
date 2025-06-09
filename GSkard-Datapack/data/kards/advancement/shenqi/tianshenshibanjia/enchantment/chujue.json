@@ -1,0 +1,32 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "equipment": {
+              "mainhand": {
+                "predicates": {
+                  "minecraft:enchantments": [
+                    {
+                      "enchantments": "kards:chujue"
+                    }
+                  ]
+                }
+              },
+              "chest": {
+                "predicates": {
+                  "minecraft:custom_data": "{kards:'天神石板甲'}"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "kards:game/yongpaiku/shenji/wangzhibaoku/sishenzhilian/chujue"
+  }
+}

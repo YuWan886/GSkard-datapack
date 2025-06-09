@@ -258,13 +258,13 @@ execute as @e[type=!player,nbt={AngerTime:0}] run data modify entity @s AngerTim
 #蜜蜂
 execute as @e[type=bee] run data modify entity @s HasStung set value 0b
 #防止末影人等传送离开
-execute if score #system dituxuanze matches 1..100 as @e[team=red,type=minecraft:enderman] at @e[tag=b_dw] positioned ~ -1 ~ unless entity @s[dx=24,dz=24,dy=10] at @e[tag=7r] run tp @s ~ 0 ~
-execute if score #system dituxuanze matches 1..100 as @e[team=blue,type=minecraft:enderman] at @e[tag=r_dw] positioned ~ -1 ~ unless entity @s[dx=24,dz=24,dy=10] at @e[tag=7b] run tp @s ~ 0 ~
+execute if score #system dituxuanze matches 1..100 as @e[team=red,type=minecraft:enderman] at @e[tag=b_dw] positioned ~ -1 ~ unless entity @s[dx=24,dz=24,dy=10] at @e[tag=blue_marker_7,limit=1] run tp @s ~ 0 ~
+execute if score #system dituxuanze matches 1..100 as @e[team=blue,type=minecraft:enderman] at @e[tag=r_dw] positioned ~ -1 ~ unless entity @s[dx=24,dz=24,dy=10] at @e[tag=red_marker_7,limit=1] run tp @s ~ 0 ~
 execute if score #system dituxuanze matches 1..100 as @e[team=red,type=minecraft:shulker,tag=tuteng] at @e[tag=r_ttdw] positioned ~ -1 ~ unless entity @s[dx=4,dz=24,dy=1] at @e[tag=r_tuteng] run tp @s ~ 1 ~
 execute if score #system dituxuanze matches 1..100 as @e[team=blue,type=minecraft:shulker,tag=tuteng] at @e[tag=b_ttdw] positioned ~ -1 ~ unless entity @s[dx=4,dz=24,dy=1] at @e[tag=b_tuteng] run tp @s ~ 1 ~
 
-execute if score #system dituxuanze matches 101.. as @e[team=red,type=minecraft:enderman] at @e[tag=b_dw] positioned ~ -1 ~ unless entity @s[dx=34,dz=34,dy=10] at @e[tag=7r] run tp @s ~ 0 ~
-execute if score #system dituxuanze matches 101.. as @e[team=blue,type=minecraft:enderman] at @e[tag=r_dw] positioned ~ -1 ~ unless entity @s[dx=34,dz=34,dy=10] at @e[tag=7b] run tp @s ~ 0 ~
+execute if score #system dituxuanze matches 101.. as @e[team=red,type=minecraft:enderman] at @e[tag=b_dw] positioned ~ -1 ~ unless entity @s[dx=34,dz=34,dy=10] at @e[tag=blue_marker_7,limit=1] run tp @s ~ 0 ~
+execute if score #system dituxuanze matches 101.. as @e[team=blue,type=minecraft:enderman] at @e[tag=r_dw] positioned ~ -1 ~ unless entity @s[dx=34,dz=34,dy=10] at @e[tag=red_marker_7,limit=1] run tp @s ~ 0 ~
 execute if score #system dituxuanze matches 101.. as @e[team=red,type=minecraft:shulker,tag=tuteng] at @e[tag=r_ttdw] positioned ~ -1 ~ unless entity @s[dx=4,dz=34,dy=1] at @e[tag=r_tuteng] run tp @s ~ 1 ~
 execute if score #system dituxuanze matches 101.. as @e[team=blue,type=minecraft:shulker,tag=tuteng] at @e[tag=b_ttdw] positioned ~ -1 ~ unless entity @s[dx=4,dz=34,dy=1] at @e[tag=b_tuteng] run tp @s ~ 1 ~
 
@@ -323,7 +323,7 @@ execute as @e[tag=wuwangjiangshi,type=zombie,team=blue] if score @s in_wuwangjia
 execute as @e[tag=wuwangjiangshi,type=zombie] if score @s in_wuwangjiangshi matches 20 run scoreboard players set @s in_wuwangjiangshi 0
 
 #三人成众
-scoreboard players add @e[tag=large_slime] sanrenchengzhong 1
+execute as @e[tag=large_slime] unless data entity @s {NoAI:1b} run scoreboard players add @s sanrenchengzhong 1
 execute as @e[tag=large_slime] if score @s sanrenchengzhong matches 300 run function kards:game/yongpaiku/juntuan/sanrenchengzhong/2
 
 #尸帝

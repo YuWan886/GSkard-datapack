@@ -1,3 +1,3 @@
-scoreboard players remove @s xianjingcishu 1
+scoreboard players remove @s xianjincishu 1
 function kards:game/paiku/juntuan/baozhajuntuan
-execute if score @s xianjingcishu matches 1.. run function kards:game/random_start/event/kuanghonglanzha/8
+execute if score @s xianjincishu matches 1.. run function kards:game/random_start/event/kuanghonglanzha/8

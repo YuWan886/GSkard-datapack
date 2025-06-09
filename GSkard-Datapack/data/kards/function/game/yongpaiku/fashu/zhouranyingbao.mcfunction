@@ -5,13 +5,13 @@ scoreboard players remove @s[scores={kujie=1..}] kardCount 1
 scoreboard players set @s pingbi 0
 scoreboard players add @s use_kard 1
 function kards:game/yongpaiku/xianjin/jiance/fashujiance
-execute if entity @s[team=red] if score 红队 xianjin_shufashixiao matches 1 run return run scoreboard players set 红队 xianjin_shufashixiao 0
-execute if entity @s[team=blue] if score 蓝队 xianjin_shufashixiao matches 1 run return run scoreboard players set 蓝队 xianjin_shufashixiao 0
-execute if entity @s[team=red] if score 红队 xianjin_youdi matches 1 run return run scoreboard players set 红队 xianjin_youdi 0
-execute if entity @s[team=blue] if score 蓝队 xianjin_youdi matches 1 run return run scoreboard players set 蓝队 xianjin_youdi 0
+execute if entity @s[team=red,type=player] if score 红队 xianjin_shufashixiao matches 1 run return run scoreboard players set 红队 xianjin_shufashixiao 0
+execute if entity @s[team=blue,type=player] if score 蓝队 xianjin_shufashixiao matches 1 run return run scoreboard players set 蓝队 xianjin_shufashixiao 0
+execute if entity @s[team=red,type=player] if score 红队 xianjin_youdi matches 1 run return run scoreboard players set 红队 xianjin_youdi 0
+execute if entity @s[team=blue,type=player] if score 蓝队 xianjin_youdi matches 1 run return run scoreboard players set 蓝队 xianjin_youdi 0
 
 #红
-execute if entity @s[team=red] as @e[tag=7r] at @s run summon creeper ~ 0 ~ {Team:red,ExplosionRadius:4,Fuse:10,attributes:[{id:"follow_range",base:100},{id:"max_health",base:30.0d}],Health:30.0f}
+execute if entity @s[team=red] at @e[tag=blue_marker_7,limit=1] run summon creeper ~ 0 ~ {Team:red,ExplosionRadius:4,Fuse:10,attributes:[{id:"follow_range",base:100},{id:"max_health",base:30.0d}],Health:30.0f}
 #蓝
-execute if entity @s[team=blue] as @e[tag=7b] at @s run summon creeper ~ 0 ~ {Team:blue,ExplosionRadius:4,Fuse:10,attributes:[{id:"follow_range",base:100},{id:"max_health",base:30.0d}],Health:30.0f}
+execute if entity @s[team=blue] at @e[tag=red_marker_7,limit=1] run summon creeper ~ 0 ~ {Team:blue,ExplosionRadius:4,Fuse:10,attributes:[{id:"follow_range",base:100},{id:"max_health",base:30.0d}],Health:30.0f}
 

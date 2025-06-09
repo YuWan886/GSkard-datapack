@@ -5,5 +5,5 @@ execute as @s if score @s random matches 56..65 run scoreboard players add @s tu
 execute as @s if score @s random matches 66..85 run scoreboard players add @s fashucishu 1
 execute as @s if score @s random matches 86..90 run scoreboard players add @s shenjicishu 1
 execute as @s if score @s random matches 91..100 run scoreboard players add @s zuzhoucishu 1
-execute as @s if score @s random matches 101..110 run scoreboard players add @s xianjingcishu 1
+execute as @s if score @s random matches 101..110 run scoreboard players add @s xianjincishu 1
 scoreboard players set @s random 0

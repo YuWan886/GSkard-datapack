@@ -5,5 +5,5 @@ execute as @a[scores={CanuseKard=1}] run function kards:game/ingame/use_kard/fas
 execute as @a[scores={CanuseKard=1}] run function kards:game/ingame/use_kard/tuteng
 execute as @a[scores={CanuseKard=1}] run function kards:game/ingame/use_kard/shenji
 execute as @a[scores={CanuseKard=1}] run function kards:game/ingame/use_kard/zuzhou
-execute as @a[scores={CanuseKard=1}] run function kards:game/ingame/use_kard/xianjing
+execute as @a[scores={CanuseKard=1}] run function kards:game/ingame/use_kard/xianjin
 execute as @a run function kards:game/ingame/use_kard/yansheng

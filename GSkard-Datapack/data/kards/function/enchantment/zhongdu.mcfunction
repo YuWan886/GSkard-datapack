@@ -7,4 +7,4 @@ execute if score @s enchantment_chance_zhongdu matches 1..75 on attacker if item
 execute if score @s enchantment_chance_zhongdu matches 1..90 on attacker if items entity @s weapon.mainhand #kards:jinzhanwuqi[enchantments~[{enchantments:'kards:zhongdu',levels:4}]] run effect give @e[tag=enchantment_zhongdu] poison 5 1 true
 execute if score @s enchantment_chance_zhongdu matches 1..100 on attacker if items entity @s weapon.mainhand #kards:jinzhanwuqi[enchantments~[{enchantments:'kards:zhongdu',levels:{min:5}}]] run effect give @e[tag=enchantment_zhongdu] poison 10 4 true
 tag @s remove enchantment_zhongdu
-advancement revoke @s only kards:enchantment/zhongdu
+advancement revoke @s only kards:shenqi/tianshenshibanjia/enchantment/zhongdu

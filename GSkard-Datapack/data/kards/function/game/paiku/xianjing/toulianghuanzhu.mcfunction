@@ -1,3 +1,0 @@
-
-give @s music_disc_wait[item_name=[{text: "6K",color:"aqua"},{text: " 偷梁换柱",color:"dark_aqua"}],lore=[{text: "陷阱卡",color:"dark_aqua",italic:false},{text: "使用后埋下陷阱 敌方在达到条件时触发 触发后失效",color:"gray",italic:false},[{text: "条件：敌方回合结束时",color:"gray",italic:false}],[{text: "触发：记录对方",color:"gray",italic:false},{text: "K最多的玩家的剩余K",color: "gold",italic:false},{text: " 下回合开始时将其",color: "gray",italic:false},{text: "平均分配给已方所有玩家",color: "gold",italic:false},{text: "(每名玩家最多6K 不取余数)",color: "dark_gray",italic:true}]],jukebox_playable="minecraft:pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'偷梁换柱'},tooltip_style="kard/trap"]
-scoreboard players set #kard_toulianghuanzhu kardCount 6

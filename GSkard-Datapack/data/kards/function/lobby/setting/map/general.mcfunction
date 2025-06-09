@@ -1,18 +1,15 @@
-execute if score #system dituxuanze matches ..0 run scoreboard players set #system dituxuanze 8
-execute if score #system dituxuanze matches 1 run clone 5 -60 -71 13 -52 -63 76 226 -45
-execute if score #system dituxuanze matches 2 run clone 17 -60 -71 25 -52 -63 76 226 -45
-execute if score #system dituxuanze matches 3 run clone 29 -60 -71 37 -52 -63 76 226 -45
-execute if score #system dituxuanze matches 4 run clone 41 -60 -71 49 -52 -63 76 226 -45
-execute if score #system dituxuanze matches 5 run clone 53 -60 -71 61 -52 -63 76 226 -45
-execute if score #system dituxuanze matches 6 run clone 65 -60 -71 73 -52 -63 76 226 -45
-execute if score #system dituxuanze matches 7 run clone 77 -60 -71 85 -52 -63 76 226 -45
-execute if score #system dituxuanze matches 8 run clone 89 -60 -71 97 -52 -63 76 226 -45
+execute if score #system dituxuanze matches 1 run clone 5 -60 -71 13 -47 -63 76 226 -45
+execute if score #system dituxuanze matches 2 run clone 17 -60 -71 25 -47 -63 76 226 -45
+execute if score #system dituxuanze matches 3 run clone 29 -60 -71 37 -47 -63 76 226 -45
+execute if score #system dituxuanze matches 4 run clone 41 -60 -71 49 -47 -63 76 226 -45
+execute if score #system dituxuanze matches 5 run clone 53 -60 -71 61 -47 -63 76 226 -45
+execute if score #system dituxuanze matches 6 run clone 65 -60 -71 73 -47 -63 76 226 -45
+execute if score #system dituxuanze matches 7 run clone 77 -60 -71 85 -47 -63 76 226 -45
+execute if score #system dituxuanze matches 8 run clone 89 -60 -71 97 -47 -63 76 226 -45
+execute if score #system dituxuanze matches 9 run clone 113 -60 -71 121 -47 -63 76 226 -45
 
-execute if score #system dituxuanze matches 9..100 run scoreboard players set #system dituxuanze 101
+execute if score #system dituxuanze matches 101 run clone 101 -60 -71 109 -47 -63 76 226 -45
 
-execute if score #system dituxuanze matches 101 run clone 101 -60 -71 109 -52 -63 76 226 -45
-
-execute if score #system dituxuanze matches 102.. run scoreboard players set #system dituxuanze 1
 
 execute unless entity @e[type=block_display,tag=map] run summon block_display 83 228.2 -35 {block_state:{Name:"minecraft:crying_obsidian"},Tags:["map","spawn"]}
 data modify entity @e[tag=map,type=block_display,limit=1] transformation.left_rotation set value {angle:54.74f,axis:[-1.0f,0.0f,1.0f]}

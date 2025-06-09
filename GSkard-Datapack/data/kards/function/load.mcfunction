@@ -11,6 +11,8 @@ schedule clear kards:lobby/bossbar/color/3
 schedule clear kards:lobby/bossbar/color/4
 function kards:lobby/bossbar/color/1
 #注册计分项目
+scoreboard objectives add enchantment_linghundaji_maxhealth dummy
+scoreboard objectives add enchantment_linghundaji_damage_Time dummy
 scoreboard objectives add diaolingtaidao_damage_add dummy
 scoreboard objectives add Fire_wait dummy
 scoreboard objectives add yangyandajian_fenshaozhiyu_damage dummy
@@ -150,7 +152,7 @@ scoreboard objectives add jibencishu dummy
 scoreboard objectives add juntuancishu dummy
 scoreboard objectives add zhuangbeicishu dummy
 scoreboard objectives add shenjicishu dummy
-scoreboard objectives add xianjingcishu dummy
+scoreboard objectives add xianjincishu dummy
 scoreboard objectives add zuzhoucishu dummy
 scoreboard objectives add tutengcishu dummy
 scoreboard objectives add changhuan_times dummy
@@ -210,7 +212,7 @@ scoreboard objectives add wuxiuzhihuo_throw minecraft.dropped:minecraft.lantern
 scoreboard objectives add wuxiuzhihuo_jiben minecraft.dropped:minecraft.music_disc_mall
 scoreboard objectives add wuxiuzhihuo_juntuan minecraft.dropped:minecraft.music_disc_cat
 scoreboard objectives add wuxiuzhihuo_fashu minecraft.dropped:minecraft.music_disc_mellohi
-scoreboard objectives add wuxiuzhihuo_xianjing minecraft.dropped:minecraft.music_disc_wait
+scoreboard objectives add wuxiuzhihuo_xianjin minecraft.dropped:minecraft.music_disc_wait
 scoreboard objectives add wuxiuzhihuo_zhuangbei minecraft.dropped:minecraft.music_disc_13
 scoreboard objectives add wuxiuzhihuo_tuteng minecraft.dropped:minecraft.music_disc_blocks
 scoreboard objectives add wuxiuzhihuo_zuzhou minecraft.dropped:minecraft.music_disc_stal
