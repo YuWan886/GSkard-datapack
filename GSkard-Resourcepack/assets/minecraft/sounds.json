@@ -19,6 +19,16 @@
             }
         ]
     },
+	"entity.player.death": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "music/death",
+                "stream": true,
+                "volume": 0.5
+            }
+        ]
+    },
     "dxmd": {
         "replace": true,
         "sounds": [
@@ -33,6 +43,15 @@
 		"sounds":[
 			{
                 "name":"music/custom/sandwitch",
+				"stream": true,
+				"volume": 0.5
+			}
+		]
+	},
+	"bowomp" : {
+		"sounds":[
+			{
+                "name":"music/custom/bowomp",
 				"stream": true,
 				"volume": 0.5
 			}
@@ -232,6 +251,15 @@
 		"sounds":[
 			{
                 "name":"music/custom/grenade",
+				"stream": true,
+				"volume": 0.5
+			}
+		]
+	},
+	"oiiaioooooiai":{
+		"sounds": [
+			{
+                "name":"music/custom/oiiaioooooiai",
 				"stream": true,
 				"volume": 0.5
 			}
