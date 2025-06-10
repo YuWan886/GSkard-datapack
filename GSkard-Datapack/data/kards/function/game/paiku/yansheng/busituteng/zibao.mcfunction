@@ -1,0 +1,1 @@
+give @s minecraft:totem_of_undying[custom_name={italic:false,text: "自爆图腾",color:"red"},lore=[{text: "在死亡时自爆",color:"gray",italic:false},{text: "对周围所有生物造成35♥无差别伤害",color:"gray",italic:false}],custom_data={kards:'自爆图腾'}]

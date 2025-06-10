@@ -1,0 +1,1 @@
+give @s minecraft:totem_of_undying[custom_name={italic:false,text: "火焰图腾",color:"red"},lore=[{text: "在拥有原版不死图腾效能基础上",color:"gray",italic:false},{text: "还会永久点燃5格内敌对生物(玩家改为点燃15s)",color:"gray",italic:false}],custom_data={kards:'火焰图腾'}]

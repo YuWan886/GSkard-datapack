@@ -1,0 +1,1 @@
+ give @s minecraft:totem_of_undying[custom_name={italic:false,text: "生命图腾",color:"green"},lore=[{text: "在拥有原版不死图腾效能基础上",color:"gray",italic:false},{text: "还会获得更多额外生命 以及60s生命回复",color:"gray",italic:false}],custom_data={kards:'生命图腾'}]
