@@ -40,7 +40,10 @@ execute if score #system Color matches 20 run scoreboard players set #system Col
 
 #oiiaioiiiiai
 #scoreboard players add #system oiiaioiiiiai 1
-execute as @e[type=cat,name=Oiiaioiiiiai] at @s run tp @s ~ ~ ~ ~50 ~
+execute as @e[type=cat,tag=Oiiaioiiiiai] at @s run rotate @s ~50 ~30
+execute as @e[type=cat,tag=Oiiaioiiiiai] if data entity @s {OnGround:1b} run data modify entity @s Motion set value [0f,1f,0f]
+effect give @e[type=cat,tag=Oiiaioiiiiai] instant_health 1 0 true
+
 #测试用
 #function kards:game/ingame/general
 

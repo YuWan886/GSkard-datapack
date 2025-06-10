@@ -3,4 +3,4 @@ execute as @a[team=red,gamemode=adventure] run scoreboard players operation @s q
 scoreboard players reset @a[team=red] use_kard 
 execute as @a[team=red,gamemode=adventure] run function kards:game/yongpaiku/xianjin/chufa/qinglvqianmou
 tellraw @a [{text: "红队",color: "red"},{text: "触发了",color: "gray"},{text: "<轻虑浅谋>",color: "dark_aqua",hover_event:{action:"show_text",value:"触发时让触发者队伍所有玩家扣除等同于本回合内使用卡牌数量的血量"}}]
-playsound minecraft:block.beacon.activate master @s ~ ~ ~ 1 1
+execute as @a at @s run playsound minecraft:dogdoing master @s ~ ~ ~ 1 1

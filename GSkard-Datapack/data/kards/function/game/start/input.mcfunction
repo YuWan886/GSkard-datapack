@@ -27,9 +27,6 @@ team modify blue friendlyFire false
 team modify red friendlyFire false
 #物品
 schedule function kards:game/start/wait_start 1t
-
-#特殊
-
 #显示倒计时
 bossbar set minecraft:roundtime visible true
 execute if score #system roundtime matches 0 run bossbar set roundtime visible false
@@ -48,6 +45,4 @@ tag @a remove jishengnianye
 #叮叮叮
 execute as @a at @s run playsound minecraft:entity.player.levelup master @s ~ ~ ~ 100 1
 #音乐
-execute as @a at @s run stopsound @s
-#execute as @a at @s run playsound minecraft:kards_music master @s ~ ~ ~ 100 1
-#tellraw @a [{text: "正在播放音乐~可使用",color: "green"},{text: "/trigger stopsound",color: "gold"},{text: "或是使用",color: "green"},{text: "/trigger music_kards",color: "gold"},{text: "以更换音乐",color: "green"}]
+stopsound @a

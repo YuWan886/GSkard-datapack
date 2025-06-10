@@ -5,7 +5,7 @@
             "conditions": {
                 "entity": {
                     "type": "minecraft:pig",
-                    "nbt": "{Tags:[\"琉璃夜\"]}"
+                    "nbt": "{Tags:[\"Hart_liuli\"]}"
                 }
             }
         }

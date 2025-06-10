@@ -25,8 +25,7 @@ scoreboard players reset * tongji_hurt
 bossbar set minecraft:worldborder visible false
 worldborder set 59999968
 scoreboard players set #system worldborder -1
-#重置陷阱
-function kards:game/yongpaiku/xianjin/reset
+
 #设置游戏状态为0(关闭)
 scoreboard players set #system GameStatus 0
 #重置回合数
@@ -68,6 +67,9 @@ tag @a remove jishengnianye
 tag @a remove TouXiang
 tag @a remove linghunshouge
 tag @a remove jinzijue
+#重置陷阱
+scoreboard players reset 红队
+scoreboard players reset 蓝队
 #重置属性
 execute as @a run attribute @s minecraft:max_health modifier remove 0-0-1
 execute as @a run attribute @s minecraft:max_health modifier remove 0-0-2
@@ -127,6 +129,7 @@ schedule clear kards:game/ingame/round/pvpround/countdown
 #停止音乐
 execute as @a at @s run stopsound @s
 #概率生成oiiao
-execute if predicate kards:random0.01 run summon minecraft:cat 70 227 -20 {NoAI:1b,Invulnerable:1b,variant:"minecraft:all_black",CustomName:"Oiiaioiiiiai",Silent:1b}
+execute if predicate kards:random0.01 run schedule function kards:game/end/oiia 1s
+
 #生成琉璃夜
-summon minecraft:pig 62 226 -26 {Tags:["琉璃夜"],attributes:[{id:"max_health",base:200}],Health:200,CustomName:[{text:"Hart_liuli",bold:true,color:"gold"}],CustomNameVisible:true}
+summon minecraft:pig 62 226 -26 {Tags:["Hart_liuli"],attributes:[{id:"max_health",base:200}],Health:200,CustomName:[{text:"Hart_liuli",bold:true,color:"gold"}],CustomNameVisible:true}

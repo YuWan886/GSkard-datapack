@@ -1,33 +1,10 @@
 #侦测贝
-execute if entity @s[team=red] if entity @e[tag=tuteng,team=red,type=shulker] run return fail
-execute if entity @s[team=blue] if entity @e[tag=tuteng,team=blue,type=shulker] run return fail
+execute if entity @s[team=red] if entity @e[tag=tuteng,team=red,type=shulker] run return run damage @n[tag=tuteng,team=red,type=shulker] 2 out_of_world
+execute if entity @s[team=blue] if entity @e[tag=tuteng,team=blue,type=shulker] run return run damage @n[tag=tuteng,team=blue,type=shulker] 2 out_of_world
 #来自深处
-execute if entity @s[team=red] if score 红队 xianjin_laizishenchu matches 1 run scoreboard players add @a[team=blue] HealBack 32
-execute if entity @s[team=red] if score 红队 xianjin_laizishenchu matches 1 run tellraw @a [{selector: "@s"},{text: "触发了",color: "gray"},{text: "<来自深处>",color: "dark_aqua",hover_event:{action:"show_text",value:"触发时让使用该陷阱牌队伍所有玩家回复血量16♥"}}]
-execute if entity @s[team=red] if score 红队 xianjin_laizishenchu matches 1 as @a at @s run playsound minecraft:entity.witch.celebrate master @s ~ ~ ~ 100 0
-execute if entity @s[team=red] if score 红队 xianjin_laizishenchu matches 1 run scoreboard players set 红队 xianjin_laizishenchu 0
+execute if entity @s[team=red] if score 红队 xianjin_laizishenchu matches 1 at @s run function kards:game/yongpaiku/xianjin/chufa/laizishenchu
+execute if entity @s[team=blue] if score 蓝队 xianjin_laizishenchu matches 1 at @s run function kards:game/yongpaiku/xianjin/chufa/laizishenchu
 
-execute if entity @s[team=blue] if score 蓝队 xianjin_laizishenchu matches 1 run scoreboard players add @a[team=red] HealBack 32
-execute if entity @s[team=blue] if score 蓝队 xianjin_laizishenchu matches 1 run tellraw @a [{selector: "@s"},{text: "触发了",color: "gray"},{text: "<来自深处>",color: "dark_aqua",hover_event:{action:"show_text",value:"触发时让使用该陷阱牌队伍所有玩家回复血量16♥"}}]
-execute if entity @s[team=blue] if score 蓝队 xianjin_laizishenchu matches 1 as @a at @s run playsound minecraft:entity.witch.celebrate master @s ~ ~ ~ 100 0
-execute if entity @s[team=blue] if score 蓝队 xianjin_laizishenchu matches 1 run scoreboard players set 蓝队 xianjin_laizishenchu 0
 #千钧一发
-execute if entity @s[team=red] if score 红队 xianjin_qianjunyifa matches 1 positioned as @e[limit=1,tag=r_dw] as @e[type=!player,tag=!tuteng,dx=24,dz=24,dy=255,type=!creaking] run data modify entity @s NoAI set value 0b
-execute if entity @s[team=red] if score 红队 xianjin_qianjunyifa matches 1 positioned as @e[limit=1,tag=r_dw] as @e[type=!player,tag=!tuteng,dx=24,dz=24,dy=255,type=!creaking] run data modify entity @s Invulnerable set value 0b
-execute if entity @s[team=red] if score 红队 xianjin_qianjunyifa matches 1 run team join blue @e[tag=!tuteng,type=!minecraft:player,type=!#kards:display,type=!item,type=!creaking]
-execute if entity @s[team=red] if score 红队 xianjin_qianjunyifa matches 1 run tellraw @a [{selector: "@s"},{text: "触发了",color: "gray"},{text: "<千钧一发>",color: "dark_aqua",hover_event:{action:"show_text",value:"触发时让使用该陷阱牌队伍场地所有敌对怪物传送至触发者队伍场地"}}]
-execute if entity @s[team=red] if score 红队 xianjin_qianjunyifa matches 1 at @e[tag=red_marker_7,limit=1] run tp @e[type=!minecraft:player,tag=!tuteng,team=blue,type=!minecraft:marker,type=!item,type=!creaking] ~ 5 ~
-execute as @e[type=!player,dx=24,dz=24,dy=255,type=!creaking] run data modify entity @s NoAI set value 1b
-execute as @e[type=!player,dx=24,dz=24,dy=255,type=!creaking] run data modify entity @s Invulnerable set value 1b
-
-execute if entity @s[team=red] if score 红队 xianjin_qianjunyifa matches 1 as @a at @s run playsound minecraft:entity.witch.celebrate master @s ~ ~ ~ 100 0
-execute if entity @s[team=red] if score 红队 xianjin_qianjunyifa matches 1 run scoreboard players set 红队 xianjin_qianjunyifa 0
-
-execute if entity @s[team=blue] if score 红队 xianjin_qianjunyifa matches 1 positioned as @e[limit=1,tag=b_dw] as @e[type=!player,tag=!tuteng,dx=24,dz=24,dy=255,type=!creaking] run data modify entity @s NoAI set value 0b
-execute if entity @s[team=blue] if score 红队 xianjin_qianjunyifa matches 1 positioned as @e[limit=1,tag=b_dw] as @e[type=!player,tag=!tuteng,dx=24,dz=24,dy=255,type=!creaking] run data modify entity @s Invulnerable set value 0b
-execute if entity @s[team=blue] if score 蓝队 xianjin_qianjunyifa matches 1 run team join red @e[tag=!tuteng,type=!minecraft:player,type=!#kards:display,type=!item,type=!creaking]
-execute if entity @s[team=blue] if score 蓝队 xianjin_qianjunyifa matches 1 run tellraw @a [{selector: "@s"},{text: "触发了",color: "gray"},{text: "<千钧一发>",color: "dark_aqua",hover_event:{action:"show_text",value:"触发时让使用该陷阱牌队伍场地所有敌对怪物传送至触发者队伍场地"}}]
-execute if entity @s[team=blue] if score 蓝队 xianjin_qianjunyifa matches 1 at @e[tag=blue_marker_7,limit=1] run tp @e[type=!minecraft:player,tag=!tuteng,team=red,type=!minecraft:marker,type=!item,type=!creaking] ~ 5 ~
-
-execute if entity @s[team=blue] if score 蓝队 xianjin_qianjunyifa matches 1 as @a at @s run playsound minecraft:entity.witch.celebrate master @s ~ ~ ~ 100 0
-execute if entity @s[team=blue] if score 蓝队 xianjin_qianjunyifa matches 1 run scoreboard players set 蓝队 xianjin_qianjunyifa 0
+execute if entity @s[team=red] if score 红队 xianjin_qianjunyifa matches 1 at @s run function kards:game/yongpaiku/xianjin/chufa/qianjunyifa
+execute if entity @s[team=blue] if score 蓝队 xianjin_qianjunyifa matches 1 at @s run function kards:game/yongpaiku/xianjin/chufa/qianjunyifa

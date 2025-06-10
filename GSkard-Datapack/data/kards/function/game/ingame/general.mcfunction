@@ -41,6 +41,9 @@ execute as @a positioned -219 -65 -173 unless entity @s[dx=19,dz=18,dy=25,gamemo
 function kards:game/yongpaiku/zhuangbei/general
 #破碎
 scoreboard players remove @a[tag=PoSui,scores={PoSui=1..}] PoSui 1
+
+execute as @a[tag=PoSui,scores={PoSui=1..}] at @s run particle enchanted_hit ~ ~2.3 ~ 0.2 0 0.2 0 4 force @a
+
 execute as @a[tag=PoSui,scores={PoSui=0}] run attribute @s armor modifier remove 0-0-2
 execute as @a[tag=PoSui,scores={PoSui=0}] run attribute @s armor_toughness modifier remove 0-0-2
 execute as @a[tag=PoSui,scores={PoSui=0}] run tag @s remove PoSui
@@ -62,39 +65,45 @@ title @a[tag=XuanYun,scores={XuanYun=0}] title {text: ""}
 scoreboard players reset @e[scores={XuanYun=0}] XuanYun
 tag @e[tag=XuanYun,scores={XuanYun=0}] remove XuanYun
 
+scoreboard players reset @a[gamemode=spectator,tag=XuanYun] XuanYun
+tag @a[gamemode=spectator,tag=XuanYun] remove XuanYun
 #旋转
 scoreboard players remove @a[tag=XuanZhuan,scores={XuanZhuan=1..}] XuanZhuan 1
 execute as @a[tag=XuanZhuan,scores={XuanZhuan=1..}] at @s run rotate @s ~50 ~
 
 tag @a[tag=XuanZhuan,scores={XuanZhuan=0}] remove XuanZhuan
+
+scoreboard players reset @a[gamemode=spectator,tag=XuanZhuan] XuanZhuan
+tag @a[gamemode=spectator,tag=XuanZhuan] remove XuanZhuan
 #断腿
 scoreboard players remove @a[tag=DuanTui,scores={DuanTui=1..}] DuanTui 1
 execute as @a[tag=DuanTui,scores={DuanTui=1..}] run attribute @s minecraft:jump_strength modifier add 0-0-2 -100 add_value
-execute as @a[tag=DuanTui,scores={DuanTui=1..}] run effect clear @s jump_boost
 execute as @a[tag=DuanTui,scores={DuanTui=0}] run attribute @s minecraft:jump_strength modifier remove 0-0-2
 tag @a[tag=DuanTui,scores={DuanTui=0}] remove DuanTui
 
+scoreboard players reset @a[gamemode=spectator,tag=DuanTui] DuanTui
+tag @a[gamemode=spectator,tag=DuanTui] remove DuanTui
 #冰冻
-effect give @a[tag=bingdongtuteng] absorption 60 4 true
-execute at @a[tag=bingdongtuteng,team=red] run scoreboard players add @e[team=blue,distance=..5] DongJie 200
-execute at @a[tag=bingdongtuteng,team=blue] run scoreboard players add @e[team=red,distance=..5] DongJie 200
-execute at @a[tag=bingdongtuteng] run playsound minecraft:entity.player.hurt_freeze player @s ~ ~ ~ 100 0
-execute at @a[tag=bingdongtuteng,team=red] run tag @e[team=blue,distance=..5] add DongJie
-execute at @a[tag=bingdongtuteng,team=blue] run tag @e[team=red,distance=..5] add DongJie
+execute as @e[tag=DongJie,scores={DongJie=1..}] at @s run particle snowflake ~ ~ ~ 0.2 2 0.2 0 1 force @a
 
 scoreboard players remove @e[tag=DongJie,scores={DongJie=1..}] DongJie 1
 effect give @e[tag=DongJie,scores={DongJie=1..}] slowness 1 100 true
 effect give @e[tag=DongJie,scores={DongJie=1..}] weakness 1 128 true
 execute as @a[tag=DongJie,scores={DongJie=1..}] run attribute @s minecraft:jump_strength modifier add 0-0-3 -100 add_value
-execute as @a[tag=DongJie,scores={DongJie=1..}] run effect clear @s jump_boost
 title @a[tag=DongJie,scores={DongJie=1..}] times 0t 1s 0t
 title @a[tag=DongJie,scores={DongJie=1..}] title {text: "冻结中...",color:"aqua",bold:true}
-execute as @a[tag=DongJie,scores={DongJie=0}] run attribute @s minecraft:jump_strength modifier remove 0-0-3
+execute as @e[tag=DongJie,scores={DongJie=0}] run attribute @s minecraft:jump_strength modifier remove 0-0-3
 effect clear @e[tag=DongJie,scores={DongJie=0}] slowness
 effect clear @e[tag=DongJie,scores={DongJie=0}] weakness
 title @a[tag=DongJie,scores={DongJie=0}] title {text: ""}
 tag @e[tag=DongJie,scores={DongJie=0}] remove DongJie
-tag @a[tag=bingdongtuteng] remove bingdongtuteng
+
+scoreboard players add @a[tag=DongJie,scores={DongJie=1..}] DongJie_damage 1
+execute as @a[tag=DongJie,scores={DongJie_damage=25}] run damage @s 5 freeze
+scoreboard players reset @a[tag=DongJie,scores={DongJie_damage=25}] DongJie_damage
+
+scoreboard players reset @a[gamemode=spectator,tag=DongJie] DongJie
+tag @a[gamemode=spectator,tag=DongJie] remove DongJie
 #火焰
 scoreboard players remove @e[tag=Fire,scores={Fire=1..}] Fire 1
 title @a[tag=Fire] actionbar {text: "你被点燃了",color:"red"}
@@ -106,6 +115,10 @@ execute as @e[scores={Fire_take_damage=10}] run scoreboard players set @s Fire_t
 
 tag @e[scores={Fire=0}] remove Fire
 scoreboard players reset @e[scores={Fire=0}] Fire
+
+scoreboard players reset @a[gamemode=spectator,tag=Fire] Fire
+tag @a[gamemode=spectator,tag=Fire] remove Fire
+
 #不死图腾
 function kards:game/yongpaiku/yansheng/totem/general
 #监守者bossbar
@@ -162,16 +175,16 @@ execute as @a if score @s qinglvqianmou matches 1 if score @s use_kard matches 1
 execute as @a if score @s qinglvqianmou matches 1 if score @s use_kard matches 1.. run scoreboard players remove @s use_kard 1
 execute as @a if score @s qinglvqianmou matches 1 if score @s use_kard matches 0 run scoreboard players set @s qinglvqianmou 0
 #检测旁观玩家高度/限高
-execute as @a[gamemode=spectator] if score #system dituxuanze matches 1 positioned -33 0.00 3 if score #system GameStatus matches 1 if entity @s unless entity @s[dz=60,dy=7.2,dx=41] at @s run tp @r[gamemode=adventure]
-execute as @a[gamemode=spectator] if score #system dituxuanze matches 2 positioned -188 0.00 4 if score #system GameStatus matches 1 if entity @s unless entity @s[dz=67,dy=7.2,dx=45] at @s run tp @r[gamemode=adventure]
-execute as @a[gamemode=spectator] if score #system dituxuanze matches 3 positioned 103 0.00 6 if score #system GameStatus matches 1 if entity @s unless entity @s[dz=52,dy=8.2,dx=24] at @s run tp @r[gamemode=adventure]
-execute as @a[gamemode=spectator] if score #system dituxuanze matches 4 positioned -256.00 0.00 5.00 if score #system GameStatus matches 1 if entity @s unless entity @s[dz=65,dy=19,dx=42] at @s run tp @r[gamemode=adventure]
-execute as @a[gamemode=spectator] if score #system dituxuanze matches 5 positioned -100.00 0.00 -1.00 if score #system GameStatus matches 1 if entity @s unless entity @s[dz=56,dy=18,dx=35] at @s run tp @r[gamemode=adventure]
-execute as @a[gamemode=spectator] if score #system dituxuanze matches 6 positioned 264 -1.00 -378 if score #system GameStatus matches 1 if entity @s unless entity @s[dz=52,dy=64,dx=87] at @s run tp @r[gamemode=adventure]
-execute as @a[gamemode=spectator] if score #system dituxuanze matches 7 positioned 179.00 0.0 21.00 if score #system GameStatus matches 1 if entity @s unless entity @s[dz=64,dy=9,dx=45] at @s run tp @r[gamemode=adventure]
-execute as @a[gamemode=spectator] if score #system dituxuanze matches 8 positioned 59.00 0.00 104.00 if score #system GameStatus matches 1 if entity @s unless entity @s[dz=54,dy=9,dx=33] at @s run tp @r[gamemode=adventure]
+#execute as @a[gamemode=spectator] if score #system dituxuanze matches 1 positioned -33 0.00 3 if score #system GameStatus matches 1 if entity @s unless entity @s[dz=60,dy=7.2,dx=41] at @s run tp @r[gamemode=adventure]
+#execute as @a[gamemode=spectator] if score #system dituxuanze matches 2 positioned -188 0.00 4 if score #system GameStatus matches 1 if entity @s unless entity @s[dz=67,dy=7.2,dx=45] at @s run tp @r[gamemode=adventure]
+#execute as @a[gamemode=spectator] if score #system dituxuanze matches 3 positioned 103 0.00 6 if score #system GameStatus matches 1 if entity @s unless entity @s[dz=52,dy=8.2,dx=24] at @s run tp @r[gamemode=adventure]
+#execute as @a[gamemode=spectator] if score #system dituxuanze matches 4 positioned -256.00 0.00 5.00 if score #system GameStatus matches 1 if entity @s unless entity @s[dz=65,dy=19,dx=42] at @s run tp @r[gamemode=adventure]
+#execute as @a[gamemode=spectator] if score #system dituxuanze matches 5 positioned -100.00 0.00 -1.00 if score #system GameStatus matches 1 if entity @s unless entity @s[dz=56,dy=18,dx=35] at @s run tp @r[gamemode=adventure]
+#execute as @a[gamemode=spectator] if score #system dituxuanze matches 6 positioned 264 -1.00 -378 if score #system GameStatus matches 1 if entity @s unless entity @s[dz=52,dy=64,dx=87] at @s run tp @r[gamemode=adventure]
+#execute as @a[gamemode=spectator] if score #system dituxuanze matches 7 positioned 179.00 0.0 21.00 if score #system GameStatus matches 1 if entity @s unless entity @s[dz=64,dy=9,dx=45] at @s run tp @r[gamemode=adventure]
+#execute as @a[gamemode=spectator] if score #system dituxuanze matches 8 positioned 59.00 0.00 104.00 if score #system GameStatus matches 1 if entity @s unless entity @s[dz=54,dy=9,dx=33] at @s run tp @r[gamemode=adventure]
 
-execute as @a[gamemode=spectator] positioned -249.0 -10 -192.0 if score #system GameStatus matches 2 if entity @s unless entity @s[dz=56,dy=60,dx=77] at @s run tp @r[gamemode=adventure]
+#execute as @a[gamemode=spectator] positioned -249.0 -10 -192.0 if score #system GameStatus matches 2 if entity @s unless entity @s[dz=56,dy=60,dx=77] at @s run tp @r[gamemode=adventure]
 #沉默
 execute if score @e[tag=r_dw,limit=1] chengmo matches 1.. as @a[team=red,gamemode=adventure] at @s run kill @e[type=item,distance=..3,tag=!replace_item,tag=!copy,tag=!copy_end]
 execute if score @e[tag=b_dw,limit=1] chengmo matches 1.. as @a[team=blue,gamemode=adventure] at @s run kill @e[type=item,distance=..3,tag=!replace_item,tag=!copy,tag=!copy_end]
@@ -328,7 +341,7 @@ execute as @e[tag=wuwangjiangshi,type=zombie,team=blue] if score @s in_wuwangjia
 execute as @e[tag=wuwangjiangshi,type=zombie] if score @s in_wuwangjiangshi matches 20 run scoreboard players set @s in_wuwangjiangshi 0
 
 #三人成众
-execute as @e[tag=large_slime] unless data entity @s {NoAI:1b} run scoreboard players add @s sanrenchengzhong 1
+execute as @e[tag=large_slime] unless data entity @s {NoAI:1b} if data entity @s {Size:3} run scoreboard players add @s sanrenchengzhong 1
 execute as @e[tag=large_slime] if score @s sanrenchengzhong matches 300 run function kards:game/yongpaiku/juntuan/sanrenchengzhong/2
 
 #尸帝

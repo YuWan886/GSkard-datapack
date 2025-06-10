@@ -1,14 +1,13 @@
 execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[黑山羊之拥]",color:"dark_purple",hover_event:{action:"show_text",value:"使用后进行一次随机点数(1~10) 根据结果不同获得不同效果"}}]
-item replace entity @s weapon.offhand with air
+
+function kards:game/yongpaiku/xianjin/jiance/fashujiance
+
 scoreboard players operation @s kardCount -= #kard_heishanyangzhiyong kardCount
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1
 scoreboard players set @s pingbi 0
 scoreboard players add @s use_kard 1
-function kards:game/yongpaiku/xianjin/jiance/fashujiance
-execute if entity @s[team=red,type=player] if score 红队 xianjin_shufashixiao matches 1 run return run scoreboard players set 红队 xianjin_shufashixiao 0
-execute if entity @s[team=blue,type=player] if score 蓝队 xianjin_shufashixiao matches 1 run return run scoreboard players set 蓝队 xianjin_shufashixiao 0
-execute if entity @s[team=red,type=player] if score 红队 xianjin_youdi matches 1 run return run scoreboard players set 红队 xianjin_youdi 0
-execute if entity @s[team=blue,type=player] if score 蓝队 xianjin_youdi matches 1 run return run scoreboard players set 蓝队 xianjin_youdi 0
+execute unless items entity @s weapon.offhand * run return fail
+item replace entity @s weapon.offhand with air
 
 execute store result score @s fashu_heishanyangzhiyong run random value 1..10
 

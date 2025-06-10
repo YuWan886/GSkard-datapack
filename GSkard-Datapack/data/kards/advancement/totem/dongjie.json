@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:used_totem",
+            "conditions": {
+                "item": {
+                    "components": {
+                        "custom_data": "{kards:'冻结图腾'}"
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "kards:game/yongpaiku/yansheng/totem/dongjie"
+    }
+}
