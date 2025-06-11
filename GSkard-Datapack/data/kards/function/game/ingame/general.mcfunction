@@ -107,20 +107,43 @@ tag @a[gamemode=spectator,tag=DongJie] remove DongJie
 #火焰
 scoreboard players remove @e[tag=Fire,scores={Fire=1..}] Fire 1
 title @a[tag=Fire] actionbar {text: "你被点燃了",color:"red"}
-tag @s remove fire
 scoreboard players add @e[tag=Fire,scores={Fire=1..}] Fire_take_damage 1
 execute as @e[scores={Fire_take_damage=10}] run damage @s 1.5 kards:huoyan
+execute as @e[scores={Fire_take_damage=10},tag=Fire_Ex] run damage @s 3 kards:huoyan
 execute as @e[scores={Fire_take_damage=10}] at @s run particle lava ~ ~1 ~ 0 0 0 0 2 force @a
 execute as @e[scores={Fire_take_damage=10}] run scoreboard players set @s Fire_take_damage 0
 
 tag @e[scores={Fire=0}] remove Fire
+tag @e[scores={Fire=0}] remove Fire_Ex
 scoreboard players reset @e[scores={Fire=0}] Fire
 
 scoreboard players reset @a[gamemode=spectator,tag=Fire] Fire
 tag @a[gamemode=spectator,tag=Fire] remove Fire
+tag @a[gamemode=spectator,tag=Fire_Ex] remove Fire_Ex
+#> 不死图腾
+#-生命图腾-#
+scoreboard players add @e[tag=shengmingtuteng,type=item_display] shengmingtuteng_Healback 1
+execute as @e[tag=shengmingtuteng,type=item_display,scores={shengmingtuteng_Healback=20},team=red] at @s run scoreboard players add @e[team=red,distance=..5] HealBack 1
+execute as @e[tag=shengmingtuteng,type=item_display,scores={shengmingtuteng_Healback=20},team=blue] at @s run scoreboard players add @e[team=blue,distance=..5] HealBack 1
 
-#不死图腾
-function kards:game/yongpaiku/yansheng/totem/general
+execute as @e[tag=shengmingtuteng,type=item_display,scores={shengmingtuteng_Healback=20},team=red] at @s at @e[team=red,distance=..5,tag=!shengmingtuteng] run particle heart ~ ~2 ~ 0 0 0 0 1 force @a
+execute as @e[tag=shengmingtuteng,type=item_display,scores={shengmingtuteng_Healback=20},team=blue] at @s at @e[team=blue,distance=..5,tag=!shengmingtuteng] run particle heart ~ ~2 ~ 0 0 0 0 1 force @a
+
+execute at @e[tag=shengmingtuteng,type=item_display] run particle composter ~ ~ ~ 0 10 0 0 10 force @a
+
+scoreboard players reset @e[tag=shengmingtuteng,type=item_display,scores={shengmingtuteng_Healback=20}] shengmingtuteng_Healback
+
+scoreboard players remove @e[tag=shengmingtuteng,type=item_display] shengmingtuteng 1
+execute at @e[tag=shengmingtuteng,type=item_display,scores={shengmingtuteng=0}] run playsound minecraft:block.beacon.deactivate player @a[distance=..10] ~ ~ ~ 100 2
+kill @e[tag=shengmingtuteng,type=item_display,scores={shengmingtuteng=0}]
+#-自爆图腾-#
+scoreboard players remove @a[tag=zibaotuteng] zibaotuteng_zibao 1
+
+
+
+execute as @a[tag=zibaotuteng,scores={zibaotuteng_zibao=0}] at @s run function kards:game/yongpaiku/yansheng/totem/zibao/2
+
+
 #监守者bossbar
 execute unless entity @e[tag=warden_1] run bossbar set minecraft:warden_1 visible false
 execute unless entity @e[tag=warden_2] run bossbar set minecraft:warden_2 visible false
