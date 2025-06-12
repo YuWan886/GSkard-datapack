@@ -11,6 +11,21 @@ schedule clear kards:lobby/bossbar/color/3
 schedule clear kards:lobby/bossbar/color/4
 function kards:lobby/bossbar/color/1
 #注册计分项目
+scoreboard objectives add random_panduolamohe dummy
+scoreboard objectives add tanyumohe_cishu dummy
+scoreboard objectives add tanyu_temp dummy
+scoreboard objectives add tanyu_temp_1 dummy
+scoreboard objectives add tanyu_temp_2 dummy
+scoreboard objectives add tanyu_zuzhou dummy
+scoreboard objectives add tanyu_fashu dummy
+scoreboard objectives add tanyu_zhuangbei dummy
+scoreboard objectives add tanyumohe dummy
+scoreboard objectives add tanyu dummy
+scoreboard objectives add newzombie dummy
+scoreboard objectives add chengmo dummy
+scoreboard objectives add muyuankuanghuan dummy
+scoreboard objectives add yinnicangku dummy
+scoreboard objectives add langqunzhanshu dummy
 scoreboard objectives add peiyangshi dummy
 scoreboard objectives add zibaotuteng_zibao dummy
 scoreboard objectives add shengmingtuteng dummy

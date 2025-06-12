@@ -10,7 +10,7 @@
                 "predicates": {
                   "minecraft:enchantments": [
                     {
-                      "enchantments": "minecraft:fire_protection"
+                      "enchantments": "kards:fire_protection"
                     }
                   ]
                 }

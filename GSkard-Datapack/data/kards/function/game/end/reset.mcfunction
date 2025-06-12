@@ -83,6 +83,7 @@ execute as @a run attribute @s minecraft:max_health modifier remove 0-0-9
 execute as @a run attribute @s minecraft:max_health modifier remove 0-0-10
 execute as @a run attribute @s minecraft:max_health modifier remove 0-0-12
 execute as @a run attribute @s minecraft:max_health modifier remove 0-0-13
+execute as @a run attribute @s minecraft:max_health modifier remove 1-0-1
 execute as @a run attribute @s minecraft:max_health base set 20
 execute as @a run attribute @s minecraft:jump_strength modifier remove 0-0-1
 execute as @a run attribute @s minecraft:jump_strength modifier remove 0-0-2

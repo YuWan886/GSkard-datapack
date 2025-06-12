@@ -13,3 +13,5 @@ execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[cu
 execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data={kards:'无用之神'}] if score @s kardCount >= #kard_wuyongshenji kardCount run function kards:game/yongpaiku/shenji/wuyongshen
 #再来一罐
 execute if items entity @s weapon.offhand magenta_shulker_box[custom_data={kards:'再来一罐'}] if score @s kardCount >= #kard_zailaiyiguan kardCount run function kards:game/yongpaiku/yansheng/zailaiyiguan
+#贪欲
+execute if items entity @s weapon.offhand beetroot_soup[custom_data={kards:'贪欲'}] if score @s kardCount >= #kard_tanyu kardCount run function kards:game/yongpaiku/yansheng/tanyumohe/1

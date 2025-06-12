@@ -122,9 +122,9 @@ scoreboard players reset @a[gamemode=spectator,tag=Fire] Fire
 tag @a[gamemode=spectator,tag=Fire] remove Fire
 tag @a[gamemode=spectator,tag=Fire_Ex] remove Fire_Ex
 
-scoreboard players reset @a[gamemode=spectator,tag=Fired] Fire
-tag @a[gamemode=spectator,tag=Fired] remove Fire
-tag @a[gamemode=spectator,tag=Fired] remove Fired
+scoreboard players reset @a[tag=Fired] Fire
+tag @a[tag=Fired] remove Fire
+tag @a[tag=Fired] remove Fired
 #> 不死图腾
 #-生命图腾-#
 scoreboard players add @e[tag=shengmingtuteng,type=item_display] shengmingtuteng_Healback 1
@@ -143,12 +143,7 @@ execute at @e[tag=shengmingtuteng,type=item_display,scores={shengmingtuteng=0}] 
 kill @e[tag=shengmingtuteng,type=item_display,scores={shengmingtuteng=0}]
 #-自爆图腾-#
 scoreboard players remove @a[tag=zibaotuteng] zibaotuteng_zibao 1
-
-
-
 execute as @a[tag=zibaotuteng,scores={zibaotuteng_zibao=0}] at @s run function kards:game/yongpaiku/yansheng/totem/zibao/2
-
-
 #监守者bossbar
 execute unless entity @e[tag=warden_1] run bossbar set minecraft:warden_1 visible false
 execute unless entity @e[tag=warden_2] run bossbar set minecraft:warden_2 visible false
@@ -162,14 +157,27 @@ execute as @a if score @s jiben matches 1.. if score @s xukonghuixiang matches 1
 #给苦力怕 末影螨速度1
 effect give @e[type=creeper] speed 1 0 true
 effect give @e[type=endermite] speed 1 0 true
+#贪欲魔盒
+execute as @a[scores={tanyumohe=1}] store result score @s tanyu_zuzhou run clear @s minecraft:music_disc_stal
+execute as @a[scores={tanyumohe=1}] store result score @s tanyu_fashu run clear @s minecraft:music_disc_mellohi
+execute as @a[scores={tanyumohe=1}] store result score @s tanyu_zhuangbei run clear @s minecraft:music_disc_13
+
+execute as @a[scores={tanyumohe=1}] run scoreboard players operation @s tanyu += @s tanyu_zuzhou
+execute as @a[scores={tanyumohe=1}] run scoreboard players operation @s tanyu += @s tanyu_fashu
+execute as @a[scores={tanyumohe=1}] run scoreboard players operation @s tanyu += @s tanyu_zhuangbei
+
+scoreboard players set #system tanyu 2
+execute as @a[scores={tanyumohe=1}] run scoreboard players operation @s tanyu *= #system tanyu
+
+scoreboard players set @a[scores={tanyumohe=1}] tanyu_zuzhou 0
+scoreboard players set @a[scores={tanyumohe=1}] tanyu_fashu 0
+scoreboard players set @a[scores={tanyumohe=1}] tanyu_zhuangbei 0
+
+execute as @a[scores={tanyumohe=1}] if score @s tanyu matches 1.. run function kards:game/paiku/yansheng/tanyu
 #墓园狂欢
 effect give @e[tag=zombie_enhance_1] minecraft:speed infinite 0 true
 effect give @e[tag=zombie_enhance_2] minecraft:speed infinite 1 true
 effect give @e[tag=zombie_enhance_3] minecraft:speed infinite 2 true
-
-scoreboard players add @a[scores={muyuankuanghuan=1}] muyuankuanghuan1 0
-scoreboard players add @a[scores={muyuankuanghuan=1}] muyuankuanghuan2 0
-scoreboard players add @a[scores={muyuankuanghuan=1}] muyuankuanghuan3 0
 
 execute as @a[scores={muyuankuanghuan=1}] store result score @s[scores={muyuankuanghuan1=0}] muyuankuanghuan1 run clear @s minecraft:music_disc_mall
 execute as @a[scores={muyuankuanghuan=1}] store result score @s[scores={muyuankuanghuan2=0}] muyuankuanghuan2 run clear @s minecraft:music_disc_stal
@@ -295,6 +303,19 @@ execute if score 蓝队 diyu matches 1 run effect give @e[type=!player,team=blue
 execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{kards:"鸡爪"}}}}] run data modify entity @s PickupDelay set value -1
 execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{kards:"鸡爪"}}}}] if data entity @s {Age:25s} at @s run function kards:game/yongpaiku/fashu/suanlawugujizhua/3
 
+#贪欲魔盒
+execute if score 红队 tanyu_temp_1 matches 3..5 if predicate kards:random0.0001 at @r summon marker run function kards:game/yongpaiku/yansheng/tanyumohe/4
+execute if score 蓝队 tanyu_temp_1 matches 3..5 if predicate kards:random0.0001 at @r summon marker run function kards:game/yongpaiku/yansheng/tanyumohe/5
+execute if score 红队 tanyu_temp_1 matches 6..8 if predicate kards:random0.0025 at @r summon marker run function kards:game/yongpaiku/yansheng/tanyumohe/4
+execute if score 蓝队 tanyu_temp_1 matches 6..8 if predicate kards:random0.0025 at @r summon marker run function kards:game/yongpaiku/yansheng/tanyumohe/5
+execute if score 红队 tanyu_temp_1 matches 9..11 if predicate kards:random0.005 at @r summon marker run function kards:game/yongpaiku/yansheng/tanyumohe/4
+execute if score 蓝队 tanyu_temp_1 matches 9..11 if predicate kards:random0.005 at @r summon marker run function kards:game/yongpaiku/yansheng/tanyumohe/5
+execute if score 红队 tanyu_temp_1 matches 12..14 if predicate kards:random0.01 at @r summon marker run function kards:game/yongpaiku/yansheng/tanyumohe/4
+execute if score 蓝队 tanyu_temp_1 matches 12..14 if predicate kards:random0.01 at @r summon marker run function kards:game/yongpaiku/yansheng/tanyumohe/5
+execute if score 红队 tanyu_temp_1 matches 15..17 if predicate kards:random0.04 at @r summon marker run function kards:game/yongpaiku/yansheng/tanyumohe/4
+execute if score 蓝队 tanyu_temp_1 matches 15..17 if predicate kards:random0.04 at @r summon marker run function kards:game/yongpaiku/yansheng/tanyumohe/5
+execute if score 红队 tanyu_temp_1 matches 18.. if predicate kards:random0.08 at @r summon marker run function kards:game/yongpaiku/yansheng/tanyumohe/4
+execute if score 蓝队 tanyu_temp_1 matches 18.. if predicate kards:random0.08 at @r summon marker run function kards:game/yongpaiku/yansheng/tanyumohe/5
 #reset
 scoreboard players enable @a[scores={reset=0}] reset
 execute as @a if score @s reset matches 1 run function kards:game/end/reset
@@ -366,6 +387,10 @@ execute as @e[team=blue] at @s if entity @e[type=zombie,tag=wuwangjiangshi,team=
 scoreboard players add @e[type=zombie,tag=wuwangjiangshi] in_wuwangjiangshi 1
 execute as @e[tag=wuwangjiangshi,type=zombie,team=red] if score @s in_wuwangjiangshi matches 20 at @s run scoreboard players add @e[team=red,distance=..5] HealBack 1
 execute as @e[tag=wuwangjiangshi,type=zombie,team=blue] if score @s in_wuwangjiangshi matches 20 at @s run scoreboard players add @e[team=blue,distance=..5] HealBack 1
+
+execute as @e[tag=wuwangjiangshi,type=zombie,team=red] if score @s in_wuwangjiangshi matches 20 at @e[team=red,distance=..5] run particle note ~ ~2 ~ 0 0 0 1 1 force @a
+execute as @e[tag=wuwangjiangshi,type=zombie,team=blue] if score @s in_wuwangjiangshi matches 20 at @e[team=blue,distance=..5] run particle note ~ ~2 ~ 0 0 0 1 1 force @a
+
 execute as @e[tag=wuwangjiangshi,type=zombie] if score @s in_wuwangjiangshi matches 20 run scoreboard players set @s in_wuwangjiangshi 0
 
 #三人成众
@@ -373,8 +398,5 @@ execute as @e[tag=large_slime] unless data entity @s {NoAI:1b} if data entity @s
 execute as @e[tag=large_slime] if score @s sanrenchengzhong matches 300 run function kards:game/yongpaiku/juntuan/sanrenchengzhong/2
 
 #尸帝
-execute as @e[tag=shidi_master,team=red] at @s run effect give @e[tag=!shidi_master,team=red,distance=..5] minecraft:strength 1 0 true
-execute as @e[tag=shidi_master,team=blue] at @s run effect give @e[tag=!shidi_master,team=blue,distance=..5] minecraft:strength 1 0 true
-
-execute as @e[tag=shidi_master,team=red] at @s run effect give @e[tag=!shidi_master,team=red,distance=..5] minecraft:speed 1 0 true
-execute as @e[tag=shidi_master,team=blue] at @s run effect give @e[tag=!shidi_master,team=blue,distance=..5] minecraft:speed 1 0 true
+execute as @e[tag=shidi_master,team=red] at @s run effect give @e[tag=!shidi_master,team=red,distance=..5] minecraft:resistance 1 0 true
+execute as @e[tag=shidi_master,team=blue] at @s run effect give @e[tag=!shidi_master,team=blue,distance=..5] minecraft:resistance 1 0 true

@@ -1,0 +1,4 @@
+scoreboard players remove @s tanyu 1
+give @s beetroot_soup[item_name=[{text: "0K",color:"aqua"},{text: " 贪欲",color:"light_purple"}],lore=[[{text: "贪欲魔盒",color:"white",italic:false}],[{text: "+2K并抽一张牌",color:"gold",italic:false}],[{text: "每使用9张为队伍增加1层",color:"gray",italic:false},{text: "罪恶值",color:"red",italic:false}],[{text: "每层罪恶值将使队内玩家",color:"gray",italic:false},{text: "最大生命-2♥",color:"red",italic:false}],[{text: "当罪恶值达到3层时开启",color:"gray",italic:false},{text: "潘多拉魔盒",color:"gold",italic:false},{text: " 它将不定时的",color:"gray",italic:false},{text: "召唤怪物/使用诅咒牌/随机法术",color:"gold",italic:false}],[{text: "层数越高 释放越频繁!",color:"red",italic:false}]],tooltip_display={hide_tooltip:false,hidden_components:["minecraft:provides_trim_material"]},custom_data={kards:'贪欲'},tooltip_style="kard/god",max_stack_size=99]
+scoreboard players set #kard_tanyu kardCount 0
+execute if score @s tanyu matches 1.. run function kards:game/paiku/yansheng/tanyu

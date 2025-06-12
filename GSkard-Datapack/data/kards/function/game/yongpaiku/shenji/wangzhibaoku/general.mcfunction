@@ -193,7 +193,7 @@ execute as @a[tag=fengbaozhanchui] if score @s fengbaozhanchui_xuneng_Time match
 execute as @a[tag=fengbaozhanchui] if score @s fengbaozhanchui_xuneng_Time matches 0 run playsound minecraft:entity.lightning_bolt.impact player @s ~ ~ ~ 100 2
 execute as @a[tag=fengbaozhanchui] if score @s fengbaozhanchui_xuneng_Time matches 0 run scoreboard players reset @s fengbaozhanchui_xuneng_Time
 
-execute as @a[tag=fengbaozhanchui_xunengzhongji] unless score @s fengbaozhanchui_xuneng_Time matches 499..500 if data entity @s {OnGround:1b} at @s run function kards:game/yongpaiku/shenji/wangzhibaoku/fengbaozhanchui/6
+execute as @a[tag=fengbaozhanchui_xunengzhongji] unless score @s fengbaozhanchui_xuneng_Time matches 495..500 if data entity @s {OnGround:1b} at @s run function kards:game/yongpaiku/shenji/wangzhibaoku/fengbaozhanchui/6
 #死神之镰
 execute as @a if items entity @s weapon.mainhand *[custom_data={kards:'死神之镰'}] run tag @s add sishenzhilian
 
