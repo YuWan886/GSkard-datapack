@@ -1,7 +1,3 @@
-effect clear @s fire_resistance
-effect clear @s resistance
-effect clear @s absorption
-effect give @s absorption 60 11 true
 scoreboard players add @s HealBack 48
 
 execute store result score @s random_hunluantuteng run random value 1..100

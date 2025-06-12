@@ -1,12 +1,5 @@
 tag @s add zibaotuteng
 
-effect clear @s fire_resistance
-effect clear @s resistance
-effect clear @s absorption
-
-effect give @s absorption 5 74 true
-effect give @s speed 5 4 true
-
 summon item ~ ~ ~ {PickupDelay:-1,Item:{id:"music_disc_11"},Tags:["copy"]}
 data modify entity @n[tag=copy,type=item] Owner set from entity @n[tag=User] UUID
 data modify entity @n[tag=copy,type=item] Item set from entity @s equipment.head

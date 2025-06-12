@@ -1,3 +1,3 @@
 scoreboard players set #kard_jinjidiaoqian kardCount 6
 
-give @s music_disc_mellohi[item_name=[{text: "6K",color:"aqua"},{text: " 紧急调遣",color:"light_purple"}],lore=[{text: "法术牌",color:"light_purple",italic:false},[{text: "获得",color:"gray",italic:false},{text: "4Kmax",color:"gold",italic:false}]],jukebox_playable="minecraft:pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'紧急调遣'},tooltip_style="kard/spell"]
+give @s music_disc_mellohi[item_name=[{text: "6K",color:"aqua"},{text: " 紧急调遣",color:"light_purple"}],lore=[{text: "法术牌",color:"light_purple",italic:false},[{text: "获得",color:"gray",italic:false},{text: "4Kmax",color:"gold",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'紧急调遣'},tooltip_style="kard/spell"]

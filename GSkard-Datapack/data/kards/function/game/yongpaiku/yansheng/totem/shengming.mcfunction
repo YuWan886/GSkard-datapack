@@ -1,8 +1,3 @@
-effect clear @s fire_resistance
-effect clear @s resistance
-effect clear @s absorption
-
-effect give @s absorption 60 14 true
 scoreboard players add @s HealBack 60
 
 playsound minecraft:tududududu player @a[distance=..20] ~ ~ ~ 100 0

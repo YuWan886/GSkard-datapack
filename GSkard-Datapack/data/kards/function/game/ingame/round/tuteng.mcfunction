@@ -21,7 +21,6 @@
     #红
     execute if entity @e[team=red,tag=tuteng,type=villager] run effect give @e[type=iron_golem,tag=tuteng,team=red] instant_health 1 2 true
 #豹猫
-    #蓝
-    execute if entity @e[team=blue,tag=tuteng,type=ocelot] as @e[tag=tuteng,team=red,limit=1,sort=random] run function kards:game/yongpaiku/tuteng/baomao/1
-    #红
-    execute if entity @e[team=red,tag=tuteng,type=ocelot] as @e[tag=tuteng,team=blue,limit=1,sort=random] run function kards:game/yongpaiku/tuteng/baomao/2
+    execute as @e[tag=tuteng,type=ocelot] run function kards:game/yongpaiku/tuteng/round_event/baomao
+#培养尸
+    execute as @e[tag=tuteng,tag=peiyangshi,type=zombie] run function kards:game/yongpaiku/tuteng/round_event/peiyangshi/1

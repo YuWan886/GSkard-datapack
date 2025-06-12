@@ -11,6 +11,7 @@ schedule clear kards:lobby/bossbar/color/3
 schedule clear kards:lobby/bossbar/color/4
 function kards:lobby/bossbar/color/1
 #注册计分项目
+scoreboard objectives add peiyangshi dummy
 scoreboard objectives add zibaotuteng_zibao dummy
 scoreboard objectives add shengmingtuteng dummy
 scoreboard objectives add shengmingtuteng_Healback dummy

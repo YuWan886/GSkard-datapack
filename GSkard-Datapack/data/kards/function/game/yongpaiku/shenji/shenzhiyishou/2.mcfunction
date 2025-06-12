@@ -125,3 +125,4 @@ execute if entity @s[team=blue] if entity @a[team=blue,gamemode=adventure,tag=!s
 
 tellraw @a [{selector:"@a[tag=shenzhiyishou]"},{text: "的牌被",color:"aqua"},{selector:"@a[tag=User]"},{text: "偷走了！",color:"aqua"}]
 tag @a[tag=shenzhiyishou] remove shenzhiyishou
+kill @e[type=item,nbt={Item:{id:"minecraft:music_disc_11"}},tag=copy_end]

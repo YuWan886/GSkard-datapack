@@ -1,3 +1,3 @@
 
-give @s music_disc_strad[item_name=[{text: "5K",color:"aqua"},{text: " 来日偿还",color:"white"}],lore=[{text: "神迹牌",color:"white",italic:false},[{text: "记录你上一回合至使用本卡时间内受到的的所有伤害 ",color:"gray",italic:false},{text: "造成等额伤害分配至敌方所有玩家",color:"red",italic:false}],{text: "一回合只能使用一次",color:"dark_gray",italic:true}],jukebox_playable="minecraft:pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'来日偿还'},tooltip_style="kard/god"]
+give @s music_disc_strad[item_name=[{text: "5K",color:"aqua"},{text: " 来日偿还",color:"white"}],lore=[{text: "神迹牌",color:"white",italic:false},[{text: "记录你上一回合至使用本卡时间内受到的的所有伤害 ",color:"gray",italic:false},{text: "造成等额伤害分配至敌方所有玩家",color:"red",italic:false}],{text: "一回合只能使用一次",color:"dark_gray",italic:true}],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'来日偿还'},tooltip_style="kard/god"]
 scoreboard players set #kard_lairichanghuan kardCount 5

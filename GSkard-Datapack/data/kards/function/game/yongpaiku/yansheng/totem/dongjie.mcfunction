@@ -1,7 +1,3 @@
-effect clear @s fire_resistance
-effect clear @s resistance
-effect clear @s absorption
-effect give @s absorption 60 9 true
 scoreboard players add @s HealBack 20
 
 execute if entity @s[team=red] run tag @e[distance=..6,team=blue,gamemode=!spectator] add DongJie

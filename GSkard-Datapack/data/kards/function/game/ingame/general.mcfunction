@@ -105,6 +105,7 @@ scoreboard players reset @a[tag=DongJie,scores={DongJie_damage=25}] DongJie_dama
 scoreboard players reset @a[gamemode=spectator,tag=DongJie] DongJie
 tag @a[gamemode=spectator,tag=DongJie] remove DongJie
 #火焰
+execute as @a if predicate kards:fanghuo run tag @s add Fired
 scoreboard players remove @e[tag=Fire,scores={Fire=1..}] Fire 1
 title @a[tag=Fire] actionbar {text: "你被点燃了",color:"red"}
 scoreboard players add @e[tag=Fire,scores={Fire=1..}] Fire_take_damage 1
@@ -120,6 +121,10 @@ scoreboard players reset @e[scores={Fire=0}] Fire
 scoreboard players reset @a[gamemode=spectator,tag=Fire] Fire
 tag @a[gamemode=spectator,tag=Fire] remove Fire
 tag @a[gamemode=spectator,tag=Fire_Ex] remove Fire_Ex
+
+scoreboard players reset @a[gamemode=spectator,tag=Fired] Fire
+tag @a[gamemode=spectator,tag=Fired] remove Fire
+tag @a[gamemode=spectator,tag=Fired] remove Fired
 #> 不死图腾
 #-生命图腾-#
 scoreboard players add @e[tag=shengmingtuteng,type=item_display] shengmingtuteng_Healback 1
@@ -301,13 +306,13 @@ execute as @e[type=bee] run data modify entity @s HasStung set value 0b
 #防止末影人等传送离开
 execute if score #system dituxuanze matches 1..100 as @e[team=red,type=minecraft:enderman] at @e[tag=b_dw] positioned ~ -1 ~ unless entity @s[dx=24,dz=24,dy=10] at @e[tag=blue_marker_7,limit=1] run tp @s ~ 0 ~
 execute if score #system dituxuanze matches 1..100 as @e[team=blue,type=minecraft:enderman] at @e[tag=r_dw] positioned ~ -1 ~ unless entity @s[dx=24,dz=24,dy=10] at @e[tag=red_marker_7,limit=1] run tp @s ~ 0 ~
-execute if score #system dituxuanze matches 1..100 as @e[team=red,type=minecraft:shulker,tag=tuteng] at @e[tag=r_ttdw] positioned ~ -1 ~ unless entity @s[dx=4,dz=24,dy=1] at @e[tag=r_tuteng] run tp @s ~ 1 ~
-execute if score #system dituxuanze matches 1..100 as @e[team=blue,type=minecraft:shulker,tag=tuteng] at @e[tag=b_ttdw] positioned ~ -1 ~ unless entity @s[dx=4,dz=24,dy=1] at @e[tag=b_tuteng] run tp @s ~ 1 ~
+execute if score #system dituxuanze matches 1..100 as @e[team=red,type=minecraft:shulker,tag=tuteng] at @e[tag=r_ttdw] positioned ~ -1 ~ unless entity @s[dx=4,dz=24,dy=1] at @e[tag=r_tuteng,limit=1] run tp @s ~ 1 ~
+execute if score #system dituxuanze matches 1..100 as @e[team=blue,type=minecraft:shulker,tag=tuteng] at @e[tag=b_ttdw] positioned ~ -1 ~ unless entity @s[dx=4,dz=24,dy=1] at @e[tag=b_tuteng,limit=1] run tp @s ~ 1 ~
 
 execute if score #system dituxuanze matches 101.. as @e[team=red,type=minecraft:enderman] at @e[tag=b_dw] positioned ~ -1 ~ unless entity @s[dx=34,dz=34,dy=10] at @e[tag=blue_marker_7,limit=1] run tp @s ~ 0 ~
 execute if score #system dituxuanze matches 101.. as @e[team=blue,type=minecraft:enderman] at @e[tag=r_dw] positioned ~ -1 ~ unless entity @s[dx=34,dz=34,dy=10] at @e[tag=red_marker_7,limit=1] run tp @s ~ 0 ~
-execute if score #system dituxuanze matches 101.. as @e[team=red,type=minecraft:shulker,tag=tuteng] at @e[tag=r_ttdw] positioned ~ -1 ~ unless entity @s[dx=4,dz=34,dy=1] at @e[tag=r_tuteng] run tp @s ~ 1 ~
-execute if score #system dituxuanze matches 101.. as @e[team=blue,type=minecraft:shulker,tag=tuteng] at @e[tag=b_ttdw] positioned ~ -1 ~ unless entity @s[dx=4,dz=34,dy=1] at @e[tag=b_tuteng] run tp @s ~ 1 ~
+execute if score #system dituxuanze matches 101.. as @e[team=red,type=minecraft:shulker,tag=tuteng] at @e[tag=r_ttdw] positioned ~ -1 ~ unless entity @s[dx=4,dz=34,dy=1] at @e[tag=r_tuteng,limit=1] run tp @s ~ 1 ~
+execute if score #system dituxuanze matches 101.. as @e[team=blue,type=minecraft:shulker,tag=tuteng] at @e[tag=b_ttdw] positioned ~ -1 ~ unless entity @s[dx=4,dz=34,dy=1] at @e[tag=b_tuteng,limit=1] run tp @s ~ 1 ~
 
 #无人机
 execute as @e[type=bat,tag=wurenji] at @s unless block ~ ~1.5 ~ air run tp @s ~ ~-1 ~

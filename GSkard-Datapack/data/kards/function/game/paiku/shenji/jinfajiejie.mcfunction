@@ -1,3 +1,3 @@
 
-give @s music_disc_strad[item_name=[{text: "4K",color:"aqua"},{text: " 禁法结界",color:"white"}],lore=[{text: "神迹牌",color:"white",italic:false},[{text: "敌方随机2位玩家",color:"gray",italic:false},{text: "-4Kmax",color:"red",italic:false}]],jukebox_playable="minecraft:pigstep",tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'禁法结界'},tooltip_style="kard/god"]
+give @s music_disc_strad[item_name=[{text: "4K",color:"aqua"},{text: " 禁法结界",color:"white"}],lore=[{text: "神迹牌",color:"white",italic:false},[{text: "敌方随机2位玩家",color:"gray",italic:false},{text: "-4Kmax",color:"red",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'禁法结界'},tooltip_style="kard/god"]
 scoreboard players set #kard_jinfajiejie kardCount 4

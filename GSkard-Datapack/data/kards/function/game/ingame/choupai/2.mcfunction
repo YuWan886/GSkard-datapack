@@ -1,4 +1,4 @@
-execute store result score @s random2 run random value 1..289
+execute store result score @s random2 run random value 1..285
 execute if score @s random2 matches 1..20 run function kards:game/paiku/juntuan/xingshizourou
 execute if score @s random2 matches 21..25 run function kards:game/paiku/juntuan/errenchengjun
 execute if score @s random2 matches 26..40 run function kards:game/paiku/juntuan/jieluexiaodui
@@ -24,7 +24,6 @@ execute if score @s random2 matches 246..250 run function kards:game/paiku/juntu
 execute if score @s random2 matches 251..265 run function kards:game/paiku/juntuan/xiaoguidangjia
 execute if score @s random2 matches 266..275 run function kards:game/paiku/juntuan/wuwangjiangshi
 execute if score @s random2 matches 276..285 run function kards:game/paiku/juntuan/sanrenchengzhong
-execute if score @s random2 matches 286..289 run function kards:game/paiku/juntuan/shidi
 scoreboard players set @s random2 0
 scoreboard players remove @s juntuancishu 1
 
