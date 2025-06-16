@@ -39,6 +39,23 @@ execute positioned -219 -65 -173 as @a[dx=19,dz=18,dy=25,gamemode=adventure] run
 execute as @a positioned -219 -65 -173 unless entity @s[dx=19,dz=18,dy=25,gamemode=adventure] run attribute @s minecraft:safe_fall_distance modifier remove 0-0-1
 #装备
 function kards:game/yongpaiku/zhuangbei/general
+#永寒
+scoreboard players add @e[scores={YongHan=1..}] YongHan_liushi 1
+scoreboard players remove @e[scores={YongHan_liushi=60}] YongHan 1
+scoreboard players set @e[scores={YongHan_liushi=60}] YongHan_liushi 0
+
+scoreboard players add @e[scores={YongHan=1..,DongJie=1..},tag=DongJie] YongHan_DongJie_liushi 1
+scoreboard players remove @e[scores={YongHan_DongJie_liushi=40}] YongHan 1
+scoreboard players set @e[scores={YongHan_DongJie_liushi=40}] YongHan_DongJie_liushi 0
+
+execute as @e[scores={YongHan=1..}] run attribute @s movement_speed modifier add 0-0-3 -0.05 add_multiplied_base
+execute as @e[scores={YongHan=0}] run attribute @s movement_speed modifier remove 0-0-3
+#重伤
+scoreboard players remove @a[scores={ZhongShang_Tick=1..}] ZhongShang_Tick 1
+scoreboard players set @a[scores={ZhongShang_Round=1..}] HealBack 0
+scoreboard players set @a[scores={ZhongShang_Tick=1..}] HealBack 0
+scoreboard players reset @a[scores={ZhongShang_Round=0}] ZhongShang_Round
+scoreboard players reset @a[scores={ZhongShang_Tick=0}] ZhongShang_Tick
 #破碎
 scoreboard players remove @a[tag=PoSui,scores={PoSui=1..}] PoSui 1
 
@@ -179,6 +196,10 @@ effect give @e[tag=zombie_enhance_1] minecraft:speed infinite 0 true
 effect give @e[tag=zombie_enhance_2] minecraft:speed infinite 1 true
 effect give @e[tag=zombie_enhance_3] minecraft:speed infinite 2 true
 
+scoreboard players add @a[scores={muyuankuanghuan=1}] muyuankuanghuan1 0
+scoreboard players add @a[scores={muyuankuanghuan=1}] muyuankuanghuan2 0
+scoreboard players add @a[scores={muyuankuanghuan=1}] muyuankuanghuan3 0
+
 execute as @a[scores={muyuankuanghuan=1}] store result score @s[scores={muyuankuanghuan1=0}] muyuankuanghuan1 run clear @s minecraft:music_disc_mall
 execute as @a[scores={muyuankuanghuan=1}] store result score @s[scores={muyuankuanghuan2=0}] muyuankuanghuan2 run clear @s minecraft:music_disc_stal
 execute as @a[scores={muyuankuanghuan=1}] store result score @s[scores={muyuankuanghuan2=0}] muyuankuanghuan2 run clear @s minecraft:music_disc_wait
@@ -298,7 +319,6 @@ execute if score 蓝队 touxiang = 人数 b_p run gamemode spectator @a[team=blu
 #地狱
 execute if score 红队 diyu matches 1 run effect give @e[type=!player,team=red,tag=!tuteng] fire_resistance 1 0 true
 execute if score 蓝队 diyu matches 1 run effect give @e[type=!player,team=blue,tag=!tuteng] fire_resistance 1 0 true
-
 #酸辣无骨鸡爪
 execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{kards:"鸡爪"}}}}] run data modify entity @s PickupDelay set value -1
 execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{kards:"鸡爪"}}}}] if data entity @s {Age:25s} at @s run function kards:game/yongpaiku/fashu/suanlawugujizhua/3

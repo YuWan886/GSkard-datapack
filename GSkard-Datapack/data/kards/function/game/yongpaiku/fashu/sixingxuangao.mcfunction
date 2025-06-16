@@ -6,7 +6,7 @@ scoreboard players operation @s kardCount -= #kard_sixingxuangao kardCount
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1
 scoreboard players set @s pingbi 0
 scoreboard players add @s use_kard 1
-execute unless items entity @s weapon.offhand * run return fail
+execute if entity @s[type=player] unless items entity @s weapon.offhand * run return fail
 item replace entity @s weapon.offhand with air
 
 execute if entity @s[team=red] at @a[gamemode=adventure,team=blue] align xz run summon minecraft:falling_block ~0.5 ~4 ~0.5 {Air:300s,BlockState:{Name:"anvil"},CanUpdate:1b,CancelDrop:1b,DropItem:0b,FallDistance:0.23681599f,FallHurtAmount:15.0f,FallHurtMax:20,Fire:-1s,Health:0.0f,HurtEntities:1b,Invulnerable:1b,Motion:[0.0d,-0.11526368d,0.0d],OnGround:0b,PortalCooldown:0,Time:3,id:"minecraft:falling_block"}

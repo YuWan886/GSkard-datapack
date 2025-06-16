@@ -58,3 +58,8 @@
     execute as @e[team=red,tag=tuteng,type=iron_golem] at @s run effect give @e[team=blue,type=!player,type=!iron_golem,distance=..5] weakness 2 1 true
 #流浪商人
     item replace entity @e[type=minecraft:wandering_trader] weapon.mainhand with air
+#培养尸
+    #蓝
+    execute as @e[team=blue,tag=tuteng,type=zombie] run effect give @a[team=blue] fire_resistance 1 0 true
+    #红
+    execute as @e[team=red,tag=tuteng,type=zombie] run effect give @a[team=red] fire_resistance 1 0 true

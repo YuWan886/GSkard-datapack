@@ -5,8 +5,8 @@ execute at @s run particle minecraft:explosion_emitter ~ ~ ~ 0.5 0 0.5 100 1
 execute at @s run playsound minecraft:entity.generic.explode player @a[distance=..20] ~ ~ ~ 100 1
 execute at @s run tp @s ~ ~1000 ~
 gamemode creative @s
-execute at @s positioned ^ ^-2.5 ^ anchored eyes summon minecraft:end_crystal run damage @s 1
-execute at @s positioned ^ ^-2.5 ^ anchored eyes summon minecraft:end_crystal run damage @s 1
+execute at @s positioned ~ ~-2.5 ~ anchored eyes summon minecraft:end_crystal run damage @s 1
+execute at @s positioned ~ ~-2.5 ~ anchored eyes summon minecraft:end_crystal run damage @s 1
 
 gamemode adventure @s
 execute at @s run tp @s ~ ~-1000 ~

@@ -21,3 +21,11 @@ execute if score #system roundtime matches 0 as @a[gamemode=adventure] run funct
 effect give @a[tag=Ready] instant_health 1 200 true
 execute if score #system random_gamerule matches 0.. run scoreboard players set @a cishu 0
 execute if score #system random_gamerule matches 0.. run schedule function kards:game/random_start/title/all 2s
+#清场
+scoreboard players reset 红队
+scoreboard players reset 蓝队
+scoreboard players reset * chengmo
+scoreboard players reset * ZhongShang_Round
+scoreboard players reset * ZhongShang_Tick
+scoreboard players reset * kujie
+function kards:game/ingame/round/fashu with storage changdidaxiao

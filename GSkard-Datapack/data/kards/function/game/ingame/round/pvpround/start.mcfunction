@@ -3,8 +3,8 @@ fill -233 -9 -191 -233 0 -137 minecraft:air replace barrier
 scoreboard players set @a kardCount 0
 scoreboard players set @a CanuseKard 0
 tellraw @a {text: "冲刺！",color:"red",bold:true}
-execute as @a at @s run playsound minecraft:entity.ender_dragon.growl master @s ~ ~ ~ 10 1
 stopsound @a
+execute as @a at @s run playsound minecraft:entity.ender_dragon.growl player @s ~ ~ ~ 10 1
 bossbar set pvptime visible false
 kill @e[type=!player,type=!marker,type=!item,type=!#kards:display]
 scoreboard players operation #system worldborder = time worldborder

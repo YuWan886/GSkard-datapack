@@ -1,5 +1,5 @@
 execute if entity @s[team=red] run tag @e[team=blue,tag=tuteng,limit=1,sort=random] add baomao_damage
-execute if entity @s[team=blue] run tag @e[team=blue,tag=tuteng,limit=1,sort=random] add baomao_damage
+execute if entity @s[team=blue] run tag @e[team=red,tag=tuteng,limit=1,sort=random] add baomao_damage
 
 tellraw @a [{selector:"@s"},{text:"咬了一口",color:"gray"},{selector:"@e[tag=baomao_damage]"}]
 execute as @e[tag=baomao_damage,limit=1] store result score @s tuteng_Health run data get entity @s Health

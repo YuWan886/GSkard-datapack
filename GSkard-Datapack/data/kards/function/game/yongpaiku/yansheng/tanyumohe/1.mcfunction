@@ -29,8 +29,8 @@ execute if entity @s[team=blue] if score 蓝队 tanyu_temp_1 matches 1.. run fun
 
 execute if entity @s[team=red] if score 红队 tanyu_temp_2 matches 9 run tellraw @a [{text:"[贪欲魔盒]",color:"gold"},{text:"红队",color:"red"},{text:"罪恶值已达至第",color:"gray"},{score:{name:"红队",objective:"tanyu_temp_1"},color:"red"},{text:"层",color:"gray"}]
 execute if entity @s[team=blue] if score 蓝队 tanyu_temp_2 matches 9 run tellraw @a [{text:"[贪欲魔盒]",color:"gold"},{text:"蓝队",color:"blue"},{text:"罪恶值已达至第",color:"gray"},{score:{name:"蓝队",objective:"tanyu_temp_1"},color:"red"},{text:"层",color:"gray"}]
-#execute if entity @s[team=red] if score 红队 tanyu_temp_2 matches 9 as @a at @s run playsound dogdoing player @s ~ ~ ~ 100 1
-#execute if entity @s[team=blue] if score 蓝队 tanyu_temp_2 matches 9 as @a at @s run playsound dogdoing player @s ~ ~ ~ 100 1
+execute if entity @s[team=red] if score 红队 tanyu_temp_2 matches 9 as @a at @s run playsound dogdoing player @s ~ ~ ~ 100 1
+execute if entity @s[team=blue] if score 蓝队 tanyu_temp_2 matches 9 as @a at @s run playsound dogdoing player @s ~ ~ ~ 100 1
 
 execute if entity @s[team=red] if score 红队 tanyu_temp_2 matches 9 run scoreboard players reset 红队 tanyu_temp_2
 execute if entity @s[team=blue] if score 蓝队 tanyu_temp_2 matches 9 run scoreboard players reset 蓝队 tanyu_temp_2

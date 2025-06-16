@@ -1,10 +1,13 @@
 #森林之护
 execute as @a if items entity @s armor.chest *[custom_data={kards:'森林之护'}] run tag @s add senlinzhihu
 scoreboard players add @a[tag=senlinzhihu] senlinzhihu_HealBack 1
-execute as @a[tag=senlinzhihu] if score @s senlinzhihu_HealBack matches 50 at @s run scoreboard players add @s HealBack 1
-execute as @a[tag=senlinzhihu] if entity @s[team=red] if score @s senlinzhihu_HealBack matches 50 at @s run scoreboard players add @e[distance=..5,team=red,tag=!tuteng] HealBack 1
-execute as @a[tag=senlinzhihu] if entity @s[team=blue] if score @s senlinzhihu_HealBack matches 50 at @s run scoreboard players add @a[distance=..5,team=blue,tag=!tuteng] HealBack 1
-execute as @a[tag=senlinzhihu] if score @s senlinzhihu_HealBack matches 50 run scoreboard players set @s senlinzhihu_HealBack 0
+execute as @a[tag=senlinzhihu] if score @s senlinzhihu_HealBack matches 90 at @s run scoreboard players add @s HealBack 1
+execute as @a[tag=senlinzhihu] if entity @s[team=red] if score @s senlinzhihu_HealBack matches 90 at @s run scoreboard players add @e[distance=..5,team=red,tag=!tuteng] HealBack 1
+execute as @a[tag=senlinzhihu] if entity @s[team=blue] if score @s senlinzhihu_HealBack matches 90 at @s run scoreboard players add @a[distance=..5,team=blue,tag=!tuteng] HealBack 1
+execute as @a[tag=senlinzhihu] if entity @s[team=red] if score @s senlinzhihu_HealBack matches 90 at @e[distance=..5,team=red,tag=!tuteng] run particle minecraft:heart ~ ~2 ~ 0 0 0 0 1 force @a
+execute as @a[tag=senlinzhihu] if entity @s[team=blue] if score @s senlinzhihu_HealBack matches 90 at @e[distance=..5,team=blue,tag=!tuteng] run particle minecraft:heart ~ ~2 ~ 0 0 0 0 1 force @a
+
+execute as @a[tag=senlinzhihu] if score @s senlinzhihu_HealBack matches 90 run scoreboard players set @s senlinzhihu_HealBack 0
 
 execute as @a[tag=senlinzhihu] run scoreboard players operation @s senlinzhihu_taken -= @s senlinzhihu_absorbed
 scoreboard players set @a[tag=senlinzhihu] senlinzhihu_absorbed 0
@@ -24,30 +27,17 @@ execute as @a[tag=tianshenshibanjia] if score @s damage_tianshenshibanjia matche
 execute as @a[tag=tianshenshibanjia] if score @s damage_tianshenshibanjia matches 90.. run tag @s add damage_tianshenshibanjia
 execute as @a[tag=tianshenshibanjia] if score @s damage_tianshenshibanjia matches 90.. run scoreboard players set @s damage_tianshenshibanjia 48
 execute as @a[tag=tianshenshibanjia,tag=damage_tianshenshibanjia] at @s run function kards:game/yongpaiku/shenji/wangzhibaoku/tianshenshibanjia/damage
-
-execute as @a[tag=tianshenshibanjia] run attribute @s minecraft:entity_interaction_range modifier add 0-0-1 -3 add_value
-execute as @a[tag=tianshenshibanjia] unless items entity @s armor.chest *[custom_data={kards:'天神石板甲'}] run attribute @s minecraft:entity_interaction_range modifier remove 0-0-1 
 execute as @a[tag=tianshenshibanjia] unless items entity @s armor.chest *[custom_data={kards:'天神石板甲'}] run tag @s remove tianshenshibanjia
 #凛冬之铠
 execute as @a if items entity @s armor.chest *[custom_data={kards:'凛冬之铠'}] run tag @s add lindongzhikai
-execute as @a[team=red,tag=lindongzhikai] at @s run scoreboard players add @e[team=blue,distance=..4] in_lindongzhikai 1
-execute as @a[team=red,tag=lindongzhikai] at @s run scoreboard players set @e[team=blue,distance=..4] leave_lindongzhikai 160
-execute as @a[team=blue,tag=lindongzhikai] at @s run scoreboard players add @e[team=red,distance=..4] in_lindongzhikai 1
-execute as @a[team=blue,tag=lindongzhikai] at @s run scoreboard players set @e[team=red,distance=..4] leave_lindongzhikai 160
-execute as @e if score @s leave_lindongzhikai matches 1.. run scoreboard players remove @s leave_lindongzhikai 1
-execute as @e if score @s leave_lindongzhikai matches 0 run scoreboard players set @s in_lindongzhikai 0
-execute as @e if score @s in_lindongzhikai matches 160 run scoreboard players set @s DongJie 60
-execute as @e if score @s in_lindongzhikai matches 160 run tag @s add DongJie
-execute as @e if score @s in_lindongzhikai matches 160 at @s run playsound minecraft:entity.player.hurt_freeze player @s ~ ~ ~ 100 0
-execute as @e if score @s in_lindongzhikai matches 160 run scoreboard players set @s in_lindongzhikai 0
 
-execute as @a if score @s stophurt_lindongzhikai matches 1.. run scoreboard players remove @s stophurt_lindongzhikai 1
-execute as @a if score @s stophurt_lindongzhikai matches 0 run scoreboard players set @s hurt_lindongzhikai 0
+scoreboard players add @a[tag=lindongzhikai] lindongzhikai_lingyu 1
+execute as @a[tag=lindongzhikai,team=red] if score @s lindongzhikai_lingyu matches 40 at @s run scoreboard players add @e[team=blue,distance=..6,tag=!tuteng,limit=3,sort=random] YongHan 3
+execute as @a[tag=lindongzhikai,team=blue] if score @s lindongzhikai_lingyu matches 40 at @s run scoreboard players add @e[team=red,distance=..6,tag=!tuteng,limit=3,sort=random] YongHan 3
 
-execute as @a if score @s hurt_lindongzhikai matches 5 run scoreboard players set @s DongJie 30
-execute as @a if score @s hurt_lindongzhikai matches 5 run tag @s add DongJie
-execute as @a if score @s hurt_lindongzhikai matches 5 at @s run playsound minecraft:entity.player.hurt_freeze player @s ~ ~ ~ 100 0
-execute as @a if score @s hurt_lindongzhikai matches 5 run scoreboard players set @s hurt_lindongzhikai 0
+execute as @a[tag=lindongzhikai] if score @s lindongzhikai_lingyu matches 40 run scoreboard players reset @s lindongzhikai_lingyu
+
+execute as @e[scores={YongHan=18..}] at @s run function kards:game/yongpaiku/shenji/wangzhibaoku/lindongzhikai/1
 
 execute as @a[tag=lindongzhikai] unless items entity @s armor.chest *[custom_data={kards:'凛冬之铠'}] run tag @s remove lindongzhikai
 #苦难摇篮
@@ -105,7 +95,6 @@ function kards:game/yongpaiku/shenji/wangzhibaoku/jiangshuzhe/event/general
 execute as @a[tag=jiangshuzhe] unless items entity @s container.* *[custom_data={kards:'讲述者'}] run tag @s remove jiangshuzhe
 #寄生粘液
 execute as @a[tag=jishengnianye] run scoreboard players set @s jinzijue 0
-execute as @a[tag=jishengnianye] run attribute @s max_health base set 200
 execute as @a[tag=jishengnianye] if score @s health matches 101.. run effect give @s strength 1 4 true
 execute as @a[tag=jishengnianye] if score @s health matches 101.. run effect give @s wither 1 1 true
 execute as @a[tag=jishengnianye] if score @s health matches 30..100 run effect give @s strength 1 3 true
@@ -116,7 +105,7 @@ execute as @a[tag=jishengnianye] if score @s jishengnianyeHealback matches 7.. r
 execute as @a[tag=jishengnianye] if score @s jishengnianyeHealback matches 7.. run scoreboard players remove @s jishengnianyeHealback 7
 
 execute as @a[tag=jishengnianye] if score @s health matches ..29 run effect give @s minecraft:speed 1 1 true
-execute as @a[tag=jishengnianye] if score @s health matches ..29 run attribute @s minecraft:entity_interaction_range modifier add 0-0-2 -3 add_value
+execute as @a[tag=jishengnianye] if score @s health matches ..29 run attribute @s minecraft:entity_interaction_range modifier add 0-0-2 -1 add_multiplied_total
 execute as @a[tag=jishengnianye] unless score @s health matches ..29 run attribute @s minecraft:entity_interaction_range modifier remove 0-0-2
 execute as @a[tag=jishengnianye] if score @s death matches 1.. run attribute @s max_health base set 20
 execute as @a[tag=jishengnianye] if score @s death matches 1.. run attribute @s entity_interaction_range modifier remove 0-0-2
@@ -274,8 +263,8 @@ execute as @a[tag=yanyangdajian] unless items entity @s weapon.* iron_sword[cust
 execute as @a if items entity @s weapon.* netherite_sword[custom_data={kards:'凋零太刀'}] run tag @s add diaolingtaidao
 
 execute as @a[tag=diaolingtaidao] if predicate kards:sneak unless score @s diaolingtaidao_Time matches 1.. run scoreboard players add @s diaolingtaidao 1
-execute as @a[tag=diaolingtaidao] if score @s diaolingtaidao matches 15 run scoreboard players set @s diaolingtaidao_Time 120
-execute as @a[tag=diaolingtaidao] if score @s diaolingtaidao matches 15 run function kards:game/yongpaiku/shenji/wangzhibaoku/diaolingtaidao/1
+execute as @a[tag=diaolingtaidao] if score @s diaolingtaidao matches 10 run scoreboard players set @s diaolingtaidao_Time 130
+execute as @a[tag=diaolingtaidao] if score @s diaolingtaidao matches 10 run function kards:game/yongpaiku/shenji/wangzhibaoku/diaolingtaidao/1
 
 scoreboard players remove @a[tag=diaolingtaidao,scores={diaolingtaidao_Time=1..}] diaolingtaidao_Time 1
 execute as @a if score @s diaolingtaidao_Time matches 0 run tellraw @s [{text:"[凋零太刀]",color:"dark_gray"},{text:"拔刀·碎魂 效果就绪!",color:"gold"}]
@@ -290,10 +279,10 @@ execute as @e[type=block_display,tag=diaolingtaidao_wither_rose] run scoreboard 
 execute as @e[type=block_display,tag=diaolingtaidao_wither_rose] unless score @s diaolingtaidao_wither_rose matches 1.. run kill @s
 
 execute as @e[type=block_display,tag=diaolingtaidao_wither_rose] run scoreboard players add @s diaolingtaidao_wither_rose_Healback 1
-execute as @e[type=block_display,tag=diaolingtaidao_wither_rose,team=red] if score @s diaolingtaidao_wither_rose_Healback matches 10 at @s run scoreboard players add @a[tag=diaolingtaidao_wither_rose,team=red,distance=..7] HealBack 1
-execute as @e[type=block_display,tag=diaolingtaidao_wither_rose,team=blue] if score @s diaolingtaidao_wither_rose_Healback matches 10 at @s run scoreboard players add @a[tag=diaolingtaidao_wither_rose,team=blue,distance=..7] HealBack 1
-execute as @e[type=block_display,tag=diaolingtaidao_wither_rose] if score @s diaolingtaidao_wither_rose_Healback matches 10 run scoreboard players set @s diaolingtaidao_wither_rose_Healback 0
+execute as @e[type=block_display,tag=diaolingtaidao_wither_rose,team=red] if score @s diaolingtaidao_wither_rose_Healback matches 20 at @s run scoreboard players add @a[tag=diaolingtaidao,team=red,distance=..7] HealBack 1
+execute as @e[type=block_display,tag=diaolingtaidao_wither_rose,team=blue] if score @s diaolingtaidao_wither_rose_Healback matches 20 at @s run scoreboard players add @a[tag=diaolingtaidao,team=blue,distance=..7] HealBack 1
+execute as @e[type=block_display,tag=diaolingtaidao_wither_rose] if score @s diaolingtaidao_wither_rose_Healback matches 20 run scoreboard players set @s diaolingtaidao_wither_rose_Healback 0
 
-execute as @e[type=block_display,tag=diaolingtaidao_wither_rose,team=red] at @s run effect give @e[distance=..7,team=blue] wither 1 2 true
-execute as @e[type=block_display,tag=diaolingtaidao_wither_rose,team=blue] at @s run effect give @e[distance=..7,team=red] wither 1 2 true
+execute as @e[type=block_display,tag=diaolingtaidao_wither_rose,team=red] at @s run effect give @e[distance=..7,team=blue,limit=4] wither 1 0 true
+execute as @e[type=block_display,tag=diaolingtaidao_wither_rose,team=blue] at @s run effect give @e[distance=..7,team=red,limit=4] wither 1 0 true
 
