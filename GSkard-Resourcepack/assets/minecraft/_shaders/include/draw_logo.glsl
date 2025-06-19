@@ -111,7 +111,7 @@ bool drawBoxedDiamond(vec2 uv, vec2 center, float size, float thickness, float p
     return diamondDist <= scaledSize + scaledThickness;
 }
 
-bool drawMain(vec2 uv, vec2 resolution, float progress) {
+bool drawMain(vec2 uv, float progress) {
     float thickness = 0.01;
     float scale = progress / 4.0 + 0.75;
 
@@ -124,20 +124,20 @@ bool drawMain(vec2 uv, vec2 resolution, float progress) {
     vec2 bottomLeft = center + vec2(-cardWidth / 2.0, -cardHeight / 2.0);
     vec2 bottomRight = center + vec2(cardWidth / 2.0, -cardHeight / 2.0);
 
-    if (drawBoxedLine(uv, topLeft, topRight, thickness, progress, resolution, scale)) return true;
-    if (drawBoxedLine(uv, bottomLeft, bottomRight, thickness, progress, resolution, scale)) return true;
-    if (drawBoxedLine(uv, topLeft, bottomLeft, thickness, progress, resolution, scale)) return true;
-    if (drawBoxedLine(uv, topRight, bottomRight, thickness, progress, resolution, scale)) return true;
+    if (drawBoxedLine(uv, topLeft, topRight, thickness, progress, ScreenSize, scale)) return true;
+    if (drawBoxedLine(uv, bottomLeft, bottomRight, thickness, progress, ScreenSize, scale)) return true;
+    if (drawBoxedLine(uv, topLeft, bottomLeft, thickness, progress, ScreenSize, scale)) return true;
+    if (drawBoxedLine(uv, topRight, bottomRight, thickness, progress, ScreenSize, scale)) return true;
 
     float cornerRadius = thickness * 1.5;
-    if (drawBoxedDot(uv, topLeft, cornerRadius, progress, resolution)) return true;
-    if (drawBoxedDot(uv, topRight, cornerRadius, progress, resolution)) return true;
-    if (drawBoxedDot(uv, bottomLeft, cornerRadius, progress, resolution)) return true;
-    if (drawBoxedDot(uv, bottomRight, cornerRadius, progress, resolution)) return true;
+    if (drawBoxedDot(uv, topLeft, cornerRadius, progress, ScreenSize)) return true;
+    if (drawBoxedDot(uv, topRight, cornerRadius, progress, ScreenSize)) return true;
+    if (drawBoxedDot(uv, bottomLeft, cornerRadius, progress, ScreenSize)) return true;
+    if (drawBoxedDot(uv, bottomRight, cornerRadius, progress, ScreenSize)) return true;
 
     // Draw central diamond
     float diamondSize = 0.05; // size of the diamond (adjust as needed)
-    if (drawBoxedDiamond(uv, center, diamondSize, thickness, progress, resolution, scale)) return true;
+    if (drawBoxedDiamond(uv, center, diamondSize, thickness, progress, ScreenSize, scale)) return true;
 
     return false;
 }
