@@ -20,6 +20,8 @@
         "kards:chan",
         "kards:peiyangshi",
         "minecraft:mace_smash",
-        "kards:zhongshang"
+        "kards:zhongshang",
+        "minecraft:freeze",
+        "kards:duming"
     ]
 }

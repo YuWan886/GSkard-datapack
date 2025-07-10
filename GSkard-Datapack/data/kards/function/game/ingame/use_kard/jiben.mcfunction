@@ -24,4 +24,5 @@ execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[cu
 execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'寂静山羊'}] if score @s kardCount >= #kard_jijingshanyang kardCount run function kards:game/yongpaiku/jiben/jijingshanyang
 execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'蛮兵'}] if score @s kardCount >= #kard_manbing kardCount run function kards:game/yongpaiku/jiben/manbing
 execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'远古守卫者'}] if score @s kardCount >= #kard_yuangushouweizhe kardCount run function kards:game/yongpaiku/jiben/yuangushouweizhe
+execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'马蜂'}] if score @s kardCount >= #kard_mafeng kardCount run function kards:game/yongpaiku/jiben/mafeng
 

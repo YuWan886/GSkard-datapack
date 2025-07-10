@@ -1,5 +1,5 @@
 scoreboard players remove @s diaolingtaidao_tujing 1
-particle soul ~ ~ ~ 0.2 0.2 0.2 0 2 force @a
+particle soul ~ ~ ~ 0.2 0.2 0.2 1 2 force @a
 
 execute if entity @s[team=red] at @s run tag @e[team=blue,distance=..2] add diaolingtaidao_hurt
 execute if entity @s[team=blue] at @s run tag @e[team=red,distance=..2] add diaolingtaidao_hurt

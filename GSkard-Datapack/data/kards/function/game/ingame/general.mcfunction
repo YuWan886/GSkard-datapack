@@ -7,26 +7,20 @@ execute if score #system GameStatus matches 1 run function kards:game/ingame/rou
 execute as @a[gamemode=adventure,tag=Ready] if score #system GameStatus matches 1..2 unless items entity @s weapon.mainhand #kards:jinzhanwuqi unless items entity @s weapon.mainhand lantern run title @s actionbar [{text: "K/Kmax  ",color:"dark_green"},{score:{objective:"kardCount",name:"@s"},color:"red"},{text: "/",color: "red"},{score:{objective:"kardCountmax",name:"@s"},color:"red",bold: true}]
 #赋值
 scoreboard players add @a tanshewubuchong 0
-scoreboard players add @a zhunbei 0
 scoreboard players add @a newzombie_1 0
 scoreboard players add @a newzombie 0
-scoreboard players add @a jinfajiejie 0
 scoreboard players add @a langqunzhanshu 0
 scoreboard players add @a chengmo 0
-scoreboard players add @a jinfajiejie 0
 scoreboard players add @a touxiang 0
 scoreboard players add 红队 touxiang 0
 scoreboard players add 蓝队 touxiang 0
-scoreboard players add @a xiangxijieshao_1 0
 scoreboard players add @a jinzijue 0
 scoreboard players add @a kujie 0
 scoreboard players add @a changhuan 0
 scoreboard players add @a lairichanghuan 0
 scoreboard players add @a kardCount 0
 scoreboard players add @a changhuan_times 0
-
 scoreboard players add @a jinziqifeng 0
-
 #升级
 function kards:game/ingame/shengji/general
 #图腾buff
@@ -94,7 +88,7 @@ scoreboard players reset @a[gamemode=spectator,tag=XuanZhuan] XuanZhuan
 tag @a[gamemode=spectator,tag=XuanZhuan] remove XuanZhuan
 #断腿
 scoreboard players remove @a[tag=DuanTui,scores={DuanTui=1..}] DuanTui 1
-execute as @a[tag=DuanTui,scores={DuanTui=1..}] run attribute @s minecraft:jump_strength modifier add 0-0-2 -100 add_value
+execute as @a[tag=DuanTui,scores={DuanTui=1..}] run attribute @s minecraft:jump_strength modifier add 0-0-2 -1 add_multiplied_total
 execute as @a[tag=DuanTui,scores={DuanTui=0}] run attribute @s minecraft:jump_strength modifier remove 0-0-2
 tag @a[tag=DuanTui,scores={DuanTui=0}] remove DuanTui
 
@@ -106,7 +100,7 @@ execute as @e[tag=DongJie,scores={DongJie=1..}] at @s run particle snowflake ~ ~
 scoreboard players remove @e[tag=DongJie,scores={DongJie=1..}] DongJie 1
 effect give @e[tag=DongJie,scores={DongJie=1..}] slowness 1 100 true
 effect give @e[tag=DongJie,scores={DongJie=1..}] weakness 1 128 true
-execute as @a[tag=DongJie,scores={DongJie=1..}] run attribute @s minecraft:jump_strength modifier add 0-0-3 -100 add_value
+execute as @a[tag=DongJie,scores={DongJie=1..}] run attribute @s minecraft:jump_strength modifier add 0-0-3 -1 add_multiplied_total
 title @a[tag=DongJie,scores={DongJie=1..}] times 0t 1s 0t
 title @a[tag=DongJie,scores={DongJie=1..}] title {text: "冻结中...",color:"aqua",bold:true}
 execute as @e[tag=DongJie,scores={DongJie=0}] run attribute @s minecraft:jump_strength modifier remove 0-0-3
@@ -115,16 +109,16 @@ effect clear @e[tag=DongJie,scores={DongJie=0}] weakness
 title @a[tag=DongJie,scores={DongJie=0}] title {text: ""}
 tag @e[tag=DongJie,scores={DongJie=0}] remove DongJie
 
-scoreboard players add @a[tag=DongJie,scores={DongJie=1..}] DongJie_damage 1
-execute as @a[tag=DongJie,scores={DongJie_damage=25}] run damage @s 5 freeze
-scoreboard players reset @a[tag=DongJie,scores={DongJie_damage=25}] DongJie_damage
+scoreboard players add @e[tag=DongJie,scores={DongJie=1..}] DongJie_damage 1
+execute as @e[tag=DongJie,scores={DongJie_damage=25}] run damage @s 5 freeze
+scoreboard players reset @e[tag=DongJie,scores={DongJie_damage=25}] DongJie_damage
 
 scoreboard players reset @a[gamemode=spectator,tag=DongJie] DongJie
 tag @a[gamemode=spectator,tag=DongJie] remove DongJie
 #火焰
 execute as @a if predicate kards:fanghuo run tag @s add Fired
 scoreboard players remove @e[tag=Fire,scores={Fire=1..}] Fire 1
-title @a[tag=Fire] actionbar {text: "你被点燃了",color:"red"}
+title @a[tag=Fire,scores={Fire=1..}] actionbar {text: "你被点燃了",color:"red"}
 scoreboard players add @e[tag=Fire,scores={Fire=1..}] Fire_take_damage 1
 execute as @e[scores={Fire_take_damage=10}] run damage @s 1.5 kards:huoyan
 execute as @e[scores={Fire_take_damage=10},tag=Fire_Ex] run damage @s 3 kards:huoyan
@@ -286,7 +280,7 @@ execute if entity @a[scores={jinzijue=10}] as @a if items entity @s container.* 
 
 #音乐盒 春日影
 execute at @e[tag=droll] run particle minecraft:note ~0.5 ~ ~ 0.5 0.5 0.5 1 3
-execute as @e[tag=droll] if score @s lifetime matches 1.. at @s run tag @e[distance=..13] add droll_music
+execute as @e[tag=droll] if score @s lifetime matches 1.. at @s run tag @e[distance=..13,tag=!spectator,type=!#impact_projectiles] add droll_music
 
 effect give @e[tag=droll_music,distance=0.1..] weakness 1 255 true
 execute as @e[tag=droll_music,distance=0.1..] run attribute @s minecraft:movement_speed modifier add 0-0-2 -100 add_multiplied_total
@@ -299,7 +293,6 @@ execute as @e[tag=droll_music,distance=0.1..,type=!player] at @s unless entity @
 execute as @e[tag=droll_music,distance=0.1..] at @s unless entity @e[tag=droll,distance=..13] run tag @s remove droll_music
 #存活时长
 execute as @e if score @s lifetime matches 1.. run scoreboard players remove @s lifetime 1
-execute as @e[tag=droll] if score @s lifetime matches 0 run stopsound @a block minecraft:music_disc.relic
 execute as @e[tag=droll] if score @s lifetime matches 0 run kill @s
 #清弹射物
 kill @e[nbt={Item:{id:"minecraft:arrow"}}]
@@ -317,8 +310,8 @@ execute if score 红队 touxiang = 人数 r_p run gamemode spectator @a[team=red
 execute if score 蓝队 touxiang = 人数 b_p run gamemode spectator @a[team=blue]
 
 #地狱
-execute if score 红队 diyu matches 1 run effect give @e[type=!player,team=red,tag=!tuteng] fire_resistance 1 0 true
-execute if score 蓝队 diyu matches 1 run effect give @e[type=!player,team=blue,tag=!tuteng] fire_resistance 1 0 true
+execute if score 红队 diyu matches 1 run effect give @e[type=!player,team=blue,tag=!tuteng] fire_resistance 1 0 true
+execute if score 蓝队 diyu matches 1 run effect give @e[type=!player,team=red,tag=!tuteng] fire_resistance 1 0 true
 #酸辣无骨鸡爪
 execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{kards:"鸡爪"}}}}] run data modify entity @s PickupDelay set value -1
 execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{kards:"鸡爪"}}}}] if data entity @s {Age:25s} at @s run function kards:game/yongpaiku/fashu/suanlawugujizhua/3
@@ -360,6 +353,12 @@ execute as @e[type=bat,tag=wurenji] at @s unless block ~ ~1.5 ~ air run tp @s ~ 
 execute as @e[type=bat,tag=wurenji] at @s unless entity @e[type=shulker,distance=..1] run kill @s
 execute as @e[type=bat,tag=wurenji] at @s unless block ~ ~ ~ air run tp @s ~ ~1 ~
 execute as @e[type=shulker,tag=wurenji] at @s unless entity @e[type=bat,distance=..1] run kill @s
+
+execute as @e[type=bat,tag=wurenji] at @s unless block ^ ^ ^0.75 air run tp @s ^ ^ ^-0.75
+execute as @e[type=bat,tag=wurenji] at @s unless block ~ ~0.5 ~ air run tp @s ~ ~-0.5 ~
+execute as @e[type=bat,tag=wurenji] at @s unless block ~ ~-0.5 ~ air run tp @s ~ ~0.5 ~
+execute as @e[type=bat,tag=wurenji] at @s unless block ^0.75 ^ ^ air run tp @s ^-0.75 ^ ^
+
 #唤魔者、幻术师
 execute as @e[type=evoker] store result score @s SpellTicks run data get entity @s SpellTicks
 execute as @e[type=illusioner] store result score @s SpellTicks run data get entity @s SpellTicks
