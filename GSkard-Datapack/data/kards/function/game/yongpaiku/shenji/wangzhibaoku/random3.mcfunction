@@ -1,4 +1,3 @@
-
 execute store result score @s wangzhibaoku run random value 1..13
 execute if score @s wangzhibaoku matches 1 run function kards:game/yongpaiku/shenji/wangzhibaoku/kunanyaolan/give
 execute if score @s wangzhibaoku matches 2 run function kards:game/yongpaiku/shenji/wangzhibaoku/senlinzhihu
@@ -13,8 +12,6 @@ execute if score @s wangzhibaoku matches 10 run function kards:game/yongpaiku/sh
 execute if score @s wangzhibaoku matches 11 run function kards:game/yongpaiku/shenji/wangzhibaoku/yanyangdajian/give
 execute if score @s wangzhibaoku matches 12 run function kards:game/yongpaiku/shenji/wangzhibaoku/fengbaozhanchui/give
 execute if score @s wangzhibaoku matches 13 run function kards:game/yongpaiku/shenji/wangzhibaoku/diaolingtaidao/give
-
 scoreboard players set @s wangzhibaoku 0
-
 function kards:game/yongpaiku/shenji/wangzhibaoku/general
 function kards:game/ingame/round/skill

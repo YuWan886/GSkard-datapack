@@ -25,16 +25,12 @@ execute positioned 105.5 227 -14.0 as @a[gamemode=!spectator,dx=0.5,dy=4,dz=4] r
 execute positioned 105.5 239 -50.0 as @a[gamemode=!spectator,dx=0.5,dy=4,dz=4] run advancement grant @s only kards:chengjiu/lobby/bushizhe
 execute positioned 105.5 239 -50.0 as @a[gamemode=!spectator,dx=0.5,dy=4,dz=4] at @s run playsound entity.enderman.teleport player @s ~ ~ ~ 100 2
 execute positioned 105.5 239 -50.0 as @a[gamemode=!spectator,dx=0.5,dy=4,dz=4] run tp @s 104.0 227 -12.0 90 ~
-
 #跑酷
 function kards:lobby/run/general
 #教程
 execute positioned 89.0 257.5 -30.0 run particle minecraft:dragon_breath ~ ~ ~ 0.5 1 0.5 0.001 5
 execute positioned 89.0 257.5 -21.0 run particle minecraft:dragon_breath ~ ~ ~ 0.5 1 0.5 0.001 5
-
 execute positioned 88.0 255 -22.0 run advancement grant @a[dx=2,dz=2,dy=3] only kards:chengjiu/laodeng
 execute positioned 88.0 255 -31.0 run advancement grant @a[dx=2,dz=2,dy=3] only kards:chengjiu/laodeng
-
 execute positioned 58.0 254 -27.0 run advancement grant @a[dx=3,dz=3] only kards:chengjiu/jiaocheng
-
 execute if score #system GameStatus matches 0 as @a[advancements={kards:chengjiu/jiaocheng=false,kards:chengjiu/laodeng=false}] positioned 56.0 256.00 -33.0 unless entity @s[dz=14,dy=10,dx=42] run tp @s 94 256 -26 90 0

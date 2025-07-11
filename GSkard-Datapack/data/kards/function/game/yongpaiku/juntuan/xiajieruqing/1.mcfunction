@@ -1,9 +1,7 @@
 execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[下界入侵]",color:"dark_green",hover_event:{action:"show_text",value:"召唤1只猪灵 回收所有基本牌 每回收1张基本牌 多召唤1只"}}]
 #存储数量
 execute store result score @s ronghui_jiben run clear @s minecraft:music_disc_mall
-
 execute if entity @s[team=red] at @e[tag=blue_marker_7,limit=1] run summon minecraft:piglin ~ 1 ~ {Team:red,IsBaby:0b,IsImmuneToZombification:true,equipment:{mainhand:{id:"minecraft:golden_sword"}}}
-
 execute if entity @s[team=blue] at @e[tag=red_marker_7,limit=1] run summon minecraft:piglin ~ 1 ~ {Team:blue,IsBaby:0b,IsImmuneToZombification:true,equipment:{mainhand:{id:"minecraft:golden_sword"}}}
 function kards:game/yongpaiku/xianjin/jiance/mobjiance
 function kards:game/yongpaiku/use_general/kard_general

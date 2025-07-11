@@ -1,3 +1,2 @@
-
 give @s music_disc_strad[item_name=[{text: "12K",color:"aqua"},{text: " 王之宝库",color:"white"}],lore=[{text: "神迹牌",color:"white",italic:false},[{text: "从王之宝库中抽取一把",color:"gray",italic:false},{text: "传奇宝具",color:"gold",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'王之宝库'},tooltip_style="kard/god"]
 scoreboard players set #kard_wangzhibaoku kardCount 12

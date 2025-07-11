@@ -11,4 +11,3 @@ execute if score @s Fire matches 300.. run scoreboard players set @s Fire 300
 scoreboard players set @s Fire_take_damage 0
 tag @s remove enchantment_huoyanfujia
 advancement revoke @s only kards:shenqi/tianshenshibanjia/enchantment/huoyanfujia
-

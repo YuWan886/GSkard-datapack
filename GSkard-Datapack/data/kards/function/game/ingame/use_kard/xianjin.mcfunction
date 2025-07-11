@@ -1,39 +1,27 @@
 #陷阱牌
 execute if entity @s[team=red] if score @s kardCount >= #kard_laizishenchu kardCount if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'来自深处'}] unless score 蓝队 xianjin_laizishenchu matches 1 run function kards:game/yongpaiku/xianjin/used/laizishenchu
 execute if entity @s[team=blue] if score @s kardCount >= #kard_laizishenchu kardCount if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'来自深处'}] unless score 红队 xianjin_laizishenchu matches 1 run function kards:game/yongpaiku/xianjin/used/laizishenchu
-
 execute if entity @s[team=red] if score @s kardCount >= #kard_hewei kardCount if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'合围'}] unless score 蓝队 xianjin_hewei matches 1 run function kards:game/yongpaiku/xianjin/used/hewei
 execute if entity @s[team=blue] if score @s kardCount >= #kard_hewei kardCount if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'合围'}] unless score 红队 xianjin_hewei matches 1 run function kards:game/yongpaiku/xianjin/used/hewei
-
 execute if entity @s[team=red] if score @s kardCount >= #kard_shifaxiaogui kardCount if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'施法小鬼'}] unless score 蓝队 xianjin_shifaxiaogui matches 1 run function kards:game/yongpaiku/xianjin/used/shifaxiaogui
 execute if entity @s[team=blue] if score @s kardCount >= #kard_shifaxiaogui kardCount if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'施法小鬼'}] unless score 红队 xianjin_shifaxiaogui matches 1 run function kards:game/yongpaiku/xianjin/used/shifaxiaogui
-
 execute if entity @s[team=red] if score @s kardCount >= #kard_jingxiahezi kardCount if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'惊吓盒子'}] unless score 蓝队 xianjin_jingxiahezi matches 1 run function kards:game/yongpaiku/xianjin/used/jingxiahezi
 execute if entity @s[team=blue] if score @s kardCount >= #kard_jingxiahezi kardCount if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'惊吓盒子'}] unless score 红队 xianjin_jingxiahezi matches 1 run function kards:game/yongpaiku/xianjin/used/jingxiahezi
-
 execute if entity @s[team=red] if score @s kardCount >= #kard_molifushi kardCount if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'魔力腐蚀'}] unless score 蓝队 xianjin_molifushi matches 1 run function kards:game/yongpaiku/xianjin/used/molifushi
 execute if entity @s[team=blue] if score @s kardCount >= #kard_molifushi kardCount if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'魔力腐蚀'}] unless score 红队 xianjin_molifushi matches 1 run function kards:game/yongpaiku/xianjin/used/molifushi
-
 execute if entity @s[team=red] if score @s kardCount >= #kard_shusifangshou kardCount if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'殊死防守'}] unless score 蓝队 xianjin_shusifangshou matches 1 run function kards:game/yongpaiku/xianjin/used/shusifangshou
 execute if entity @s[team=blue] if score @s kardCount >= #kard_shusifangshou kardCount if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'殊死防守'}] unless score 红队 xianjin_shusifangshou matches 1 run function kards:game/yongpaiku/xianjin/used/shusifangshou
-
 execute if entity @s[team=red] if score @s kardCount >= #kard_sunhaoguodu kardCount if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'损耗过度'}] unless score 蓝队 xianjin_sunhaoguodu matches 1 run function kards:game/yongpaiku/xianjin/used/sunhaoguodu
 execute if entity @s[team=blue] if score @s kardCount >= #kard_sunhaoguodu kardCount if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'损耗过度'}] unless score 红队 xianjin_sunhaoguodu matches 1 run function kards:game/yongpaiku/xianjin/used/sunhaoguodu
-
 execute if entity @s[team=red] if score @s kardCount >= #kard_shufashixiao kardCount if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'术法失效'}] unless score 蓝队 xianjin_shufashixiao matches 1 run function kards:game/yongpaiku/xianjin/used/shufashixiao
 execute if entity @s[team=blue] if score @s kardCount >= #kard_shufashixiao kardCount if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'术法失效'}] unless score 红队 xianjin_shufashixiao matches 1 run function kards:game/yongpaiku/xianjin/used/shufashixiao
-
 execute if entity @s[team=red] if score @s kardCount >= #kard_yaoyuandeqiao kardCount if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'遥远的桥'}] unless score 蓝队 xianjin_yaoyuandeqiao matches 1 run function kards:game/yongpaiku/xianjin/used/yaoyuandeqiao
 execute if entity @s[team=blue] if score @s kardCount >= #kard_yaoyuandeqiao kardCount if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'遥远的桥'}] unless score 红队 xianjin_yaoyuandeqiao matches 1 run function kards:game/yongpaiku/xianjin/used/yaoyuandeqiao
-
 execute if entity @s[team=red] if score @s kardCount >= #kard_youdi kardCount if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'诱敌'}] unless score 蓝队 xianjin_youdi matches 1 run function kards:game/yongpaiku/xianjin/used/youdi
 execute if entity @s[team=blue] if score @s kardCount >= #kard_youdi kardCount if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'诱敌'}] unless score 红队 xianjin_youdi matches 1 run function kards:game/yongpaiku/xianjin/used/youdi
-
 execute if entity @s[team=red] if score @s kardCount >= #kard_qianjunyifa kardCount if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'千钧一发'}] unless score 蓝队 xianjin_qianjunyifa matches 1 run function kards:game/yongpaiku/xianjin/used/qianjunyifa
 execute if entity @s[team=blue] if score @s kardCount >= #kard_qianjunyifa kardCount if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'千钧一发'}] unless score 红队 xianjin_qianjunyifa matches 1 run function kards:game/yongpaiku/xianjin/used/qianjunyifa
-
 execute if entity @s[team=red] if score @s kardCount >= #kard_qinglvqianmou kardCount if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'轻虑浅谋'}] unless score 蓝队 xianjin_qinglvqianmou matches 1 run function kards:game/yongpaiku/xianjin/used/qinglvqianmou
 execute if entity @s[team=blue] if score @s kardCount >= #kard_qinglvqianmou kardCount if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'轻虑浅谋'}] unless score 红队 xianjin_qinglvqianmou matches 1 run function kards:game/yongpaiku/xianjin/used/qinglvqianmou
-
 execute if entity @s[team=red] if score @s kardCount >= #kard_toulianghuanzhu kardCount if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'偷梁换柱'}] unless score 蓝队 xianjin_toulianghuanzhu matches 1 run function kards:game/yongpaiku/xianjin/used/toulianghuanzhu
 execute if entity @s[team=blue] if score @s kardCount >= #kard_toulianghuanzhu kardCount if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'偷梁换柱'}] unless score 红队 xianjin_toulianghuanzhu matches 1 run function kards:game/yongpaiku/xianjin/used/toulianghuanzhu

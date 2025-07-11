@@ -1,3 +1,2 @@
-
 give @s music_disc_blocks[item_name=[{text: "15K",color:"aqua"},{text: " 侦测贝",color:"red"}],lore=[{text: "图腾牌",color:"red",italic:false},{text: "在队伍图腾区生成潜影贝",color:"gray",italic:false},{text: "图腾存活效果：",color:"gray",italic:false},[{text: "1.你的队伍",color:"gray",italic:false},{text: "不会触发",color:"gold",italic:false},{text: "非回合类型的陷阱",color:"gold",italic:false,bold:true},{text: " 该效果触发时侦测贝受到1♥伤害",color:"gold",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'侦测贝'},tooltip_style="kard/totem"]
 scoreboard players set #kard_zhencebei kardCount 15

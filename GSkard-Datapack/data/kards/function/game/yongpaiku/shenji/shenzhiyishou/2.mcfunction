@@ -1,4 +1,3 @@
-
 execute store result score @s random_clear run random value 0..35
 execute if score @s random_clear matches 0 unless items entity @s container.0 #minecraft:creeper_drop_music_discs run return run function kards:game/yongpaiku/shenji/shenzhiyishou/2
 execute if score @s random_clear matches 1 unless items entity @s container.1 #minecraft:creeper_drop_music_discs run return run function kards:game/yongpaiku/shenji/shenzhiyishou/2
@@ -36,12 +35,9 @@ execute if score @s random_clear matches 32 unless items entity @s container.32 
 execute if score @s random_clear matches 33 unless items entity @s container.33 #minecraft:creeper_drop_music_discs run return run function kards:game/yongpaiku/shenji/shenzhiyishou/2
 execute if score @s random_clear matches 34 unless items entity @s container.34 #minecraft:creeper_drop_music_discs run return run function kards:game/yongpaiku/shenji/shenzhiyishou/2
 execute if score @s random_clear matches 35 unless items entity @s container.35 #minecraft:creeper_drop_music_discs run return run function kards:game/yongpaiku/shenji/shenzhiyishou/2
-
 tag @s add shenzhiyishou
-
 summon item ~ ~ ~ {PickupDelay:-1,Item:{id:"music_disc_11"},Tags:["copy"]}
 data modify entity @n[tag=copy,type=item] Owner set from entity @n[tag=User] UUID
-
 execute if score @s random_clear matches 0 run data modify entity @n[tag=copy,type=item] Item set from entity @s Inventory.[{Slot:0b}]
 execute if score @s random_clear matches 1 run data modify entity @n[tag=copy,type=item] Item set from entity @s Inventory[{Slot:1b}]
 execute if score @s random_clear matches 2 run data modify entity @n[tag=copy,type=item] Item set from entity @s Inventory[{Slot:2b}]
@@ -78,7 +74,6 @@ execute if score @s random_clear matches 32 run data modify entity @n[tag=copy,t
 execute if score @s random_clear matches 33 run data modify entity @n[tag=copy,type=item] Item set from entity @s Inventory[{Slot:33b}]
 execute if score @s random_clear matches 34 run data modify entity @n[tag=copy,type=item] Item set from entity @s Inventory[{Slot:34b}]
 execute if score @s random_clear matches 35 run data modify entity @n[tag=copy,type=item] Item set from entity @s Inventory[{Slot:35b}]
-
 execute if score @s random_clear matches 0 run item replace entity @s container.0 with air
 execute if score @s random_clear matches 1 run item replace entity @s container.1 with air
 execute if score @s random_clear matches 2 run item replace entity @s container.2 with air
@@ -115,14 +110,11 @@ execute if score @s random_clear matches 32 run item replace entity @s container
 execute if score @s random_clear matches 33 run item replace entity @s container.33 with air
 execute if score @s random_clear matches 34 run item replace entity @s container.34 with air
 execute if score @s random_clear matches 35 run item replace entity @s container.35 with air
-
 data modify entity @n[tag=copy,type=item] PickupDelay set value 1
 tag @n[tag=copy,type=item] add copy_end
 tag @n[tag=copy,type=item] remove copy
-
 execute if entity @s[team=red] if entity @a[team=red,gamemode=adventure,tag=!shenzhiyishou] as @r[team=red,gamemode=adventure,tag=!shenzhiyishou] run return run function kards:game/yongpaiku/shenji/shenzhiyishou/2
 execute if entity @s[team=blue] if entity @a[team=blue,gamemode=adventure,tag=!shenzhiyishou] as @r[team=blue,gamemode=adventure,tag=!shenzhiyishou] run return run function kards:game/yongpaiku/shenji/shenzhiyishou/2
-
 tellraw @a [{selector:"@a[tag=shenzhiyishou]"},{text: "的牌被",color:"aqua"},{selector:"@a[tag=User,limit=1]"},{text: "偷走了！",color:"aqua"}]
 tag @a[tag=shenzhiyishou] remove shenzhiyishou
 kill @e[type=item,nbt={Item:{id:"minecraft:music_disc_11"}},tag=copy_end]

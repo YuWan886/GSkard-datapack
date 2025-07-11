@@ -4,7 +4,6 @@ worldborder set 59999968
 scoreboard players set @a death 0
 gamemode adventure @a[gamemode=spectator,team=!Spectator]
 clear @a
-
 tp @a[team=!Spectator] 9 225 -26
 tp @a[team=Spectator] 9 225 -26
 effect clear @a

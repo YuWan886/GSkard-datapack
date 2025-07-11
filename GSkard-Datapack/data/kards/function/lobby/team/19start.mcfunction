@@ -3,5 +3,4 @@ title @a title [{text: "多人模式",color:"gold",bold:true}]
 execute as @a[team=red] run attribute @s max_health base set 200
 #修改蓝生命上限为180HP
 execute as @a[team=blue] run attribute @s max_health base set 180
-
 function kards:game/start/input

@@ -25,7 +25,6 @@ scoreboard players reset * tongji_hurt
 bossbar set minecraft:worldborder visible false
 worldborder set 59999968
 scoreboard players set #system worldborder -1
-
 #设置游戏状态为0(关闭)
 scoreboard players set #system GameStatus 0
 #重置回合数
@@ -132,6 +131,5 @@ schedule clear kards:game/ingame/round/pvpround/countdown
 execute as @a at @s run stopsound @s
 #概率生成oiiao
 execute if predicate kards:random0.01 run schedule function kards:game/end/oiia 1s
-
 #生成琉璃夜
 summon minecraft:pig 62 226 -26 {Tags:["Hart_liuli"],attributes:[{id:"max_health",base:200}],Health:200,CustomName:[{text:"Hart_liuli",bold:true,color:"gold"}],CustomNameVisible:true}

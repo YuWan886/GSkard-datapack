@@ -28,6 +28,4 @@ fill -233 -9 -191 -233 0 -137 minecraft:barrier replace air
 worldborder set 80
 execute as @a[tag=zuzhouhujia] if items entity @s armor.chest golden_chestplate[custom_data={kards:'诅咒护甲'}] run item replace entity @s armor.chest with air
 tag @a[tag=zuzhouhujia] remove zuzhuanghujia
-
 function kards:game/ingame/round/pvpround/countdown
-

@@ -1,3 +1,2 @@
-
 give @s music_disc_cat[item_name=[{text: "6K",color:"aqua"},{text: " 地狱之火",color:"dark_green"}],lore=[{text: "军团牌",color:"dark_green",italic:false},[{text: "召唤4只",color:"gray",italic:false},{text: "烈焰人",color:"gold",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'地狱之火'},tooltip_style="kard/legion"]
 scoreboard players set #kard_diyuzhihuo kardCount 6

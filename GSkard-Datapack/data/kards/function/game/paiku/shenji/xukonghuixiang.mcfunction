@@ -1,3 +1,2 @@
-
 give @s music_disc_strad[item_name=[{text: "0K",color:"aqua"},{text: " 虚空回响",color:"white"}],lore=[{text: "神迹牌",color:"white",italic:false},[{text: "本回合内 你每使用1张",color:"gray",italic:false},{text: "基本牌 ",color:"blue",italic:false},{text: "抽",color:"gray",italic:false},{text: "1张牌",color:"gold",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'虚空回响'},tooltip_style="kard/god"]
 scoreboard players set #kard_xukonghuixiang kardCount 0

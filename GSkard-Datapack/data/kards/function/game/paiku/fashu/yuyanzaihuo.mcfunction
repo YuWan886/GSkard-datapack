@@ -1,3 +1,2 @@
 scoreboard players set #kard_yuyanzaihuo kardCount 0
-
 give @s music_disc_mellohi[item_name=[{text: "0K",color:"aqua"},{text: " 预言灾祸",color:"light_purple"}],lore=[{text: "法术牌",color:"light_purple",italic:false},[{text: "在60s内 获得",color:"gray",italic:false},{text: "抗性提升4",color:"gold",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'预言灾祸'},tooltip_style="kard/spell"]

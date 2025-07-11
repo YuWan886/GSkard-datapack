@@ -1,6 +1,5 @@
 scoreboard players set @s Ready 0
 kill @e[type=minecraft:ender_pearl]
-
 tag @s remove Ready
 tag @s add Un_Ready
 tag @s remove Running

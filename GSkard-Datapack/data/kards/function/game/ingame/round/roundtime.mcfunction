@@ -1,12 +1,9 @@
 execute store result bossbar minecraft:roundtime value run scoreboard players remove time roundtime 1
 execute if score time roundtime matches 0 run function kards:game/ingame/round/take_turns/timeout
-
 scoreboard players set #system roundtimeOper 20
 scoreboard players operation time roundtimeOper = time roundtime
 scoreboard players operation time roundtimeOper /= #system roundtimeOper
-
 execute if score #system GameRound matches 0 unless score #system RoundCount matches -1 run bossbar set minecraft:roundtime name [{text: "剩余时间",color:"gold",bold:false},{score:{name:"time",objective:"roundtimeOper"},color:"green"},{text: "s",color:"green"},{text: " | ",color:"gray",bold:false},{text: "蓝方回合",color:"blue",bold:true},{text: " | ",color:"gray",bold:false},{text: "回合数",color:"gold",bold:false},{score:{name:"回合数",objective:"GameRound"},color:"green"},{text: "/",color:"gray"},{score:{name:"#system",objective:"RoundCount"},color:"gray"}]
 execute if score #system GameRound matches 1 unless score #system RoundCount matches -1 run bossbar set minecraft:roundtime name [{text: "剩余时间",color:"gold",bold:false},{score:{name:"time",objective:"roundtimeOper"},color:"green"},{text: "s",color:"green"},{text: " | ",color:"gray",bold:false},{text: "红方回合",color:"red",bold:true},{text: " | ",color:"gray",bold:false},{text: "回合数",color:"gold",bold:false},{score:{name:"回合数",objective:"GameRound"},color:"green"},{text: "/",color:"gray"},{score:{name:"#system",objective:"RoundCount"},color:"gray"}]
-
 execute if score #system GameRound matches 0 if score #system RoundCount matches -1 run bossbar set minecraft:roundtime name [{text: "剩余时间",color:"gold",bold:false},{score:{name:"time",objective:"roundtimeOper"},color:"green"},{text: "s",color:"green"},{text: " | ",color:"gray",bold:false},{text: "蓝方回合",color:"blue",bold:true},{text: " | ",color:"gray",bold:false},{text: "回合数",color:"gold",bold:false},{score:{name:"回合数",objective:"GameRound"},color:"green"},{text: "/∞",color:"gray"}]
 execute if score #system GameRound matches 1 if score #system RoundCount matches -1 run bossbar set minecraft:roundtime name [{text: "剩余时间",color:"gold",bold:false},{score:{name:"time",objective:"roundtimeOper"},color:"green"},{text: "s",color:"green"},{text: " | ",color:"gray",bold:false},{text: "红方回合",color:"red",bold:true},{text: " | ",color:"gray",bold:false},{text: "回合数",color:"gold",bold:false},{score:{name:"回合数",objective:"GameRound"},color:"green"},{text: "/∞",color:"gray"}]

@@ -7,5 +7,4 @@ data modify entity @n[tag=copy,type=item] Item set from entity @s Inventory.[{Sl
 data modify entity @n[tag=copy,type=item] PickupDelay set value 1
 tag @n[tag=copy,type=item] add copy_end
 tag @n[tag=copy,type=item] remove copy
-
 scoreboard players operation @s kardCount -= #kard_fuzhi kardCount

@@ -1,3 +1,2 @@
-
 give @s music_disc_blocks[item_name=[{text: "10K",color:"aqua"},{text: " 村民",color:"red"}],lore=[{text: "图腾牌",color:"red",italic:false},{text: "在队伍图腾区生成村民",color:"gray",italic:false},{text: "存活效果：",color:"gray",italic:false},[{text: "1.队伍使用的怪物获得",color:"gray",italic:false},{text: "抗性提升1",color:"gold",italic:false}],[{text: "2.队伍铁傀儡获得",color:"gray",italic:false},{text: "速度2",color:"gold",italic:false},{text: " 每回合结束时为铁傀儡",italic:false,color:"gray"},{text: "回复血量",color:"gold",italic:false}],[{text:"3.无法与",color:"gray",italic:false},{text:"[培养尸]",color:"red",italic:false},{text:"同时存在",color:"gray",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'村民'},tooltip_style="kard/totem"]
 scoreboard players set #kard_cunmin kardCount 10

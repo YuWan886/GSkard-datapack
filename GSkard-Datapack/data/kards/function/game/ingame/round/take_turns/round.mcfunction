@@ -33,7 +33,6 @@ function kards:game/ingame/round/take_turns/choupai with storage minecraft:syste
 #人数补偿
 execute if score #system b_number > #system r_number run scoreboard players add @a[team=red,scores={CanuseKard=1}] kardCount 5
 execute if score #system b_number > #system r_number run scoreboard players add @a[team=red,scores={CanuseKard=1}] cishu 1
-
 execute if score #system b_death matches 1 run scoreboard players add @a[team=blue,scores={CanuseKard=1}] kardCount 3
 execute if score #system b_death matches 1 run scoreboard players add @a[team=blue,scores={CanuseKard=1}] cishu 1
 execute if score #system b_death matches 2 run scoreboard players add @a[team=blue,scores={CanuseKard=1}] kardCount 6
@@ -44,7 +43,6 @@ execute if score #system b_death matches 4 run scoreboard players add @a[team=bl
 execute if score #system b_death matches 4 run scoreboard players add @a[team=blue,scores={CanuseKard=1}] cishu 4
 execute if score #system b_death matches 5.. run scoreboard players add @a[team=blue,scores={CanuseKard=1}] kardCount 20
 execute if score #system b_death matches 5.. run scoreboard players add @a[team=blue,scores={CanuseKard=1}] cishu 5
-
 execute if score #system r_death matches 1 run scoreboard players add @a[team=red,scores={CanuseKard=1}] kardCount 3
 execute if score #system r_death matches 1 run scoreboard players add @a[team=red,scores={CanuseKard=1}] cishu 1
 execute if score #system r_death matches 2 run scoreboard players add @a[team=red,scores={CanuseKard=1}] kardCount 6
@@ -87,7 +85,6 @@ scoreboard players add @a[scores={shengchanling=1..,CanuseKard=1}] cishu 2
 scoreboard players remove @a[scores={shengchanling=1..,CanuseKard=1}] shengchanling 1
 #枯竭
 scoreboard players remove @a[scores={kujie=1..}] kujie 1
-
 execute if entity @a[team=red,scores={kujie=1..}] run tellraw @a [[{text: "红队",color:"red",bold:true},{text: "[枯竭]",color:"dark_gray",bold:true},{text: "生效中",color:"dark_gray",bold:true}],{text:"\n使用牌后额外扣除1K直至回合结束",color:"gold"}]
 execute if entity @a[team=blue,scores={kujie=1..}] run tellraw @a [[{text: "蓝队",color:"blue",bold:true},{text: "[枯竭]",color:"dark_gray",bold:true},{text: "生效中",color:"dark_gray",bold:true}],{text:"\n使用牌后额外扣除1K直至回合结束",color:"gold"}]
 execute if entity @a[scores={kujie=1..}] run tellraw @a [{text: "-",color:"gray"}]
@@ -96,16 +93,13 @@ execute if score 红队 diyu matches 1 run scoreboard players set 红队 diyu 0
 execute if score 蓝队 diyu matches 1 run scoreboard players set 蓝队 diyu 0
 execute if score 红队 manshui matches 1 run scoreboard players set 红队 manshui 0
 execute if score 蓝队 manshui matches 1 run scoreboard players set 蓝队 manshui 0
-
 #诅咒护甲
 execute as @a[tag=zuzhouhujia] if items entity @s armor.chest golden_chestplate[custom_data={kards:'诅咒护甲'}] run item replace entity @s armor.chest with air
 tag @a[tag=zuzhouhujia] remove zuzhuanghujia
-
 #马蜂
 scoreboard players remove @a[scores={hurt_by_mafeng=1,CanuseKard=1}] kardCount 2
 execute if entity @a[scores={hurt_by_mafeng=1,CanuseKard=1}] run tellraw @a [{selector:"@a[scores={hurt_by_mafeng=1,CanuseKard=1}]"},{text:"上回合被马蜂蛰了 -2K",color:"gray"}]
 scoreboard players reset @a[scores={hurt_by_mafeng=1,CanuseKard=1}] hurt_by_mafeng
-
 scoreboard players set @a jiben 0
 scoreboard players set @a xukonghuixiang 0
 function kards:game/ingame/round/skill
@@ -115,7 +109,6 @@ scoreboard players set @a[scores={CanuseKard=0}] kardCount 0
 #酸辣无骨鸡爪
 execute as @a[gamemode=adventure] store result score @s suanlawugujizhua run clear @s bone[custom_data={kards:'鸡爪'}] 0
 execute as @a[gamemode=adventure] if score @s suanlawugujizhua matches 1.. run function kards:game/yongpaiku/fashu/suanlawugujizhua/4
-
 #旁观者
 scoreboard players set @a[gamemode=spectator] cishu 0
 scoreboard players set @a[gamemode=spectator] kardCount 0

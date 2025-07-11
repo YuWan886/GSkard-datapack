@@ -309,6 +309,5 @@ scoreboard objectives add UUID.2 dummy
 scoreboard objectives add UUID.3 dummy
 scoreboard objectives add Fire dummy
 scoreboard objectives add Fire_take_damage dummy
-
 #
 tellraw @a [{text: "数据包加载完毕",color:"gray"}]

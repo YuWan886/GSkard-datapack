@@ -1,3 +1,2 @@
 scoreboard players set #kard_zaijijinhou kardCount 3
-
 give @s music_disc_mellohi[item_name=[{text: "3K",color:"aqua"},{text: " 宰鸡敬猴",color:"light_purple"}],lore=[{text: "法术牌",color:"light_purple",italic:false},[{text: "随机",color:"gray",italic:false},{text: "杀死1个",color:"red",italic:false},{text: "敌方队伍图腾",color:"gray",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'宰鸡敬猴'},tooltip_style="kard/spell"]

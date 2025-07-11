@@ -15,7 +15,6 @@ execute as @a run attribute @s minecraft:scale base set 1
 #设置回合数为1
 scoreboard objectives setdisplay below_name kardCount
 scoreboard players set @a[tag=Ready] kardCountmax 10
-
 #清理背包
 clear @a[tag=Ready]
 clear @a minecraft:ender_pearl
@@ -38,10 +37,8 @@ execute unless score #system roundtime matches 0 run function kards:game/start/t
 #存储人数
 execute store result score #system r_number if entity @a[team=red]
 execute store result score #system b_number if entity @a[team=blue]
-
 #神器
 tag @a remove jishengnianye
-
 #叮叮叮
 execute as @a at @s run playsound minecraft:entity.player.levelup master @s ~ ~ ~ 100 1
 #音乐
