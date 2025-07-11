@@ -1,10 +1,10 @@
 #千钧一发
 
-execute if entity @s[team=red] at @e[tag=red_marker_7,limit=1] positioned ~ 5 ~ run tp @e[team=red,tag=!tuteng,tag=!random_creaking,type=#kards:mob] ~ 5 ~
+execute if entity @s[team=red] at @e[tag=red_marker_7,limit=1] positioned ~ 1 ~ run tp @e[team=red,tag=!tuteng,tag=!random_creaking,type=#kards:mob] ~ 1 ~
 execute if entity @s[team=red] at @e[tag=red_marker_7,limit=1] run team join blue @e[team=red,tag=!tuteng,tag=!random_creaking,type=#kards:mob,distance=..5]
 
-execute if entity @s[team=blue] at @e[tag=blue_marker_7,limit=1] run tp @e[team=blue,tag=!tuteng,tag=!random_creaking,type=#kards:mob] ~ 5 ~
-execute if entity @s[team=blue] at @e[tag=blue_marker_7,limit=1] positioned ~ 5 ~ run team join red @e[team=blue,tag=!tuteng,tag=!random_creaking,type=#kards:mob,distance=..5]
+execute if entity @s[team=blue] at @e[tag=blue_marker_7,limit=1] run tp @e[team=blue,tag=!tuteng,tag=!random_creaking,type=#kards:mob] ~ 1 ~
+execute if entity @s[team=blue] at @e[tag=blue_marker_7,limit=1] positioned ~ 1 ~ run team join red @e[team=blue,tag=!tuteng,tag=!random_creaking,type=#kards:mob,distance=..5]
 
 execute as @e[type=#kards:mob] run data modify entity @s NoAI set value 0b
 execute as @e[type=#kards:mob] run data modify entity @s Invulnerable set value 0b

@@ -10,6 +10,9 @@
         "kards:move_or_die",
         "kards:la",
         "kards:chan",
-        "kards:peiyangshi"
+        "kards:peiyangshi",
+        "kards:zhongshang",
+        "kards:yonghan",
+        "kards:duming"
     ]
 }

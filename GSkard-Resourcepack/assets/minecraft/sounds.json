@@ -9,31 +9,11 @@
             }
         ]
     },
-    "music_disc.relic": {
-        "replace": true,
-        "sounds": [
-            {
-                "name": "music/skill/chunriying",
-                "stream": true,
-                "volume": 0.5
-            }
-        ]
-    },
 	"entity.player.death": {
         "replace": true,
         "sounds": [
             {
                 "name": "music/death",
-                "stream": true,
-                "volume": 0.5
-            }
-        ]
-    },
-    "dxmd": {
-        "replace": true,
-        "sounds": [
-            {
-                "name": "music/dxmd",
                 "stream": true,
                 "volume": 0.5
             }
@@ -256,12 +236,21 @@
 			}
 		]
 	},
-	"oiiaioooooiai":{
+	"wuwangzhaohuan":{
 		"sounds": [
 			{
-                "name":"music/custom/oiiaioooooiai",
+				"name": "music/custom/wuwangzhaohuan",
 				"stream": true,
-				"volume": 0.5
+				"volume": 1
+			}
+		]
+	},
+	"death_for_fall":{
+		"sounds": [
+			{
+				"name": "music/fall_death",
+				"stream": true,
+				"volume": 0.35
 			}
 		]
 	}

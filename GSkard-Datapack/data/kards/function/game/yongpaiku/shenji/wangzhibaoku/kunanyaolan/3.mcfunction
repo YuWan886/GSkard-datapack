@@ -1,15 +1,15 @@
 tag @s remove kutongzhuanhuan
 
-#0.65*伤害 目前
+#0.75*伤害 目前
 scoreboard players operation @s damage_kutongzhuanhua = @s behurt_kunanyaolan2
-scoreboard players set #system damage_kutongzhuanhua 80
+scoreboard players set #system damage_kutongzhuanhua 75
 scoreboard players operation @s damage_kutongzhuanhua *= #system damage_kutongzhuanhua
 scoreboard players set #system damage_kutongzhuanhua 1000
 scoreboard players operation @s damage_kutongzhuanhua /= #system damage_kutongzhuanhua
 
-#0.55*回血 目前
+#0.65*回血 目前
 scoreboard players operation @s HealBack = @s behurt_kunanyaolan2
-scoreboard players set #system HealBack 55
+scoreboard players set #system HealBack 65
 scoreboard players operation @s HealBack *= #system HealBack
 scoreboard players set #system HealBack 1000
 scoreboard players operation @s HealBack /= #system HealBack

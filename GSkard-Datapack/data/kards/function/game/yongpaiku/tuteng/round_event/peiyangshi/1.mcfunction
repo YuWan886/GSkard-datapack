@@ -6,4 +6,4 @@ execute if entity @s[team=blue] run damage @r[team=red,gamemode=adventure,tag=pe
 scoreboard players add @s peiyangshi 10
 tellraw @a [{selector:"@s"},{text:"咬了一口",color:"gray"},{selector:"@a[tag=peiyangshi_damage]"}]
 tag @a[tag=peiyangshi_damage] remove peiyangshi_damage
-execute if score @s peiyangshi matches 60 run function kards:game/yongpaiku/tuteng/peiyangshi/2
+execute if score @s peiyangshi matches 60 run function kards:game/yongpaiku/tuteng/round_event/peiyangshi/2

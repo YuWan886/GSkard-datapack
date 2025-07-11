@@ -2,15 +2,12 @@ execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使
 function kards:game/yongpaiku/xianjin/jiance/fashujiance
 
 scoreboard players operation @s kardCount -= #kard_xinlingfenshao kardCount
-scoreboard players remove @s[scores={kujie=1..}] kardCount 1
-scoreboard players set @s pingbi 0
-scoreboard players add @s use_kard 1
-execute unless items entity @s weapon.offhand * run return fail
+function kards:game/yongpaiku/use_general/kard_general
+execute if entity @s[type=player] unless items entity @s weapon.offhand * run return fail
 item replace entity @s weapon.offhand with air
 
 
-#红
 execute if entity @s[team=red] run effect give @e[team=blue] wither 8 4 true
-#蓝
+
 execute if entity @s[team=blue] run effect give @e[team=red] wither 8 4 true
 

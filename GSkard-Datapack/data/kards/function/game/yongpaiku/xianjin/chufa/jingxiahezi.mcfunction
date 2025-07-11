@@ -1,8 +1,8 @@
-#红队玩家触发
+队玩家触发
 execute if entity @s[team=red] at @e[tag=red_marker_7,limit=1] run summon creeper ~ 0 ~ {Team:blue,Fuse:15}
 execute if entity @s[team=red] run scoreboard players set 红队 xianjin_jingxiahezi 0
 
-#蓝队玩家触发
+队玩家触发
 execute if entity @s[team=blue] at @e[tag=blue_marker_7,limit=1] run summon creeper ~ 0 ~ {Team:red,Fuse:15}
 execute if entity @s[team=blue] run scoreboard players set 蓝队 xianjin_jingxiahezi 0
 

@@ -1,0 +1,32 @@
+{
+    "chunriying": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "music/skill/chunriying",
+                "stream": true,
+                "volume": 0.5
+            }
+        ]
+    },
+    "dxmd": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "music/dxmd",
+                "stream": true,
+                "volume": 0.5
+            }
+        ]
+	},
+	"oiiaioooooiai":{
+		"sounds": [
+			{
+                "name":"music/custom/oiiaioooooiai",
+				"stream": true,
+				"volume": 0.5
+			}
+		]
+	}
+}
+

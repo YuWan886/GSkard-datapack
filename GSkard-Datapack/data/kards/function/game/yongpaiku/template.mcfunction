@@ -30,6 +30,3 @@ execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使
 # 清除
 item replace entity @s weapon.offhand with air
 # scoreboard players remove @s kardCount xx
-scoreboard players remove @s[scores={kujie=1..}] kardCount 1
-scoreboard players set @s pingbi 0
-scoreboard players add @s use_kard 1

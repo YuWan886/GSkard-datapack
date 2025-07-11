@@ -1,18 +1,6 @@
-#弃用
-#execute as @a[team=!red] if score @s join_red matches 1 run function kards:lobby/team/join/red
-#execute as @a[team=!blue] if score @s join_blue matches 1 run function kards:lobby/team/join/blue
-#execute as @a[tag=Ready] if score @s join_red matches 1.. run scoreboard players set @s join_red 0
-#execute as @a[tag=Ready] if score @s join_blue matches 1.. run scoreboard players set @s join_blue 0
-#execute as @a[tag=Ready] if score #system wait_start matches -1 run item replace entity @s container.3 with minecraft:red_banner[minecraft:item_name=[{text: "加入红队",color:"red",bold:true},{text: "(Q键丢出)",color:"gray",bold:false}]]
-#execute as @a[tag=Ready] if score #system wait_start matches -1 run item replace entity @s container.5 with minecraft:blue_banner[minecraft:item_name=[{text: "加入蓝队",color:"blue",bold:true},{text: "(Q键丢出)",color:"gray",bold:false}]]
-#execute as @a store result score @s banner_count run clear @s #minecraft:banners 0
-#execute as @a unless score @s banner_count matches 2 run clear @s #minecraft:banners
-#kill @e[type=item,nbt={Item:{id:"minecraft:red_banner"}}]
-#kill @e[type=item,nbt={Item:{id:"minecraft:blue_banner"}}]
-
 #踩区域选队
-execute positioned 87 230 -30 as @a[dx=5,dz=4,tag=Un_Ready] run function kards:lobby/team/join/unready
-execute positioned 87 230 -22 as @a[dx=5,dz=4,tag=Un_Ready] run function kards:lobby/team/join/unready
+execute positioned 86.0 229 -31.0 as @a[dx=2,dz=2,tag=Un_Ready] run function kards:lobby/team/join/unready
+execute positioned 86.0 229 -23.0 as @a[dx=2,dz=2,tag=Un_Ready] run function kards:lobby/team/join/unready
 
-execute positioned 87 230 -30 as @a[distance=..1.5,tag=Ready,team=!red] run function kards:lobby/team/join/red
-execute positioned 87 230 -22 as @a[distance=..1.5,tag=Ready,team=!blue] run function kards:lobby/team/join/blue
+execute positioned 86.0 229 -31.0 as @a[dx=2,dz=2,tag=Ready,team=!red] run function kards:lobby/team/join/red
+execute positioned 86.0 229 -23.0 as @a[dx=2,dz=2,tag=Ready,team=!blue] run function kards:lobby/team/join/blue

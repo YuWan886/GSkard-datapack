@@ -5,6 +5,7 @@
         "arrow",
         "#minecraft:is_explosion",
         "mob_projectile",
-        "fireball"
+        "fireball",
+        "trident"
     ]
 }

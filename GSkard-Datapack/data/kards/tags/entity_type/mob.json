@@ -35,6 +35,7 @@
     "minecraft:zombie_villager",
     "minecraft:zombified_piglin",
     "creaking",
-    "bogged"
+    "bogged",
+    "wolf"
   ]
 }

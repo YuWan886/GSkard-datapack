@@ -3,27 +3,25 @@ execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使
 function kards:game/yongpaiku/xianjin/jiance/fashujiance
 
 scoreboard players operation @s kardCount -= #kard_duming kardCount
-scoreboard players remove @s[scores={kujie=1..}] kardCount 1
-scoreboard players set @s pingbi 0
-scoreboard players add @s use_kard 1
-execute unless items entity @s weapon.offhand * run return fail
+function kards:game/yongpaiku/use_general/kard_general
+execute if entity @s[type=player] unless items entity @s weapon.offhand * run return fail
 item replace entity @s weapon.offhand with air
+execute if entity @s[team=red] run tag @r[team=blue,gamemode=adventure] add DuMing
+execute if entity @s[team=blue] run tag @r[team=red,gamemode=adventure] add DuMing
 
-execute store result score 红队 fashu_duming run random value 1..100
-execute store result score 蓝队 fashu_duming run random value 1..100
+execute store result score @s fashu_duming run random value 1..100
+execute store result score @a[tag=DuMing,limit=1] fashu_duming run random value 1..100
 
-tellraw @a [{text: "双方队伍进行一次随机点数(1~100)",color:"gold",bold:false}]
-tellraw @a [{text: "更小值的队伍随机一个玩家将受到内核引爆!",color:"gold",bold:false}]
+tellraw @a [{selector: "@s",bold:false},{text:"向",color:"gray"},{selector:"@a[tag=DuMing,limit=1]"},{text:"发起了",color:"gray"},{text:"赌命",color:"gold"}]
 
-tellraw @a [{text: "红队 ",color:"red",bold:false},{score:{objective:"fashu_duming",name:"红队"},color:"green",bold:false}]
-tellraw @a [{text: "蓝队 ",color:"blue",bold:false},{score:{objective:"fashu_duming",name:"蓝队"},color:"green",bold:false}]
+tellraw @a {text:"......",color:gray}
 
-execute if score 红队 fashu_duming > 蓝队 fashu_duming run tellraw @a [{text: "显然",color:"gray"},{text: "红队",color:"red"},{text: "随机到的点数更大",color:"gray"},{text: " 那么蓝队玩家吃",color:"gray"},{text: "[内核引爆]",color:"dark_purple"},{text: "吧!",color:"gray"}]
-execute if score 红队 fashu_duming < 蓝队 fashu_duming run tellraw @a [{text: "显然",color:"gray"},{text: "蓝队",color:"blue"},{text: "随机到的点数更大",color:"gray"},{text: " 那么红队玩家吃",color:"gray"},{text: "[内核引爆]",color:"dark_purple"},{text: "吧!",color:"gray"}]
-execute if score 红队 fashu_duming = 蓝队 fashu_duming run tellraw @a [{text: "两队随机到的点数相同 无事发生...",color:"gray"}]
+execute if score @s fashu_duming > @a[tag=DuMing,limit=1] fashu_duming run tellraw @a [{selector: "@s",bold:false},{text: "赢了! ",color:"gold"},{selector:"@a[tag=DuMing,limit=1]"},{text:"受到",color:"gold"},{text:"7.5♥破甲伤害",color:"aqua","italic":false}]
+execute if score @s fashu_duming < @a[tag=DuMing,limit=1] fashu_duming run tellraw @a [{selector: "@s",bold:false},{text: "输了! ",color:"red"},{text:"自己受到",color:"gold"},{text:"7.5♥破甲伤害",color:"aqua","italic":false}]
+execute if score @s fashu_duming = @a[tag=DuMing,limit=1] fashu_duming run tellraw @a [{text:"看起来两位的命运相同 没有任何人受到伤害!",color:"gold"}]
 
-execute if entity @s[team=red] if score 红队 fashu_duming > 蓝队 fashu_duming as @r[team=blue] at @s run summon minecraft:fireball ~ ~1 ~ {ExplosionPower:2,Tags:["fireball"]}
-execute if entity @s[team=red] if score 红队 fashu_duming < 蓝队 fashu_duming as @s at @s run summon minecraft:fireball ~ ~1 ~ {ExplosionPower:2,Tags:["fireball"]}
-execute if entity @s[team=blue] if score 红队 fashu_duming > 蓝队 fashu_duming as @s at @s run summon minecraft:fireball ~ ~1 ~ {ExplosionPower:2,Tags:["fireball"]}
-execute if entity @s[team=blue] if score 红队 fashu_duming < 蓝队 fashu_duming as @r[team=red] at @s run summon minecraft:fireball ~ ~1 ~ {ExplosionPower:2,Tags:["fireball"]}
-execute as @e[tag=fireball] run data modify entity @s Motion set value [0d,-0.5d,0d]
+execute if score @s fashu_duming > @a[tag=DuMing,limit=1] fashu_duming run damage @a[tag=DuMing,limit=1] 15 kards:duming
+execute if score @s fashu_duming < @a[tag=DuMing,limit=1] fashu_duming run damage @s 15 kards:duming
+
+tag @a remove DuMing
+scoreboard players reset @a fashu_duming

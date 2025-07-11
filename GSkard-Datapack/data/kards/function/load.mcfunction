@@ -11,7 +11,16 @@ schedule clear kards:lobby/bossbar/color/3
 schedule clear kards:lobby/bossbar/color/4
 function kards:lobby/bossbar/color/1
 #注册计分项目
-scoreboard objectives add career dummy
+scoreboard objectives add zombie_enhance dummy
+scoreboard objectives add temp dummy
+scoreboard objectives add temp_2 dummy
+scoreboard objectives add hurt_by_mafeng dummy
+scoreboard objectives add YongHan_DongJie_liushi dummy
+scoreboard objectives add YongHan_liushi dummy
+scoreboard objectives add lindongzhikai_lingyu dummy
+scoreboard objectives add YongHan dummy
+scoreboard objectives add ZhongShang_Tick dummy
+scoreboard objectives add ZhongShang_Round dummy
 scoreboard objectives add random_panduolamohe dummy
 scoreboard objectives add tanyumohe_cishu dummy
 scoreboard objectives add tanyu_temp dummy

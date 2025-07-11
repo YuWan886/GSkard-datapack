@@ -1,5 +1,7 @@
 #---暂定常加载区域---#
-#
+#Tag
+tag @a[gamemode=spectator,tag=!spectator] add spectator
+tag @a[gamemode=adventure,tag=spectator] remove spectator
 
 #全局buff
 effect give @a minecraft:night_vision infinite 0 true
@@ -39,7 +41,6 @@ execute if score #system Color matches 20 run team modify First color aqua
 execute if score #system Color matches 20 run scoreboard players set #system Color 0
 
 #oiiaioiiiiai
-#scoreboard players add #system oiiaioiiiiai 1
 execute as @e[type=cat,tag=Oiiaioiiiiai] at @s run rotate @s ~50 ~30
 execute as @e[type=cat,tag=Oiiaioiiiiai] if data entity @s {OnGround:1b} run data modify entity @s Motion set value [0f,1f,0f]
 effect give @e[type=cat,tag=Oiiaioiiiiai] instant_health 1 0 true
@@ -48,3 +49,6 @@ effect give @e[type=cat,tag=Oiiaioiiiiai] instant_health 1 0 true
 #function kards:game/ingame/general
 
 #execute as @a unless predicate kards:movement_check run function kards:ceshi/1
+scoreboard players set #system ceshi4 10
+execute as @a run scoreboard players operation @s ceshi = @s ceshi4
+execute as @a run scoreboard players operation @s ceshi /= #system ceshi4

@@ -1,21 +1,21 @@
 #赛后统计
+team leave @a
 scoreboard players set #system tongji_damage_huansuan 20
 scoreboard players set #system tongji_hurt_huansuan 20
 scoreboard players set #system tongji_killed_huansuan 1
 execute as @a[tag=Ready] run scoreboard players operation @s tongji_damage /= #system tongji_damage_huansuan
 execute as @a[tag=Ready] run scoreboard players operation @s tongji_hurt /= #system tongji_hurt_huansuan
-scoreboard players operation #system tongji_damage > * tongji_damage
-scoreboard players operation #system tongji_killed > * tongji_killed
-scoreboard players operation #system tongji_hurt > * tongji_hurt
+scoreboard players operation #system tongji_damage > @a tongji_damage
+scoreboard players operation #system tongji_killed > @a tongji_killed
+scoreboard players operation #system tongji_hurt > @a tongji_hurt
 execute as @a if score @s tongji_damage = #system tongji_damage run tag @s add DamageMAX
 execute as @a if score @s tongji_killed = #system tongji_killed run tag @s add KillMAX
 execute as @a if score @s tongji_hurt = #system tongji_hurt run tag @s add HurtMAX
-tellraw @a [{text: "[🗡]造成了最高伤害 ",color:"green"},{selector:"@a[tag=DamageMAX]",bold:true},{text: " 共造成",color:"green"},{score:{objective:"tongji_damage",name:"#system"}},{text: "♥",color:"red"},{text: "伤害!",color:"green"}]
-tellraw @a [{text: "[💔]受到了最多的伤害 ",color:"green"},{selector:"@a[tag=HurtMAX]",bold:true},{text: " 共受到",color:"green"},{score:{objective:"tongji_hurt",name:"#system"}},{text: "♥",color:"red"},{text: "伤害!",color:"green"}]
-tellraw @a [{text: "[💀]杀死了最多的生物 ",color:"green"},{selector:"@a[tag=KillMAX]",bold:true},{text: " 杀死了",color:"green"},{score:{objective:"tongji_killed",name:"#system"}},{text: "个",color:"red"},{text: "生物!",color:"green"}]
+tellraw @a [{text: "[打工人] ",color:"green"},{selector:"@a[tag=DamageMAX]",bold:true},{text: " 共造成",color:"green"},{score:{objective:"tongji_damage",name:"#system"}},{text: "♥",color:"red"},{text: "伤害!",color:"green"}]
+tellraw @a [{text: "[超级肉盾] ",color:"green"},{selector:"@a[tag=HurtMAX]",bold:true},{text: " 共受到",color:"green"},{score:{objective:"tongji_hurt",name:"#system"}},{text: "♥",color:"red"},{text: "伤害!",color:"green"}]
+tellraw @a [{text: "[杀神] ",color:"green"},{selector:"@a[tag=KillMAX]",bold:true},{text: " 杀死了",color:"green"},{score:{objective:"tongji_killed",name:"#system"}},{text: "个",color:"red"},{text: "生物!",color:"green"}]
 tag @a[tag=DamageMAX] remove DamageMAX
 tag @a[tag=KillMAX] remove KillMAX
-tag @a[tag=InfectMAX] remove InfectMAX
 tag @a[tag=HurtMAX] remove HurtMAX
 tag @a[tag=AllMAX] remove AllMAX
 scoreboard players reset * tongji_damage
@@ -95,6 +95,7 @@ execute as @a run attribute @s minecraft:scale base reset
 execute as @a run attribute @s minecraft:movement_speed modifier remove 0-0-6
 execute as @a run attribute @s minecraft:movement_speed modifier remove 0-0-7
 execute as @a run attribute @s minecraft:movement_speed base reset
+execute as @a run attribute @s minecraft:entity_interaction_range modifier remove 0-0-2
 execute as @a run attribute @s minecraft:entity_interaction_range modifier remove 0-0-3
 execute as @a run attribute @s minecraft:entity_interaction_range modifier remove 0-0-4
 execute as @a run attribute @s minecraft:entity_interaction_range base reset
