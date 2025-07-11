@@ -1,3 +1,4 @@
+
 scoreboard players set #system round_panding 2
 scoreboard players operation #system GameRound = 回合数 GameRound
 scoreboard players operation #system GameRound %= #system round_panding

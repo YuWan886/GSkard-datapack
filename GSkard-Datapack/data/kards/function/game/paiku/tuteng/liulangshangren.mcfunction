@@ -1,2 +1,3 @@
+
 give @s music_disc_blocks[item_name=[{text: "14K",color:"aqua"},{text: " 流浪商人",color:"red"}],lore=[{text: "图腾牌",color:"red",italic:false},{text: "在队伍图腾区生成流浪商人",color:"gray",italic:false},{text: "图腾存活效果：",color:"gray",italic:false},[{text: "1.每回合开始时 队伍所有玩家多获得",color:"gray",italic:false},{text: "1张牌",color:"gold",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'流浪商人'},tooltip_style="kard/totem"]
 scoreboard players set #kard_liulangshangren kardCount 14

@@ -1,5 +1,6 @@
 execute if entity @s[team=red] run tag @r[team=blue,gamemode=adventure] add peiyangshi_damage
 execute if entity @s[team=blue] run tag @r[team=red,gamemode=adventure] add peiyangshi_damage
+
 execute if entity @s[team=red] run damage @r[team=blue,gamemode=adventure,tag=peiyangshi_damage] 10 kards:peiyangshi by @s
 execute if entity @s[team=blue] run damage @r[team=red,gamemode=adventure,tag=peiyangshi_damage] 10 kards:peiyangshi by @s
 scoreboard players add @s peiyangshi 10

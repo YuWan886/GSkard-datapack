@@ -2,4 +2,5 @@ tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[君临天�
 item replace entity @s weapon.offhand with air
 scoreboard players operation @s kardCount -= #kard_junlintianxia kardCount
 execute at @s run function kards:game/yongpaiku/yansheng/junlintianxia/jy
+
 scoreboard players add @s HealBack 64

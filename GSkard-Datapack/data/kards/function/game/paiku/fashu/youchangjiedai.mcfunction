@@ -1,2 +1,3 @@
-scoreboard players set #kard_youchangjiedai kardCount 0
-give @s music_disc_mellohi[item_name=[{text: "0K",color:"aqua"},{text: " 有偿借贷",color:"light_purple"}],lore=[{text: "法术牌",color:"light_purple",italic:false},[{text: "你获得",color:"gray",italic:false},{text: "12K",color:"gold",italic:false},{text: " 但是",color:"gray",italic:false},{text: "-2Kmax",color:"red",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'有偿借贷'},tooltip_style="kard/spell"]
+scoreboard players set #kard_youchangjiedai kardCountmax 2
+
+give @s music_disc_mellohi[item_name=[{text: "2Kmax",color:"gold"},{text: " 有偿借贷",color:"light_purple"}],lore=[{text: "法术牌",color:"light_purple",italic:false},[{text: "获得",color:"gray",italic:false},{text: "12K",color:"gold",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'有偿借贷'},tooltip_style="kard/spell"]

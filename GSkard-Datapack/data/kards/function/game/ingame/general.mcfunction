@@ -37,9 +37,11 @@ function kards:game/yongpaiku/zhuangbei/general
 scoreboard players add @e[scores={YongHan=1..}] YongHan_liushi 1
 scoreboard players remove @e[scores={YongHan_liushi=60}] YongHan 1
 scoreboard players set @e[scores={YongHan_liushi=60}] YongHan_liushi 0
+
 scoreboard players add @e[scores={YongHan=1..,DongJie=1..},tag=DongJie] YongHan_DongJie_liushi 1
 scoreboard players remove @e[scores={YongHan_DongJie_liushi=40}] YongHan 1
 scoreboard players set @e[scores={YongHan_DongJie_liushi=40}] YongHan_DongJie_liushi 0
+
 execute as @e[scores={YongHan=1..}] run attribute @s movement_speed modifier add 0-0-3 -0.05 add_multiplied_base
 execute as @e[scores={YongHan=0}] run attribute @s movement_speed modifier remove 0-0-3
 #重伤
@@ -50,13 +52,16 @@ scoreboard players reset @a[scores={ZhongShang_Round=0}] ZhongShang_Round
 scoreboard players reset @a[scores={ZhongShang_Tick=0}] ZhongShang_Tick
 #破碎
 scoreboard players remove @a[tag=PoSui,scores={PoSui=1..}] PoSui 1
+
 execute as @a[tag=PoSui,scores={PoSui=1..}] at @s run particle enchanted_hit ~ ~2.3 ~ 0.2 0 0.2 0 4 force @a
+
 execute as @a[tag=PoSui,scores={PoSui=0}] run attribute @s armor modifier remove 0-0-2
 execute as @a[tag=PoSui,scores={PoSui=0}] run attribute @s armor_toughness modifier remove 0-0-2
 execute as @a[tag=PoSui,scores={PoSui=0}] run tag @s remove PoSui
 execute as @a[tag=PoSui,scores={PoSui=0}] run scoreboard players reset @s PoSui
 #眩晕
 scoreboard players remove @e[tag=XuanYun,scores={XuanYun=1..}] XuanYun 1
+
 effect give @e[tag=XuanYun,scores={XuanYun=1..}] slowness 1 100 true
 effect give @e[tag=XuanYun,scores={XuanYun=1..}] blindness 2 100 true
 execute as @e[tag=XuanYun,scores={XuanYun=1..}] run attribute @s minecraft:jump_strength modifier add 0-0-1 -100 add_value
@@ -70,12 +75,15 @@ execute as @e[tag=XuanYun,scores={XuanYun=0}] run attribute @s minecraft:jump_st
 title @a[tag=XuanYun,scores={XuanYun=0}] title {text: ""}
 scoreboard players reset @e[scores={XuanYun=0}] XuanYun
 tag @e[tag=XuanYun,scores={XuanYun=0}] remove XuanYun
+
 scoreboard players reset @a[gamemode=spectator,tag=XuanYun] XuanYun
 tag @a[gamemode=spectator,tag=XuanYun] remove XuanYun
 #旋转
 scoreboard players remove @a[tag=XuanZhuan,scores={XuanZhuan=1..}] XuanZhuan 1
 execute as @a[tag=XuanZhuan,scores={XuanZhuan=1..}] at @s run rotate @s ~50 ~
+
 tag @a[tag=XuanZhuan,scores={XuanZhuan=0}] remove XuanZhuan
+
 scoreboard players reset @a[gamemode=spectator,tag=XuanZhuan] XuanZhuan
 tag @a[gamemode=spectator,tag=XuanZhuan] remove XuanZhuan
 #断腿
@@ -83,10 +91,12 @@ scoreboard players remove @a[tag=DuanTui,scores={DuanTui=1..}] DuanTui 1
 execute as @a[tag=DuanTui,scores={DuanTui=1..}] run attribute @s minecraft:jump_strength modifier add 0-0-2 -1 add_multiplied_total
 execute as @a[tag=DuanTui,scores={DuanTui=0}] run attribute @s minecraft:jump_strength modifier remove 0-0-2
 tag @a[tag=DuanTui,scores={DuanTui=0}] remove DuanTui
+
 scoreboard players reset @a[gamemode=spectator,tag=DuanTui] DuanTui
 tag @a[gamemode=spectator,tag=DuanTui] remove DuanTui
 #冰冻
 execute as @e[tag=DongJie,scores={DongJie=1..}] at @s run particle snowflake ~ ~ ~ 0.2 2 0.2 0 1 force @a
+
 scoreboard players remove @e[tag=DongJie,scores={DongJie=1..}] DongJie 1
 effect give @e[tag=DongJie,scores={DongJie=1..}] slowness 1 100 true
 effect give @e[tag=DongJie,scores={DongJie=1..}] weakness 1 128 true
@@ -98,9 +108,11 @@ effect clear @e[tag=DongJie,scores={DongJie=0}] slowness
 effect clear @e[tag=DongJie,scores={DongJie=0}] weakness
 title @a[tag=DongJie,scores={DongJie=0}] title {text: ""}
 tag @e[tag=DongJie,scores={DongJie=0}] remove DongJie
+
 scoreboard players add @e[tag=DongJie,scores={DongJie=1..}] DongJie_damage 1
 execute as @e[tag=DongJie,scores={DongJie_damage=25}] run damage @s 5 freeze
 scoreboard players reset @e[tag=DongJie,scores={DongJie_damage=25}] DongJie_damage
+
 scoreboard players reset @a[gamemode=spectator,tag=DongJie] DongJie
 tag @a[gamemode=spectator,tag=DongJie] remove DongJie
 #火焰
@@ -112,12 +124,15 @@ execute as @e[scores={Fire_take_damage=10}] run damage @s 1.5 kards:huoyan
 execute as @e[scores={Fire_take_damage=10},tag=Fire_Ex] run damage @s 3 kards:huoyan
 execute as @e[scores={Fire_take_damage=10}] at @s run particle lava ~ ~1 ~ 0 0 0 0 2 force @a
 execute as @e[scores={Fire_take_damage=10}] run scoreboard players set @s Fire_take_damage 0
+
 tag @e[scores={Fire=0}] remove Fire
 tag @e[scores={Fire=0}] remove Fire_Ex
 scoreboard players reset @e[scores={Fire=0}] Fire
+
 scoreboard players reset @a[gamemode=spectator,tag=Fire] Fire
 tag @a[gamemode=spectator,tag=Fire] remove Fire
 tag @a[gamemode=spectator,tag=Fire_Ex] remove Fire_Ex
+
 scoreboard players reset @a[tag=Fired] Fire
 tag @a[tag=Fired] remove Fire
 tag @a[tag=Fired] remove Fired
@@ -126,10 +141,14 @@ tag @a[tag=Fired] remove Fired
 scoreboard players add @e[tag=shengmingtuteng,type=item_display] shengmingtuteng_Healback 1
 execute as @e[tag=shengmingtuteng,type=item_display,scores={shengmingtuteng_Healback=20},team=red] at @s run scoreboard players add @e[team=red,distance=..5] HealBack 1
 execute as @e[tag=shengmingtuteng,type=item_display,scores={shengmingtuteng_Healback=20},team=blue] at @s run scoreboard players add @e[team=blue,distance=..5] HealBack 1
+
 execute as @e[tag=shengmingtuteng,type=item_display,scores={shengmingtuteng_Healback=20},team=red] at @s at @e[team=red,distance=..5,tag=!shengmingtuteng] run particle heart ~ ~2 ~ 0 0 0 0 1 force @a
 execute as @e[tag=shengmingtuteng,type=item_display,scores={shengmingtuteng_Healback=20},team=blue] at @s at @e[team=blue,distance=..5,tag=!shengmingtuteng] run particle heart ~ ~2 ~ 0 0 0 0 1 force @a
+
 execute at @e[tag=shengmingtuteng,type=item_display] run particle composter ~ ~ ~ 0 10 0 0 10 force @a
+
 scoreboard players reset @e[tag=shengmingtuteng,type=item_display,scores={shengmingtuteng_Healback=20}] shengmingtuteng_Healback
+
 scoreboard players remove @e[tag=shengmingtuteng,type=item_display] shengmingtuteng 1
 execute at @e[tag=shengmingtuteng,type=item_display,scores={shengmingtuteng=0}] run playsound minecraft:block.beacon.deactivate player @a[distance=..10] ~ ~ ~ 100 2
 kill @e[tag=shengmingtuteng,type=item_display,scores={shengmingtuteng=0}]
@@ -153,32 +172,41 @@ effect give @e[type=endermite] speed 1 0 true
 execute as @a[scores={tanyumohe=1}] store result score @s tanyu_zuzhou run clear @s minecraft:music_disc_stal
 execute as @a[scores={tanyumohe=1}] store result score @s tanyu_fashu run clear @s minecraft:music_disc_mellohi
 execute as @a[scores={tanyumohe=1}] store result score @s tanyu_zhuangbei run clear @s minecraft:music_disc_13
+
 execute as @a[scores={tanyumohe=1}] run scoreboard players operation @s tanyu += @s tanyu_zuzhou
 execute as @a[scores={tanyumohe=1}] run scoreboard players operation @s tanyu += @s tanyu_fashu
 execute as @a[scores={tanyumohe=1}] run scoreboard players operation @s tanyu += @s tanyu_zhuangbei
+
 scoreboard players set #system tanyu 2
 execute as @a[scores={tanyumohe=1}] run scoreboard players operation @s tanyu *= #system tanyu
+
 scoreboard players set @a[scores={tanyumohe=1}] tanyu_zuzhou 0
 scoreboard players set @a[scores={tanyumohe=1}] tanyu_fashu 0
 scoreboard players set @a[scores={tanyumohe=1}] tanyu_zhuangbei 0
+
 execute as @a[scores={tanyumohe=1}] if score @s tanyu matches 1.. run function kards:game/paiku/yansheng/tanyu
 #墓园狂欢
 effect give @e[tag=zombie_enhance_1] minecraft:speed infinite 0 true
 effect give @e[tag=zombie_enhance_2] minecraft:speed infinite 1 true
 effect give @e[tag=zombie_enhance_3] minecraft:speed infinite 2 true
+
 scoreboard players add @a[scores={muyuankuanghuan=1}] muyuankuanghuan1 0
 scoreboard players add @a[scores={muyuankuanghuan=1}] muyuankuanghuan2 0
 scoreboard players add @a[scores={muyuankuanghuan=1}] muyuankuanghuan3 0
+
 execute as @a[scores={muyuankuanghuan=1}] store result score @s[scores={muyuankuanghuan1=0}] muyuankuanghuan1 run clear @s minecraft:music_disc_mall
 execute as @a[scores={muyuankuanghuan=1}] store result score @s[scores={muyuankuanghuan2=0}] muyuankuanghuan2 run clear @s minecraft:music_disc_stal
 execute as @a[scores={muyuankuanghuan=1}] store result score @s[scores={muyuankuanghuan2=0}] muyuankuanghuan2 run clear @s minecraft:music_disc_wait
 execute as @a[scores={muyuankuanghuan=1}] store result score @s[scores={muyuankuanghuan3=0}] muyuankuanghuan3 run clear @s minecraft:music_disc_cat
+
 execute as @a[scores={muyuankuanghuan=1}] if score @s muyuankuanghuan1 matches 1.. run scoreboard players add @s newzombie 1
 execute as @a[scores={muyuankuanghuan=1}] if score @s muyuankuanghuan2 matches 1.. run scoreboard players add @s newzombie 2
 execute as @a[scores={muyuankuanghuan=1}] if score @s muyuankuanghuan3 matches 1.. run scoreboard players add @s newzombie 3
+
 execute as @a[scores={muyuankuanghuan=1}] if score @s muyuankuanghuan1 matches 1.. run scoreboard players remove @s muyuankuanghuan1 1
 execute as @a[scores={muyuankuanghuan=1}] if score @s muyuankuanghuan2 matches 1.. run scoreboard players remove @s muyuankuanghuan2 1
 execute as @a[scores={muyuankuanghuan=1}] if score @s muyuankuanghuan3 matches 1.. run scoreboard players remove @s muyuankuanghuan3 1
+
 execute as @a[scores={muyuankuanghuan=1}] if score @s newzombie matches 1.. run function kards:game/paiku/yansheng/kuanghuanzombie
 #来日偿还
 execute as @a[scores={changhuan=1,damage_jilu=1..}] run function kards:game/yongpaiku/shenji/lairichanghuan/2
@@ -206,6 +234,7 @@ execute as @a if score @s qinglvqianmou matches 1 if score @s use_kard matches 0
 #execute as @a[gamemode=spectator] if score #system dituxuanze matches 6 positioned 264 -1.00 -378 if score #system GameStatus matches 1 if entity @s unless entity @s[dz=52,dy=64,dx=87] at @s run tp @r[gamemode=adventure]
 #execute as @a[gamemode=spectator] if score #system dituxuanze matches 7 positioned 179.00 0.0 21.00 if score #system GameStatus matches 1 if entity @s unless entity @s[dz=64,dy=9,dx=45] at @s run tp @r[gamemode=adventure]
 #execute as @a[gamemode=spectator] if score #system dituxuanze matches 8 positioned 59.00 0.00 104.00 if score #system GameStatus matches 1 if entity @s unless entity @s[dz=54,dy=9,dx=33] at @s run tp @r[gamemode=adventure]
+
 #execute as @a[gamemode=spectator] positioned -249.0 -10 -192.0 if score #system GameStatus matches 2 if entity @s unless entity @s[dz=56,dy=60,dx=77] at @s run tp @r[gamemode=adventure]
 #沉默
 execute if score @e[tag=r_dw,limit=1] chengmo matches 1.. as @a[team=red,gamemode=adventure] at @s run kill @e[type=item,distance=..3,tag=!replace_item,tag=!copy,tag=!copy_end]
@@ -248,9 +277,11 @@ scoreboard players set @a[scores={jinzijue_1=600..}] jinzijue_1 0
 #禁字启封
 execute if entity @a[scores={jinzijue=10}] as @a if items entity @s container.* #creeper_drop_music_discs[minecraft:custom_data={kards:'禁字启封'}] run scoreboard players add @s cishu 1
 execute if entity @a[scores={jinzijue=10}] as @a if items entity @s container.* #creeper_drop_music_discs[minecraft:custom_data={kards:'禁字启封'}] run clear @s #creeper_drop_music_discs[minecraft:custom_data={kards:'禁字启封'}]
+
 #音乐盒 春日影
 execute at @e[tag=droll] run particle minecraft:note ~0.5 ~ ~ 0.5 0.5 0.5 1 3
 execute as @e[tag=droll] if score @s lifetime matches 1.. at @s run tag @e[distance=..13,tag=!spectator,type=!#impact_projectiles] add droll_music
+
 effect give @e[tag=droll_music,distance=0.1..] weakness 1 255 true
 execute as @e[tag=droll_music,distance=0.1..] run attribute @s minecraft:movement_speed modifier add 0-0-2 -100 add_multiplied_total
 execute as @e[tag=droll_music,distance=0.1..] run attribute @s minecraft:jump_strength modifier add 0-0-4 -100 add_multiplied_total
@@ -277,12 +308,14 @@ execute store result score 人数 r_p if entity @a[team=red]
 execute store result score 人数 b_p if entity @a[team=blue]
 execute if score 红队 touxiang = 人数 r_p run gamemode spectator @a[team=red]
 execute if score 蓝队 touxiang = 人数 b_p run gamemode spectator @a[team=blue]
+
 #地狱
 execute if score 红队 diyu matches 1 run effect give @e[type=!player,team=blue,tag=!tuteng] fire_resistance 1 0 true
 execute if score 蓝队 diyu matches 1 run effect give @e[type=!player,team=red,tag=!tuteng] fire_resistance 1 0 true
 #酸辣无骨鸡爪
 execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{kards:"鸡爪"}}}}] run data modify entity @s PickupDelay set value -1
 execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{kards:"鸡爪"}}}}] if data entity @s {Age:25s} at @s run function kards:game/yongpaiku/fashu/suanlawugujizhua/3
+
 #贪欲魔盒
 execute if score 红队 tanyu_temp_1 matches 3..5 if predicate kards:random0.0001 at @r summon marker run function kards:game/yongpaiku/yansheng/tanyumohe/4
 execute if score 蓝队 tanyu_temp_1 matches 3..5 if predicate kards:random0.0001 at @r summon marker run function kards:game/yongpaiku/yansheng/tanyumohe/5
@@ -309,19 +342,23 @@ execute if score #system dituxuanze matches 1..100 as @e[team=red,type=minecraft
 execute if score #system dituxuanze matches 1..100 as @e[team=blue,type=minecraft:enderman] at @e[tag=r_dw] positioned ~ -1 ~ unless entity @s[dx=24,dz=24,dy=10] at @e[tag=red_marker_7,limit=1] run tp @s ~ 0 ~
 execute if score #system dituxuanze matches 1..100 as @e[team=red,type=minecraft:shulker,tag=tuteng] at @e[tag=r_ttdw] positioned ~ -1 ~ unless entity @s[dx=4,dz=24,dy=1] at @e[tag=r_tuteng,limit=1] run tp @s ~ 1 ~
 execute if score #system dituxuanze matches 1..100 as @e[team=blue,type=minecraft:shulker,tag=tuteng] at @e[tag=b_ttdw] positioned ~ -1 ~ unless entity @s[dx=4,dz=24,dy=1] at @e[tag=b_tuteng,limit=1] run tp @s ~ 1 ~
+
 execute if score #system dituxuanze matches 101.. as @e[team=red,type=minecraft:enderman] at @e[tag=b_dw] positioned ~ -1 ~ unless entity @s[dx=34,dz=34,dy=10] at @e[tag=blue_marker_7,limit=1] run tp @s ~ 0 ~
 execute if score #system dituxuanze matches 101.. as @e[team=blue,type=minecraft:enderman] at @e[tag=r_dw] positioned ~ -1 ~ unless entity @s[dx=34,dz=34,dy=10] at @e[tag=red_marker_7,limit=1] run tp @s ~ 0 ~
 execute if score #system dituxuanze matches 101.. as @e[team=red,type=minecraft:shulker,tag=tuteng] at @e[tag=r_ttdw] positioned ~ -1 ~ unless entity @s[dx=4,dz=34,dy=1] at @e[tag=r_tuteng,limit=1] run tp @s ~ 1 ~
 execute if score #system dituxuanze matches 101.. as @e[team=blue,type=minecraft:shulker,tag=tuteng] at @e[tag=b_ttdw] positioned ~ -1 ~ unless entity @s[dx=4,dz=34,dy=1] at @e[tag=b_tuteng,limit=1] run tp @s ~ 1 ~
+
 #无人机
 execute as @e[type=bat,tag=wurenji] at @s unless block ~ ~1.5 ~ air run tp @s ~ ~-1 ~
 execute as @e[type=bat,tag=wurenji] at @s unless entity @e[type=shulker,distance=..1] run kill @s
 execute as @e[type=bat,tag=wurenji] at @s unless block ~ ~ ~ air run tp @s ~ ~1 ~
 execute as @e[type=shulker,tag=wurenji] at @s unless entity @e[type=bat,distance=..1] run kill @s
+
 execute as @e[type=bat,tag=wurenji] at @s unless block ^ ^ ^0.75 air run tp @s ^ ^ ^-0.75
 execute as @e[type=bat,tag=wurenji] at @s unless block ~ ~0.5 ~ air run tp @s ~ ~-0.5 ~
 execute as @e[type=bat,tag=wurenji] at @s unless block ~ ~-0.5 ~ air run tp @s ~ ~0.5 ~
 execute as @e[type=bat,tag=wurenji] at @s unless block ^0.75 ^ ^ air run tp @s ^-0.75 ^ ^
+
 #唤魔者、幻术师
 execute as @e[type=evoker] store result score @s SpellTicks run data get entity @s SpellTicks
 execute as @e[type=illusioner] store result score @s SpellTicks run data get entity @s SpellTicks
@@ -335,17 +372,21 @@ execute as @e[type=goat] if score @s ram_cooldown_ticks matches 2.. run data mod
 effect give @e[type=goat] speed infinite 4 true
 #死灵巫师
 execute as @e[tag=silingfashi,type=witch] unless data entity @s equipment{mainhand:{}} run item replace entity @s weapon.mainhand with blaze_rod
+
 execute as @e[tag=silingfashi,type=witch] unless data entity @s {NoAI:1b} run scoreboard players add @s silingfashu 1
 execute as @e[tag=silingfashi,type=witch] unless data entity @s {NoAI:1b} run scoreboard players add @s silingzhaohuan 1
 execute as @e[tag=silingfashi,type=minecraft:wither_skeleton] at @s unless entity @e[type=minecraft:witch,distance=..3.1,tag=silingfashi] run function kards:game/yongpaiku/juntuan/silingwushi/3
+
 execute as @e[type=witch,tag=silingfashi,team=red] if score @s silingfashu matches 40 at @s as @a[team=blue,distance=..3] run damage @s 6 kards:silingfashu by @n[type=minecraft:witch,tag=silingfashi,team=red]
 execute as @e[type=witch,tag=silingfashi,team=blue] if score @s silingfash matches 40 at @s as @a[team=red,distance=..5] at @s run damage @s 6 kards:silingfashu by @n[type=minecraft:witch,tag=silingfashi,team=blue]
 execute as @e[type=witch,tag=silingfashi] if score @s silingfashu matches 40 at @s run particle enchanted_hit ~ ~ ~ 3 0.1 3 0 100 force
 scoreboard players set @e[type=witch,tag=silingfashi,scores={silingfashu=40}] silingfashu 0
+
 execute as @e[type=witch,tag=silingfashi,team=red] if score @s silingzhaohuan matches 40 at @s run particle trial_omen ~ ~ ~ 0 0.2 0 1 20
 execute as @e[type=witch,tag=silingfashi,team=red] if score @s silingzhaohuan matches 40 at @s run summon minecraft:skeleton ~ ~ ~ {Team:red,Tags:["死灵仆从"],active_effects:[{id:"speed",show_particles:0b,duration:-1}],equipment:{head:{id:"minecraft:leather_helmet"}},attributes:[{id:"follow_range",base:100},{id:"safe_fall_distance",base:7},{id:"minecraft:max_health",base:2.0d},{id:"minecraft:attack_damage",base:2.0d},{id:"minecraft:scale",base:0.5d},{id:"safe_fall_distance",base:200}],Health:2.0f,Motion:[0,0.8,0]}
 execute as @e[type=witch,tag=silingfashi,team=blue] if score @s silingzhaohuan matches 40 at @s run summon minecraft:skeleton ~ ~ ~ {Team:blue,Tags:["死灵仆从"],active_effects:[{id:"speed",show_particles:0b,duration:-1}],equipment:{head:{id:"minecraft:leather_helmet"}},attributes:[{id:"follow_range",base:100},{id:"safe_fall_distance",base:7},{id:"minecraft:max_health",base:2.0d},{id:"minecraft:attack_damage",base:2.0d},{id:"minecraft:scale",base:0.5d},{id:"safe_fall_distance",base:200}],Health:2.0f,Motion:[0,0.8,0]}
 scoreboard players set @e[type=witch,tag=silingfashi,scores={silingzhaohuan=40..}] silingzhaohuan 0
+
 #监守者
 execute if score 人数 b_alive matches 5.. run effect give @e[type=warden] speed 1 0 true
 execute if score 人数 r_alive matches 5.. run effect give @e[type=warden] speed 1 0 true
@@ -354,20 +395,27 @@ execute as @e[type=zombie,tag=wuwangjiangshi,team=red] if score @s wuwangchuchan
 execute as @e[type=zombie,tag=wuwangjiangshi,team=blue] if score @s wuwangchuchang matches 1.. if score #system GameRound matches 0 run scoreboard players remove @s wuwangchuchang 1
 execute as @e[type=zombie,tag=wuwangjiangshi] if entity @s[team=red] if score @s wuwangchuchang matches 0 at @s run function kards:game/yongpaiku/juntuan/wuwangjiangshi/2
 execute as @e[type=zombie,tag=wuwangjiangshi] if entity @s[team=blue] if score @s wuwangchuchang matches 0 at @s run function kards:game/yongpaiku/juntuan/wuwangjiangshi/3
+
+
 effect give @e[tag=wuwangjiangshi] resistance 1 2 true
 execute as @e[type=zombie,tag=wuwangjiangshi,team=red] at @s run effect give @e[distance=..5,team=red] speed 1 0 true
 execute as @e[type=zombie,tag=wuwangjiangshi,team=blue] at @s run effect give @e[distance=..5,team=blue] speed 1 0 true
 execute as @e[team=blue] at @s if entity @e[type=zombie,tag=wuwangjiangshi,team=blue,distance=..5] if score @s in_wuwangjiangshi matches 0 run effect give @s regeneration 5 0 true
 execute as @e[team=blue] at @s if entity @e[type=zombie,tag=wuwangjiangshi,team=blue,distance=..5] if score @s in_wuwangjiangshi matches 0 run scoreboard players set @s in_wuwangjiangshi 100
+
 scoreboard players add @e[type=zombie,tag=wuwangjiangshi] in_wuwangjiangshi 1
 execute as @e[tag=wuwangjiangshi,type=zombie,team=red] if score @s in_wuwangjiangshi matches 20 at @s run scoreboard players add @e[team=red,distance=..5] HealBack 1
 execute as @e[tag=wuwangjiangshi,type=zombie,team=blue] if score @s in_wuwangjiangshi matches 20 at @s run scoreboard players add @e[team=blue,distance=..5] HealBack 1
+
 execute as @e[tag=wuwangjiangshi,type=zombie,team=red] if score @s in_wuwangjiangshi matches 20 at @e[team=red,distance=..5] run particle note ~ ~2 ~ 0 0 0 1 1 force @a
 execute as @e[tag=wuwangjiangshi,type=zombie,team=blue] if score @s in_wuwangjiangshi matches 20 at @e[team=blue,distance=..5] run particle note ~ ~2 ~ 0 0 0 1 1 force @a
+
 execute as @e[tag=wuwangjiangshi,type=zombie] if score @s in_wuwangjiangshi matches 20 run scoreboard players set @s in_wuwangjiangshi 0
+
 #三人成众
 execute as @e[tag=large_slime] unless data entity @s {NoAI:1b} if data entity @s {Size:3} run scoreboard players add @s sanrenchengzhong 1
 execute as @e[tag=large_slime] if score @s sanrenchengzhong matches 300 run function kards:game/yongpaiku/juntuan/sanrenchengzhong/2
+
 #尸帝
 execute as @e[tag=shidi_master,team=red] at @s run effect give @e[tag=!shidi_master,team=red,distance=..5] minecraft:resistance 1 0 true
 execute as @e[tag=shidi_master,team=blue] at @s run effect give @e[tag=!shidi_master,team=blue,distance=..5] minecraft:resistance 1 0 true

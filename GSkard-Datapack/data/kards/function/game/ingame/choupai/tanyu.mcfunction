@@ -6,3 +6,4 @@ execute if score @s random matches 76..95 run scoreboard players add @s xianjinc
 execute if score @s random matches 96..100 run scoreboard players add @s shenjicishu 1
 scoreboard players set @s random 0
 scoreboard players remove @s tanyumohe_cishu 1
+

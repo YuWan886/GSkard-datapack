@@ -14,6 +14,7 @@ summon minecraft:marker ~0 ~0 ~-28 {Tags:["blue_marker_10"]}
 summon minecraft:marker ~13 ~0 ~-32 {Tags:["blue_marker_11"]}
 summon minecraft:marker ~0 ~0 ~-35 {Tags:["blue_marker_12"]}
 summon minecraft:marker ~-13 ~0 ~-32 {Tags:["blue_marker_13"]}
+
 summon minecraft:marker ~-17 ~0 ~2 {Tags:["r_dw"]}
 summon minecraft:marker ~21 ~0 ~2 {Tags:["r_ttdw"]}
 summon minecraft:marker ~23 ~0 ~19 {Tags:["r_tuteng"]}

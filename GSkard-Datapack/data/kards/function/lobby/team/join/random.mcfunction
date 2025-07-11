@@ -18,5 +18,6 @@ execute if score #system Ready_Num matches 25..26 run team join blue @a[team=red
 execute if score #system Ready_Num matches 27..28 run team join blue @a[team=red,limit=14,tag=Ready,sort=random]
 execute if score #system Ready_Num matches 29..30 run team join blue @a[team=red,limit=15,tag=Ready,sort=random]
 execute if score #system Ready_Num matches 31.. run tellraw @a [{text: "准备人数过多 无法进行分队",color:"red",bold:true}]
+
 tp @a[team=blue] 87 229 -22 -90 0
 tp @a[team=red] 87 229 -30 -90 0

@@ -9,3 +9,4 @@ execute if score @s random matches 91..100 run scoreboard players add @s zuzhouc
 execute if score @s random matches 101..110 run scoreboard players add @s xianjincishu 1
 scoreboard players set @s random 0
 scoreboard players remove @s cishu 1
+

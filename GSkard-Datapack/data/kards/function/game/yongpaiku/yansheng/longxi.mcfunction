@@ -18,3 +18,4 @@ execute if entity @s[team=blue] run effect clear @e[team=blue] wither
 execute if entity @s[team=blue] run effect clear @e[team=blue] levitation
 execute if entity @s[team=blue] run effect clear @e[team=blue] darkness
 item replace entity @s weapon.offhand with air
+

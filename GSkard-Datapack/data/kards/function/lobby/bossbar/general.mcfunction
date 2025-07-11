@@ -1,5 +1,6 @@
 execute store result score #system Ready_Num if entity @a[tag=Ready]
 bossbar set minecraft:start_game players @a
+
 execute if score #system Ready_Num matches 0..1 run bossbar set minecraft:start_game name [{text: "等待玩家准备...",color:"green",bold:true}]
 execute if score #system Ready_Num matches 0 run bossbar set minecraft:start_game max 100
 execute if score #system Ready_Num matches 0 run bossbar set minecraft:start_game value 100
@@ -10,6 +11,7 @@ execute if score #system Ready_Num matches 2.. if entity @a[tag=Ready,team=lobby
 execute if score #system Ready_Num matches 2.. if entity @a[tag=Ready,team=lobby] run scoreboard players set #system wait_start -1
 execute if score #system Ready_Num matches 2.. unless entity @a[tag=Ready,team=lobby] run bossbar set minecraft:start_game name [{text: "游戏即将开始...",color:"green",bold:true}]
 execute if score #system Ready_Num matches 2.. unless entity @a[tag=Ready,team=lobby] if score #system wait_start matches -1 run scoreboard players set #system wait_start 200
+
 execute if score #system wait_start matches 200 run clear @a #minecraft:banners
 execute if score #system wait_start matches 200 run title @a times 10t 10t 10t
 execute if score #system wait_start matches 200 run title @a title [{text: "游戏将在",color:"green",bold:true},{text: "10s",color:"gold",bold:true},{text: "后开始...",color:"green",bold:true}]

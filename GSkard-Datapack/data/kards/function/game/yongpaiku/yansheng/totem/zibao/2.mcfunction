@@ -5,4 +5,5 @@ damage @s 10 kards:zibao
 attribute @s max_health base reset
 kill @e[type=item,nbt={Item:{id:"minecraft:tnt"}}]
 playsound minecraft:brmm player @a[distance=..20] ~ ~ ~ 100 1
+
 tag @s remove zibaotuteng

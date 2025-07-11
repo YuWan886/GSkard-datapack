@@ -1,0 +1,3 @@
+
+give @s music_disc_wait[item_name=[{text: "4K",color:"aqua"},{text: " 损耗过度",color:"dark_aqua"}],lore=[{text: "陷阱卡",color:"dark_aqua",italic:false},{text: "使用后埋下陷阱 敌方在达到条件时触发 触发后失效",color:"gray",italic:false},[{text: "条件：敌方任意玩家使用",color:"gray",italic:false},{text: "基础牌",color:"blue",italic:false},{text: "或",color:"gray",italic:false},{text: "军团牌",color:"dark_green",italic:false},{text: "时",color:"gray",italic:false}],[{text: "触发：使其",color:"gray",italic:false},{text: "当前费用减半",color: "red",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'损耗过度'},tooltip_style="kard/trap"]
+scoreboard players set #kard_sunhaoguodu kardCount 4

@@ -28,3 +28,4 @@ execute if score @s random2 matches 286..295 run function kards:game/paiku/juntu
 execute if score @s random2 matches 296..305 run function kards:game/paiku/juntuan/zibaojuntuan
 scoreboard players set @s random2 0
 scoreboard players remove @s juntuancishu 1
+

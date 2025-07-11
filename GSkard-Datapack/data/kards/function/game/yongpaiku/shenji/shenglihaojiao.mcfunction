@@ -1,8 +1,10 @@
 execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[胜利号角]",color:"white",hover_event:{action:"show_text",value:"敌方区域怪物获得3s速度4与力量4"}}]
-function kards:game/yongpaiku/xianjin/jiance/shenjijiance
+function kards:game/yongpaiku/xianjing/jiance/shenjijiance
 function kards:game/yongpaiku/use_general/kard_general
+    
     execute if entity @s[team=blue] run effect give @e[type=!player,type=!iron_golem,team=blue] speed 3 3 true
     execute if entity @s[team=blue] run effect give @e[type=!player,type=!iron_golem,team=blue] strength 3 3 true
+    
     execute if entity @s[team=red] run effect give @e[type=!player,type=!iron_golem,team=red] speed 3 3 true
     execute if entity @s[team=red] run effect give @e[type=!player,type=!iron_golem,team=red] strength 3 3 true
 item replace entity @s weapon.offhand with air

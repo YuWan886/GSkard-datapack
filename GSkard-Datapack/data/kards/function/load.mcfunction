@@ -11,6 +11,8 @@ schedule clear kards:lobby/bossbar/color/3
 schedule clear kards:lobby/bossbar/color/4
 function kards:lobby/bossbar/color/1
 #注册计分项目
+scoreboard objectives add JinFaJieJie dummy {text:"禁法结界",color:"dark_aqua",bold:true,hover_event:{action:"show_text",value:{text:"回合开始时费用减半"}}}
+scoreboard objectives add ChaoPin dummy {text:"超频",color:"dark_aqua",bold:true}
 scoreboard objectives add zombie_enhance dummy
 scoreboard objectives add temp dummy
 scoreboard objectives add temp_2 dummy
@@ -309,5 +311,6 @@ scoreboard objectives add UUID.2 dummy
 scoreboard objectives add UUID.3 dummy
 scoreboard objectives add Fire dummy
 scoreboard objectives add Fire_take_damage dummy
+
 #
 tellraw @a [{text: "数据包加载完毕",color:"gray"}]

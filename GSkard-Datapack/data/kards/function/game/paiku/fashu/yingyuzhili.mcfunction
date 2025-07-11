@@ -1,2 +1,3 @@
 scoreboard players set #kard_yingyuzhili kardCount 0
-give @s music_disc_mellohi[item_name=[{text: "0K",color:"aqua"},{text: " 盈余之力",color:"light_purple"}],lore=[{text: "法术牌",color:"light_purple",italic:false},[{text: "消耗你所有的K",color:"gray",italic:false},{text: " 每消耗2K就给队伍所有玩家治疗1♥",color:"gold",italic:false}],{text: "PVP回合禁用",color:"dark_gray",italic:true}],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'盈余之力'},tooltip_style="kard/spell"]
+
+give @s music_disc_mellohi[item_name=[{text: "0K",color:"aqua"},{text: " 盈余之力",color:"light_purple"}],lore=[{text: "法术牌",color:"light_purple",italic:false},[{text: "使你的",color:"gray",italic:false},{text: "减半",color:"red",italic:false},{text: "然后剩余费用转化为",color:"gray",italic:false},{text: "等额生命恢复至友方所有玩家",color:"gold",italic:false}],{text: "PVP回合禁用",color:"dark_gray",italic:true}],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'盈余之力'},tooltip_style="kard/spell"]

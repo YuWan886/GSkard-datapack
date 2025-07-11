@@ -3,6 +3,7 @@ tellraw @a [{text: "提示:",color: "gold"},{text: "PVP回合设置为",color: "
 execute as @a at @s run playsound minecraft:block.amethyst_block.hit player @s ~ ~ ~ 100 2
 setblock 101 228 -23 air
 setblock 101 228 -23 minecraft:oak_wall_sign[facing=north]{front_text:{messages:[{click_event:{action:"run_command",command:"/function kards:lobby/setting/roundcount/50"},color:"gold",text: "PVP回合设置为"},{text: "40",color:"green"},'','']}} replace
+
 scoreboard players set #system DifficultyRound 21
 tellraw @a [{text: "提示:",color: "gold"},{text: "困难模式回合设置为",color: "green"},{text: " 21",color: "gold"}]
 setblock 101 227 -23 minecraft:oak_wall_sign[facing=north]{front_text:{messages:[{color:"gold",text: "困难模式回合"},{text: "21",color:"green"},{text: "不可手动调整",color:"gray"},'']}} destroy

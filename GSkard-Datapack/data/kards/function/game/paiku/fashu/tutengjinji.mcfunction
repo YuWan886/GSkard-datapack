@@ -1,0 +1,3 @@
+scoreboard players set #kard_tutengjinji kardCount 4
+
+give @s music_disc_mellohi[item_name=[{text: "4K",color:"aqua"},{text: " 图腾进击",color:"light_purple"}],lore=[{text: "法术牌",color:"light_purple",italic:false},[{text: "对所有敌方生物造成等同于友方",color:"gray",italic:false},{text: "图腾数*2",color:"gold",italic:false},{text: "的",color:"gray",italic:false},{text: "法术伤害",color:"light_purple",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'图腾进击'},tooltip_style="kard/spell"]

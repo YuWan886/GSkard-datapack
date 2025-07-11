@@ -1,2 +1,2 @@
-give @s music_disc_strad[item_name=[{text: "0K",color:"aqua"},{text: " 无用之神",color:"white"}],lore=[{text: "神迹牌",color:"white",italic:false},{text: "没有作用",color:"gray",italic:false},{text: "可以用来触发陷阱",color:"gold",italic:false}],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'无用之神'},tooltip_style="kard/god"]
+give @s music_disc_strad[item_name=[{text: "0K",color:"aqua"},{text: " 无用之神",color:"white"}],lore=[{text: "衍生牌-神迹牌",color:"white",italic:false},{text: "没有作用",color:"gray",italic:false},{text: "可以用来触发陷阱",color:"gold",italic:false}],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'无用之神'},tooltip_style="kard/god"]
 scoreboard players set #kard_wuyongshenji kardCount 0

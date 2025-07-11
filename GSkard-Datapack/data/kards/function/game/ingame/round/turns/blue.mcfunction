@@ -7,6 +7,7 @@ scoreboard players set @a[team=blue] tiaoguo 1
 execute as @e[type=!player,tag=!tuteng,team=red,type=!creaking] run data modify entity @s NoAI set value 1b
 execute as @e[type=!player,tag=!tuteng,team=red,type=!creaking] run data modify entity @s Invulnerable set value 1b
 execute as @e[type=!player,tag=!tuteng,team=red,type=!creaking] run data modify entity @s Silent set value 1b
+
 execute as @e[type=!player,tag=!tuteng,team=blue,type=!creaking] run data modify entity @s NoAI set value 0b
 execute as @e[type=!player,tag=!tuteng,team=blue,type=!creaking] run data modify entity @s Invulnerable set value 0b
 execute as @e[type=!player,tag=!tuteng,team=blue,type=!creaking] run data modify entity @s Silent set value 0b

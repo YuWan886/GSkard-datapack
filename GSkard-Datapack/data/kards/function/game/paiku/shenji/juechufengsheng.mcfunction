@@ -1,2 +1,3 @@
-give @s music_disc_strad[item_name=[{text: "10K",color:"aqua"},{text: " 绝处逢生",color:"white"}],lore=[{text: "神迹牌",color:"white",italic:false},[{text: "恢复自身",color:"gray",italic:false},{text: "所有生命值",color:"gold",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'绝处逢生'},tooltip_style="kard/god"]
-scoreboard players set #kard_juechufengsheng kardCount 10
+
+give @s music_disc_strad[item_name=[{text: "8Kmax",color:"gold"},{text: " 绝处逢生",color:"white"}],lore=[{text: "神迹牌",color:"white",italic:false},[{text: "获得一次瞬间治疗",color:"gray",italic:false}],[{text: "恢复自身",color:"gray",italic:false},{text: "所有生命值",color:"gold",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'绝处逢生'},tooltip_style="kard/god"]
+scoreboard players set #kard_juechufengsheng kardCountmax 8
