@@ -3,21 +3,18 @@ execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使
 function kards:game/yongpaiku/xianjin/jiance/fashujiance
 
 scoreboard players operation @s kardCount -= #kard_beishuiyizhan kardCount
-scoreboard players remove @s[scores={kujie=1..}] kardCount 1
-scoreboard players set @s pingbi 0
-scoreboard players add @s use_kard 1
+function kards:game/yongpaiku/use_general/kard_general
 execute if entity @s[type=player] unless items entity @s weapon.offhand * run return fail
 item replace entity @s weapon.offhand with air
-
 scoreboard players add @s cishu 2
-#红
+
 execute if entity @s[team=red] if score #system r_death matches 1.. run scoreboard players add @s kardCount 10
 execute if entity @s[team=red] if score #system r_death matches 1.. run scoreboard players add @s cishu 2
 execute if entity @s[team=red] if score #system r_death matches 2.. run scoreboard players add @s kardCount 10
 execute if entity @s[team=red] if score #system r_death matches 2.. run scoreboard players add @s cishu 2
 execute if entity @s[team=red] if score #system r_death matches 3.. run scoreboard players add @s kardCount 10
 execute if entity @s[team=red] if score #system r_death matches 3.. run scoreboard players add @s cishu 2
-#蓝
+
 execute if entity @s[team=blue] if score #system b_death matches 1.. run scoreboard players add @s kardCount 10
 execute if entity @s[team=blue] if score #system b_death matches 1.. run scoreboard players add @s cishu 2
 execute if entity @s[team=blue] if score #system b_death matches 2.. run scoreboard players add @s kardCount 10

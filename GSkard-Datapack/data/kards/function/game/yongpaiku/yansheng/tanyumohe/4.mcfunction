@@ -1,4 +1,4 @@
-#红队
+队
 data merge entity @s {Tags:["panduolamohe"],CustomName:[{text: "§k1",color:"gray"},{text: "潘多拉魔盒",color:"blue"},{text: "§k1",color:"gray"}]}
 team join blue
 scoreboard players set @s pingbi 0

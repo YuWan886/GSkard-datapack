@@ -1,4 +1,4 @@
-#红队用
+
 data modify entity @s NoAI set value 0b
 scoreboard players reset @s wuwangchuchang
 

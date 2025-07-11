@@ -1,7 +1,7 @@
 scoreboard players add @s zombie_enhance 1
 execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[狂欢僵尸]",color:"dark_blue"}]
 tellraw @a [{text: "目前使用次数为:",color:"white"},{score:{objective:"zombie_enhance",name:"@s"},color:"green",bold:false}]
-    #红队用
+
     execute if score @s zombie_enhance matches 0 if entity @s[team=red] at @e[tag=blue_marker_7,limit=1] run summon zombie ~ 1 ~ {Team:red,IsBaby:false,equipment:{head:{id:"minecraft:dispenser"}}}
     execute if score @s zombie_enhance matches 1..3 if entity @s[team=red] at @e[tag=blue_marker_7,limit=1] run summon zombie ~ 1 ~ {Team:red,IsBaby:false,equipment:{mainhand:{id:"minecraft:wooden_sword"},head:{id:"minecraft:dispenser"}}}
     execute if score @s zombie_enhance matches 4..10 if entity @s[team=red] at @e[tag=blue_marker_7,limit=1] run summon zombie ~ 1 ~ {Team:red,IsBaby:false,equipment:{mainhand:{id:"minecraft:wooden_sword"},chest:{id: "minecraft:leather_chestplate"},legs:{id: "minecraft:leather_leggings"},feet:{id: "minecraft:leather_boots"}}}
@@ -14,7 +14,7 @@ tellraw @a [{text: "目前使用次数为:",color:"white"},{score:{objective:"zo
     execute if score @s zombie_enhance matches 61..75 if entity @s[team=red] at @e[tag=blue_marker_7,limit=1] run summon zombie ~ 1 ~ {Tags:["zombie_enhance_3"],Team:red,IsBaby:false,equipment:{mainhand:{id:"minecraft:netherite_sword"},head:{id:"minecraft:dispenser"},chest:{id: "minecraft:diamond_chestplate"},legs:{id: "minecraft:diamond_leggings"},feet:{id: "minecraft:diamond_boots"}}}
     execute if score @s zombie_enhance matches 76.. if entity @s[team=red] at @e[tag=blue_marker_7,limit=1] run summon zombie ~ 1 ~ {Tags:["zombie_enhance_3"],Team:red,IsBaby:false,equipment:{mainhand:{id:"minecraft:netherite_sword"},head:{id:"minecraft:dragon_head"},chest:{id: "minecraft:netherite_chestplate"},legs:{id: "minecraft:netherite_leggings"},feet:{id: "minecraft:netherite_boots"}}}
     
-    #蓝队用
+
     execute if score @s zombie_enhance matches 0 if entity @s[team=blue] at @e[tag=red_marker_7,limit=1] run summon zombie ~ 1 ~ {Team:blue,IsBaby:false,equipment:{head:{id:"minecraft:dispenser"}}}
     execute if score @s zombie_enhance matches 1..3 if entity @s[team=blue] at @e[tag=red_marker_7,limit=1] run summon zombie ~ 1 ~ {Team:blue,IsBaby:false,equipment:{mainhand:{id:"minecraft:wooden_sword"},head:{id:"minecraft:dispenser"}}}
     execute if score @s zombie_enhance matches 4..10 if entity @s[team=blue] at @e[tag=red_marker_7,limit=1] run summon zombie ~ 1 ~ {Team:blue,IsBaby:false,equipment:{mainhand:{id:"minecraft:wooden_sword"},chest:{id: "minecraft:leather_chestplate"},legs:{id: "minecraft:leather_leggings"},feet:{id: "minecraft:leather_boots"}}}

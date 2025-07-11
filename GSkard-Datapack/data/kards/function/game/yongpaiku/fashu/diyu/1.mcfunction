@@ -4,9 +4,7 @@ function kards:game/yongpaiku/xianjin/jiance/fashujiance
 
 
 scoreboard players operation @s kardCount -= #kard_diyu kardCount
-scoreboard players remove @s[scores={kujie=1..}] kardCount 1
-scoreboard players set @s pingbi 0
-scoreboard players add @s use_kard 1
+function kards:game/yongpaiku/use_general/kard_general
 execute if entity @s[type=player] unless items entity @s weapon.offhand * run return fail
 item replace entity @s weapon.offhand with air
 

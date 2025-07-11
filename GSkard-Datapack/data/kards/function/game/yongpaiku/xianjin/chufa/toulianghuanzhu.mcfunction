@@ -1,7 +1,7 @@
-#红队玩家触发
+队玩家触发
 execute if entity @s[team=red] at @r[team=blue,gamemode=adventure] run summon item ~ ~ ~ {PickupDelay:-1,Item:{id:"music_disc_11"},Tags:["copy"]}
 execute if entity @s[team=red] run scoreboard players set 红队 xianjin_toulianghuanzhu 0
-#蓝队玩家触发
+队玩家触发
 execute if entity @s[team=blue] at @r[team=red,gamemode=adventure] run summon item ~ ~ ~ {PickupDelay:-1,Item:{id:"music_disc_11"},Tags:["copy"]}
 execute if entity @s[team=blue] run scoreboard players set 蓝队 xianjin_toulianghuanzhu 0
 
