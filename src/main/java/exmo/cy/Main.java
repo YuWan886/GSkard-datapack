@@ -1,54 +1,43 @@
 package exmo.cy;
 
-import java.io.*;
-import java.nio.file.*;
-import java.util.*;
-import java.util.stream.*;
+import exmo.cy.commands.*;
+
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.Scanner;
 
 public class Main {
+    public static Path mainPath;
+
     public static void main(String[] args) {
-        args = new String[]{"G:\\MC\\GSkard-datapack", ".mcfunction"};
-        if (args.length < 2) {
-            System.out.println("Usage: java Main <directory> <file extension>");
-            System.out.println("Example: java Main G:\\projects\\.txt");
-            return;
-        }
-        
-        Path rootPath = Paths.get(args[0]);
-        String extension = args[1].startsWith(".") ? args[1] : "." + args[1];
-        
-        try {
-            List<Path> files = findFiles(rootPath, extension);
-            System.out.println("Found " + files.size() + " files to process");
-            
-            for (Path file : files) {
-                deleteEmptyLines(file);
-            }
-            System.out.println("Processing completed");
-        } catch (IOException e) {
-            System.err.println("Error: " + e.getMessage());
-        }
-    }
-    
-    private static List<Path> findFiles(Path rootPath, String extension) throws IOException {
-        try (Stream<Path> paths = Files.walk(rootPath)) {
-            return paths
-                .filter(Files::isRegularFile)
-                .filter(p -> p.toString().toLowerCase().endsWith(extension))
-                .collect(Collectors.toList());
-        }
-    }
-    
-    private static void deleteEmptyLines(Path filePath) throws IOException {
-        List<String> lines = Files.readAllLines(filePath);
-        List<String> nonEmptyLines = new ArrayList<>();
-        
-        for (String line : lines) {
-            if (!line.trim().isEmpty()) {
-                nonEmptyLines.add(line);
+        Scanner sc = new Scanner(System.in);
+        System.out.println("=== 卡牌管理系统 ===");
+        System.out.println("请输入初始文件路径：");
+
+        String path = sc.nextLine();
+        mainPath = Paths.get(path);
+
+        // 初始化指令系统
+        CommandManager commandManager = new CommandManager();
+        commandManager.registerCommand("load", new ReadKardsCommand());
+        commandManager.registerCommand("list", new ShowKardsCommand());
+        commandManager.registerCommand("path", new SetPathCommand());
+        commandManager.registerCommand("exit", new ExitCommand());
+        commandManager.registerCommand("export", new ExportKardListCommand());
+        commandManager.registerCommand("search", new SearchKardCommand());
+        commandManager.registerCommand("statistics", new ShowStatisticsCommand());
+        commandManager.registerCommand("help", new HelpCommand(commandManager));
+
+        System.out.println("\n系统初始化完成！输入 'help' 查看命令列表");
+
+        // 主命令循环
+        while (true) {
+            System.out.print("\n> ");
+            String input = sc.nextLine().trim();
+
+            if (!input.isEmpty()) {
+                commandManager.executeCommand(input);
             }
         }
-        
-        Files.write(filePath, nonEmptyLines, StandardOpenOption.TRUNCATE_EXISTING);
     }
 }
