@@ -23,5 +23,8 @@ execute if score @s fashu_duming = @a[tag=DuMing,limit=1] fashu_duming run tellr
 execute if score @s fashu_duming > @a[tag=DuMing,limit=1] fashu_duming run damage @a[tag=DuMing,limit=1] 15 kards:duming
 execute if score @s fashu_duming < @a[tag=DuMing,limit=1] fashu_duming run damage @s 15 kards:duming
 
+execute if score @s fashu_duming = @a[tag=DuMing,limit=1] fashu_duming run advancement grant @s only kards:chengjiu/suoyouhuozhe
+execute if score @s fashu_duming = @a[tag=DuMing,limit=1] fashu_duming run advancement grant @a[tag=DuMing,limit=1] only kards:chengjiu/suoyouhuozhe
+
 tag @a remove DuMing
 scoreboard players reset @a fashu_duming

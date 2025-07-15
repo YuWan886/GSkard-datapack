@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:snowball",
+            "count": 1
+        },
+        "title": {
+            "text": "所有或者..."
+        },
+        "description": {
+            "text": "使用\"赌命\"平局,享受少见的和平吧!"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "kards:chengjiu/jiaocheng",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "rewards": {
+        "function": "kards:chengjiu/jiagouyan"
+    }
+}

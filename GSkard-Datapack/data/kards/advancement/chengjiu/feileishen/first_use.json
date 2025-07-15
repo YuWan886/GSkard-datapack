@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:ender_pearl",
+            "count": 1
+        },
+        "title": {
+            "text": "飞雷神!"
+        },
+        "description": {
+            "text": "首次飞雷神"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "kards:chengjiu/jiaocheng",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "rewards": {
+        "function": "kards:chengjiu/feileishen/first_use"
+    }
+}

@@ -1,2 +1,2 @@
 scoreboard players set #kard_zhaohai kardCount 2
-give @s music_disc_mall[item_name=[{text: "2K",color:"aqua"},{text: " 沼骸",color:"blue"}],lore=[{text: "基本牌",color:"blue",italic:false},[{text: "召唤一只",color:"gray",italic:false},{text: "沼骸",color:"gold",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'沼骸'},tooltip_style="kard/common"]
+give @s music_disc_mall[item_name=[{text: "2K",color:"aqua"},{text: " 沼骸",color:"blue"}],lore=[{text: "基本牌",color:"blue",italic:false},[{text: "召唤一只",color:"gray",italic:false},{text: "沼骸",color:"gold",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'沼骸',K:2},tooltip_style="kard/common"]

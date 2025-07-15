@@ -1,2 +1,2 @@
-tellraw @a [{selector:"@s"},{text: "达成了进度",color:"white"},{text: "[永恒熔铸]",color:"dark_purple","hover_event":{"action":"show_text",value:{text:"永恒熔铸\n无休止火的“无休”点数达到700点",color:"dark_purple"}}}]
+tellraw @a [{selector:"@s"},{text: "完成了挑战",color:"white"},{text: "[永恒熔铸]",color:"dark_purple","hover_event":{"action":"show_text",value:{text:"永恒熔铸\n无休止火的“无休”点数达到700点",color:"dark_purple"}}}]
 playsound ui.toast.challenge_complete block @s ~ ~ ~ 100 1

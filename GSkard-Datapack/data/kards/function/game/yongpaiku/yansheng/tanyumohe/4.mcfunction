@@ -1,4 +1,4 @@
-队
+
 data merge entity @s {Tags:["panduolamohe"],CustomName:[{text: "§k1",color:"gray"},{text: "潘多拉魔盒",color:"blue"},{text: "§k1",color:"gray"}]}
 team join blue
 scoreboard players set @s pingbi 0
@@ -19,7 +19,7 @@ execute if score @s random_panduolamohe matches 13 run function kards:game/yongp
 execute if score @s random_panduolamohe matches 14 run function kards:game/yongpaiku/fashu/neiheyinbao
 execute if score @s random_panduolamohe matches 15 run function kards:game/yongpaiku/fashu/zhouranyingbao
 execute if score @s random_panduolamohe matches 16 run function kards:game/yongpaiku/fashu/zuzhouhujia/1
-execute if score @s random_panduolamohe matches 17 run function kards:game/yongpaiku/fashu/shijiaoganrao/1
+execute if score @s random_panduolamohe matches 17 run function kards:game/yongpaiku/fashu/shijiaoganrao
 execute if score @s random_panduolamohe matches 18 run function kards:game/yongpaiku/fashu/zaijijinhou
 execute if score @s random_panduolamohe matches 19 run function kards:game/yongpaiku/fashu/shandianhongming/1
 execute if score @s random_panduolamohe matches 20 run function kards:game/yongpaiku/juntuan/sheshoubudui

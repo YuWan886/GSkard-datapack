@@ -11,6 +11,15 @@ schedule clear kards:lobby/bossbar/color/3
 schedule clear kards:lobby/bossbar/color/4
 function kards:lobby/bossbar/color/1
 #注册计分项目
+scoreboard objectives add RunningTime_adv dummy
+scoreboard objectives add feileishen dummy
+scoreboard objectives add Use_K_temp dummy
+scoreboard objectives add Use_Kmax_temp dummy
+scoreboard objectives add Use_K_Round dummy
+scoreboard objectives add Use_K_Game dummy
+scoreboard objectives add Use_Kmax_Round dummy
+scoreboard objectives add Use_Kmax_Game dummy
+scoreboard objectives add music dummy
 scoreboard objectives add JinFaJieJie dummy {text:"禁法结界",color:"dark_aqua",bold:true,hover_event:{action:"show_text",value:{text:"回合开始时费用减半"}}}
 scoreboard objectives add ChaoPin dummy {text:"超频",color:"dark_aqua",bold:true}
 scoreboard objectives add zombie_enhance dummy
@@ -253,8 +262,6 @@ scoreboard objectives add wuxiuzhihuo_zhuangbei minecraft.dropped:minecraft.musi
 scoreboard objectives add wuxiuzhihuo_tuteng minecraft.dropped:minecraft.music_disc_blocks
 scoreboard objectives add wuxiuzhihuo_zuzhou minecraft.dropped:minecraft.music_disc_stal
 scoreboard objectives add wuxiuzhihuo_shenji minecraft.dropped:minecraft.music_disc_strad
-scoreboard objectives add music_kards trigger {text: "Kards背景音乐",color:"gold",bold:true}
-scoreboard objectives add music_lengxiao trigger {text: "楞小指定背景音乐",color:"gold",bold:true}
 scoreboard objectives add stopsound trigger {text: "停止播放",color:"gold",bold:true}
 scoreboard objectives add SpellTicks dummy
 scoreboard objectives add ram_cooldown_ticks dummy

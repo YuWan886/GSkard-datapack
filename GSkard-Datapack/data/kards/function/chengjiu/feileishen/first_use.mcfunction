@@ -1,0 +1,2 @@
+tellraw @a [{selector:"@s"},{text: "达成了进度",color:"white"},{text: "[飞雷神]",color:"green","hover_event":{"action":"show_text",value:{text:"飞雷神\n首次使用飞雷神",color:"green"}}}]
+playsound ui.toast.out player @s ~ ~ ~ 100 1

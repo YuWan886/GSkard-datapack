@@ -15,3 +15,4 @@ execute if score @s jinzijue matches 10 run attribute @s minecraft:max_health mo
 execute if score @s jinzijue matches 10 run scoreboard players set @a jinziqifeng 0
 tellraw @a [{text: "禁字诀层数:",color:"dark_red",bold:false},{score:{objective:"jinzijue",name:"@s"},color:"green",bold:false}]
 execute if score @s jinzijue matches 10 run tellraw @a [{selector:"@s"},{text: "禁字大成 所有人的禁字决抽取概率设为0% 无法再使用禁字决",color:"dark_red"}]
+

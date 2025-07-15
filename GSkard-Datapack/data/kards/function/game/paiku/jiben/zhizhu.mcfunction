@@ -1,2 +1,2 @@
 scoreboard players set #kard_zhizhu kardCount 1
-give @s music_disc_mall[item_name=[{text: "1K",color:"aqua"},{text: " 蜘蛛",color:"blue"}],lore=[{text: "基本牌",color:"blue",italic:false},[{text: "召唤一只",color:"gray",italic:false},{text: "蜘蛛",color:"gold",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'蜘蛛'},tooltip_style="kard/common"]
+give @s music_disc_mall[item_name=[{text: "1K",color:"aqua"},{text: " 蜘蛛",color:"blue"}],lore=[{text: "基本牌",color:"blue",italic:false},[{text: "召唤一只",color:"gray",italic:false},{text: "蜘蛛",color:"gold",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'蜘蛛',K:1},tooltip_style="kard/common"]

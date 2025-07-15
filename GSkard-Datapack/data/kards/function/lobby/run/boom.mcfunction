@@ -5,6 +5,7 @@ scoreboard players reset @s RunningTime_All
 scoreboard players reset @s RunningTime_Sec
 scoreboard players reset @s RunningTime_Min
 scoreboard players reset @s RunningTime_Tick
+scoreboard players reset @s RunningTime_adv
 tag @s remove Running
 tag @s add Un_Ready
 team join lobby

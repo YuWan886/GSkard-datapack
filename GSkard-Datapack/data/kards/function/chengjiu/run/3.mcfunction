@@ -1,0 +1,2 @@
+tellraw @a [{selector:"@s"},{text: "达成了进度",color:"white"},{text: "[跑酷高手 3.0]",color:"green","hover_event":{"action":"show_text",value:{text:"跑酷高手 3.0\n在20s内完成跑酷",color:"green"}}}]
+playsound ui.toast.out player @s ~ ~ ~ 100 1

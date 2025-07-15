@@ -1,0 +1,2 @@
+tellraw @a [{selector:"@s"},{text: "达成了进度",color:"white"},{text: "[幻影杀手]",color:"green","hover_event":{"action":"show_text",value:{text:"幻影杀手\n使用飞雷神并击杀一个玩家",color:"green"}}}]
+playsound ui.toast.out player @s ~ ~ ~ 100 1

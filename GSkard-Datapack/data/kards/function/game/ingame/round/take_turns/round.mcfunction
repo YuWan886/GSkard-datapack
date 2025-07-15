@@ -18,6 +18,11 @@ execute if score 回合数 GameRound = #system RoundCount run return run functio
 #回合轮换
 scoreboard players add 回合数 GameRound 1
 function kards:game/ingame/round/turns/panding
+
+execute if score 回合数 GameRound matches 11 run advancement grant @a only kards:chengjiu/round/11
+execute if score 回合数 GameRound matches 31 run advancement grant @a only kards:chengjiu/round/31
+execute if score 回合数 GameRound matches 51 run advancement grant @a only kards:chengjiu/round/51
+execute if score 回合数 GameRound matches 101 run advancement grant @a only kards:chengjiu/round/101
 #回合轮换之后生效
 #陷阱
 function kards:game/yongpaiku/xianjing/jiance/roundjiance
@@ -112,7 +117,7 @@ scoreboard players set @a jiben 0
 scoreboard players set @a xukonghuixiang 0
 function kards:game/ingame/round/skill
 function kards:game/ingame/round/tuteng
-function kards:game/ingame/round/fashu with storage changdidaxiao
+
 scoreboard players set @a[scores={CanuseKard=0}] kardCount 0
 
 #酸辣无骨鸡爪

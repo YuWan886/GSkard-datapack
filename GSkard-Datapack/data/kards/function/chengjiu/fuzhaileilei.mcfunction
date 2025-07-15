@@ -1,0 +1,2 @@
+tellraw @a [{selector:"@s"},{text: "达成了进度",color:"white"},{text: "[负债累累]",color:"green","hover_event":{"action":"show_text",value:{text:"负债累累\nKmax达到负数",color:"green"}}}]
+playsound ui.toast.out player @s ~ ~ ~ 100 1

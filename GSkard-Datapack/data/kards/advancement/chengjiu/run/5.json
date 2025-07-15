@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:ender_pearl",
+            "count": 1
+        },
+        "title": {
+            "text": "跑酷高手..?"
+        },
+        "description": {
+            "text": "在1s内完成跑酷...世上竟有超人?"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "kards:chengjiu/run/4",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "rewards": {
+        "function": "kards:chengjiu/run/5"
+    }
+}

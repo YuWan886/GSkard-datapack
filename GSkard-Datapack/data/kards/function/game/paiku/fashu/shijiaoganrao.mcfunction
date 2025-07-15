@@ -1,2 +1,2 @@
 scoreboard players set #kard_shijiaoganrao kardCount 5
-give @s music_disc_mellohi[item_name=[{text: "5K",color:"aqua"},{text: " 视角干扰",color:"light_purple"}],lore=[{text: "法术牌",color:"light_purple",italic:false},[{text: "旋转敌方所有玩家",color:"gray",italic:false},{text: "2.5s",color:"red",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'视角干扰'},tooltip_style="kard/spell"]
+give @s music_disc_mellohi[item_name=[{text: "5K",color:"aqua"},{text: " 视角干扰",color:"light_purple"}],lore=[{text: "法术牌",color:"light_purple",italic:false},[{text: "旋转敌方所有玩家",color:"gray",italic:false},{text: "2.5s",color:"red",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'视角干扰',K:5},tooltip_style="kard/spell"]

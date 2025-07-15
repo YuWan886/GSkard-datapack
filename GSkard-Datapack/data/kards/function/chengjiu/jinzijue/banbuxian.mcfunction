@@ -1,0 +1,2 @@
+tellraw @a [{selector:"@s"},{text: "达成了进度",color:"white"},{text: "[半步仙]",color:"green","hover_event":{"action":"show_text",value:{text:"半步仙\n禁字决层数达到7层",color:"green"}}}]
+playsound ui.toast.out player @s ~ ~ ~ 100 1

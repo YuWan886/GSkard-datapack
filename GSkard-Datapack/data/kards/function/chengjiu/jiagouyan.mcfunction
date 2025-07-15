@@ -1,2 +1,2 @@
-tellraw @a [{selector:"@s"},{text: "达成了进度",color:"white"},{text: "[六百六十六磕到甲沟炎了]",color:"green","hover_event":{"action":"show_text",value:{text:"“成功”地摔死!",color:"green"}}}]
+tellraw @a [{selector:"@s"},{text: "达成了进度",color:"white"},{text: "[六百六十六磕到甲沟炎了]",color:"green","hover_event":{"action":"show_text",value:{text:"六百六十六磕到甲沟炎了\n“成功”地摔死!",color:"green"}}}]
 playsound ui.toast.out player @s ~ ~ ~ 100 1

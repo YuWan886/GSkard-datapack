@@ -16,6 +16,7 @@ execute positioned -89.0 -60 -83.0 as @a[dx=57,dz=41,dy=21,gamemode=!spectator] 
 execute positioned -41.0 -45 -65.0 as @a[dx=1,dz=1,dy=2,gamemode=adventure] at @s run function kards:lobby/run/finishes
 
 #计时
+scoreboard players add @a[tag=Running] RunningTime_adv 1
 scoreboard players add @a[tag=Running] RunningTime 1
 scoreboard players add @a[tag=Running] RunningTime_All 1
 scoreboard players add @a[tag=Running] RunningTime_Tick 5

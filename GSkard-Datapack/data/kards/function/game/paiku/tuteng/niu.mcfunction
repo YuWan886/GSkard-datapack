@@ -1,3 +1,3 @@
 
-give @s music_disc_blocks[item_name=[{text: "8K",color:"aqua"},{text: " 牛",color:"red"}],lore=[{text: "图腾牌",color:"red",italic:false},{text: "在队伍图腾区生成牛",color:"gray",italic:false},{text: "图腾存活效果：",color:"gray",italic:false},[{text: "1.队伍玩家获得",color:"gray",italic:false},{text: "力量1",color:"gold",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'牛'},tooltip_style="kard/totem"]
+give @s music_disc_blocks[item_name=[{text: "8K",color:"aqua"},{text: " 牛",color:"red"}],lore=[{text: "图腾牌",color:"red",italic:false},{text: "在队伍图腾区生成牛",color:"gray",italic:false},{text: "图腾存活效果：",color:"gray",italic:false},[{text: "1.队伍玩家获得",color:"gray",italic:false},{text: "力量1",color:"gold",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'牛',K:8},tooltip_style="kard/totem"]
 scoreboard players set #kard_niu kardCount 8

@@ -1,0 +1,2 @@
+tellraw @a [{selector:"@s"},{text: "完成了挑战",color:"white"},{text: "[我独自渡劫]",color:"dark_purple","hover_event":{"action":"show_text",value:{text:"我独自渡劫\n禁字决层数达到10层",color:"dark_purple"}}}]
+playsound ui.toast.challenge_complete block @s ~ ~ ~ 100 1

@@ -1,0 +1,2 @@
+tellraw @a [{selector:"@s"},{text: "达成了进度",color:"white"},{text: "[现在是困难模式吗?]",color:"green","hover_event":{"action":"show_text",value:{text:"现在是困难模式吗?\n游戏回合达到第11回合",color:"green"}}}]
+playsound ui.toast.out player @s ~ ~ ~ 100 1

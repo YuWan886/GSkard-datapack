@@ -1,9 +1,9 @@
 scoreboard players add @a Ready 0
 
-execute as @a[advancements={kards:chengjiu/jiaocheng=true}] if score @s Ready matches 0 run item replace entity @s container.4 with minecraft:ender_pearl[custom_name={italic:false,text: "准备",color:"green",bold:true},custom_data={kards:'准备'},use_cooldown={seconds:0.5f}]
-execute as @a[advancements={kards:chengjiu/jiaocheng=true}] if score @s Ready matches 1 run item replace entity @s container.4 with minecraft:ender_pearl[custom_name={italic:false,text: "取消准备",color:"red",bold:true},custom_data={kards:'取消准备'},enchantment_glint_override=true,use_cooldown={seconds:0.5f}]
-execute as @a[advancements={kards:chengjiu/laodeng=true}] if score @s Ready matches 0 run item replace entity @s container.4 with minecraft:ender_pearl[custom_name={italic:false,text: "准备",color:"green",bold:true},custom_data={kards:'准备'},use_cooldown={seconds:0.5f}]
-execute as @a[advancements={kards:chengjiu/laodeng=true}] if score @s Ready matches 1 run item replace entity @s container.4 with minecraft:ender_pearl[custom_name={italic:false,text: "取消准备",color:"red",bold:true},custom_data={kards:'取消准备'},enchantment_glint_override=true,use_cooldown={seconds:0.5f}]
+execute as @a[advancements={kards:chengjiu/jiaocheng=true}] if score @s Ready matches 0 run item replace entity @s container.4 with minecraft:ender_pearl[custom_name={italic:false,text: "准备",color:"green",bold:true},custom_data={kards:'准备',K:0},use_cooldown={seconds:0.5f}]
+execute as @a[advancements={kards:chengjiu/jiaocheng=true}] if score @s Ready matches 1 run item replace entity @s container.4 with minecraft:ender_pearl[custom_name={italic:false,text: "取消准备",color:"red",bold:true},custom_data={kards:'准备',K:0},enchantment_glint_override=true,use_cooldown={seconds:0.5f}]
+execute as @a[advancements={kards:chengjiu/laodeng=true}] if score @s Ready matches 0 run item replace entity @s container.4 with minecraft:ender_pearl[custom_name={italic:false,text: "准备",color:"green",bold:true},custom_data={kards:'准备',K:0},use_cooldown={seconds:0.5f}]
+execute as @a[advancements={kards:chengjiu/laodeng=true}] if score @s Ready matches 1 run item replace entity @s container.4 with minecraft:ender_pearl[custom_name={italic:false,text: "取消准备",color:"red",bold:true},custom_data={kards:'准备',K:0},enchantment_glint_override=true,use_cooldown={seconds:0.5f}]
 
 execute as @a if score @s Used_end_pearl matches 1 run function kards:lobby/ready/1
 execute as @a if score @s Used_end_pearl matches 3 run function kards:lobby/ready/2

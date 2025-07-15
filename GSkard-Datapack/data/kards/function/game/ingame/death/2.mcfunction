@@ -13,3 +13,6 @@ scoreboard players reset @s Fire
 scoreboard players reset @s DongJie
 scoreboard players reset @s XuanYun
 scoreboard players reset @s XuanZhuan
+
+execute if entity @e[tag=droll,type=block_display] run advancement grant @s only kards:chengjiu/death_in_chunriying
+execute if score @s jinzijue matches 5..9 run advancement grant @s only kards:chengjiu/jinzijue/zhongdaobengcu

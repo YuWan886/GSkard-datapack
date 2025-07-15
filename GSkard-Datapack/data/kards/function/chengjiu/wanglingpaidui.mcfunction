@@ -1,2 +1,2 @@
-tellraw @a [{selector:"@s"},{text: "完成了挑战",color:"white"},{text: "[亡灵派对]",color:"dark_purple","hover_event":{"action":"show_text",value:{text:"成功将\"墓园狂欢\"的\"狂欢僵尸\"层数叠到最高层",color:"dark_purple"}}}]
+tellraw @a [{selector:"@s"},{text: "完成了挑战",color:"white"},{text: "[亡灵派对]",color:"dark_purple","hover_event":{"action":"show_text",value:{text:"亡灵派对\n成功将\"墓园狂欢\"的\"狂欢僵尸\"层数叠到最高层",color:"dark_purple"}}}]
 playsound ui.toast.challenge_complete block @s ~ ~ ~ 100 1
