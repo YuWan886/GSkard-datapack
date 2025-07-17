@@ -6,5 +6,5 @@ execute store result storage linghundaji damage double 0.01 run attribute @s max
 function kards:enchantment/linghundaji/2 with storage linghundaji
 tag @s remove enchantment_linghundaji
 execute on attacker run tag @s remove enchantment_linghundaji_attacker
-execute on attacker run scoreboard players set @s enchantment_linghundaji_damage_Time 15
+execute on attacker run scoreboard players set @s enchantment_linghundaji_damage_Time 25
 advancement revoke @s only kards:shenqi/tianshenshibanjia/enchantment/linghundaji

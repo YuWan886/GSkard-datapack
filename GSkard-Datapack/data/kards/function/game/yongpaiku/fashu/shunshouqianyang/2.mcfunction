@@ -118,4 +118,4 @@ tag @n[tag=copy,type=item] add copy_end
 tag @n[tag=copy,type=item] remove copy
 kill @e[type=item,nbt={Item:{id:"minecraft:music_disc_11"}},tag=copy_end]
 
-tellraw @a [{selector:"@s"},{text: "的一张牌被",color:"aqua"},{selector:"@a[tag=User]"},{text: "偷走了！",color:"aqua"}]
+tellraw @a [{selector:"@s"},{text: "的一张牌被",color:"aqua"},{selector:"@a[tag=User,limit=1]"},{text: "偷走了！",color:"aqua"}]

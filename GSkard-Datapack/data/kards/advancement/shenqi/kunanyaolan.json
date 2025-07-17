@@ -1,11 +1,21 @@
 {
     "criteria": {
         "requirement": {
-            "trigger": "minecraft:entity_hurt_player",
-            "conditions": {}
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "player": {
+                    "equipment": {
+                        "chest": {
+                            "components": {
+                                "minecraft:custom_data": "{kards:'苦难摇篮'}"
+                            }
+                        }
+                    }
+                }
+            }
         }
     },
     "rewards": {
-        "function": "kards:game/yongpaiku/shenji/wangzhibaoku/kunanyaolan/1"
+        "function": "kards:game/yongpaiku/shenji/wangzhibaoku/kunanyaolan/healback"
     }
 }

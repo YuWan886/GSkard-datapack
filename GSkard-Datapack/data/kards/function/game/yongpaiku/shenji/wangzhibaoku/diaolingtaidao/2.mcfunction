@@ -1,12 +1,12 @@
 scoreboard players remove @s diaolingtaidao_tujing 1
-particle soul ~ ~ ~ 0.2 0.2 0.2 1 2 force @a
+particle soul ~ ~ ~ 0.2 0.2 0.2 0 2 force @a
 
 execute if entity @s[team=red] at @s run tag @e[team=blue,distance=..2] add diaolingtaidao_hurt
 execute if entity @s[team=blue] at @s run tag @e[team=red,distance=..2] add diaolingtaidao_hurt
 
 execute if block ~ ~ ~ #air run tp @s ^ ^ ^0.25
 execute unless block ~ ~ ~ #air run scoreboard players set @s diaolingtaidao_tujing 0
-execute unless block ~ ~ ~ #air run tp @s ^ ^ ^-0.25
+execute unless block ~ ~ ~ #air run tp @s ^ ^ ^-0.85
 
 execute if score @s diaolingtaidao_tujing matches 1.. at @s run return run function kards:game/yongpaiku/shenji/wangzhibaoku/diaolingtaidao/2
 playsound entity.wither.break_block player @a[distance=..20] ~ ~ ~ 10 2

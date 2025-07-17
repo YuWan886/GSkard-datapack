@@ -35,6 +35,7 @@ execute if score 回合数 GameRound = #system DifficultyRound run difficulty ha
 #基础生效
 execute as @a[scores={CanuseKard=1}] run scoreboard players operation @s kardCount = @s kardCountmax
 function kards:game/ingame/round/take_turns/choupai with storage minecraft:system choupai
+function kards:game/ingame/round/fashu with storage minecraft:changdidaxiao
 #人数补偿
 execute if score #system b_number > #system r_number run scoreboard players add @a[team=red,scores={CanuseKard=1}] kardCount 5
 execute if score #system b_number > #system r_number run scoreboard players add @a[team=red,scores={CanuseKard=1}] cishu 1

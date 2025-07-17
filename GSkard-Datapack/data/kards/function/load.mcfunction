@@ -11,6 +11,12 @@ schedule clear kards:lobby/bossbar/color/3
 schedule clear kards:lobby/bossbar/color/4
 function kards:lobby/bossbar/color/1
 #注册计分项目
+scoreboard objectives add tianshenshibanjia_damage dummy
+scoreboard objectives add tianshenshibanjia_hurt minecraft.custom:minecraft.damage_taken
+scoreboard objectives add tianshenshibanjia_hurt_temp dummy
+scoreboard objectives add tianshenshibanjia_xiansheng dummy
+scoreboard objectives add tianshenshibanjia_attack_time dummy
+scoreboard objectives add tianshenshibanjia_knockback_resistance dummy
 scoreboard objectives add RunningTime_adv dummy
 scoreboard objectives add feileishen dummy
 scoreboard objectives add Use_K_temp dummy
@@ -218,13 +224,15 @@ scoreboard objectives add Ready_Num dummy
 scoreboard objectives add chuandai_xjhj dummy
 scoreboard objectives add Color dummy
 scoreboard objectives add tuteng_Health dummy
-scoreboard objectives add damage_tianshenshibanjia dummy
 scoreboard objectives add hurt_lindongzhikai dummy
 scoreboard objectives add stophurt_lindongzhikai dummy
 scoreboard objectives add in_lindongzhikai dummy
 scoreboard objectives add leave_lindongzhikai dummy
-scoreboard objectives add behurt_kunanyaolan1 minecraft.custom:minecraft.damage_taken
-scoreboard objectives add behurt_kunanyaolan2 minecraft.custom:minecraft.damage_taken
+scoreboard objectives add kunanyaolan_damage dummy
+scoreboard objectives add kunanyaolan_hurt_1 minecraft.custom:minecraft.damage_taken
+scoreboard objectives add kunanyaolan_hurt_2 minecraft.custom:minecraft.damage_taken
+scoreboard objectives add kunanhuashen_live dummy
+scoreboard objectives add kunanhuashen_attack_time dummy
 scoreboard objectives add healback_kunanyaolan dummy
 scoreboard objectives add used_zhengyizhichui1 dummy
 scoreboard objectives add used_zhengyizhichui2 dummy

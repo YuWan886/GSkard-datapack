@@ -1,0 +1,21 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "player": {
+                    "equipment": {
+                        "chest": {
+                            "components": {
+                                "minecraft:custom_data": "{kards:'天神石板甲'}"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "kards:game/yongpaiku/shenji/wangzhibaoku/tianshenshibanjia/knockback_resistance"
+    }
+}

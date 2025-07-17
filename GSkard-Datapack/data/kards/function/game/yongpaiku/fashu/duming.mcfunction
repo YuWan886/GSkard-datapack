@@ -1,4 +1,4 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[赌命]",color:"dark_purple",hover_event:{action:"show_text",value:"使用后双方队伍进行一次随机点数(1~100) 出现更小值的队伍随机一个玩家将受到内核引爆"}}]
+execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[赌命]",color:"dark_purple",hover_event:{action:"show_text",value:[{"text":"使用后与敌方1位随机玩家进行","color":"gray","italic":false},{"text":" 赌命","color":"gold","italic":false,bold:true},{"text":"\n赌命成功则对对方造成","color":"gray","italic":false},{text:"7.5♥破甲伤害",color:"aqua","italic":false},{"text":"\n赌命失败则对自己造成","color":"gray","italic":false},{text:"7.5♥破甲伤害",color:"aqua","italic":false}]}}]
 
 function kards:game/yongpaiku/xianjing/jiance/fashujiance
 
