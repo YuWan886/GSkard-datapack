@@ -1,0 +1,11 @@
+{
+    "values": [
+        "#is_player_attack",
+        "mob_attack",
+        "arrow",
+        "#minecraft:is_explosion",
+        "mob_projectile",
+        "fireball",
+        "trident"
+    ]
+}

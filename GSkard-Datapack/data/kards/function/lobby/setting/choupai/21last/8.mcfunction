@@ -1,0 +1,6 @@
+data modify storage system choupai merge value {21last:8}
+
+tellraw @a [{text: "提示:",color: "gold"},{text: "21回合后抽牌数量调整为",color: "green"},{text: "8张",color: "gold"}]
+execute as @a at @s run playsound minecraft:block.amethyst_block.hit player @s ~ ~ ~ 100 2
+setblock 96 227 -29 air
+setblock 96 227 -29 minecraft:oak_wall_sign[facing=south]{front_text:{messages:[{click_event:{action:"run_command",command:"/function kards:lobby/setting/choupai/21last/9"},color:"gold",text: "21回合后抽牌数量"},{text: "8张",color:"green"},'','']}} replace
