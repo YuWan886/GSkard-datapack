@@ -11,6 +11,10 @@ schedule clear kards:lobby/bossbar/color/3
 schedule clear kards:lobby/bossbar/color/4
 function kards:lobby/bossbar/color/1
 #注册计分项目
+scoreboard objectives add tutengjinji dummy
+scoreboard objectives add yangyandajian_particle dummy
+scoreboard objectives add Particle_distance dummy
+scoreboard objectives add diaolingtaidao_diaoxiezhihua_give dummy
 scoreboard objectives add tianshenshibanjia_damage dummy
 scoreboard objectives add tianshenshibanjia_hurt minecraft.custom:minecraft.damage_taken
 scoreboard objectives add tianshenshibanjia_hurt_temp dummy
@@ -77,7 +81,7 @@ scoreboard objectives add diaolingtaidao_tujing dummy
 scoreboard objectives add diaolingtaidao_damage dummy
 scoreboard objectives add diaolingtaidao dummy
 scoreboard objectives add diaolingtaidao_Time dummy
-scoreboard objectives add PoSui dummy
+scoreboard objectives add PoJia dummy
 scoreboard objectives add shizhongjian_template_1 dummy
 scoreboard objectives add shizhongjian_template_2 dummy
 scoreboard objectives add shizhongjian_template_3 dummy

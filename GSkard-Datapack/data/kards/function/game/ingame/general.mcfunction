@@ -42,6 +42,8 @@ scoreboard players add @e[scores={YongHan=1..,DongJie=1..},tag=DongJie] YongHan_
 scoreboard players remove @e[scores={YongHan_DongJie_liushi=40}] YongHan 1
 scoreboard players set @e[scores={YongHan_DongJie_liushi=40}] YongHan_DongJie_liushi 0
 
+execute as @e[scores={YongHan=18..}] at @s run function kards:game/yongpaiku/shenji/wangzhibaoku/lindongzhikai/yonghanbaofa
+
 execute as @e[scores={YongHan=1..}] run attribute @s movement_speed modifier add 0-0-3 -0.05 add_multiplied_base
 execute as @e[scores={YongHan=0}] run attribute @s movement_speed modifier remove 0-0-3
 #重伤
@@ -50,15 +52,15 @@ scoreboard players set @a[scores={ZhongShang_Round=1..}] HealBack 0
 scoreboard players set @a[scores={ZhongShang_Tick=1..}] HealBack 0
 scoreboard players reset @a[scores={ZhongShang_Round=0}] ZhongShang_Round
 scoreboard players reset @a[scores={ZhongShang_Tick=0}] ZhongShang_Tick
-#破碎
-scoreboard players remove @a[tag=PoSui,scores={PoSui=1..}] PoSui 1
+#破甲
+scoreboard players remove @e[tag=PoJia,scores={PoJia=1..}] PoJia 1
 
-execute as @a[tag=PoSui,scores={PoSui=1..}] at @s run particle enchanted_hit ~ ~2.3 ~ 0.2 0 0.2 0 4 force @a
+execute as @e[tag=PoJia,scores={PoJia=1..}] run attribute @s armor modifier add 0-0-2 -0.4 add_multiplied_total
 
-execute as @a[tag=PoSui,scores={PoSui=0}] run attribute @s armor modifier remove 0-0-2
-execute as @a[tag=PoSui,scores={PoSui=0}] run attribute @s armor_toughness modifier remove 0-0-2
-execute as @a[tag=PoSui,scores={PoSui=0}] run tag @s remove PoSui
-execute as @a[tag=PoSui,scores={PoSui=0}] run scoreboard players reset @s PoSui
+execute as @e[tag=PoJia,scores={PoJia=1..}] at @s run particle enchanted_hit ~ ~2.3 ~ 0.2 0 0.2 0 4 force @a
+execute as @e[tag=PoJia,scores={PoJia=0}] run attribute @s armor modifier remove 0-0-2
+execute as @e[tag=PoJia,scores={PoJia=0}] run tag @s remove PoJia
+execute as @e[tag=PoJia,scores={PoJia=0}] run scoreboard players reset @s PoJia
 #眩晕
 scoreboard players remove @e[tag=XuanYun,scores={XuanYun=1..}] XuanYun 1
 

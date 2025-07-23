@@ -32,6 +32,7 @@ execute as @a[tag=tianshenshibanjia,scores={tianshenshibanjia_xiansheng=1..},tea
 execute as @a[tag=tianshenshibanjia,scores={tianshenshibanjia_attack_time=20}] run scoreboard players set @s tianshenshibanjia_damage 8
 execute as @a[tag=tianshenshibanjia,scores={tianshenshibanjia_attack_time=20}] run scoreboard players remove @s tianshenshibanjia_xiansheng 1
 execute as @a[tag=tianshenshibanjia,scores={tianshenshibanjia_attack_time=20}] at @s run function kards:game/yongpaiku/shenji/wangzhibaoku/tianshenshibanjia/damage
+execute as @a[tag=tianshenshibanjia,scores={tianshenshibanjia_attack_time=20}] at @s summon marker run function kards:game/yongpaiku/shenji/wangzhibaoku/tianshenshibanjia/particle/1
 execute as @a[tag=tianshenshibanjia,scores={tianshenshibanjia_attack_time=20}] run scoreboard players set @s tianshenshibanjia_attack_time 0
 
 #scoreboard players set @a[tag=!tianshenshibanjia] tianshenshibanjia_xiansheng 0
@@ -41,12 +42,7 @@ execute as @a[tag=tianshenshibanjia] unless items entity @s armor.chest *[custom
 execute as @a if items entity @s armor.chest *[custom_data={kards:'凛冬之铠'}] run tag @s add lindongzhikai
 
 scoreboard players add @a[tag=lindongzhikai] lindongzhikai_lingyu 1
-execute as @a[tag=lindongzhikai,team=red] if score @s lindongzhikai_lingyu matches 40 at @s run scoreboard players add @e[team=blue,distance=..6,tag=!tuteng,limit=3,sort=random] YongHan 3
-execute as @a[tag=lindongzhikai,team=blue] if score @s lindongzhikai_lingyu matches 40 at @s run scoreboard players add @e[team=red,distance=..6,tag=!tuteng,limit=3,sort=random] YongHan 3
-
-execute as @a[tag=lindongzhikai] if score @s lindongzhikai_lingyu matches 40 run scoreboard players reset @s lindongzhikai_lingyu
-
-execute as @e[scores={YongHan=18..}] at @s run function kards:game/yongpaiku/shenji/wangzhibaoku/lindongzhikai/1
+execute as @a if score @s lindongzhikai_lingyu matches 40 at @s run function kards:game/yongpaiku/shenji/wangzhibaoku/lindongzhikai/1
 
 execute as @a[tag=lindongzhikai] unless items entity @s armor.chest *[custom_data={kards:'凛冬之铠'}] run tag @s remove lindongzhikai
 #苦难摇篮
@@ -248,10 +244,10 @@ execute as @a if score @s yanyangdajian_Time matches 2..3 at @s run playsound mi
 scoreboard players reset @a[scores={yanyangdajian_Time=0}] yanyangdajian_Time
 
 scoreboard players remove @a[scores={yangyandajian_fenshaozhiyu=1..}] yangyandajian_fenshaozhiyu 1
-execute as @a[scores={yangyandajian_fenshaozhiyu=1..}] at @s run particle lava ~ ~ ~ 2 0.1 2 1 5 force @a
-
+#execute as @a[scores={yangyandajian_fenshaozhiyu=1..}] at @s run particle lava ~ ~ ~ 2 0.1 2 1 5 force @a
 
 scoreboard players add @a[scores={yangyandajian_fenshaozhiyu=1..}] yangyandajian_fenshaozhiyu_damage 1
+execute as @a[scores={yangyandajian_fenshaozhiyu=1..}] at @s summon marker run function kards:game/yongpaiku/shenji/wangzhibaoku/yanyangdajian/particle/1
 execute as @a[scores={yangyandajian_fenshaozhiyu_damage=20}] run tag @s add yangyandajian_fenshaozhiyu_damage
 execute as @a[team=red,scores={yangyandajian_fenshaozhiyu_damage=20}] at @s as @e[team=blue,distance=..5] run damage @s 2 kards:huoyan by @p[team=red,tag=yangyandajian_fenshaozhiyu_damage]
 execute as @a[team=blue,scores={yangyandajian_fenshaozhiyu_damage=20}] at @s as @e[team=red,distance=..5] run damage @s 2 kards:huoyan by @p[team=blue,tag=yangyandajian_fenshaozhiyu_damage]
@@ -270,8 +266,8 @@ execute as @a[tag=yanyangdajian] unless items entity @s weapon.* iron_sword[cust
 execute as @a if items entity @s weapon.* netherite_sword[custom_data={kards:'凋零太刀'}] run tag @s add diaolingtaidao
 
 execute as @a[tag=diaolingtaidao] if predicate kards:sneak unless score @s diaolingtaidao_Time matches 1.. run scoreboard players add @s diaolingtaidao 1
-execute as @a[tag=diaolingtaidao] if score @s diaolingtaidao matches 10 run scoreboard players set @s diaolingtaidao_Time 130
-execute as @a[tag=diaolingtaidao] if score @s diaolingtaidao matches 10 run function kards:game/yongpaiku/shenji/wangzhibaoku/diaolingtaidao/1
+execute as @a[tag=diaolingtaidao] if score @s diaolingtaidao matches 6 run scoreboard players set @s diaolingtaidao_Time 130
+execute as @a[tag=diaolingtaidao] if score @s diaolingtaidao matches 6 run function kards:game/yongpaiku/shenji/wangzhibaoku/diaolingtaidao/1
 
 scoreboard players remove @a[tag=diaolingtaidao,scores={diaolingtaidao_Time=1..}] diaolingtaidao_Time 1
 execute as @a if score @s diaolingtaidao_Time matches 0 run tellraw @s [{text:"[凋零太刀]",color:"dark_gray"},{text:"拔刀·碎魂 效果就绪!",color:"gold"}]

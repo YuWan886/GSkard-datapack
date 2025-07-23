@@ -24,9 +24,7 @@ execute if score #system GameStatus matches 1..2 run scoreboard players enable @
 scoreboard players enable @a music_kards
 scoreboard players enable @a music_lengxiao
 scoreboard players enable @a stopsound
-#背景音乐
-execute as @a if score @s music_kards matches 1.. run function kards:music/kards
-execute as @a if score @s music_lengxiao matches 1.. run function kards:music/lengxiao
+
 execute as @a if score @s stopsound matches 1.. run function kards:music/stop
 #整着玩的
 scoreboard players add #system Color 1

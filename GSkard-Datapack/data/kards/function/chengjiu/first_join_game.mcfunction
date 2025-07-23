@@ -10,3 +10,4 @@ execute unless score #system GameStatus matches 0 run team join Spectator @s
 execute unless score #system GameStatus matches 0 run gamemode spectator @s
 execute unless score #system GameStatus matches 0 run tp @s @r[gamemode=adventure]
 execute at @s run playsound minecraft:entity.player.levelup master @s
+dialog show @s kards:first_join

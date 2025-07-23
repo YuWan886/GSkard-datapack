@@ -70,6 +70,9 @@ tag @a remove jinzijue
 #重置陷阱
 scoreboard players reset 红队
 scoreboard players reset 蓝队
+#重置队伍分数
+scoreboard players reset #红队
+scoreboard players reset #蓝队
 #重置属性
 execute as @a run attribute @s minecraft:max_health modifier remove 0-0-1
 execute as @a run attribute @s minecraft:max_health modifier remove 0-0-2

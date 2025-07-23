@@ -1,0 +1,10 @@
+{
+    "providers": [
+        {
+            "type": "ttf",
+            "file": "minecraft:unifont.ttf",
+            "size": 6,
+            "oversample": 10
+        }
+    ]
+}

@@ -11,6 +11,6 @@ execute unless block ~ ~ ~ #air run tp @s ^ ^ ^-0.85
 execute if score @s diaolingtaidao_tujing matches 1.. at @s run return run function kards:game/yongpaiku/shenji/wangzhibaoku/diaolingtaidao/2
 playsound entity.wither.break_block player @a[distance=..20] ~ ~ ~ 10 2
 execute if entity @e[tag=diaolingtaidao_hurt] run scoreboard players remove @s diaolingtaidao_Time 100
-execute if score @s diaolingtaidao_Time matches 0 run tellraw @s [{text:"[凋零太刀]",color:"dark_gray"},{text:"拔刀·碎魂 效果就绪!",color:"gold"}]
-execute if score @s diaolingtaidao_Time matches 0 run scoreboard players reset @s diaolingtaidao_Time
+#execute unless score @s diaolingtaidao_Time matches 1.. run tellraw @s [{text:"[凋零太刀]",color:"dark_gray"},{text:"拔刀·碎魂 效果就绪!",color:"gold"}]
+execute unless score @s diaolingtaidao_Time matches 1.. run scoreboard players set @s diaolingtaidao_Time 0
 function kards:game/yongpaiku/shenji/wangzhibaoku/diaolingtaidao/3

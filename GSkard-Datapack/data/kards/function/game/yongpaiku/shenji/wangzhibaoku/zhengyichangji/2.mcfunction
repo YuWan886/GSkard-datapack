@@ -6,5 +6,7 @@ execute if score @s[team=blue] used_zhengyichangji matches 0 at @s as @e[team=re
 execute if score @s[team=red] used_zhengyichangji matches 0 at @s as @e[team=blue,distance=..5] at @s run particle item_cobweb ~ ~1 ~ 0 0 0 0 25
 execute if score @s[team=blue] used_zhengyichangji matches 0 at @s as @e[team=red,distance=..5] at @s run particle item_cobweb ~ ~1 ~ 0 0 0 0 25
 
+execute if score @s used_zhengyichangji matches 0 at @s summon marker run function kards:game/yongpaiku/shenji/wangzhibaoku/zhengyichangji/particle/1
+
 execute if score @s used_zhengyichangji matches 0 run scoreboard players set @s used_zhengyichangji 1
 advancement revoke @s only kards:shenqi/zhengyichangji/2

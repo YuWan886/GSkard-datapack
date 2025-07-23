@@ -6,7 +6,7 @@ summon minecraft:text_display 91 257.8 -26 {billboard:fixed,text:{text: "与传�
 summon minecraft:text_display 91 257.3 -26 {billboard:fixed,text:{text: "在自己的回合使用卡牌向对手§6发起进攻 §f或是给§6自己发育"},Rotation:[-90f,0f],Tags:["text4","text"]}
 summon minecraft:text_display 91 256.8 -26 {billboard:fixed,text:{text: "通过不断消耗对手 直至击杀取得胜利"},Rotation:[-90f,0f],Tags:["text5","text"]}
 #---#
-summon minecraft:text_display 86 257.8 -26 {billboard:fixed,text:{text: "前方为§6基础教程 §f若你已经游玩过GSkard👈  可从左右两边离开  👉"},Rotation:[-90f,0f],Tags:["text6","text"]}
+summon minecraft:text_display 86 257.8 -26 {billboard:fixed,text:[{text: "前方为§6基础教程 §f若你已经游玩过GSkard"},{text: "  \n👈  可从左右两边离开  👉"}],Rotation:[-90f,0f],Tags:["text6","text"]}
 #-1-#
 summon minecraft:text_display 83 259 -22 {billboard:fixed,text:{text: "游戏回合分为§6出牌回合§f与§6PVP回合"},Rotation:[-180f,0f],Tags:["text7","text"]}
 summon minecraft:text_display 83 258.5 -22 {billboard:fixed,text:{text: "队伍分为§c红队§f与§9蓝队"},Rotation:[-180f,0f],Tags:["text8","text"]}
@@ -45,4 +45,4 @@ summon minecraft:text_display 65 258 -30 {billboard:fixed,text:{text: "§6§l死
 summon minecraft:text_display 65 257.3 -30 {billboard:fixed,text:{text: "若队伍内有人§c死亡 §f则每死亡一名玩家友方回合开始时都能§6额外抽取卡牌与获取K"},Rotation:[0f,0f],Tags:["text34","text"]}
 summon minecraft:text_display 65 256.8 -30 {billboard:fixed,text:{text: "§7§o最多额外抽取4张牌与20点费用"},Rotation:[0f,0f],Tags:["text35","text"]}
 #-9-#
-summon minecraft:text_display 61 257.5 -26 {billboard:fixed,text:{text: "更多的内容就在游戏中了解吧~↓         ↓          ↓ "},Rotation:[-90f,0f],Tags:["text36","text"]}
+summon minecraft:text_display 61 257.5 -26 {billboard:fixed,text:[{text: "更多的内容就在游戏中了解吧~\n"},{text: "↓         ↓          ↓ "}],Rotation:[-90f,0f],Tags:["text36","text"]}
