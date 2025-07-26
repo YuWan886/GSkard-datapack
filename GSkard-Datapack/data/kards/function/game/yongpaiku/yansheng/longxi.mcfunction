@@ -1,4 +1,5 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[龙息]",color:"dark_blue"}]
+
+
 execute at @s[team=red] run effect give @e[distance=..5,team=blue] levitation 5 4 true
 execute if entity @s[team=red] run effect clear @e[team=red] slowness
 execute if entity @s[team=red] run effect clear @e[team=red] mining_fatigue

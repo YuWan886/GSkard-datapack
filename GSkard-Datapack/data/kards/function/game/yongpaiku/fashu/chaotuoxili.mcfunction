@@ -1,4 +1,6 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[超脱洗礼]",color:"dark_purple",hover_event:{action:"show_text",value:"为队伍玩家回复8♥"}}]
+
+
+
 
 function kards:game/yongpaiku/xianjing/jiance/fashujiance
 

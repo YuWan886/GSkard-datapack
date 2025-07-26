@@ -1,3 +1,4 @@
+
 execute if entity @s[team=red] run kill @e[type=!player,tag=!tuteng,team=red,type=!creaking]
 execute if entity @s[team=blue] run kill @e[type=!player,tag=!tuteng,team=blue,type=!creaking]
 

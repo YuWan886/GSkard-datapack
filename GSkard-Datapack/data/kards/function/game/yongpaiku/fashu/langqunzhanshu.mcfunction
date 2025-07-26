@@ -1,4 +1,6 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[狼群战术]",color:"dark_purple",hover_event:{action:"show_text",value:"敌方两名玩家下回合开始时不能抽牌"}}]
+
+
+
 
 function kards:game/yongpaiku/xianjing/jiance/fashujiance
 

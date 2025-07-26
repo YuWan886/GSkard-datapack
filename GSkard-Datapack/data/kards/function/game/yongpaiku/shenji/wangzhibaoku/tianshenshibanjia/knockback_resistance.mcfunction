@@ -1,3 +1,4 @@
+
 advancement revoke @s only kards:shenqi/tianshenshibanjia/hurt
 attribute @s knockback_resistance modifier remove 0-0-2
 attribute @s[scores={tianshenshibanjia_knockback_resistance=1}] knockback_resistance modifier add 0-0-2 0.0125 add_multiplied_base

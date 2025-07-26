@@ -1,2 +1,11 @@
-
-execute as @e[type=iron_golem,tag=ceshi_1] at @s on attacker run function kards:ceshi/1
+execute unless score temp0 temp matches 1.. run data remove storage temp kard_info.lore.[0]
+execute unless score temp1 temp matches 1.. run data remove storage temp kard_info.lore.[1]
+execute unless score temp2 temp matches 1.. run data remove storage temp kard_info.lore.[2]
+execute unless score temp3 temp matches 1.. run data remove storage temp kard_info.lore.[3]
+execute unless score temp4 temp matches 1.. run data remove storage temp kard_info.lore.[4]
+execute unless score temp5 temp matches 1.. run data remove storage temp kard_info.lore.[5]
+execute unless score temp6 temp matches 1.. run data remove storage temp kard_info.lore.[6]
+execute unless score temp7 temp matches 1.. run data remove storage temp kard_info.lore.[7]
+execute unless score temp8 temp matches 1.. run data remove storage temp kard_info.lore.[8]
+execute unless score temp9 temp matches 1.. run data remove storage temp kard_info.lore.[9]
+execute unless score temp10 temp matches 1.. run data remove storage temp kard_info.lore.[10]

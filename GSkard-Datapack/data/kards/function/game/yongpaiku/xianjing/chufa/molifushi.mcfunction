@@ -1,4 +1,5 @@
 
+
 execute if entity @s[team=red] run scoreboard players set 红队 xianjin_molifushi 0
 
 

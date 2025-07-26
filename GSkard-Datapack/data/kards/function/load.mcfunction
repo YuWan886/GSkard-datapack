@@ -11,6 +11,7 @@ schedule clear kards:lobby/bossbar/color/3
 schedule clear kards:lobby/bossbar/color/4
 function kards:lobby/bossbar/color/1
 #注册计分项目
+scoreboard objectives add dialog trigger
 scoreboard objectives add tutengjinji dummy
 scoreboard objectives add yangyandajian_particle dummy
 scoreboard objectives add Particle_distance dummy

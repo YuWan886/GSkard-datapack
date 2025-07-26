@@ -1,4 +1,5 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[荆棘盾牌]",color:"gold"}]
+
+
 function kards:game/yongpaiku/use_general/kard_general
 
 #禁用时间为5s*disable_cooldown_scale

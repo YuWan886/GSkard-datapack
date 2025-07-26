@@ -1,3 +1,4 @@
+
 scoreboard players remove @s lindongzhikai_lingyu 40
 
 execute if entity @s[tag=lindongzhikai,team=red] run scoreboard players add @e[team=blue,distance=..6,tag=!tuteng,limit=3,sort=random] YongHan 3

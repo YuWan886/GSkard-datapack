@@ -1,3 +1,4 @@
+
 execute unless score #system GameStatus matches 0 run tellraw @a [{selector:"@s"},{text: "获得了",color:"gold"},{text: "无休之火",color:"red"}]
 execute if entity @a[tag=wuxiuzhihuo] run tellraw @a [{text: "检测到已有人拥有",color:"gold"},{text: "无休之火",color:"red"},{text: "故重抽王之宝库",color:"gold"}]
 execute if entity @a[tag=wuxiuzhihuo] run return run function kards:game/yongpaiku/shenji/wangzhibaoku/random1

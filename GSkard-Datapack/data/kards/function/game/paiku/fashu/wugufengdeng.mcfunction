@@ -1,3 +1,3 @@
 scoreboard players set #kard_wugufengdeng kardCount 0
 
-give @s music_disc_mellohi[item_name=[{text: "0K",color:"aqua"},{text: " 五谷丰登",color:"light_purple"}],lore=[{text: "法术牌",color:"light_purple",italic:false},[{text: "所有玩家抽",color:"gray",italic:false},{text: "1张牌",color:"gold",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'五谷丰登',K:0},tooltip_style="kard/spell"]
+give @s music_disc_mellohi[item_name=[{text: "0K",color:"aqua"},{text:" "},{text: "五谷丰登",color:"light_purple"}],lore=[{text: "法术牌",color:"light_purple",italic:false},[{text: "所有玩家抽",color:"gray",italic:false},{text: "1张牌",color:"gold",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'五谷丰登',K:0},tooltip_style="kard/spell"]

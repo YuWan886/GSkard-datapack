@@ -1,3 +1,4 @@
+
 advancement revoke @s only kards:eat/suanlawugujizhua
 
 damage @s 10 kards:la

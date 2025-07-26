@@ -1,4 +1,5 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[猛毒爪牙]",color:"dark_green",hover_event:{action:"show_text",value:"在敌方召唤四只剧毒蜘蛛"}}]
+
+
 
     execute if entity @s[team=red] as @e[tag=blue_marker_1] at @s run summon cave_spider ~ 1 ~ {Team:red,attributes:[{id:"follow_range",base:100},{id:"safe_fall_distance",base:7}]}
     execute if entity @s[team=red] as @e[tag=blue_marker_3] at @s run summon cave_spider ~ 1 ~ {Team:red,attributes:[{id:"follow_range",base:100},{id:"safe_fall_distance",base:7}]}

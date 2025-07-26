@@ -1,4 +1,5 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[幽谙降临]",color:"white",hover_event:{action:"show_text",value:"在敌方召唤监守者 动态平衡：队伍玩家每有一人 监守者最大生命增加30(30~200)"}}]
+
+
 function kards:game/yongpaiku/xianjing/jiance/shenjijiance
 function kards:game/yongpaiku/use_general/kard_general
 

@@ -1,3 +1,4 @@
+
 execute if entity @s[team=red] run tag @r[team=red,gamemode=adventure] add peiyangshi_shidi
 execute if entity @s[team=blue] run tag @r[team=blue,gamemode=adventure] add peiyangshi_shidi
 

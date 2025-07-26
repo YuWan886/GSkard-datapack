@@ -1,3 +1,4 @@
+
 execute store result score @s YunSuan_1 run attribute @s minecraft:max_health get
 execute store result score @s YunSuan_2 run data get entity @s Health
 execute on attacker run tag @s add sishenzhilian_chujue_attacker

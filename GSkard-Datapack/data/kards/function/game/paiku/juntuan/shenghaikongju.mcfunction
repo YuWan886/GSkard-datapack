@@ -1,3 +1,3 @@
 
-give @s music_disc_cat[item_name=[{text: "10K",color:"aqua"},{text: " 深海恐惧",color:"dark_green"}],lore=[{text: "军团牌",color:"dark_green",italic:false},[{text: "召唤3只",color:"gray",italic:false},{text: "守卫者",color:"gold",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'深海恐惧',K:10},tooltip_style="kard/legion"]
+give @s music_disc_cat[item_name=[{text: "10K",color:"aqua"},{text:" "},{text: "深海恐惧",color:"dark_green"}],lore=[{text: "军团牌",color:"dark_green",italic:false},[{text: "召唤3只",color:"gray",italic:false},{text: "守卫者",color:"gold",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'深海恐惧',K:10},tooltip_style="kard/legion"]
 scoreboard players set #kard_shenghaikongju kardCount 10

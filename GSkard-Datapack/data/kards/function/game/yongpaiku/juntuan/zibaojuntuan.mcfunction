@@ -1,4 +1,5 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[自爆军团]",color:"dark_green",hover_event:{action:"show_text",value:"在敌方召唤四只攻击时会的自爆岩浆史莱姆"}}]
+
+
 
 
     execute if entity @s[team=red] at @e[tag=blue_marker_2] run summon magma_cube ~ 1 ~ {Team:red,attributes:[{id:"follow_range",base:100},{id:"safe_fall_distance",base:7}],Size:2,Tags:["site_magma_cube"]}

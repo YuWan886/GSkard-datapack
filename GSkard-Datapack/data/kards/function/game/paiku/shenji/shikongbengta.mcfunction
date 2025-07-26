@@ -1,3 +1,3 @@
 
-give @s music_disc_strad[item_name=[{text: "4K",color:"aqua"},{text: " 时空崩塌",color:"white"}],lore=[{text: "神迹牌",color:"white",italic:false},[{text: "清除双方",color:"gray",italic:false},{text: "所有非玩家实体",color:"gold",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'时空崩塌',K:4},tooltip_style="kard/god"]
+give @s music_disc_strad[item_name=[{text: "4K",color:"aqua"},{text:" "},{text: "时空崩塌",color:"white"}],lore=[{text: "神迹牌",color:"white",italic:false},[{text: "清除双方",color:"gray",italic:false},{text: "所有非玩家实体",color:"gold",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'时空崩塌',K:4},tooltip_style="kard/god"]
 scoreboard players set #kard_shikongbengta kardCount 4

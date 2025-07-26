@@ -1,3 +1,4 @@
+
 advancement revoke @s only kards:shenqi/diaolingtaidao/2
 
 playsound entity.wither_skeleton.step player @a[distance=..20] ~ ~ ~ 100 0

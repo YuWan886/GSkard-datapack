@@ -1,3 +1,4 @@
+
 title @a title "\u00a74尸帝降临"
 execute as @a[distance=..100] at @s facing entity @e[tag=shidi_master] eyes run rotate @s ~ ~
 execute as @a at @s run playsound minecraft:item.trident.thunder player @s ~ ~ ~

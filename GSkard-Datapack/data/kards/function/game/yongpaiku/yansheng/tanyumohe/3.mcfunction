@@ -1,3 +1,4 @@
+
 execute if entity @s[team=blue] if score 蓝队 tanyu_temp_1 matches 1 as @a[gamemode=adventure,team=blue] run attribute @s max_health modifier add 1-0-1 -4 add_value
 
 execute if entity @s[team=blue] if score 蓝队 tanyu_temp_1 matches 2 as @a[gamemode=adventure,team=blue] run attribute @s max_health modifier remove 1-0-1

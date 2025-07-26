@@ -1,3 +1,4 @@
+
 gamerule drowningDamage false
 summon minecraft:lightning_bolt ~ ~ ~
 playsound minecraft:item.trident.thunder player @a ~ ~ ~ 10 1

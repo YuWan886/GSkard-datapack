@@ -1,4 +1,5 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[重伤]",color:"dark_gray",hover_event:{action:"show_text",value:"造成3♥真实伤害且禁疗至下回合结束"}}]
+
+
 function kards:game/yongpaiku/use_general/kard_general
 
 tag @s add zhongshang_damage

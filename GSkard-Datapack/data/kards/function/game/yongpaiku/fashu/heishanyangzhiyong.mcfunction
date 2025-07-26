@@ -1,4 +1,6 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[黑山羊之拥]",color:"dark_purple",hover_event:{action:"show_text",value:"使用后进行一次随机点数(1~10) 根据结果不同获得不同效果"}}]
+
+
+
 
 function kards:game/yongpaiku/xianjing/jiance/fashujiance
 

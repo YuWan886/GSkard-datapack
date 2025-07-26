@@ -1,3 +1,4 @@
+
 #雷暴
 execute if score 红队_讲述者 jiangshuzhe_leibao matches 1 run weather thunder
 execute if score 蓝队_讲述者 jiangshuzhe_leibao matches 1 run weather thunder

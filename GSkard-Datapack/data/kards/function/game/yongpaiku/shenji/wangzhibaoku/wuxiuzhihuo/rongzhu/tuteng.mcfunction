@@ -1,3 +1,4 @@
+
 scoreboard players add @s wuxiuzhihuo_shengji 4
 scoreboard players set @s wuxiuzhihuo_rongzhu 0
 tellraw @s {text: "无休之火熔铸了1张图腾牌 成长点数+4",color:"gray"}

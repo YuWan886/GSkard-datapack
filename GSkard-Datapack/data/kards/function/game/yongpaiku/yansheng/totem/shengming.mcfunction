@@ -1,3 +1,4 @@
+
 scoreboard players add @s HealBack 60
 
 playsound minecraft:tududududu player @a[distance=..20] ~ ~ ~ 100 0

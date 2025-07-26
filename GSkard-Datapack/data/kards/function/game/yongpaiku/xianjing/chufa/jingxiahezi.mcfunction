@@ -1,4 +1,5 @@
 
+
 execute if entity @s[team=red] at @e[tag=red_marker_7,limit=1] run summon creeper ~ 0 ~ {Team:blue,Fuse:15}
 execute if entity @s[team=red] run scoreboard players set 红队 xianjin_jingxiahezi 0
 

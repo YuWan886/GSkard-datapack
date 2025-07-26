@@ -1,4 +1,5 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[神之一手]",color:"white",hover_event:{action:"show_text",value:"偷走敌方所有玩家1张牌"}}]
+
+
 
 item replace entity @s weapon.offhand with air
 scoreboard players operation @s kardCount -= #kard_shenzhiyishou kardCount

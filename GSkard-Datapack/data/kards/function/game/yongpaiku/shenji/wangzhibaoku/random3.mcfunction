@@ -1,4 +1,5 @@
 
+
 execute store result score @s wangzhibaoku run random value 1..13
 execute if score @s wangzhibaoku matches 1 run function kards:game/yongpaiku/shenji/wangzhibaoku/kunanyaolan/give
 execute if score @s wangzhibaoku matches 2 run function kards:game/yongpaiku/shenji/wangzhibaoku/senlinzhihu

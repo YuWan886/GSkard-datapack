@@ -1,3 +1,4 @@
+
 #重置
 scoreboard players reset 红队
 scoreboard players reset 蓝队

@@ -1,3 +1,4 @@
+
 execute if entity @s[team=red] run tag @e[team=blue,tag=tuteng,limit=1,sort=random] add baomao_damage
 execute if entity @s[team=blue] run tag @e[team=red,tag=tuteng,limit=1,sort=random] add baomao_damage
 

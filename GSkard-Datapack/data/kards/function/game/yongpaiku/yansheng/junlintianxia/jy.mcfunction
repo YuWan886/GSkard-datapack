@@ -1,3 +1,4 @@
+
 tag @s add jyda
 
 playsound minecraft:block.ancient_debris.break block @a[distance=..7]

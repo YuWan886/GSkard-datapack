@@ -1,4 +1,5 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[好高骛远]",color:"white",hover_event:{action:"show_text",value:"弃掉所有的牌 抽数量+2的牌"}}]
+
+
 function kards:game/yongpaiku/xianjing/jiance/shenjijiance
 function kards:game/yongpaiku/use_general/kard_general
 item replace entity @s weapon.offhand with air

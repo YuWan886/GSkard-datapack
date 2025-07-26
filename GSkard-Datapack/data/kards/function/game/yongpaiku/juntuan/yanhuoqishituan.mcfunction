@@ -1,5 +1,6 @@
+
 # 焰火骑士团
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[焰火骑士团]",color:"dark_green",hover_event:{action:"show_text",value:"在敌方召唤四只铁套猪灵"}}]
+
    
     execute if entity @s[team=red] as @e[tag=blue_marker_2] at @s run summon piglin ~ 1 ~ {Team:red,IsBaby:false,Tags:['yanhuoqishi']}
     execute if entity @s[team=red] as @e[tag=blue_marker_5] at @s run summon piglin ~ 1 ~ {Team:red,IsBaby:false,Tags:['yanhuoqishi']}

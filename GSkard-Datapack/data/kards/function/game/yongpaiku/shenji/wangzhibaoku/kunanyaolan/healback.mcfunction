@@ -1,3 +1,4 @@
+
 advancement revoke @s only kards:shenqi/kunanyaolan
 execute if score @s kunanyaolan_damage matches 1.. run return fail
 scoreboard players add @s healback_kunanyaolan 1

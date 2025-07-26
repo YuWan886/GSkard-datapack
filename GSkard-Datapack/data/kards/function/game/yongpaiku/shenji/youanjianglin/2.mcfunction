@@ -1,3 +1,4 @@
+
 bossbar set minecraft:warden_1 players @a
 bossbar set minecraft:warden_2 players @a
 bossbar set minecraft:warden_3 players @a

@@ -1,2 +1,3 @@
+
 advancement revoke @s only kards:shenqi/sishenzhilian/1
 give @s minecraft:ghast_tear[minecraft:custom_name={italic:false,text: "灵魂 [弱小]",color:"dark_purple"},lore=[{text: "生物的灵魂",color:"gray",italic:false},{text: "收集10个以后合成",color:"gray",italic:false},{text: ""},{text: "可食用",color:"gray",italic:false},[{text: "获得",color:"gray",italic:false},{text: "0.5♥",color:"green",italic:false}]],custom_data={kards:'灵魂_小'},consumable={consume_seconds:1.2f,has_consume_particles:1b,on_consume_effects:[{type:play_sound,sound:"minecraft:entity.ghast.ambient"}]}]

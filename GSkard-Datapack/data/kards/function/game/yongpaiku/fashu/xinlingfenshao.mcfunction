@@ -1,4 +1,4 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[心灵焚烧]",color:"dark_purple",hover_event:{action:"show_text",value:"使敌方队伍所有生物凋零（包括图腾与怪物）"}}]
+
 function kards:game/yongpaiku/xianjing/jiance/fashujiance
 
 scoreboard players operation @s kardCount -= #kard_xinlingfenshao kardCount

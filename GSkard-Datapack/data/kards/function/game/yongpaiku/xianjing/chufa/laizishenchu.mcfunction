@@ -1,3 +1,4 @@
+
 execute if entity @s[team=red] run scoreboard players add @a[team=blue] HealBack 32
 execute if entity @s[team=red] run scoreboard players set 红队 xianjin_laizishenchu 0
 

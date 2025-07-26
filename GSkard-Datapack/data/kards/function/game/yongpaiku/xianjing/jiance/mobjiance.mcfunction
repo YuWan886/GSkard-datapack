@@ -1,3 +1,4 @@
+
 #魔盒
 execute if entity @s[type=!player] run return fail
 #侦测贝

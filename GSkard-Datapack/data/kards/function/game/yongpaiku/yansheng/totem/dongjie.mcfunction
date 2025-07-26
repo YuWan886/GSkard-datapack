@@ -1,3 +1,4 @@
+
 scoreboard players add @s HealBack 20
 
 execute if entity @s[team=red] run tag @e[distance=..6,team=blue,gamemode=!spectator] add DongJie

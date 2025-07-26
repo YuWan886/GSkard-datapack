@@ -1,3 +1,4 @@
+
 tag @s add lightning_bolt
 
 #execute if entity @s[team=red] run scoreboard players add @e[team=blue,distance=..2.8] XuanYun 20

@@ -1,4 +1,5 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[流浪商人]",color:"red",hover_event:{action:"show_text",value:"队伍两名玩家每回合多抽1张牌"}}]
+
+
 
 
 function kards:game/yongpaiku/use_general/kard_general

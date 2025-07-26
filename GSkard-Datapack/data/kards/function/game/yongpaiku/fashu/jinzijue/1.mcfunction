@@ -1,4 +1,6 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[禁字诀]",color:"dark_purple",hover_event:{action:"show_text",value:"减少生命上限获得增益"}}]
+
+
+
 
 function kards:game/yongpaiku/xianjing/jiance/fashujiance
 

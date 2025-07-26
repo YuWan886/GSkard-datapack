@@ -21,11 +21,16 @@ execute store result score 人数 b_alive if entity @a[team=blue,gamemode=advent
 #启用trigger
 scoreboard players enable @a reset
 execute if score #system GameStatus matches 1..2 run scoreboard players enable @a[scores={touxiang=0}] touxiang
-scoreboard players enable @a music_kards
-scoreboard players enable @a music_lengxiao
+
 scoreboard players enable @a stopsound
 
 execute as @a if score @s stopsound matches 1.. run function kards:music/stop
+#对话框部分
+scoreboard players enable @a dialog
+execute as @a[scores={dialog=1..}] run function kards:dialog/trigger
+#title @a[scores={dialog=1..}] times 0t 1t 0t
+#title @a[scores={dialog=1..}] title {text:"\uE002"}
+scoreboard players reset @a[scores={dialog=1..}] dialog
 #整着玩的
 scoreboard players add #system Color 1
 execute if score #system Color matches 5 run team modify First prefix [{text: "[",color:"red"},{text: "萌",color:"yellow"},{text: "新",color:"green"},{text: "]",color:"aqua"}]

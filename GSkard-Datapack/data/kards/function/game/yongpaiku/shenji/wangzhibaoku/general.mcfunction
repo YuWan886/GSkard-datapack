@@ -1,3 +1,4 @@
+
 #森林之护
 execute as @a if items entity @s armor.chest *[custom_data={kards:'森林之护'}] run tag @s add senlinzhihu
 scoreboard players add @a[tag=senlinzhihu] senlinzhihu_HealBack 1

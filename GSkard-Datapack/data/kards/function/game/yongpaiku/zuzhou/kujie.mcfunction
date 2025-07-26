@@ -1,4 +1,5 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[枯竭]",color:"dark_gray",hover_event:{action:"show_text",value:"下回合 敌方使用牌后额外扣一点点数(不可叠加)"}}]
+
+
 function kards:game/yongpaiku/use_general/kard_general
 
 

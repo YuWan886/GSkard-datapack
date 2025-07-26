@@ -1,2 +1,3 @@
-execute store result storage temp kardCount int 0.5 run scoreboard players get @s kardCount
-execute store result score @s kardCount run data get storage temp kardCount
+scoreboard players remove @s temp 1
+
+execute if score @s temp matches 1.. run function kards:ceshi/2

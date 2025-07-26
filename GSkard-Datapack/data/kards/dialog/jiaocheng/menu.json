@@ -1,0 +1,59 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "text": "         教程主菜单",
+    "type": "text",
+    "color": "gray",
+    "bold": true
+  },
+  "external_title": {
+    "text": ""
+  },
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "\n点击以进入对应章节\n可点击\"简介\"顺序浏览",
+        "color": "green"
+      }
+    }
+  ],
+  "inputs": [],
+  "can_close_with_escape": true,
+  "columns": 3,
+  "actions": [
+    {
+      "label": {
+        "text": "简介",
+        "color": "gold"
+      },
+      "width": 125,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "kards:jiaocheng/jianjie"
+      }
+    },
+    {
+      "label": {
+        "text": "战斗",
+        "color": "gold"
+      },
+      "width": 125,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "kards:jiaocheng/zhandou"
+      }
+    },
+    {
+      "label": {
+        "text": "卡牌",
+        "color": "gold"
+      },
+      "width": 125,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "kards:jiaocheng/kapai"
+      }
+    }
+  ]
+}

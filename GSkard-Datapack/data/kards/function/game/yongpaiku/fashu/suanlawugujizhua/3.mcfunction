@@ -1,3 +1,4 @@
+
 tag @s add temp
 execute store result score @s temp run data get entity @s Thrower[0]
 execute as @a store result score @s temp run data get entity @s UUID[0]

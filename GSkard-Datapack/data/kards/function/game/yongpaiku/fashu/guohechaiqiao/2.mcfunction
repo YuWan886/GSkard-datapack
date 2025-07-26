@@ -1,3 +1,4 @@
+
 execute store result score @s random_clear run random value 0..35
 
 execute if score @s random_clear matches 0 unless items entity @s container.0 #minecraft:creeper_drop_music_discs run return run function kards:game/yongpaiku/fashu/guohechaiqiao/2

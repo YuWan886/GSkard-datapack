@@ -1,3 +1,4 @@
+
 tag @s add diaolingtaidao_damage
 execute if entity @s[team=red] as @e[tag=diaolingtaidao_hurt,team=blue,scores={diaolingtaidao_damage_add=1..}] run damage @s 15 kards:diaolingtaidao by @p[tag=diaolingtaidao_damage,team=red]
 execute if entity @s[team=blue] as @e[tag=diaolingtaidao_hurt,team=red,scores={diaolingtaidao_damage_add=1..}] run damage @s 15 kards:diaolingtaidao by @p[tag=diaolingtaidao_damage,team=blue]

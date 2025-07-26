@@ -1,3 +1,4 @@
+
 scoreboard players set @s yanyangdajian_Time 700
 scoreboard players reset @s yangyandajian
 scoreboard players set @s yangyandajian_fenshaozhiyu 200

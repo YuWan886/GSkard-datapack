@@ -1,3 +1,4 @@
+
 scoreboard players add @s HealBack 48
 
 execute store result score @s random_hunluantuteng run random value 1..100

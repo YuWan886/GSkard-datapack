@@ -1,0 +1,146 @@
+{
+  "type": "minecraft:confirmation",
+  "title": {
+    "text": "     卡牌详要",
+    "type": "text",
+    "color": "gray",
+    "bold": true
+  },
+  "external_title": {
+    "text": ""
+  },
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "\n\n\n\n卡牌 作为本地图的核心资源 玩家的大部分行为都需要依附于他",
+        "color": "gray"
+      },
+      "width": 512
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:music_disc_cat",
+        "components": {}
+      }
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "那么我们应该§6如何使用卡牌?",
+        "color": "gray"
+      },
+      "width": 512
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "所有种类的卡牌都是通过按键",
+        "extra": [
+          {
+            "keybind": "key.swapOffhand",
+            "color": "gold",
+            "bold": true
+          },
+          {
+            "text": "进行使用"
+          }
+        ],
+        "color": "gray"
+      },
+      "width": 512
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "\n当然 使用卡牌是有代价与条件的",
+        "color": "gray"
+      },
+      "width": 512
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "§2K/Kmax    §c0/20",
+        "color": "gray"
+      },
+      "width": 512
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "如上 §2K/Kmax§r与§c0/20§r之间是对应关系",
+        "color": "gray"
+      },
+      "width": 512
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "可视为§2K§r为§60§r §cKmax§r为§620",
+        "color": "gray"
+      }
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "而卡牌使用的§6基本代价§r就是消耗§2K§r与§2Kmax",
+        "color": "gray"
+      },
+      "width": 512
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "代价是消耗K与Kmax 那么§6条件§r又是什么呢?",
+        "color": "gray"
+      },
+      "width": 512
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "§l这就需要引出§r\"§6回合§r\"§l的概念了\n§7简单来说 §6回合§7可以分为\"§a友方回合§7\"与\"§c敌方回合§7\"",
+        "color": "gray"
+      },
+      "width": 512
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "回到\"使用条件\"\n卡牌中需要消耗\"§6K§r\"的卡牌\n§7仅能在\"§a友方回合§r\"§7使用\n§7且使用的时候§6你的K不小于卡牌需要消耗的K§r\n§7否则§c无法使用",
+        "color": "gray"
+      },
+      "width": 512
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "卡牌中需要消耗\"§6Kmax§r\"的卡牌\n§7可以在§6任何时候§7使用并且§6不需要Kmax大于卡牌需要消耗的Kmax§7 也就是说 这类卡牌没有使用条件",
+        "color": "gray"
+      },
+      "width": 512
+    }
+  ],
+  "inputs": [],
+  "can_close_with_escape": true,
+  "yes": {
+    "label": {
+      "text": "返回教程主菜单",
+      "color": "gray",
+      "bold": true
+    },
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "kards:jiaocheng/menu"
+    }
+  },
+  "no": {
+    "label": {
+      "text": "下一页",
+      "color": "green",
+      "bold": true
+    }
+  }
+}

@@ -1,4 +1,5 @@
 
+
 execute if entity @e[tag=hurt_for_feixue,distance=..1] run return run function kards:game/yongpaiku/shenji/wangzhibaoku/yanyangdajian/stop
 
 summon marker ~ ~ ~ {Tags:["marker_feixue_1"]}

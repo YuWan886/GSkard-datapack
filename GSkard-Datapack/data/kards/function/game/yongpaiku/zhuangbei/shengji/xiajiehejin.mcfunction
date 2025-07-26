@@ -1,4 +1,5 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[下界合金升级]",color:"dark_gray",hover_event:{action:"show_text",value:"获得一件下界合金护甲"}}]
+
+
 function kards:game/yongpaiku/use_general/kard_general
 
 execute if entity @s[team=red] run scoreboard players add #红队 xiajiehejinhujia 1

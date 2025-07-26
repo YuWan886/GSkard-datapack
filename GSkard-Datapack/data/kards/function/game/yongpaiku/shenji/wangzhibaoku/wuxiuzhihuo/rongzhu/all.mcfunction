@@ -1,3 +1,4 @@
+
 execute if score @s wuxiuzhihuo_shengji matches 1..45 run function kards:game/yongpaiku/shenji/wangzhibaoku/wuxiuzhihuo/choupai/1
 execute if score @s wuxiuzhihuo_shengji matches 46..90 run function kards:game/yongpaiku/shenji/wangzhibaoku/wuxiuzhihuo/choupai/2
 execute if score @s wuxiuzhihuo_shengji matches 91..135 run function kards:game/yongpaiku/shenji/wangzhibaoku/wuxiuzhihuo/choupai/3

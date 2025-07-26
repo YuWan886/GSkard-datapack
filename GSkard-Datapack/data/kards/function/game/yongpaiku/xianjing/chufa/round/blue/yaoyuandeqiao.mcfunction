@@ -1,3 +1,4 @@
+
 scoreboard players reset 蓝队 xianjin_yaoyuandeqiao
 
 kill @e[type=!player,tag=!tuteng,team=red,type=!creaking]

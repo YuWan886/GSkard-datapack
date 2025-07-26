@@ -1,0 +1,1 @@
+execute if score @s dialog matches 1 run return run function kards:dialog/first_join

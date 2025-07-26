@@ -1,4 +1,5 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[虫灾]",color:"dark_green",hover_event:{action:"show_text",value:"在敌方召唤8只末影瞒"}}]
+
+
 
 
     execute if entity @s[team=red] as @e[tag=blue_marker_2] at @s run summon endermite ~ 1 ~ {attributes:[{id:"follow_range",base:100},{id:"safe_fall_distance",base:7},{id:"minecraft:max_health",base:16.0d}],Health:16.0f,Team:red,active_effects:[{id:"speed",show_particles:0b,duration:-1}]}

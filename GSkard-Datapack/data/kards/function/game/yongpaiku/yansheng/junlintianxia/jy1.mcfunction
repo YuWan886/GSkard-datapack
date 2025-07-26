@@ -1,3 +1,4 @@
+
 tag @s add XuanYun
 scoreboard players add @s XuanYun 60
 

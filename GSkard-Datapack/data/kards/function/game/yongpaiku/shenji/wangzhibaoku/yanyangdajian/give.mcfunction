@@ -1,3 +1,4 @@
+
 # 炎阳大剑
 
 execute unless score #system GameStatus matches 0 run tellraw @a [{selector:"@s"},{text: "获得了",color:"gold"},{text: "炎阳大剑",color:"dark_red"}]

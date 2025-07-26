@@ -1,3 +1,4 @@
+
 scoreboard players remove @s diaolingtaidao_tujing 1
 particle soul ~ ~ ~ 0.2 0.2 0.2 0 2 force @a
 

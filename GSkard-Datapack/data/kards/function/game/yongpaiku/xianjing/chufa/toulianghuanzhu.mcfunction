@@ -1,4 +1,5 @@
 
+
 execute if entity @s[team=red] at @r[team=blue,gamemode=adventure] run summon item ~ ~ ~ {PickupDelay:-1,Item:{id:"music_disc_11"},Tags:["copy"]}
 execute if entity @s[team=red] run scoreboard players set 红队 xianjin_toulianghuanzhu 0
 

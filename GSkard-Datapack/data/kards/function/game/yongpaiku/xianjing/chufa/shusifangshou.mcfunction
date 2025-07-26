@@ -1,5 +1,6 @@
 
 
+
 execute if entity @s[team=red] run effect give @a[team=blue] absorption 20 9 true
 execute if entity @s[team=blue] run effect give @a[team=red] absorption 20 9 true
 

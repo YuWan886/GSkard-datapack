@@ -1,2 +1,2 @@
 scoreboard players set #kard_baozhajuntuan kardCount 6
-give @s music_disc_cat[item_name=[{text: "6K",color:"aqua"},{text: " 爆炸军团",color:"dark_green"}],lore=[{text: "军团牌",color:"dark_green",italic:false},[{text: "召唤4只",color:"gray",italic:false},{text: "苦力怕",color:"gold",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'爆炸军团',K:6},tooltip_style="kard/legion"]
+give @s music_disc_cat[item_name=[{text: "6K",color:"aqua"},{text:" "},{text: "爆炸军团",color:"dark_green"}],lore=[{text: "军团牌",color:"dark_green",italic:false},[{text: "召唤4只",color:"gray",italic:false},{text: "苦力怕",color:"gold",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'爆炸军团',K:6},tooltip_style="kard/legion"]

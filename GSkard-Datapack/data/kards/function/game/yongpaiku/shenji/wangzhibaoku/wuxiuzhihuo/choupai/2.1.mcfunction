@@ -1,3 +1,4 @@
+
 execute store result score @s random run random value 26..110
 execute if score @s random matches 26..45 run scoreboard players add @s juntuancishu 1
 execute if score @s random matches 46..55 run scoreboard players add @s zhuangbeicishu 1

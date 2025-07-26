@@ -1,4 +1,5 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[无力]",color:"dark_gray",hover_event:{action:"show_text",value:"敌方玩家获得虚弱1 持续20s"}}]
+
+
 
 function kards:game/yongpaiku/use_general/kard_general
 

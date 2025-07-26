@@ -1,3 +1,4 @@
+
 tag @s add zibaotuteng
 
 summon item ~ ~ ~ {PickupDelay:-1,Item:{id:"music_disc_11"},Tags:["copy"]}

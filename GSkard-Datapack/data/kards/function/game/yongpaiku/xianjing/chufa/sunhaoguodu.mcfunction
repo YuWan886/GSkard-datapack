@@ -1,3 +1,4 @@
+
 execute if entity @s[team=red] run scoreboard players set 红队 xianjin_sunhaoguodu 0
 execute if entity @s[team=blue] run scoreboard players set 蓝队 xianjin_sunhaoguodu 0
 

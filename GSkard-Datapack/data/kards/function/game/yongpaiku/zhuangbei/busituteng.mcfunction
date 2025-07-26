@@ -1,4 +1,5 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[不死图腾]",color:"gold"}]
+
+
 function kards:game/yongpaiku/use_general/kard_general
 
 execute store result score @s random_busituteng run random value 1..6

@@ -1,3 +1,4 @@
+
 #此mcfunction为回合判定后触发
 #要检测是谁的回合 通过虚拟实体#system的分数GameRound判断
 #> 0为蓝队回合 

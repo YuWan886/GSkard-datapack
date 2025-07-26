@@ -1,4 +1,5 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[嗜血狼群]",color:"dark_green",hover_event:{action:"show_text",value:"在敌方召唤6只狼 狼攻击附带凋零与吸血且不会被击退"}}]
+
+
 
     execute if entity @s[team=red] as @e[tag=blue_marker_1] at @s run summon wolf ~ 1 ~ {Team:red,Tags:["嗜血狼群"],AngerTime:1000000000,attributes:[{id:"follow_range",base:100},{id:"safe_fall_distance",base:7},{id:"minecraft:max_health",base:24.0d}],Health:24.0f}
     execute if entity @s[team=red] as @e[tag=blue_marker_5] at @s run summon minecraft:wolf ~ 1 ~ {Team:red,Tags:["嗜血狼群"],AngerTime:1000000000,attributes:[{id:"follow_range",base:100},{id:"safe_fall_distance",base:7},{id:"minecraft:max_health",base:24.0d}],Health:24.0f}

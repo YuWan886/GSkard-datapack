@@ -1,3 +1,4 @@
+
 scoreboard players add @s jinzijue 1
 execute if score @s jinzijue matches 1 run attribute @s minecraft:max_health modifier add 0-0-1 -30 add_value
 execute if score @s jinzijue matches 2 run attribute @s minecraft:max_health modifier add 0-0-2 -30 add_value

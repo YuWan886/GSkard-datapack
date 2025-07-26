@@ -1,3 +1,4 @@
+
 particle dust{color: [0.63,0.21,0.21], scale: 1.4} ~ ~2.2 ~
 tp @s ^ ^ ^0.25
 

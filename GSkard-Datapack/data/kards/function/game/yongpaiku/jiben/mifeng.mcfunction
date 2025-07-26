@@ -1,4 +1,5 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[蜜蜂]",color:"blue"}]
+
+
 
 
    execute if entity @s[team=red] at @e[tag=blue_marker_7,limit=1] run summon bee ~ 1 ~ {Team:red,attributes:[{id:"follow_range",base:100}],AngerTime:100000}

@@ -1,4 +1,5 @@
 
+
 clear @s *[minecraft:custom_data={kards:'灵魂_小'}] 10
 tellraw @s [{text: "灵魂合成了...",color:"gray"}]
 

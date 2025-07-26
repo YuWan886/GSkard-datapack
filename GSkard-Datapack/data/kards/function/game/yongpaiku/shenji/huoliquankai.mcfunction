@@ -1,4 +1,5 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[火力全开]",color:"white",hover_event:{action:"show_text",value:[{text: "获得",color:"gray",italic:false},{text: "15K",color:"gold",italic:false},{text: "\n若友方存活玩家不大于2 则额外",color:"gray",italic:false},{text: "使队伍所有玩家获得10K",color:"gold",italic:false},{text:"\n使用后本回合内获得",color:"gray",italic:false},{text:"超频",color:"dark_aqua",italic:false,bold:true},{text: "\n超频:每使用1张牌获得1K,使用[法术牌][装备牌]会额外获得1Kmax.",color:"dark_gray",italic:false}]}}]
+
+
 function kards:game/yongpaiku/xianjing/jiance/shenjijiance
 function kards:game/yongpaiku/use_general/kard_general
 scoreboard players add @s kardCount 15

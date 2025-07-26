@@ -1,2 +1,3 @@
+
 execute unless score #system GameStatus matches 0 run tellraw @a [{selector:"@s"},{text: "获得了",color:"gold"},{text: "讲述者",color:"dark_purple"}]
 give @s nether_star[custom_name={italic:false,color:"dark_purple",text: "讲述者"},lore=[{text: "你的回合开始时",color:"gray",italic:false},{text: "讲述一个故事",color:"gray",italic:false},{color:"white",text: "传奇护符(背包内生效)",italic:false},{text: "那么..今日讲述的故事是什么呢...?",color:"dark_gray",italic:true}],max_stack_size=1,custom_data={kards:'讲述者'},tooltip_style="kard/shenqi"]

@@ -1,3 +1,4 @@
+
 #生成一个掉落物实体 带有无法被沉默清除的标签replaace_item
 execute if items entity @s armor.chest * run summon item ~ ~ ~ {PickupDelay:-1,Item:{id:"music_disc_11"},Tags:["replaace_item"]}
 data modify entity @n[tag=replaace_item,type=item] Item set from entity @s equipment.chest

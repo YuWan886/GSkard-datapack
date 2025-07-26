@@ -1,4 +1,3 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[凋零骷髅]",color:"blue"}]
 
 
     execute if entity @s[team=red] at @e[tag=blue_marker_7,limit=1] run summon wither_skeleton ~ 1 ~ {Team:red,equipment:{mainhand:{id:"minecraft:stone_sword"}},attributes:[{id:"follow_range",base:100},{id:"safe_fall_distance",base:7}]}

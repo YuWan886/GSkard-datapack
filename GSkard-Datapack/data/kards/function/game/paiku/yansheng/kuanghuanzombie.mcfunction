@@ -1,4 +1,4 @@
 scoreboard players remove @s newzombie 1
-give @s zombie_spawn_egg[item_name=[{text: "2K",color:"aqua"},{text: " 狂欢僵尸",color:"blue"}],lore=[[{text: "墓园狂欢",color:"white",italic:false}],[{text: "召唤一只",color:"gray",italic:false},{text: "狂欢僵尸",color:"gold",italic:false}],[{text: "每使用一定次数 狂欢僵尸都会增强",color:"gray",italic:false}]],tooltip_display={hide_tooltip:false,hidden_components:["minecraft:provides_trim_material"]},custom_data={kards:'狂欢僵尸',K:2},tooltip_style="kard/god",max_stack_size=99]
+give @s zombie_spawn_egg[item_name=[{text: "2K",color:"aqua"},{text:" "},{text: "狂欢僵尸",color:"blue"}],lore=[[{text: "墓园狂欢",color:"white",italic:false}],[{text: "召唤一只",color:"gray",italic:false},{text: "狂欢僵尸",color:"gold",italic:false}],[{text: "每使用一定次数 狂欢僵尸都会增强",color:"gray",italic:false}]],tooltip_display={hide_tooltip:false,hidden_components:["minecraft:provides_trim_material"]},custom_data={kards:'狂欢僵尸',K:2},tooltip_style="kard/god",max_stack_size=99]
 scoreboard players set #kard_kuanghuanzombie kardCount 2
 execute if score @s newzombie matches 1.. run function kards:game/paiku/yansheng/kuanghuanzombie

@@ -1,3 +1,3 @@
 scoreboard players set #kard_yinnicangku kardCount 6
 
-give @s music_disc_mellohi[item_name=[{text: "6K",color:"aqua"},{text: " 隐匿仓库",color:"light_purple"}],lore=[{text: "法术牌",color:"light_purple",italic:false},[{text: "下回合开始时额外增加",color:"gray",italic:false},{text: "12K",color:"gold",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'隐匿仓库',K:6},tooltip_style="kard/spell"]
+give @s music_disc_mellohi[item_name=[{text: "6K",color:"aqua"},{text:" "},{text: "隐匿仓库",color:"light_purple"}],lore=[{text: "法术牌",color:"light_purple",italic:false},[{text: "下回合开始时额外增加",color:"gray",italic:false},{text: "12K",color:"gold",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'隐匿仓库',K:6},tooltip_style="kard/spell"]

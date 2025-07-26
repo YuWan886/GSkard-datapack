@@ -1,3 +1,4 @@
+
 tellraw @s [{text: " -",color:"gray",italic:false},{text: "冻结 ",color:"aqua",italic:false},{text: "点燃",color:"dark_red",italic:false},{text: "6格内敌对生物7.5s",color:"gray",italic:false}]
 #冰冻
 execute if entity @s[team=red] run tag @e[distance=..6,team=blue,gamemode=!spectator] add DongJie

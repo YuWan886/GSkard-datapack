@@ -1,4 +1,5 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[飞雷神]",color:"white",hover_event:{action:"show_text",value:"传送至敌方区域 10s后折回"}}]
+
+
 function kards:game/yongpaiku/xianjing/jiance/shenjijiance
 function kards:game/yongpaiku/use_general/kard_general
 

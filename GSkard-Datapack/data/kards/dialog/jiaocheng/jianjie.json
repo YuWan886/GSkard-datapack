@@ -1,0 +1,79 @@
+{
+  "type": "minecraft:confirmation",
+  "title": {
+    "text": "     地图简介",
+    "type": "text",
+    "color": "gray",
+    "bold": true
+  },
+  "external_title": {
+    "text": ""
+  },
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "\n\n\n\n\n\n\n\n\n\nGSkard是一张回合制的卡牌对战地图",
+        "color": "gray",
+        "bold": true
+      }
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "§l与传统卡牌对战中§r\"§6§n§l卡牌单位之间的碰撞§r\"§l不同的是",
+        "color": "gray"
+      },
+      "width": 256
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "§l本地图将会以§r\"§6§n§l玩家与卡牌单位进行碰撞§r\"§l的战斗机制游玩",
+        "color": "gray"
+      },
+      "width": 512
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "\n玩家需要使用卡牌攻击敌方玩家 消磨敌方的血量",
+        "color": "gray",
+        "bold": true
+      },
+      "width": 512
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "最后存活下来的队伍将会胜利",
+        "color": "gray",
+        "bold": true
+      }
+    }
+  ],
+  "inputs": [],
+  "can_close_with_escape": true,
+  "yes": {
+    "label": {
+      "text": "返回教程主菜单",
+      "color": "gray",
+      "bold": true
+    },
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "kards:jiaocheng/menu"
+    }
+  },
+  "no": {
+    "label": {
+      "text": "下一页",
+      "color": "green",
+      "bold": true
+    },
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "kards:jiaocheng/zhandou"
+    }
+  }
+}

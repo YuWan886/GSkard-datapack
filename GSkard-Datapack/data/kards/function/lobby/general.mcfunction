@@ -5,7 +5,7 @@ execute if score #system GameStatus matches 0 run effect give @a[team=!111,team=
 execute if score #system GameStatus matches 1 run effect give @a[tag=Spectator] minecraft:resistance 1 4 true
 execute if score #system GameStatus matches 1 run effect give @a[tag=Spectator] minecraft:instant_health 1 4 true
 #准备
-execute if score #system GameStatus matches 0 run function kards:lobby/ready/general
+#execute if score #system GameStatus matches 0 run function kards:lobby/ready/general
 #大厅小游戏
 execute if score #system GameStatus matches 0 run function kards:lobby/game/general
 #设置

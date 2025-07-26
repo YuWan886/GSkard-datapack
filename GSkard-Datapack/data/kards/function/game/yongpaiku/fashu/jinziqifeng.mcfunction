@@ -1,4 +1,6 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[禁字启封]",color:"dark_purple",hover_event:{action:"show_text",value:"增加10%抽取[禁字决]的概率\n最高为60%"}}]
+
+
+
 
 function kards:game/yongpaiku/xianjing/jiance/fashujiance
 

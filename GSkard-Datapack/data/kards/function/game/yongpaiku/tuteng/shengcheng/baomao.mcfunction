@@ -1,4 +1,5 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[豹猫]",color:"red",hover_event:{action:"show_text",value:"队伍玩家获得速度2 回合结束时对敌方1个图腾造成4♥伤害"}}]
+
+
 
 
 function kards:game/yongpaiku/use_general/kard_general

@@ -1,3 +1,3 @@
 scoreboard players set #kard_zhouranyingbao kardCount 8
 
-give @s music_disc_mellohi[item_name=[{text: "8K",color:"aqua"},{text: " 骤然引爆",color:"light_purple"}],lore=[{text: "法术牌",color:"light_purple",italic:false},[{text: "召唤一只",color:"gray",italic:false},{text: "威力与血量加强 引爆速度大幅度加快",color:"gold",italic:false},{text: "的苦力怕",color:"gray",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'骤然引爆',K:8},tooltip_style="kard/spell"]
+give @s music_disc_mellohi[item_name=[{text: "8K",color:"aqua"},{text:" "},{text: "骤然引爆",color:"light_purple"}],lore=[{text: "法术牌",color:"light_purple",italic:false},[{text: "召唤一只",color:"gray",italic:false},{text: "威力与血量加强 引爆速度大幅度加快",color:"gold",italic:false},{text: "的苦力怕",color:"gray",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'骤然引爆',K:8},tooltip_style="kard/spell"]

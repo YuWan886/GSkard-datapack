@@ -1,3 +1,4 @@
+
 attribute @s knockback_resistance base reset
 
 playsound item.mace.smash_ground_heavy player @a[distance=..20] ~ ~ ~ 100 1

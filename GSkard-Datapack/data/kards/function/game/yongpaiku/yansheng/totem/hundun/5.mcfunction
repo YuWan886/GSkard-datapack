@@ -1,3 +1,4 @@
+
 tellraw @s [{text: " -将6格内",color:"gray",italic:false},{text: "\"敌对的非玩家生物\"",color:"gray",italic:false},{text: "传送至敌方阵营",color:"gold",italic:false}]
 
 execute if entity @s[team=red] run tag @e[team=blue,type=#kards:mob,tag=!random_creaking,distance=..6] add hunduntuteng_chuansong

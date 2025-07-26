@@ -1,4 +1,6 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[五谷丰登]",color:"dark_purple",hover_event:{action:"show_text",value:"所有玩家抽一张牌"}}]
+
+
+
 
 function kards:game/yongpaiku/xianjing/jiance/fashujiance
 

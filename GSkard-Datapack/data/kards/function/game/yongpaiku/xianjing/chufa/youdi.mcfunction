@@ -1,3 +1,4 @@
+
 execute if entity @s[type=!player] run return fail
 execute if entity @s[team=red] if score 红队 xianjin_youdi matches 1.. run return run scoreboard players remove 红队 xianjin_youdi 1
 execute if entity @s[team=blue] if score 蓝队 xianjin_youdi matches 1.. run return run scoreboard players remove 蓝队 xianjin_youdi 1

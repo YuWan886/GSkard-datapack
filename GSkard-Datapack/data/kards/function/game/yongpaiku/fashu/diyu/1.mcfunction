@@ -1,4 +1,3 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[地狱]",color:"dark_purple",hover_event:{action:"show_text",value:"在地方场地周围放置一圈岩浆 怪物获得火焰抗性效果 持续至回合结束"}}]
 
 function kards:game/yongpaiku/xianjing/jiance/fashujiance
 

@@ -1,4 +1,5 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[幻影陀螺]",color:"dark_green",hover_event:{action:"show_text",value:"在敌方召唤4只幻影陀螺 每只幻影陀螺攻击两次后死亡"}}]
+
+
 
 
     execute if entity @s[team=red] at @e[tag=blue_marker_2] run summon endermite ~ 1 ~ {attributes:[{id:"follow_range",base:100},{id:"safe_fall_distance",base:7},{id:"minecraft:max_health",base:1.0d},{id:"attack_damage",base:6.0d},{id:"movement_speed",base:0.35}],AbsorptionAmount:1000.0f,Team:red,Tags:["huanyingtuoluo"],PersistenceRequired:1b}

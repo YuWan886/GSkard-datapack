@@ -1,3 +1,3 @@
 
-give @s music_disc_strad[item_name=[{text: "4K",color:"aqua"},{text: " 胜利号角",color:"white"}],lore=[{text: "神迹牌",color:"white",italic:false},[{text: "3s内 召唤及已经生成的怪物获得",color:"gray",italic:false},{text: "力量4与速度4",color:"gold",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'胜利号角',K:4},tooltip_style="kard/god"]
+give @s music_disc_strad[item_name=[{text: "4K",color:"aqua"},{text:" "},{text: "胜利号角",color:"white"}],lore=[{text: "神迹牌",color:"white",italic:false},[{text: "3s内 召唤及已经生成的怪物获得",color:"gray",italic:false},{text: "力量4与速度4",color:"gold",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'胜利号角',K:4},tooltip_style="kard/god"]
 scoreboard players set #kard_shenglihaojiao kardCount 4

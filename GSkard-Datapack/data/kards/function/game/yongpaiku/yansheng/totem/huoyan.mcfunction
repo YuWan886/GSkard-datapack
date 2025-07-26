@@ -1,3 +1,4 @@
+
 scoreboard players add @s HealBack 20
 
 execute if entity @s[team=red] run tag @e[distance=..6,tag=!tuteng,team=blue] add Fire

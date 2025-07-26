@@ -1,3 +1,4 @@
+
 #千钧一发
 
 execute if entity @s[team=red] at @e[tag=red_marker_7,limit=1] positioned ~ 1 ~ run tp @e[team=red,tag=!tuteng,tag=!random_creaking,type=#kards:mob] ~ 1 ~

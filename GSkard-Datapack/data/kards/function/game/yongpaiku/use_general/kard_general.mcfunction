@@ -1,3 +1,4 @@
+
 scoreboard players set @s pingbi 0
 scoreboard players add @s use_kard 1
 
@@ -10,6 +11,8 @@ scoreboard players operation @s Use_K_Round += @s Use_K_temp
 scoreboard players operation @s Use_K_Game += @s Use_K_temp
 scoreboard players operation @s Use_Kmax_Round += @s Use_Kmax_temp
 scoreboard players operation @s Use_Kmax_Game += @s Use_Kmax_temp
+
+function kards:game/yongpaiku/use_general/tellraw
 
 execute if items entity @s weapon.offhand music_disc_mall run function kards:game/yongpaiku/use_general/jiben
 execute if items entity @s weapon.offhand music_disc_13 run function kards:game/yongpaiku/use_general/zhuangbei

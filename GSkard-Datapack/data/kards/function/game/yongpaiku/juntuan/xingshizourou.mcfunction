@@ -1,4 +1,5 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text: "[行尸走肉]",color:"dark_green",hover_event:{action:"show_text",value:"在敌方召唤五只僵尸(四大一小)"}}]
+
+
    
     execute if entity @s[team=red] at @e[tag=blue_marker_7,limit=1] run summon zombie ~ 1 ~ {Team:red,IsBaby:true,equipment:{head:{id:"minecraft:dispenser"}}}
     execute if entity @s[team=red] as @e[tag=blue_marker_1] at @s run summon zombie ~ 1 ~ {Team:red,IsBaby:false,equipment:{head:{id:"minecraft:dispenser"}}}

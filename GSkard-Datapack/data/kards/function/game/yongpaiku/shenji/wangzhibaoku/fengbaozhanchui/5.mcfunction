@@ -1,3 +1,4 @@
+
 scoreboard players reset @s fengbaozhanchui_xuneng
 scoreboard players set @s fengbaozhanchui_xuneng_Time 500
 

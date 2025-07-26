@@ -1,3 +1,4 @@
+
 scoreboard players remove @s tutengjinji 1
 tag @s add tutengjinji_temp
 execute if entity @s[team=red] as @e[team=blue] run damage @s 2 magic by @p[tag=tutengjinji_temp,team=red]

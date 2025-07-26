@@ -1,3 +1,4 @@
+
 #海龟鳞甲
 execute as @a if items entity @s container.17 turtle_scute[custom_data={kards:'海龟鳞甲'}] run tag @s add haiguilinjia
 execute as @a if items entity @s container.26 turtle_scute[custom_data={kards:'海龟鳞甲'}] run tag @s add haiguilinjia

@@ -1,4 +1,5 @@
 
+
 scoreboard players remove @s tianshenshibanjia_damage 1
 damage @e[team=blue,distance=..4,limit=1,sort=random] 1 kards:tianshenshibanjia by @s[team=red]
 damage @e[team=red,distance=..4,limit=1,sort=random] 1 kards:tianshenshibanjia by @s[team=blue]

@@ -1,3 +1,4 @@
+
 #沸血
 
 execute if entity @s[team=red] run summon marker ~ ~ ~ {Tags:["marker_feixue","red"]}

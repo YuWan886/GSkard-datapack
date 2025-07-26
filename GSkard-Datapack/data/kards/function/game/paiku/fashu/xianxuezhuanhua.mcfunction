@@ -1,3 +1,3 @@
 scoreboard players set #kard_xianxuezhuanhua kardCount 0
 
-give @s music_disc_mellohi[item_name=[{text: "0K",color:"aqua"},{text: " 鲜血转化",color:"light_purple"}],lore=[{text: "法术牌",color:"light_purple",italic:false},[{text: "扣除",color:"gray",italic:false},{text: "24♥ ",color:"red",italic:false},{text: "抽",color:"gray",italic:false},{text: "4张法术牌",color:"gold",italic:false}],],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'鲜血转化',K:0},tooltip_style="kard/spell"]
+give @s music_disc_mellohi[item_name=[{text: "0K",color:"aqua"},{text:" "},{text: "鲜血转化",color:"light_purple"}],lore=[{text: "法术牌",color:"light_purple",italic:false},[{text: "扣除",color:"gray",italic:false},{text: "24♥ ",color:"red",italic:false},{text: "抽",color:"gray",italic:false},{text: "4张法术牌",color:"gold",italic:false}],],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'鲜血转化',K:0},tooltip_style="kard/spell"]
