@@ -1,0 +1,63 @@
+{
+  "type": "minecraft:notice",
+  "title": {
+    "text": "5K ",
+    "extra": [
+      {
+        "text": "背水一战",
+        "color": "light_purple"
+      }
+    ],
+    "color": "aqua",
+    "bold": true
+  },
+  "external_title": {
+    "text": ""
+  },
+  "body": [
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "music_disc_mellohi"
+      },
+      "show_decorations": false,
+      "show_tooltip": false
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "抽2张牌",
+        "color": "gray"
+      },
+      "width": 1024
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "此外队伍中每有一个玩家死亡 你就获得10点数 抽2张牌",
+        "color": "gray"
+      },
+      "width": 1024
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "最多获得30K 8张牌",
+        "color": "gray"
+      },
+      "width": 1024
+    }
+  ],
+  "inputs": [],
+  "can_close_with_escape": true,
+  "action": {
+    "label": {
+      "text": "返回§d法术牌§a牌库",
+      "color": "green"
+    },
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "kards:paiku/fashu/main"
+    }
+  }
+}

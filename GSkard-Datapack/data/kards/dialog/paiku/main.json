@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "text": "        牌库",
+    "color": "gold",
+    "bold": true
+  },
+  "external_title": {
+    "text": ""
+  },
+  "body": [],
+  "inputs": [],
+  "can_close_with_escape": true,
+  "exit_action": {
+    "label": {
+      "text": "返回§6主菜单",
+      "color": "green"
+    }
+  },
+  "columns": 3,
+  "actions": [
+    {
+      "label": {
+        "text": "法术牌",
+        "color": "light_purple"
+      },
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "kards:paiku/fashu/main"
+      }
+    }
+  ]
+}

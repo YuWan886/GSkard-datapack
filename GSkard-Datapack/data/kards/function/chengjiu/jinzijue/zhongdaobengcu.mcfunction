@@ -1,2 +1,2 @@
-tellraw @a [{selector:"@s"},{text: "达成了进度",color:"white"},{text: "[中道崩殂]",color:"green","hover_event":{"action":"show_text",value:{text:"中道崩殂\n禁字决层数不小于4层时死亡",color:"green"}}}]
+tellraw @a [{selector:"@s"},{text: "达成了进度",color:"white"},{text: "[中道崩殂]",color:"green","hover_event":{"action":"show_text",value:{text:"中道崩殂\n禁字决层数大于等于4层时死亡",color:"green"}}}]
 playsound ui.toast.out player @s ~ ~ ~ 100 1

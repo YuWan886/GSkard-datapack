@@ -8,7 +8,7 @@
             "text": "中道崩殂"
         },
         "description": {
-            "text": "禁字决层数不小于4层时死亡"
+            "text": "禁字决层数大于等于4层时死亡"
         },
         "frame": "task",
         "show_toast": true,

@@ -107,7 +107,7 @@ execute if score 蓝队 manshui matches 1 run scoreboard players set 蓝队 mans
 
 #诅咒护甲
 execute as @a[tag=zuzhouhujia] if items entity @s armor.chest golden_chestplate[custom_data={kards:'诅咒护甲'}] run item replace entity @s armor.chest with air
-tag @a[tag=zuzhouhujia] remove zuzhuanghujia
+tag @a[tag=zuzhouhujia] remove zuzhouhujia
 
 #马蜂
 scoreboard players remove @a[scores={hurt_by_mafeng=1,CanuseKard=1}] kardCount 2

@@ -7,9 +7,11 @@ execute if score #system dituxuanze matches 6 run clone 65 -60 -71 73 -47 -63 76
 execute if score #system dituxuanze matches 7 run clone 77 -60 -71 85 -47 -63 76 226 -45
 execute if score #system dituxuanze matches 8 run clone 89 -60 -71 97 -47 -63 76 226 -45
 execute if score #system dituxuanze matches 9 run clone 113 -60 -71 121 -47 -63 76 226 -45
+execute if score #system dituxuanze matches 10 run clone 137 -60 -71 145 -47 -63 76 226 -45
 
 execute if score #system dituxuanze matches 101 run clone 101 -60 -71 109 -47 -63 76 226 -45
 execute if score #system dituxuanze matches 102 run clone 125 -60 -71 133 -47 -63 76 226 -45
+execute if score #system dituxuanze matches 103 run clone 149 -60 -71 157 -47 -63 76 226 -45
 
 execute unless entity @e[type=block_display,tag=map] run summon block_display 83 228.2 -35 {block_state:{Name:"minecraft:crying_obsidian"},Tags:["map","spawn"]}
 data modify entity @e[tag=map,type=block_display,limit=1] transformation.left_rotation set value {angle:54.74f,axis:[-1.0f,0.0f,1.0f]}

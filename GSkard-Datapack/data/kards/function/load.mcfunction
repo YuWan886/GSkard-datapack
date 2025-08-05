@@ -11,6 +11,17 @@ schedule clear kards:lobby/bossbar/color/3
 schedule clear kards:lobby/bossbar/color/4
 function kards:lobby/bossbar/color/1
 #注册计分项目
+scoreboard objectives add Mob_Count_Illager dummy
+scoreboard objectives add If_Mount_Alive dummy
+scoreboard objectives add Mob_Count_Nether dummy
+scoreboard objectives add Mob_Skill_Time dummy
+scoreboard objectives add temp_Mob_Move1 dummy
+scoreboard objectives add temp_Mob_Move2 dummy
+scoreboard objectives add temp_Mob_Move3 dummy
+scoreboard objectives add temp_Mob_Move1_ dummy
+scoreboard objectives add temp_Mob_Move2_ dummy
+scoreboard objectives add temp_Mob_Move3_ dummy
+scoreboard objectives add Mob_Attack_Time dummy
 scoreboard objectives add dialog trigger
 scoreboard objectives add tutengjinji dummy
 scoreboard objectives add yangyandajian_particle dummy

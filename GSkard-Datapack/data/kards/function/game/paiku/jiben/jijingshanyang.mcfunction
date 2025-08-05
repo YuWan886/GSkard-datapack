@@ -1,2 +1,0 @@
-scoreboard players set #kard_jijingshanyang kardCount 1
-give @s music_disc_mall[item_name=[{text: "1K",color:"aqua"},{text:" "},{text: "寂静山羊",color:"blue"}],lore=[{text: "基本牌",color:"blue",italic:false},[{text: "召唤一只",color:"gray",italic:false},{text: "无声的不停冲撞的尖叫山羊 它出场时携带两秒隐身",color:"gold",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'寂静山羊',K:1},tooltip_style="kard/common"]

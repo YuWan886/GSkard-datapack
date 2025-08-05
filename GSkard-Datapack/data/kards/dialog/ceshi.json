@@ -1,48 +1,53 @@
 {
-  "type": "minecraft:confirmation",
+  "type": "minecraft:notice",
   "title": {
-    "text": "",
-    "type": "text",
-    "color": "gold",
+    "text": "5K ",
+    "extra": [
+      {
+        "text": "背水一战",
+        "color": "light_purple"
+      }
+    ],
+    "color": "aqua",
     "bold": true
   },
   "external_title": {
     "text": ""
   },
-  "body": {
-    "type": "minecraft:plain_message",
-    "contents": {
-      "text": "\n\n\n\n\n\n\n\n\n",
-      "extra": [
-        {
-          "selector": "@n"
-        }
-      ],
-      "color": "gold",
-      "bold": true,
-      "font": "minecraft:un_size_18"
+  "body": [
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "music_disc_mellohi"
+      },
+      "show_decorations": false,
+      "show_tooltip": false
     },
-    "width": 1024
-  },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "抽2张牌",
+        "color": "gray"
+      },
+      "width": 1024
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "此外队伍中每有一个玩家死亡 你就获得10点数 抽2张牌",
+        "color": "gray"
+      },
+      "width": 1024
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "最多获得30K 8张牌",
+        "color": "gray"
+      },
+      "width": 1024
+    }
+  ],
   "inputs": [],
-  "can_close_with_escape": false,
-  "yes": {
-    "label": {
-      "text": "是的，我是老登",
-      "color": "green",
-      "bold": true
-    }
-  },
-  "no": {
-    "label": {
-      "text": "不，我是萌新",
-      "color": "red",
-      "bold": true
-    },
-    "tooltip": {
-      "text": "进入新手教程",
-      "color": "gray",
-      "bold": true
-    }
-  }
+  "can_close_with_escape": false
 }

@@ -1,0 +1,100 @@
+{
+    "type": "minecraft:multi_action",
+    "title": {
+        "text": "法术牌",
+        "color": "light_purple",
+        "bold": true
+    },
+    "external_title": {
+        "text": ""
+    },
+    "body": [],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "exit_action": {
+        "label": {
+            "text": "返回§6主§a牌库",
+            "color": "green"
+        }
+    },
+    "columns": 5,
+    "actions": [
+        {
+            "label": {
+                "text": "背水一战",
+                "color": "light_purple"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/fashu/beishuiyizhan"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "背水一战",
+                "color": "light_purple"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/fashu/beishuiyizhan"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "背水一战",
+                "color": "light_purple"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/fashu/beishuiyizhan"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "背水一战",
+                "color": "light_purple"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/fashu/beishuiyizhan"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "背水一战",
+                "color": "light_purple"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/fashu/beishuiyizhan"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "背水一战",
+                "color": "light_purple"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/fashu/beishuiyizhan"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "背水一战",
+                "color": "light_purple"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/fashu/beishuiyizhan"
+            },
+            "width": 75
+        }
+    ]
+}

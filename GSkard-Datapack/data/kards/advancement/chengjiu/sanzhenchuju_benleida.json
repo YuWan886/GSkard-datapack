@@ -8,7 +8,7 @@
             "text": "三振出局,本垒打!"
         },
         "description": {
-            "text": "手持一把击退附魔不小于5的武器"
+            "text": "手持一把击退附魔大于等于5的武器"
         },
         "frame": "task",
         "show_toast": true,

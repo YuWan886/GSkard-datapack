@@ -5,7 +5,7 @@
             "conditions": {
                 "damage": {
                     "source_entity": {
-                        "nbt": "{Tags:[\"嗜血狼群\"]}"
+                        "nbt": "{Tags:[\"shixuelangqun\"]}"
                     }
                 }
             }

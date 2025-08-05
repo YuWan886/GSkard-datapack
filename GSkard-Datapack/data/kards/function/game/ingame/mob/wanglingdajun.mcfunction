@@ -1,0 +1,1 @@
+execute as @e[tag=wanglingdajun] unless data entity @s Passengers run kill @s

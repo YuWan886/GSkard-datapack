@@ -21,7 +21,7 @@
     {
       "type": "minecraft:plain_message",
       "contents": {
-        "text": "§l卡牌中存在牌类§r\"§2§l[怪物卡]§r\" §l它可以召唤怪物来攻击敌方玩家",
+        "text": "§l卡牌中存在牌类§r\"§9§l[基本牌]§2§l[军团牌]§r\" §l它可以召唤怪物来攻击敌方玩家",
         "color": "gray"
       },
       "width": 512

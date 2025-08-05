@@ -1,3 +1,3 @@
 
-give @s music_disc_cat[item_name=[{text: "7K",color:"aqua"},{text:" "},{text: "猛毒爪牙",color:"dark_green"}],lore=[{text: "军团牌",color:"dark_green",italic:false},[{text: "召唤4只",color:"gray",italic:false},{text: "剧毒蜘蛛",color:"gold",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'猛毒爪牙',K:7},tooltip_style="kard/legion"]
+give @s music_disc_cat[item_name=[{text: "7K",color:"aqua"},{text:" "},{text: "猛毒爪牙",color:"dark_green"}],lore=[{text: "军团牌",color:"dark_green",italic:false},[{text: "召唤4只",color:"gray",italic:false},{text: "剧毒蜘蛛",color:"gold",italic:false}],[{text: "若Kmax",color:"gray",italic:false},{text: " 大于等于20",color:"gold",italic:false}],[{text: "每10Kmax使1只剧毒蜘蛛成为",color:"gray",italic:false},{text: "沼骸骑士",color:"gold",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'猛毒爪牙',K:7},tooltip_style="kard/legion"]
 scoreboard players set #kard_mengduzhuaya kardCount 7

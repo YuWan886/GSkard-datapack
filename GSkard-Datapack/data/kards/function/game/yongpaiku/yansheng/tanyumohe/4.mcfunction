@@ -4,13 +4,13 @@ data merge entity @s {Tags:["panduolamohe"],CustomName:[{text: "§k1",color:"gra
 team join blue
 scoreboard players set @s pingbi 0
 execute store result score @s random_panduolamohe run random value 1..20
-execute if score @s random_panduolamohe matches 1 run function kards:game/yongpaiku/juntuan/baozhajuntuan
+execute if score @s random_panduolamohe matches 1 run function kards:game/yongpaiku/juntuan/baozhajuntuan/1
 execute if score @s random_panduolamohe matches 2 run function kards:game/yongpaiku/juntuan/morilailing
 execute if score @s random_panduolamohe matches 3 run function kards:game/yongpaiku/juntuan/shixuelangqun
 execute if score @s random_panduolamohe matches 4 run function kards:game/yongpaiku/juntuan/xiaoguidangjia
 execute if score @s random_panduolamohe matches 5 run function kards:game/yongpaiku/juntuan/wojilangchao
 execute if score @s random_panduolamohe matches 6 run function kards:game/yongpaiku/juntuan/shenghaikongju
-execute if score @s random_panduolamohe matches 7 run function kards:game/yongpaiku/juntuan/wufalianhui
+execute if score @s random_panduolamohe matches 7 run function kards:game/yongpaiku/juntuan/wufalianhui/1
 execute if score @s random_panduolamohe matches 8 run function kards:game/yongpaiku/zuzhou/chengmo
 execute if score @s random_panduolamohe matches 9 run function kards:game/yongpaiku/zuzhou/diandao
 execute if score @s random_panduolamohe matches 10 run function kards:game/yongpaiku/zuzhou/duantui
