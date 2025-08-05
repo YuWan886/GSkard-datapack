@@ -1,3 +1,3 @@
 
-give @s music_disc_blocks[item_name=[{text: "8K",color:"aqua"},{text:" "},{text: "猪",color:"red"}],lore=[{text: "图腾牌",color:"red",italic:false},{text: "在队伍图腾区生成猪",color:"gray",italic:false},{text: "图腾存活效果：",color:"gray",italic:false},[{text: "1.队伍玩家获得",color:"gray",italic:false},{text: "抗性提升1",color:"gold",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'猪',K:8},tooltip_style="kard/totem"]
+give @s music_disc_blocks[item_name=[{text: "8K",color:"aqua"},{text:" "},{text: "猪",color:"red"}],lore=[{text: "图腾牌",color:"red",italic:false},{text: "在队伍图腾区生成猪",color:"gray",italic:false},{text: "图腾存活效果：",color:"gray",italic:false},[{text: "1.队伍玩家获得",color:"gray",italic:false},{text: "抗性提升1",color:"gold",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'猪',K:8},tooltip_style="kards:kard/totem"]
 scoreboard players set #kard_zhu kardCount 8

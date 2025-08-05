@@ -1,3 +1,3 @@
 
-give @s music_disc_blocks[item_name=[{text: "10K",color:"aqua"},{text:" "},{text: "海龟",color:"red"}],lore=[{text: "图腾牌",color:"red",italic:false},{text: "在队伍图腾区生成海龟",color:"gray",italic:false},{text: "图腾存活效果：",color:"gray",italic:false},[{text: "1.敌方使用的怪物获得",color:"gray",italic:false},{text: "缓慢1",color:"red",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'海龟',K:10},tooltip_style="kard/totem"]
+give @s music_disc_blocks[item_name=[{text: "10K",color:"aqua"},{text:" "},{text: "海龟",color:"red"}],lore=[{text: "图腾牌",color:"red",italic:false},{text: "在队伍图腾区生成海龟",color:"gray",italic:false},{text: "图腾存活效果：",color:"gray",italic:false},[{text: "1.敌方使用的怪物获得",color:"gray",italic:false},{text: "缓慢1",color:"red",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'海龟',K:10},tooltip_style="kards:kard/totem"]
 scoreboard players set #kard_haigui kardCount 10

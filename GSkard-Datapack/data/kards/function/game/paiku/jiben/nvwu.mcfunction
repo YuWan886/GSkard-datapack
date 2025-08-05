@@ -1,2 +1,2 @@
 scoreboard players set #kard_nvwu kardCount 4
-give @s music_disc_mall[item_name=[{text: "4K",color:"aqua"},{text:" "},{text: "女巫",color:"blue"}],lore=[{text: "基本牌",color:"blue",italic:false},[{text: "召唤一只",color:"gray",italic:false},{text: "女巫",color:"gold",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'女巫',K:4},tooltip_style="kard/common"]
+give @s music_disc_mall[item_name=[{text: "4K",color:"aqua"},{text:" "},{text: "女巫",color:"blue"}],lore=[{text: "基本牌",color:"blue",italic:false},[{text: "召唤一只",color:"gray",italic:false},{text: "女巫",color:"gold",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'女巫',K:4},tooltip_style="kards:kard/common"]
