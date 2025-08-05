@@ -1,6 +1,6 @@
 {
 	"model": {
 		"type": "model",
-		"model": "item/music_disc_13"
+		"model": "kards:item/music_disc_13"
 	}
 }

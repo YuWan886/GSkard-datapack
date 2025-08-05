@@ -2,9 +2,9 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"1": "item/card/sj_pm",
-		"2": "item/card/sj_card",
-		"particle": "item/card/sj_card"
+		"1": "kards:item/card/sj_pm",
+		"2": "kards:item/card/sj_card",
+		"particle": "kards:item/card/sj_card"
 	},
 	"elements": [
 		{

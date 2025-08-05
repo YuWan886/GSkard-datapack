@@ -1,6 +1,6 @@
 {
 	"model": {
 		"type": "model",
-		"model": "item/music_disc_blocks"
+		"model": "kards:item/music_disc_blocks"
 	}
 }

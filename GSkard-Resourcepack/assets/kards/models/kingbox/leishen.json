@@ -2,10 +2,10 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "item/card/thor_1",
-		"1": "item/card/thor_2",
-		"2": "item/card/thor",
-		"particle": "item/card/thor_1"
+		"0": "kards:item/leishen/thor_1",
+		"1": "kards:item/leishen/thor_2",
+		"2": "kards:item/leishen/thor",
+		"particle": "kards:item/leishen/thor_1"
 	},
 	"elements": [
 		{
