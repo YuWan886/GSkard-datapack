@@ -11,6 +11,7 @@ schedule clear kards:lobby/bossbar/color/3
 schedule clear kards:lobby/bossbar/color/4
 function kards:lobby/bossbar/color/1
 #注册计分项目
+scoreboard objectives add Xp_Levels dummy
 scoreboard objectives add Mob_Count_Illager dummy
 scoreboard objectives add If_Mount_Alive dummy
 scoreboard objectives add Mob_Count_Nether dummy

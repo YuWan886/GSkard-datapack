@@ -1,4 +1,4 @@
-
+function kards:game/yongpaiku/use_general/tellraw
 
 clear @s beetroot_soup[custom_data~{kards:'贪欲'}] 1
 scoreboard players operation @s kardCount -= #kard_tanyu kardCount

@@ -1,4 +1,3 @@
-
 execute unless score #system GameStatus matches 0 run tellraw @a [{selector:"@s"},{text: "获得了",color:"gold"},{text: "凋零太刀",color:"dark_gray"}]
 
 give @s netherite_sword[custom_name={italic:false,color:"dark_gray",text: "凋零太刀"},\

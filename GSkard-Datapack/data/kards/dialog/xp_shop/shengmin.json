@@ -1,0 +1,73 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "text": "生命",
+    "color": "green",
+    "bold": true
+  },
+  "external_title": {
+    "text": ""
+  },
+  "body": [],
+  "inputs": [],
+  "can_close_with_escape": true,
+  "columns": 2,
+  "actions": [
+    {
+      "label": {
+        "text": "回复2♥",
+        "color": "green" 
+      },
+      "tooltip": {
+        "text": "消耗5级 回复2♥"
+      },
+      "action": {
+        "type": "run_command",
+        "command": "/trigger dialog set 102"
+      }
+    },
+    {
+      "label": {
+        "text": "回复8♥",
+        "color": "green"
+      },
+      "tooltip": {
+        "text": "消耗10级 回复8♥"
+      },
+      "action": {
+        "type": "run_command",
+        "command": "/trigger dialog set 103"
+      }
+    },
+    {
+      "label": {
+        "text": "回复24♥",
+        "color": "green"
+      },
+      "tooltip": {
+        "text": "消耗20级 回复24♥"
+      },
+      "action": {
+        "type": "run_command",
+        "command": "/trigger dialog set 104"
+      }
+    },
+    {
+      "label": {
+        "text": "回复50♥",
+        "color": "green",
+        "hover_event": {
+          "action": "show_text",
+          "value": "消耗30级 回复50♥"
+        }
+      },
+      "tooltip": {
+        "text": "消耗30级 回复50♥"
+      },
+      "action": {
+        "type": "run_command",
+        "command": "/trigger dialog set 105"
+      }
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 
 scoreboard players add @s zombie_enhance 1
-
+function kards:game/yongpaiku/use_general/tellraw
 tellraw @a [{text: "目前使用次数为:",color:"white"},{score:{objective:"zombie_enhance",name:"@s"},color:"green",bold:false}]
 
     execute if score @s zombie_enhance matches 0 if entity @s[team=red] at @e[tag=blue_marker_7,limit=1] run summon zombie ~ 1 ~ {Team:red,IsBaby:false,equipment:{head:{id:"minecraft:dispenser"}}}

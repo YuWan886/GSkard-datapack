@@ -1,0 +1,278 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "text": "附魔商店",
+    "color": "light_purple",
+    "bold": true
+  },
+  "body": [
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:enchanted_book",
+        "count": 1
+      },
+      "show_decorations": false,
+      "show_tooltip": false
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "使用方法：将附魔书放置在副手为主手武器添加附魔\n",
+        "extra": [
+          {
+            "text": "使用后附魔等级加算\n\n",
+            "color": "gold"
+          },
+          {
+            "text": "常见",
+            "color": "blue"
+          },
+          {
+            "text": "附魔\n",
+            "color": "gold"
+          }
+        ],
+        "color": "green"
+      },
+      "width": 1024
+    }
+  ],
+  "inputs": [],
+  "can_close_with_escape": true,
+  "columns": 3,
+  "actions": [
+    {
+      "label": {
+        "text": "锋利",
+        "color": "blue",
+        "extra": [
+          {
+            "text": " I",
+            "color": "gray"
+          }
+        ]
+      },
+      "tooltip": {
+        "text": "消耗12级"
+      },
+      "width": 75
+    },
+    {
+      "label": {
+        "text": "亡灵杀手",
+        "color": "blue",
+        "extra": [
+          {
+            "text": " I",
+            "color": "gray"
+          }
+        ]
+      },
+      "tooltip": {
+        "text": "消耗11级"
+      },
+      "width": 75
+    },
+    {
+      "label": {
+        "text": "节肢杀手",
+        "color": "blue",
+        "extra": [
+          {
+            "text": " I",
+            "color": "gray"
+          }
+        ]
+      },
+      "tooltip": {
+        "text": "消耗8级"
+      },
+      "width": 75
+    },
+    {
+      "label": {
+        "text": "击退",
+        "color": "blue",
+        "extra": [
+          {
+            "text": " I",
+            "color": "gray"
+          }
+        ]
+      },
+      "tooltip": {
+        "text": "消耗11级"
+      },
+      "width": 75
+    },
+    {
+      "label": {
+        "text": "横扫之刃",
+        "color": "blue",
+        "extra": [
+          {
+            "text": " I",
+            "color": "gray"
+          }
+        ]
+      },
+      "tooltip": {
+        "text": "消耗10级"
+      },
+      "width": 75
+    },
+    {
+      "label": {
+        "text": "缓慢",
+        "color": "blue",
+        "extra": [
+          {
+            "text": " I",
+            "color": "gray"
+          }
+        ]
+      },
+      "tooltip": {
+        "text": "消耗12级"
+      },
+      "width": 75
+    },
+    {
+      "label": {
+        "text": "保护",
+        "color": "blue",
+        "extra": [
+          {
+            "text": " I",
+            "color": "gray"
+          }
+        ]
+      },
+      "tooltip": {
+        "text": "消耗10级"
+      },
+      "width": 75
+    },
+    {
+      "label": {
+        "text": "爆炸保护",
+        "color": "blue",
+        "extra": [
+          {
+            "text": " I",
+            "color": "gray"
+          }
+        ]
+      },
+      "tooltip": {
+        "text": "消耗8级"
+      },
+      "width": 75
+    },
+    {
+      "label": {
+        "text": "弹射物保护",
+        "color": "blue",
+        "extra": [
+          {
+            "text": " I",
+            "color": "gray"
+          }
+        ]
+      },
+      "tooltip": {
+        "text": "消耗9级"
+      },
+      "width": 75
+    },
+    {
+      "label": {
+        "text": "摔落缓冲",
+        "color": "blue",
+        "extra": [
+          {
+            "text": " I",
+            "color": "gray"
+          }
+        ]
+      },
+      "tooltip": {
+        "text": "消耗12级"
+      },
+      "width": 75
+    },
+    {
+      "label": {
+        "text": "深海探索者",
+        "color": "blue",
+        "extra": [
+          {
+            "text": " I",
+            "color": "gray"
+          }
+        ]
+      },
+      "tooltip": {
+        "text": "消耗8级"
+      },
+      "width": 75
+    },
+    {
+      "label": {
+        "text": "荆棘",
+        "color": "blue",
+        "extra": [
+          {
+            "text": " I",
+            "color": "gray"
+          }
+        ]
+      },
+      "tooltip": {
+        "text": "消耗10级"
+      },
+      "width": 75
+    },
+    {
+      "label": {
+        "text": "附魔转盘",
+        "color": "blue",
+        "extra": [
+          {
+            "text": " I",
+            "color": "gray"
+          }
+        ]
+      },
+      "tooltip": {
+        "text": "消耗5级随机抽取上列的附魔\n有40%的概率什么也不会发生..."
+      }
+    },
+    {
+      "label": {
+        "text": "→",
+        "color": "gray"
+      },
+      "tooltip": {
+        "text": "切换至",
+        "extra": [
+          {
+            "text": "稀有",
+            "color": "gold"
+          },
+          {
+            "text": "附魔",
+            "color": "gray"
+          }
+        ],
+        "color": "gray"
+      },
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "kards:xp_shop/enchantment/2"
+      },
+      "width": 75
+    }
+  ]
+}

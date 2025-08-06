@@ -4,4 +4,4 @@ function kards:game/end/wait_end
 function kards:game/random_start/tick_event
 function kards:game/ingame/general
 function kards:game/shield/general
-
+function kards:game/xp/general

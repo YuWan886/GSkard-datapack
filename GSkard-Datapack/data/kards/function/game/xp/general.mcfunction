@@ -1,0 +1,1 @@
+execute as @a store result score @s Xp_Levels run data get entity @s XpLevel

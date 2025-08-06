@@ -1,1 +1,1 @@
-execute as @e[type=minecraft:iron_golem] if data entity @s {OnGround:1b} run data modify entity @s Motion set value [0f,1f,0f]
+tellraw @a "§2中毒 §rI"

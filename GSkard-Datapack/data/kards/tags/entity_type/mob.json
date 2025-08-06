@@ -36,6 +36,9 @@
     "minecraft:zombified_piglin",
     "creaking",
     "bogged",
-    "wolf"
+    "wolf",
+    "rabbit",
+    "breeze",
+    "bee"
   ]
 }

@@ -1,0 +1,78 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "text": "    经验商店",
+    "color": "gold",
+    "bold": true
+  },
+  "external_title": {
+    "text": ""
+  },
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "\n\n\n\n\n\n\n"
+      }
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:experience_bottle"
+      },
+      "show_decorations": false,
+      "show_tooltip": false
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "\n"
+      }
+    }
+  ],
+  "inputs": [],
+  "can_close_with_escape": true,
+  "columns": 3,
+  "actions": [
+    {
+      "label": {
+        "text": "生命",
+        "color": "green"
+      },
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "kards:xp_shop/shengmin"
+      },
+      "width": 75
+    },
+    {
+      "label": {
+        "text": "附魔",
+        "color": "light_purple"
+      },
+      "tooltip": {
+        "text": "购买附魔书"
+      },
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "kards:xp_shop/enchantment/1"
+      },
+      "width": 75
+    },
+    {
+      "label": {
+        "text": "抽牌",
+        "color": "gold",
+        "hover_event": {
+          "action": "show_text",
+          "value": "消耗5级 进行1次不定向抽牌"
+        }
+      },
+      "action": {
+        "type": "run_command",
+        "command": "/trigger dialog set 101"
+      },
+      "width": 75
+    }
+  ]
+}

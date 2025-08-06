@@ -1,8 +1,8 @@
-execute if entity @s[team=red] at @e[tag=blue_marker_6,limit=1] run summon minecraft:piglin ~ 0 ~ {Team:red,IsBaby:0b,IsImmuneToZombification:true,equipment:{mainhand:{id:"minecraft:golden_sword"}}}
-execute if entity @s[team=red] at @e[tag=blue_marker_8,limit=1] run summon minecraft:piglin ~ 0 ~ {Team:red,IsBaby:0b,IsImmuneToZombification:true,equipment:{mainhand:{id:"minecraft:golden_sword"}}}
+execute if entity @s[team=red] at @e[tag=blue_marker_6,limit=1] run summon minecraft:piglin ~ 0 ~ {Team:red,IsBaby:0b,IsImmuneToZombification:true,equipment:{mainhand:{id:"minecraft:golden_sword"},head:{id:"golden_helmet"},chest:{id:"golden_chestplate"},legs:{id:"golden_leggings"},feet:{id:"golden_boots"}}}
+execute if entity @s[team=red] at @e[tag=blue_marker_8,limit=1] run summon minecraft:piglin ~ 0 ~ {Team:red,IsBaby:0b,IsImmuneToZombification:true,equipment:{mainhand:{id:"minecraft:golden_sword"},head:{id:"golden_helmet"},chest:{id:"golden_chestplate"},legs:{id:"golden_leggings"},feet:{id:"golden_boots"}}}
 
-execute if entity @s[team=blue] at @e[tag=red_marker_6,limit=1] run summon minecraft:piglin ~ 0 ~ {Team:blue,IsBaby:0b,IsImmuneToZombification:true,equipment:{mainhand:{id:"minecraft:golden_sword"}}}
-execute if entity @s[team=blue] at @e[tag=red_marker_8,limit=1] run summon minecraft:piglin ~ 0 ~ {Team:blue,IsBaby:0b,IsImmuneToZombification:true,equipment:{mainhand:{id:"minecraft:golden_sword"}}}
+execute if entity @s[team=blue] at @e[tag=red_marker_6,limit=1] run summon minecraft:piglin ~ 0 ~ {Team:blue,IsBaby:0b,IsImmuneToZombification:true,equipment:{mainhand:{id:"minecraft:golden_sword"},head:{id:"golden_helmet"},chest:{id:"golden_chestplate"},legs:{id:"golden_leggings"},feet:{id:"golden_boots"}}}
+execute if entity @s[team=blue] at @e[tag=red_marker_8,limit=1] run summon minecraft:piglin ~ 0 ~ {Team:blue,IsBaby:0b,IsImmuneToZombification:true,equipment:{mainhand:{id:"minecraft:golden_sword"},head:{id:"golden_helmet"},chest:{id:"golden_chestplate"},legs:{id:"golden_leggings"},feet:{id:"golden_boots"}}}
 
 execute if entity @s[team=red] store result score @s Mob_Count_Nether if entity @e[type=#kards:nether,team=red]
 execute if entity @s[team=blue] store result score @s Mob_Count_Nether if entity @e[type=#kards:nether,team=blue]
