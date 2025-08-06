@@ -1,3 +1,3 @@
 scoreboard players set #kard_suanlawugujizhua kardCount 4
 
-give @s music_disc_mellohi[item_name=[{text: "4K",color:"aqua"},{text:" "},{text: "酸辣无骨鸡爪",color:"light_purple"}],lore=[{text: "法术牌",color:"light_purple",italic:false},{text: "美味的酸辣无骨鸡爪 就是太辣了",color:"gray",italic:false},{text: "获得一个酸辣无骨鸡爪",color:"red",italic:false},{text: "概率获得[再来一罐]",color:"gray",italic:false}],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'酸辣无骨鸡爪',K:4},tooltip_style="kard/spell"]
+give @s music_disc_mellohi[item_name=[{text: "4K",color:"aqua"},{text:" "},{text: "酸辣无骨鸡爪",color:"light_purple"}],lore=[{text: "法术牌",color:"light_purple",italic:false},{text: "美味的酸辣无骨鸡爪 就是太辣了",color:"gray",italic:false},{text: "获得一个酸辣无骨鸡爪",color:"red",italic:false},{text: "概率获得[再来一罐]",color:"gray",italic:false}],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'酸辣无骨鸡爪',K:4},tooltip_style="kards:kard/spell"]

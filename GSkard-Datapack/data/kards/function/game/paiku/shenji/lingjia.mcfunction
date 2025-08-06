@@ -1,3 +1,3 @@
 
-give @s music_disc_strad[item_name=[{text: "10K",color:"aqua"},{text:" "},{text: "凌驾",color:"white"}],lore=[{text: "神迹牌",color:"white",italic:false},[{text: "使用后获得一张随时使用的卡牌",color:"gray",italic:false},{text: "[君临天下]",color:"light_purple",italic:false},{text: " 使用后对周围7格敌人造成20♥真实伤害,使其眩晕10s并回复自身32♥,抽一张卡",color:"gray",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'凌驾',K:10},tooltip_style="kard/god"]
+give @s music_disc_strad[item_name=[{text: "10K",color:"aqua"},{text:" "},{text: "凌驾",color:"white"}],lore=[{text: "神迹牌",color:"white",italic:false},[{text: "使用后获得一张随时使用的卡牌",color:"gray",italic:false},{text: "[君临天下]",color:"light_purple",italic:false},{text: " 使用后对周围7格敌人造成20♥真实伤害,使其眩晕10s并回复自身32♥,抽一张卡",color:"gray",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'凌驾',K:10},tooltip_style="kards:kard/god"]
 scoreboard players set #kard_lingjia kardCount 10

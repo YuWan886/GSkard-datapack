@@ -1,3 +1,3 @@
 scoreboard players set #kard_xinlingfenshao kardCount 8
 
-give @s music_disc_mellohi[item_name=[{text: "8K",color:"aqua"},{text:" "},{text: "心灵焚烧",color:"light_purple"}],lore=[{text: "法术牌",color:"light_purple",italic:false},[{text: "使敌方队伍所有生物凋零共计",color:"gray",italic:false},{text: "8♥",color:"red",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'心灵焚烧',K:8},tooltip_style="kard/spell"]
+give @s music_disc_mellohi[item_name=[{text: "8K",color:"aqua"},{text:" "},{text: "心灵焚烧",color:"light_purple"}],lore=[{text: "法术牌",color:"light_purple",italic:false},[{text: "使敌方队伍所有生物凋零共计",color:"gray",italic:false},{text: "8♥",color:"red",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'心灵焚烧',K:8},tooltip_style="kards:kard/spell"]

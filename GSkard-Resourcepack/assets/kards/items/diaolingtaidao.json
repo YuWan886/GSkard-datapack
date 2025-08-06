@@ -1,6 +1,6 @@
 {
     "model": {
         "type": "model",
-        "model": "kingbox/diaolingtaidao/0"
+        "model": "kards:kingbox/diaolingtaidao/0"
     }
 }
