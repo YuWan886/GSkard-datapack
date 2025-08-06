@@ -2,7 +2,7 @@
     "providers": [
         {
             "type": "bitmap",
-            "file": "minecraft:font/icon.png",
+            "file": "kards:font/icon.png",
             "ascent": 20,
             "height": 60,
             "chars": [
@@ -11,7 +11,7 @@
         },
         {
             "type": "bitmap",
-            "file": "minecraft:font/shenji.png",
+            "file": "kards:font/shenji.png",
             "ascent": 40,
             "height": 40,
             "chars": [
@@ -20,12 +20,41 @@
         },
         {
             "type": "bitmap",
-            "file": "minecraft:font/black.png",
+            "file": "kards:font/black.png",
             "ascent": 64,
             "height": 256,
             "chars": [
                 "\uE002"
             ]
+        },
+        {
+            "type": "bitmap",
+            "file": "kards:font/icon_2.png",
+            "ascent": -8,
+            "height": 32,
+            "chars": [
+                "\uE003"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "space:font/splitter.png",
+            "ascent": -9999,
+            "height": -2,
+            "chars": [
+                "󀀀"
+            ]
+        },
+        {
+            "type": "space",
+            "advances": {
+                "󏿬": -20,
+                "󏿶": -10,
+                "󏿱": -15,
+                "󏿮": -18,
+                "󏿯": -17,
+                "󏿰": -16
+            }
         }
     ]
 }

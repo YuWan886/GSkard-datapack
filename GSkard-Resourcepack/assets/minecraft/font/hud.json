@@ -2,7 +2,7 @@
     "providers": [
         {
             "type": "bitmap",
-            "file": "minecraft:font/hud/regeneration.png",
+            "file": "kards:font/hud/regeneration.png",
             "ascent": 8,
             "height": 8,
             "chars": [
@@ -11,7 +11,7 @@
         },
         {
             "type": "bitmap",
-            "file": "minecraft:font/hud/absorption.png",
+            "file": "kards:font/hud/absorption.png",
             "ascent": 8,
             "height": 8,
             "chars": [
@@ -20,7 +20,7 @@
         },
         {
             "type": "bitmap",
-            "file": "minecraft:font/hud/health_boost.png",
+            "file": "kards:font/hud/health_boost.png",
             "ascent": 8,
             "height": 8,
             "chars": [
@@ -29,7 +29,7 @@
         },
         {
             "type": "bitmap",
-            "file": "minecraft:font/hud/resistance.png",
+            "file": "kards:font/hud/resistance.png",
             "ascent": 8,
             "height": 8,
             "chars": [
@@ -38,7 +38,7 @@
         },
         {
             "type": "bitmap",
-            "file": "minecraft:font/hud/speed.png",
+            "file": "kards:font/hud/speed.png",
             "ascent": 8,
             "height": 8,
             "chars": [
@@ -47,20 +47,11 @@
         },
         {
             "type": "bitmap",
-            "file": "minecraft:font/hud/strength.png",
+            "file": "kards:font/hud/strength.png",
             "ascent": 8,
             "height": 8,
             "chars": [
                 "\uE006"
-            ]
-        },
-        {
-            "type": "bitmap",
-            "file": "minecraft:font/hud/tnt.png",
-            "ascent": 8,
-            "height": 12,
-            "chars": [
-                "\uE007"
             ]
         }
     ]

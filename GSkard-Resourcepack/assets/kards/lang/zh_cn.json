@@ -1,5 +1,6 @@
 {
     "menu.game": "\uE000",
+    "container.crafting": "\uDAFF\uDFEF§f\uE003",
     "death.attack.移动或死亡": "%1$s永远地停止了移动",
     "death.attack.撕裂": "%1$s疼死了",
     "death.attack.轻虑浅谋": "%1$s在用牌时没有考虑后果",
