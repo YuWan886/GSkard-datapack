@@ -1,2 +1,0 @@
-tellraw @a [{selector:"@s"},{text: "达成了进度",color:"white"},{text: "[为什么要演奏春日影]",color:"green","hover_event":{"action":"show_text",value:{text:"为什么要演奏春日影\n在\"春日影\"法术期间死亡",color:"green"}}}]
-playsound ui.toast.out player @s ~ ~ ~ 100 1

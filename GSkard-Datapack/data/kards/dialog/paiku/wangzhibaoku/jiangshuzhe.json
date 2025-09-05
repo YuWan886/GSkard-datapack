@@ -1,0 +1,69 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "text": "讲述者",
+        "color": "dark_purple",
+        "italic": false
+    },
+    "external_title": {
+        "text": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:nether_star"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "你的回合开始时",
+                "color": "gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "讲述一个故事",
+                "color": "gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "传奇护符(背包内生效)",
+                "color": "white",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "那么..今日讲述的故事是什么呢...?",
+                "color": "dark_gray",
+                "italic": true
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "text": "返回§6王之宝库",
+            "color": "green"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/wangzhibaoku/main"
+        }
+    }
+}

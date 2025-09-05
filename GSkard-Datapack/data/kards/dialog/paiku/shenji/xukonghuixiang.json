@@ -1,0 +1,95 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "text": "2K ",
+        "extra": [
+            {
+                "text": "虚空回响",
+                "color": "white",
+                "bold": true
+            }
+        ],
+        "color": "aqua",
+        "bold": true
+    },
+    "external_title": {
+        "text": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "music_disc_strad"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "神迹牌",
+                "color": "white",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "本回合内 你每使用1张",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": "基本牌 ",
+                        "color": "blue",
+                        "italic": false
+                    },
+                    {
+                        "text": "抽",
+                        "color": "gray",
+                        "italic": false
+                    },
+                    {
+                        "text": "1张牌",
+                        "color": "gold",
+                        "italic": false
+                    },
+                    {
+                        "text": " 获得",
+                        "color": "gray",
+                        "italic": false
+                    },
+                    {
+                        "text": "超频",
+                        "color": "dark_aqua",
+                        "italic": false,
+                        "bold": true
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "超频:每使用1张牌获得1K,使用[法术牌][装备牌]会额外获得1Kmax.",
+                "color": "dark_gray",
+                "italic": false
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "text": "返回§d神迹§a牌库",
+            "color": "green"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/shenji/main"
+        }
+    }
+}

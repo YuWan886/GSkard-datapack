@@ -1,6 +1,6 @@
-
-
 function kards:game/yongpaiku/use_general/kard_general
+
+
 
 execute store result score @s random_busituteng run random value 1..6
 execute if score @s random_busituteng matches 1 run function kards:game/paiku/yansheng/busituteng/zibao

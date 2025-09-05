@@ -1,0 +1,115 @@
+{
+    "type": "minecraft:multi_action",
+    "title": {
+        "text": "其他",
+        "color": "gray",
+        "bold": true
+    },
+    "external_title": {
+        "text": ""
+    },
+    "body": [],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "exit_action": {
+        "label": {
+            "text": "返回§6主§a牌库",
+            "color": "green"
+        },
+        "action": {
+            "type": "show_dialog",
+            "dialog": "kards:paiku/main"
+        }
+    },
+    "columns": 5,
+    "actions": [
+        {
+            "label": {
+                "text": "不死图腾",
+                "color": "gold"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/yansheng/busituteng/main"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "无用牌系列",
+                "color": "gray"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/yansheng/wuyong/main"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "酸辣无骨鸡爪",
+                "color": "red"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/yansheng/suanlawugujizhua"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "禁字决",
+                "color": "dark_red"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/yansheng/jinzijue"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "君临天下",
+                "color": "white"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/yansheng/junlintianxia"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "龙息",
+                "color": "gold"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/yansheng/longxi"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "贪欲",
+                "color": "light_purple"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/yansheng/tanyu"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "狂欢僵尸",
+                "color": "blue"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/yansheng/kuanghuanzombie"
+            },
+            "width": 75
+        }
+    ]
+}

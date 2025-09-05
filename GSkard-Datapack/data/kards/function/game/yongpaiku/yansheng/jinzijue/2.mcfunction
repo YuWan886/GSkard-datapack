@@ -7,7 +7,7 @@ execute if score @s jinzijue matches 3 run attribute @s minecraft:max_health mod
 execute if score @s jinzijue matches 4 run attribute @s minecraft:max_health modifier add 0-0-4 -20 add_value
 execute if score @s jinzijue matches 5 run attribute @s minecraft:max_health modifier add 0-0-5 -20 add_value
 execute if score @s jinzijue matches 6 run attribute @s minecraft:max_health modifier add 0-0-6 -20 add_value
-execute if score @s jinzijue matches 6 run effect give @s absorption 30 9 true
+execute if score @s jinzijue matches 6 run effect give @s absorption 30 9 false
 execute if score @s jinzijue matches 7 run attribute @s minecraft:max_health modifier add 0-0-7 -20 add_value
 execute if score @s jinzijue matches 7 run tag @s add jinzijue
 execute if score @s jinzijue matches 8 run attribute @s minecraft:max_health modifier add 0-0-8 -20 add_value

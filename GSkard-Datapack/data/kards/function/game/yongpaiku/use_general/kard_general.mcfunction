@@ -1,4 +1,4 @@
-execute if score @s pingbi matches 0 run function kards:game/yongpaiku/use_general/tellraw
+execute unless score @s pingbi matches 1 run function kards:game/yongpaiku/use_general/tellraw
 
 scoreboard players set @s pingbi 0
 scoreboard players add @s use_kard 1

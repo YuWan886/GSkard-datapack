@@ -8,6 +8,9 @@ execute if score #system dituxuanze matches 7 run clone 77 -60 -71 85 -47 -63 76
 execute if score #system dituxuanze matches 8 run clone 89 -60 -71 97 -47 -63 76 226 -45
 execute if score #system dituxuanze matches 9 run clone 113 -60 -71 121 -47 -63 76 226 -45
 execute if score #system dituxuanze matches 10 run clone 137 -60 -71 145 -47 -63 76 226 -45
+execute if score #system dituxuanze matches 11 run clone 173 -60 -71 181 -47 -63 76 226 -45
+execute if score #system dituxuanze matches 12 run clone 161 -60 -71 169 -47 -63 76 226 -45
+execute if score #system dituxuanze matches 13 run clone 185 -60 -71 193 -47 -63 76 226 -45
 
 execute if score #system dituxuanze matches 101 run clone 101 -60 -71 109 -47 -63 76 226 -45
 execute if score #system dituxuanze matches 102 run clone 125 -60 -71 133 -47 -63 76 226 -45

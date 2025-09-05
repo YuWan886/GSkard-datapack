@@ -25,4 +25,4 @@ execute as @a[gamemode=spectator,team=!Spectator] run attribute @s max_health ba
 gamemode adventure @a[gamemode=spectator,team=red]
 gamemode adventure @a[gamemode=spectator,team=blue]
 
-effect give @a instant_health 1 200 true
+effect give @a instant_health 1 200 false

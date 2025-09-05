@@ -1,0 +1,90 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "text": "森林之护",
+        "color": "green",
+        "italic": false
+    },
+    "external_title": {
+        "text": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:leather_chestplate",
+                "components": {
+                    "dyed_color":65280
+                }
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "获得30♥最大生命",
+                "color": "dark_gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "生息 I",
+                "color": "gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "每4.5s回复周围5格友方非图腾生物1♥ 自身获得双倍",
+                "color": "dark_gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "森林之御",
+                "color": "gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "每损失10♥ 获得6♥临时生命20s",
+                "color": "dark_gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "传奇护具",
+                "color": "white",
+                "italic": false
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "text": "返回§6王之宝库",
+            "color": "green"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/wangzhibaoku/main"
+        }
+    }
+}

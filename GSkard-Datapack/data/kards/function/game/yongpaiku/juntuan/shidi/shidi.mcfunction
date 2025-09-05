@@ -1,3 +1,4 @@
+function kards:game/yongpaiku/use_general/kard_general
 
 
 
@@ -7,7 +8,6 @@ execute if entity @s[team=red] at @e[tag=blue_marker_7,limit=1] run summon withe
 title @a title "\u00a74尸"
 schedule function kards:game/yongpaiku/juntuan/shidi/1 5t
 execute as @a at @s run playsound minecraft:block.fire.extinguish player @s ~ ~ ~
-function kards:game/yongpaiku/use_general/kard_general
 function kards:game/yongpaiku/xianjing/jiance/mobjiance
 item replace entity @s weapon.offhand with air
 

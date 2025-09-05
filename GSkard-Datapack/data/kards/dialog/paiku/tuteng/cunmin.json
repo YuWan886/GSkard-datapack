@@ -1,0 +1,129 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "text": "10K ",
+        "extra": [
+            {
+                "text": "村民",
+                "color": "red"
+            }
+        ],
+        "color": "aqua",
+        "bold": true
+    },
+    "external_title": {
+        "text": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "music_disc_blocks"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "图腾牌",
+                "color": "red",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "在队伍图腾区生成村民",
+                "color": "gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "图腾存活效果：",
+                "color": "gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "1.队伍使用的怪物获得",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": "抗性提升1",
+                        "color": "gold",
+                        "italic": false
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "2.队伍铁傀儡获得",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": "速度2",
+                        "color": "gold",
+                        "italic": false
+                    },
+                    {
+                        "text": " 每回合结束时为铁傀儡",
+                        "color": "gray",
+                        "italic": false
+                    },
+                    {
+                        "text": "回复血量",
+                        "color": "gold",
+                        "italic": false
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "3.无法与",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": "[培养尸]",
+                        "color": "red",
+                        "italic": false
+                    },
+                    {
+                        "text": "同时存在",
+                        "color": "gray",
+                        "italic": false
+                    }
+                ]
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "text": "返回§c图腾§a牌库",
+            "color": "green"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/tuteng/main"
+        }
+    }
+}

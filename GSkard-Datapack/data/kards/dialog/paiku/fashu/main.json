@@ -15,6 +15,10 @@
         "label": {
             "text": "返回§6主§a牌库",
             "color": "green"
+        },
+        "action": {
+            "type": "show_dialog",
+            "dialog": "kards:paiku/main"
         }
     },
     "columns": 5,
@@ -32,67 +36,463 @@
         },
         {
             "label": {
-                "text": "背水一战",
+                "text": "超脱洗礼",
                 "color": "light_purple"
             },
             "action": {
                 "type": "minecraft:show_dialog",
-                "dialog": "kards:paiku/fashu/beishuiyizhan"
+                "dialog": "kards:paiku/fashu/chaotuoxili"
             },
             "width": 75
         },
         {
             "label": {
-                "text": "背水一战",
+                "text": "重铸",
                 "color": "light_purple"
             },
             "action": {
                 "type": "minecraft:show_dialog",
-                "dialog": "kards:paiku/fashu/beishuiyizhan"
+                "dialog": "kards:paiku/fashu/chongzhu"
             },
             "width": 75
         },
         {
             "label": {
-                "text": "背水一战",
+                "text": "春暖花开",
                 "color": "light_purple"
             },
             "action": {
                 "type": "minecraft:show_dialog",
-                "dialog": "kards:paiku/fashu/beishuiyizhan"
+                "dialog": "kards:paiku/fashu/chunnuanhuakai"
             },
             "width": 75
         },
         {
             "label": {
-                "text": "背水一战",
+                "text": "春日影",
                 "color": "light_purple"
             },
             "action": {
                 "type": "minecraft:show_dialog",
-                "dialog": "kards:paiku/fashu/beishuiyizhan"
+                "dialog": "kards:paiku/fashu/chunriying"
             },
             "width": 75
         },
         {
             "label": {
-                "text": "背水一战",
+                "text": "地狱",
                 "color": "light_purple"
             },
             "action": {
                 "type": "minecraft:show_dialog",
-                "dialog": "kards:paiku/fashu/beishuiyizhan"
+                "dialog": "kards:paiku/fashu/diyu"
             },
             "width": 75
         },
         {
             "label": {
-                "text": "背水一战",
+                "text": "赌命",
                 "color": "light_purple"
             },
             "action": {
                 "type": "minecraft:show_dialog",
-                "dialog": "kards:paiku/fashu/beishuiyizhan"
+                "dialog": "kards:paiku/fashu/duming"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "反转",
+                "color": "light_purple"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/fashu/fanzhuan"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "过河拆桥",
+                "color": "light_purple"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/fashu/guohechaiqiao"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "黑山羊之拥",
+                "color": "light_purple"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/fashu/heishanyangzhiyong"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "劫掠",
+                "color": "light_purple"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/fashu/jielue"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "紧急调遣",
+                "color": "light_purple"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/fashu/jinjidiaoqian"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "禁字启封",
+                "color": "light_purple"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/fashu/jinziqifeng"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "狼群战术",
+                "color": "light_purple"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/fashu/langqunzhanshu"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "漫水",
+                "color": "light_purple"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/fashu/manshui"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "内核引爆",
+                "color": "light_purple"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/fashu/neiheyinbao"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "起死回生",
+                "color": "light_purple"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/fashu/qisihuisheng"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "闪电轰鸣",
+                "color": "light_purple"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/fashu/shandianhongming"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "生产令",
+                "color": "light_purple"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/fashu/shengchanling"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "神圣之光",
+                "color": "light_purple"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/fashu/shenshengzhiguang"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "石化皮肤",
+                "color": "light_purple"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/fashu/shihuapifu"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "视角干扰",
+                "color": "light_purple"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/fashu/shijiaoganrao"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "水流涌动",
+                "color": "light_purple"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/fashu/shuiliuyongdong"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "顺手牵羊",
+                "color": "light_purple"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/fashu/shunshouqianyang"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "四季如春",
+                "color": "light_purple"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/fashu/sijiruchun"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "死刑宣告",
+                "color": "light_purple"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/fashu/sixingxuangao"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "酸辣无骨鸡爪",
+                "color": "light_purple"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/fashu/suanlawugujizhua"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "图腾进击",
+                "color": "light_purple"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/fashu/tutengjinji"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "五谷丰登",
+                "color": "light_purple"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/fashu/wugufengdeng"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "无用",
+                "color": "light_purple"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/fashu/wuyong"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "鲜血转化",
+                "color": "light_purple"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/fashu/xianxuezhuanhua"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "心灵焚烧",
+                "color": "light_purple"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/fashu/xinlingfenshao"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "洗牌",
+                "color": "light_purple"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/fashu/xipai"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "盈余之力",
+                "color": "light_purple"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/fashu/yingyuzhili"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "隐匿仓库",
+                "color": "light_purple"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/fashu/yinnicangku"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "以智取胜",
+                "color": "light_purple"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/fashu/yizhiqusheng"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "有偿借贷",
+                "color": "light_purple"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/fashu/youchangjiedai"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "预言灾祸",
+                "color": "light_purple"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/fashu/yuyanzaihuo"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "宰鸡敬猴",
+                "color": "light_purple"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/fashu/zaijijinhou"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "战时生产",
+                "color": "light_purple"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/fashu/zhanshishengchan"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "整修",
+                "color": "light_purple"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/fashu/zhengxiu"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "骤然引爆",
+                "color": "light_purple"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/fashu/zhouranyingbao"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "诅咒护甲",
+                "color": "light_purple"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/fashu/zuzhouhujia"
             },
             "width": 75
         }

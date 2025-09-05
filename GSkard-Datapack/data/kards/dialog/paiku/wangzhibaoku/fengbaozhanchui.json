@@ -1,0 +1,174 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "text": "风暴战锤",
+        "color": "white",
+        "italic": false
+    },
+    "external_title": {
+        "text": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:mace",
+                "components": {
+                    "minecraft:custom_model_data": {
+                        "strings": [
+                            "fengbaozhanchui"
+                        ]
+                    }
+                }
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "雷击 I",
+                "color": "gray",
+                "italic": false,
+                "bold": true
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "右键召唤一道",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": "闪电",
+                        "color": "gold",
+                        "italic": false
+                    },
+                    {
+                        "text": "劈向指定位置",
+                        "color": "gray",
+                        "italic": false
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "对附近",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": "2.8格",
+                        "color": "gold",
+                        "italic": false
+                    },
+                    {
+                        "text": "敌对生物造成",
+                        "color": "gray",
+                        "italic": false
+                    },
+                    {
+                        "text": "8♥闪电伤害",
+                        "color": "red",
+                        "italic": false
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "CD8s",
+                "color": "gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "",
+                "color": "gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "蓄能重击",
+                "color": "gray",
+                "italic": false,
+                "bold": true
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "长按shift1s后跃起 期间免疫击退与摔落伤害",
+                "color": "gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "落地之后对周围",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": "5格",
+                        "color": "gold",
+                        "italic": false
+                    },
+                    {
+                        "text": "内所有敌对生物造成",
+                        "color": "gray",
+                        "italic": false
+                    },
+                    {
+                        "text": "15♥的重击伤害",
+                        "color": "red",
+                        "italic": false
+                    },
+                    {
+                        "text": "并使其眩晕2.5s",
+                        "color": "gold",
+                        "italic": false
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "25s补充一次",
+                "color": "gray",
+                "italic": false
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "text": "返回§6王之宝库",
+            "color": "green"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/wangzhibaoku/main"
+        }
+    }
+}

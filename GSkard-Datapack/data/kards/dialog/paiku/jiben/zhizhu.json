@@ -1,0 +1,53 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "text": "1K ",
+        "extra": [
+            {
+                "text": "蜘蛛",
+                "color": "blue"
+            }
+        ],
+        "color": "aqua",
+        "bold": true
+    },
+    "external_title": {
+        "text": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "music_disc_mall"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "召唤1只",
+                "color": "gray",
+                "extra": [
+                    {
+                        "text": " 蜘蛛",
+                        "color": "gold"
+                    }
+                ]
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "text": "返回§d基本牌§a牌库",
+            "color": "green"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/jiben/main"
+        }
+    }
+}

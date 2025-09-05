@@ -1,0 +1,46 @@
+{
+    "description": {
+        "text": "制裁者"
+    },
+    "anvil_cost": 4,
+    "max_level": 3,
+    "weight": 10,
+    "min_cost": {
+        "base": 15,
+        "per_level_above_first": 10
+    },
+    "max_cost": {
+        "base": 60,
+        "per_level_above_first": 10
+    },
+    "supported_items": "crossbow",
+    "slots": [
+        "mainhand"
+    ],
+    "effects": {
+        "projectile_spawned": [
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "kards:enchantment/zhicaizhe/1"
+                }
+            }
+        ],
+        "post_attack": [
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "kards:enchantment/zhicaizhe/2"
+                },
+                "enchanted": "attacker",
+                "affected": "victim",
+                "requirements": {
+                    "condition": "damage_source_properties",
+                    "predicate": {
+                        "is_direct": false
+                    }
+                }
+            }
+        ]
+    }
+}

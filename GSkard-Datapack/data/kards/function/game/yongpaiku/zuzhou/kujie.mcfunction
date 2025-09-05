@@ -1,6 +1,6 @@
-
-
 function kards:game/yongpaiku/use_general/kard_general
+
+
 
 
 execute if entity @s[team=red] run scoreboard players set @a[team=blue] kujie 2

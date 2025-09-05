@@ -1,2 +1,0 @@
-tellraw @a [{selector:"@s"},{text: "达成了进度",color:"white"},{text: "[无休复苏]",color:"green","hover_event":{"action":"show_text",value:{text:"无休复苏\n无休止火的“无休”点数达到180点",color:"green"}}}]
-playsound ui.toast.out player @s ~ ~ ~ 100 1

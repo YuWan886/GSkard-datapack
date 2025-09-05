@@ -1,0 +1,57 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "text": "3K ",
+        "extra": [
+            {
+                "text": "断腿",
+                "color": "dark_gray"
+            }
+        ],
+        "color": "aqua",
+        "bold": true
+    },
+    "external_title": {
+        "text": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "music_disc_stal"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "诅咒牌",
+                "color": "dark_gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "给敌方玩家施加缓慢2以及不能跳跃 持续15s",
+                "color": "gray",
+                "italic": false
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "text": "返回§c诅咒§a牌库",
+            "color": "green"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/zuzhou/main"
+        }
+    }
+}

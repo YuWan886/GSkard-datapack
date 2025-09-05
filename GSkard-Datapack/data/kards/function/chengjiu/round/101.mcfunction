@@ -1,2 +1,0 @@
-tellraw @a [{selector:"@s"},{text: "完成了挑战",color:"white"},{text: "[输赢...真的那么重要吗?]",color:"dark_purple","hover_event":{"action":"show_text",value:{text:"输赢...真的那么重要吗?\n游戏回合达到第101回合",color:"dark_purple"}}}]
-playsound ui.toast.challenge_complete block @s ~ ~ ~ 100 1

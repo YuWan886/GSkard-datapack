@@ -1,7 +1,7 @@
-
-
-
 function kards:game/yongpaiku/use_general/kard_general
+
+
+
 
 execute if entity @s[team=red] run team modify blue friendlyFire true
 

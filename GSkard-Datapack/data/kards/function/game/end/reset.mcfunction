@@ -33,6 +33,9 @@ scoreboard players reset 回合数
 scoreboard objectives setdisplay below_name
 scoreboard objectives setdisplay sidebar
 scoreboard objectives setdisplay list
+#经验
+xp set @a 0 points
+xp set @a 0 levels
 #设置天气为晴天
 weather clear
 #清空效果
@@ -106,6 +109,9 @@ execute as @a run attribute @s gravity modifier remove 0-0-1
 execute as @a run attribute @s minecraft:gravity base reset
 execute as @a run attribute @s safe_fall_distance modifier remove 0-0-2
 execute as @a run attribute @s safe_fall_distance base reset
+execute as @a run attribute @s attack_speed modifier remove talent
+execute as @a run attribute @s attack_damage base reset
+execute as @a run attribute @s armor base reset
 #重置分数
 execute if score #system random_gamerule matches 0.. run scoreboard players set #system random_gamerule 0
 scoreboard players set * fengbaozhanchui_1 0

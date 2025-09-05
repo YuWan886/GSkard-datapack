@@ -1,7 +1,7 @@
+function kards:game/yongpaiku/use_general/kard_general
 
 
 function kards:game/yongpaiku/xianjing/jiance/shenjijiance
-function kards:game/yongpaiku/use_general/kard_general
 
 execute if entity @s[team=red] if score 人数 b_alive matches 1 at @e[tag=blue_marker_7,limit=1] run summon warden ~ 1 ~ {Team:red,attributes:[{id:"follow_range",base:100},{id:"minecraft:max_health",base:30.0d}],Brain:{memories:{"minecraft:dig_cooldown":{value:{},ttl:1200L}}}}
 execute if entity @s[team=red] if score 人数 b_alive matches 2 at @e[tag=blue_marker_7,limit=1] run summon warden ~ 1 ~ {Team:red,attributes:[{id:"follow_range",base:100},{id:"minecraft:max_health",base:60.0d}],Brain:{memories:{"minecraft:dig_cooldown":{value:{},ttl:1200L}}}}

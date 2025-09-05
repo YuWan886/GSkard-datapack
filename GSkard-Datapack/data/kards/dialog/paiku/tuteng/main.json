@@ -1,0 +1,170 @@
+{
+    "type": "minecraft:multi_action",
+    "title": {
+        "text": "图腾",
+        "color": "red",
+        "bold": true
+    },
+    "external_title": {
+        "text": ""
+    },
+    "body": [],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "exit_action": {
+        "label": {
+            "text": "返回§6主§a牌库",
+            "color": "green"
+        },
+        "action": {
+            "type": "show_dialog",
+            "dialog": "kards:paiku/main"
+        }
+    },
+    "columns": 5,
+    "actions": [
+        {
+            "label": {
+                "text": "豹猫",
+                "color": "red"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/tuteng/baomao"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "村民",
+                "color": "red"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/tuteng/cunmin"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "海龟",
+                "color": "red"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/tuteng/haigui"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "鸡",
+                "color": "red"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/tuteng/ji"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "流浪商人",
+                "color": "red"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/tuteng/liulangshangren"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "蘑菇牛",
+                "color": "red"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/tuteng/moguniu"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "牛",
+                "color": "red"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/tuteng/niu"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "培养尸",
+                "color": "red"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/tuteng/peiyangshi"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "铁傀儡",
+                "color": "red"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/tuteng/tiekuilei"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "兔",
+                "color": "red"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/tuteng/tu"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "羊",
+                "color": "red"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/tuteng/yang"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "侦测贝",
+                "color": "red"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/tuteng/zhencebei"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "猪",
+                "color": "red"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/tuteng/zhu"
+            },
+            "width": 75
+        }
+    ]
+}

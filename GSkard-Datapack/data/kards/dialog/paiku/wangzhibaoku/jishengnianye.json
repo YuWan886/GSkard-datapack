@@ -1,0 +1,114 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "text": "寄生黏液",
+        "color": "green",
+        "italic": false
+    },
+    "external_title": {
+        "text": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:slime_ball"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "非信者",
+                "color": "gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "你的禁字决层数被锁定为0 生命上限锁定为100♥",
+                "color": "dark_gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "寄生",
+                "color": "gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "当佩戴者血量在50♥以上时 获得力量5 凋零2",
+                "color": "dark_gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "当佩戴者血量在15♥~50♥时 获得力量4 抗性提升1 缓慢2",
+                "color": "dark_gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "当佩戴者血量在15♥以下时 获得生命回复3 速度2 且攻击距离被修改为0",
+                "color": "dark_gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "共生",
+                "color": "gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "当你佩戴上他时 将永远无法取下",
+                "color": "dark_gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "传奇护符(食用后佩戴)",
+                "color": "white",
+                "italic": false
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "text": "返回§6王之宝库",
+            "color": "green"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/wangzhibaoku/main"
+        }
+    }
+}

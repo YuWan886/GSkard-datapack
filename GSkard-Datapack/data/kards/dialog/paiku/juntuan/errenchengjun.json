@@ -1,0 +1,81 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "text": "7K ",
+        "extra": [
+            {
+                "text": "二人成军",
+                "color": "dark_green"
+            }
+        ],
+        "color": "aqua",
+        "bold": true
+    },
+    "external_title": {
+        "text": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "music_disc_cat"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "召唤2只",
+                "color": "gray",
+                "extra": [
+                    {
+                        "text": " 大型史莱姆",
+                        "color": "gold"
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "若场上不存在",
+                "color": "gray",
+                "extra": [
+                    {
+                        "text": " 友方怪物",
+                        "color": "gold"
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "改为召唤4只",
+                "color": "gray",
+                "extra": [
+                    {
+                        "text": " 大型史莱姆",
+                        "color": "gold"
+                    }
+                ]
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "text": "返回§d军团牌§a牌库",
+            "color": "green"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/juntuan/main"
+        }
+    }
+}

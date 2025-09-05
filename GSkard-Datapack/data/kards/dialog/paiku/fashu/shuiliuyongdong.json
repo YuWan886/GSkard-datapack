@@ -1,0 +1,89 @@
+{
+  "type": "minecraft:notice",
+  "title": {
+    "text": "4K ",
+    "extra": [
+      {
+        "text": "水流涌动",
+        "color": "light_purple"
+      }
+    ],
+    "color": "aqua",
+    "bold": true
+  },
+  "external_title": {
+    "text": ""
+  },
+  "body": [
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "music_disc_mellohi"
+      },
+      "show_decorations": false,
+      "show_tooltip": false
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "抽",
+        "color": "gray",
+        "extra": [
+          {
+            "text": "1张牌",
+            "color": "gold"
+          }
+        ]
+      },
+      "width": 1024
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": " 队伍所有玩家回复",
+        "color": "gray",
+        "extra": [
+          {
+            "text": "8♥",
+            "color": "green"
+          }
+        ]
+      },
+      "width": 1024
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "若剩余点数大于等于4 则额外",
+        "color": "gray",
+        "extra": [
+          {
+            "text": "回复",
+            "color": "gray"
+          }
+        ]
+      },
+      "width": 1024
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "8♥",
+        "color": "green"
+      },
+      "width": 1024
+    }
+  ],
+  "inputs": [],
+  "can_close_with_escape": true,
+  "action": {
+    "label": {
+      "text": "返回§d法术牌§a牌库",
+      "color": "green"
+    },
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "kards:paiku/fashu/main"
+    }
+  }
+}

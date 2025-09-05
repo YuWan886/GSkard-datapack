@@ -1,0 +1,118 @@
+{
+  "type": "minecraft:notice",
+  "title": {
+    "text": "5K ",
+    "extra": [
+      {
+        "text": "诅咒护甲",
+        "color": "light_purple"
+      }
+    ],
+    "color": "aqua",
+    "bold": true
+  },
+  "external_title": {
+    "text": ""
+  },
+  "body": [
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "music_disc_mellohi"
+      },
+      "show_decorations": false,
+      "show_tooltip": false
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "将敌方一名玩家的胸甲卸下并替换为",
+        "color": "gray",
+        "extra": [
+          {
+            "text": "诅咒护甲",
+            "color": "red"
+          }
+        ]
+      },
+      "width": 1024
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "持续至回合结束",
+        "color": "gray"
+      },
+      "width": 1024
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "",
+        "color": "gray"
+      },
+      "width": 1024
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "穿戴诅咒护甲时:",
+        "color": "gray"
+      },
+      "width": 1024
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "-50% 护甲值",
+        "color": "red"
+      },
+      "width": 1024
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "-50% 攻击伤害",
+        "color": "red"
+      },
+      "width": 1024
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "-50% 攻击速度",
+        "color": "red"
+      },
+      "width": 1024
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "-50% 速度",
+        "color": "red"
+      },
+      "width": 1024
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "PVP回合禁用",
+        "color": "dark_gray",
+        "italic": true
+      },
+      "width": 1024
+    }
+  ],
+  "inputs": [],
+  "can_close_with_escape": true,
+  "action": {
+    "label": {
+      "text": "返回§d法术牌§a牌库",
+      "color": "green"
+    },
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "kards:paiku/fashu/main"
+    }
+  }
+}

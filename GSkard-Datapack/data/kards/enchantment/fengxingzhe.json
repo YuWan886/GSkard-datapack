@@ -1,0 +1,53 @@
+{
+    "anvil_cost": 8,
+    "description": "风行者",
+    "effects": {
+        "minecraft:tick": [
+            {
+                "effect": {
+                    "type": "run_function",
+                    "function": "kards:enchantment/fengxingzhe/true"
+                },
+                "requirements": {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "flags": {
+                            "is_sprinting": true
+                        }
+                    }
+                }
+            },
+            {
+                "effect": {
+                    "type": "run_function",
+                    "function": "kards:enchantment/fengxingzhe/false"
+                },
+                "requirements": {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "flags": {
+                            "is_sprinting": false
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "max_cost": {
+        "base": 15,
+        "per_level_above_first": 8
+    },
+    "max_level": 1,
+    "min_cost": {
+        "base": 8,
+        "per_level_above_first": 5
+    },
+    "primary_items": "#minecraft:enchantable/armor",
+    "slots": [
+        "feet"
+    ],
+    "supported_items": "#foot_armor",
+    "weight": 4
+}

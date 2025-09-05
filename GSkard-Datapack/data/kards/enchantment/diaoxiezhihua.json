@@ -1,6 +1,6 @@
 {
     "description": "§8凋谢之花",
-    "supported_items": "#kards:jinzhanwuqi",
+    "supported_items": "#kards:melee_weapon",
     "weight": 1,
     "max_level": 5,
     "min_cost": {

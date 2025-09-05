@@ -1,3 +1,4 @@
+function kards:game/yongpaiku/use_general/kard_general
 
 
 
@@ -5,7 +6,6 @@
 function kards:game/yongpaiku/xianjing/jiance/fashujiance
 
 scoreboard players operation @s kardCount -= #kard_duming kardCount
-function kards:game/yongpaiku/use_general/kard_general
 execute if entity @s[type=player] unless items entity @s weapon.offhand * run return fail
 item replace entity @s weapon.offhand with air
 execute if entity @s[team=red] run tag @r[team=blue,gamemode=adventure] add DuMing
@@ -25,8 +25,8 @@ execute if score @s fashu_duming = @a[tag=DuMing,limit=1] fashu_duming run tellr
 execute if score @s fashu_duming > @a[tag=DuMing,limit=1] fashu_duming run damage @a[tag=DuMing,limit=1] 15 kards:duming
 execute if score @s fashu_duming < @a[tag=DuMing,limit=1] fashu_duming run damage @s 15 kards:duming
 
-execute if score @s fashu_duming = @a[tag=DuMing,limit=1] fashu_duming run advancement grant @s only kards:chengjiu/suoyouhuozhe
-execute if score @s fashu_duming = @a[tag=DuMing,limit=1] fashu_duming run advancement grant @a[tag=DuMing,limit=1] only kards:chengjiu/suoyouhuozhe
+execute if score @s fashu_duming = @a[tag=DuMing,limit=1] fashu_duming run advancement grant @s only kards:advancement/suoyouhuozhe
+execute if score @s fashu_duming = @a[tag=DuMing,limit=1] fashu_duming run advancement grant @a[tag=DuMing,limit=1] only kards:advancement/suoyouhuozhe
 
 tag @a remove DuMing
 scoreboard players reset @a fashu_duming

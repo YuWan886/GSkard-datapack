@@ -49,6 +49,13 @@
                 "predicate": {
                   "type": "minecraft:breeze"
                 }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "type": "minecraft:vex"
+                }
               }
             ]
           }

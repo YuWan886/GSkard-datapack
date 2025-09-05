@@ -1,0 +1,98 @@
+{
+  "type": "minecraft:notice",
+  "title": {
+    "text": "3K ",
+    "extra": [
+      {
+        "text": "禁字启封",
+        "color": "light_purple"
+      }
+    ],
+    "color": "aqua",
+    "bold": true
+  },
+  "external_title": {
+    "text": ""
+  },
+  "body": [
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "music_disc_mellohi"
+      },
+      "show_decorations": false,
+      "show_tooltip": false
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "使用后每次抽取",
+        "color": "gray",
+        "extra": [
+          {
+            "text": "法术牌",
+            "color": "light_purple"
+          }
+        ]
+      },
+      "width": 1024
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "时 有一定概率将其替换为",
+        "color": "gray",
+        "extra": [
+          {
+            "text": "[禁字决]",
+            "color": "dark_red"
+          }
+        ]
+      },
+      "width": 1024
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "每次使用增加10%抽取到",
+        "color": "gray",
+        "extra": [
+          {
+            "text": "[禁字决]",
+            "color": "dark_red"
+          }
+        ]
+      },
+      "width": 1024
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "的概率",
+        "color": "gray"
+      },
+      "width": 1024
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "(最多增加至60%)",
+        "color": "dark_gray",
+        "italic": true
+      },
+      "width": 1024
+    }
+  ],
+  "inputs": [],
+  "can_close_with_escape": true,
+  "action": {
+    "label": {
+      "text": "返回§d法术牌§a牌库",
+      "color": "green"
+    },
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "kards:paiku/fashu/main"
+    }
+  }
+}

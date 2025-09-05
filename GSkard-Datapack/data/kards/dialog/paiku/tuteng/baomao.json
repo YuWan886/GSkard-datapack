@@ -1,0 +1,103 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "text": "9K ",
+        "extra": [
+            {
+                "text": "豹猫",
+                "color": "red"
+            }
+        ],
+        "color": "aqua",
+        "bold": true
+    },
+    "external_title": {
+        "text": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "music_disc_blocks"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "图腾牌",
+                "color": "red",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "在队伍图腾区生成豹猫",
+                "color": "gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "图腾存活效果：",
+                "color": "gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "1.队伍玩家获得",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": "速度2",
+                        "color": "gold",
+                        "italic": false
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "2.每回合结束时 对敌方队伍的随机1个图腾造成",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": "4♥",
+                        "color": "red",
+                        "italic": false
+                    },
+                    {
+                        "text": "伤害",
+                        "color": "gray",
+                        "italic": false
+                    }
+                ]
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "text": "返回§c图腾§a牌库",
+            "color": "green"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/tuteng/main"
+        }
+    }
+}

@@ -12,8 +12,8 @@ execute if entity @s[team=red] as @e[tag=diaolingtaidao_hurt,team=blue] run dama
 execute if entity @s[team=blue] as @e[tag=diaolingtaidao_hurt,team=red] run damage @s 5 kards:diaolingtaidao by @p[tag=diaolingtaidao_damage,team=blue]
 scoreboard players set @e[tag=diaolingtaidao_hurt] diaolingtaidao_damage_add 100
 
-execute if entity @s[tag=minghunzhaojia,team=red] run effect give @e[tag=diaolingtaidao_hurt,team=blue] wither 5 4 true
-execute if entity @s[tag=minghunzhaojia,team=blue] run effect give @e[tag=diaolingtaidao_hurt,team=red] wither 5 4 true
+execute if entity @s[tag=minghunzhaojia,team=red] run effect give @e[tag=diaolingtaidao_hurt,team=blue] wither 5 4 false
+execute if entity @s[tag=minghunzhaojia,team=blue] run effect give @e[tag=diaolingtaidao_hurt,team=red] wither 5 4 false
 
 execute store result score @s[tag=minghunzhaojia] HealBack_Wait if entity @e[tag=diaolingtaidao_hurt]
 scoreboard players operation @s HealBack += @s HealBack_Wait

@@ -1,4 +1,4 @@
-execute store result score @s random2 run random value 1..285
+execute store result score @s random2 run random value 1..265
 execute if score @s random2 matches 1..20 run function kards:game/paiku/juntuan/xingshizourou
 execute if score @s random2 matches 21..25 run function kards:game/paiku/juntuan/errenchengjun
 execute if score @s random2 matches 26..40 run function kards:game/paiku/juntuan/jieluexiaodui
@@ -15,15 +15,14 @@ execute if score @s random2 matches 126..135 run function kards:game/paiku/juntu
 execute if score @s random2 matches 136..145 run function kards:game/paiku/juntuan/shashouxiaodui
 execute if score @s random2 matches 146..160 run function kards:game/paiku/juntuan/xiajieruqing
 execute if score @s random2 matches 161..180 run function kards:game/paiku/juntuan/jufengguojing
-execute if score @s random2 matches 181..200 run function kards:game/paiku/juntuan/sheshoubudui
-execute if score @s random2 matches 201..220 run function kards:game/paiku/juntuan/fengyongerzhi
-execute if score @s random2 matches 221..225 run function kards:game/paiku/juntuan/shixuelangqun
-execute if score @s random2 matches 226..235 run function kards:game/paiku/juntuan/wurenjiqun
-execute if score @s random2 matches 236..245 run function kards:game/paiku/juntuan/wojilangchao
-execute if score @s random2 matches 246..250 run function kards:game/paiku/juntuan/silingwushi
-execute if score @s random2 matches 251..265 run function kards:game/paiku/juntuan/xiaoguidangjia
-execute if score @s random2 matches 266..275 run function kards:game/paiku/juntuan/wuwangjiangshi
-execute if score @s random2 matches 276..285 run function kards:game/paiku/juntuan/sanrenchengzhong
+execute if score @s random2 matches 181..200 run function kards:game/paiku/juntuan/fengyongerzhi
+execute if score @s random2 matches 201..205 run function kards:game/paiku/juntuan/shixuelangqun
+execute if score @s random2 matches 206..215 run function kards:game/paiku/juntuan/wurenjiqun
+execute if score @s random2 matches 216..225 run function kards:game/paiku/juntuan/wojilangchao
+execute if score @s random2 matches 226..230 run function kards:game/paiku/juntuan/silingwushi
+execute if score @s random2 matches 231..245 run function kards:game/paiku/juntuan/xiaoguidangjia
+execute if score @s random2 matches 246..255 run function kards:game/paiku/juntuan/wuwangjiangshi
+execute if score @s random2 matches 256..265 run function kards:game/paiku/juntuan/sanrenchengzhong
 scoreboard players set @s random2 0
 scoreboard players remove @s juntuancishu 1
 

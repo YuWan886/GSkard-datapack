@@ -1,0 +1,87 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "text": "5K ",
+        "extra": [
+            {
+                "text": "诱敌",
+                "color": "dark_aqua"
+            }
+        ],
+        "color": "aqua",
+        "bold": true
+    },
+    "external_title": {
+        "text": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "music_disc_wait"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "陷阱卡",
+                "color": "dark_aqua",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "使用后埋下陷阱 敌方在达到条件时触发 触发后失效",
+                "color": "gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "条件：敌方任意玩家回合内使用",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": "第2张法术牌",
+                        "color": "light_purple",
+                        "italic": false
+                    },
+                    {
+                        "text": "时",
+                        "color": "gray",
+                        "italic": false
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "触发：该法术失效",
+                "color": "gray",
+                "italic": false
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "text": "返回§c陷阱§a牌库",
+            "color": "green"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/xianjing/main"
+        }
+    }
+}

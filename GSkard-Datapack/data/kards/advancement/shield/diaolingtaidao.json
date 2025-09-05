@@ -13,6 +13,6 @@
     }
   },
   "rewards": {
-    "function": "kards:game/shield/diaolingtaidao_hold"
+    "function": "kards:game/player/shield/diaolingtaidao_hold"
   }
 }

@@ -1,0 +1,85 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "text": "5K ",
+        "extra": [
+            {
+                "text": "下界入侵",
+                "color": "dark_green"
+            }
+        ],
+        "color": "aqua",
+        "bold": true
+    },
+    "external_title": {
+        "text": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "music_disc_cat"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "召唤2只",
+                "color": "gray",
+                "extra": [
+                    {
+                        "text": " 金套猪灵",
+                        "color": "gold"
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "然后若场上",
+                "color": "gray",
+                "extra": [
+                    {
+                        "text": " 下界怪物",
+                        "color": "red"
+                    },
+                    {
+                        "text": " 大于等于3只",
+                        "color": "gray"
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "额外召唤1只",
+                "color": "gray",
+                "extra": [
+                    {
+                        "text": " 猪灵蛮兵",
+                        "color": "gold"
+                    }
+                ]
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "text": "返回§d军团牌§a牌库",
+            "color": "green"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/juntuan/main"
+        }
+    }
+}

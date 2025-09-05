@@ -1,0 +1,302 @@
+{
+    "type": "minecraft:multi_action",
+    "title": {
+        "text": "军团",
+        "color": "dark_green",
+        "bold": true
+    },
+    "external_title": {
+        "text": ""
+    },
+    "body": [],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "exit_action": {
+        "label": {
+            "text": "返回§6主§a牌库",
+            "color": "green"
+        },
+        "action": {
+            "type": "show_dialog",
+            "dialog": "kards:paiku/main"
+        }
+    },
+    "columns": 5,
+    "actions": [
+        {
+            "label": {
+                "text": "爆炸军团",
+                "color": "dark_green"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/juntuan/baozhajuntuan"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "虫灾",
+                "color": "dark_green"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/juntuan/chongzai"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "地狱之火",
+                "color": "dark_green"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/juntuan/diyuzhihuo"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "二人成军",
+                "color": "dark_green"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/juntuan/errenchengjun"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "蜂拥而至",
+                "color": "dark_green"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/juntuan/fengyongerzhi"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "劫掠小队",
+                "color": "dark_green"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/juntuan/jieluexiaodui"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "飓风过境",
+                "color": "dark_green"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/juntuan/jufengguojing"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "猛毒爪牙",
+                "color": "dark_green"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/juntuan/mengduzhuaya"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "末日来临",
+                "color": "dark_green"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/juntuan/morilailin"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "三人成众",
+                "color": "dark_green"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/juntuan/sanrenchengzhong"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "杀手小队",
+                "color": "dark_green"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/juntuan/shashouxiaodui"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "深海恐惧",
+                "color": "dark_green"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/juntuan/shenghaikongju"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "尸帝",
+                "color": "dark_green"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/juntuan/shidi"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "嗜血狼群",
+                "color": "dark_green"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/juntuan/shixuelangqun"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "死灵巫师",
+                "color": "dark_green"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/juntuan/silingwushi"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "亡灵大军",
+                "color": "dark_green"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/juntuan/wanglingdajun"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "我即浪潮",
+                "color": "dark_green"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/juntuan/wojilangchao"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "巫法联会",
+                "color": "dark_green"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/juntuan/wufalianhui"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "无人机群",
+                "color": "dark_green"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/juntuan/wurenjiqun"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "舞王僵尸",
+                "color": "dark_green"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/juntuan/wuwangjiangshi"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "下界入侵",
+                "color": "dark_green"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/juntuan/xiajieruqing"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "小鬼当家",
+                "color": "dark_green"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/juntuan/xiaoguidangjia"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "小猪快跑",
+                "color": "dark_green"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/juntuan/xiaozhukuaipao"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "行尸走肉",
+                "color": "dark_green"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/juntuan/xingshizourou"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "灾厄双星",
+                "color": "dark_green"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/juntuan/zaieshuangxing"
+            },
+            "width": 75
+        }
+    ]
+}

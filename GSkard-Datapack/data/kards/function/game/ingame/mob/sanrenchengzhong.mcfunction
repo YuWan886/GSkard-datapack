@@ -1,2 +1,2 @@
-execute as @e[tag=sanrenchengzhong] unless data entity @s {NoAI:1b} unless data entity @s {Size:3} run scoreboard players add @s sanrenchengzhong 1
+execute as @e[tag=sanrenchengzhong] unless data entity @s {NoAI:1b} if data entity @s {Size:0} run scoreboard players add @s sanrenchengzhong 1
 execute as @e[tag=sanrenchengzhong] if score @s sanrenchengzhong matches 600 run function kards:game/yongpaiku/juntuan/sanrenchengzhong/2

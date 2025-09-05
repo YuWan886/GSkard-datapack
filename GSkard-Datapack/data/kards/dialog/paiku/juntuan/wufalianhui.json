@@ -1,0 +1,81 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "text": "9K ",
+        "extra": [
+            {
+                "text": "巫法联会",
+                "color": "dark_green"
+            }
+        ],
+        "color": "aqua",
+        "bold": true
+    },
+    "external_title": {
+        "text": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "music_disc_cat"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "召唤3只",
+                "color": "gray",
+                "extra": [
+                    {
+                        "text": " 女巫",
+                        "color": "gold"
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "若存在友方",
+                "color": "gray",
+                "extra": [
+                    {
+                        "text": " [死灵巫师]",
+                        "color": "dark_green"
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "改为召唤2只",
+                "color": "gray",
+                "extra": [
+                    {
+                        "text": " [死灵巫师]",
+                        "color": "dark_green"
+                    }
+                ]
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "text": "返回§d军团牌§a牌库",
+            "color": "green"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/juntuan/main"
+        }
+    }
+}

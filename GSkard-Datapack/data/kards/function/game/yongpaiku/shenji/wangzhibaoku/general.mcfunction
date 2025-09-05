@@ -12,7 +12,7 @@ execute as @a[tag=senlinzhihu] if score @s senlinzhihu_HealBack matches 90 run s
 
 execute as @a[tag=senlinzhihu] run scoreboard players operation @s senlinzhihu_taken -= @s senlinzhihu_absorbed
 scoreboard players set @a[tag=senlinzhihu] senlinzhihu_absorbed 0
-execute as @a[tag=senlinzhihu] if score @s senlinzhihu_taken matches 200.. run effect give @s absorption 20 2 true
+execute as @a[tag=senlinzhihu] if score @s senlinzhihu_taken matches 200.. run effect give @s absorption 20 2 false
 execute as @a[tag=senlinzhihu] if score @s senlinzhihu_taken matches 200.. run scoreboard players remove @s senlinzhihu_taken 200
 execute as @a[tag=senlinzhihu] unless items entity @s armor.chest *[custom_data={kards:'森林之护'}] run tag @s remove senlinzhihu
 #天神石板甲
@@ -22,10 +22,10 @@ scoreboard players reset @a tianshenshibanjia_hurt
 scoreboard players add @a[tag=tianshenshibanjia,scores={tianshenshibanjia_hurt_temp=20..}] tianshenshibanjia_xiansheng 1
 scoreboard players remove @a[tag=tianshenshibanjia,scores={tianshenshibanjia_hurt_temp=20..}] tianshenshibanjia_hurt_temp 20
 
-effect give @a[tag=tianshenshibanjia,scores={tianshenshibanjia_xiansheng=15..29}] resistance 1 0 true
-effect give @a[tag=tianshenshibanjia,scores={tianshenshibanjia_xiansheng=30..44}] resistance 1 1 true
-effect give @a[tag=tianshenshibanjia,scores={tianshenshibanjia_xiansheng=45..59}] resistance 1 2 true
-effect give @a[tag=tianshenshibanjia,scores={tianshenshibanjia_xiansheng=60..}] resistance 1 3 true
+effect give @a[tag=tianshenshibanjia,scores={tianshenshibanjia_xiansheng=15..29}] resistance 1 0 false
+effect give @a[tag=tianshenshibanjia,scores={tianshenshibanjia_xiansheng=30..44}] resistance 1 1 false
+effect give @a[tag=tianshenshibanjia,scores={tianshenshibanjia_xiansheng=45..59}] resistance 1 2 false
+effect give @a[tag=tianshenshibanjia,scores={tianshenshibanjia_xiansheng=60..}] resistance 1 3 false
 
 
 execute as @a[tag=tianshenshibanjia,scores={tianshenshibanjia_xiansheng=1..},team=red] at @s if entity @e[tag=!spectator,team=blue,distance=..4] run scoreboard players add @s tianshenshibanjia_attack_time 1
@@ -77,19 +77,19 @@ effect clear @a[tag=xiangzhaoyushi] poison
 effect clear @a[tag=xiangzhaoyushi] wither
 effect clear @a[tag=xiangzhaoyushi] levitation
 effect clear @a[tag=xiangzhaoyushi] darkness
-execute as @a[team=red,tag=xiangzhaoyushi] at @s run effect give @e[team=blue,distance=..4] slowness 3 2 true
-execute as @a[team=blue,tag=xiangzhaoyushi] at @s run effect give @e[team=red,distance=..4] slowness 3 2 true
+execute as @a[team=red,tag=xiangzhaoyushi] at @s run effect give @e[team=blue,distance=..4] slowness 3 2 false
+execute as @a[team=blue,tag=xiangzhaoyushi] at @s run effect give @e[team=red,distance=..4] slowness 3 2 false
 
 scoreboard players add @a[tag=xiangzhaoyushi] xiangzhaoyushi 1
-execute as @a[tag=xiangzhaoyushi] if score @s xiangzhaoyushi matches 1200.. run effect give @s absorption 60 4 true
+execute as @a[tag=xiangzhaoyushi] if score @s xiangzhaoyushi matches 1200.. run effect give @s absorption 60 4 false
 execute as @a[tag=xiangzhaoyushi] if score @s xiangzhaoyushi matches 1200.. run scoreboard players set @s xiangzhaoyushi 0
 execute as @a[tag=xiangzhaoyushi] unless items entity @s container.* *[custom_data={kards:'祥兆玉石'}] run tag @s remove xiangzhaoyushi
 
 #飞升护符
 execute as @a if items entity @s container.* *[custom_data={kards:'飞升护符'}] run tag @s add feishenhufu
 execute as @a[tag=feishenhufu] run attribute @s minecraft:max_health modifier add 0-0-11 20 add_value
-execute if score 回合数 GameRound matches 17.. run effect give @a[tag=feishenhufu] strength infinite 3 true
-execute if score 回合数 GameRound matches 0 run effect give @a[tag=feishenhufu] strength infinite 3 true
+execute if score 回合数 GameRound matches 17.. run effect give @a[tag=feishenhufu] strength infinite 3 false
+execute if score 回合数 GameRound matches 0 run effect give @a[tag=feishenhufu] strength infinite 3 false
 execute as @a[tag=feishenhufu] unless items entity @s container.* *[custom_data={kards:'飞升护符'}] run attribute @s minecraft:max_health modifier remove 0-0-11
 execute as @a[tag=feishenhufu] unless items entity @s container.* *[custom_data={kards:'飞升护符'}] run effect clear @s strength
 execute as @a[tag=feishenhufu] unless items entity @s container.* *[custom_data={kards:'飞升护符'}] run tag @s remove feishenhufu
@@ -99,16 +99,16 @@ function kards:game/yongpaiku/shenji/wangzhibaoku/jiangshuzhe/event/general
 execute as @a[tag=jiangshuzhe] unless items entity @s container.* *[custom_data={kards:'讲述者'}] run tag @s remove jiangshuzhe
 #寄生粘液
 execute as @a[tag=jishengnianye] run scoreboard players set @s jinzijue 0
-execute as @a[tag=jishengnianye] if score @s health matches 101.. run effect give @s strength 1 4 true
-execute as @a[tag=jishengnianye] if score @s health matches 101.. run effect give @s wither 1 1 true
-execute as @a[tag=jishengnianye] if score @s health matches 30..100 run effect give @s strength 1 3 true
-execute as @a[tag=jishengnianye] if score @s health matches 30..100 run effect give @s resistance 1 0 true
-execute as @a[tag=jishengnianye] if score @s health matches 30..100 run effect give @s slowness 1 1 true
+execute as @a[tag=jishengnianye] if score @s health matches 101.. run effect give @s strength 1 4 false
+execute as @a[tag=jishengnianye] if score @s health matches 101.. run effect give @s wither 1 1 false
+execute as @a[tag=jishengnianye] if score @s health matches 30..100 run effect give @s strength 1 3 false
+execute as @a[tag=jishengnianye] if score @s health matches 30..100 run effect give @s resistance 1 0 false
+execute as @a[tag=jishengnianye] if score @s health matches 30..100 run effect give @s slowness 1 1 false
 execute as @a[tag=jishengnianye] if score @s health matches ..29 run scoreboard players add @s jishengnianyeHealback 1
 execute as @a[tag=jishengnianye] if score @s jishengnianyeHealback matches 7.. run scoreboard players add @s HealBack 1
 execute as @a[tag=jishengnianye] if score @s jishengnianyeHealback matches 7.. run scoreboard players remove @s jishengnianyeHealback 7
 
-execute as @a[tag=jishengnianye] if score @s health matches ..29 run effect give @s minecraft:speed 1 1 true
+execute as @a[tag=jishengnianye] if score @s health matches ..29 run effect give @s minecraft:speed 1 1 false
 execute as @a[tag=jishengnianye] if score @s health matches ..29 run attribute @s minecraft:entity_interaction_range modifier add 0-0-2 -1 add_multiplied_total
 execute as @a[tag=jishengnianye] unless score @s health matches ..29 run attribute @s minecraft:entity_interaction_range modifier remove 0-0-2
 execute as @a[tag=jishengnianye] if score @s death matches 1.. run attribute @s max_health base set 20
@@ -229,7 +229,7 @@ execute as @a[tag=!qinglingzhiyu] run clear @s arrow
 #炎阳大剑
 execute as @a if items entity @s weapon.* iron_sword[custom_data={kards:'炎阳大剑'}] run tag @s add yanyangdajian
 
-effect give @a[tag=yanyangdajian] fire_resistance 1 0 true
+effect give @a[tag=yanyangdajian] fire_resistance 1 0 false
 
 execute as @e[tag=marker_feixue,type=marker] at @s run function kards:game/yongpaiku/shenji/wangzhibaoku/yanyangdajian/2
 
@@ -287,6 +287,6 @@ execute as @e[type=block_display,tag=diaolingtaidao_wither_rose,team=red] if sco
 execute as @e[type=block_display,tag=diaolingtaidao_wither_rose,team=blue] if score @s diaolingtaidao_wither_rose_Healback matches 20 at @s run scoreboard players add @a[team=blue,distance=..7] HealBack 1
 execute as @e[type=block_display,tag=diaolingtaidao_wither_rose] if score @s diaolingtaidao_wither_rose_Healback matches 20 run scoreboard players set @s diaolingtaidao_wither_rose_Healback 0
 
-execute as @e[type=block_display,tag=diaolingtaidao_wither_rose,team=red] at @s run effect give @e[distance=..7,team=blue,limit=1,sort=random] wither 1 1 true
-execute as @e[type=block_display,tag=diaolingtaidao_wither_rose,team=blue] at @s run effect give @e[distance=..7,team=red,limit=1,sort=random] wither 1 1 true
+execute as @e[type=block_display,tag=diaolingtaidao_wither_rose,team=red] at @s run effect give @e[distance=..7,team=blue,limit=1,sort=random] wither 1 1 false
+execute as @e[type=block_display,tag=diaolingtaidao_wither_rose,team=blue] at @s run effect give @e[distance=..7,team=red,limit=1,sort=random] wither 1 1 false
 

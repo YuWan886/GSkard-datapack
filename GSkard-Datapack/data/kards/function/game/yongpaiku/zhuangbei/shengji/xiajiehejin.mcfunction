@@ -1,6 +1,6 @@
-
-
 function kards:game/yongpaiku/use_general/kard_general
+
+
 
 execute if entity @s[team=red] run scoreboard players add #红队 xiajiehejinhujia 1
 execute if entity @s[team=blue] run scoreboard players add #蓝队 xiajiehejinhujia 1

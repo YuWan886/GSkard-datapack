@@ -1,0 +1,2 @@
+
+gamemode adventure @s

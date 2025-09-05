@@ -1,6 +1,6 @@
-
-
 function kards:game/yongpaiku/use_general/kard_general
+
+
 
 scoreboard players set @s pingbi 0
 scoreboard players set @s pingbi 1

@@ -1,8 +1,8 @@
 {
     "description": "§5灵魂打击",
-    "supported_items": "#kards:jinzhanwuqi",
+    "supported_items": "#kards:melee_weapon",
     "weight": 1,
-    "max_level": 1,
+    "max_level": 4,
     "min_cost": {
         "base": 0,
         "per_level_above_first": 0

@@ -1,0 +1,140 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "text": "0K ",
+        "extra": [
+            {
+                "text": "墓园狂欢",
+                "color": "white",
+                "bold": true
+            }
+        ],
+        "color": "aqua",
+        "bold": true
+    },
+    "external_title": {
+        "text": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "music_disc_strad"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "神迹牌",
+                "color": "white",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "现在开始 你以任意方式获取的以下种类的牌转化为特殊的衍生卡",
+                "color": "gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "根据种类不同转化的效率不同",
+                "color": "gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "基本牌*1",
+                "color": "blue",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": "=[狂欢僵尸]*1 ",
+                        "color": "gray",
+                        "italic": false
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "军团牌*1",
+                "color": "dark_green",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": "=[狂欢僵尸]*3 ",
+                        "color": "gray",
+                        "italic": false
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "诅咒牌*1",
+                "color": "dark_gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": "=[狂欢僵尸]*2 ",
+                        "color": "gray",
+                        "italic": false
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "陷阱牌*1",
+                "color": "dark_aqua",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": "=[狂欢僵尸]*2 ",
+                        "color": "gray",
+                        "italic": false
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "同时 +5Kmax 每一个友方回合多抽2张牌",
+                "color": "gray",
+                "italic": false
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "text": "返回§d神迹§a牌库",
+            "color": "green"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/shenji/main"
+        }
+    }
+}

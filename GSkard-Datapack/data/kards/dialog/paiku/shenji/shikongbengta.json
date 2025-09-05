@@ -1,0 +1,65 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "text": "4K ",
+        "extra": [
+            {
+                "text": "时空崩塌",
+                "color": "white",
+                "bold": true
+            }
+        ],
+        "color": "aqua",
+        "bold": true
+    },
+    "external_title": {
+        "text": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "music_disc_strad"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "神迹牌",
+                "color": "white",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "清除双方",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": "所有非玩家实体",
+                        "color": "gold",
+                        "italic": false
+                    }
+                ]
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "text": "返回§d神迹§a牌库",
+            "color": "green"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/shenji/main"
+        }
+    }
+}

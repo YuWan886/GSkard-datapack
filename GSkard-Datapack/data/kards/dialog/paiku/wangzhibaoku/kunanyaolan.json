@@ -1,0 +1,156 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "text": "苦难摇篮",
+        "color": "dark_red",
+        "italic": false
+    },
+    "external_title": {
+        "text": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:chainmail_chestplate"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "我之苦难",
+                "color": "gray",
+                "italic": false,
+                "bold": true
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "每受到10♥伤害就分配10♥",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": "真实伤害",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": "于敌方所有玩家",
+                        "color": "gray",
+                        "italic": false
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "我之甘泽",
+                "color": "gray",
+                "italic": false,
+                "bold": true
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "每2次造成伤害恢复0.5♥ 苦难化身造成的伤害视为你造成的",
+                "color": "gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "苦难降临",
+                "color": "gray",
+                "italic": false,
+                "bold": true
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "每受到20♥伤害就召唤1只",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": "\"苦难化身\"",
+                        "color": "red",
+                        "italic": false,
+                        "bold": true
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "\n苦难化身",
+                "color": "red",
+                "italic": false,
+                "bold": true
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "无法被攻击 无法近战攻击",
+                "color": "gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "每秒对3格范围内最多3名敌人造成2.5♥魔法伤害 ",
+                "color": "gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "存在时间15s",
+                "color": "gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "传奇护具",
+                "color": "white",
+                "italic": false
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "text": "返回§6王之宝库",
+            "color": "green"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/wangzhibaoku/main"
+        }
+    }
+}

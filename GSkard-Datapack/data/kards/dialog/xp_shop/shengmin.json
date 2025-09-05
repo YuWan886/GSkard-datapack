@@ -28,11 +28,11 @@
     },
     {
       "label": {
-        "text": "回复8♥",
+        "text": "回复6♥",
         "color": "green"
       },
       "tooltip": {
-        "text": "消耗10级 回复8♥"
+        "text": "消耗10级 回复6♥"
       },
       "action": {
         "type": "run_command",
@@ -41,11 +41,11 @@
     },
     {
       "label": {
-        "text": "回复24♥",
+        "text": "回复15♥",
         "color": "green"
       },
       "tooltip": {
-        "text": "消耗20级 回复24♥"
+        "text": "消耗20级 回复15♥"
       },
       "action": {
         "type": "run_command",
@@ -54,15 +54,11 @@
     },
     {
       "label": {
-        "text": "回复50♥",
-        "color": "green",
-        "hover_event": {
-          "action": "show_text",
-          "value": "消耗30级 回复50♥"
-        }
+        "text": "回复25♥",
+        "color": "green"
       },
       "tooltip": {
-        "text": "消耗30级 回复50♥"
+        "text": "消耗30级 回复25♥"
       },
       "action": {
         "type": "run_command",

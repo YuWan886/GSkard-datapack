@@ -1,0 +1,170 @@
+{
+    "type": "minecraft:multi_action",
+    "title": {
+        "text": "陷阱",
+        "color": "dark_aqua",
+        "bold": true
+    },
+    "external_title": {
+        "text": ""
+    },
+    "body": [],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "exit_action": {
+        "label": {
+            "text": "返回§6主§a牌库",
+            "color": "green"
+        },
+        "action": {
+            "type": "show_dialog",
+            "dialog": "kards:paiku/main"
+        }
+    },
+    "columns": 5,
+    "actions": [
+        {
+            "label": {
+                "text": "合围",
+                "color": "dark_aqua"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/xianjing/hewei"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "惊吓盒子",
+                "color": "dark_aqua"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/xianjing/jingxiahezi"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "来自深处",
+                "color": "dark_aqua"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/xianjing/laizishenchu"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "魔力腐蚀",
+                "color": "dark_aqua"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/xianjing/molifushi"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "千钧一发",
+                "color": "dark_aqua"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/xianjing/qianjunyifa"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "轻虑浅谋",
+                "color": "dark_aqua"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/xianjing/qinglvqianmou"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "施法小鬼",
+                "color": "dark_aqua"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/xianjing/shifaxiaogui"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "术法失效",
+                "color": "dark_aqua"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/xianjing/shufashixiao"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "殊死防守",
+                "color": "dark_aqua"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/xianjing/shusifangshou"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "损耗过度",
+                "color": "dark_aqua"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/xianjing/sunhaoguodu"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "偷梁换柱",
+                "color": "dark_aqua"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/xianjing/toulianghuanzhu"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "遥远的桥",
+                "color": "dark_aqua"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/xianjing/yaoyuandeqiao"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "诱敌",
+                "color": "dark_aqua"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/xianjing/youdi"
+            },
+            "width": 75
+        }
+    ]
+}

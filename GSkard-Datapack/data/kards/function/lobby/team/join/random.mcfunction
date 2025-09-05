@@ -1,23 +1,17 @@
 execute store result score #system Ready_Num if entity @a[tag=Ready]
-team join lobby @a[tag=Un_Ready]
-execute unless entity @a[team=red] unless entity @a[team=blue] if score #system Ready_Num matches 0..1 run return run tellraw @a [{text: "准备人数不足 无法进行分队",color:"red",bold:true}]
-execute if score #system Ready_Num matches 2.. run team join red @a[team=!sp,tag=Ready]
-execute if score #system Ready_Num matches 2 run team join blue @a[team=red,limit=1,tag=Ready,sort=random]
-execute if score #system Ready_Num matches 3..4 run team join blue @a[team=red,limit=2,tag=Ready,sort=random]
-execute if score #system Ready_Num matches 5..6 run team join blue @a[team=red,limit=3,tag=Ready,sort=random]
-execute if score #system Ready_Num matches 7..8 run team join blue @a[team=red,limit=4,tag=Ready,sort=random]
-execute if score #system Ready_Num matches 9..10 run team join blue @a[team=red,limit=5,tag=Ready,sort=random]
-execute if score #system Ready_Num matches 11..12 run team join blue @a[team=red,limit=6,tag=Ready,sort=random]
-execute if score #system Ready_Num matches 13..14 run team join blue @a[team=red,limit=7,tag=Ready,sort=random]
-execute if score #system Ready_Num matches 15..16 run team join blue @a[team=red,limit=8,tag=Ready,sort=random]
-execute if score #system Ready_Num matches 17..18 run team join blue @a[team=red,limit=9,tag=Ready,sort=random]
-execute if score #system Ready_Num matches 19..20 run team join blue @a[team=red,limit=10,tag=Ready,sort=random]
-execute if score #system Ready_Num matches 21..22 run team join blue @a[team=red,limit=11,tag=Ready,sort=random]
-execute if score #system Ready_Num matches 23..24 run team join blue @a[team=red,limit=12,tag=Ready,sort=random]
-execute if score #system Ready_Num matches 25..26 run team join blue @a[team=red,limit=13,tag=Ready,sort=random]
-execute if score #system Ready_Num matches 27..28 run team join blue @a[team=red,limit=14,tag=Ready,sort=random]
-execute if score #system Ready_Num matches 29..30 run team join blue @a[team=red,limit=15,tag=Ready,sort=random]
-execute if score #system Ready_Num matches 31.. run tellraw @a [{text: "准备人数过多 无法进行分队",color:"red",bold:true}]
+execute unless score #system Ready_Num matches 2.. at @s run playsound block.note_block.bass block @s ~ ~ ~ 100 1 1
+execute unless score #system Ready_Num matches 2.. run return run tellraw @s [{text:"\n准备人数不足!\n",color:"red"},{text:"当前准备人数 ",color:"gray"},{score:{name:"#system",objective:"Ready_Num"},color:"green"},{text:"\n",color:"gray"},{text:"准备人数至少2人才可进行分队!",color:"red"}]
 
-tp @a[team=blue] 87 229 -22 -90 0
-tp @a[team=red] 87 229 -30 -90 0
+team add team_temp
+team join team_temp @a[tag=Ready]
+function kards:lobby/team/join/loop
+team remove team_temp
+
+execute store result score 红队 Number if entity @a[team=red]
+execute store result score 蓝队 Number if entity @a[team=blue]
+
+playsound block.note_block.chime block @a ~ ~ ~ 100 2 1
+tellraw @a [{text:"\n随机分队完成!\n\n",color:"green"},{text:"红队 ",color:"red"},{score:{name:"红队",objective:"Number"},color:"green"},{text:"\n",color:"gray"},{text:"蓝队 ",color:"blue"},{score:{name:"蓝队",objective:"Number"},color:"green"},{text:"\n",color:"gray"}]
+
+execute unless score 红队 Number = 蓝队 Number run function kards:lobby/team/join/offsets/1
+

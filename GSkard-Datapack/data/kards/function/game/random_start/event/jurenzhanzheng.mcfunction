@@ -4,4 +4,4 @@ execute as @a[gamemode=adventure] run attribute @s entity_interaction_range modi
 execute as @a[gamemode=adventure] run attribute @s movement_speed modifier add 0-0-6 1.5 add_multiplied_total
 execute as @a[gamemode=adventure] run attribute @s jump_strength modifier add 0-0-5 1.5 add_multiplied_total
 execute as @a[gamemode=adventure] run attribute @s safe_fall_distance modifier add 0-0-2 1.5 add_multiplied_total
-effect give @a instant_health 1 200 true
+effect give @a instant_health 1 200 false

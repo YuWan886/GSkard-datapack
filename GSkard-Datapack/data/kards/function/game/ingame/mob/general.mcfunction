@@ -19,8 +19,8 @@ execute if entity @e[tag=wuwangjiangshi,distance=0.1..] run function kards:game/
 #三人成众
 execute if entity @e[tag=sanrenchengzhong,distance=0.1..] run function kards:game/ingame/mob/sanrenchengzhong
 #尸帝
-execute if entity @e[tag=sanrenchengzhong,distance=0.1..] as @e[tag=shidi_master,team=red,distance=0.1..] at @s run effect give @e[tag=!shidi_master,team=red,distance=..5] minecraft:resistance 1 0 true
-execute if entity @e[tag=sanrenchengzhong,distance=0.1..] as @e[tag=shidi_master,team=blue,distance=0.1..] at @s run effect give @e[tag=!shidi_master,team=blue,distance=..5] minecraft:resistance 1 0 true
+execute if entity @e[tag=sanrenchengzhong,distance=0.1..] as @e[tag=shidi_master,team=red,distance=0.1..] at @s run effect give @e[tag=!shidi_master,team=red,distance=..5] minecraft:resistance 1 0 false
+execute if entity @e[tag=sanrenchengzhong,distance=0.1..] as @e[tag=shidi_master,team=blue,distance=0.1..] at @s run effect give @e[tag=!shidi_master,team=blue,distance=..5] minecraft:resistance 1 0 false
 #爆炸军团
 execute if entity @e[tag=baozhajuntuan,distance=0.1..] run function kards:game/ingame/mob/baozhajuntuan/1
 #末日来临

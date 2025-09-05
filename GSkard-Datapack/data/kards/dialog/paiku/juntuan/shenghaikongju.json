@@ -1,0 +1,83 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "text": "10K ",
+        "extra": [
+            {
+                "text": "深海恐惧",
+                "color": "dark_green"
+            }
+        ],
+        "color": "aqua",
+        "bold": true
+    },
+    "external_title": {
+        "text": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "music_disc_cat"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "召唤3只",
+                "color": "gray",
+                "extra": [
+                    {
+                        "text": " 守卫者",
+                        "color": "gold"
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "若回合数大于等于15",
+                "color": "gray"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "改为召唤2只",
+                "color": "gray",
+                "extra": [
+                    {
+                        "text": " 守卫者",
+                        "color": "gold"
+                    },
+                    {
+                        "text": " 与1只",
+                        "color": "gray"
+                    },
+                    {
+                        "text": " 远古守卫者",
+                        "color": "gold"
+                    }
+                ]
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "text": "返回§d军团牌§a牌库",
+            "color": "green"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/juntuan/main"
+        }
+    }
+}

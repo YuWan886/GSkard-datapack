@@ -1,7 +1,7 @@
+function kards:game/yongpaiku/use_general/kard_general
 
 
 function kards:game/yongpaiku/xianjing/jiance/shenjijiance
-function kards:game/yongpaiku/use_general/kard_general
 
 execute if entity @s[team=red] positioned as @e[tag=blue_marker_7] run tp @s ~ 0 ~
 

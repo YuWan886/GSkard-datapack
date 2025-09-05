@@ -1,0 +1,69 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "text": "9K ",
+        "extra": [
+            {
+                "text": "三人成众",
+                "color": "dark_green"
+            }
+        ],
+        "color": "aqua",
+        "bold": true
+    },
+    "external_title": {
+        "text": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "music_disc_cat"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "召唤3只",
+                "color": "gray",
+                "extra": [
+                    {
+                        "text": " 大岩浆怪",
+                        "color": "gold"
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "最小岩浆怪在30s后会变为大岩浆怪",
+                "color": "gray"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "非用牌回合的时间不计入",
+                "color": "gray"
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "text": "返回§d军团牌§a牌库",
+            "color": "green"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/juntuan/main"
+        }
+    }
+}

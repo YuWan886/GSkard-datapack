@@ -46,12 +46,6 @@ execute if score #system Color matches 20 run scoreboard players set #system Col
 #oiiaioiiiiai
 execute as @e[type=cat,tag=Oiiaioiiiiai] at @s run rotate @s ~50 ~30
 execute as @e[type=cat,tag=Oiiaioiiiiai] if data entity @s {OnGround:1b} run data modify entity @s Motion set value [0f,1f,0f]
-effect give @e[type=cat,tag=Oiiaioiiiiai] instant_health 1 0 true
+effect give @e[type=cat,tag=Oiiaioiiiiai] instant_health 1 0 false
 
 #测试用
-#function kards:game/ingame/general
-
-#execute as @a unless predicate kards:movement_check run function kards:ceshi/1
-scoreboard players set #system ceshi4 10
-execute as @a run scoreboard players operation @s ceshi = @s ceshi4
-execute as @a run scoreboard players operation @s ceshi /= #system ceshi4

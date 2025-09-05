@@ -1,2 +1,0 @@
-tellraw @a [{selector:"@s"},{text: "达成了进度",color:"white"},{text: "[所有或者]",color:"green","hover_event":{"action":"show_text",value:{text:"所有或者\n使用\"赌命\"平局,享受少见的和平吧!",color:"green"}}}]
-playsound ui.toast.out player @s ~ ~ ~ 100 1

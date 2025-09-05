@@ -1,0 +1,173 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "text": "教程主菜单",
+    "type": "text",
+    "color": "gray",
+    "bold": true
+  },
+  "external_title": {
+    "text": ""
+  },
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "你可以直接通过",
+        "color": "green",
+        "extra": [
+          {
+            "text": "Esc键",
+            "color": "gold",
+            "bold": true
+          },
+          {
+            "text": "退出该界面",
+            "color": "green"
+          },
+          {
+            "text": "\n\n若希望再次浏览本界面 可以直接按",
+            "color": "green"
+          },
+          {
+            "text": "G键",
+            "color": "gold",
+            "bold": true
+          },
+          {
+            "text": "打开",
+            "color": "green"
+          },
+          {
+            "text": "\n\n建议将界面尺寸调小以更好地浏览\n\n可点击下方按钮进入对应章节",
+            "color": "gray",
+            "underlined": true,
+            "bold": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "\n\n| 简介 |",
+        "color": "gold",
+        "bold": true
+      },
+      "width": 256
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "\nGSkard是一张",
+        "color": "gray",
+        "bold": true,
+        "extra": [
+          {
+            "text": "回合制的卡牌对战游戏\n",
+            "color": "gold"
+          }
+        ]
+      },
+      "width": 256
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "不同于传统的卡牌桌游\n",
+        "color": "gray",
+        "bold": true
+      },
+      "width": 256
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "本地图的主要攻击方式是用",
+        "color": "gray",
+        "bold": true,
+        "extra": [
+          {
+            "text": "卡牌召唤怪物以攻击敌方玩家\n",
+            "color": "gold",
+            "bold": true
+          }
+        ]
+      },
+      "width": 512
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "在怪物与玩家的碰撞中 最终活下来的一方队伍胜利\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+        "color": "gray",
+        "bold": true
+      },
+      "width": 512
+    }
+  ],
+  "inputs": [],
+  "can_close_with_escape": true,
+  "columns": 4,
+  "actions": [
+    {
+      "label": {
+        "text": "获取卡牌信息",
+        "color": "gold"
+      },
+      "width": 125,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "kards:jiaocheng/wanfa/1"
+      }
+    },
+    {
+      "label": {
+        "text": "使用卡牌",
+        "color": "gold"
+      },
+      "width": 125,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "kards:jiaocheng/wanfa/2"
+      }
+    },
+    {
+      "label": {
+        "text": "资源获取",
+        "color": "gold"
+      },
+      "width": 125,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "kards:jiaocheng/wanfa/3"
+      }
+    },
+    {
+      "label": {
+        "text": "回合信息",
+        "color": "gold"
+      },
+      "width": 125,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "kards:jiaocheng/wanfa/4"
+      }
+    }
+  ],
+  "exit_action": {
+    "label": {
+        "text": "完成教程",
+        "color": "gold"
+      },
+      "tooltip": {
+        "text": "请确保阅读完毕",
+        "color":"gray"
+      },
+      "width": 125,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger dialog set 2"
+      }
+  }
+}

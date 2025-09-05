@@ -1,2 +1,0 @@
-tellraw @a [{selector:"@s"},{text: "达成了进度",color:"white"},{text: "[禁字启封]",color:"green","hover_event":{"action":"show_text",value:{text:"禁字启封\n首次使用禁字决",color:"green"}}}]
-playsound ui.toast.out player @s ~ ~ ~ 100 1

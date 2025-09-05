@@ -1,6 +1,6 @@
 {
     "description": "§4沸血",
-    "supported_items": "#kards:jinzhanwuqi",
+    "supported_items": "#kards:melee_weapon",
     "weight": 1,
     "max_level": 1,
     "min_cost": {

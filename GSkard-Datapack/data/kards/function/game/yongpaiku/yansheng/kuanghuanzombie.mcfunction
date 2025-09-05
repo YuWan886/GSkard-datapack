@@ -30,4 +30,4 @@ tellraw @a [{text: "目前使用次数为:",color:"white"},{score:{objective:"zo
 clear @s minecraft:zombie_spawn_egg 1
 scoreboard players operation @s kardCount -= #kard_kuanghuanzombie kardCount
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1
-execute if score @s zombie_enhance matches 76.. run advancement grant @s only kards:chengjiu/wanglingpaidui
+execute if score @s zombie_enhance matches 76.. run advancement grant @s only kards:advancement/wanglingpaidui

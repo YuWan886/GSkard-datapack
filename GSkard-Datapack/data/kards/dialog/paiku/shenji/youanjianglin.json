@@ -1,0 +1,101 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "text": "20K ",
+        "extra": [
+            {
+                "text": "幽谙降临",
+                "color": "white",
+                "bold": true
+            }
+        ],
+        "color": "aqua",
+        "bold": true
+    },
+    "external_title": {
+        "text": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "music_disc_strad"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "神迹牌",
+                "color": "white",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "召唤1只",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": "监守者",
+                        "color": "gold",
+                        "italic": false,
+                        "bold": true
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "监守者基础血量=[",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": "15♥",
+                        "color": "red",
+                        "italic": false
+                    },
+                    {
+                        "text": "*敌方玩家存活人数",
+                        "color": "gold",
+                        "italic": false
+                    },
+                    {
+                        "text": "]",
+                        "color": "gray",
+                        "italic": false
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "血量最多为100♥",
+                "color": "dark_gray",
+                "italic": true
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "text": "返回§d神迹§a牌库",
+            "color": "green"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/shenji/main"
+        }
+    }
+}

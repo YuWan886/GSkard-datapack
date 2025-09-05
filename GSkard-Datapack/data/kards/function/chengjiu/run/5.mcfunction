@@ -1,2 +1,0 @@
-tellraw @a [{selector:"@s"},{text: "完成了挑战",color:"white"},{text: "[跑酷高手..?]",color:"dark_purple","hover_event":{"action":"show_text",value:{text:"跑酷高手..?\n在1s内完成跑酷...世上竟有超人?",color:"dark_purple"}}}]
-playsound ui.toast.challenge_complete block @s ~ ~ ~ 100 1

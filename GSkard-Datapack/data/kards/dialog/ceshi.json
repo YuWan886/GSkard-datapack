@@ -1,53 +1,102 @@
 {
-  "type": "minecraft:notice",
-  "title": {
-    "text": "5K ",
-    "extra": [
-      {
-        "text": "背水一战",
-        "color": "light_purple"
-      }
-    ],
-    "color": "aqua",
-    "bold": true
-  },
-  "external_title": {
-    "text": ""
-  },
-  "body": [
+  "type": "minecraft:multi_action",
+  "title": [
     {
-      "type": "minecraft:item",
-      "item": {
-        "id": "music_disc_mellohi"
-      },
-      "show_decorations": false,
-      "show_tooltip": false
-    },
-    {
-      "type": "minecraft:plain_message",
-      "contents": {
-        "text": "抽2张牌",
-        "color": "gray"
-      },
-      "width": 1024
-    },
-    {
-      "type": "minecraft:plain_message",
-      "contents": {
-        "text": "此外队伍中每有一个玩家死亡 你就获得10点数 抽2张牌",
-        "color": "gray"
-      },
-      "width": 1024
-    },
-    {
-      "type": "minecraft:plain_message",
-      "contents": {
-        "text": "最多获得30K 8张牌",
-        "color": "gray"
-      },
-      "width": 1024
+      "text": "你当前的构想 ",
+      "color": "gray"
     }
   ],
-  "inputs": [],
-  "can_close_with_escape": false
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "点击以升级对应天赋",
+        "color": "green"
+      },
+      "width": 1024
+    },
+    {
+    "type": "minecraft:item",
+    "item": {"id": "minecraft:player_head","count": 1},
+    "show_decorations": false,"show_tooltip": false
+    }
+],
+  "actions": [
+    {
+      "label": [
+        {
+          "text": "生存天赋 消耗2点构想升级"
+        }
+      ],
+      "tooltip": [
+        {
+          "text": "生存天赋\n",
+          "color": "gold"
+        },
+        {
+          "text": "生存天赋\n",
+          "color": "gold"
+        },
+        {
+          "text": "生存天赋\n",
+          "color": "gray"
+        },
+        {
+          "text": "生存天赋\n",
+          "color": "gray"
+        },
+        {
+          "text": "生存天赋\n",
+          "color": "gray"
+        }
+      ],
+      "action": {
+        "type": "run_command",
+        "command": "trigger dialog set 1000"
+      }
+    },
+    {
+      "label": [
+        {
+          "text": "战斗天赋 消耗4点构想升级"
+        }
+      ],
+      "tooltip": [
+        {
+          "text": "战斗天赋\n",
+          "color": "gold"
+        },
+        {
+          "text": "战斗天赋\n",
+          "color": "gold"
+        },
+        {
+          "text": "战斗天赋\n",
+          "color": "gold"
+        },
+        {
+          "text": "战斗天赋\n",
+          "color": "gold"
+        },
+        {
+          "text": "战斗天赋\n",
+          "color": "gray"
+        }
+      ],
+      "action": {
+        "type": "run_command",
+        "command": "trigger dialog set 1000"
+      }
+    }
+  ],
+  "columns": 3,
+  "pause": false,
+  "after_action": "none",
+  "exit_action": {
+    "label": "1",
+    "action": {
+      "type": "run_command",
+      "command": "trigger dialog set 1000"
+    }
+  }
 }

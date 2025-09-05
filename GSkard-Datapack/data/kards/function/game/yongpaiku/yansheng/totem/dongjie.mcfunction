@@ -9,6 +9,6 @@ execute if entity @s[team=blue] run scoreboard players add @e[distance=..6,team=
 
 execute at @s run playsound minecraft:entity.player.hurt_freeze player @a[distance=..20] ~ ~ ~ 100 0
 
-effect give @s absorption 120 9 true
+effect give @s absorption 120 9 false
 
 advancement revoke @s only kards:totem/dongjie

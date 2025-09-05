@@ -11,6 +11,29 @@ schedule clear kards:lobby/bossbar/color/3
 schedule clear kards:lobby/bossbar/color/4
 function kards:lobby/bossbar/color/1
 #注册计分项目
+scoreboard objectives add GameCount dummy
+scoreboard objectives add Talent_trigger dummy
+scoreboard objectives add Talent_Survival dummy
+scoreboard objectives add Talent_Combat dummy
+scoreboard objectives add Talent_Count dummy
+scoreboard objectives add Talent_Main dummy
+scoreboard objectives add enchantment_yuezhan_temp dummy
+scoreboard objectives add enchantment_fengxingzhe_temp dummy
+scoreboard objectives add enchantment_dadishenyou_temp dummy
+scoreboard objectives add enchantment_chance_temp dummy
+scoreboard objectives add open_wiki dropped:bookshelf
+scoreboard objectives add UseItem.Crossbow minecraft.used:minecraft.crossbow
+scoreboard objectives add Xp_Temp1 dummy
+scoreboard objectives add Xp_Temp2 dummy
+scoreboard objectives add Xp_Temp3 dummy
+scoreboard objectives add Mob_Count_Silingwushi dummy
+scoreboard objectives add Mob_Count_Silingpucong dummy
+scoreboard objectives add Mob_Count_Silingpucong_Max dummy
+scoreboard objectives add mainhand_enchantment_levels dummy
+scoreboard objectives add damage_protection dummy
+scoreboard objectives add damage_protection_temp dummy
+scoreboard objectives add Number dummy
+scoreboard objectives add Xp_Point_Total dummy
 scoreboard objectives add Xp_Levels dummy
 scoreboard objectives add Mob_Count_Illager dummy
 scoreboard objectives add If_Mount_Alive dummy
@@ -106,6 +129,7 @@ scoreboard objectives add Damage minecraft.custom:damage_dealt
 scoreboard objectives add HealBack_Wait dummy
 scoreboard objectives add enchantment_chance_shixue dummy
 scoreboard objectives add MaxHealth dummy
+scoreboard objectives add Health health
 scoreboard objectives add XuanZhuan dummy
 scoreboard objectives add sanrenchengzhong dummy
 scoreboard objectives add kutongzhuanhua_Time dummy
@@ -168,14 +192,8 @@ scoreboard objectives add shengji_zuanshijian dummy
 scoreboard objectives add shengji_xiajiehejinjian dummy
 scoreboard objectives add shengji_tiefu dummy
 scoreboard objectives add shengji_zuanshifu dummy
-scoreboard objectives add tanshewubuchong dummy
 scoreboard objectives add random9 dummy
 scoreboard objectives add jianshi minecraft.used:minecraft.bow
-scoreboard objectives add yanhua minecraft.used:minecraft.crossbow
-scoreboard objectives add chuandai_pige dummy
-scoreboard objectives add chuandai_jin dummy
-scoreboard objectives add chuandai_tie dummy
-scoreboard objectives add chuandai_zuanshi dummy
 scoreboard objectives add jiangshuzhe_random1 dummy
 scoreboard objectives add jiangshuzhe_random2 dummy
 scoreboard objectives add jiangshuzhe_leibao dummy

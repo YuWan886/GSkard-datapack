@@ -1,0 +1,47 @@
+{
+  "type": "minecraft:notice",
+  "title": {
+    "text": "4K ",
+    "extra": [
+      {
+        "text": "劫掠",
+        "color": "light_purple"
+      }
+    ],
+    "color": "aqua",
+    "bold": true
+  },
+  "external_title": {
+    "text": ""
+  },
+  "body": [
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "music_disc_mellohi"
+      },
+      "show_decorations": false,
+      "show_tooltip": false
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "掠夺敌方一只图腾",
+        "color": "gray"
+      },
+      "width": 1024
+    }
+  ],
+  "inputs": [],
+  "can_close_with_escape": true,
+  "action": {
+    "label": {
+      "text": "返回§d法术牌§a牌库",
+      "color": "green"
+    },
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "kards:paiku/fashu/main"
+    }
+  }
+}

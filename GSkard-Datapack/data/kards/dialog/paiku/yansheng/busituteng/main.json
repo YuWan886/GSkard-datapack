@@ -1,0 +1,82 @@
+{
+    "type": "minecraft:multi_action",
+    "title": {
+        "text": "不死图腾",
+        "color": "gold",
+        "bold": true
+    },
+    "external_title": {
+        "text": ""
+    },
+    "body": [],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "exit_action": {
+        "label": {
+            "text": "返回§7其他",
+            "color": "green"
+        },
+        "action": {
+            "type": "show_dialog",
+            "dialog": "kards:paiku/yansheng/main"
+        }
+    },
+    "columns": 5,
+    "actions": [
+        {
+            "label": {
+                "text": "暴怒图腾",
+                "color": "dark_red"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/yansheng/busituteng/baonu"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "冻结图腾",
+                "color": "aqua"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/yansheng/busituteng/dongjie"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "混沌图腾",
+                "color": "dark_gray"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/yansheng/busituteng/hundun"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "火焰图腾",
+                "color": "red"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/yansheng/busituteng/huoyan"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "生命图腾",
+                "color": "green"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/yansheng/busituteng/shengming"
+            },
+            "width": 75
+        }
+    ]
+}

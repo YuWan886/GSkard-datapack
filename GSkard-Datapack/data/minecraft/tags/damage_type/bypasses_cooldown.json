@@ -22,6 +22,7 @@
         "minecraft:mace_smash",
         "kards:zhongshang",
         "minecraft:freeze",
-        "kards:duming"
+        "kards:duming",
+        "minecraft:arrow"
     ]
 }

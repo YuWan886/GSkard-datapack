@@ -1,0 +1,530 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "text": "凋零太刀",
+        "color": "dark_gray",
+        "italic": false
+    },
+    "external_title": {
+        "text": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:netherite_sword",
+                "components": {
+                    "item_model": "kards:diaolingtaidao"
+                }
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "攻击时有",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": "40%",
+                        "color": "gold",
+                        "italic": false
+                    },
+                    {
+                        "text": "几率对目标施加",
+                        "color": "gray",
+                        "italic": false
+                    },
+                    {
+                        "text": "3s凋零",
+                        "color": "red",
+                        "italic": false
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "",
+                "color": "gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "拔刀·碎魂",
+                "color": "gray",
+                "italic": false,
+                "bold": true
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "按住shift0.3s",
+                "color": "gold",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": "会向前进行一次",
+                        "color": "gray",
+                        "italic": false
+                    },
+                    {
+                        "text": "突刺",
+                        "color": "gold",
+                        "italic": false
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "突刺距离",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": "4.5格",
+                        "color": "gold",
+                        "italic": false
+                    },
+                    {
+                        "text": " 对命中的所有敌人造成",
+                        "color": "gray",
+                        "italic": false
+                    },
+                    {
+                        "text": "3♥物理伤害",
+                        "color": "red",
+                        "italic": false
+                    },
+                    {
+                        "text": " CD6.5s",
+                        "color": "gray",
+                        "italic": false
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "若",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": "[拔刀·碎魂]",
+                        "color": "gold",
+                        "italic": false,
+                        "bold": true
+                    },
+                    {
+                        "text": "命中了单位",
+                        "color": "gray",
+                        "italic": false
+                    },
+                    {
+                        "text": " CD-5s",
+                        "color": "green",
+                        "italic": false
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "",
+                "color": "gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "冥魂招架",
+                "color": "gray",
+                "italic": false,
+                "bold": true
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "右键可进行格挡",
+                "color": "gold",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": " 减免下次受到伤害的",
+                        "color": "gray",
+                        "italic": false
+                    },
+                    {
+                        "text": "70%",
+                        "color": "gold",
+                        "italic": false
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "格挡后释放一次",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": "[拔刀·碎魂]",
+                        "color": "gold",
+                        "italic": false,
+                        "bold": true
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "此次[拔刀·碎魂]会对命中的目标施加凋零5持续5s",
+                "color": "gray",
+                "italic": false,
+                "bold": true
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "此次[拔刀·碎魂]每命中1个目标 治疗2♥",
+                "color": "gray",
+                "italic": false,
+                "bold": true
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "若格挡时手持有盾牌 不会触发[拔刀·碎魂]",
+                "color": "red",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "",
+                "color": "gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "凋谢之花",
+                "color": "gray",
+                "italic": false,
+                "bold": true
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "每释放8次[拔刀·碎魂]会得到",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": "凋零玫瑰 ",
+                        "color": "dark_gray",
+                        "italic": false
+                    },
+                    {
+                        "text": "凋零玫瑰可右键放置",
+                        "color": "gray",
+                        "italic": false
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "凋零玫瑰会存在",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": "10s",
+                        "color": "gold",
+                        "italic": false
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "位于凋零玫瑰7格内时获得",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": "生命恢复",
+                        "color": "green",
+                        "italic": false
+                    },
+                    {
+                        "text": ",敌方生物持续获得",
+                        "color": "gray",
+                        "italic": false
+                    },
+                    {
+                        "text": "凋零1",
+                        "color": "red",
+                        "italic": false
+                    },
+                    {
+                        "text": ",最多一次对4个目标生效",
+                        "color": "gray",
+                        "italic": false
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "",
+                "color": "gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "追魂",
+                "color": "gray",
+                "italic": false,
+                "bold": true
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "[拔刀·碎魂]会对目标施加",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": "追魂印记",
+                        "color": "light_purple",
+                        "italic": false
+                    },
+                    {
+                        "text": "5s",
+                        "color": "gray",
+                        "italic": false
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "[拔刀·碎魂]",
+                "color": "gold",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": "对有追魂印记的目标",
+                        "color": "gray",
+                        "italic": false
+                    },
+                    {
+                        "text": "额外造成200%伤害并使其",
+                        "color": "red",
+                        "italic": false
+                    },
+                    {
+                        "text": "破甲",
+                        "color": "red",
+                        "italic": false
+                    },
+                    {
+                        "text": "2s",
+                        "color": "gray",
+                        "italic": false
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "这把由下界合金打造而成的神兵镶嵌着一颗下界之星",
+                "color": "dark_gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "它让与这把武器为敌的人化为一朵朵死亡玫瑰",
+                "color": "dark_gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "如今凋灵消逝 它被一层层灵魂沙覆盖 ",
+                "color": "dark_gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "亡魂们渴望着新的主人给他们带来更多的刀下鲜血 或者傲慢之人的精血”",
+                "color": "dark_gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "......",
+                "color": "dark_gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "三头的怪物将太刀给了一位少女 少女迟疑了一会",
+                "color": "dark_gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "“凋灵大人......我真的配拥有这把武器吗......”",
+                "color": "dark_gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "“......” 怪物没有回答",
+                "color": "dark_gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "少女接受了命运的交接 用手抚摸着与好似与自己同源的的刀尖",
+                "color": "dark_gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "渴望鲜血的绞肉机却接到了一位善良的少女手上 她不能明白",
+                "color": "dark_gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "或许只是凋灵的衰落 也许亡灵真的不能与人类取得胜利 天生的缺陷捅穿了他们一次又一次",
+                "color": "dark_gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "少女哭了 但是她手上却牢牢握着「下界之星」",
+                "color": "dark_gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "或许是凋灵给她的挑战 她不在乎了",
+                "color": "dark_gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "紧接着她握紧了太刀和下界之星 默默合上了刀鞘 将太刀埋在了灵魂沙的深渊",
+                "color": "dark_gray",
+                "italic": false
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "text": "返回§6王之宝库",
+            "color": "green"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/wangzhibaoku/main"
+        }
+    }
+}

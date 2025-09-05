@@ -17,9 +17,9 @@
     execute if entity @e[team=red,tag=tuteng,type=wandering_trader] run scoreboard players add @a[team=red,scores={CanuseKard=1}] cishu 1
 #村民
     
-    execute if entity @e[team=blue,tag=tuteng,type=villager] run effect give @e[type=iron_golem,tag=tuteng,team=blue] instant_health 1 2 true
+    execute if entity @e[team=blue,tag=tuteng,type=villager] run effect give @e[type=iron_golem,tag=tuteng,team=blue] instant_health 1 2 false
     
-    execute if entity @e[team=red,tag=tuteng,type=villager] run effect give @e[type=iron_golem,tag=tuteng,team=red] instant_health 1 2 true
+    execute if entity @e[team=red,tag=tuteng,type=villager] run effect give @e[type=iron_golem,tag=tuteng,team=red] instant_health 1 2 false
 #豹猫
     execute as @e[tag=tuteng,type=ocelot] run function kards:game/yongpaiku/tuteng/round_event/baomao
 #培养尸

@@ -1,0 +1,97 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "text": "7K ",
+        "extra": [
+            {
+                "text": "劫掠小队",
+                "color": "dark_green"
+            }
+        ],
+        "color": "aqua",
+        "bold": true
+    },
+    "external_title": {
+        "text": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "music_disc_cat"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "召唤2只",
+                "color": "gray",
+                "extra": [
+                    {
+                        "text": " 劫掠者",
+                        "color": "gold"
+                    },
+                    {
+                        "text": " 和1只",
+                        "color": "gray"
+                    },
+                    {
+                        "text": " 卫道士",
+                        "color": "gold"
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "若存在敌方图腾",
+                "color": "gray",
+                "extra": [
+                    {
+                        "text": " 村民",
+                        "color": "red"
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "额外召唤1只",
+                "color": "gray",
+                "extra": [
+                    {
+                        "text": " 劫掠者",
+                        "color": "gold"
+                    },
+                    {
+                        "text": " 与1只",
+                        "color": "gray"
+                    },
+                    {
+                        "text": " 卫道士",
+                        "color": "gold"
+                    }
+                ]
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "text": "返回§d军团牌§a牌库",
+            "color": "green"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/juntuan/main"
+        }
+    }
+}

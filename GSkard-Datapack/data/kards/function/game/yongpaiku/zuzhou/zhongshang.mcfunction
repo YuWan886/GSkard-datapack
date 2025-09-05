@@ -1,6 +1,6 @@
-
-
 function kards:game/yongpaiku/use_general/kard_general
+
+
 
 tag @s add zhongshang_damage
 

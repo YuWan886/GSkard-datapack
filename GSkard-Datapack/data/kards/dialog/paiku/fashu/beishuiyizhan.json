@@ -27,15 +27,13 @@
       "type": "minecraft:plain_message",
       "contents": {
         "text": "抽2张牌",
-        "color": "gray"
-      },
-      "width": 1024
-    },
-    {
-      "type": "minecraft:plain_message",
-      "contents": {
-        "text": "此外队伍中每有一个玩家死亡 你就获得10点数 抽2张牌",
-        "color": "gray"
+        "color": "gray",
+        "extra": [
+          {
+            "text": " 此外队伍中每有一个玩家死亡 你就获得10点数 抽2张牌",
+            "color": "gold"
+          }
+        ]
       },
       "width": 1024
     },

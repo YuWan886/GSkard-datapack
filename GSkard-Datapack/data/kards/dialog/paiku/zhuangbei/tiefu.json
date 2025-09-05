@@ -1,0 +1,64 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "text": "5K ",
+        "extra": [
+            {
+                "text": "铁斧",
+                "color": "gold"
+            }
+        ],
+        "color": "aqua",
+        "bold": true
+    },
+    "external_title": {
+        "text": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "music_disc_13"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "装备牌",
+                "color": "gold",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "获得一把",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": "铁斧",
+                        "color": "gold",
+                        "italic": false
+                    }
+                ]
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "text": "返回§c装备§a牌库",
+            "color": "green"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/zhuangbei/main"
+        }
+    }
+}

@@ -1,4 +1,4 @@
-
+execute unless entity @s[type=player] run return fail
 
 #侦测贝
 execute if entity @s[team=red] if entity @e[tag=tuteng,team=red,type=shulker] run return run damage @n[tag=tuteng,team=red,type=shulker] 2 out_of_world

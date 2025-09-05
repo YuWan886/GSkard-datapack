@@ -1,0 +1,295 @@
+{
+    "type": "minecraft:multi_action",
+    "title": {
+        "text": "使用卡牌",
+        "type": "text",
+        "color": "gray",
+        "bold": true
+    },
+    "external_title": {
+        "text": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:music_disc_mall",
+                "components": {
+                    "item_name": [
+                        {
+                            "text": "2K",
+                            "color": "aqua",
+                            "italic": false
+                        },
+                        {
+                            "text": " "
+                        },
+                        {
+                            "text": "苦力怕",
+                            "color": "blue",
+                            "italic": false
+                        }
+                    ],
+                    "lore": [
+                        {
+                            "text": "基本牌",
+                            "color": "blue",
+                            "italic": false
+                        },
+                        [
+                            {
+                                "text": "召唤一只",
+                                "color": "gray",
+                                "italic": false
+                            },
+                            {
+                                "text": "苦力怕",
+                                "color": "gold",
+                                "italic": false
+                            }
+                        ]
+                    ],
+                    "tooltip_display": {
+                        "hidden_components": [
+                            "jukebox_playable"
+                        ]
+                    },
+                    "custom_data": {
+                        "kards": "苦力怕",
+                        "K": 2
+                    },
+                    "tooltip_style": "kards:kard/common"
+                }
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 512,
+            "contents": {
+                "text": "\n我该如何使用卡牌？\n\n\n",
+                "color": "gold",
+                "bold": true,
+                "extra": [
+                    {
+                        "text": "| 在对局中玩家可以通过",
+                        "color": "gray",
+                        "bold": true
+                    },
+                    {
+                        "text": "把卡牌放置在副手",
+                        "color": "gold",
+                        "bold": true
+                    },
+                    {
+                        "text": "来使用卡牌\n\n",
+                        "color": "gray",
+                        "bold": true
+                    },
+                    {
+                        "text": "| 卡牌的使用需要一定的点数 本地图称其为 ",
+                        "color": "gray",
+                        "bold": true
+                    },
+                    {
+                        "text": "K      \n\n",
+                        "color": "gold",
+                        "bold": true
+                    },
+                    {
+                        "text": "| 同时卡牌的使用也需要在",
+                        "color": "gray",
+                        "bold": true
+                    },
+                    {
+                        "text": "友方回合",
+                        "color": "gold",
+                        "bold": true
+                    },
+                    {
+                        "text": "才能够进行      \n\n",
+                        "color": "gray",
+                        "bold": true
+                    },
+                    {
+                        "text": "| 小部分牌使用时不消耗K转为消耗Kmax 如       ",
+                        "color": "gray",
+                        "bold": true
+                    }
+                ]
+            }
+        },
+        {
+            "type": "item",
+            "item": {
+                "id": "music_disc_strad",
+                "components": {
+                    "item_name": [
+                        {
+                            "text": "8Kmax",
+                            "color": "gold"
+                        },
+                        {
+                            "text": " "
+                        },
+                        {
+                            "text": "绝处逢生",
+                            "color": "white"
+                        }
+                    ],
+                    "lore": [
+                        {
+                            "text": "神迹牌",
+                            "color": "white",
+                            "italic": false
+                        },
+                        [
+                            {
+                                "text": "获得一次瞬间治疗",
+                                "color": "gray",
+                                "italic": false
+                            }
+                        ],
+                        [
+                            {
+                                "text": "恢复自身",
+                                "color": "gray",
+                                "italic": false
+                            },
+                            {
+                                "text": "所有生命值",
+                                "color": "gold",
+                                "italic": false
+                            }
+                        ]
+                    ],
+                    "tooltip_display": {
+                        "hidden_components": [
+                            "jukebox_playable"
+                        ]
+                    },
+                    "custom_data": {
+                        "kards": "绝处逢生",
+                        "Kmax": "8"
+                    },
+                    "tooltip_style": "kards:kard/god"
+                }
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 512,
+            "contents": [
+                {
+                    "text": "· 这张牌使用时需要消耗",
+                    "color": "gray",
+                    "bold": true,
+                    "extra": [
+                        {
+                            "text": "8Kmax                 \n\n",
+                            "color": "gold",
+                            "bold": true
+                        }
+                    ]
+                },
+                {
+                    "text": "· 特殊的是 他们",
+                    "color": "gray",
+                    "bold": true,
+                    "extra": [
+                        {
+                            "text": "可以在敌方回合使用!             \n\n",
+                            "color": "gold",
+                            "bold": true
+                        },
+                        {
+                            "text": "· 若你剩余Kmax不足",
+                            "color": "gray",
+                            "bold": true,
+                            "extra": [
+                                {
+                                    "text": " 他仍会继续使用!           ",
+                                    "color": "gold",
+                                    "bold": true
+                                },
+                                {
+                                    "text": "\n\n并将Kmax减为",
+                                    "color": "gray",
+                                    "bold": true
+                                },
+                                {
+                                    "text": "负数                        \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+                                    "color": "red",
+                                    "bold": true
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "actions": [
+        {
+      "label": {
+        "text": "获取卡牌信息",
+        "color": "gold"
+      },
+      "width": 125,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "kards:jiaocheng/wanfa/1"
+      }
+    },
+    {
+      "label": {
+        "text": "使用卡牌",
+        "color": "gold"
+      },
+      "width": 125,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "kards:jiaocheng/wanfa/2"
+      }
+    },
+    {
+      "label": {
+        "text": "资源获取",
+        "color": "gold"
+      },
+      "width": 125,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "kards:jiaocheng/wanfa/3"
+      }
+    },
+        {
+            "label": {
+                "text": "回合信息",
+                "color": "gold"
+            },
+            "width": 125,
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:jiaocheng/wanfa/4"
+            }
+        }
+    ],
+    "columns": 4,
+    "exit_action": {
+    "label": {
+        "text": "完成教程",
+        "color": "gold"
+      },
+      "tooltip": {
+        "text": "请确保阅读完毕",
+        "color":"gray"
+      },
+      "width": 125,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger dialog set 2"
+      }
+  }
+}

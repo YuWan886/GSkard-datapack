@@ -1,3 +1,4 @@
+function kards:game/yongpaiku/use_general/kard_general
 execute if entity @s[team=red] at @e[tag=blue_marker_6,limit=1] run summon minecraft:piglin ~ 0 ~ {Team:red,IsBaby:0b,IsImmuneToZombification:true,equipment:{mainhand:{id:"minecraft:golden_sword"},head:{id:"golden_helmet"},chest:{id:"golden_chestplate"},legs:{id:"golden_leggings"},feet:{id:"golden_boots"}}}
 execute if entity @s[team=red] at @e[tag=blue_marker_8,limit=1] run summon minecraft:piglin ~ 0 ~ {Team:red,IsBaby:0b,IsImmuneToZombification:true,equipment:{mainhand:{id:"minecraft:golden_sword"},head:{id:"golden_helmet"},chest:{id:"golden_chestplate"},legs:{id:"golden_leggings"},feet:{id:"golden_boots"}}}
 
@@ -13,7 +14,6 @@ execute if entity @s[team=blue,scores={Mob_Count_Nether=3..}] at @e[tag=red_mark
 scoreboard players reset @s Mob_Count_Nether
 
 function kards:game/yongpaiku/xianjing/jiance/mobjiance
-function kards:game/yongpaiku/use_general/kard_general
 
 item replace entity @s weapon.offhand with air
 scoreboard players operation @s kardCount -= #kard_xiajieruqing kardCount

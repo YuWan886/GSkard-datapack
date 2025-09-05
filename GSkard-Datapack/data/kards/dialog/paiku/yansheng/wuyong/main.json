@@ -1,0 +1,60 @@
+{
+    "type": "minecraft:multi_action",
+    "title": {
+        "text": "无用牌系列",
+        "color": "gray",
+        "bold": true
+    },
+    "external_title": {
+        "text": ""
+    },
+    "body": [],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "exit_action": {
+        "label": {
+            "text": "返回§7其他",
+            "color": "green"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/yansheng/main"
+        }
+    },
+    "columns": 3,
+    "actions": [
+        {
+            "label": {
+                "text": "无用之基",
+                "color": "blue"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/yansheng/wuyong/jiben"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "无用之法",
+                "color": "light_purple"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/yansheng/wuyong/fashu"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "无用之神",
+                "color": "white"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/yansheng/wuyong/shenji"
+            },
+            "width": 75
+        }
+    ]
+}

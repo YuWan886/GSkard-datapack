@@ -18,6 +18,6 @@
         }
     },
     "rewards": {
-        "function": "kards:game/shield/trigger_1"
+        "function": "kards:game/player/shield/trigger_1"
     }
 }

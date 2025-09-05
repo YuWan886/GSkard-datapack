@@ -21,6 +21,6 @@
     }
   },
   "rewards": {
-    "function": "kards:game/shield/trigger_2"
+    "function": "kards:game/player/shield/trigger_2"
   }
 }

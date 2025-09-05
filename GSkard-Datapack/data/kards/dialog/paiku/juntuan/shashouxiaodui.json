@@ -1,0 +1,79 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "text": "4K ",
+        "extra": [
+            {
+                "text": "杀手小队",
+                "color": "dark_green"
+            }
+        ],
+        "color": "aqua",
+        "bold": true
+    },
+    "external_title": {
+        "text": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "music_disc_cat"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "召唤4只",
+                "color": "gray",
+                "extra": [
+                    {
+                        "text": " 杀手兔",
+                        "color": "gold"
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "若其受",
+                "color": "gray",
+                "extra": [
+                    {
+                        "text": " [无形]",
+                        "color": "dark_gray"
+                    },
+                    {
+                        "text": " 影响",
+                        "color": "gray"
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "获得无限时长的隐身buff",
+                "color": "gray"
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "text": "返回§d军团牌§a牌库",
+            "color": "green"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/juntuan/main"
+        }
+    }
+}

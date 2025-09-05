@@ -1,0 +1,291 @@
+{
+    "type": "minecraft:multi_action",
+    "title": {
+        "text": "装备牌",
+        "color": "gold",
+        "bold": true
+    },
+    "external_title": {
+        "text": ""
+    },
+    "body": [],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "exit_action": {
+        "label": {
+            "text": "返回§6主§a牌库",
+            "color": "green"
+        },
+        "action": {
+            "type": "show_dialog",
+            "dialog": "kards:paiku/main"
+        }
+    },
+    "columns": 5,
+    "actions": [
+        {
+            "label": {
+                "text": "铁剑",
+                "color": "gold"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/zhuangbei/tiejian"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "便携活塞",
+                "color": "gold"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/zhuangbei/bianxiehuosai"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "不死图腾",
+                "color": "gold"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/zhuangbei/busituteng"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "盾牌",
+                "color": "gold"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/zhuangbei/dunpai"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "海龟鳞甲",
+                "color": "gold"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/zhuangbei/haiguilinjia"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "尖端盾牌",
+                "color": "gold"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/zhuangbei/jianduandunpai"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "荆棘盾牌",
+                "color": "gold"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/zhuangbei/jingjidunpai"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "金剑",
+                "color": "gold"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/zhuangbei/jinjian"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "金升级",
+                "color": "gold"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/zhuangbei/jinshengji"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "灵魂收割器",
+                "color": "gold"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/zhuangbei/linghunshougeqi"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "龙息",
+                "color": "gold"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/zhuangbei/longxi"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "破碎剑刃",
+                "color": "gold"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/zhuangbei/posuijianren"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "全息盾牌",
+                "color": "gold"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/zhuangbei/quanxidunpai"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "铁斧",
+                "color": "gold"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/zhuangbei/tiefu"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "铁升级",
+                "color": "gold"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/zhuangbei/tieshengji"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "维护",
+                "color": "gold"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/zhuangbei/weihu"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "下界合金剑",
+                "color": "gold"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/zhuangbei/xiajiehejinjian"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "下界合金升级",
+                "color": "gold"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/zhuangbei/xiajiehejinshengji"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "鞋钉",
+                "color": "gold"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/zhuangbei/xieding"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "迅捷之羽",
+                "color": "gold"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/zhuangbei/xunjiezhiyu"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "重锤",
+                "color": "gold"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/zhuangbei/zhongchui"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "钻石斧",
+                "color": "gold"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/zhuangbei/zuanshifu"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "钻石剑",
+                "color": "gold"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/zhuangbei/zuanshijian"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "钻石升级",
+                "color": "gold"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/zhuangbei/zuanshishengji"
+            },
+            "width": 75
+        }
+    ]
+}

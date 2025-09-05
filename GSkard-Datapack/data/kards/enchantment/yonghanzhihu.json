@@ -22,6 +22,7 @@
           "type": "minecraft:run_function",
           "function": "kards:enchantment/yonghanzhihu"
         },
+        
         "enchanted": "victim",
         "affected": "attacker"
       }

@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:confirmation",
+  "type": "notice",
   "title": {
     "text": "",
     "type": "text",
@@ -9,58 +9,107 @@
   "external_title": {
     "text": ""
   },
-  "body": {
-    "type": "minecraft:plain_message",
-    "contents": {
-      "text": "\n\n\n\n\n\n\n\n\n",
-      "extra": [
-        "欢迎来到\n\n\n\n",
-        {
-          "text": "GSkard\n",
-          "color": "green",
-          "bold": true,
-          "font": "minecraft:un_size_18"
-        },
-        {
-          "text": "\n\n\n\n  请问您是否游玩过这一张地图?",
-          "color": "gold",
-          "bold": true,
-          "font": "minecraft:un_size_18"
-        }
-      ],
-      "color": "gold",
-      "bold": true,
-      "font": "minecraft:un_size_18"
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "\n\n\n\ue000\n\n\n\n"
+      },
+      "width": 512
     },
-    "width": 1024
-  },
-  "inputs": [],
-  "can_close_with_escape": false,
-  "yes": {
-    "label": {
-      "text": "是的，我是老登",
-      "color": "green",
-      "bold": true
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "欢迎来到\n\n",
+        "color": "gray",
+        "extra": [
+          {
+            "text": "GSkard\n\n",
+            "color": "green",
+            "bold": true
+          },
+          {
+            "text": "在游玩开始之前\n\n",
+            "color": "gray",
+            "bold": true
+          },
+          {
+            "text": "在游玩开始之前 请检查您的材质包",
+            "color": "gold",
+            "bold": true
+          }
+        ],
+        "bold": true
+      },
+      "width": 1024
     },
-    "action": {
-      "type": "minecraft:show_dialog",
-      "dialog": "kards:first_join/confirm"
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "field_masoned_banner_pattern"
+      },
+      "show_decorations": false,
+      "show_tooltip": false
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "如上\n\n",
+        "color": "gray",
+        "extra": [
+          {
+            "text": "若您材质包加载正确 那么应该看到的是\n\n",
+            "color": "green",
+            "bold": true
+          },
+          {
+            "text": "就被管家活活打断了双腿.jpg\n",
+            "color": "gray",
+            "bold": true
+          }
+        ],
+        "bold": true
+      },
+      "width": 1024
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "建议将",
+        "color": "gray",
+        "extra": [
+          {
+            "text": "界面尺寸",
+            "color": "gold",
+            "bold": true
+          },
+          {
+            "text": "调整至",
+            "color": "gray",
+            "bold": true
+          },
+          {
+            "text": "2",
+            "color": "gold",
+            "bold": true
+          }
+        ],
+        "bold": true
+      },
+      "width": 1024
     }
+  ],
+"inputs": [],
+"can_close_with_escape": false,
+"action": {
+  "label": {
+    "text": "下一页",
+    "color": "green",
+    "bold": true
   },
-  "no": {
-    "label": {
-      "text": "不，我是萌新",
-      "color": "red",
-      "bold": true
-    },
-    "tooltip": {
-      "text": "进入新手教程",
-      "color": "gray",
-      "bold": true
-    },
-    "action": {
-      "type": "minecraft:show_dialog",
-      "dialog": "kards:jiaocheng/menu"
-    }
+  "action": {
+    "type": "minecraft:show_dialog",
+    "dialog": "kards:first_join/2"
   }
+}
 }

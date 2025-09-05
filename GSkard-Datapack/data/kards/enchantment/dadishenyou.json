@@ -1,0 +1,53 @@
+{
+    "anvil_cost": 8,
+    "description": "大地神佑",
+    "effects": {
+        "minecraft:tick": [
+            {
+                "effect": {
+                    "type": "run_function",
+                    "function": "kards:enchantment/dadishenyou/true"
+                },
+                "requirements": {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "flags": {
+                            "is_on_ground": true
+                        }
+                    }
+                }
+            },
+            {
+                "effect": {
+                    "type": "run_function",
+                    "function": "kards:enchantment/dadishenyou/false"
+                },
+                "requirements": {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "flags": {
+                            "is_on_ground": false
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "max_cost": {
+        "base": 15,
+        "per_level_above_first": 8
+    },
+    "max_level": 4,
+    "min_cost": {
+        "base": 8,
+        "per_level_above_first": 5
+    },
+    "primary_items": "#minecraft:enchantable/armor",
+    "slots": [
+        "feet"
+    ],
+    "supported_items": "#minecraft:enchantable/armor",
+    "weight": 4
+}

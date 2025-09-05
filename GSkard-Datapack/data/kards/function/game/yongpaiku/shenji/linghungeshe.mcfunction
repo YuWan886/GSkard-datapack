@@ -1,7 +1,7 @@
+function kards:game/yongpaiku/use_general/kard_general
 
 
 function kards:game/yongpaiku/xianjing/jiance/shenjijiance
-function kards:game/yongpaiku/use_general/kard_general
 
 execute if entity @s[team=red] run kill @a[team=blue,scores={health=..50},gamemode=adventure,tag=!jinzijue]
 

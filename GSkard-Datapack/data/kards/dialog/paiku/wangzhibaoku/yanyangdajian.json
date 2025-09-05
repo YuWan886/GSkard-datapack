@@ -1,0 +1,203 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "text": "炎阳大剑",
+        "color": "dark_red",
+        "italic": false
+    },
+    "external_title": {
+        "text": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:iron_sword"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "击杀生物时 燃烧其血液",
+                "color": "gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "对",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": "最近的敌人",
+                        "color": "gold",
+                        "italic": false
+                    },
+                    {
+                        "text": "造成",
+                        "color": "gray",
+                        "italic": false
+                    },
+                    {
+                        "text": "7.5♥火焰伤害",
+                        "color": "red",
+                        "italic": false
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "若",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": "[沸血]",
+                        "color": "dark_red",
+                        "italic": false
+                    },
+                    {
+                        "text": "击杀了敌人",
+                        "color": "gray",
+                        "italic": false
+                    },
+                    {
+                        "text": "再次",
+                        "color": "gold",
+                        "italic": false
+                    },
+                    {
+                        "text": "释放该效果",
+                        "color": "gray",
+                        "italic": false
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "",
+                "color": "gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "炎护",
+                "color": "#e36c09",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "手持获得火焰保护",
+                "color": "gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "",
+                "color": "gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "焚烧之域",
+                "color": "#690101",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "长按shift2.5s 开启",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": "焚烧之域",
+                        "color": "#690101",
+                        "italic": false
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "期间获得",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": "速度2与抗性提升1",
+                        "color": "gold",
+                        "italic": false
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "持续点燃5格内敌人并每秒额外造成1♥燃烧伤害",
+                "color": "gold",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "持续10s CD35s",
+                "color": "gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "",
+                "color": "gray",
+                "italic": false
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "text": "返回§6王之宝库",
+            "color": "green"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/wangzhibaoku/main"
+        }
+    }
+}

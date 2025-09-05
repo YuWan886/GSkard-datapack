@@ -19,13 +19,15 @@ execute if score 回合数 GameRound = #system RoundCount run return run functio
 scoreboard players add 回合数 GameRound 1
 function kards:game/ingame/round/turns/panding
 
-execute if score 回合数 GameRound matches 11 run advancement grant @a only kards:chengjiu/round/11
-execute if score 回合数 GameRound matches 31 run advancement grant @a only kards:chengjiu/round/31
-execute if score 回合数 GameRound matches 51 run advancement grant @a only kards:chengjiu/round/51
-execute if score 回合数 GameRound matches 101 run advancement grant @a only kards:chengjiu/round/101
+execute if score 回合数 GameRound matches 11 run advancement grant @a only kards:advancement/round/11
+execute if score 回合数 GameRound matches 31 run advancement grant @a only kards:advancement/round/31
+execute if score 回合数 GameRound matches 51 run advancement grant @a only kards:advancement/round/51
+execute if score 回合数 GameRound matches 101 run advancement grant @a only kards:advancement/round/101
 #回合轮换之后生效
 #陷阱
 function kards:game/yongpaiku/xianjing/jiance/roundjiance
+#天赋
+function kards:game/ingame/round/talent
 #回合规则
 function kards:game/random_start/round_event
 #检测回合 事件通知

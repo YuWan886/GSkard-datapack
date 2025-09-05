@@ -1,8 +1,8 @@
 
 
 
-execute if entity @s[team=red] run effect give @a[team=blue] absorption 20 9 true
-execute if entity @s[team=blue] run effect give @a[team=red] absorption 20 9 true
+execute if entity @s[team=red] run effect give @a[team=blue] absorption 20 9 false
+execute if entity @s[team=blue] run effect give @a[team=red] absorption 20 9 false
 
 execute if entity @s[team=red] run scoreboard players set 红队 xianjin_shusifangshou 0
 execute if entity @s[team=blue] run scoreboard players set 蓝队 xianjin_shusifangshou 0

@@ -1,0 +1,192 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "text": "18K ",
+        "extra": [
+            {
+                "text": "培养尸",
+                "color": "red"
+            }
+        ],
+        "color": "aqua",
+        "bold": true
+    },
+    "external_title": {
+        "text": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "music_disc_blocks"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "图腾牌",
+                "color": "red",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "在队伍图腾区生成",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": "培养尸",
+                        "color": "gold",
+                        "italic": false
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "图腾存活效果：",
+                "color": "gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "1.队伍玩家获得",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": "防火",
+                        "color": "gold",
+                        "italic": false
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "2.",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": "培养尸",
+                        "color": "gold",
+                        "italic": false
+                    },
+                    {
+                        "text": "在造成",
+                        "color": "gray",
+                        "italic": false
+                    },
+                    {
+                        "text": "30♥",
+                        "color": "gold",
+                        "italic": false
+                    },
+                    {
+                        "text": "的生命之后变为",
+                        "color": "gray",
+                        "italic": false
+                    },
+                    {
+                        "text": "[尸帝]",
+                        "color": "dark_green",
+                        "italic": false
+                    },
+                    {
+                        "text": " 置入随机一名友方玩家手中",
+                        "color": "gray",
+                        "italic": false
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "-放置",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": "培养尸",
+                        "color": "red",
+                        "italic": false
+                    },
+                    {
+                        "text": "时若队伍内有",
+                        "color": "gray",
+                        "italic": false
+                    },
+                    {
+                        "text": "村民",
+                        "color": "red",
+                        "italic": false
+                    },
+                    {
+                        "text": " 培养尸",
+                        "color": "red",
+                        "italic": false
+                    },
+                    {
+                        "text": "会吞噬",
+                        "color": "gray",
+                        "italic": false
+                    },
+                    {
+                        "text": "村民",
+                        "color": "red",
+                        "italic": false
+                    },
+                    {
+                        "text": "以提升10♥培养值",
+                        "color": "gray",
+                        "italic": false
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "-回合开始时对敌方随机1名玩家造成",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": "5♥真实伤害",
+                        "color": "white",
+                        "italic": false
+                    }
+                ]
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "text": "返回§c图腾§a牌库",
+            "color": "green"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/tuteng/main"
+        }
+    }
+}

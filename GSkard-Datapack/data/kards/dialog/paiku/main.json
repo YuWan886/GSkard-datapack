@@ -6,18 +6,14 @@
     "bold": true
   },
   "external_title": {
-    "text": ""
+    "text": "牌库",
+    "color": "gold",
+    "bold": true
   },
   "body": [],
   "inputs": [],
-  "can_close_with_escape": true,
-  "exit_action": {
-    "label": {
-      "text": "返回§6主菜单",
-      "color": "green"
-    }
-  },
-  "columns": 3,
+  "can_close_with_escape":true,
+  "columns": 4,
   "actions": [
     {
       "label": {
@@ -27,6 +23,88 @@
       "action": {
         "type": "minecraft:show_dialog",
         "dialog": "kards:paiku/fashu/main"
+      }
+    },
+    {
+      "label": {
+        "text": "基本牌",
+        "color": "blue"
+      },
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "kards:paiku/jiben/main"
+      }
+    },
+    {
+      "label": {
+        "text": "军团牌",
+        "color": "dark_green"
+      },
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "kards:paiku/juntuan/main"
+      }
+    },
+    {
+      "label": {
+        "text": "神迹牌",
+        "color": "white",
+        "bold": true
+      },
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "kards:paiku/shenji/main"
+      }
+    },
+    {
+      "label": {
+        "text": "装备牌",
+        "color": "gold"
+      },
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "kards:paiku/zhuangbei/main"
+      }
+    },
+    {
+      "label": {
+        "text": "诅咒牌",
+        "color": "dark_gray"
+      },
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "kards:paiku/zuzhou/main"
+      }
+    },
+    {
+      "label": {
+        "text": "陷阱牌",
+        "color": "dark_aqua"
+      },
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "kards:paiku/xianjing/main"
+      }
+    },
+    {
+      "label": {
+        "text": "其他",
+        "color": "gray"
+      },
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "kards:paiku/yansheng/main"
+      }
+    },
+    {
+      "label": {
+        "text": "王之宝库",
+        "color": "gold",
+        "bold": true
+      },
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "kards:paiku/wangzhibaoku/main"
       }
     }
   ]

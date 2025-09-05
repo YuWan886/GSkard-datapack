@@ -1,7 +1,7 @@
+function kards:game/yongpaiku/use_general/kard_general
 
 
 function kards:game/yongpaiku/xianjing/jiance/shenjijiance
-function kards:game/yongpaiku/use_general/kard_general
 execute store result score @s wangzhibaoku run random value 1..16
 execute if score @s wangzhibaoku matches 1 run function kards:game/yongpaiku/shenji/wangzhibaoku/fengbaozhanchui/give
 execute if score @s wangzhibaoku matches 2 run function kards:game/yongpaiku/shenji/wangzhibaoku/kunanyaolan/give

@@ -1,7 +1,7 @@
+function kards:game/yongpaiku/use_general/kard_general
 
 
 function kards:game/yongpaiku/xianjing/jiance/shenjijiance
-function kards:game/yongpaiku/use_general/kard_general
 item replace entity @s weapon.offhand with air
 execute store result score @s haogaowuyuan run clear @s #minecraft:creeper_drop_music_discs 0
 clear @s #minecraft:creeper_drop_music_discs

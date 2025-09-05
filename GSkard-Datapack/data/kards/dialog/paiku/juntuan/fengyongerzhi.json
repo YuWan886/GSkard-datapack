@@ -1,0 +1,81 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "text": "4K ",
+        "extra": [
+            {
+                "text": "蜂拥而至",
+                "color": "dark_green"
+            }
+        ],
+        "color": "aqua",
+        "bold": true
+    },
+    "external_title": {
+        "text": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "music_disc_cat"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "在中间召唤4只",
+                "color": "gray",
+                "extra": [
+                    {
+                        "text": " 蜜蜂",
+                        "color": "gold"
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "若场上存在",
+                "color": "gray",
+                "extra": [
+                    {
+                        "text": " 友方蜜蜂",
+                        "color": "green"
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "改为",
+                "color": "gray",
+                "extra": [
+                    {
+                        "text": " 位于其召唤4只蜜蜂",
+                        "color": "gold"
+                    }
+                ]
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "text": "返回§d军团牌§a牌库",
+            "color": "green"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/juntuan/main"
+        }
+    }
+}

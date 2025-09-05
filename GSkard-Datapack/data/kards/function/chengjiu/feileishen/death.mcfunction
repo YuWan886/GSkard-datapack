@@ -1,2 +1,0 @@
-tellraw @a [{selector:"@s"},{text: "达成了进度",color:"white"},{text: "[幻影快递]",color:"green","hover_event":{"action":"show_text",value:{text:"幻影快递\n使用飞雷神然后死亡",color:"green"}}}]
-playsound ui.toast.out player @s ~ ~ ~ 100 1

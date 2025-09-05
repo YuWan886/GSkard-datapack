@@ -1,0 +1,29 @@
+{
+    "anvil_cost": 8,
+    "description": {"text": "浴火者","color": "red"},
+    "effects": {
+        "minecraft:tick": [
+            {
+                "effect": {
+                    "type": "run_function",
+                    "function": "kards:enchantment/yuhuozhe"
+                }
+            }
+        ]
+    },
+    "max_cost": {
+        "base": 15,
+        "per_level_above_first": 8
+    },
+    "max_level": 1,
+    "min_cost": {
+        "base": 8,
+        "per_level_above_first": 5
+    },
+    "primary_items": "#minecraft:enchantable/head_armor",
+    "slots": [
+        "head"
+    ],
+    "supported_items": "#head_armor",
+    "weight": 4
+}

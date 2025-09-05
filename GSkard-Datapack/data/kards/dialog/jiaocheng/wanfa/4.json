@@ -1,0 +1,229 @@
+{
+    "type": "minecraft:multi_action",
+    "title": {
+        "text": "回合信息",
+        "type": "text",
+        "color": "gray",
+        "bold": true
+    },
+    "external_title": {
+        "text": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "width": 1024,
+            "contents": {
+                "text": "什么是出牌回合与PVP回合?\n\n",
+                "color": "gold",
+                "bold": true,
+                "extra": [
+                    {
+                        "text": "| 一把游戏分为",
+                        "color": "gray",
+                        "bold": true
+                    },
+                    {
+                        "text": "出牌回合",
+                        "color": "gold",
+                        "bold": true
+                    },
+                    {
+                        "text": "与",
+                        "color": "gray",
+                        "bold": true
+                    },
+                    {
+                        "text": "PVP回合\n\n",
+                        "color": "gold",
+                        "bold": true
+                    },
+                    {
+                        "text": "· ",
+                        "color": "gray",
+                        "bold": true
+                    },
+                    {
+                        "text": "出牌回合",
+                        "color": "gold",
+                        "bold": true
+                    },
+                    {
+                        "text": "是玩家出牌对战的回合\n\n",
+                        "color": "gray",
+                        "bold": true
+                    },
+                    {
+                        "text": "· ",
+                        "color": "gray",
+                        "bold": true
+                    },
+                    {
+                        "text": "PVP回合",
+                        "color": "gold",
+                        "bold": true
+                    },
+                    {
+                        "text": "是玩家在出牌回合难以决胜负的情况下进入的回合\n\n",
+                        "color": "gray",
+                        "bold": true
+                    },
+                    {
+                        "text": "出牌回合\n\n",
+                        "color": "gold",
+                        "bold": true
+                    },
+                    {
+                        "text": "| 玩家只能在",
+                        "color": "gray",
+                        "bold": true
+                    },
+                    {
+                        "text": "友方回合",
+                        "color": "green",
+                        "bold": true
+                    },
+                    {
+                        "text": "进行常规出牌\n\n",
+                        "color": "gray",
+                        "bold": true
+                    },
+                    {
+                        "text": "| 反之不能在",
+                        "color": "gray",
+                        "bold": true
+                    },
+                    {
+                        "text": "敌方回合",
+                        "color": "red",
+                        "bold": true
+                    },
+                    {
+                        "text": "进行常规出牌\n\n",
+                        "color": "gray",
+                        "bold": true
+                    },
+                    {
+                        "text": "| 对局中你可以通过头顶的",
+                        "color": "gray",
+                        "bold": true
+                    },
+                    {
+                        "text": "血条颜色与信息",
+                        "color": "gold",
+                        "bold": true
+                    },
+                    {
+                        "text": "来获悉回合信息\n\n",
+                        "color": "gray",
+                        "bold": true
+                    },
+                    {
+                        "text": "PVP回合\n\n",
+                        "color": "gold",
+                        "bold": true
+                    },
+                    {
+                        "text": "| 所有玩家传送至",
+                        "color": "gray",
+                        "bold": true
+                    },
+                    {
+                        "text": "PVP场地",
+                        "color": "green",
+                        "bold": true
+                    },
+                    {
+                        "text": "并获得一段",
+                        "color": "gray",
+                        "bold": true
+                    },
+                    {
+                        "text": "准备时间\n\n",
+                        "color": "gold",
+                        "bold": true
+                    },
+                    {
+                        "text": "· 准备时间开始后所有玩家获得100K         \n\n",
+                        "color": "gray",
+                        "bold": true
+                    },
+                    {
+                        "text": "· 准备时间内玩家可以常规用牌              \n\n",
+                        "color": "gray",
+                        "bold": true
+                    },
+                    {
+                        "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+                        "color": "gray",
+                        "bold": true
+                    }
+                ]
+            }
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "actions": [
+        {
+            "label": {
+                "text": "获取卡牌信息",
+                "color": "gold"
+            },
+            "width": 125,
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:jiaocheng/wanfa/1"
+            }
+        },
+        {
+            "label": {
+                "text": "使用卡牌",
+                "color": "gold"
+            },
+            "width": 125,
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:jiaocheng/wanfa/2"
+            }
+        },
+        {
+            "label": {
+                "text": "资源获取",
+                "color": "gold"
+            },
+            "width": 125,
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:jiaocheng/wanfa/3"
+            }
+        },
+        {
+            "label": {
+                "text": "回合信息",
+                "color": "gold"
+            },
+            "width": 125,
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:jiaocheng/wanfa/4"
+            }
+        }
+    ],
+    "columns": 4,
+    "exit_action": {
+    "label": {
+        "text": "完成教程",
+        "color": "gold"
+      },
+      "tooltip": {
+        "text": "请确保阅读完毕",
+        "color":"gray"
+      },
+      "width": 125,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger dialog set 2"
+      }
+  }
+}
