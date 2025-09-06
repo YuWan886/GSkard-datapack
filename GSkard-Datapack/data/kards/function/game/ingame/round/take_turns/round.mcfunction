@@ -27,7 +27,7 @@ execute if score 回合数 GameRound matches 101 run advancement grant @a only k
 #陷阱
 function kards:game/yongpaiku/xianjing/jiance/roundjiance
 #天赋
-function kards:game/ingame/round/talent
+execute as @a[scores={CanuseKard=1}] run function kards:game/ingame/round/talent
 #回合规则
 function kards:game/random_start/round_event
 #检测回合 事件通知
