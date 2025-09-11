@@ -1,4 +1,4 @@
-execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'下界入侵'}] if score @s kardCount >= #kard_xiajieruqing kardCount run function kards:game/yongpaiku/juntuan/xiajieruqing
+execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'下界入侵'}] if score @s kardCount >= #kard_xiajieruqing kardCount run function kards:game/yongpaiku/juntuan/xiajieruqing/1
 execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'虫灾'}] if score @s kardCount >= #kard_chongzai kardCount run function kards:game/yongpaiku/juntuan/chongzai
 execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'地狱之火'}] if score @s kardCount >= #kard_diyuzhihuo kardCount run function kards:game/yongpaiku/juntuan/diyuzhihuo
 execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'行尸走肉'}] if score @s kardCount >= #kard_xingshizourou kardCount run function kards:game/yongpaiku/juntuan/xingshizourou

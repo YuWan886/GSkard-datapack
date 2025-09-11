@@ -77,9 +77,7 @@ execute if entity @a[scores={ZhongShang_Round=0}] unless entity @a[scores={Zhong
 execute unless entity @a[scores={ZhongShang_Round=0}] if entity @a[scores={ZhongShang_Round=1..}] run tellraw @a [{text: "-",color:"gray"}]
 execute if entity @a[scores={ZhongShang_Round=0}] if entity @a[scores={ZhongShang_Round=1..}] run tellraw @a [{text: "-",color:"gray"}]
 #沉默
-scoreboard players remove @e[scores={chengmo=1..}] chengmo 1
-execute if score @e[tag=r_dw,limit=1] chengmo matches 1.. run tellraw @a [[{text: "红队",color:"red",bold:true},{text: "[沉默]",color:"dark_gray",bold:true},{text: "生效中",color:"dark_gray",bold:true}],{text:"\n持续清除玩家周围掉落物",color:"gold"}]
-execute if score @e[tag=b_dw,limit=1] chengmo matches 1.. run tellraw @a [[{text: "蓝队",color:"blue",bold:true},{text: "[沉默]",color:"dark_gray",bold:true},{text: "生效中",color:"dark_gray",bold:true}],{text:"\n持续清除玩家周围掉落物",color:"gold"}]
+scoreboard players remove @a[scores={chengmo=1..}] chengmo 1
 #狼群战术
 execute if entity @a[scores={langqunzhanshu=1..}] run tellraw @a [{text: "[狼群战术]",color:"light_purple",bold:true},{text:"生效至\n",color:"gray"},{selector:"@a[scores={langqunzhanshu=1}]",bold:true},{text: "\n他们本回合不抽卡",color:"gray",bold:true}]
 execute if entity @a[scores={langqunzhanshu=1..}] run tellraw @a [{text: "-",color:"gray"}]

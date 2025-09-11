@@ -6,7 +6,6 @@ execute if score #system GameStatus matches 1 run function kards:game/ingame/rou
 #分数小标题
 execute as @a[gamemode=adventure,tag=Ready] if score #system GameStatus matches 1..2 unless items entity @s weapon.mainhand lantern[custom_data={kards:"wuxiuzhihuo"}] run title @s actionbar [{text: "K/Kmax  ",color:"dark_green"},{score:{objective:"kardCount",name:"@s"},color:"red"},{text: "/",color: "red"},{score:{objective:"kardCountmax",name:"@s"},color:"red",bold: true}]
 #赋值
-scoreboard players add @a chengmo 0
 scoreboard players add @a touxiang 0
 scoreboard players add 红队 touxiang 0
 scoreboard players add 蓝队 touxiang 0
@@ -24,81 +23,28 @@ execute positioned -219 -65 -173 as @a[dx=19,dz=18,dy=25,gamemode=adventure] run
 execute as @a positioned -219 -65 -173 unless entity @s[dx=19,dz=18,dy=25,gamemode=adventure] run attribute @s minecraft:safe_fall_distance modifier remove 0-0-1
 #装备
 function kards:game/yongpaiku/zhuangbei/general
+#永寒
+execute if entity @e[scores={YongHan=0..}] run function kards:game/ingame/custom_buff/yonghan/1
+#冻结
+execute if entity @e[scores={DongJie=0..}] run function kards:game/ingame/custom_buff/dongjie/1
+#重伤
+execute if entity @a[scores={ZhongShang_Tick=0..}] run function kards:game/ingame/custom_buff/zhongshang/tick
+execute if entity @a[scores={ZhongShang_Round=0..}] run function kards:game/ingame/custom_buff/zhongshang/round
 #回血
 execute if entity @e[scores={HealBack=0..}] run function kards:game/ingame/custom_buff/healback
-#永寒
-execute if entity @e[scores={YongHan=0..}] run function kards:game/ingame/custom_buff/yonghan
-#冻结
-execute if entity @e[tag=DongJie] run function kards:game/ingame/custom_buff/dongjie/1
-#重伤
-execute if entity @a[tag=ZhongShang_Tick] run function kards:game/ingame/custom_buff/zhongshang/tick
-execute if entity @a[tag=ZhongShang_Round] run function kards:game/ingame/custom_buff/zhongshang/round
-#破碎
-scoreboard players remove @e[tag=PoJia,scores={PoJia=1..}] PoJia 1
-
-execute as @e[tag=PoJia,scores={PoJia=1..}] run attribute @s armor modifier add 0-0-2 -0.4 add_multiplied_total
-
-execute as @e[tag=PoJia,scores={PoJia=1..}] at @s run particle enchanted_hit ~ ~2.3 ~ 0.2 0 0.2 0 4 force @a
-execute as @e[tag=PoJia,scores={PoJia=0}] run attribute @s armor modifier remove 0-0-2
-execute as @e[tag=PoJia,scores={PoJia=0}] run tag @s remove PoJia
-execute as @e[tag=PoJia,scores={PoJia=0}] run scoreboard players reset @s PoJia
+#破甲
+execute if entity @e[scores={PoJia=0..}] run function kards:game/ingame/custom_buff/pojia/1
 #眩晕
-scoreboard players remove @e[tag=XuanYun,scores={XuanYun=1..}] XuanYun 1
-
-effect give @e[tag=XuanYun,scores={XuanYun=1..}] slowness 1 100 false
-effect give @e[tag=XuanYun,scores={XuanYun=1..}] blindness 2 100 false
-execute as @e[tag=XuanYun,scores={XuanYun=1..}] run attribute @s minecraft:jump_strength modifier add 0-0-1 -100 add_value
-execute as @e[tag=XuanYun,scores={XuanYun=1..}] run effect clear @s jump_boost
-execute as @e[tag=XuanYun,scores={XuanYun=1..}] at @s run rotate @s ~ 90
-title @a[tag=XuanYun,scores={XuanYun=1..}] times 0t 1s 0t
-title @a[tag=XuanYun,scores={XuanYun=1..}] title {text: "眩晕中...",color:"gray",bold:true}
-effect clear @e[tag=XuanYun,scores={XuanYun=0}] slowness
-effect clear @e[tag=XuanYun,scores={XuanYun=0}] blindness
-execute as @e[tag=XuanYun,scores={XuanYun=0}] run attribute @s minecraft:jump_strength modifier remove 0-0-1
-title @a[tag=XuanYun,scores={XuanYun=0}] title {text: ""}
-scoreboard players reset @e[scores={XuanYun=0}] XuanYun
-tag @e[tag=XuanYun,scores={XuanYun=0}] remove XuanYun
-
-scoreboard players reset @a[gamemode=spectator,tag=XuanYun] XuanYun
-tag @a[gamemode=spectator,tag=XuanYun] remove XuanYun
+execute if entity @e[tag=XuanYun,scores={XuanYun=0..}] run function kards:game/ingame/custom_buff/xuanyun/1
 #旋转
-scoreboard players remove @a[tag=XuanZhuan,scores={XuanZhuan=1..}] XuanZhuan 1
-execute as @a[tag=XuanZhuan,scores={XuanZhuan=1..}] at @s run rotate @s ~50 ~
-
-tag @a[tag=XuanZhuan,scores={XuanZhuan=0}] remove XuanZhuan
-
-scoreboard players reset @a[gamemode=spectator,tag=XuanZhuan] XuanZhuan
-tag @a[gamemode=spectator,tag=XuanZhuan] remove XuanZhuan
+execute if entity @e[scores={XuanZhuan=0..}] run function kards:game/ingame/custom_buff/xuanzhuan
 #断腿
-scoreboard players remove @a[tag=DuanTui,scores={DuanTui=1..}] DuanTui 1
-execute as @a[tag=DuanTui,scores={DuanTui=1..}] run attribute @s minecraft:jump_strength modifier add 0-0-2 -1 add_multiplied_total
-execute as @a[tag=DuanTui,scores={DuanTui=0}] run attribute @s minecraft:jump_strength modifier remove 0-0-2
-tag @a[tag=DuanTui,scores={DuanTui=0}] remove DuanTui
-
-scoreboard players reset @a[gamemode=spectator,tag=DuanTui] DuanTui
-tag @a[gamemode=spectator,tag=DuanTui] remove DuanTui
-
+execute if entity @e[scores={DuanTui=0..}] run function kards:game/ingame/custom_buff/duantui/1
 #火焰
-execute as @a if predicate kards:fanghuo run tag @s add Fired
-scoreboard players remove @e[tag=Fire,scores={Fire=1..}] Fire 1
-scoreboard players add @e[tag=Fire,scores={Fire=1..}] Fire_take_damage 1
-execute as @e[scores={Fire_take_damage=10}] run damage @s 1.5 kards:huoyan
-execute as @e[scores={Fire_take_damage=10},tag=Fire_Ex] run damage @s 3 kards:huoyan
-execute as @e[scores={Fire_take_damage=10}] at @s run particle lava ~ ~1 ~ 0 0 0 0 2 force @a
-execute as @a[scores={Fire_take_damage=10}] if items entity @s armor.head #head_armor[enchantments~[{enchantments:'kards:yuhuozhe'}]] run scoreboard players add @s HealBack 1
-execute as @e[scores={Fire_take_damage=10}] run scoreboard players set @s Fire_take_damage 0
+execute if entity @e[scores={Fire=0..}] run function kards:game/ingame/custom_buff/huoyan/1
+#沉默
+execute if entity @a[scores={chengmo=0..}] run function kards:game/ingame/custom_buff/chengmo/1
 
-tag @e[scores={Fire=0}] remove Fire
-tag @e[scores={Fire=0}] remove Fire_Ex
-scoreboard players reset @e[scores={Fire=0}] Fire
-
-scoreboard players reset @a[gamemode=spectator,tag=Fire] Fire
-tag @a[gamemode=spectator,tag=Fire] remove Fire
-tag @a[gamemode=spectator,tag=Fire_Ex] remove Fire_Ex
-
-scoreboard players reset @a[tag=Fired] Fire
-tag @a[tag=Fired] remove Fire
-tag @a[tag=Fired] remove Fired
 #> 不死图腾
 #-生命图腾-#
 scoreboard players add @e[tag=shengmingtuteng,type=item_display] shengmingtuteng_Healback 1
@@ -196,9 +142,7 @@ execute as @a if score @s qinglvqianmou matches 1 if score @s use_kard matches 0
 #execute as @a[gamemode=spectator] if score #system dituxuanze matches 8 positioned 59.00 0.00 104.00 if score #system GameStatus matches 1 if entity @s unless entity @s[dz=54,dy=9,dx=33] at @s run tp @r[gamemode=adventure]
 
 #execute as @a[gamemode=spectator] positioned -249.0 -10 -192.0 if score #system GameStatus matches 2 if entity @s unless entity @s[dz=56,dy=60,dx=77] at @s run tp @r[gamemode=adventure]
-#沉默
-execute if score @e[tag=r_dw,limit=1] chengmo matches 1.. as @a[team=red,gamemode=adventure] at @s run kill @e[type=item,distance=..3,tag=!replace_item,tag=!copy,tag=!copy_end]
-execute if score @e[tag=b_dw,limit=1] chengmo matches 1.. as @a[team=blue,gamemode=adventure] at @s run kill @e[type=item,distance=..3,tag=!replace_item,tag=!copy,tag=!copy_end]
+
 #玩家死亡
 function kards:game/ingame/death/1
 
@@ -269,9 +213,6 @@ execute if score 蓝队 touxiang = 人数 b_p run gamemode spectator @a[team=blu
 #地狱
 execute if score 红队 diyu matches 1 run effect give @e[type=!player,team=blue,tag=!tuteng] fire_resistance 1 0 false
 execute if score 蓝队 diyu matches 1 run effect give @e[type=!player,team=red,tag=!tuteng] fire_resistance 1 0 false
-#酸辣无骨鸡爪
-execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{kards:"鸡爪"}}}}] run data modify entity @s PickupDelay set value -1
-execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{kards:"鸡爪"}}}}] if data entity @s {Age:25s} at @s run function kards:game/yongpaiku/fashu/suanlawugujizhua/3
 
 #贪欲魔盒
 execute if score 红队 tanyu_temp_1 matches 3..5 if predicate kards:random0.0001 at @r positioned ~ ~-10 ~ summon armor_stand run function kards:game/yongpaiku/yansheng/tanyumohe/4

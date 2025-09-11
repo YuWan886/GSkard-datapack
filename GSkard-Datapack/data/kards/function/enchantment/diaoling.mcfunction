@@ -9,3 +9,4 @@ execute if score @s enchantment_chance_diaoling matches 1..70 on attacker if ite
 tag @s remove enchantment_diaoling
 advancement revoke @s only kards:shenqi/tianshenshibanjia/enchantment/diaoling
 
+ 

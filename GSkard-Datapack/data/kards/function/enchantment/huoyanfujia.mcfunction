@@ -1,5 +1,4 @@
 tag @s add enchantment_huoyanfujia
-tag @s add Fire
 #燃烧时间 = 附魔等级 * 30 [tick]
 execute on attacker if entity @s[type=player] store result score @n[tag=enchantment_huoyanfujia] Fire_wait run data get entity @s SelectedItem.components."minecraft:enchantments"."kards:fire_protection"
 execute on attacker if entity @s[type=!player] store result score @n[tag=enchantment_huoyanfujia] Fire_wait run data get entity @s equipment.mainhand.components."minecraft:enchantments"."kards:fire_protection"

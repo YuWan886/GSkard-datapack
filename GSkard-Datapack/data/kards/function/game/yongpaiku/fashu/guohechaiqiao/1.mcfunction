@@ -4,6 +4,7 @@ function kards:game/yongpaiku/xianjing/jiance/fashujiance
 execute if entity @s[type=player] unless items entity @s weapon.offhand * run return fail
 item replace entity @s weapon.offhand with air
 
+tag @a[tag=User] remove User
 tag @s add User
 execute if entity @s[team=red] as @r[team=blue,gamemode=adventure] run function kards:game/yongpaiku/fashu/guohechaiqiao/2
 execute if entity @s[team=blue] as @r[team=red,gamemode=adventure] run function kards:game/yongpaiku/fashu/guohechaiqiao/2

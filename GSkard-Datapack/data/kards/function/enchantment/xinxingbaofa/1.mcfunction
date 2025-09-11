@@ -1,4 +1,3 @@
-tag @s add Fire
 execute unless score @s Fire matches 60.. run scoreboard players set @s Fire 60
 
 execute store result score @s enchantment_chance_temp run random value 1..100

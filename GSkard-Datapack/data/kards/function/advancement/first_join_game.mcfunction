@@ -9,3 +9,4 @@ tellraw @a [{selector:"@s"},{text: "达成了进度",color:"white"},{text: "[你
 
 execute at @s run playsound minecraft:entity.player.levelup master @s
 dialog show @s kards:first_join/1
+

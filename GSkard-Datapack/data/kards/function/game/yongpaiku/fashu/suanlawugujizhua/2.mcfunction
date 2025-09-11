@@ -1,8 +1,10 @@
 
 advancement revoke @s only kards:eat/suanlawugujizhua
 
-damage @s 10 kards:la
+scoreboard players add @s HealBack 10
+tag @s add suanlawugujizhua
 execute if entity @s[team=red] as @r[team=blue,gamemode=adventure] run function kards:game/paiku/yansheng/suanlawugujizhua/1
 execute if entity @s[team=blue] as @r[team=red,gamemode=adventure] run function kards:game/paiku/yansheng/suanlawugujizhua/1
+tag @s remove suanlawugujizhua
 
-tellraw @s [{text:"嗝 有点辣！",color:"red"}]
+tellraw @s [{text:"皓齿！",color:"green"}]

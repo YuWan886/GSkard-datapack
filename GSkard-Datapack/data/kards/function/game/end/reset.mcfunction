@@ -70,6 +70,7 @@ tag @a remove jishengnianye
 tag @a remove TouXiang
 tag @a remove linghunshouge
 tag @a remove jinzijue
+tag @a remove zuzhouhujia
 #重置陷阱
 scoreboard players reset 红队
 scoreboard players reset 蓝队
