@@ -1,0 +1,31 @@
+{
+    "type": "multi_action",
+    "title": {
+        "text": "诅咒-§5DLC",
+        "color": "dark_gray",
+        "bold": true
+    },
+    "exit_action": {
+        "label": {
+            "text": "返回§6主§a牌库-§8诅咒",
+            "color": "green"
+        },
+        "action": {
+            "type": "show_dialog",
+            "dialog": "kards:paiku/zuzhou/main"
+        }
+    },
+    "columns": 5,
+    "actions": [
+        {
+            "label": {
+                "text": "模板：诅咒",
+                "color": "dark_gray"
+            },
+            "action": {
+                "type": "show_dialog",
+                "dialog": "kards-dlc:kard/zuzhou/template_zuzhou"
+            }
+        }
+    ]
+}

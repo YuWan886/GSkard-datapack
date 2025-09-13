@@ -1,0 +1,1 @@
+execute if score @s random7 matches 14 run function kards-dlc:kard/type/xianjing/template_xianjing/give

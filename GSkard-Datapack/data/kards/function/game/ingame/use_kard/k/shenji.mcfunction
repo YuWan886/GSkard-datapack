@@ -14,3 +14,5 @@ execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[cu
 execute if score #system GameStatus matches 1 if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'飞雷神•反'}] if score @s kardCount >= #kard_fanxiangfeileishen kardCount run function kards:game/yongpaiku/shenji/feileishenfan/1
 execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'神之一手'}] if score @s kardCount >= #kard_shenzhiyishou kardCount run function kards:game/yongpaiku/shenji/shenzhiyishou/1
 execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'贪欲魔盒'}] if score @s kardCount >= #kard_tanyumohe kardCount run function kards:game/yongpaiku/shenji/tanyumohe
+
+function kards-dlc:kard/use/shenji

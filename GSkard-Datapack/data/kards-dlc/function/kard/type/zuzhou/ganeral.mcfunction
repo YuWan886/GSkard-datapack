@@ -1,0 +1,1 @@
+execute if score @s random7 matches 12 run function kards-dlc:kard/type/zuzhou/template_zuzhou/give

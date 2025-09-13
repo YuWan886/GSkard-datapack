@@ -1,0 +1,5 @@
+function kards:game/yongpaiku/use_general/kard_general
+    execute if entity @s[team=red] at @e[tag=r_tuteng,limit=1] run summon sheep ~ 0 ~ {Team:red,Tags:["tuteng","tuteng.template"],attributes:[{id:"minecraft:max_health",base:20.0d}],Health:20.0f,Color:14b,Age:0,Silent:1b}
+    execute if entity @s[team=blue] at @e[tag=b_tuteng,limit=1] run summon sheep ~ 0 ~ {Team:blue,Tags:["tuteng","tuteng.template"],attributes:[{id:"minecraft:max_health",base:20.0d}],Health:20.0f,Color:11b,Age:0,Silent:1b}
+item replace entity @s weapon.offhand with air
+scoreboard players operation @s kardCount -= #kard_template_tuteng kardCount

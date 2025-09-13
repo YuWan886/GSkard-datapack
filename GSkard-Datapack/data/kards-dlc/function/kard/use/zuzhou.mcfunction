@@ -1,0 +1,1 @@
+execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'模板：诅咒'}] if score @s kardCount >= #kard_template_zuzhou kardCount run function kards-dlc:kard/type/zuzhou/template_zuzhou/use

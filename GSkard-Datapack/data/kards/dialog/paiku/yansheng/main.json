@@ -110,6 +110,17 @@
                 "dialog": "kards:paiku/yansheng/kuanghuanzombie"
             },
             "width": 75
+        },
+        {
+            "label": {
+                "text": "DLC",
+                "color": "light_purple"
+            },
+            "action": {
+                "type": "show_dialog",
+                "dialog": "kards-dlc:kard/yansheng/main"
+            },
+            "width": 75
         }
     ]
 }

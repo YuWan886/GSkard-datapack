@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:multi_action",
+    "title": {
+        "text": "神迹-§5DLC",
+        "color": "white",
+        "bold": true
+    },
+    "exit_action": {
+        "label": {
+            "text": "返回§6主§a牌库-§f神迹",
+            "color": "green"
+        },
+        "action": {
+            "type": "show_dialog",
+            "dialog": "kards:paiku/shenji/main"
+        }
+    },
+    "columns": 5,
+    "actions": [
+        {
+            "label": {
+                "text": "模板：神迹",
+                "color": "white"
+            },
+            "action": {
+                "type": "show_dialog",
+                "dialog": "kards-dlc:kard/shenji/template_shenji"
+            }
+        }
+    ]
+}

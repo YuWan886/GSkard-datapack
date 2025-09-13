@@ -1,10 +1,21 @@
 {
   "pack": {
-    "pack_format": 55,
-    "description": "音乐包",
-    "supported_formats": {
-      "min_inclusive": 55,
-      "max_inclusive": 99
-    }
+    "description": [
+      {
+        "text": "[可选]",
+        "color": "green"
+      },
+      {
+        "text": "GSkard-音乐包",
+        "color": "aqua"
+      }
+    ],
+    "pack_format": 64,
+    "supported_formats": [
+      64,
+      999
+    ],
+    "min_format": 65,
+    "max_format": 999
   }
 }

@@ -1,0 +1,82 @@
+{
+    "type": "notice",
+    "title": {
+        "text": "模板：其它",
+        "color": "red",
+        "bold": true
+    },
+    "body": [
+        {
+            "type": "item",
+            "item": {
+                "id": "bone"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "plain_message",
+            "contents": {
+                "text": "美味可食用",
+                "color": "gold",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "plain_message",
+            "contents": {
+                "text": "食用后扣除5♥",
+                "color": "red",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "plain_message",
+            "contents": {
+                "text": "将1个酸辣无骨鸡爪置入敌方随机一名玩家手中",
+                "color": "gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "plain_message",
+            "contents": {
+                "text": "回合开始时若背包内有酸辣无骨鸡爪 每有一个扣除自己2♥",
+                "color": "gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "plain_message",
+            "contents": {
+                "text": "!若丢弃了酸辣无骨鸡爪 酸辣无骨鸡爪会成精向你复仇!",
+                "color": "red",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "plain_message",
+            "contents": {
+                "text": "为什么无骨鸡爪是一根骨头?",
+                "color": "dark_gray",
+                "italic": true
+            },
+            "width": 1024
+        }
+    ],
+    "action": {
+        "label": {
+            "text": "返回§7其他-§5DLC",
+            "color": "green"
+        },
+        "action": {
+            "type": "show_dialog",
+            "dialog": "kards-dlc:kard/yansheng/main"
+        }
+    }
+}

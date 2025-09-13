@@ -1,0 +1,1 @@
+execute if score @s random5 matches 44 run function kards-dlc:kard/type/fashu/template_fashu/give

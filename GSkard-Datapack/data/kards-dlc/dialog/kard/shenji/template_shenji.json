@@ -1,0 +1,102 @@
+{
+    "type": "notice",
+    "title": {
+        "text": "4K ",
+        "extra": [
+            {
+                "text": "模板：神迹",
+                "color": "white",
+                "bold": true
+            }
+        ],
+        "color": "aqua",
+        "bold": true
+    },
+    "body": [
+        {
+            "type": "item",
+            "item": {
+                "id": "music_disc_strad"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "plain_message",
+            "contents": {
+                "text": "神迹牌",
+                "color": "white",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "plain_message",
+            "contents": {
+                "text": "获得",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": "15K",
+                        "color": "gold",
+                        "italic": false
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "plain_message",
+            "contents": {
+                "text": "若友方存活玩家小于等于2 则额外",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": "使队伍所有玩家获得10K",
+                        "color": "gold",
+                        "italic": false
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "plain_message",
+            "contents": {
+                "text": "使用后本回合内获得",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": "超频",
+                        "color": "dark_aqua",
+                        "italic": false,
+                        "bold": true
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "plain_message",
+            "contents": {
+                "text": "超频:每使用1张牌获得1K,使用[法术牌][装备牌]会额外获得1Kmax.",
+                "color": "dark_gray",
+                "italic": false
+            },
+            "width": 1024
+        }
+    ],
+    "action": {
+        "label": {
+            "text": "返回§d神迹§a牌库-§5DLC",
+            "color": "green"
+        },
+        "action": {
+            "type": "show_dialog",
+            "dialog": "kards-dlc:kard/shenji/main"
+        }
+    }
+}

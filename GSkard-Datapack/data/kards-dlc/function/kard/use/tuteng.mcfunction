@@ -1,0 +1,2 @@
+execute if items entity @s[team=red] weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'模板：图腾'}] if score @s kardCount >= #kard_template_tuteng kardCount unless entity @e[tag=tuteng,type=sheep,team=red] run function kards-dlc:kard/type/tuteng/tempalte_tuteng/use
+execute if items entity @s[team=blue] weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'模板：图腾'}] if score @s kardCount >= #kard_template_tuteng kardCount unless entity @e[tag=tuteng,type=sheep,team=blue] run function kards-dlc:kard/type/tuteng/tempalte_tuteng/use

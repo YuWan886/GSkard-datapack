@@ -41,3 +41,5 @@ scoreboard players add 蓝队 xianjin_qinglvqianmou 0
 #偷梁换柱
 scoreboard players add 红队 xianjin_toulianghuanzhu 0
 scoreboard players add 蓝队 xianjin_toulianghuanzhu 0
+#DLC
+function kards-dlc:kard/type/xianjing/reset
