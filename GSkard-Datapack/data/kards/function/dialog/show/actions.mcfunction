@@ -107,12 +107,12 @@ execute if score @s Talent_Survival matches 0 \
     run data modify storage kards dialog._."actions" append value {\
         "label": [{"text":"巧计","color":"gold"},{"text":" 未激活","color":"gray"}],\
         "tooltip": [\
-        {"text":"消耗1点构想激活\n\n","color":"aqua"},\
-        {"text":"1级时\n 每次\n +2 Kmax\n\n","color":"gray"},\
-        {"text":"2级时\n +1 Kmax\n +2♥ 生命恢复\n\n","color":"gray"},\
-        {"text":"3级时\n +1 构想\n +3♥ 生命恢复\n\n","color":"gray"},\
+        {"text":"消耗1点构想激活\n效果作用于每个友方回合\n\n","color":"aqua"},\
+        {"text":"1级时\n +1 抽牌\n +1 Kmax\n\n","color":"gray"},\
+        {"text":"2级时\n +1 构想\n +1 Kmax\n\n","color":"gray"},\
+        {"text":"3级时\n +1 抽牌\n +5♥ 生命恢复\n\n","color":"gray"},\
         {"text":"4级时\n +1 构想\n +2 Kmax\n\n","color":"gray"},\
-        {"text":"5级时\n +10 经验\n +5♥ 生命恢复","color":"gray"}\
+        {"text":"5级时\n +10 经验","color":"gray"}\
         ],\
         "action": {\
             "type": "run_command",\

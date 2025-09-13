@@ -1,7 +1,7 @@
 {
   "anvil_cost": 12,
   "supported_items": "#chest_armor",
-  "description": "泰坦体魄",
+  "description": {"text":"泰坦体魄","color":"green"},
   "effects": {
     "minecraft:attributes": [
       {
@@ -27,7 +27,7 @@
       {
         "attribute": "minecraft:scale",
         "id": "enchantment",
-        "amount": 0.5,
+        "amount": 0.20,
         "operation": "add_value"
       }
     ]

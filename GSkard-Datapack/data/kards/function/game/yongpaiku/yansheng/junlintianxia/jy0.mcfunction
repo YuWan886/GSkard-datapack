@@ -1,6 +1,6 @@
 
 function kards:game/yongpaiku/use_general/tellraw
-item replace entity @s weapon.offhand with air
+item modify entity @s weapon.offhand {function:"set_count",count:-1,add:true}
 scoreboard players operation @s kardCount -= #kard_junlintianxia kardCount
 execute at @s run function kards:game/yongpaiku/yansheng/junlintianxia/jy
 

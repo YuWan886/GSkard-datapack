@@ -9,6 +9,7 @@ execute positioned as @e[tag=blue_marker_7] run tp @a[tag=fanxiangfeileishen,tea
 execute positioned as @e[tag=red_marker_7] run tp @a[tag=fanxiangfeileishen,team=blue] ~ 1 ~
 
 execute as @a[tag=fanxiangfeileishen] run scoreboard players set @s feileishen 200
+effect give @a[tag=fanxiangfeileishen] resistance 10 1 false
 tag @a remove fanxiangfeileishen
 item replace entity @s weapon.offhand with air
 scoreboard players operation @s kardCount -= #kard_fanxiangfeileishen kardCount

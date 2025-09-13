@@ -110,14 +110,14 @@
         ]
       },
       "tooltip": {
-        "text": "消耗80级",
+        "text": "消耗70级",
         "extra": [
           {
             "text": "\n\n附魔后:",
             "color": "gray"
           },
           {
-            "text": "\n着地5s后获得抗性提升",
+            "text": "\n着地1.25s后获得抗性提升",
             "color": "green"
           }
         ],
@@ -331,7 +331,7 @@
         ]
       },
       "tooltip": {
-        "text": "消耗65级",
+        "text": "消耗55级",
         "extra": [
           {
             "text": "\n\n附魔后:",

@@ -1,1 +1,1 @@
-execute unless score @s Fire matches 1.. run scoreboard players set @s Fire 2
+execute unless score @s Fire matches 4.. run scoreboard players set @s Fire 5

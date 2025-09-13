@@ -5,6 +5,17 @@ gamemode spectator @a[tag=Un_Ready]
 # Scoreboard
 scoreboard players reset @a
 scoreboard players set @a[tag=Ready] kardCountmax 10
+scoreboard players add @a Talent_Count 1
+
+scoreboard players set @a chengmo 0
+scoreboard players set @a DongJie 0
+scoreboard players set @a DuanTui 0
+scoreboard players set @a Fire 0
+scoreboard players set @a PoJia 0
+scoreboard players set @a XuanYun 0
+scoreboard players set @a YongHan 0
+scoreboard players set @a ZhongShang_Round 0
+scoreboard players set @a ZhongShang_Tick 0
 
 # Attribute
 execute as @a run attribute @s scale base reset
@@ -34,6 +45,8 @@ item replace entity @a[team=blue] armor.feet from block 7 -60 -48 container.3
 
 # Tag
 tag @a remove jishengnianye
+tag @a add XuanYun
 
 # Effect
+effect clear @a
 effect give @a[tag=Ready] instant_health 1 200 false

@@ -29,8 +29,8 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "食用后扣除5♥",
-                "color": "red",
+                "text": "食用后恢复5♥",
+                "color": "green",
                 "italic": false
             },
             "width": 1024
@@ -40,24 +40,6 @@
             "contents": {
                 "text": "将1个酸辣无骨鸡爪置入敌方随机一名玩家手中",
                 "color": "gray",
-                "italic": false
-            },
-            "width": 1024
-        },
-        {
-            "type": "minecraft:plain_message",
-            "contents": {
-                "text": "回合开始时若背包内有酸辣无骨鸡爪 每有一个扣除自己2♥",
-                "color": "gray",
-                "italic": false
-            },
-            "width": 1024
-        },
-        {
-            "type": "minecraft:plain_message",
-            "contents": {
-                "text": "!若丢弃了酸辣无骨鸡爪 酸辣无骨鸡爪会成精向你复仇!",
-                "color": "red",
                 "italic": false
             },
             "width": 1024

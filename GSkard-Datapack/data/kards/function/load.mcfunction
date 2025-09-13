@@ -5,13 +5,22 @@ team add lobby
 team add Spectator
 team add Running
 #注册bossbar
+bossbar add minecraft:start_game ""
 schedule clear kards:lobby/bossbar/color/1
 schedule clear kards:lobby/bossbar/color/2
 schedule clear kards:lobby/bossbar/color/3
 schedule clear kards:lobby/bossbar/color/4
 function kards:lobby/bossbar/color/1
 
+bossbar add minecraft:worldborder {text:"边界收缩倒计时",color:"green"}
+bossbar add minecraft:roundtime ""
+bossbar add minecraft:pvptime {text:"等待开放",color:"green"}
+
+bossbar set minecraft:roundtime color green
+bossbar set minecraft:pvptime color green
 #注册计分项目
+scoreboard objectives add use_kard_xp dummy
+scoreboard objectives add zombie_enhance_2 dummy
 scoreboard objectives add GameCount dummy
 scoreboard objectives add Talent_trigger dummy
 scoreboard objectives add Talent_Survival dummy

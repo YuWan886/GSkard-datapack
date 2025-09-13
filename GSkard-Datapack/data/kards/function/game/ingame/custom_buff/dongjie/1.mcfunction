@@ -14,10 +14,6 @@ effect clear @e[scores={DongJie=0}] mining_fatigue
 execute as @a[scores={DongJie=1..}] run attribute @s minecraft:jump_strength modifier add 0-0-3 -1 add_multiplied_total
 execute as @e[scores={DongJie=0}] run attribute @s minecraft:jump_strength modifier remove 0-0-3
 
-title @a[scores={DongJie=1..}] times 0t 2t 0t
-title @a[scores={DongJie=1..}] title {text: "冻结中...",color:"aqua",bold:true}
-title @a[scores={DongJie=0}] title {text: ""}
-
 scoreboard players add @e[scores={DongJie=1..}] DongJie_damage 1
 execute as @e[scores={DongJie_damage=25}] run damage @s 5 freeze
 scoreboard players reset @e[scores={DongJie_damage=25}] DongJie_damage

@@ -29,6 +29,4 @@ schedule function kards:game/random_start/title/wait 85t append
 schedule function kards:game/random_start/title/wait 90t append
 schedule function kards:game/random_start/title/wait 100t append
 
-
-
 schedule function kards:game/random_start/title/end 120t append

@@ -64,6 +64,35 @@
                 "predicate": {
                   "type": "minecraft:piglin"
                 }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "type": "minecraft:wolf"
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "type": "minecraft:slime",
+                  "type_specific": {
+                    "type": "slime",
+                    "size": 3
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "type": "minecraft:magma_cube",
+                  "type_specific": {
+                    "type": "slime",
+                    "size": 3
+                  }
+                }
               }
             ]
           }

@@ -92,9 +92,8 @@ scoreboard players set @a[scores={tanyumohe=1}] tanyu_zhuangbei 0
 
 execute as @a[scores={tanyumohe=1}] if score @s tanyu matches 1.. run function kards:game/paiku/yansheng/tanyu
 #墓园狂欢
-effect give @e[tag=zombie_enhance_1] minecraft:speed infinite 0 false
-effect give @e[tag=zombie_enhance_2] minecraft:speed infinite 1 false
-effect give @e[tag=zombie_enhance_3] minecraft:speed infinite 2 false
+execute as @e[tag=kuanghuan_1] unless data entity @s {NoAI:1b} run scoreboard players add @s Mob_Skill_Time 1
+execute as @e[tag=kuanghuan_1,scores={Mob_Skill_Time=100}] at @s run function kards:game/yongpaiku/yansheng/kuanghuanzombie/4
 
 scoreboard players add @a[scores={muyuankuanghuan=1}] muyuankuanghuan1 0
 scoreboard players add @a[scores={muyuankuanghuan=1}] muyuankuanghuan2 0

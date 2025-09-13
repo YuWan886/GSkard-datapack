@@ -12,6 +12,23 @@ execute if score @s dialog matches 117 run return run function kards:game/xp/sho
 execute if score @s dialog matches 118 run return run function kards:game/xp/shop/enchantment/zhicaizhe
 execute if score @s dialog matches 119 run return run function kards:game/xp/shop/enchantment/shenpanzhe
 
+execute if score @s dialog matches 200 if score #system random_gamerule matches -1 run return run function kards:lobby/setting/random_gamerule/kai
+execute if score @s dialog matches 200 if score #system random_gamerule matches 0.. run return run function kards:lobby/setting/random_gamerule/guan
+execute if score @s dialog matches 201 run return run function kards:lobby/setting/random_gamerule/event/baokuxianshi
+execute if score @s dialog matches 202 run return run function kards:lobby/setting/random_gamerule/event/cangbaoku
+execute if score @s dialog matches 203 run return run function kards:lobby/setting/random_gamerule/event/mofazhanzheng
+execute if score @s dialog matches 204 run return run function kards:lobby/setting/random_gamerule/event/shenzhihan
+execute if score @s dialog matches 205 run return run function kards:lobby/setting/random_gamerule/event/wujinzhanzheng
+execute if score @s dialog matches 206 run return run function kards:lobby/setting/random_gamerule/event/gazhijukong
+execute if score @s dialog matches 207 run return run function kards:lobby/setting/random_gamerule/event/muyuankuanghuan
+execute if score @s dialog matches 208 run return run function kards:lobby/setting/random_gamerule/event/kuanghonglanzha
+execute if score @s dialog matches 209 run return run function kards:lobby/setting/random_gamerule/event/zainanzhixing
+execute if score @s dialog matches 210 run return run function kards:lobby/setting/random_gamerule/event/move_or_die
+execute if score @s dialog matches 211 run return run function kards:lobby/setting/random_gamerule/event/sishenjianglin
+execute if score @s dialog matches 212 run return run function kards:lobby/setting/random_gamerule/event/wuhui
+execute if score @s dialog matches 213 run return run function kards:lobby/setting/random_gamerule/event/dianbiaodaozhuan
+execute if score @s dialog matches 214 run return run function kards:lobby/setting/random_gamerule/event/wujintanlan
+
 execute if score @s dialog matches 1000 run return run function kards:dialog/show
 execute if score @s dialog matches 1001 run return run function kards:game/player/talent/combat/add
 execute if score @s dialog matches 1002 run return run function kards:game/player/talent/survival/add

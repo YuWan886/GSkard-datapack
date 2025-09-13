@@ -6,6 +6,7 @@ execute as @a[gamemode=!spectator,scores={CanuseKard=1}] run function kards:game
 execute as @a[gamemode=!spectator,scores={CanuseKard=1}] run function kards:game/ingame/use_kard/k/shenji
 execute as @a[gamemode=!spectator,scores={CanuseKard=1}] run function kards:game/ingame/use_kard/k/zuzhou
 execute as @a[gamemode=!spectator,scores={CanuseKard=1}] run function kards:game/ingame/use_kard/k/xianjing
+execute as @a[gamemode=!spectator,scores={CanuseKard=1}] run function kards:game/ingame/use_kard/k/yansheng
 
 execute as @a[gamemode=!spectator] run function kards:game/ingame/use_kard/kmax/jiben
 execute as @a[gamemode=!spectator] run function kards:game/ingame/use_kard/kmax/juntuan

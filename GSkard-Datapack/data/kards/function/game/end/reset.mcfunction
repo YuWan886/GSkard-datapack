@@ -114,7 +114,6 @@ execute as @a run attribute @s attack_speed modifier remove talent
 execute as @a run attribute @s attack_damage base reset
 execute as @a run attribute @s armor base reset
 #重置分数
-execute if score #system random_gamerule matches 0.. run scoreboard players set #system random_gamerule 0
 scoreboard players set * fengbaozhanchui_1 0
 scoreboard players set * sishenzhilian 0
 scoreboard players set * yanhua 0
@@ -136,7 +135,21 @@ scoreboard players reset * r_death
 scoreboard players reset * b_death
 scoreboard players reset * r_number
 scoreboard players reset * b_number
+
+scoreboard players set @a chengmo 0
+scoreboard players set @a DongJie 0
+scoreboard players set @a DuanTui 0
+scoreboard players set @a Fire 5
+scoreboard players set @a PoJia 0
+scoreboard players set @a XuanYun 0
+scoreboard players set @a YongHan 0
+scoreboard players set @a ZhongShang_Round 0
+scoreboard players set @a ZhongShang_Tick 0
+
+tag @a add XuanYun
+
 #计划
+schedule clear kards:game/ingame/round/pvpround/countdown
 schedule clear kards:game/ingame/round/pvpround/countdown
 #停止音乐
 execute as @a at @s run stopsound @s

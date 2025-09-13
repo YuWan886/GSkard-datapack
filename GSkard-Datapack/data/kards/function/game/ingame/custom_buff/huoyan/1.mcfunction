@@ -1,9 +1,9 @@
 execute as @e if predicate kards:fanghuo run tag @s add Fired
-execute as @e[tag=Fired] run scoreboard players reset @s Fire
+execute as @e[tag=Fired] run scoreboard players set @s Fire 0
 execute as @e[tag=Fired] run tag @s remove Fired
 
 scoreboard players remove @e[scores={Fire=1..}] Fire 1
-execute as @a[scores={Fire=1..}] run function kards:game/ingame/custom_buff/huoyan/bossbar/1
+execute as @a[scores={Fire=0..}] run function kards:game/ingame/custom_buff/huoyan/bossbar/1
 
 scoreboard players add @e[scores={Fire=1..}] Fire_take_damage 1
 
@@ -18,3 +18,4 @@ scoreboard players reset @e[scores={Fire=0}] Fire
 
 scoreboard players reset @a[gamemode=spectator,tag=Fire] Fire
 tag @a[gamemode=spectator,tag=Fire_Ex] remove Fire_Ex
+
