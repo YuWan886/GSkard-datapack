@@ -165,6 +165,17 @@
                 "dialog": "kards:paiku/tuteng/zhu"
             },
             "width": 75
+        },
+        {
+            "label": {
+                "text": "DLC",
+                "color": "red"
+            },
+            "action": {
+                "type": "show_dialog",
+                "dialog": "kards-dlc:kard/tuteng/main"
+            },
+            "width": 75
         }
     ]
 }

@@ -16,10 +16,10 @@
             "text": "返回§6主§a牌库",
             "color": "green"
         },
-    "action": {
-      "type": "show_dialog",
-      "dialog": "kards:paiku/main"
-    }
+        "action": {
+            "type": "show_dialog",
+            "dialog": "kards:paiku/main"
+        }
     },
     "columns": 5,
     "actions": [
@@ -306,6 +306,17 @@
             "action": {
                 "type": "minecraft:show_dialog",
                 "dialog": "kards:paiku/jiben/zhuling"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "DLC",
+                "color": "blue"
+            },
+            "action": {
+                "type": "show_dialog",
+                "dialog": "kards-dlc:kard/jiben/main"
             },
             "width": 75
         }

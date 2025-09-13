@@ -165,6 +165,17 @@
                 "dialog": "kards:paiku/xianjing/youdi"
             },
             "width": 75
+        },
+        {
+            "label": {
+                "text": "DLC",
+                "color": "dark_aqua"
+            },
+            "action": {
+                "type": "show_dialog",
+                "dialog": "kards-dlc:kard/xianjing/main"
+            },
+            "width": 75
         }
     ]
 }

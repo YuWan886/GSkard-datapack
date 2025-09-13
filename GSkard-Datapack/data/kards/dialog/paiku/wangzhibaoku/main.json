@@ -214,6 +214,17 @@
                 "dialog": "kards:paiku/wangzhibaoku/xiangzhaoyushi"
             },
             "width": 75
+        },
+        {
+            "label": {
+                "text": "DLC",
+                "color": "white"
+            },
+            "action": {
+                "type": "show_dialog",
+                "dialog": "kards-dlc:kard/wangzhibaoku/main"
+            },
+            "width": 75
         }
     ]
 }

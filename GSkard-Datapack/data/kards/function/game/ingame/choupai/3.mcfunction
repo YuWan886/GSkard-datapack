@@ -1,4 +1,4 @@
-execute store result score @s random3 run random value 1..420
+$execute store result score @s random3 run random value 1..$(zhuangbei)
 execute if score @s random3 matches 1..25 run function kards:game/paiku/zhuangbei/jinjian
 execute if score @s random3 matches 26..45 run function kards:game/paiku/zhuangbei/tiejian
 execute if score @s random3 matches 46..60 run function kards:game/paiku/zhuangbei/zuanshijian
@@ -20,5 +20,8 @@ execute if score @s random3 matches 376..385 run function kards:game/paiku/zhuan
 execute if score @s random3 matches 386..390 run function kards:game/paiku/zhuangbei/jingjidunpai
 execute if score @s random3 matches 391..420 run function kards:game/paiku/zhuangbei/jingjidunpai
 execute if score @s random3 matches 421..440 run function kards:game/paiku/zhuangbei/nu
+
+execute if score @s random3 matches 441.. run function kards-dlc:kard/type/zhuangbei/ganeral
+
 scoreboard players set @s random3 0
 scoreboard players remove @s zhuangbeicishu 1

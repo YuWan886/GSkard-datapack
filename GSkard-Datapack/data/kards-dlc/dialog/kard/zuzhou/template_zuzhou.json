@@ -1,0 +1,52 @@
+{
+    "type": "notice",
+    "title": {
+        "text": "3K ",
+        "extra": [
+            {
+                "text": "模板：诅咒",
+                "color": "dark_gray"
+            }
+        ],
+        "color": "aqua",
+        "bold": true
+    },
+    "body": [
+        {
+            "type": "item",
+            "item": {
+                "id": "music_disc_stal"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "plain_message",
+            "contents": {
+                "text": "诅咒牌",
+                "color": "dark_gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "plain_message",
+            "contents": {
+                "text": "给敌方玩家施加缓慢2以及不能跳跃 持续15s",
+                "color": "gray",
+                "italic": false
+            },
+            "width": 1024
+        }
+    ],
+    "action": {
+        "label": {
+            "text": "返回§c诅咒§a牌库-§5DLC",
+            "color": "green"
+        },
+        "action": {
+            "type": "show_dialog",
+            "dialog": "kards-dlc:kard/zuzhou/main"
+        }
+    }
+}

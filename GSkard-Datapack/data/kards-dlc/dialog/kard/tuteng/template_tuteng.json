@@ -1,0 +1,93 @@
+{
+    "type": "notice",
+    "title": {
+        "text": "12K ",
+        "extra": [
+            {
+                "text": "模板：图腾",
+                "color": "red"
+            }
+        ],
+        "color": "aqua",
+        "bold": true
+    },
+    "body": [
+        {
+            "type": "item",
+            "item": {
+                "id": "music_disc_blocks"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "plain_message",
+            "contents": {
+                "text": "图腾牌",
+                "color": "red",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "plain_message",
+            "contents": {
+                "text": "在队伍图腾区生成羊",
+                "color": "gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "plain_message",
+            "contents": {
+                "text": "图腾存活效果：",
+                "color": "gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "plain_message",
+            "contents": {
+                "text": "1.每回合结束时为队伍玩家回复血量",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": "6♥",
+                        "color": "green",
+                        "italic": false
+                    }
+                ]
+            },
+            "width": 1024
+        },
+        {
+            "type": "plain_message",
+            "contents": {
+                "text": "2.每回合结束时为队伍图腾回复血量",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": "1♥",
+                        "color": "green",
+                        "italic": false
+                    }
+                ]
+            },
+            "width": 1024
+        }
+    ],
+    "action": {
+        "label": {
+            "text": "返回§c图腾§a牌库-§5DLC",
+            "color": "green"
+        },
+        "action": {
+            "type": "show_dialog",
+            "dialog": "kards-dlc:kard/tuteng/main"
+        }
+    }
+}

@@ -1,7 +1,7 @@
 {
     "type": "minecraft:multi_action",
     "title": {
-        "text": "法术牌",
+        "text": "法术",
         "color": "light_purple",
         "bold": true
     },
@@ -493,6 +493,17 @@
             "action": {
                 "type": "minecraft:show_dialog",
                 "dialog": "kards:paiku/fashu/zuzhouhujia"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "text": "DLC",
+                "color": "light_purple"
+            },
+            "action": {
+                "type": "show_dialog",
+                "dialog": "kards-dlc:kard/fashu/main"
             },
             "width": 75
         }

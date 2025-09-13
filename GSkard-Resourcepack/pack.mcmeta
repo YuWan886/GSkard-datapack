@@ -1,10 +1,21 @@
 {
   "pack": {
-    "pack_format": 55,
-    "description": "未完成",
-    "supported_formats": {
-      "min_inclusive": 55,
-      "max_inclusive": 99
-    }
+    "description": [
+      {
+        "text": "[必装]",
+        "color": "gold"
+      },
+      {
+        "text": "GSkard-资源包",
+        "color": "aqua"
+      }
+    ],
+    "pack_format": 64,
+    "supported_formats": [
+      64,
+      999
+    ],
+    "min_format": 65,
+    "max_format": 999
   }
 }

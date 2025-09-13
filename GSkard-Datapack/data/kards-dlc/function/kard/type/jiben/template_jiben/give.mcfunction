@@ -1,0 +1,2 @@
+scoreboard players set #kard_template_jiben kardCount 1
+give @s music_disc_mall[item_name=[{text: "1K",color:"aqua"},{text:" "},{text: "模板：基本",color:"blue"}],lore=[{text: "基本牌",color:"blue",italic:false},[{text: "召唤一只",color:"gray",italic:false},{text: "远古守卫者",color:"gold",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'模板：基本',K:1},tooltip_style="kards:kard/common"]

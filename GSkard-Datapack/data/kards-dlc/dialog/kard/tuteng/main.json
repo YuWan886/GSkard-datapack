@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:multi_action",
+    "title": {
+        "text": "图腾-§5DLC",
+        "color": "red",
+        "bold": true
+    },
+    "exit_action": {
+        "label": {
+            "text": "返回§6主§a牌库-§c图腾",
+            "color": "green"
+        },
+        "action": {
+            "type": "show_dialog",
+            "dialog": "kards:paiku/tuteng/main"
+        }
+    },
+    "columns": 5,
+    "actions": [
+        {
+            "label": {
+                "text": "模板：图腾",
+                "color": "red"
+            },
+            "action": {
+                "type": "show_dialog",
+                "dialog": "kards-dlc:kard/tuteng/template_tuteng"
+            }
+        }
+    ]
+}

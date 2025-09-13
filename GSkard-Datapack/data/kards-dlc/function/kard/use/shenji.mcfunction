@@ -1,0 +1,1 @@
+execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'模板：神迹'}] if score @s kardCount >= #kard_template_shenji kardCount run function kards-dlc:kard/type/shenji/template_shenji/use

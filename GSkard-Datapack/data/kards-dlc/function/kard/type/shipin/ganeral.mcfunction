@@ -1,0 +1,1 @@
+execute if score @s random3.1 matches 106 run function kards-dlc:kard/type/shipin/template_shipin/give

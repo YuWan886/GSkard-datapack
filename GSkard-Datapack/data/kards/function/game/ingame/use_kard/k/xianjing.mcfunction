@@ -37,3 +37,5 @@ execute if entity @s[team=blue] if score @s kardCount >= #kard_qinglvqianmou kar
 
 execute if entity @s[team=red] if score @s kardCount >= #kard_toulianghuanzhu kardCount if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'偷梁换柱'}] unless score 蓝队 xianjin_toulianghuanzhu matches 1 run function kards:game/yongpaiku/xianjing/used/toulianghuanzhu
 execute if entity @s[team=blue] if score @s kardCount >= #kard_toulianghuanzhu kardCount if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'偷梁换柱'}] unless score 红队 xianjin_toulianghuanzhu matches 1 run function kards:game/yongpaiku/xianjing/used/toulianghuanzhu
+
+function kards-dlc:kard/use/xianjing
