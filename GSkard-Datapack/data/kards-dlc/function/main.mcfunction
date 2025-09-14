@@ -18,3 +18,6 @@ scoreboard objectives add b_alive dummy
 
 # 回合：图腾
 # kards:game/ingame/round/tuteng
+
+# 牌库
+# GSkard-Datapack\data\kards-dlc\dialog\kard
