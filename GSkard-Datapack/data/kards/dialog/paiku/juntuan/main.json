@@ -297,17 +297,6 @@
                 "dialog": "kards:paiku/juntuan/zaieshuangxing"
             },
             "width": 75
-        },
-        {
-            "label": {
-                "text": "DLC",
-                "color": "dark_green"
-            },
-            "action": {
-                "type": "show_dialog",
-                "dialog": "kards-dlc:kard/juntuan/main"
-            },
-            "width": 75
         }
     ]
 }

@@ -15,6 +15,3 @@ execute if entity @s[team=blue] if score 蓝队 xianjin_shusifangshou matches 1 
 #<合围>
 execute if entity @s[team=red] if score 红队 xianjin_hewei matches 1 at @s run function kards:game/yongpaiku/xianjing/chufa/hewei
 execute if entity @s[team=blue] if score 蓝队 xianjin_hewei matches 1 at @s run function kards:game/yongpaiku/xianjing/chufa/hewei
-
-#DLC
-function kards-dlc:kard/type/xianjing/check/mob

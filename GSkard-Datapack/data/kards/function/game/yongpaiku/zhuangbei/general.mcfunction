@@ -47,6 +47,3 @@ execute as @a if items entity @s container.26 cauldron[custom_data={kards:'灵�
 execute as @a if items entity @s container.35 cauldron[custom_data={kards:'灵魂收割器'}] run tag @s add linghunshougeqi
 
 execute as @a unless items entity @s container.17 cauldron[custom_data={kards:'灵魂收割器'}] unless items entity @s container.26 cauldron[custom_data={kards:'灵魂收割器'}] unless items entity @s container.35 cauldron[custom_data={kards:'灵魂收割器'}] run tag @s remove linghunshougeqi
-
-#DLC-饰品
-function kards-dlc:kard/type/shipin/effect

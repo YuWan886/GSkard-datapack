@@ -24,6 +24,3 @@
     execute as @e[tag=tuteng,type=ocelot] run function kards:game/yongpaiku/tuteng/round_event/baomao
 #培养尸
     execute as @e[tag=tuteng,tag=peiyangshi,type=zombie] run function kards:game/yongpaiku/tuteng/round_event/peiyangshi/1
-    
-#DLC
-    function kards-dlc:kard/type/tuteng/round

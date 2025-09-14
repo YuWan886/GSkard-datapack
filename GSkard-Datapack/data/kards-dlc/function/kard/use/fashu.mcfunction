@@ -1,1 +1,0 @@
-execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'模板：法术'}] if score @s kardCount >= #kard_template_fashu kardCount run function kards-dlc:kard/type/fashu/template_fashu/use

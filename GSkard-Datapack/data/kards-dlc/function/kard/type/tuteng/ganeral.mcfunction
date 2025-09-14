@@ -1,1 +1,0 @@
-execute if score @s random4 matches 14 run function kards-dlc:kard/type/tuteng/tempalte_tuteng/give

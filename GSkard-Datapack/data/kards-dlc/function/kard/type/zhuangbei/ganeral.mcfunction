@@ -1,1 +1,0 @@
-execute if score @s random3 matches 441 run function kards-dlc:kard/type/zhuangbei/template_zhuangbei/give

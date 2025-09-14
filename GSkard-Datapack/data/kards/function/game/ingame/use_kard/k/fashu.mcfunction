@@ -43,4 +43,3 @@ execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[cu
 execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'酸辣无骨鸡爪'}] if score @s kardCount >= #kard_suanlawugujizhua kardCount run function kards:game/yongpaiku/fashu/suanlawugujizhua/1
 execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'图腾进击'}] if score @s kardCount >= #kard_tutengjinji kardCount run function kards:game/yongpaiku/fashu/tutengjingji/1
 
-function kards-dlc:kard/use/fashu

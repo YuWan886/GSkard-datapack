@@ -7,18 +7,7 @@ tag @s remove jishengnianye
 tag @s remove TouXiang
 clear @s
 scoreboard players reset @s
-scoreboard players set @s chengmo 0
-scoreboard players set @s DongJie 1
-scoreboard players set @s DuanTui 1
-scoreboard players set @s Fire 5
-scoreboard players set @s PoJia 1
-scoreboard players set @s XuanYun 1
-scoreboard players set @s YongHan 0
-scoreboard players set @s ZhongShang_Round 0
-scoreboard players set @s ZhongShang_Tick 1
-
-tag @s add XuanYun
-tag @s add DuanTui
+function kards:game/end/bossbar_reset/1
 attribute @s minecraft:max_health modifier remove 0-0-1
 attribute @s minecraft:max_health modifier remove 0-0-2
 attribute @s minecraft:max_health modifier remove 0-0-3

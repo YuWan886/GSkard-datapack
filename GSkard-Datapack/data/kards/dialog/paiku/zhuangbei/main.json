@@ -286,17 +286,6 @@
                 "dialog": "kards:paiku/zhuangbei/zuanshishengji"
             },
             "width": 75
-        },
-        {
-            "label": {
-                "text": "DLC",
-                "color": "gold"
-            },
-            "action": {
-                "type": "show_dialog",
-                "dialog": "kards-dlc:kard/zhuangbei/main"
-            },
-            "width": 75
         }
     ]
 }

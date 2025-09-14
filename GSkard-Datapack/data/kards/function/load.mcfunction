@@ -372,19 +372,5 @@ scoreboard objectives add UUID.3 dummy
 scoreboard objectives add Fire dummy
 scoreboard objectives add Fire_take_damage dummy
 
-# 注册卡牌数量
-data modify storage settings kard_count set value \
-{\
-    jiben:26,\
-    juntuan:265,\
-    zhuangbei:420,\
-    tuteng:13,\
-    fashu:43,\
-    shenqi:18,\
-    zuzhou:11,\
-    xianjing:13,\
-    shipin:105\
-}
-
 #
 tellraw @a [{text: "数据包加载完毕",color:"gray"}]

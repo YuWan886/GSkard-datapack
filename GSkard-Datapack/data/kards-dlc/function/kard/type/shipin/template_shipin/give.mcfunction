@@ -1,2 +1,0 @@
-scoreboard players set #kard_template_shipin kardCount 5
-give @s music_disc_13[item_name=[{text: "5K",color:"aqua"},{text:" "},{text: "模板：饰品",color:"gold"}],lore=[{text: "装备牌",color:"gold",italic:false},{text: "获得一个模板：饰品(增加护甲值与盔甲韧性)",color:"gray",italic:false}],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'模板：饰品',K:5},tooltip_style="kards:kard/equipment"]

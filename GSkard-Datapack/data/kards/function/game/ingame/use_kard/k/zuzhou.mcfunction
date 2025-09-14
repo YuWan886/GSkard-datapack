@@ -9,5 +9,3 @@ execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[cu
 execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'枯竭'}] if score @s kardCount >= #kard_kujie kardCount run function kards:game/yongpaiku/zuzhou/kujie
 execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'无形'}] if score @s kardCount >= #kard_wuxing kardCount run function kards:game/yongpaiku/zuzhou/wuxing
 execute unless score #system GameStatus matches 2 if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'重伤'}] if score @s kardCount >= #kard_zhongshang kardCount run function kards:game/yongpaiku/zuzhou/zhongshang
-
-function kards-dlc:kard/use/zuzhou

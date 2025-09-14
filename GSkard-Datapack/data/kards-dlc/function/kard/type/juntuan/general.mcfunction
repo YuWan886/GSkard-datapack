@@ -1,1 +1,0 @@
-execute if score @s random2 matches 266 run function kards-dlc:kard/type/juntuan/template_juntuan/give

@@ -143,17 +143,6 @@
                 "dialog": "kards:paiku/zuzhou/zhongshang"
             },
             "width": 75
-        },
-        {
-            "label": {
-                "text": "DLC",
-                "color": "dark_gray"
-            },
-            "action": {
-                "type": "show_dialog",
-                "dialog": "kards-dlc:kard/zuzhou/main"
-            },
-            "width": 75
         }
     ]
 }

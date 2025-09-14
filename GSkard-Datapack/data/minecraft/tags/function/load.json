@@ -1,6 +1,5 @@
 {
     "values": [
-        "kards:load",
-        "kards-dlc:load"
+        "kards:load"
     ]
 }

@@ -1,4 +1,4 @@
-$execute store result score @s random6 run random value 1..$(shenji)
+execute store result score @s random6 run random value 1..18
 execute if score @s random6 matches 1 run function kards:game/paiku/shenji/huoliquankai
 execute if score @s random6 matches 2 run function kards:game/paiku/shenji/juechufengsheng
 execute if score @s random6 matches 3 run function kards:game/paiku/shenji/linghungeshe
@@ -17,8 +17,5 @@ execute if score @s random6 matches 15 run function kards:game/paiku/shenji/fuzh
 execute if score @s random6 matches 16 run function kards:game/paiku/shenji/fanxiangfeileishen
 execute if score @s random6 matches 17 run function kards:game/paiku/shenji/shenzhiyishou
 execute if score @s random6 matches 18 run function kards:game/paiku/shenji/tanyumohe
-
-execute if score @s random6 matches 19.. run function kards-dlc:kard/type/shenji/ganeral
-
 scoreboard players set @s random6 0
 scoreboard players remove @s shenjicishu 1

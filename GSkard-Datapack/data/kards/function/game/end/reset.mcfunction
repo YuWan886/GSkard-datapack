@@ -136,17 +136,7 @@ scoreboard players reset * b_death
 scoreboard players reset * r_number
 scoreboard players reset * b_number
 
-scoreboard players set @a chengmo 0
-scoreboard players set @a DongJie 0
-scoreboard players set @a DuanTui 0
-scoreboard players set @a Fire 5
-scoreboard players set @a PoJia 0
-scoreboard players set @a XuanYun 0
-scoreboard players set @a YongHan 0
-scoreboard players set @a ZhongShang_Round 0
-scoreboard players set @a ZhongShang_Tick 0
-
-tag @a add XuanYun
+execute as @a run function kards:game/end/bossbar_reset/1
 
 #计划
 schedule clear kards:game/ingame/round/pvpround/countdown

@@ -36,5 +36,3 @@ execute if items entity @s[team=blue] weapon.offhand #minecraft:creeper_drop_mus
 
 execute if items entity @s[team=red] weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'培养尸'}] if score @s kardCount >= #kard_peiyangshi kardCount unless entity @e[tag=tuteng,type=zombie,team=red] run function kards:game/yongpaiku/tuteng/shengcheng/peiyangshi
 execute if items entity @s[team=blue] weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'培养尸'}] if score @s kardCount >= #kard_peiyangshi kardCount unless entity @e[tag=tuteng,type=zombie,team=blue] run function kards:game/yongpaiku/tuteng/shengcheng/peiyangshi
-
-function kards-dlc:kard/use/tuteng

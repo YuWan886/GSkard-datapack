@@ -26,5 +26,3 @@ execute if entity @s[team=blue] if score 蓝队 xianjin_shufashixiao matches 1 a
 execute if entity @s[team=red] if score 红队 xianjin_youdi matches 1 at @s run function kards:game/yongpaiku/xianjing/chufa/youdi
 execute if entity @s[team=blue] if score 蓝队 xianjin_youdi matches 1 at @s run function kards:game/yongpaiku/xianjing/chufa/youdi
 
-#DLC
-function kards-dlc:kard/type/xianjing/check/fashu

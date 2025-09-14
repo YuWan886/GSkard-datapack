@@ -15,6 +15,3 @@ execute if score #system GameRound matches 0 if score 蓝队 xianjin_yaoyuandeqi
 #<轻虑浅谋>
 execute if score #system GameRound matches 0 if score 红队 xianjin_qinglvqianmou matches 1 run function kards:game/yongpaiku/xianjing/chufa/round/red/qinglvqianmou
 execute if score #system GameRound matches 1 if score 蓝队 xianjin_qinglvqianmou matches 1 run function kards:game/yongpaiku/xianjing/chufa/round/blue/qinglvqianmou
-
-#DLC
-function kards-dlc:kard/type/xianjing/check/round
