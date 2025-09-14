@@ -387,4 +387,4 @@ data modify storage settings kard_count set value \
 }
 
 #
-tellraw @a [{text: "数据包加载完毕",color:"gray"}]
+tellraw @a ["==========================\n",{color:"#2a17fd",text:"         "},{color:"#f19013",text:"G"},{color:"#ed7d19",text:"S"},{color:"#ea6a1f",text:"k"},{color:"#e75725",text:"a"},{color:"#e3442b",text:"r"},{color:"#e03131",text:"d"},{color:"gold",text:"已经加载！"},"\n",{color:"aqua",text:"             版本："},{color:"green",text:"1.5"},"\n=========================="]
