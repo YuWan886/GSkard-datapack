@@ -38,6 +38,24 @@
         },
         {
             "type": "bitmap",
+            "file": "kards:font/hud/bossbar_1.png",
+            "ascent": 21,
+            "height": 24,
+            "chars": [
+                "\uE004"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "kards:font/hud/bossbar_2.png",
+            "ascent": 21,
+            "height": 24,
+            "chars": [
+                "\uE005"
+            ]
+        },
+        {
+            "type": "bitmap",
             "file": "space:font/splitter.png",
             "ascent": -9999,
             "height": -2,
