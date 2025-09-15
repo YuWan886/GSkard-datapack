@@ -2,5 +2,13 @@
   "pack": {
     "pack_format": 81,
     "description": "By Hart_GS"
+  },
+  "filter": {
+    "block": [
+      {
+        "namespace": "minecraft",
+        "path": "advancement"
+      }
+    ]
   }
 }
