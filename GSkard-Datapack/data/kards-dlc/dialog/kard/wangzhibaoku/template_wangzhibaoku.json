@@ -163,7 +163,7 @@
         },
         "action": {
             "type": "show_dialog",
-            "dialog": "kards-dlc:kard/wangzhibaoku/template_wangzhibaoku"
+            "dialog": "kards-dlc:kard/wangzhibaoku/main"
         }
     }
 }

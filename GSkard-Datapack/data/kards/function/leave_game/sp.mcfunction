@@ -42,6 +42,7 @@ attribute @s safe_fall_distance base reset
 execute at @s run summon minecraft:firework_rocket ~ ~ ~
 team leave @s
 tellraw @a [{text: "欢迎老登",color:"gold"},{selector:"@s",color:"white"},{text: "再次进入游戏",color:"gold"}]
+tellraw @a ["",{bold:true,click_event:{action:"open_url",url:"https://oopz.cn/i/MXc224"},text:"点我加入",extra:[{color:"gold",text:"GSkard"},"的",{color:"dark_green",text:"oopz"}]}]
 team join Spectator @s
 gamemode spectator @s
 tp @s @r[gamemode=adventure]

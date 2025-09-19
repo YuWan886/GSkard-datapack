@@ -53,7 +53,7 @@
         },
         "action": {
             "type": "show_dialog",
-            "dialog": "kards-dlc:kard/zhuangbei/template_zhuangbei"
+            "dialog": "kards-dlc:kard/zhuangbei/main"
         }
     }
 }

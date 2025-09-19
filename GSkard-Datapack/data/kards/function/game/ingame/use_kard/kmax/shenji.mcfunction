@@ -1,2 +1,2 @@
-execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'来日偿还'}] if score @s changhuan_times matches 0 run function kards:game/yongpaiku/shenji/lairichanghuan/1
-execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'绝处逢生'}] run function kards:game/yongpaiku/shenji/juechufengsheng
+execute if items entity @s weapon.offhand #kards:kard[custom_data~{kards:'来日偿还'}] if score @s changhuan_times matches 0 run function kards:game/yongpaiku/shenji/lairichanghuan/1
+execute if items entity @s weapon.offhand #kards:kard[custom_data~{kards:'绝处逢生'}] run function kards:game/yongpaiku/shenji/juechufengsheng
