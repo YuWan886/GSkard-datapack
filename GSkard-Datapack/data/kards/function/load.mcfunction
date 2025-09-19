@@ -373,6 +373,7 @@ scoreboard objectives add UUID.2 dummy
 scoreboard objectives add UUID.3 dummy
 scoreboard objectives add Fire dummy
 scoreboard objectives add Fire_take_damage dummy
+scoreboard objectives add Scale trigger
 
 # 注册卡牌数量
 data modify storage settings kard_count set value \

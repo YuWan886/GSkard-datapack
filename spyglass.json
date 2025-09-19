@@ -2,6 +2,7 @@
     "env": {
         "gameVersion": "Latest release",
         "dataSource": "fastly",
-        "language": "zh-cn"
+        "language": "zh-cn",
+        "useFilePolling": true
     }
 }

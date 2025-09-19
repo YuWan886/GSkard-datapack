@@ -1,0 +1,14 @@
+{
+    "providers": [
+        {
+            "type": "ttf",
+            "file": "minecraft:unifont.ttf",
+            "shift": [
+                0,
+                28
+            ],
+            "size": 8,
+            "oversample": 14
+        }
+    ]
+}

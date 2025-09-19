@@ -1,1 +1,1 @@
-execute if items entity @s weapon.offhand #minecraft:creeper_drop_music_discs[custom_data~{kards:'模板：基本'}] if score @s kardCount >= #kard_template_jiben kardCount run function kards-dlc:kard/type/jiben/template_jiben/use
+execute if items entity @s weapon.offhand #kards:kard[custom_data~{kards:'模板：基本'}] if score @s kardCount >= #kard_template_jiben kardCount run function kards-dlc:kard/type/jiben/template_jiben/use

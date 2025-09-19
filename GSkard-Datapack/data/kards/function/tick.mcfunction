@@ -21,6 +21,7 @@ execute store result score 人数 b_alive if entity @a[team=blue,gamemode=advent
 #启用trigger
 scoreboard players enable @a reset
 execute if score #system GameStatus matches 1..2 run scoreboard players enable @a[scores={touxiang=0}] touxiang
+execute as @a[scores={Scale=1..}] run function kards:lobby/other/narrow_reset
 
 scoreboard players enable @a stopsound
 
