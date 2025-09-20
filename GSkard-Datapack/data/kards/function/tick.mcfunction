@@ -31,7 +31,8 @@ execute as @a[scores={dialog=1..}] run function kards:dialog/trigger
 #title @a[scores={dialog=1..}] times 0t 1t 0t
 #title @a[scores={dialog=1..}] title {text:"\uE002"}
 scoreboard players reset @a[scores={dialog=1..}] dialog
-#整着玩的
+## 整着玩的
+
 scoreboard players add #system Color 1
 execute if score #system Color matches 5 run team modify First prefix [{text: "[",color:"red"},{text: "萌",color:"yellow"},{text: "新",color:"green"},{text: "]",color:"aqua"}]
 execute if score #system Color matches 5 run team modify First color red
@@ -47,5 +48,8 @@ execute if score #system Color matches 20 run scoreboard players set #system Col
 execute as @e[type=cat,tag=Oiiaioiiiiai] at @s run rotate @s ~50 ~30
 execute as @e[type=cat,tag=Oiiaioiiiiai] if data entity @s {OnGround:1b} run data modify entity @s Motion set value [0f,1f,0f]
 effect give @e[type=cat,tag=Oiiaioiiiiai] instant_health 1 0 false
+
+#G36K
+execute as @a if score @s G36K_Use matches 1.. run function kards:guns/g36k/shoot
 
 #测试用

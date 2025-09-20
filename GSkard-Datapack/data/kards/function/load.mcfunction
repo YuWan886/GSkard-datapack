@@ -19,6 +19,8 @@ bossbar add minecraft:pvptime {text:"等待开放",color:"green"}
 bossbar set minecraft:roundtime color green
 bossbar set minecraft:pvptime color green
 #注册计分项目
+scoreboard objectives add G36K_Use used:carrot_on_a_stick
+scoreboard objectives add G36K_Ray dummy
 scoreboard objectives add use_kard_xp dummy
 scoreboard objectives add zombie_enhance_2 dummy
 scoreboard objectives add GameCount dummy
@@ -380,7 +382,7 @@ data modify storage settings kard_count set value \
     zhuangbei:420,\
     tuteng:13,\
     fashu:43,\
-    shenqi:18,\
+    shenji:18,\
     zuzhou:11,\
     xianjing:13,\
     shipin:105\
