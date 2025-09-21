@@ -1,5 +1,5 @@
 title @a title [{text: "红方回合",color:"red",bold:true}]
-bossbar set minecraft:roundtime color red
+bossbar set minecraft:roundtime color white
 scoreboard players set @a[team=red] CanuseKard 1
 scoreboard players set @a[team=blue] CanuseKard 0
 scoreboard players set @a[team=red] tiaoguo 1

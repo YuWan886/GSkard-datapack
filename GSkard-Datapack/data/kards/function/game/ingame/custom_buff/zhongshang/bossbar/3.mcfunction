@@ -1,5 +1,5 @@
 $bossbar add kards:zhongshang_$(UUID) [{text:"重伤:无法恢复生命",color:"white",bold:true}]
-$bossbar set kards:zhongshang_$(UUID) color white
+$bossbar set kards:zhongshang_$(UUID) color dark_purple
 $bossbar set kards:zhongshang_$(UUID) players @s
 $bossbar set kards:zhongshang_$(UUID) visible true
 

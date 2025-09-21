@@ -16,7 +16,7 @@ bossbar add minecraft:worldborder {text:"边界收缩倒计时",color:"green"}
 bossbar add minecraft:roundtime ""
 bossbar add minecraft:pvptime {text:"等待开放",color:"green"}
 
-bossbar set minecraft:roundtime color green
+bossbar set minecraft:roundtime color white
 bossbar set minecraft:pvptime color green
 #注册计分项目
 scoreboard objectives add G36K_Use used:carrot_on_a_stick
