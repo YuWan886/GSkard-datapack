@@ -1,0 +1,98 @@
+name: Create Release on Push
+
+on:
+  push:
+    branches: [ main, master ]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        
+    - name: Setup Git
+      run: |
+        git config --global user.name 'GitHub Actions'
+        git config --global user.email 'actions@github.com'
+        
+    - name: Get version from commit
+      id: version
+      run: |
+        # 获取最新的tag，如果没有则使用v1.52作为基础
+        LATEST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "v1.52")
+        echo "Latest tag: $LATEST_TAG"
+        
+        # 解析版本号
+        VERSION=$(echo $LATEST_TAG | sed 's/^v//')
+        MAJOR=$(echo $VERSION | cut -d. -f1)
+        MINOR=$(echo $VERSION | cut -d. -f2)
+        PATCH=$(echo $VERSION | cut -d. -f3)
+        
+        # 如果没有patch版本，设为0
+        if [ -z "$PATCH" ]; then
+          PATCH=0
+        fi
+        
+        # 递增patch版本
+        NEW_PATCH=$((PATCH + 1))
+        NEW_VERSION="v${MAJOR}.${MINOR}.${NEW_PATCH}"
+        echo "New version: $NEW_VERSION"
+        
+        echo "version=$NEW_VERSION" >> $GITHUB_OUTPUT
+        
+    - name: Create zip archives
+      run: |
+        # 创建临时目录
+        mkdir -p dist
+        
+        # 压缩 GSkard-Datapack
+        cd GSkard-Datapack
+        zip -r ../dist/GSkard-Datapack-${{ steps.version.outputs.version }}.zip .
+        cd ..
+        
+        # 压缩 GSkard-Resourcepack
+        cd GSkard-Resourcepack
+        zip -r ../dist/GSkard-Resourcepack-${{ steps.version.outputs.version }}.zip .
+        cd ..
+        
+        # 压缩 GSkard-Resourcepack-Music
+        cd GSkard-Resourcepack-Music
+        zip -r ../dist/GSkard-Resourcepack-Music-${{ steps.version.outputs.version }}.zip .
+        cd ..
+        
+        # 列出创建的zip文件
+        ls -la dist/
+        
+    - name: Create Release
+      uses: softprops/action-gh-release@v1
+      with:
+        tag_name: ${{ steps.version.outputs.version }}
+        name: ${{ steps.version.outputs.version }}
+        body: |
+          自动生成的发布版本 ${{ steps.version.outputs.version }}
+          
+          包含以下内容：
+          - GSkard-Datapack
+          - GSkard-Resourcepack
+          - GSkard-Resourcepack-Music
+          
+          更新内容：
+          ${{ github.event.head_commit.message }}
+        files: |
+          dist/GSkard-Datapack-${{ steps.version.outputs.version }}.zip
+          dist/GSkard-Resourcepack-${{ steps.version.outputs.version }}.zip
+          dist/GSkard-Resourcepack-Music-${{ steps.version.outputs.version }}.zip
+        draft: false
+        prerelease: false
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
+    - name: Cleanup
+      run: rm -rf dist
