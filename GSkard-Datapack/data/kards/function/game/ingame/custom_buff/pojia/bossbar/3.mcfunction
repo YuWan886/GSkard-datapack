@@ -1,5 +1,5 @@
 $bossbar add kards:pojia_$(UUID) [{text:"破甲:防御力降低",color:"white",bold:true}]
-$bossbar set kards:pojia_$(UUID) color dark_purple
+$bossbar set kards:pojia_$(UUID) color pink
 $bossbar set kards:pojia_$(UUID) players @s
 $bossbar set kards:pojia_$(UUID) visible true
 
