@@ -25,29 +25,33 @@ jobs:
     - name: Get version from commit
       id: version
       run: |
-        # 获取最新的tag，如果没有则使用v1.52作为基础
-        LATEST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "v1.52")
+        # 获取最新的tag，如果没有则使用1.53作为基础
+        LATEST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "1.53")
         echo "Latest tag: $LATEST_TAG"
         
-        # 解析版本号
+        # 解析版本号（移除可能存在的v前缀）
         VERSION=$(echo $LATEST_TAG | sed 's/^v//')
         MAJOR=$(echo $VERSION | cut -d. -f1)
         MINOR=$(echo $VERSION | cut -d. -f2)
         PATCH=$(echo $VERSION | cut -d. -f3)
         
-        # 如果没有patch版本，设为0
+        # 如果没有patch版本，说明是大版本（如1.53），设为正式版本
         if [ -z "$PATCH" ]; then
-          PATCH=0
+          NEW_VERSION="${MAJOR}.${MINOR}"
+          echo "New version: $NEW_VERSION"
+          echo "This is a stable release"
+          echo "release_type=stable" >> $GITHUB_OUTPUT
+        else
+          # 如果有patch版本，说明是小版本（如1.53.1），递增patch版本
+          NEW_PATCH=$((PATCH + 1))
+          NEW_VERSION="${MAJOR}.${MINOR}.${NEW_PATCH}"
+          echo "New version: $NEW_VERSION"
+          echo "This is a preview release for testing"
+          echo "release_type=preview" >> $GITHUB_OUTPUT
         fi
         
-        # 递增patch版本
-        NEW_PATCH=$((PATCH + 1))
-        NEW_VERSION="v${MAJOR}.${MINOR}.${NEW_PATCH}"
-        echo "New version: $NEW_VERSION"
-        echo "This is a preview release for testing"
-        
         # 输出详细信息用于调试
-        echo "Major: $MAJOR, Minor: $MINOR, Previous Patch: $PATCH, New Patch: $NEW_PATCH"
+        echo "Major: $MAJOR, Minor: $MINOR, Previous Patch: $PATCH, New Version: $NEW_VERSION"
         
         echo "version=$NEW_VERSION" >> $GITHUB_OUTPUT
         
@@ -80,9 +84,9 @@ jobs:
         tag_name: ${{ steps.version.outputs.version }}
         name: ${{ steps.version.outputs.version }}
         body: |
-          自动生成的预览版本 ${{ steps.version.outputs.version }}
+          ${{ steps.version.outputs.release_type == 'stable' && '正式版本' || '预览版本' }} ${{ steps.version.outputs.version }}
           
-          这是一个预览版本，用于测试目的。
+          ${{ steps.version.outputs.release_type == 'stable' && '这是一个稳定版本，可以用于生产环境。' || '这是一个预览版本，用于测试目的。' }}
           
           更新内容：
           ${{ github.event.head_commit.message }}
@@ -96,7 +100,7 @@ jobs:
           dist/GSkard-Resourcepack.zip
           dist/GSkard-Resourcepack-Music.zip
         draft: false
-        prerelease: true
+        prerelease: ${{ steps.version.outputs.release_type == 'preview' }}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
