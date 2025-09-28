@@ -44,6 +44,10 @@ jobs:
         NEW_PATCH=$((PATCH + 1))
         NEW_VERSION="v${MAJOR}.${MINOR}.${NEW_PATCH}"
         echo "New version: $NEW_VERSION"
+        echo "This is a preview release for testing"
+        
+        # 输出详细信息用于调试
+        echo "Major: $MAJOR, Minor: $MINOR, Previous Patch: $PATCH, New Patch: $NEW_PATCH"
         
         echo "version=$NEW_VERSION" >> $GITHUB_OUTPUT
         
@@ -54,17 +58,17 @@ jobs:
         
         # 压缩 GSkard-Datapack
         cd GSkard-Datapack
-        zip -r ../dist/GSkard-Datapack-${{ steps.version.outputs.version }}.zip .
+        zip -r ../dist/GSkard-Datapack.zip .
         cd ..
         
         # 压缩 GSkard-Resourcepack
         cd GSkard-Resourcepack
-        zip -r ../dist/GSkard-Resourcepack-${{ steps.version.outputs.version }}.zip .
+        zip -r ../dist/GSkard-Resourcepack.zip .
         cd ..
         
         # 压缩 GSkard-Resourcepack-Music
         cd GSkard-Resourcepack-Music
-        zip -r ../dist/GSkard-Resourcepack-Music-${{ steps.version.outputs.version }}.zip .
+        zip -r ../dist/GSkard-Resourcepack-Music.zip .
         cd ..
         
         # 列出创建的zip文件
@@ -76,21 +80,23 @@ jobs:
         tag_name: ${{ steps.version.outputs.version }}
         name: ${{ steps.version.outputs.version }}
         body: |
-          自动生成的发布版本 ${{ steps.version.outputs.version }}
+          自动生成的预览版本 ${{ steps.version.outputs.version }}
           
-          包含以下内容：
-          - GSkard-Datapack
-          - GSkard-Resourcepack
-          - GSkard-Resourcepack-Music
+          这是一个预览版本，用于测试目的。
           
           更新内容：
           ${{ github.event.head_commit.message }}
+          
+          提交信息：
+          - 提交者: ${{ github.event.head_commit.author.name }}
+          - 提交时间: ${{ github.event.head_commit.timestamp }}
+          - 提交哈希: ${{ github.event.head_commit.id }}
         files: |
-          dist/GSkard-Datapack-${{ steps.version.outputs.version }}.zip
-          dist/GSkard-Resourcepack-${{ steps.version.outputs.version }}.zip
-          dist/GSkard-Resourcepack-Music-${{ steps.version.outputs.version }}.zip
+          dist/GSkard-Datapack.zip
+          dist/GSkard-Resourcepack.zip
+          dist/GSkard-Resourcepack-Music.zip
         draft: false
-        prerelease: false
+        prerelease: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
