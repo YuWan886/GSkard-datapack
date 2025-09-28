@@ -35,12 +35,12 @@ jobs:
         MINOR=$(echo $VERSION | cut -d. -f2)
         PATCH=$(echo $VERSION | cut -d. -f3)
         
-        # 如果没有patch版本，说明是大版本（如1.53），设为正式版本
+        # 如果没有patch版本，说明是大版本（如1.53），创建第一个patch版本
         if [ -z "$PATCH" ]; then
-          NEW_VERSION="${MAJOR}.${MINOR}"
+          NEW_VERSION="${MAJOR}.${MINOR}.1"
           echo "New version: $NEW_VERSION"
-          echo "This is a stable release"
-          echo "release_type=stable" >> $GITHUB_OUTPUT
+          echo "This is a preview release for testing"
+          echo "release_type=preview" >> $GITHUB_OUTPUT
         else
           # 如果有patch版本，说明是小版本（如1.53.1），递增patch版本
           NEW_PATCH=$((PATCH + 1))
