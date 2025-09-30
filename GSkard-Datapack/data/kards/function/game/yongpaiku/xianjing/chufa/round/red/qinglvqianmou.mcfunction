@@ -3,5 +3,5 @@ scoreboard players reset 红队 xianjin_qinglvqianmou
 execute as @a[team=red,gamemode=adventure] run scoreboard players operation @s qinglvqianmou = @s use_kard
 scoreboard players reset @a[team=red] use_kard 
 execute as @a[team=red,gamemode=adventure] run function kards:game/yongpaiku/xianjing/chufa/qinglvqianmou
-tellraw @a [{text: "红队",color: "red"},{text: "触发了",color: "gray"},{text: "<轻虑浅谋>",color: "dark_aqua",hover_event:{action:"show_text",value:"触发时让触发者队伍所有玩家扣除等同于本回合内使用卡牌数量的血量"}}]
+tellraw @a [{translate: "kards.function.game.end.win.red_win.1", fallback: "红队",color: "red"},{translate: "kards.function.game.yongpaiku.xianjing.chufa.hewei.1", fallback: "触发了",color: "gray"},{translate: "kards.function.game.yongpaiku.xianjing.chufa.round.blue.qinglvqianmou.1", fallback: "<轻虑浅谋>",color: "dark_aqua",hover_event:{action:"show_text",value:"触发时让触发者队伍所有玩家扣除等同于本回合内使用卡牌数量的血量"}}]
 execute as @a at @s run playsound minecraft:dogdoing master @s ~ ~ ~ 1 1

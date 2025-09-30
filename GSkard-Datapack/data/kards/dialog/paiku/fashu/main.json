@@ -1,20 +1,20 @@
 {
     "type": "minecraft:multi_action",
     "title": {
-        "text": "法术",
-        "color": "light_purple",
-        "bold": true
+        "translate": "json.kards.dialog.paiku.fashu.main.162",
+        "fallback": "法术"
     },
     "external_title": {
-        "text": ""
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
     },
     "body": [],
     "inputs": [],
     "can_close_with_escape": true,
     "exit_action": {
         "label": {
-            "text": "返回§6主§a牌库",
-            "color": "green"
+            "translate": "json.kards.dialog.paiku.fashu.main.163",
+            "fallback": "返回§6主§a牌库"
         },
         "action": {
             "type": "show_dialog",
@@ -25,8 +25,8 @@
     "actions": [
         {
             "label": {
-                "text": "背水一战",
-                "color": "light_purple"
+                "translate": "json.kards.dialog.paiku.fashu.main.164",
+                "fallback": "背水一战"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -36,8 +36,8 @@
         },
         {
             "label": {
-                "text": "超脱洗礼",
-                "color": "light_purple"
+                "translate": "json.kards.dialog.paiku.fashu.main.165",
+                "fallback": "超脱洗礼"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -47,8 +47,8 @@
         },
         {
             "label": {
-                "text": "重铸",
-                "color": "light_purple"
+                "translate": "json.kards.dialog.paiku.fashu.main.166",
+                "fallback": "重铸"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -58,8 +58,8 @@
         },
         {
             "label": {
-                "text": "春暖花开",
-                "color": "light_purple"
+                "translate": "json.kards.dialog.paiku.fashu.main.167",
+                "fallback": "春暖花开"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -69,8 +69,8 @@
         },
         {
             "label": {
-                "text": "春日影",
-                "color": "light_purple"
+                "translate": "json.kards.dialog.paiku.fashu.main.168",
+                "fallback": "春日影"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -80,8 +80,8 @@
         },
         {
             "label": {
-                "text": "地狱",
-                "color": "light_purple"
+                "translate": "json.kards.dialog.paiku.fashu.main.169",
+                "fallback": "地狱"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -91,8 +91,8 @@
         },
         {
             "label": {
-                "text": "赌命",
-                "color": "light_purple"
+                "translate": "json.kards.dialog.paiku.fashu.main.170",
+                "fallback": "赌命"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -102,8 +102,8 @@
         },
         {
             "label": {
-                "text": "反转",
-                "color": "light_purple"
+                "translate": "json.kards.dialog.paiku.fashu.main.171",
+                "fallback": "反转"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -113,8 +113,8 @@
         },
         {
             "label": {
-                "text": "过河拆桥",
-                "color": "light_purple"
+                "translate": "json.kards.dialog.paiku.fashu.main.172",
+                "fallback": "过河拆桥"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -124,8 +124,8 @@
         },
         {
             "label": {
-                "text": "黑山羊之拥",
-                "color": "light_purple"
+                "translate": "json.kards.dialog.paiku.fashu.main.173",
+                "fallback": "黑山羊之拥"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -135,8 +135,8 @@
         },
         {
             "label": {
-                "text": "劫掠",
-                "color": "light_purple"
+                "translate": "json.kards.dialog.paiku.fashu.main.174",
+                "fallback": "劫掠"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -146,8 +146,8 @@
         },
         {
             "label": {
-                "text": "紧急调遣",
-                "color": "light_purple"
+                "translate": "json.kards.dialog.paiku.fashu.main.175",
+                "fallback": "紧急调遣"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -157,8 +157,8 @@
         },
         {
             "label": {
-                "text": "禁字启封",
-                "color": "light_purple"
+                "translate": "json.kards.advancement.advancement.jinzijue.first_use.29",
+                "fallback": "禁字启封"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -168,8 +168,8 @@
         },
         {
             "label": {
-                "text": "狼群战术",
-                "color": "light_purple"
+                "translate": "json.kards.dialog.paiku.fashu.main.176",
+                "fallback": "狼群战术"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -179,8 +179,8 @@
         },
         {
             "label": {
-                "text": "漫水",
-                "color": "light_purple"
+                "translate": "json.kards.dialog.paiku.fashu.main.177",
+                "fallback": "漫水"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -190,8 +190,8 @@
         },
         {
             "label": {
-                "text": "内核引爆",
-                "color": "light_purple"
+                "translate": "json.kards.dialog.paiku.fashu.main.178",
+                "fallback": "内核引爆"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -201,8 +201,8 @@
         },
         {
             "label": {
-                "text": "起死回生",
-                "color": "light_purple"
+                "translate": "json.kards.dialog.paiku.fashu.main.179",
+                "fallback": "起死回生"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -212,8 +212,8 @@
         },
         {
             "label": {
-                "text": "闪电轰鸣",
-                "color": "light_purple"
+                "translate": "json.kards.dialog.paiku.fashu.main.180",
+                "fallback": "闪电轰鸣"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -223,8 +223,8 @@
         },
         {
             "label": {
-                "text": "生产令",
-                "color": "light_purple"
+                "translate": "json.kards.dialog.paiku.fashu.main.181",
+                "fallback": "生产令"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -234,8 +234,8 @@
         },
         {
             "label": {
-                "text": "神圣之光",
-                "color": "light_purple"
+                "translate": "json.kards.dialog.paiku.fashu.main.182",
+                "fallback": "神圣之光"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -245,8 +245,8 @@
         },
         {
             "label": {
-                "text": "石化皮肤",
-                "color": "light_purple"
+                "translate": "json.kards.dialog.paiku.fashu.main.183",
+                "fallback": "石化皮肤"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -256,8 +256,8 @@
         },
         {
             "label": {
-                "text": "视角干扰",
-                "color": "light_purple"
+                "translate": "json.kards.dialog.paiku.fashu.main.184",
+                "fallback": "视角干扰"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -267,8 +267,8 @@
         },
         {
             "label": {
-                "text": "水流涌动",
-                "color": "light_purple"
+                "translate": "json.kards.dialog.paiku.fashu.main.185",
+                "fallback": "水流涌动"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -278,8 +278,8 @@
         },
         {
             "label": {
-                "text": "顺手牵羊",
-                "color": "light_purple"
+                "translate": "json.kards.dialog.paiku.fashu.main.186",
+                "fallback": "顺手牵羊"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -289,8 +289,8 @@
         },
         {
             "label": {
-                "text": "四季如春",
-                "color": "light_purple"
+                "translate": "json.kards.dialog.paiku.fashu.main.187",
+                "fallback": "四季如春"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -300,8 +300,8 @@
         },
         {
             "label": {
-                "text": "死刑宣告",
-                "color": "light_purple"
+                "translate": "json.kards.dialog.paiku.fashu.main.188",
+                "fallback": "死刑宣告"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -311,8 +311,8 @@
         },
         {
             "label": {
-                "text": "酸辣无骨鸡爪",
-                "color": "light_purple"
+                "translate": "json.kards.dialog.paiku.fashu.main.189",
+                "fallback": "酸辣无骨鸡爪"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -322,8 +322,8 @@
         },
         {
             "label": {
-                "text": "图腾进击",
-                "color": "light_purple"
+                "translate": "json.kards.dialog.paiku.fashu.main.190",
+                "fallback": "图腾进击"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -333,8 +333,8 @@
         },
         {
             "label": {
-                "text": "五谷丰登",
-                "color": "light_purple"
+                "translate": "json.kards.dialog.paiku.fashu.main.191",
+                "fallback": "五谷丰登"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -344,8 +344,8 @@
         },
         {
             "label": {
-                "text": "无用",
-                "color": "light_purple"
+                "translate": "json.kards.dialog.paiku.fashu.main.192",
+                "fallback": "无用"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -355,8 +355,8 @@
         },
         {
             "label": {
-                "text": "鲜血转化",
-                "color": "light_purple"
+                "translate": "json.kards.dialog.paiku.fashu.main.193",
+                "fallback": "鲜血转化"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -366,8 +366,8 @@
         },
         {
             "label": {
-                "text": "心灵焚烧",
-                "color": "light_purple"
+                "translate": "json.kards.dialog.paiku.fashu.main.194",
+                "fallback": "心灵焚烧"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -377,8 +377,8 @@
         },
         {
             "label": {
-                "text": "洗牌",
-                "color": "light_purple"
+                "translate": "json.kards.dialog.paiku.fashu.main.195",
+                "fallback": "洗牌"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -388,8 +388,8 @@
         },
         {
             "label": {
-                "text": "盈余之力",
-                "color": "light_purple"
+                "translate": "json.kards.dialog.paiku.fashu.main.196",
+                "fallback": "盈余之力"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -399,8 +399,8 @@
         },
         {
             "label": {
-                "text": "隐匿仓库",
-                "color": "light_purple"
+                "translate": "json.kards.dialog.paiku.fashu.main.197",
+                "fallback": "隐匿仓库"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -410,8 +410,8 @@
         },
         {
             "label": {
-                "text": "以智取胜",
-                "color": "light_purple"
+                "translate": "json.kards.dialog.paiku.fashu.main.198",
+                "fallback": "以智取胜"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -421,8 +421,8 @@
         },
         {
             "label": {
-                "text": "有偿借贷",
-                "color": "light_purple"
+                "translate": "json.kards.dialog.paiku.fashu.main.199",
+                "fallback": "有偿借贷"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -432,8 +432,8 @@
         },
         {
             "label": {
-                "text": "预言灾祸",
-                "color": "light_purple"
+                "translate": "json.kards.dialog.paiku.fashu.main.200",
+                "fallback": "预言灾祸"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -443,8 +443,8 @@
         },
         {
             "label": {
-                "text": "宰鸡敬猴",
-                "color": "light_purple"
+                "translate": "json.kards.dialog.paiku.fashu.main.201",
+                "fallback": "宰鸡敬猴"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -454,8 +454,8 @@
         },
         {
             "label": {
-                "text": "战时生产",
-                "color": "light_purple"
+                "translate": "json.kards.dialog.paiku.fashu.main.202",
+                "fallback": "战时生产"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -465,8 +465,8 @@
         },
         {
             "label": {
-                "text": "整修",
-                "color": "light_purple"
+                "translate": "json.kards.dialog.paiku.fashu.main.203",
+                "fallback": "整修"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -476,8 +476,8 @@
         },
         {
             "label": {
-                "text": "骤然引爆",
-                "color": "light_purple"
+                "translate": "json.kards.dialog.paiku.fashu.main.204",
+                "fallback": "骤然引爆"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -487,8 +487,8 @@
         },
         {
             "label": {
-                "text": "诅咒护甲",
-                "color": "light_purple"
+                "translate": "json.kards.dialog.paiku.fashu.main.205",
+                "fallback": "诅咒护甲"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -498,8 +498,8 @@
         },
         {
             "label": {
-                "text": "DLC",
-                "color": "light_purple"
+                "translate": "json.kards.dialog.paiku.fashu.main.206",
+                "fallback": "DLC"
             },
             "action": {
                 "type": "show_dialog",

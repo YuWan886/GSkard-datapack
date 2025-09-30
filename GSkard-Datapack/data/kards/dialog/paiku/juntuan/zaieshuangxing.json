@@ -1,18 +1,12 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "text": "14K ",
-        "extra": [
-            {
-                "text": "灾厄双星",
-                "color": "dark_green"
-            }
-        ],
-        "color": "aqua",
-        "bold": true
+        "translate": "json.kards.dialog.paiku.juntuan.zaieshuangxing.360",
+        "fallback": "14K "
     },
     "external_title": {
-        "text": ""
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
     },
     "body": [
         {
@@ -26,62 +20,32 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "召唤1只",
-                "color": "gray",
-                "extra": [
-                    {
-                        "text": " 幻术师",
-                        "color": "gold"
-                    },
-                    {
-                        "text": " 和1只",
-                        "color": "gray"
-                    },
-                    {
-                        "text": " 唤魔者",
-                        "color": "gold"
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.jiben.diaolingkulou.253",
+                "fallback": "召唤1只"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "若友方",
-                "color": "gray",
-                "extra": [
-                    {
-                        "text": " 灾厄村民",
-                        "color": "gold"
-                    },
-                    {
-                        "text": " 大于等于9",
-                        "color": "gray"
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.juntuan.zaieshuangxing.361",
+                "fallback": "若友方"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "额外召唤1只",
-                "color": "gray",
-                "extra": [
-                    {
-                        "text": " 血量为40♥的劫掠兽",
-                        "color": "gold"
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.juntuan.jieluexiaodui.296",
+                "fallback": "额外召唤1只"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "灾厄村民:掠夺者 卫道士 幻术师 唤魔者",
-                "color": "dark_gray"
+                "translate": "json.kards.dialog.paiku.juntuan.zaieshuangxing.362",
+                "fallback": "灾厄村民:掠夺者 卫道士 幻术师 唤魔者"
             },
             "width": 1024
         }
@@ -90,8 +54,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "text": "返回§d军团牌§a牌库",
-            "color": "green"
+            "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.284",
+            "fallback": "返回§d军团牌§a牌库"
         },
         "action": {
             "type": "minecraft:show_dialog",

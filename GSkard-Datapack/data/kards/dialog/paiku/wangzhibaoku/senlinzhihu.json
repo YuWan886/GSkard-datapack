@@ -1,12 +1,12 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "text": "森林之护",
-        "color": "green",
-        "italic": false
+        "translate": "json.kards.dialog.paiku.wangzhibaoku.main.556",
+        "fallback": "森林之护"
     },
     "external_title": {
-        "text": ""
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
     },
     "body": [
         {
@@ -14,7 +14,7 @@
             "item": {
                 "id": "minecraft:leather_chestplate",
                 "components": {
-                    "dyed_color":65280
+                    "dyed_color": 65280
                 }
             },
             "show_decorations": false,
@@ -23,54 +23,48 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "获得30♥最大生命",
-                "color": "dark_gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.senlinzhihu.563",
+                "fallback": "获得30♥最大生命"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "生息 I",
-                "color": "gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.senlinzhihu.564",
+                "fallback": "生息 I"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "每4.5s回复周围5格友方非图腾生物1♥ 自身获得双倍",
-                "color": "dark_gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.senlinzhihu.565",
+                "fallback": "每4.5s回复周围5格友方非图腾生物1♥ 自身获得双倍"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "森林之御",
-                "color": "gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.senlinzhihu.566",
+                "fallback": "森林之御"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "每损失10♥ 获得6♥临时生命20s",
-                "color": "dark_gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.senlinzhihu.567",
+                "fallback": "每损失10♥ 获得6♥临时生命20s"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "传奇护具",
-                "color": "white",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.kunanyaolan.536",
+                "fallback": "传奇护具"
             },
             "width": 1024
         }
@@ -79,8 +73,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "text": "返回§6王之宝库",
-            "color": "green"
+            "translate": "json.kards.dialog.paiku.wangzhibaoku.diaolingtaidao.497",
+            "fallback": "返回§6王之宝库"
         },
         "action": {
             "type": "minecraft:show_dialog",

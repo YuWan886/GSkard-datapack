@@ -30,18 +30,18 @@ execute as @a if score @s stopsound matches 1.. run function kards:music/stop
 scoreboard players enable @a dialog
 execute as @a[scores={dialog=1..}] run function kards:dialog/trigger
 #title @a[scores={dialog=1..}] times 0t 1t 0t
-#title @a[scores={dialog=1..}] title {text:"\uE002"}
+#title @a[scores={dialog=1..}] title {translate: "kards.function.tick.1", fallback: "\uE002"}
 scoreboard players reset @a[scores={dialog=1..}] dialog
 ## 整着玩的
 
 scoreboard players add #system Color 1
-execute if score #system Color matches 5 run team modify First prefix [{text: "[",color:"red"},{text: "萌",color:"yellow"},{text: "新",color:"green"},{text: "]",color:"aqua"}]
+execute if score #system Color matches 5 run team modify First prefix [{translate: "kards.function.tick.2", fallback: "[",color:"red"},{translate: "kards.function.tick.3", fallback: "萌",color:"yellow"},{translate: "kards.function.tick.4", fallback: "新",color:"green"},{translate: "kards.function.tick.5", fallback: "]",color:"aqua"}]
 execute if score #system Color matches 5 run team modify First color red
-execute if score #system Color matches 10 run team modify First prefix [{text: "[",color:"aqua"},{text: "萌",color:"red"},{text: "新",color:"yellow"},{text: "]",color:"green"}]
+execute if score #system Color matches 10 run team modify First prefix [{translate: "kards.function.tick.2", fallback: "[",color:"aqua"},{translate: "kards.function.tick.3", fallback: "萌",color:"red"},{translate: "kards.function.tick.4", fallback: "新",color:"yellow"},{translate: "kards.function.tick.5", fallback: "]",color:"green"}]
 execute if score #system Color matches 10 run team modify First color yellow
-execute if score #system Color matches 15 run team modify First prefix [{text: "[",color:"green"},{text: "萌",color:"aqua"},{text: "新",color:"red"},{text: "]",color:"yellow"}]
+execute if score #system Color matches 15 run team modify First prefix [{translate: "kards.function.tick.2", fallback: "[",color:"green"},{translate: "kards.function.tick.3", fallback: "萌",color:"aqua"},{translate: "kards.function.tick.4", fallback: "新",color:"red"},{translate: "kards.function.tick.5", fallback: "]",color:"yellow"}]
 execute if score #system Color matches 15 run team modify First color green
-execute if score #system Color matches 20 run team modify First prefix [{text: "[",color:"yellow"},{text: "萌",color:"green"},{text: "新",color:"aqua"},{text: "]",color:"red"}]
+execute if score #system Color matches 20 run team modify First prefix [{translate: "kards.function.tick.2", fallback: "[",color:"yellow"},{translate: "kards.function.tick.3", fallback: "萌",color:"green"},{translate: "kards.function.tick.4", fallback: "新",color:"aqua"},{translate: "kards.function.tick.5", fallback: "]",color:"red"}]
 execute if score #system Color matches 20 run team modify First color aqua
 execute if score #system Color matches 20 run scoreboard players set #system Color 0
 

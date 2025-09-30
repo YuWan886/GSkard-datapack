@@ -1,66 +1,70 @@
 {
-  "type": "minecraft:multi_action",
-  "title": {
-    "text": "    商店",
-    "color": "gold",
-    "bold": true
-  },
-  "external_title": {
-    "text": ""
-  },
-  "body": [
-    {
-      "type": "minecraft:plain_message",
-      "contents": {
-        "text": "\n\n\n\n\n\n\n"
-      }
+    "type": "minecraft:multi_action",
+    "title": {
+        "translate": "json.kards.dialog.xp_shop.main.878",
+        "fallback": "    商店"
     },
-    {
-      "type": "minecraft:item",
-      "item": {
-        "id": "minecraft:experience_bottle"
-      },
-      "show_decorations": false,
-      "show_tooltip": false
+    "external_title": {
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
     },
-    {
-      "type": "minecraft:plain_message",
-      "contents": {
-        "text": "\n"
-      }
-    }
-  ],
-  "inputs": [],
-  "can_close_with_escape": true,
-  "columns": 2,
-  "actions": [
-    {
-      "label": {
-        "text": "天赋商店",
-        "color": "green"
-      },
-      "tooltip": {
-        "text": "选择或升级天赋"
-      },
-      "action": {
-        "type": "minecraft:run_command",
-        "command": "trigger dialog set 1000"
-      },
-      "width": 75
-    },
-    {
-      "label": {
-        "text": "经验商店",
-        "color": "gold"
-      },
-      "tooltip": {
-        "text": "购买附魔书"
-      },
-      "action": {
-        "type": "minecraft:show_dialog",
-        "dialog": "kards:xp_shop/enchantment/main"
-      },
-      "width": 75
-    }
-  ]
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "translate": "json.kards.dialog.xp_shop.main.879",
+                "fallback": "\n\n\n\n\n\n\n"
+            }
+        },
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:experience_bottle"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "translate": "json.kards.dialog.xp_shop.main.880",
+                "fallback": "\n"
+            }
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "columns": 2,
+    "actions": [
+        {
+            "label": {
+                "translate": "json.kards.dialog.xp_shop.main.881",
+                "fallback": "天赋商店"
+            },
+            "tooltip": {
+                "translate": "json.kards.dialog.xp_shop.main.882",
+                "fallback": "选择或升级天赋"
+            },
+            "action": {
+                "type": "minecraft:run_command",
+                "command": "trigger dialog set 1000"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "translate": "json.kards.dialog.xp_shop.main.883",
+                "fallback": "经验商店"
+            },
+            "tooltip": {
+                "translate": "json.kards.dialog.xp_shop.main.884",
+                "fallback": "购买附魔书"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:xp_shop/enchantment/main"
+            },
+            "width": 75
+        }
+    ]
 }

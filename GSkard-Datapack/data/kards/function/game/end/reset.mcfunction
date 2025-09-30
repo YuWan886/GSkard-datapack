@@ -11,9 +11,9 @@ scoreboard players operation #system tongji_hurt > @a tongji_hurt
 execute as @a if score @s tongji_damage = #system tongji_damage run tag @s add DamageMAX
 execute as @a if score @s tongji_killed = #system tongji_killed run tag @s add KillMAX
 execute as @a if score @s tongji_hurt = #system tongji_hurt run tag @s add HurtMAX
-tellraw @a [{text: "[打工人] ",color:"green"},{selector:"@a[tag=DamageMAX]",bold:true,color:"gold"},{text: " 共造成",color:"green"},{score:{objective:"tongji_damage",name:"#system"}},{text: "♥",color:"red"},{text: "伤害!",color:"green"}]
-tellraw @a [{text: "[超级肉盾] ",color:"green"},{selector:"@a[tag=HurtMAX]",bold:true,color:"gold"},{text: " 共受到",color:"green"},{score:{objective:"tongji_hurt",name:"#system"}},{text: "♥",color:"red"},{text: "伤害!",color:"green"}]
-tellraw @a [{text: "[杀神] ",color:"green"},{selector:"@a[tag=KillMAX]",bold:true,color:"gold"},{text: " 杀死了",color:"green"},{score:{objective:"tongji_killed",name:"#system"}},{text: "个",color:"red"},{text: "生物!",color:"green"}]
+tellraw @a [{translate: "kards.function.game.end.reset.1", fallback: "[打工人] ",color:"green"},{selector:"@a[tag=DamageMAX]",bold:true,color:"gold"},{translate: "kards.function.game.end.reset.2", fallback: " 共造成",color:"green"},{score:{objective:"tongji_damage",name:"#system"}},{translate: "kards.function.game.end.reset.3", fallback: "♥",color:"red"},{translate: "kards.function.game.end.reset.4", fallback: "伤害!",color:"green"}]
+tellraw @a [{translate: "kards.function.game.end.reset.5", fallback: "[超级肉盾] ",color:"green"},{selector:"@a[tag=HurtMAX]",bold:true,color:"gold"},{translate: "kards.function.game.end.reset.6", fallback: " 共受到",color:"green"},{score:{objective:"tongji_hurt",name:"#system"}},{translate: "kards.function.game.end.reset.3", fallback: "♥",color:"red"},{translate: "kards.function.game.end.reset.4", fallback: "伤害!",color:"green"}]
+tellraw @a [{translate: "kards.function.game.end.reset.7", fallback: "[杀神] ",color:"green"},{selector:"@a[tag=KillMAX]",bold:true,color:"gold"},{translate: "kards.function.game.end.reset.8", fallback: " 杀死了",color:"green"},{score:{objective:"tongji_killed",name:"#system"}},{translate: "kards.function.game.end.reset.9", fallback: "个",color:"red"},{translate: "kards.function.game.end.reset.10", fallback: "生物!",color:"green"}]
 tag @a[tag=DamageMAX] remove DamageMAX
 tag @a[tag=KillMAX] remove KillMAX
 tag @a[tag=HurtMAX] remove HurtMAX
@@ -147,4 +147,4 @@ execute as @a at @s run stopsound @s
 execute if predicate kards:random0.01 run schedule function kards:game/end/oiia 1s
 
 #生成琉璃夜
-summon minecraft:pig 62 226 -26 {Tags:["Hart_liuli"],attributes:[{id:"max_health",base:200}],Health:200,CustomName:[{text:"Hart_liuli",bold:true,color:"gold"}],CustomNameVisible:true}
+summon minecraft:pig 62 226 -26 {Tags:["Hart_liuli"],attributes:[{id:"max_health",base:200}],Health:200,CustomName:[{translate: "kards.function.game.end.reset.11", fallback: "Hart_liuli",bold:true,color:"gold"}],CustomNameVisible:true}

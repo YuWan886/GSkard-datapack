@@ -2,7 +2,7 @@
 scoreboard players add @s zombie_enhance 1
 scoreboard players add @s[scores={zombie_enhance=20..}] zombie_enhance_2 1
 function kards:game/yongpaiku/use_general/tellraw
-tellraw @a [{text: "目前使用次数为:",color:"white"},{score:{objective:"zombie_enhance",name:"@s"},color:"green",bold:false}]
+tellraw @a [{translate: "kards.function.game.yongpaiku.yansheng.kuanghuanzombie.1.1", fallback: "目前使用次数为:",color:"white"},{score:{objective:"zombie_enhance",name:"@s"},color:"green",bold:false}]
 
     execute if score @s zombie_enhance matches 1..5 if entity @s[team=red] at @e[tag=blue_marker_7,limit=1] run summon zombie ~ 1 ~ {Tags:["Mob_Start"],Team:red,IsBaby:false,equipment:{head:{id:"minecraft:dispenser"}}}
     execute if score @s zombie_enhance matches 6..10 if entity @s[team=red] at @e[tag=blue_marker_7,limit=1] run summon zombie ~ 1 ~ {Tags:["Mob_Start"],Team:red,IsBaby:false,equipment:{mainhand:{id:"minecraft:wooden_sword"},head:{id:"minecraft:dispenser"}}}

@@ -1,18 +1,12 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "text": "8K ",
-        "extra": [
-            {
-                "text": "猪",
-                "color": "red"
-            }
-        ],
-        "color": "aqua",
-        "bold": true
+        "translate": "json.kards.dialog.paiku.fashu.chunnuanhuakai.130",
+        "fallback": "8K "
     },
     "external_title": {
-        "text": ""
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
     },
     "body": [
         {
@@ -26,43 +20,32 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "图腾牌",
-                "color": "red",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.tuteng.baomao.416",
+                "fallback": "图腾牌"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "在队伍图腾区生成猪",
-                "color": "gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.tuteng.zhu.463",
+                "fallback": "在队伍图腾区生成猪"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "图腾存活效果：",
-                "color": "gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.tuteng.baomao.418",
+                "fallback": "图腾存活效果："
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "1.队伍玩家获得",
-                "color": "gray",
-                "italic": false,
-                "extra": [
-                    {
-                        "text": "抗性提升1",
-                        "color": "gold",
-                        "italic": false
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.tuteng.baomao.419",
+                "fallback": "1.队伍玩家获得"
             },
             "width": 1024
         }
@@ -71,8 +54,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "text": "返回§c图腾§a牌库",
-            "color": "green"
+            "translate": "json.kards.dialog.paiku.tuteng.baomao.421",
+            "fallback": "返回§c图腾§a牌库"
         },
         "action": {
             "type": "minecraft:show_dialog",

@@ -1,18 +1,18 @@
 {
-  "condition": "minecraft:entity_properties",
-  "entity": "this",
-  "predicate": {
-    "equipment": {
-      "mainhand": {
-        "predicates": {
-          "minecraft:enchantments": [
-            {
-              "enchantments": "kards:xuruo",
-              "levels": 4
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {
+            "mainhand": {
+                "predicates": {
+                    "minecraft:enchantments": [
+                        {
+                            "enchantments": "kards:xuruo",
+                            "levels": 4
+                        }
+                    ]
+                }
             }
-          ]
         }
-      }
     }
-  }
 }

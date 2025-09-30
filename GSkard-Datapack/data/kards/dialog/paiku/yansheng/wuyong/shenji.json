@@ -1,12 +1,12 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "text": "无用之神",
-        "color": "white",
-        "bold": true
+        "translate": "json.kards.dialog.paiku.yansheng.wuyong.main.767",
+        "fallback": "无用之神"
     },
     "external_title": {
-        "text": ""
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
     },
     "body": [
         {
@@ -20,27 +20,24 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "衍生牌-神迹牌",
-                "color": "white",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.yansheng.wuyong.shenji.768",
+                "fallback": "衍生牌-神迹牌"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "没有作用",
-                "color": "gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.yansheng.wuyong.fashu.763",
+                "fallback": "没有作用"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "可以用来触发陷阱",
-                "color": "gold",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.fashu.wuyong.233",
+                "fallback": "可以用来触发陷阱"
             },
             "width": 1024
         }
@@ -49,8 +46,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "text": "返回§6无用牌系列",
-            "color": "green"
+            "translate": "json.kards.dialog.paiku.yansheng.wuyong.fashu.764",
+            "fallback": "返回§6无用牌系列"
         },
         "action": {
             "type": "minecraft:show_dialog",

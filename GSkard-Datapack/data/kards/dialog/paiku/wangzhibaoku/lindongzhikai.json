@@ -1,12 +1,12 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "text": "凛冬之铠",
-        "color": "aqua",
-        "italic": false
+        "translate": "json.kards.dialog.paiku.wangzhibaoku.lindongzhikai.537",
+        "fallback": "凛冬之铠"
     },
     "external_title": {
-        "text": ""
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
     },
     "body": [
         {
@@ -26,158 +26,96 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "永寒领域",
-                "color": "gray",
-                "italic": false,
-                "bold": true
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.lindongzhikai.538",
+                "fallback": "永寒领域"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "每2s对6格范围内最多3个敌人施加3层",
-                "color": "gray",
-                "italic": false,
-                "extra": [
-                    {
-                        "text": "[永寒]",
-                        "color": "dark_blue",
-                        "italic": false
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.lindongzhikai.539",
+                "fallback": "每2s对6格范围内最多3个敌人施加3层"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "永寒之护 2",
-                "color": "gray",
-                "italic": false,
-                "bold": true
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.lindongzhikai.540",
+                "fallback": "永寒之护 2"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "受击时对攻击者施加2层并对其造成2♥冰冻伤害",
-                "color": "gray",
-                "italic": false,
-                "extra": [
-                    {
-                        "text": "[永寒]",
-                        "color": "dark_blue",
-                        "italic": false
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.lindongzhikai.541",
+                "fallback": "受击时对攻击者施加2层并对其造成2♥冰冻伤害"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "当一个敌对生物",
-                "color": "gray",
-                "italic": false,
-                "extra": [
-                    {
-                        "text": "永寒爆发",
-                        "color": "gold",
-                        "italic": false
-                    },
-                    {
-                        "text": "时,你恢复",
-                        "color": "gray",
-                        "italic": false
-                    },
-                    {
-                        "text": "0.5♥",
-                        "color": "green",
-                        "italic": false
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.lindongzhikai.542",
+                "fallback": "当一个敌对生物"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "传奇护具",
-                "color": "white",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.kunanyaolan.536",
+                "fallback": "传奇护具"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "永寒:",
-                "color": "gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.lindongzhikai.543",
+                "fallback": "永寒:"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "移动速度-5%",
-                "color": "gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.lindongzhikai.544",
+                "fallback": "移动速度-5%"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "每3s流失1层 冻结时每2s额外流失1层",
-                "color": "gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.lindongzhikai.545",
+                "fallback": "每3s流失1层 冻结时每2s额外流失1层"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "当一个生物[永寒]层数达到18层 立刻",
-                "color": "gray",
-                "italic": false,
-                "extra": [
-                    {
-                        "text": "对其造成9♥穿甲伤害并使其",
-                        "color": "gray",
-                        "italic": false
-                    },
-                    {
-                        "text": "冻结",
-                        "color": "aqua",
-                        "italic": false
-                    },
-                    {
-                        "text": "2.5s然后使[永寒]层数重置",
-                        "color": "gray",
-                        "italic": false
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.lindongzhikai.546",
+                "fallback": "当一个生物[永寒]层数达到18层 立刻"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "冻结:",
-                "color": "gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.lindongzhikai.547",
+                "fallback": "冻结:"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "无法移动和攻击,每1.25s受到5♥冰冻伤害",
-                "color": "gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.lindongzhikai.548",
+                "fallback": "无法移动和攻击,每1.25s受到5♥冰冻伤害"
             },
             "width": 1024
         }
@@ -186,8 +124,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "text": "返回§6王之宝库",
-            "color": "green"
+            "translate": "json.kards.dialog.paiku.wangzhibaoku.diaolingtaidao.497",
+            "fallback": "返回§6王之宝库"
         },
         "action": {
             "type": "minecraft:show_dialog",

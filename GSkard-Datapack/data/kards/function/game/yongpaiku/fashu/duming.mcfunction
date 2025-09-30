@@ -14,13 +14,13 @@ execute if entity @s[team=blue] run tag @r[team=red,gamemode=adventure] add DuMi
 execute store result score @s fashu_duming run random value 1..100
 execute store result score @a[tag=DuMing,limit=1] fashu_duming run random value 1..100
 
-tellraw @a [{selector: "@s",bold:false},{text:"向",color:"gray"},{selector:"@a[tag=DuMing,limit=1]"},{text:"发起了",color:"gray"},{text:"赌命",color:"gold"}]
+tellraw @a [{selector: "@s",bold:false},{translate: "kards.function.game.yongpaiku.fashu.duming.1", fallback: "向",color:"gray"},{selector:"@a[tag=DuMing,limit=1]"},{translate: "kards.function.game.yongpaiku.fashu.duming.2", fallback: "发起了",color:"gray"},{translate: "json.kards.dialog.paiku.fashu.main.170", fallback: "赌命",color:"gold"}]
 
-tellraw @a {text:"......",color:gray}
+tellraw @a {translate: "json.kards.dialog.paiku.wangzhibaoku.diaolingtaidao.487", fallback: "......",color:gray}
 
-execute if score @s fashu_duming > @a[tag=DuMing,limit=1] fashu_duming run tellraw @a [{selector: "@s",bold:false},{text: "赢了! ",color:"gold"},{selector:"@a[tag=DuMing,limit=1]"},{text:"受到",color:"gold"},{text:"7.5♥破甲伤害",color:"aqua","italic":false}]
-execute if score @s fashu_duming < @a[tag=DuMing,limit=1] fashu_duming run tellraw @a [{selector: "@s",bold:false},{text: "输了! ",color:"red"},{text:"自己受到",color:"gold"},{text:"7.5♥破甲伤害",color:"aqua","italic":false}]
-execute if score @s fashu_duming = @a[tag=DuMing,limit=1] fashu_duming run tellraw @a [{text:"看起来两位的命运相同 没有任何人受到伤害!",color:"gold"}]
+execute if score @s fashu_duming > @a[tag=DuMing,limit=1] fashu_duming run tellraw @a [{selector: "@s",bold:false},{translate: "kards.function.game.yongpaiku.fashu.duming.3", fallback: "赢了! ",color:"gold"},{selector:"@a[tag=DuMing,limit=1]"},{translate: "kards.function.game.yongpaiku.fashu.duming.4", fallback: "受到",color:"gold"},{translate: "kards.function.game.paiku.fashu.duming.3", fallback: "7.5♥破甲伤害",color:"aqua","italic":false}]
+execute if score @s fashu_duming < @a[tag=DuMing,limit=1] fashu_duming run tellraw @a [{selector: "@s",bold:false},{translate: "kards.function.game.yongpaiku.fashu.duming.5", fallback: "输了! ",color:"red"},{translate: "kards.function.game.yongpaiku.fashu.duming.6", fallback: "自己受到",color:"gold"},{translate: "kards.function.game.paiku.fashu.duming.3", fallback: "7.5♥破甲伤害",color:"aqua","italic":false}]
+execute if score @s fashu_duming = @a[tag=DuMing,limit=1] fashu_duming run tellraw @a [{translate: "kards.function.game.yongpaiku.fashu.duming.7", fallback: "看起来两位的命运相同 没有任何人受到伤害!",color:"gold"}]
 
 execute if score @s fashu_duming > @a[tag=DuMing,limit=1] fashu_duming run damage @a[tag=DuMing,limit=1] 15 kards:duming
 execute if score @s fashu_duming < @a[tag=DuMing,limit=1] fashu_duming run damage @s 15 kards:duming

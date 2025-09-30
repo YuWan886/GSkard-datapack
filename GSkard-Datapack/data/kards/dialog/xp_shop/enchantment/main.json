@@ -1,376 +1,198 @@
 {
-  "type": "minecraft:multi_action",
-  "title": [
-    {
-      "text": "神话附魔",
-      "color": "light_purple",
-      "bold": true
-    }
-  ],
-  "body": [
-    {
-      "type": "minecraft:item",
-      "item": {
-        "id": "minecraft:enchanted_book",
-        "count": 1
-      },
-      "show_decorations": false,
-      "show_tooltip": false
-    },
-    {
-      "type": "minecraft:plain_message",
-      "contents": {
-        "text": "使用方法：将附魔书放置在副手然后按shift为主手武器添加附魔\n",
-        "extra": [
-          {
-            "text": "使用后附魔等级加算\n\n",
-            "color": "gold"
-          }
-        ],
-        "color": "green"
-      },
-      "width": 1024
-    }
-  ],
-  "inputs": [],
-  "can_close_with_escape": true,
-  "columns": 5,
-  "actions": [
-    {
-      "label": {
-        "text": "冰霜荆棘",
-        "color": "aqua",
-        "extra": [
-          {
-            "text": " I",
-            "color": "gray"
-          }
-        ]
-      },
-      "tooltip": {
-        "text": "消耗70级",
-        "extra": [
-          {
-            "text": "\n\n附魔后:",
-            "color": "gray"
-          },
-          {
-            "text": "\n对攻击者造成冰霜伤害\n同时令其降低移速与攻速",
-            "color": "aqua"
-          }
-        ],
-        "color": "gray"
-      },
-      "width": 75,
-      "action": {
-        "type": "run_command",
-        "command": "/trigger dialog set 110"
-      }
-    },
-    {
-      "label": {
-        "text": "极寒之触",
-        "color": "blue",
-        "extra": [
-          {
-            "text": " I",
-            "color": "gray"
-          }
-        ]
-      },
-      "tooltip": {
-        "text": "消耗80级",
-        "extra": [
-          {
-            "text": "\n\n附魔后:",
-            "color": "gray"
-          },
-          {
-            "text": "\n对目标造成缓慢与挖掘疲劳\n攻击有概率令玩家冻结2.5s\n对非玩家生物概率提高",
-            "color": "blue"
-          }
-        ],
-        "color": "gray"
-      },
-      "width": 75,
-      "action": {
-        "type": "run_command",
-        "command": "/trigger dialog set 111"
-      }
-    },
-    {
-      "label": {
-        "text": "大地神佑",
-        "color": "green",
-        "extra": [
-          {
-            "text": " I",
-            "color": "gray"
-          }
-        ]
-      },
-      "tooltip": {
-        "text": "消耗70级",
-        "extra": [
-          {
-            "text": "\n\n附魔后:",
-            "color": "gray"
-          },
-          {
-            "text": "\n着地1.25s后获得抗性提升",
-            "color": "green"
-          }
-        ],
-        "color": "gray"
-      },
-      "width": 75,
-      "action": {
-        "type": "run_command",
-        "command": "/trigger dialog set 112"
-      }
-    },
-    {
-      "label": {
-        "text": "泰坦体魄",
-        "color": "green",
-        "extra": [
-          {
-            "text": " I",
-            "color": "gray"
-          }
-        ]
-      },
-      "tooltip": {
-        "text": "消耗75级",
-        "extra": [
-          {
-            "text": "\n\n附魔后:",
-            "color": "gray"
-          },
-          {
-            "text": "\n增加体积、最大生命与击退抗性",
-            "color": "green"
-          }
-        ],
-        "color": "gray"
-      },
-      "width": 75,
-      "action": {
-        "type": "run_command",
-        "command": "/trigger dialog set 113"
-      }
-    },
-    {
-      "label": {
-        "text": "风行者",
-        "color": "white",
-        "extra": [
-          {
-            "text": " I",
-            "color": "gray"
-          }
-        ]
-      },
-      "tooltip": {
-        "text": "消耗85级",
-        "extra": [
-          {
-            "text": "\n\n附魔后:",
-            "color": "gray"
-          },
-          {
-            "text": "\n疾跑时会越跑越快",
-            "color": "white"
-          }
-        ],
-        "color": "gray"
-      },
-      "width": 75,
-      "action": {
-        "type": "run_command",
-        "command": "/trigger dialog set 114"
-      }
-    },
-    {
-      "label": {
-        "text": "跃斩",
-        "color": "white",
-        "extra": [
-          {
-            "text": " I",
-            "color": "gray"
-          }
-        ]
-      },
-      "tooltip": {
-        "text": "消耗95级",
-        "extra": [
-          {
-            "text": "\n\n附魔后:",
-            "color": "gray"
-          },
-          {
-            "text": "\n跳跃后获得力量",
-            "color": "white"
-          }
-        ],
-        "color": "gray"
-      },
-      "width": 75,
-      "action": {
-        "type": "run_command",
-        "command": "/trigger dialog set 115"
-      }
-    },
-    {
-      "label": {
-        "text": "新星爆发",
-        "color": "red",
-        "extra": [
-          {
-            "text": " I",
-            "color": "gray"
-          }
-        ]
-      },
-      "tooltip": {
-        "text": "消耗75级",
-        "extra": [
-          {
-            "text": "\n\n附魔后:",
-            "color": "gray"
-          },
-          {
-            "text": "\n攻击会点燃目标\n且有概率点燃其周围目标",
-            "color": "red"
-          }
-        ],
-        "color": "gray"
-      },
-      "width": 75,
-      "action": {
-        "type": "run_command",
-        "command": "/trigger dialog set 116"
-      }
-    },
-    {
-      "label": {
-        "text": "浴火者",
-        "color": "dark_red",
-        "extra": [
-          {
-            "text": " I",
-            "color": "gray"
-          }
-        ]
-      },
-      "tooltip": {
-        "text": "消耗80级",
-        "extra": [
-          {
-            "text": "\n\n附魔后:",
-            "color": "gray"
-          },
-          {
-            "text": "\n你将一直燃烧\n但是每次受到燃烧伤害回复生命",
-            "color": "dark_red"
-          }
-        ],
-        "color": "gray"
-      },
-      "width": 75,
-      "action": {
-        "type": "run_command",
-        "command": "/trigger dialog set 117"
-      }
-    },
-    {
-      "label": {
-        "text": "制裁者",
-        "color": "dark_aqua",
-        "extra": [
-          {
-            "text": " I",
-            "color": "gray"
-          }
-        ]
-      },
-      "tooltip": {
-        "text": "消耗80级",
-        "extra": [
-          {
-            "text": "\n\n附魔后:",
-            "color": "gray"
-          },
-          {
-            "text": "\n每级效果加强\n",
-            "color": "gold"
-          },
-          {
-            "text": "\n箭矢不会受到重力影响\n箭矢可以暴击\n箭矢能够处决生命低于5♥的目标",
-            "color": "dark_aqua"
-          }
-        ],
-        "color": "gray"
-      },
-      "width": 75,
-      "action": {
-        "type": "run_command",
-        "command": "/trigger dialog set 118"
-      }
-    },
-    {
-      "label": {
-        "text": "审判者",
-        "color": "dark_aqua",
-        "extra": [
-          {
-            "text": " I",
-            "color": "gray"
-          }
-        ]
-      },
-      "tooltip": {
-        "text": "消耗55级",
-        "extra": [
-          {
-            "text": "\n\n附魔后:",
-            "color": "gray"
-          },
-          {
-            "text": "\n受到攻击时有几率向目标发射箭矢",
-            "color": "dark_aqua"
-          }
-        ],
-        "color": "gray"
-      },
-      "width": 75,
-      "action": {
-        "type": "run_command",
-        "command": "/trigger dialog set 119"
-      }
-    }
-  ],
-  "exit_action": 
-    {
-      "label": {
-        "text": "商店菜单",
-        "color": "gray"
-      },
-      "tooltip": {
-        "text": "切换至",
-        "extra": [
-          {
-            "text": "商店菜单",
-            "color": "gold"
-          }
-        ],
-        "color": "gray"
-      },
-      "action": {
-        "type": "minecraft:show_dialog",
-        "dialog": "kards:xp_shop/main"
-      },
-      "width": 75
+    "type": "minecraft:multi_action",
+    "title": [
+        {
+            "translate": "json.kards.dialog.xp_shop.enchantment.main.894",
+            "fallback": "神话附魔"
+        }
+    ],
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:enchanted_book",
+                "count": 1
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "translate": "json.kards.dialog.xp_shop.enchantment.main.895",
+                "fallback": "使用方法：将附魔书放置在副手然后按shift为主手武器添加附魔\n"
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "columns": 5,
+    "actions": [
+        {
+            "label": {
+                "translate": "json.kards.dialog.xp_shop.enchantment.main.896",
+                "fallback": "冰霜荆棘"
+            },
+            "tooltip": {
+                "translate": "json.kards.dialog.xp_shop.enchantment.main.897",
+                "fallback": "消耗70级"
+            },
+            "width": 75,
+            "action": {
+                "type": "run_command",
+                "command": "/trigger dialog set 110"
+            }
+        },
+        {
+            "label": {
+                "translate": "json.kards.dialog.xp_shop.enchantment.main.898",
+                "fallback": "极寒之触"
+            },
+            "tooltip": {
+                "translate": "json.kards.dialog.xp_shop.enchantment.main.899",
+                "fallback": "消耗80级"
+            },
+            "width": 75,
+            "action": {
+                "type": "run_command",
+                "command": "/trigger dialog set 111"
+            }
+        },
+        {
+            "label": {
+                "translate": "json.kards.dialog.xp_shop.enchantment.main.900",
+                "fallback": "大地神佑"
+            },
+            "tooltip": {
+                "translate": "json.kards.dialog.xp_shop.enchantment.main.897",
+                "fallback": "消耗70级"
+            },
+            "width": 75,
+            "action": {
+                "type": "run_command",
+                "command": "/trigger dialog set 112"
+            }
+        },
+        {
+            "label": {
+                "translate": "json.kards.dialog.xp_shop.enchantment.main.901",
+                "fallback": "泰坦体魄"
+            },
+            "tooltip": {
+                "translate": "json.kards.dialog.xp_shop.enchantment.main.902",
+                "fallback": "消耗75级"
+            },
+            "width": 75,
+            "action": {
+                "type": "run_command",
+                "command": "/trigger dialog set 113"
+            }
+        },
+        {
+            "label": {
+                "translate": "json.kards.dialog.xp_shop.enchantment.main.903",
+                "fallback": "风行者"
+            },
+            "tooltip": {
+                "translate": "json.kards.dialog.xp_shop.enchantment.main.904",
+                "fallback": "消耗85级"
+            },
+            "width": 75,
+            "action": {
+                "type": "run_command",
+                "command": "/trigger dialog set 114"
+            }
+        },
+        {
+            "label": {
+                "translate": "json.kards.dialog.xp_shop.enchantment.main.905",
+                "fallback": "跃斩"
+            },
+            "tooltip": {
+                "translate": "json.kards.dialog.xp_shop.enchantment.main.906",
+                "fallback": "消耗95级"
+            },
+            "width": 75,
+            "action": {
+                "type": "run_command",
+                "command": "/trigger dialog set 115"
+            }
+        },
+        {
+            "label": {
+                "translate": "json.kards.dialog.xp_shop.enchantment.main.907",
+                "fallback": "新星爆发"
+            },
+            "tooltip": {
+                "translate": "json.kards.dialog.xp_shop.enchantment.main.902",
+                "fallback": "消耗75级"
+            },
+            "width": 75,
+            "action": {
+                "type": "run_command",
+                "command": "/trigger dialog set 116"
+            }
+        },
+        {
+            "label": {
+                "translate": "json.kards.dialog.xp_shop.enchantment.main.908",
+                "fallback": "浴火者"
+            },
+            "tooltip": {
+                "translate": "json.kards.dialog.xp_shop.enchantment.main.899",
+                "fallback": "消耗80级"
+            },
+            "width": 75,
+            "action": {
+                "type": "run_command",
+                "command": "/trigger dialog set 117"
+            }
+        },
+        {
+            "label": {
+                "translate": "json.kards.dialog.xp_shop.enchantment.main.909",
+                "fallback": "制裁者"
+            },
+            "tooltip": {
+                "translate": "json.kards.dialog.xp_shop.enchantment.main.899",
+                "fallback": "消耗80级"
+            },
+            "width": 75,
+            "action": {
+                "type": "run_command",
+                "command": "/trigger dialog set 118"
+            }
+        },
+        {
+            "label": {
+                "translate": "json.kards.dialog.xp_shop.enchantment.main.910",
+                "fallback": "审判者"
+            },
+            "tooltip": {
+                "translate": "json.kards.dialog.xp_shop.enchantment.main.911",
+                "fallback": "消耗55级"
+            },
+            "width": 75,
+            "action": {
+                "type": "run_command",
+                "command": "/trigger dialog set 119"
+            }
+        }
+    ],
+    "exit_action": {
+        "label": {
+            "translate": "json.kards.dialog.xp_shop.enchantment.main.912",
+            "fallback": "商店菜单"
+        },
+        "tooltip": {
+            "translate": "json.kards.dialog.xp_shop.enchantment.main.913",
+            "fallback": "切换至"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:xp_shop/main"
+        },
+        "width": 75
     }
 }

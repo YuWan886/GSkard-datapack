@@ -1,18 +1,12 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "text": "7K ",
-        "extra": [
-            {
-                "text": "猛毒爪牙",
-                "color": "dark_green"
-            }
-        ],
-        "color": "aqua",
-        "bold": true
+        "translate": "json.kards.dialog.paiku.fashu.sijiruchun.222",
+        "fallback": "7K "
     },
     "external_title": {
-        "text": ""
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
     },
     "body": [
         {
@@ -26,42 +20,24 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "召唤4只",
-                "color": "gray",
-                "extra": [
-                    {
-                        "text": " 剧毒蜘蛛",
-                        "color": "gold"
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.281",
+                "fallback": "召唤4只"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "若Kmax",
-                "color": "gray",
-                "extra": [
-                    {
-                        "text": " 大于等于20",
-                        "color": "gold"
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.juntuan.mengduzhuaya.325",
+                "fallback": "若Kmax"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "每10Kmax使1只剧毒蜘蛛成为",
-                "color": "gray",
-                "extra": [
-                    {
-                        "text": " 沼骸骑士",
-                        "color": "gold"
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.juntuan.mengduzhuaya.326",
+                "fallback": "每10Kmax使1只剧毒蜘蛛成为"
             },
             "width": 1024
         }
@@ -70,8 +46,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "text": "返回§d军团牌§a牌库",
-            "color": "green"
+            "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.284",
+            "fallback": "返回§d军团牌§a牌库"
         },
         "action": {
             "type": "minecraft:show_dialog",

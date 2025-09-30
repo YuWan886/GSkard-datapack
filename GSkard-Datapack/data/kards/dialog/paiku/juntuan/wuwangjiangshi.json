@@ -1,18 +1,12 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "text": "8K ",
-        "extra": [
-            {
-                "text": "舞王僵尸",
-                "color": "dark_green"
-            }
-        ],
-        "color": "aqua",
-        "bold": true
+        "translate": "json.kards.dialog.paiku.fashu.chunnuanhuakai.130",
+        "fallback": "8K "
     },
     "external_title": {
-        "text": ""
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
     },
     "body": [
         {
@@ -26,56 +20,32 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "召唤1只",
-                "color": "gray",
-                "extra": [
-                    {
-                        "text": " 特殊玩家头的僵尸",
-                        "color": "gold"
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.jiben.diaolingkulou.253",
+                "fallback": "召唤1只"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "该僵尸在生成一段时间",
-                "color": "gray",
-                "extra": [
-                    {
-                        "text": " 会远离最近的玩家",
-                        "color": "gold"
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.juntuan.wuwangjiangshi.353",
+                "fallback": "该僵尸在生成一段时间"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "5s后停止远离玩家并原地生成4只",
-                "color": "gray",
-                "extra": [
-                    {
-                        "text": " 舞伴僵尸",
-                        "color": "gold"
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.juntuan.wuwangjiangshi.354",
+                "fallback": "5s后停止远离玩家并原地生成4只"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "此后身上会冒出音符 为5格内友军提供",
-                "color": "gray",
-                "extra": [
-                    {
-                        "text": " 移速与生命恢复",
-                        "color": "gold"
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.juntuan.wuwangjiangshi.355",
+                "fallback": "此后身上会冒出音符 为5格内友军提供"
             },
             "width": 1024
         }
@@ -84,8 +54,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "text": "返回§d军团牌§a牌库",
-            "color": "green"
+            "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.284",
+            "fallback": "返回§d军团牌§a牌库"
         },
         "action": {
             "type": "minecraft:show_dialog",

@@ -3,6 +3,6 @@ execute if score @s temp matches 1..10 run function kards:game/paiku/fashu/chunn
 execute if score @s temp matches 11..13 run function kards:game/paiku/shenji/haogaowuyuan
 execute if score @s temp matches 14..33 run scoreboard players add @s kardCount 6
 
-execute if score @s temp matches 1..10 run tellraw @s [{text:"[电表倒转]",color:"green"},{text:"获得",color:"gray"},{text:"[春暖花开]",color:"light_purple"}]
-execute if score @s temp matches 11..13 run tellraw @s [{text:"[电表倒转]",color:"green"},{text:"获得",color:"gray"},{text:"[好高骛远]",color:"white"}]
-execute if score @s temp matches 14..33 run tellraw @s [{text:"[电表倒转]",color:"green"},{text:"获得",color:"gray"},{text:"6K",color:"gold"}]
+execute if score @s temp matches 1..10 run tellraw @s [{translate: "kards.function.game.random_start.event.dianbiaodaozhuan.1", fallback: "[电表倒转]",color:"green"},{translate: "json.kards.dialog.paiku.fashu.jinjidiaoqian.154", fallback: "获得",color:"gray"},{translate: "json.kards.dialog.setting.random_start.main.872", fallback: "[春暖花开]",color:"light_purple"}]
+execute if score @s temp matches 11..13 run tellraw @s [{translate: "kards.function.game.random_start.event.dianbiaodaozhuan.1", fallback: "[电表倒转]",color:"green"},{translate: "json.kards.dialog.paiku.fashu.jinjidiaoqian.154", fallback: "获得",color:"gray"},{translate: "json.kards.dialog.setting.random_start.main.873", fallback: "[好高骛远]",color:"white"}]
+execute if score @s temp matches 14..33 run tellraw @s [{translate: "kards.function.game.random_start.event.dianbiaodaozhuan.1", fallback: "[电表倒转]",color:"green"},{translate: "json.kards.dialog.paiku.fashu.jinjidiaoqian.154", fallback: "获得",color:"gray"},{translate: "json.kards.dialog.setting.random_start.main.874", fallback: "6K",color:"gold"}]

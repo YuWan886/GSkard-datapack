@@ -1,14 +1,13 @@
 {
     "type": "multi_action",
     "title": {
-        "text": "装备牌-§5DLC",
-        "color": "gold",
-        "bold": true
+        "translate": "json.kards-dlc.dialog.kard.zhuangbei.main.949",
+        "fallback": "装备牌-§5DLC"
     },
     "exit_action": {
         "label": {
-            "text": "返回§6主§a牌库-§6装备",
-            "color": "green"
+            "translate": "json.kards-dlc.dialog.kard.zhuangbei.main.950",
+            "fallback": "返回§6主§a牌库-§6装备"
         },
         "action": {
             "type": "show_dialog",
@@ -19,8 +18,8 @@
     "actions": [
         {
             "label": {
-                "text": "模板：装备",
-                "color": "gold"
+                "translate": "json.kards-dlc.dialog.kard.zhuangbei.main.951",
+                "fallback": "模板：装备"
             },
             "action": {
                 "type": "show_dialog",
@@ -30,8 +29,8 @@
         },
         {
             "label": {
-                "text": "模板：饰品",
-                "color": "gold"
+                "translate": "json.kards-dlc.dialog.kard.zhuangbei.main.952",
+                "fallback": "模板：饰品"
             },
             "action": {
                 "type": "show_dialog",

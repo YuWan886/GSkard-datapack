@@ -1,18 +1,12 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "text": "6K ",
-        "extra": [
-            {
-                "text": "轻虑浅谋",
-                "color": "dark_aqua"
-            }
-        ],
-        "color": "aqua",
-        "bold": true
+        "translate": "json.kards.dialog.paiku.fashu.qisihuisheng.210",
+        "fallback": "6K "
     },
     "external_title": {
-        "text": ""
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
     },
     "body": [
         {
@@ -26,55 +20,32 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "陷阱卡",
-                "color": "dark_aqua",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.xianjing.hewei.663",
+                "fallback": "陷阱卡"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "使用后埋下陷阱 敌方在达到条件时触发 触发后失效",
-                "color": "gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.xianjing.hewei.664",
+                "fallback": "使用后埋下陷阱 敌方在达到条件时触发 触发后失效"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "条件：",
-                "color": "gray",
-                "italic": false,
-                "extra": [
-                    {
-                        "text": "敌方回合结束时",
-                        "color": "gray",
-                        "italic": false
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.xianjing.qinglvqianmou.686",
+                "fallback": "条件："
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "触发：本回合内每使用1张牌 就对自己造成",
-                "color": "gray",
-                "italic": false,
-                "extra": [
-                    {
-                        "text": "0.5♥",
-                        "color": "red",
-                        "italic": false
-                    },
-                    {
-                        "text": "真实伤害",
-                        "color": "gray",
-                        "italic": false
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.xianjing.qinglvqianmou.687",
+                "fallback": "触发：本回合内每使用1张牌 就对自己造成"
             },
             "width": 1024
         }
@@ -83,8 +54,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "text": "返回§c陷阱§a牌库",
-            "color": "green"
+            "translate": "json.kards.dialog.paiku.xianjing.hewei.667",
+            "fallback": "返回§c陷阱§a牌库"
         },
         "action": {
             "type": "minecraft:show_dialog",

@@ -1,12 +1,12 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "text": "火焰图腾",
-        "color": "red",
-        "bold": true
+        "translate": "json.kards.dialog.paiku.yansheng.busituteng.huoyan.752",
+        "fallback": "火焰图腾"
     },
     "external_title": {
-        "text": ""
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
     },
     "body": [
         {
@@ -20,63 +20,56 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "触发后",
-                "color": "gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.yansheng.busituteng.baonu.732",
+                "fallback": "触发后"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": " ♥+20 60s",
-                "color": "dark_green",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.yansheng.busituteng.baonu.733",
+                "fallback": " ♥+20 60s"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": " ♥+10",
-                "color": "dark_green",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.yansheng.busituteng.baonu.734",
+                "fallback": " ♥+10"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": " 防火 60s",
-                "color": "dark_green",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.yansheng.busituteng.huoyan.753",
+                "fallback": " 防火 60s"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": " 点燃6格内敌对生物10s",
-                "color": "red",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.yansheng.busituteng.huoyan.754",
+                "fallback": " 点燃6格内敌对生物10s"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": " 并使其额外受到200%燃烧伤害",
-                "color": "gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.yansheng.busituteng.huoyan.755",
+                "fallback": " 并使其额外受到200%燃烧伤害"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": " 点燃:每0.5s受到0.625♥的火焰伤害",
-                "color": "dark_gray",
-                "italic": true
+                "translate": "json.kards.dialog.paiku.yansheng.busituteng.hundun.750",
+                "fallback": " 点燃:每0.5s受到0.625♥的火焰伤害"
             },
             "width": 1024
         }
@@ -85,8 +78,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "text": "返回§7其他",
-            "color": "green"
+            "translate": "json.kards.dialog.paiku.yansheng.jinzijue.708",
+            "fallback": "返回§7其他"
         },
         "action": {
             "type": "minecraft:show_dialog",

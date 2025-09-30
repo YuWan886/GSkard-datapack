@@ -1,4 +1,4 @@
-title @a title [{text: "蓝方回合",color:"blue",bold:true}]
+title @a title [{translate: "kards.function.game.ingame.round.roundtime_bossbar.3", fallback: "蓝方回合",color:"blue",bold:true}]
 bossbar set minecraft:roundtime color white
 scoreboard players set @a[team=red] CanuseKard 0
 scoreboard players set @a[team=blue] CanuseKard 1

@@ -11,7 +11,7 @@
 #execute as @a unless items entity @s container.9 minecraft:bookshelf run kill @e[type=item,nbt={Item:{id:"minecraft:bookshelf",components:{"minecraft:custom_data":{kards:"shelf"}}}}]
 #execute as @a unless items entity @s container.9 minecraft:bookshelf run dialog show @s kards:paiku/main
 
-item replace entity @a container.9 with minecraft:bookshelf[minecraft:item_name=[{text: "地图牌库大全",color:"gold",bold:true}],custom_data={kards:"shelf"}]
+item replace entity @a container.9 with minecraft:bookshelf[minecraft:item_name=[{translate: "kards.function.lobby.wiki.general.1", fallback: "地图牌库大全",color:"gold",bold:true}],custom_data={kards:"shelf"}]
 
 execute as @a if score @s open_wiki matches 1 run dialog show @s kards:paiku/main
 execute as @a if score @s open_wiki matches 1 run scoreboard players set @s open_wiki 0

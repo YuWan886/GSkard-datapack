@@ -1,17 +1,17 @@
 {
-  "criteria": {
-    "requirement": {
-      "trigger": "minecraft:consume_item",
-      "conditions": {
-        "item": {
-          "components": {
-            "minecraft:custom_data": "{kards:'xp_shop_item'}"
-          }
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "components": {
+                        "minecraft:custom_data": "{kards:'xp_shop_item'}"
+                    }
+                }
+            }
         }
-      }
+    },
+    "rewards": {
+        "function": "kards:game/xp/open_shop"
     }
-  },
-  "rewards": {
-    "function": "kards:game/xp/open_shop"
-  }
 }

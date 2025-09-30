@@ -1,18 +1,12 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "text": "7K ",
-        "extra": [
-            {
-                "text": "小猪快跑",
-                "color": "dark_green"
-            }
-        ],
-        "color": "aqua",
-        "bold": true
+        "translate": "json.kards.dialog.paiku.fashu.sijiruchun.222",
+        "fallback": "7K "
     },
     "external_title": {
-        "text": ""
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
     },
     "body": [
         {
@@ -26,46 +20,24 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "召唤3只",
-                "color": "gray",
-                "extra": [
-                    {
-                        "text": " 疣猪兽",
-                        "color": "gold"
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.juntuan.sanrenchengzhong.328",
+                "fallback": "召唤3只"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "若存在",
-                "color": "gray",
-                "extra": [
-                    {
-                        "text": " 友方",
-                        "color": "green"
-                    },
-                    {
-                        "text": " 猪灵",
-                        "color": "gold"
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.juntuan.xiaozhukuaipao.358",
+                "fallback": "若存在"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "改为令至多3只友方猪灵",
-                "color": "gray",
-                "extra": [
-                    {
-                        "text": " 骑乘上疣猪兽并使其改为远程攻击",
-                        "color": "gold"
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.juntuan.xiaozhukuaipao.359",
+                "fallback": "改为令至多3只友方猪灵"
             },
             "width": 1024
         }
@@ -74,8 +46,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "text": "返回§d军团牌§a牌库",
-            "color": "green"
+            "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.284",
+            "fallback": "返回§d军团牌§a牌库"
         },
         "action": {
             "type": "minecraft:show_dialog",

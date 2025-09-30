@@ -1,18 +1,12 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "text": "1K ",
-        "extra": [
-            {
-                "text": "杀手兔",
-                "color": "blue"
-            }
-        ],
-        "color": "aqua",
-        "bold": true
+        "translate": "json.kards.dialog.paiku.fashu.chaotuoxili.126",
+        "fallback": "1K "
     },
     "external_title": {
-        "text": ""
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
     },
     "body": [
         {
@@ -26,14 +20,8 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "召唤1只",
-                "color": "gray",
-                "extra": [
-                    {
-                        "text": " 体积增加的杀手兔",
-                        "color": "gold"
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.jiben.diaolingkulou.253",
+                "fallback": "召唤1只"
             },
             "width": 1024
         }
@@ -42,8 +30,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "text": "返回§d基本牌§a牌库",
-            "color": "green"
+            "translate": "json.kards.dialog.paiku.jiben.diaolingkulou.254",
+            "fallback": "返回§d基本牌§a牌库"
         },
         "action": {
             "type": "minecraft:show_dialog",

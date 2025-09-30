@@ -1,12 +1,12 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "text": "龙息",
-        "color": "gold",
-        "bold": true
+        "translate": "json.kards.dialog.paiku.yansheng.longxi.715",
+        "fallback": "龙息"
     },
     "external_title": {
-        "text": ""
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
     },
     "body": [
         {
@@ -20,27 +20,24 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "F键使用 一次性物品",
-                "color": "gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.yansheng.longxi.716",
+                "fallback": "F键使用 一次性物品"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "净化队伍玩家负面效果",
-                "color": "gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.yansheng.longxi.717",
+                "fallback": "净化队伍玩家负面效果"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "周围敌对怪物获得飘浮",
-                "color": "gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.yansheng.longxi.718",
+                "fallback": "周围敌对怪物获得飘浮"
             },
             "width": 1024
         }
@@ -49,8 +46,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "text": "返回§7其他",
-            "color": "green"
+            "translate": "json.kards.dialog.paiku.yansheng.jinzijue.708",
+            "fallback": "返回§7其他"
         },
         "action": {
             "type": "minecraft:show_dialog",

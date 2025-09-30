@@ -1,5 +1,8 @@
 {
-    "description": {"text": "新星爆发","color": "red"},
+    "description": {
+        "translate": "json.kards.dialog.xp_shop.enchantment.main.907",
+        "fallback": "新星爆发"
+    },
     "supported_items": "#kards:melee_weapon",
     "weight": 1,
     "max_level": 1,

@@ -1,18 +1,12 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "text": "8K ",
-        "extra": [
-            {
-                "text": "飓风过境",
-                "color": "dark_green"
-            }
-        ],
-        "color": "aqua",
-        "bold": true
+        "translate": "json.kards.dialog.paiku.fashu.chunnuanhuakai.130",
+        "fallback": "8K "
     },
     "external_title": {
-        "text": ""
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
     },
     "body": [
         {
@@ -26,36 +20,24 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "召唤2只",
-                "color": "gray",
-                "extra": [
-                    {
-                        "text": " 旋风人",
-                        "color": "gold"
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.juntuan.errenchengjun.289",
+                "fallback": "召唤2只"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "每拥有12Kmax额外召唤1只",
-                "color": "gray",
-                "extra": [
-                    {
-                        "text": " 旋风人",
-                        "color": "gold"
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.juntuan.jufengguojing.297",
+                "fallback": "每拥有12Kmax额外召唤1只"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "最多生成6只",
-                "color": "gray"
+                "translate": "json.kards.dialog.paiku.juntuan.jufengguojing.298",
+                "fallback": "最多生成6只"
             },
             "width": 1024
         }
@@ -64,8 +46,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "text": "返回§d军团牌§a牌库",
-            "color": "green"
+            "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.284",
+            "fallback": "返回§d军团牌§a牌库"
         },
         "action": {
             "type": "minecraft:show_dialog",

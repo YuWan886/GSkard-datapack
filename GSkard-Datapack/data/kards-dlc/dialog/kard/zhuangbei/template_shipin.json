@@ -1,15 +1,8 @@
 {
     "type": "notice",
     "title": {
-        "text": "5K ",
-        "extra": [
-            {
-                "text": "模板：饰品",
-                "color": "gold"
-            }
-        ],
-        "color": "aqua",
-        "bold": true
+        "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.122",
+        "fallback": "5K "
     },
     "body": [
         {
@@ -23,38 +16,24 @@
         {
             "type": "plain_message",
             "contents": {
-                "text": "装备牌",
-                "color": "gold",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.main.117",
+                "fallback": "装备牌"
             },
             "width": 1024
         },
         {
             "type": "plain_message",
             "contents": {
-                "text": "获得一个",
-                "color": "gray",
-                "italic": false,
-                "extra": [
-                    {
-                        "text": "海龟鳞甲",
-                        "color": "gold",
-                        "italic": false
-                    },
-                    {
-                        "text": "(增加护甲值与盔甲韧性)",
-                        "color": "gray",
-                        "italic": false
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.zhuangbei.bianxiehuosai.769",
+                "fallback": "获得一个"
             },
             "width": 1024
         }
     ],
     "action": {
         "label": {
-            "text": "返回§c装备§a牌库-§5DLC",
-            "color": "green"
+            "translate": "json.kards-dlc.dialog.kard.zhuangbei.template_shipin.953",
+            "fallback": "返回§c装备§a牌库-§5DLC"
         },
         "action": {
             "type": "show_dialog",

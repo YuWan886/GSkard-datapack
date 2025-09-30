@@ -5,10 +5,12 @@
             "count": 1
         },
         "title": {
-            "text": "禁字启封"
+            "translate": "json.kards.advancement.advancement.jinzijue.first_use.29",
+            "fallback": "禁字启封"
         },
         "description": {
-            "text": "首次使用禁字决"
+            "translate": "json.kards.advancement.advancement.jinzijue.first_use.30",
+            "fallback": "首次使用禁字决"
         },
         "frame": "task",
         "show_toast": true,

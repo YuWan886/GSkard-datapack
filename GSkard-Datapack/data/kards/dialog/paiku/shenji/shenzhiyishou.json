@@ -1,19 +1,12 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "text": "10K ",
-        "extra": [
-            {
-                "text": "神之一手",
-                "color": "white",
-                "bold": true
-            }
-        ],
-        "color": "aqua",
-        "bold": true
+        "translate": "json.kards.dialog.paiku.juntuan.shenghaikongju.333",
+        "fallback": "10K "
     },
     "external_title": {
-        "text": ""
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
     },
     "body": [
         {
@@ -27,18 +20,16 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "神迹牌",
-                "color": "white",
-                "italic": false
+                "translate": "json.kards.dialog.jiaocheng.wanfa.2.105",
+                "fallback": "神迹牌"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "偷走敌方所有玩家1张牌",
-                "color": "gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.shenji.shenzhiyishou.407",
+                "fallback": "偷走敌方所有玩家1张牌"
             },
             "width": 1024
         }
@@ -47,8 +38,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "text": "返回§d神迹§a牌库",
-            "color": "green"
+            "translate": "json.kards.dialog.paiku.shenji.fanxiangfeileishen.365",
+            "fallback": "返回§d神迹§a牌库"
         },
         "action": {
             "type": "minecraft:show_dialog",

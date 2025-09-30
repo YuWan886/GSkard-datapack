@@ -1,186 +1,20 @@
 {
     "type": "minecraft:multi_action",
     "title": {
-        "text": "资源获取",
-        "type": "text",
-        "color": "gray",
-        "bold": true
+        "translate": "json.kards.dialog.jiaocheng.main.90",
+        "fallback": "资源获取"
     },
     "external_title": {
-        "text": ""
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
     },
     "body": [
         {
             "type": "minecraft:plain_message",
             "width": 1024,
             "contents": {
-                "text": "资源有哪些？\n\n\n",
-                "color": "gold",
-                "bold": true,
-                "extra": [
-                    {
-                        "text": "> 游戏中有",
-                        "color": "gray",
-                        "bold": true
-                    },
-                    {
-                        "text": "5种",
-                        "color": "gold",
-                        "bold": true
-                    },
-                    {
-                        "text": "资源 <\n\n",
-                        "color": "gray",
-                        "bold": true
-                    },
-                    {
-                        "text": "卡牌 构想 经验 K与Kmax\n\n",
-                        "color": "gold",
-                        "bold": true
-                    },
-                    {
-                        "text": "本章会例举其作用与直接的获取方式\n\n",
-                        "color": "gray",
-                        "bold": true
-                    },
-                    {
-                        "text": "| 卡牌 |\n\n",
-                        "color": "gray",
-                        "bold": true,
-                        "extra": [
-                            {
-                                "text": "· 卡牌是",
-                                "color": "gray",
-                                "bold": true
-                            },{
-                                "text": "进攻",
-                                "color": "red",
-                                "bold": true
-                            },{
-                                "text": "或",
-                                "color": "gray",
-                                "bold": true
-                            },{
-                                "text": "防御",
-                                "color": "green",
-                                "bold": true
-                            },{
-                                "text": "的手段\n\n",
-                                "color": "gray",
-                                "bold": true
-                            },
-                            {
-                                "text": "· 每个",
-                                "color": "gray",
-                                "bold": true
-                            },
-                            {
-                                "text": "友方回合",
-                                "color": "green",
-                                "bold": true
-                            },
-                            {
-                                "text": "开始时 你都会抽到不定数量的不同种类的卡牌\n\n",
-                                "color": "gray",
-                                "bold": true
-                            }
-                        ]
-                    },
-                    {
-                        "text": "| 构想 |\n\n",
-                        "color": "gray",
-                        "bold": true,
-                        "extra": [
-                            {
-                                "text": "· 构想可以在对局内升级天赋\n\n",
-                                "color": "gray",
-                                "bold": true
-                            },
-                            {
-                                "text": "· 每个",
-                                "color": "gray",
-                                "bold": true
-                            },
-                            {
-                                "text": "友方回合",
-                                "color": "green",
-                                "bold": true
-                            },
-                            {
-                                "text": "开始时获得1点构想\n\n",
-                                "color": "gray",
-                                "bold": true
-                            }
-                        ]
-                    },
-                    {
-                        "text": "| 经验 |\n\n",
-                        "color": "gray",
-                        "bold": true,
-                        "extra": [
-                            {
-                                "text": "· 经验是",
-                                "color": "gray",
-                                "bold": true
-                            },{
-                                "text": "战力提升",
-                                "color": "gold",
-                                "bold": true
-                            },{
-                                "text": "的重要资源\n\n",
-                                "color": "gray",
-                                "bold": true
-                            },
-                            {
-                                "text": "· 经验在",
-                                "color": "gray",
-                                "bold": true
-                            },
-                            {
-                                "text": "击杀怪物 使用一定数量卡牌",
-                                "color": "gold",
-                                "bold": true
-                            },
-                            {
-                                "text": "增加\n\n",
-                                "color": "gray",
-                                "bold": true
-                            }
-                        ]
-                    },
-                    {
-                        "text": "| K与Kmax |\n\n",
-                        "color": "gray",
-                        "bold": true,
-                        "extra": [
-                            {
-                                "text": "· 它们都是使用卡牌时需要消耗的资源\n\n",
-                                "color": "gray",
-                                "bold": true
-                            },
-                            {
-                                "text": "· K在每个友方回合开始时 会自动增加至Kmax的值\n\n",
-                                "color": "gray",
-                                "bold": true
-                            },
-                            {
-                                "text": "· Kmax在每个友方回合开始时 会获得一定的值\n\n",
-                                "color": "gray",
-                                "bold": true
-                            },
-                            {
-                                "text": "· 例如你拥有10Kmax 若每回合获得2Kmax\n\n则下个友方回合开始时你将增长为",
-                                "color": "gray",
-                                "bold": true
-                            },
-                            {
-                                "text": "12Kmax与获得12K\n\n\n\n\n\n",
-                                "color": "gold",
-                                "bold": true
-                            }
-                        ]
-                    }
-                ]
+                "translate": "json.kards.dialog.jiaocheng.wanfa.3.111",
+                "fallback": "资源有哪些？\n\n\n"
             }
         }
     ],
@@ -189,8 +23,8 @@
     "actions": [
         {
             "label": {
-                "text": "获取卡牌信息",
-                "color": "gold"
+                "translate": "json.kards.dialog.jiaocheng.main.88",
+                "fallback": "获取卡牌信息"
             },
             "width": 125,
             "action": {
@@ -200,8 +34,8 @@
         },
         {
             "label": {
-                "text": "使用卡牌",
-                "color": "gold"
+                "translate": "json.kards.dialog.jiaocheng.main.89",
+                "fallback": "使用卡牌"
             },
             "width": 125,
             "action": {
@@ -211,8 +45,8 @@
         },
         {
             "label": {
-                "text": "资源获取",
-                "color": "gold"
+                "translate": "json.kards.dialog.jiaocheng.main.90",
+                "fallback": "资源获取"
             },
             "width": 125,
             "action": {
@@ -222,8 +56,8 @@
         },
         {
             "label": {
-                "text": "回合信息",
-                "color": "gold"
+                "translate": "json.kards.dialog.jiaocheng.main.91",
+                "fallback": "回合信息"
             },
             "width": 125,
             "action": {
@@ -234,18 +68,18 @@
     ],
     "columns": 4,
     "exit_action": {
-    "label": {
-        "text": "完成教程",
-        "color": "gold"
-      },
-      "tooltip": {
-        "text": "请确保阅读完毕",
-        "color":"gray"
-      },
-      "width": 125,
-      "action": {
-        "type": "minecraft:run_command",
-        "command": "trigger dialog set 2"
-      }
-  }
+        "label": {
+            "translate": "json.kards.dialog.jiaocheng.main.92",
+            "fallback": "完成教程"
+        },
+        "tooltip": {
+            "translate": "json.kards.dialog.jiaocheng.main.93",
+            "fallback": "请确保阅读完毕"
+        },
+        "width": 125,
+        "action": {
+            "type": "minecraft:run_command",
+            "command": "trigger dialog set 2"
+        }
+    }
 }

@@ -1,6 +1,7 @@
 {
     "description": {
-        "text": "制裁者"
+        "translate": "json.kards.dialog.xp_shop.enchantment.main.909",
+        "fallback": "制裁者"
     },
     "anvil_cost": 4,
     "max_level": 3,

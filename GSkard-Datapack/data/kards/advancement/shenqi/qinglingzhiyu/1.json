@@ -1,25 +1,25 @@
 {
-  "criteria": {
-    "requirement": {
-      "trigger": "minecraft:entity_hurt_player",
-      "conditions": {
-        "damage": {
-          "source_entity": {
-            "nbt": "{Tags:[\"qinglingzhiyu\"]}"
-          },
-          "type": {
-            "tags": [
-              {
-                "id": "minecraft:is_player_attack",
-                "expected": true
-              }
-            ]
-          }
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "nbt": "{Tags:[\"qinglingzhiyu\"]}"
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "minecraft:is_player_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
         }
-      }
+    },
+    "rewards": {
+        "function": "kards:game/yongpaiku/shenji/wangzhibaoku/qinglingzhiyu/1"
     }
-  },
-  "rewards": {
-    "function": "kards:game/yongpaiku/shenji/wangzhibaoku/qinglingzhiyu/1"
-  }
 }

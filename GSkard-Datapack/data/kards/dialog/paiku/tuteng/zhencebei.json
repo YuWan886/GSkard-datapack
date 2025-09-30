@@ -1,18 +1,12 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "text": "15K ",
-        "extra": [
-            {
-                "text": "侦测贝",
-                "color": "red"
-            }
-        ],
-        "color": "aqua",
-        "bold": true
+        "translate": "json.kards.dialog.paiku.juntuan.shidi.336",
+        "fallback": "15K "
     },
     "external_title": {
-        "text": ""
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
     },
     "body": [
         {
@@ -26,54 +20,32 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "图腾牌",
-                "color": "red",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.tuteng.baomao.416",
+                "fallback": "图腾牌"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "在队伍图腾区生成潜影贝",
-                "color": "gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.tuteng.zhencebei.461",
+                "fallback": "在队伍图腾区生成潜影贝"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "图腾存活效果：",
-                "color": "gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.tuteng.baomao.418",
+                "fallback": "图腾存活效果："
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "1.你的队伍",
-                "color": "gray",
-                "italic": false,
-                "extra": [
-                    {
-                        "text": "不会触发",
-                        "color": "gold",
-                        "italic": false
-                    },
-                    {
-                        "text": "非回合类型的陷阱",
-                        "color": "gold",
-                        "italic": false,
-                        "bold": true
-                    },
-                    {
-                        "text": " 该效果触发时侦测贝受到1♥伤害",
-                        "color": "gold",
-                        "italic": false
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.tuteng.zhencebei.462",
+                "fallback": "1.你的队伍"
             },
             "width": 1024
         }
@@ -82,8 +54,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "text": "返回§c图腾§a牌库",
-            "color": "green"
+            "translate": "json.kards.dialog.paiku.tuteng.baomao.421",
+            "fallback": "返回§c图腾§a牌库"
         },
         "action": {
             "type": "minecraft:show_dialog",

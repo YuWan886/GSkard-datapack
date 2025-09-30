@@ -1,82 +1,57 @@
 {
-  "type": "minecraft:notice",
-  "title": {
-    "text": "0K ",
-    "extra": [
-      {
-        "text": "赌命",
-        "color": "light_purple"
-      }
+    "type": "minecraft:notice",
+    "title": {
+        "translate": "json.kards.dialog.paiku.fashu.duming.139",
+        "fallback": "0K "
+    },
+    "external_title": {
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "music_disc_mellohi"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "translate": "json.kards.dialog.paiku.fashu.duming.140",
+                "fallback": "使用后与敌方1位随机玩家进行"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "translate": "json.kards.dialog.paiku.fashu.duming.141",
+                "fallback": "赌命成功则对对方造成"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "translate": "json.kards.dialog.paiku.fashu.duming.142",
+                "fallback": "赌命失败则对自己造成"
+            },
+            "width": 1024
+        }
     ],
-    "color": "aqua",
-    "bold": true
-  },
-  "external_title": {
-    "text": ""
-  },
-  "body": [
-    {
-      "type": "minecraft:item",
-      "item": {
-        "id": "music_disc_mellohi"
-      },
-      "show_decorations": false,
-      "show_tooltip": false
-    },
-    {
-      "type": "minecraft:plain_message",
-      "contents": {
-        "text": "使用后与敌方1位随机玩家进行",
-        "color": "gray",
-        "extra": [
-          {
-            "text": " 赌命",
-            "color": "gold",
-            "bold": true
-          }
-        ]
-      },
-      "width": 1024
-    },
-    {
-      "type": "minecraft:plain_message",
-      "contents": {
-        "text": "赌命成功则对对方造成",
-        "color": "gray",
-        "extra": [
-          {
-            "text": "7.5♥破甲伤害",
-            "color": "aqua"
-          }
-        ]
-      },
-      "width": 1024
-    },
-    {
-      "type": "minecraft:plain_message",
-      "contents": {
-        "text": "赌命失败则对自己造成",
-        "color": "gray",
-        "extra": [
-          {
-            "text": "7.5♥破甲伤害",
-            "color": "aqua"
-          }
-        ]
-      },
-      "width": 1024
-    }
-  ],
-  "inputs": [],
-  "can_close_with_escape": true,
-  "action": {
-    "label": {
-      "text": "返回§d法术牌§a牌库",
-      "color": "green"
-    },
+    "inputs": [],
+    "can_close_with_escape": true,
     "action": {
-      "type": "minecraft:show_dialog",
-      "dialog": "kards:paiku/fashu/main"
+        "label": {
+            "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.125",
+            "fallback": "返回§d法术牌§a牌库"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/fashu/main"
+        }
     }
-  }
 }

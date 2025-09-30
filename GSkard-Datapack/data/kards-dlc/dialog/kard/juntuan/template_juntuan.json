@@ -1,15 +1,8 @@
 {
     "type": "notice",
     "title": {
-        "text": "4K ",
-        "extra": [
-            {
-                "text": "模板：军团",
-                "color": "dark_green"
-            }
-        ],
-        "color": "aqua",
-        "bold": true
+        "translate": "json.kards.dialog.paiku.fashu.jielue.152",
+        "fallback": "4K "
     },
     "body": [
         {
@@ -23,50 +16,32 @@
         {
             "type": "plain_message",
             "contents": {
-                "text": "在中间召唤4只",
-                "color": "gray",
-                "extra": [
-                    {
-                        "text": " 蜜蜂",
-                        "color": "gold"
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.juntuan.fengyongerzhi.292",
+                "fallback": "在中间召唤4只"
             },
             "width": 1024
         },
         {
             "type": "plain_message",
             "contents": {
-                "text": "若场上存在",
-                "color": "gray",
-                "extra": [
-                    {
-                        "text": " 友方蜜蜂",
-                        "color": "green"
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.juntuan.fengyongerzhi.293",
+                "fallback": "若场上存在"
             },
             "width": 1024
         },
         {
             "type": "plain_message",
             "contents": {
-                "text": "改为",
-                "color": "gray",
-                "extra": [
-                    {
-                        "text": " 位于其召唤4只蜜蜂",
-                        "color": "gold"
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.juntuan.fengyongerzhi.294",
+                "fallback": "改为"
             },
             "width": 1024
         }
     ],
     "action": {
         "label": {
-            "text": "返回§d军团牌§a牌库-§5DLC",
-            "color": "green"
+            "translate": "json.kards-dlc.dialog.kard.juntuan.template_juntuan.925",
+            "fallback": "返回§d军团牌§a牌库-§5DLC"
         },
         "action": {
             "type": "show_dialog",

@@ -1,18 +1,12 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "text": "4K ",
-        "extra": [
-            {
-                "text": "千钧一发",
-                "color": "dark_aqua"
-            }
-        ],
-        "color": "aqua",
-        "bold": true
+        "translate": "json.kards.dialog.paiku.fashu.jielue.152",
+        "fallback": "4K "
     },
     "external_title": {
-        "text": ""
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
     },
     "body": [
         {
@@ -26,70 +20,32 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "陷阱卡",
-                "color": "dark_aqua",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.xianjing.hewei.663",
+                "fallback": "陷阱卡"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "使用后埋下陷阱 敌方在达到条件时触发 触发后失效",
-                "color": "gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.xianjing.hewei.664",
+                "fallback": "使用后埋下陷阱 敌方在达到条件时触发 触发后失效"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "条件：敌方任意玩家使用",
-                "color": "gray",
-                "italic": false,
-                "extra": [
-                    {
-                        "text": "神迹牌",
-                        "color": "white",
-                        "italic": false
-                    },
-                    {
-                        "text": "时",
-                        "color": "gray",
-                        "italic": false
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.xianjing.hewei.665",
+                "fallback": "条件：敌方任意玩家使用"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "触发：传送",
-                "color": "gray",
-                "italic": false,
-                "extra": [
-                    {
-                        "text": "友方区域",
-                        "color": "green",
-                        "italic": false
-                    },
-                    {
-                        "text": "所有",
-                        "color": "gray",
-                        "italic": false
-                    },
-                    {
-                        "text": "敌对生物",
-                        "color": "red",
-                        "italic": false
-                    },
-                    {
-                        "text": "至敌方场地",
-                        "color": "gray",
-                        "italic": false
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.xianjing.qianjunyifa.685",
+                "fallback": "触发：传送"
             },
             "width": 1024
         }
@@ -98,8 +54,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "text": "返回§c陷阱§a牌库",
-            "color": "green"
+            "translate": "json.kards.dialog.paiku.xianjing.hewei.667",
+            "fallback": "返回§c陷阱§a牌库"
         },
         "action": {
             "type": "minecraft:show_dialog",

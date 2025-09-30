@@ -1,38 +1,38 @@
 {
-  "description": "§b冰霜荆棘",
-  "supported_items": "#minecraft:chest_armor",
-  "weight": 1,
-  "max_level": 3,
-  "min_cost": {
-    "base": 0,
-    "per_level_above_first": 0
-  },
-  "max_cost": {
-    "base": 0,
-    "per_level_above_first": 0
-  },
-  "anvil_cost": 0,
-  "slots": [
-    "chest"
-  ],
-  "effects": {
-    "minecraft:post_attack": [
-      {
-        "effect": {
-          "type": "minecraft:run_function",
-          "function": "kards:enchantment/bingshuangjingji/victim"
-        },
-        "enchanted": "victim",
-        "affected": "victim"
-      },
-      {
-        "effect": {
-          "type": "minecraft:run_function",
-          "function": "kards:enchantment/bingshuangjingji/attacker"
-        },
-        "enchanted": "victim",
-        "affected": "attacker"
-      }
-    ]
-  }
+    "description": "§b冰霜荆棘",
+    "supported_items": "#minecraft:chest_armor",
+    "weight": 1,
+    "max_level": 3,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": [
+        "chest"
+    ],
+    "effects": {
+        "minecraft:post_attack": [
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "kards:enchantment/bingshuangjingji/victim"
+                },
+                "enchanted": "victim",
+                "affected": "victim"
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "kards:enchantment/bingshuangjingji/attacker"
+                },
+                "enchanted": "victim",
+                "affected": "attacker"
+            }
+        ]
+    }
 }

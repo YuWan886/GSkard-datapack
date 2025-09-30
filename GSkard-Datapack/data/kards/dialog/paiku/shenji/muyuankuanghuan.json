@@ -1,19 +1,12 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "text": "0K ",
-        "extra": [
-            {
-                "text": "墓园狂欢",
-                "color": "white",
-                "bold": true
-            }
-        ],
-        "color": "aqua",
-        "bold": true
+        "translate": "json.kards.dialog.paiku.fashu.duming.139",
+        "fallback": "0K "
     },
     "external_title": {
-        "text": ""
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
     },
     "body": [
         {
@@ -27,100 +20,64 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "神迹牌",
-                "color": "white",
-                "italic": false
+                "translate": "json.kards.dialog.jiaocheng.wanfa.2.105",
+                "fallback": "神迹牌"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "现在开始 你以任意方式获取的以下种类的牌转化为特殊的衍生卡",
-                "color": "gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.shenji.muyuankuanghuan.399",
+                "fallback": "现在开始 你以任意方式获取的以下种类的牌转化为特殊的衍生卡"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "根据种类不同转化的效率不同",
-                "color": "gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.shenji.muyuankuanghuan.400",
+                "fallback": "根据种类不同转化的效率不同"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "基本牌*1",
-                "color": "blue",
-                "italic": false,
-                "extra": [
-                    {
-                        "text": "=[狂欢僵尸]*1 ",
-                        "color": "gray",
-                        "italic": false
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.shenji.muyuankuanghuan.401",
+                "fallback": "基本牌*1"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "军团牌*1",
-                "color": "dark_green",
-                "italic": false,
-                "extra": [
-                    {
-                        "text": "=[狂欢僵尸]*3 ",
-                        "color": "gray",
-                        "italic": false
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.shenji.muyuankuanghuan.402",
+                "fallback": "军团牌*1"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "诅咒牌*1",
-                "color": "dark_gray",
-                "italic": false,
-                "extra": [
-                    {
-                        "text": "=[狂欢僵尸]*2 ",
-                        "color": "gray",
-                        "italic": false
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.shenji.muyuankuanghuan.403",
+                "fallback": "诅咒牌*1"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "陷阱牌*1",
-                "color": "dark_aqua",
-                "italic": false,
-                "extra": [
-                    {
-                        "text": "=[狂欢僵尸]*2 ",
-                        "color": "gray",
-                        "italic": false
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.shenji.muyuankuanghuan.404",
+                "fallback": "陷阱牌*1"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "同时 +5Kmax 每一个友方回合多抽2张牌",
-                "color": "gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.shenji.muyuankuanghuan.405",
+                "fallback": "同时 +5Kmax 每一个友方回合多抽2张牌"
             },
             "width": 1024
         }
@@ -129,8 +86,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "text": "返回§d神迹§a牌库",
-            "color": "green"
+            "translate": "json.kards.dialog.paiku.shenji.fanxiangfeileishen.365",
+            "fallback": "返回§d神迹§a牌库"
         },
         "action": {
             "type": "minecraft:show_dialog",

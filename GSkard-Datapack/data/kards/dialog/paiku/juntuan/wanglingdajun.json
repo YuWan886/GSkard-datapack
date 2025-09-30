@@ -1,18 +1,12 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "text": "10K ",
-        "extra": [
-            {
-                "text": "亡灵大军",
-                "color": "dark_green"
-            }
-        ],
-        "color": "aqua",
-        "bold": true
+        "translate": "json.kards.dialog.paiku.juntuan.shenghaikongju.333",
+        "fallback": "10K "
     },
     "external_title": {
-        "text": ""
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
     },
     "body": [
         {
@@ -26,62 +20,24 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "召唤2只",
-                "color": "gray",
-                "extra": [
-                    {
-                        "text": " 骷髅",
-                        "color": "gold"
-                    },
-                    {
-                        "text": " 和2只",
-                        "color": "gray"
-                    },
-                    {
-                        "text": " 凋零骷髅",
-                        "color": "gold"
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.juntuan.errenchengjun.289",
+                "fallback": "召唤2只"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "若背包有基本牌",
-                "color": "gray",
-                "extra": [
-                    {
-                        "text": " [恶魂]",
-                        "color": "blue"
-                    },
-                    {
-                        "text": " 自动消耗1张并额外消耗4K",
-                        "color": "gray"
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.juntuan.wanglingdajun.347",
+                "fallback": "若背包有基本牌"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "改凋零骷髅",
-                "color": "gray",
-                "extra": [
-                    {
-                        "text": " 为远程攻击",
-                        "color": "gold"
-                    },
-                    {
-                        "text": " 并召唤1只",
-                        "color": "gray"
-                    },
-                    {
-                        "text": " 快乐恶魂为坐骑令召唤的生物骑乘",
-                        "color": "gold"
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.juntuan.wanglingdajun.348",
+                "fallback": "改凋零骷髅"
             },
             "width": 1024
         }
@@ -90,8 +46,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "text": "返回§d军团牌§a牌库",
-            "color": "green"
+            "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.284",
+            "fallback": "返回§d军团牌§a牌库"
         },
         "action": {
             "type": "minecraft:show_dialog",

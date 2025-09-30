@@ -1,88 +1,81 @@
 {
-  "type": "minecraft:notice",
-  "title": {
-    "text": "0K ",
-    "extra": [
-      {
-        "text": "黑山羊之拥",
-        "color": "light_purple"
-      }
+    "type": "minecraft:notice",
+    "title": {
+        "translate": "json.kards.dialog.paiku.fashu.duming.139",
+        "fallback": "0K "
+    },
+    "external_title": {
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "music_disc_mellohi"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "translate": "json.kards.dialog.paiku.fashu.heishanyangzhiyong.146",
+                "fallback": "使用后随机获得1个以下效果"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "translate": "json.kards.dialog.paiku.fashu.heishanyangzhiyong.147",
+                "fallback": " -2Kmax 生命恢复8♥"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "translate": "json.kards.dialog.paiku.fashu.heishanyangzhiyong.148",
+                "fallback": " -3Kmax 生命恢复15♥"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "translate": "json.kards.dialog.paiku.fashu.heishanyangzhiyong.149",
+                "fallback": " -4Kmax 生命恢复24♥"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "translate": "json.kards.dialog.paiku.fashu.heishanyangzhiyong.150",
+                "fallback": " -6Kmax 全队生命恢复20♥ 你额外恢复10♥"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "translate": "json.kards.dialog.paiku.fashu.heishanyangzhiyong.151",
+                "fallback": "嘿~嘿~我看到祂了"
+            },
+            "width": 1024
+        }
     ],
-    "color": "aqua",
-    "bold": true
-  },
-  "external_title": {
-    "text": ""
-  },
-  "body": [
-    {
-      "type": "minecraft:item",
-      "item": {
-        "id": "music_disc_mellohi"
-      },
-      "show_decorations": false,
-      "show_tooltip": false
-    },
-    {
-      "type": "minecraft:plain_message",
-      "contents": {
-        "text": "使用后随机获得1个以下效果",
-        "color": "gray"
-      },
-      "width": 1024
-    },
-    {
-      "type": "minecraft:plain_message",
-      "contents": {
-        "text": " -2Kmax 生命恢复8♥",
-        "color": "gray"
-      },
-      "width": 1024
-    },
-    {
-      "type": "minecraft:plain_message",
-      "contents": {
-        "text": " -3Kmax 生命恢复15♥",
-        "color": "gray"
-      },
-      "width": 1024
-    },
-    {
-      "type": "minecraft:plain_message",
-      "contents": {
-        "text": " -4Kmax 生命恢复24♥",
-        "color": "gray"
-      },
-      "width": 1024
-    },
-    {
-      "type": "minecraft:plain_message",
-      "contents": {
-        "text": " -6Kmax 全队生命恢复20♥ 你额外恢复10♥",
-        "color": "gray"
-      },
-      "width": 1024
-    },
-    {
-      "type": "minecraft:plain_message",
-      "contents": {
-        "text": "嘿~嘿~我看到祂了",
-        "color": "dark_gray",
-        "italic": true
-      },
-      "width": 1024
-    }
-  ],
-  "inputs": [],
-  "can_close_with_escape": true,
-  "action": {
-    "label": {
-      "text": "返回§d法术牌§a牌库",
-      "color": "green"
-    },
+    "inputs": [],
+    "can_close_with_escape": true,
     "action": {
-      "type": "minecraft:show_dialog",
-      "dialog": "kards:paiku/fashu/main"
+        "label": {
+            "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.125",
+            "fallback": "返回§d法术牌§a牌库"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/fashu/main"
+        }
     }
-  }
 }

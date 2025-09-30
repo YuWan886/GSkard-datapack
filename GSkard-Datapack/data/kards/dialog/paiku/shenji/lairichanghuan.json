@@ -1,19 +1,12 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "text": "5Kmax ",
-        "extra": [
-            {
-                "text": "来日偿还",
-                "color": "white",
-                "bold": true
-            }
-        ],
-        "color": "gold",
-        "bold": true
+        "translate": "json.kards.dialog.paiku.shenji.lairichanghuan.375",
+        "fallback": "5Kmax "
     },
     "external_title": {
-        "text": ""
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
     },
     "body": [
         {
@@ -27,36 +20,32 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "神迹牌",
-                "color": "white",
-                "italic": false
+                "translate": "json.kards.dialog.jiaocheng.wanfa.2.105",
+                "fallback": "神迹牌"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "将你上回合至现在受到的所有伤害",
-                "color": "gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.shenji.lairichanghuan.376",
+                "fallback": "将你上回合至现在受到的所有伤害"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "分配至敌方所有玩家",
-                "color": "red",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.shenji.lairichanghuan.377",
+                "fallback": "分配至敌方所有玩家"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "一回合只能使用一次",
-                "color": "dark_gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.shenji.lairichanghuan.378",
+                "fallback": "一回合只能使用一次"
             },
             "width": 1024
         }
@@ -65,8 +54,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "text": "返回§d神迹§a牌库",
-            "color": "green"
+            "translate": "json.kards.dialog.paiku.shenji.fanxiangfeileishen.365",
+            "fallback": "返回§d神迹§a牌库"
         },
         "action": {
             "type": "minecraft:show_dialog",

@@ -1,4 +1,4 @@
-$bossbar add kards:zhongshang_$(UUID) [{text:"重伤:无法恢复生命",color:"white",bold:true}]
+$bossbar add kards:zhongshang_$(UUID) [{translate: "kards.function.game.ingame.custom_buff.zhongshang.bossbar.3.1", fallback: "重伤:无法恢复生命",color:"white",bold:true}]
 $bossbar set kards:zhongshang_$(UUID) color purple
 $bossbar set kards:zhongshang_$(UUID) players @s
 $bossbar set kards:zhongshang_$(UUID) visible true

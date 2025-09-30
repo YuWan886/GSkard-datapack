@@ -1,20 +1,20 @@
 {
     "type": "minecraft:multi_action",
     "title": {
-        "text": "神迹",
-        "color": "white",
-        "bold": true
+        "translate": "json.kards.dialog.paiku.shenji.main.383",
+        "fallback": "神迹"
     },
     "external_title": {
-        "text": ""
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
     },
     "body": [],
     "inputs": [],
     "can_close_with_escape": true,
     "exit_action": {
         "label": {
-            "text": "返回§6主§a牌库",
-            "color": "green"
+            "translate": "json.kards.dialog.paiku.fashu.main.163",
+            "fallback": "返回§6主§a牌库"
         },
         "action": {
             "type": "show_dialog",
@@ -25,9 +25,8 @@
     "actions": [
         {
             "label": {
-                "text": "飞雷神•反",
-                "color": "white",
-                "bold": true
+                "translate": "json.kards.dialog.paiku.shenji.main.384",
+                "fallback": "飞雷神•反"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -37,9 +36,8 @@
         },
         {
             "label": {
-                "text": "飞雷神",
-                "color": "white",
-                "bold": true
+                "translate": "json.kards.dialog.paiku.shenji.main.385",
+                "fallback": "飞雷神"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -49,9 +47,8 @@
         },
         {
             "label": {
-                "text": "复制",
-                "color": "white",
-                "bold": true
+                "translate": "json.kards.dialog.paiku.shenji.fuzhi.368",
+                "fallback": "复制"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -61,9 +58,8 @@
         },
         {
             "label": {
-                "text": "好高骛远",
-                "color": "white",
-                "bold": true
+                "translate": "json.kards.dialog.paiku.shenji.main.386",
+                "fallback": "好高骛远"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -73,9 +69,8 @@
         },
         {
             "label": {
-                "text": "火力全开",
-                "color": "white",
-                "bold": true
+                "translate": "json.kards.dialog.paiku.shenji.main.387",
+                "fallback": "火力全开"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -85,9 +80,8 @@
         },
         {
             "label": {
-                "text": "禁法结界",
-                "color": "white",
-                "bold": true
+                "translate": "json.kards.dialog.paiku.shenji.main.388",
+                "fallback": "禁法结界"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -97,9 +91,8 @@
         },
         {
             "label": {
-                "text": "绝处逢生",
-                "color": "white",
-                "bold": true
+                "translate": "json.kards.dialog.jiaocheng.wanfa.2.104",
+                "fallback": "绝处逢生"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -109,9 +102,8 @@
         },
         {
             "label": {
-                "text": "来日偿还",
-                "color": "white",
-                "bold": true
+                "translate": "json.kards.dialog.paiku.shenji.main.389",
+                "fallback": "来日偿还"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -121,9 +113,8 @@
         },
         {
             "label": {
-                "text": "灵魂割舍",
-                "color": "white",
-                "bold": true
+                "translate": "json.kards.dialog.paiku.shenji.main.390",
+                "fallback": "灵魂割舍"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -133,9 +124,8 @@
         },
         {
             "label": {
-                "text": "凌驾",
-                "color": "white",
-                "bold": true
+                "translate": "json.kards.dialog.paiku.shenji.main.391",
+                "fallback": "凌驾"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -145,9 +135,8 @@
         },
         {
             "label": {
-                "text": "墓园狂欢",
-                "color": "white",
-                "bold": true
+                "translate": "json.kards.dialog.paiku.shenji.main.392",
+                "fallback": "墓园狂欢"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -157,9 +146,8 @@
         },
         {
             "label": {
-                "text": "胜利号角",
-                "color": "white",
-                "bold": true
+                "translate": "json.kards.dialog.paiku.shenji.main.393",
+                "fallback": "胜利号角"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -169,9 +157,8 @@
         },
         {
             "label": {
-                "text": "神之一手",
-                "color": "white",
-                "bold": true
+                "translate": "json.kards.dialog.paiku.shenji.main.394",
+                "fallback": "神之一手"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -181,9 +168,8 @@
         },
         {
             "label": {
-                "text": "时空崩塌",
-                "color": "white",
-                "bold": true
+                "translate": "json.kards.dialog.paiku.shenji.main.395",
+                "fallback": "时空崩塌"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -193,9 +179,8 @@
         },
         {
             "label": {
-                "text": "贪欲魔盒",
-                "color": "white",
-                "bold": true
+                "translate": "json.kards.dialog.paiku.shenji.main.396",
+                "fallback": "贪欲魔盒"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -205,9 +190,8 @@
         },
         {
             "label": {
-                "text": "王之宝库",
-                "color": "white",
-                "bold": true
+                "translate": "json.kards.dialog.paiku.main.121",
+                "fallback": "王之宝库"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -217,9 +201,8 @@
         },
         {
             "label": {
-                "text": "虚空回响",
-                "color": "white",
-                "bold": true
+                "translate": "json.kards.dialog.paiku.shenji.main.397",
+                "fallback": "虚空回响"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -229,9 +212,8 @@
         },
         {
             "label": {
-                "text": "幽谙降临",
-                "color": "white",
-                "bold": true
+                "translate": "json.kards.dialog.paiku.shenji.main.398",
+                "fallback": "幽谙降临"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -241,8 +223,8 @@
         },
         {
             "label": {
-                "text": "DLC",
-                "color": "white"
+                "translate": "json.kards.dialog.paiku.fashu.main.206",
+                "fallback": "DLC"
             },
             "action": {
                 "type": "show_dialog",

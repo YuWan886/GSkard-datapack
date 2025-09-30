@@ -1,12 +1,12 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "text": "贪欲",
-        "color": "light_purple",
-        "bold": true
+        "translate": "json.kards.dialog.paiku.yansheng.main.721",
+        "fallback": "贪欲"
     },
     "external_title": {
-        "text": ""
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
     },
     "body": [
         {
@@ -20,54 +20,48 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "贪欲魔盒",
-                "color": "white",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.shenji.main.396",
+                "fallback": "贪欲魔盒"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "+2K并抽一张牌",
-                "color": "gold",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.yansheng.tanyu.726",
+                "fallback": "+2K并抽一张牌"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "每使用9张为队伍增加1层罪恶值",
-                "color": "gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.yansheng.tanyu.727",
+                "fallback": "每使用9张为队伍增加1层罪恶值"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "每层罪恶值将使队内玩家最大生命-2♥",
-                "color": "red",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.yansheng.tanyu.728",
+                "fallback": "每层罪恶值将使队内玩家最大生命-2♥"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "当罪恶值达到3层时开启潘多拉魔盒 它将不定时的召唤怪物/使用诅咒牌/随机法术",
-                "color": "gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.yansheng.tanyu.729",
+                "fallback": "当罪恶值达到3层时开启潘多拉魔盒 它将不定时的召唤怪物/使用诅咒牌/随机法术"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "层数越高 释放越频繁!",
-                "color": "red",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.yansheng.tanyu.730",
+                "fallback": "层数越高 释放越频繁!"
             },
             "width": 1024
         }
@@ -76,8 +70,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "text": "返回§7其他",
-            "color": "green"
+            "translate": "json.kards.dialog.paiku.yansheng.jinzijue.708",
+            "fallback": "返回§7其他"
         },
         "action": {
             "type": "minecraft:show_dialog",

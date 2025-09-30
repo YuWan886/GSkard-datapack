@@ -12,9 +12,9 @@ schedule clear kards:lobby/bossbar/color/3
 schedule clear kards:lobby/bossbar/color/4
 function kards:lobby/bossbar/color/1
 
-bossbar add minecraft:worldborder {text:"边界收缩倒计时",color:"green"}
+bossbar add minecraft:worldborder {translate: "kards.function.load.1", fallback: "边界收缩倒计时",color:"green"}
 bossbar add minecraft:roundtime ""
-bossbar add minecraft:pvptime {text:"等待开放",color:"green"}
+bossbar add minecraft:pvptime {translate: "kards.function.load.2", fallback: "等待开放",color:"green"}
 
 bossbar set minecraft:roundtime color white
 bossbar set minecraft:pvptime color green
@@ -78,8 +78,8 @@ scoreboard objectives add Use_K_Game dummy
 scoreboard objectives add Use_Kmax_Round dummy
 scoreboard objectives add Use_Kmax_Game dummy
 scoreboard objectives add music dummy
-scoreboard objectives add JinFaJieJie dummy {text:"禁法结界",color:"dark_aqua",bold:true,hover_event:{action:"show_text",value:{text:"回合开始时费用减半"}}}
-scoreboard objectives add ChaoPin dummy {text:"超频",color:"dark_aqua",bold:true}
+scoreboard objectives add JinFaJieJie dummy {translate: "json.kards.dialog.paiku.shenji.main.388", fallback: "禁法结界",color:"dark_aqua",bold:true,hover_event:{action:"show_text",value:{translate: "kards.function.load.3", fallback: "回合开始时费用减半"}}}
+scoreboard objectives add ChaoPin dummy {translate: "kards.function.load.4", fallback: "超频",color:"dark_aqua",bold:true}
 scoreboard objectives add zombie_enhance dummy
 scoreboard objectives add temp dummy
 scoreboard objectives add temp_2 dummy
@@ -264,7 +264,7 @@ scoreboard objectives add random_shijiao2 dummy
 scoreboard objectives add wait_end dummy
 scoreboard objectives add red_end dummy
 scoreboard objectives add blue_end dummy
-scoreboard objectives add Leave_Game minecraft.custom:minecraft.leave_game [{text: "离开游戏",color:"gold",bold:true}]
+scoreboard objectives add Leave_Game minecraft.custom:minecraft.leave_game [{translate: "kards.function.load.5", fallback: "离开游戏",color:"gold",bold:true}]
 scoreboard objectives add Ready dummy
 scoreboard objectives add Ready_count dummy
 scoreboard objectives add Ready_Num dummy
@@ -317,7 +317,7 @@ scoreboard objectives add wuxiuzhihuo_zhuangbei minecraft.dropped:minecraft.musi
 scoreboard objectives add wuxiuzhihuo_tuteng minecraft.dropped:minecraft.music_disc_blocks
 scoreboard objectives add wuxiuzhihuo_zuzhou minecraft.dropped:minecraft.music_disc_stal
 scoreboard objectives add wuxiuzhihuo_shenji minecraft.dropped:minecraft.music_disc_strad
-scoreboard objectives add stopsound trigger {text: "停止播放",color:"gold",bold:true}
+scoreboard objectives add stopsound trigger {translate: "kards.function.load.6", fallback: "停止播放",color:"gold",bold:true}
 scoreboard objectives add SpellTicks dummy
 scoreboard objectives add ram_cooldown_ticks dummy
 scoreboard objectives add is_panicking dummy
@@ -390,4 +390,4 @@ data modify storage settings kard_count set value \
 }
 
 # GSkard-1.5
-tellraw @a ["==========================\n",{color:"#2a17fd",text:"         "},{color:"#f19013",text:"G"},{color:"#ed7d19",text:"S"},{color:"#ea6a1f",text:"k"},{color:"#e75725",text:"a"},{color:"#e3442b",text:"r"},{color:"#e03131",text:"d"},{color:"gold",text:"已经加载！"},"\n",{color:"aqua",text:"             版本："},{color:"green",text:"1.51"},"\n=========================="]
+tellraw @a ["==========================\n",{color:"#2a17fd",translate: "kards.function.load.7", fallback: "         "},{color:"#f19013",translate: "kards.function.load.8", fallback: "G"},{color:"#ed7d19",translate: "kards.function.load.9", fallback: "S"},{color:"#ea6a1f",translate: "kards.function.load.10", fallback: "k"},{color:"#e75725",translate: "kards.function.load.11", fallback: "a"},{color:"#e3442b",translate: "kards.function.load.12", fallback: "r"},{color:"#e03131",translate: "kards.function.load.13", fallback: "d"},{color:"gold",translate: "kards.function.load.14", fallback: "已经加载！"},"\n",{color:"aqua",translate: "kards.function.load.15", fallback: "             版本："},{color:"green",translate: "kards.function.load.16", fallback: "1.51"},"\n=========================="]

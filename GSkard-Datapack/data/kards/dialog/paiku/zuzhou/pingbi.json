@@ -1,18 +1,12 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "text": "0K ",
-        "extra": [
-            {
-                "text": "屏蔽",
-                "color": "dark_gray"
-            }
-        ],
-        "color": "aqua",
-        "bold": true
+        "translate": "json.kards.dialog.paiku.fashu.duming.139",
+        "fallback": "0K "
     },
     "external_title": {
-        "text": ""
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
     },
     "body": [
         {
@@ -26,18 +20,16 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "诅咒牌",
-                "color": "dark_gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.main.118",
+                "fallback": "诅咒牌"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "你使用的下一张牌 没有用牌信息 但使用该卡的后续其他信息不会屏蔽 且仍会触发陷阱",
-                "color": "gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.zuzhou.pingbi.829",
+                "fallback": "你使用的下一张牌 没有用牌信息 但使用该卡的后续其他信息不会屏蔽 且仍会触发陷阱"
             },
             "width": 1024
         }
@@ -46,8 +38,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "text": "返回§c诅咒§a牌库",
-            "color": "green"
+            "translate": "json.kards.dialog.paiku.zuzhou.chengmo.811",
+            "fallback": "返回§c诅咒§a牌库"
         },
         "action": {
             "type": "minecraft:show_dialog",

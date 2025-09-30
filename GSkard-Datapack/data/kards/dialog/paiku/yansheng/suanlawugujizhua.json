@@ -1,12 +1,12 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "text": "酸辣无骨鸡爪",
-        "color": "red",
-        "bold": true
+        "translate": "json.kards.dialog.paiku.fashu.main.189",
+        "fallback": "酸辣无骨鸡爪"
     },
     "external_title": {
-        "text": ""
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
     },
     "body": [
         {
@@ -20,36 +20,32 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "美味可食用",
-                "color": "gold",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.yansheng.suanlawugujizhua.722",
+                "fallback": "美味可食用"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "食用后恢复5♥",
-                "color": "green",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.yansheng.suanlawugujizhua.723",
+                "fallback": "食用后恢复5♥"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "将1个酸辣无骨鸡爪置入敌方随机一名玩家手中",
-                "color": "gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.yansheng.suanlawugujizhua.724",
+                "fallback": "将1个酸辣无骨鸡爪置入敌方随机一名玩家手中"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "为什么无骨鸡爪是一根骨头?",
-                "color": "dark_gray",
-                "italic": true
+                "translate": "json.kards.dialog.paiku.yansheng.suanlawugujizhua.725",
+                "fallback": "为什么无骨鸡爪是一根骨头?"
             },
             "width": 1024
         }
@@ -58,8 +54,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "text": "返回§7其他",
-            "color": "green"
+            "translate": "json.kards.dialog.paiku.yansheng.jinzijue.708",
+            "fallback": "返回§7其他"
         },
         "action": {
             "type": "minecraft:show_dialog",

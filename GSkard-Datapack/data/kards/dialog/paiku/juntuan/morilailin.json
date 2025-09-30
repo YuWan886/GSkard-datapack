@@ -1,18 +1,12 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "text": "8K ",
-        "extra": [
-            {
-                "text": "末日来临",
-                "color": "dark_green"
-            }
-        ],
-        "color": "aqua",
-        "bold": true
+        "translate": "json.kards.dialog.paiku.fashu.chunnuanhuakai.130",
+        "fallback": "8K "
     },
     "external_title": {
-        "text": ""
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
     },
     "body": [
         {
@@ -26,28 +20,16 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "召唤2只",
-                "color": "gray",
-                "extra": [
-                    {
-                        "text": " 闪电苦力怕",
-                        "color": "gold"
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.juntuan.errenchengjun.289",
+                "fallback": "召唤2只"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "爆炸后会生成1只",
-                "color": "gray",
-                "extra": [
-                    {
-                        "text": " 加速爆炸的苦力怕",
-                        "color": "gold"
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.juntuan.morilailin.327",
+                "fallback": "爆炸后会生成1只"
             },
             "width": 1024
         }
@@ -56,8 +38,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "text": "返回§d军团牌§a牌库",
-            "color": "green"
+            "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.284",
+            "fallback": "返回§d军团牌§a牌库"
         },
         "action": {
             "type": "minecraft:show_dialog",

@@ -5,41 +5,43 @@
             "count": 1
         },
         "title": {
-            "text": "三振出局,本垒打!"
+            "translate": "json.kards.advancement.advancement.sanzhenchuju_benleida.13",
+            "fallback": "三振出局,本垒打!"
         },
         "description": {
-            "text": "手持一把击退附魔大于等于5的武器"
+            "translate": "json.kards.advancement.advancement.sanzhenchuju_benleida.14",
+            "fallback": "手持一把击退附魔大于等于5的武器"
         },
         "frame": "task",
         "show_toast": true,
         "announce_to_chat": true,
         "hidden": true
-   },
-   "parent": "kards:advancement/jiaocheng",
-   "criteria": {
-    "requirement": {
-      "trigger": "minecraft:tick",
-      "conditions": {
-        "player": {
-          "equipment": {
-            "mainhand": {
-              "predicates": {
-                "minecraft:enchantments": [
-                  {
-                    "enchantments": "knockback",
-                    "levels": {
-                      "min": 6
+    },
+    "parent": "kards:advancement/jiaocheng",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "minecraft:enchantments": [
+                                    {
+                                        "enchantments": "knockback",
+                                        "levels": {
+                                            "min": 6
+                                        }
+                                    }
+                                ]
+                            }
+                        }
                     }
-                  }
-                ]
-              }
+                }
             }
-          }
         }
-      }
+    },
+    "rewards": {
+        "function": "kards:advancement/sanzhenchuju_benleida"
     }
-  },
-  "rewards": {
-    "function": "kards:advancement/sanzhenchuju_benleida"
-  }
 }

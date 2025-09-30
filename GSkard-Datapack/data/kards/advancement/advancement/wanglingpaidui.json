@@ -5,10 +5,12 @@
             "count": 1
         },
         "title": {
-            "text": "亡灵派对"
+            "translate": "json.kards.advancement.advancement.wanglingpaidui.17",
+            "fallback": "亡灵派对"
         },
         "description": {
-            "text": "成功将“墓园狂欢”的“狂欢僵尸”层数叠到最高层"
+            "translate": "json.kards.advancement.advancement.wanglingpaidui.18",
+            "fallback": "成功将“墓园狂欢”的“狂欢僵尸”层数叠到最高层"
         },
         "frame": "challenge",
         "show_toast": true,

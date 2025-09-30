@@ -22,9 +22,9 @@ execute if score @s fashu_heishanyangzhiyong matches 4..6 run scoreboard players
 execute if score @s fashu_heishanyangzhiyong matches 7..9 run scoreboard players remove @s kardCountmax 4
 execute if score @s fashu_heishanyangzhiyong matches 10 run scoreboard players remove @s kardCountmax 6
 
-execute if score @s fashu_heishanyangzhiyong matches 1..3 run tellraw @a [{selector:"@s"},{text: "\n -2Kmax",color:"red",bold:false},{text: " 生命恢复8♥",color:"gold",bold:false}]
-execute if score @s fashu_heishanyangzhiyong matches 4..6 run tellraw @a [{selector:"@s"},{text: "\n -3Kmax",color:"red",bold:false},{text: " 生命恢复15♥",color:"gold",bold:false}]
-execute if score @s fashu_heishanyangzhiyong matches 7..9 run tellraw @a [{selector:"@s"},{text: "\n -4Kmax",color:"red",bold:false},{text: " 生命恢复24♥",color:"gold",bold:false}]
-execute if score @s fashu_heishanyangzhiyong matches 10 run tellraw @a [{selector:"@s"},{text: "\n -6Kmax",color:"red",bold:false},{text: " 同队玩家生命恢复20♥ 自身额外恢复10♥",color:"gold",bold:false}]
+execute if score @s fashu_heishanyangzhiyong matches 1..3 run tellraw @a [{selector:"@s"},{translate: "kards.function.game.yongpaiku.fashu.heishanyangzhiyong.1", fallback: "\n -2Kmax",color:"red",bold:false},{translate: "kards.function.game.paiku.fashu.heishanyangzhiyong.2", fallback: " 生命恢复8♥",color:"gold",bold:false}]
+execute if score @s fashu_heishanyangzhiyong matches 4..6 run tellraw @a [{selector:"@s"},{translate: "kards.function.game.yongpaiku.fashu.heishanyangzhiyong.2", fallback: "\n -3Kmax",color:"red",bold:false},{translate: "kards.function.game.paiku.fashu.heishanyangzhiyong.4", fallback: " 生命恢复15♥",color:"gold",bold:false}]
+execute if score @s fashu_heishanyangzhiyong matches 7..9 run tellraw @a [{selector:"@s"},{translate: "kards.function.game.yongpaiku.fashu.heishanyangzhiyong.3", fallback: "\n -4Kmax",color:"red",bold:false},{translate: "kards.function.game.paiku.fashu.heishanyangzhiyong.6", fallback: " 生命恢复24♥",color:"gold",bold:false}]
+execute if score @s fashu_heishanyangzhiyong matches 10 run tellraw @a [{selector:"@s"},{translate: "kards.function.game.yongpaiku.fashu.heishanyangzhiyong.4", fallback: "\n -6Kmax",color:"red",bold:false},{translate: "kards.function.game.yongpaiku.fashu.heishanyangzhiyong.5", fallback: " 同队玩家生命恢复20♥ 自身额外恢复10♥",color:"gold",bold:false}]
 
 scoreboard players set @s fashu_heishanyangzhiyong 0

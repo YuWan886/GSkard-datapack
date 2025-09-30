@@ -1,19 +1,12 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "text": "0K ",
-        "extra": [
-            {
-                "text": "好高骛远",
-                "color": "white",
-                "bold": true
-            }
-        ],
-        "color": "aqua",
-        "bold": true
+        "translate": "json.kards.dialog.paiku.fashu.duming.139",
+        "fallback": "0K "
     },
     "external_title": {
-        "text": ""
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
     },
     "body": [
         {
@@ -27,25 +20,16 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "神迹牌",
-                "color": "white",
-                "italic": false
+                "translate": "json.kards.dialog.jiaocheng.wanfa.2.105",
+                "fallback": "神迹牌"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "将身上所有牌洗掉",
-                "color": "gray",
-                "italic": false,
-                "extra": [
-                    {
-                        "text": "抽洗掉牌数+2的牌",
-                        "color": "gold",
-                        "italic": false
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.shenji.haogaowuyuan.369",
+                "fallback": "将身上所有牌洗掉"
             },
             "width": 1024
         }
@@ -54,8 +38,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "text": "返回§d神迹§a牌库",
-            "color": "green"
+            "translate": "json.kards.dialog.paiku.shenji.fanxiangfeileishen.365",
+            "fallback": "返回§d神迹§a牌库"
         },
         "action": {
             "type": "minecraft:show_dialog",

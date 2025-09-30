@@ -1,18 +1,12 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "text": "10K ",
-        "extra": [
-            {
-                "text": "村民",
-                "color": "red"
-            }
-        ],
-        "color": "aqua",
-        "bold": true
+        "translate": "json.kards.dialog.paiku.juntuan.shenghaikongju.333",
+        "fallback": "10K "
     },
     "external_title": {
-        "text": ""
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
     },
     "body": [
         {
@@ -26,90 +20,48 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "图腾牌",
-                "color": "red",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.tuteng.baomao.416",
+                "fallback": "图腾牌"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "在队伍图腾区生成村民",
-                "color": "gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.tuteng.cunmin.422",
+                "fallback": "在队伍图腾区生成村民"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "图腾存活效果：",
-                "color": "gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.tuteng.baomao.418",
+                "fallback": "图腾存活效果："
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "1.队伍使用的怪物获得",
-                "color": "gray",
-                "italic": false,
-                "extra": [
-                    {
-                        "text": "抗性提升1",
-                        "color": "gold",
-                        "italic": false
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.tuteng.cunmin.423",
+                "fallback": "1.队伍使用的怪物获得"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "2.队伍铁傀儡获得",
-                "color": "gray",
-                "italic": false,
-                "extra": [
-                    {
-                        "text": "速度2",
-                        "color": "gold",
-                        "italic": false
-                    },
-                    {
-                        "text": " 每回合结束时为铁傀儡",
-                        "color": "gray",
-                        "italic": false
-                    },
-                    {
-                        "text": "回复血量",
-                        "color": "gold",
-                        "italic": false
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.tuteng.cunmin.424",
+                "fallback": "2.队伍铁傀儡获得"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "3.无法与",
-                "color": "gray",
-                "italic": false,
-                "extra": [
-                    {
-                        "text": "[培养尸]",
-                        "color": "red",
-                        "italic": false
-                    },
-                    {
-                        "text": "同时存在",
-                        "color": "gray",
-                        "italic": false
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.tuteng.cunmin.425",
+                "fallback": "3.无法与"
             },
             "width": 1024
         }
@@ -118,8 +70,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "text": "返回§c图腾§a牌库",
-            "color": "green"
+            "translate": "json.kards.dialog.paiku.tuteng.baomao.421",
+            "fallback": "返回§c图腾§a牌库"
         },
         "action": {
             "type": "minecraft:show_dialog",

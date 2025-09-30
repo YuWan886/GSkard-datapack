@@ -1,18 +1,12 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "text": "2K ",
-        "extra": [
-            {
-                "text": "截断",
-                "color": "dark_gray"
-            }
-        ],
-        "color": "aqua",
-        "bold": true
+        "translate": "json.kards.dialog.paiku.fashu.chongzhu.128",
+        "fallback": "2K "
     },
     "external_title": {
-        "text": ""
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
     },
     "body": [
         {
@@ -26,18 +20,16 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "诅咒牌",
-                "color": "dark_gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.main.118",
+                "fallback": "诅咒牌"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "给敌方玩家施加挖掘疲劳 持续20s",
-                "color": "gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.zuzhou.jieduan.815",
+                "fallback": "给敌方玩家施加挖掘疲劳 持续20s"
             },
             "width": 1024
         }
@@ -46,8 +38,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "text": "返回§c诅咒§a牌库",
-            "color": "green"
+            "translate": "json.kards.dialog.paiku.zuzhou.chengmo.811",
+            "fallback": "返回§c诅咒§a牌库"
         },
         "action": {
             "type": "minecraft:show_dialog",

@@ -1,2 +1,2 @@
 execute as @a store result score @s Xp_Levels run xp query @s levels
-#execute as @a if items entity @s weapon.mainhand bookshelf[custom_data={kards:'xp_shop_item'}] run title @s actionbar [{text:"经验总量 ",color:"green"},{score:{name:"@s",objective:"Xp_Point_Total"},color:"gold"}]
+#execute as @a if items entity @s weapon.mainhand bookshelf[custom_data={kards:'xp_shop_item'}] run title @s actionbar [{translate: "kards.function.game.xp.general.1", fallback: "经验总量 ",color:"green"},{score:{name:"@s",objective:"Xp_Point_Total"},color:"gold"}]

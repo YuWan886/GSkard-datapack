@@ -1,19 +1,12 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "text": "20K ",
-        "extra": [
-            {
-                "text": "幽谙降临",
-                "color": "white",
-                "bold": true
-            }
-        ],
-        "color": "aqua",
-        "bold": true
+        "translate": "json.kards.dialog.paiku.shenji.youanjianglin.413",
+        "fallback": "20K "
     },
     "external_title": {
-        "text": ""
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
     },
     "body": [
         {
@@ -27,61 +20,32 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "神迹牌",
-                "color": "white",
-                "italic": false
+                "translate": "json.kards.dialog.jiaocheng.wanfa.2.105",
+                "fallback": "神迹牌"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "召唤1只",
-                "color": "gray",
-                "italic": false,
-                "extra": [
-                    {
-                        "text": "监守者",
-                        "color": "gold",
-                        "italic": false,
-                        "bold": true
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.jiben.diaolingkulou.253",
+                "fallback": "召唤1只"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "监守者基础血量=[",
-                "color": "gray",
-                "italic": false,
-                "extra": [
-                    {
-                        "text": "15♥",
-                        "color": "red",
-                        "italic": false
-                    },
-                    {
-                        "text": "*敌方玩家存活人数",
-                        "color": "gold",
-                        "italic": false
-                    },
-                    {
-                        "text": "]",
-                        "color": "gray",
-                        "italic": false
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.shenji.youanjianglin.414",
+                "fallback": "监守者基础血量=["
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "血量最多为100♥",
-                "color": "dark_gray",
-                "italic": true
+                "translate": "json.kards.dialog.paiku.shenji.youanjianglin.415",
+                "fallback": "血量最多为100♥"
             },
             "width": 1024
         }
@@ -90,8 +54,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "text": "返回§d神迹§a牌库",
-            "color": "green"
+            "translate": "json.kards.dialog.paiku.shenji.fanxiangfeileishen.365",
+            "fallback": "返回§d神迹§a牌库"
         },
         "action": {
             "type": "minecraft:show_dialog",

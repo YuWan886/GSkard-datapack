@@ -1,102 +1,108 @@
 {
-  "type": "minecraft:multi_action",
-  "title": [
-    {
-      "text": "你当前的构想 ",
-      "color": "gray"
-    }
-  ],
-  "body": [
-    {
-      "type": "minecraft:plain_message",
-      "contents": {
-        "text": "点击以升级对应天赋",
-        "color": "green"
-      },
-      "width": 1024
-    },
-    {
-    "type": "minecraft:item",
-    "item": {"id": "minecraft:player_head","count": 1},
-    "show_decorations": false,"show_tooltip": false
-    }
-],
-  "actions": [
-    {
-      "label": [
+    "type": "minecraft:multi_action",
+    "title": [
         {
-          "text": "生存天赋 消耗2点构想升级"
+            "translate": "json.kards.dialog.ceshi.65",
+            "fallback": "你当前的构想 "
         }
-      ],
-      "tooltip": [
+    ],
+    "body": [
         {
-          "text": "生存天赋\n",
-          "color": "gold"
+            "type": "minecraft:plain_message",
+            "contents": {
+                "translate": "json.kards.dialog.ceshi.66",
+                "fallback": "点击以升级对应天赋"
+            },
+            "width": 1024
         },
         {
-          "text": "生存天赋\n",
-          "color": "gold"
-        },
-        {
-          "text": "生存天赋\n",
-          "color": "gray"
-        },
-        {
-          "text": "生存天赋\n",
-          "color": "gray"
-        },
-        {
-          "text": "生存天赋\n",
-          "color": "gray"
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:player_head",
+                "count": 1
+            },
+            "show_decorations": false,
+            "show_tooltip": false
         }
-      ],
-      "action": {
-        "type": "run_command",
-        "command": "trigger dialog set 1000"
-      }
-    },
-    {
-      "label": [
+    ],
+    "actions": [
         {
-          "text": "战斗天赋 消耗4点构想升级"
+            "label": [
+                {
+                    "translate": "json.kards.dialog.ceshi.67",
+                    "fallback": "生存天赋 消耗2点构想升级"
+                }
+            ],
+            "tooltip": [
+                {
+                    "translate": "json.kards.dialog.ceshi.68",
+                    "fallback": "生存天赋\n"
+                },
+                {
+                    "translate": "json.kards.dialog.ceshi.68",
+                    "fallback": "生存天赋\n"
+                },
+                {
+                    "translate": "json.kards.dialog.ceshi.68",
+                    "fallback": "生存天赋\n"
+                },
+                {
+                    "translate": "json.kards.dialog.ceshi.68",
+                    "fallback": "生存天赋\n"
+                },
+                {
+                    "translate": "json.kards.dialog.ceshi.68",
+                    "fallback": "生存天赋\n"
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger dialog set 1000"
+            }
+        },
+        {
+            "label": [
+                {
+                    "translate": "json.kards.dialog.ceshi.69",
+                    "fallback": "战斗天赋 消耗4点构想升级"
+                }
+            ],
+            "tooltip": [
+                {
+                    "translate": "json.kards.dialog.ceshi.70",
+                    "fallback": "战斗天赋\n"
+                },
+                {
+                    "translate": "json.kards.dialog.ceshi.70",
+                    "fallback": "战斗天赋\n"
+                },
+                {
+                    "translate": "json.kards.dialog.ceshi.70",
+                    "fallback": "战斗天赋\n"
+                },
+                {
+                    "translate": "json.kards.dialog.ceshi.70",
+                    "fallback": "战斗天赋\n"
+                },
+                {
+                    "translate": "json.kards.dialog.ceshi.70",
+                    "fallback": "战斗天赋\n"
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger dialog set 1000"
+            }
         }
-      ],
-      "tooltip": [
-        {
-          "text": "战斗天赋\n",
-          "color": "gold"
-        },
-        {
-          "text": "战斗天赋\n",
-          "color": "gold"
-        },
-        {
-          "text": "战斗天赋\n",
-          "color": "gold"
-        },
-        {
-          "text": "战斗天赋\n",
-          "color": "gold"
-        },
-        {
-          "text": "战斗天赋\n",
-          "color": "gray"
+    ],
+    "columns": 3,
+    "pause": false,
+    "after_action": "none",
+    "exit_action": {
+        "label": "1",
+        "action": {
+            "type": "run_command",
+            "command": "trigger dialog set 1000"
         }
-      ],
-      "action": {
-        "type": "run_command",
-        "command": "trigger dialog set 1000"
-      }
     }
-  ],
-  "columns": 3,
-  "pause": false,
-  "after_action": "none",
-  "exit_action": {
-    "label": "1",
-    "action": {
-      "type": "run_command",
-      "command": "trigger dialog set 1000"
-    }
-  }
 }

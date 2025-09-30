@@ -1,48 +1,35 @@
 {
-  "type": "notice",
-  "title": {
-    "text": "1K ",
-    "extra": [
-      {
-        "text": "模板：法术",
-        "color": "light_purple"
-      }
+    "type": "notice",
+    "title": {
+        "translate": "json.kards.dialog.paiku.fashu.chaotuoxili.126",
+        "fallback": "1K "
+    },
+    "body": [
+        {
+            "type": "item",
+            "item": {
+                "id": "music_disc_mellohi"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "plain_message",
+            "contents": {
+                "translate": "json.kards.dialog.paiku.fashu.shenshengzhiguang.215",
+                "fallback": "为自身回复"
+            },
+            "width": 1024
+        }
     ],
-    "color": "aqua",
-    "bold": true
-  },
-  "body": [
-    {
-      "type": "item",
-      "item": {
-        "id": "music_disc_mellohi"
-      },
-      "show_decorations": false,
-      "show_tooltip": false
-    },
-    {
-      "type": "plain_message",
-      "contents": {
-        "text": "为自身回复",
-        "color": "gray",
-        "extra": [
-          {
-            "text": "16♥",
-            "color": "green"
-          }
-        ]
-      },
-      "width": 1024
-    }
-  ],
-  "action": {
-    "label": {
-      "text": "返回§d法术牌§a牌库-§5DLC",
-      "color": "green"
-    },
     "action": {
-      "type": "show_dialog",
-      "dialog": "kards-dlc:kard/fashu/main"
+        "label": {
+            "translate": "json.kards-dlc.dialog.kard.fashu.template_fashu.917",
+            "fallback": "返回§d法术牌§a牌库-§5DLC"
+        },
+        "action": {
+            "type": "show_dialog",
+            "dialog": "kards-dlc:kard/fashu/main"
+        }
     }
-  }
 }

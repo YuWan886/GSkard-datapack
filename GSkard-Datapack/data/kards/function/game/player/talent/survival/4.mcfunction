@@ -1,2 +1,2 @@
 scoreboard players remove @s Talent_Count 4
-tellraw @s [{text:"[天赋]",color:"green"},{text:"您消耗了",color:"gray"},{text:"4点构想",color:"gold"},{text:"升级了",color:"gray"},{text:"巧计",color:"gold"}]
+tellraw @s [{translate: "kards.function.game.player.talent.combat.1.1", fallback: "[天赋]",color:"green"},{translate: "kards.function.game.player.talent.combat.1.2", fallback: "您消耗了",color:"gray"},{translate: "kards.function.game.player.talent.combat.4.1", fallback: "4点构想",color:"gold"},{translate: "kards.function.game.player.talent.combat.1.4", fallback: "升级了",color:"gray"},{translate: "kards.function.game.player.talent.survival.1.1", fallback: "巧计",color:"gold"}]

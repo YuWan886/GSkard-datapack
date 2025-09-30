@@ -1,12 +1,12 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "text": "石中剑",
-        "color": "gray",
-        "italic": false
+        "translate": "json.kards.dialog.paiku.wangzhibaoku.main.550",
+        "fallback": "石中剑"
     },
     "external_title": {
-        "text": ""
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
     },
     "body": [
         {
@@ -27,119 +27,104 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "权柄·破碎",
-                "color": "gold",
-                "italic": false,
-                "bold": true
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.shizhongjian.568",
+                "fallback": "权柄·破碎"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "对命中的敌人造成破甲效果 持续3s",
-                "color": "gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.shizhongjian.569",
+                "fallback": "对命中的敌人造成破甲效果 持续3s"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "权柄·致命",
-                "color": "gold",
-                "italic": false,
-                "bold": true
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.shizhongjian.570",
+                "fallback": "权柄·致命"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "对一个目标造成的伤害逐渐增高 最多至80% 切换目标时重新计算",
-                "color": "gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.shizhongjian.571",
+                "fallback": "对一个目标造成的伤害逐渐增高 最多至80% 切换目标时重新计算"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "破甲:护甲值-40%",
-                "color": "gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.shizhongjian.572",
+                "fallback": "破甲:护甲值-40%"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "",
-                "color": "gray",
-                "italic": false
+                "translate": "json.kards.dialog.first_join.1.71",
+                "fallback": ""
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "\n\n放在地上犹如一根烧火棍，拿在手上和普通石剑毫无区别，纂刻着石中剑之名的利器只给你带来了一种无比庞大的具象化的感觉",
-                "color": "gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.shizhongjian.573",
+                "fallback": "\n\n放在地上犹如一根烧火棍，拿在手上和普通石剑毫无区别，纂刻着石中剑之名的利器只给你带来了一种无比庞大的具象化的感觉"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "这是一种无人不为之惊叹这种感觉，这种感觉即是纯粹强大的——力量",
-                "color": "gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.shizhongjian.574",
+                "fallback": "这是一种无人不为之惊叹这种感觉，这种感觉即是纯粹强大的——力量"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "持有者只需要轻轻向下挥动，便会带来空间都为之哀嚎的割裂感，它缓缓下沉，劈开所能劈开的一切，生机，退路，或是灵魂",
-                "color": "gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.shizhongjian.575",
+                "fallback": "持有者只需要轻轻向下挥动，便会带来空间都为之哀嚎的割裂感，它缓缓下沉，劈开所能劈开的一切，生机，退路，或是灵魂"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "剑会夺取战斗胜利的灵魂，带给持有者不停战斗的勇气",
-                "color": "gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.shizhongjian.576",
+                "fallback": "剑会夺取战斗胜利的灵魂，带给持有者不停战斗的勇气"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "没有人会记得懦弱与胆小，也不在乎石中剑的嗜血与杀戮，力量便是成为王的理由",
-                "color": "gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.shizhongjian.577",
+                "fallback": "没有人会记得懦弱与胆小，也不在乎石中剑的嗜血与杀戮，力量便是成为王的理由"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "所有人都坚信胜者为王，王的剑便是石中剑的道理，石中剑也似乎很享受这一切，正因如此，我们才将它交付到你手上",
-                "color": "gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.shizhongjian.578",
+                "fallback": "所有人都坚信胜者为王，王的剑便是石中剑的道理，石中剑也似乎很享受这一切，正因如此，我们才将它交付到你手上"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "“渴望，夺取并享受力量吧”",
-                "color": "gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.shizhongjian.579",
+                "fallback": "“渴望，夺取并享受力量吧”"
             },
             "width": 1024
         }
@@ -148,8 +133,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "text": "返回§6王之宝库",
-            "color": "green"
+            "translate": "json.kards.dialog.paiku.wangzhibaoku.diaolingtaidao.497",
+            "fallback": "返回§6王之宝库"
         },
         "action": {
             "type": "minecraft:show_dialog",

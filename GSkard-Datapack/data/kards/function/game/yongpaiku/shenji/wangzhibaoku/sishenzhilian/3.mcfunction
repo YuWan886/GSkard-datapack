@@ -1,6 +1,6 @@
 
 
 clear @s *[minecraft:custom_data={kards:'灵魂_小'}] 10
-tellraw @s [{text: "灵魂合成了...",color:"gray"}]
+tellraw @s [{translate: "kards.function.game.yongpaiku.shenji.wangzhibaoku.sishenzhilian.3.1", fallback: "灵魂合成了...",color:"gray"}]
 
-give @s minecraft:ghast_tear[minecraft:custom_name={italic:false,text: "灵魂 [普通]",color:"dark_purple"},lore=[{text: "生物的灵魂",color:"gray",italic:false},{text: "收集10个以后合成",color:"gray",italic:false},{text: ""},{text: "可食用",color:"gray",italic:false},[{text: "获得",color:"gray",italic:false},{text: "6♥",color:"green",italic:false}]],custom_data={kards:'灵魂_中'},consumable={consume_seconds:0.8f,has_consume_particles:1b,on_consume_effects:[{type:play_sound,sound:"minecraft:entity.ghast.ambient"}]}]
+give @s minecraft:ghast_tear[minecraft:custom_name={italic:false,translate: "kards.function.game.yongpaiku.shenji.wangzhibaoku.sishenzhilian.3.2", fallback: "灵魂 [普通]",color:"dark_purple"},lore=[{translate: "kards.function.game.yongpaiku.shenji.wangzhibaoku.sishenzhilian.1.2", fallback: "生物的灵魂",color:"gray",italic:false},{translate: "kards.function.game.yongpaiku.shenji.wangzhibaoku.sishenzhilian.1.3", fallback: "收集10个以后合成",color:"gray",italic:false},{translate: "json.kards.dialog.first_join.1.71", fallback: ""},{translate: "kards.function.game.yongpaiku.shenji.wangzhibaoku.sishenzhilian.1.4", fallback: "可食用",color:"gray",italic:false},[{translate: "json.kards.dialog.paiku.fashu.jinjidiaoqian.154", fallback: "获得",color:"gray",italic:false},{translate: "kards.function.game.paiku.tuteng.yang.1", fallback: "6♥",color:"green",italic:false}]],custom_data={kards:'灵魂_中'},consumable={consume_seconds:0.8f,has_consume_particles:1b,on_consume_effects:[{type:play_sound,sound:"minecraft:entity.ghast.ambient"}]}]

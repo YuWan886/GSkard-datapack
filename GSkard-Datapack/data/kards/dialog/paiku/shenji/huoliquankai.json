@@ -1,19 +1,12 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "text": "4K ",
-        "extra": [
-            {
-                "text": "火力全开",
-                "color": "white",
-                "bold": true
-            }
-        ],
-        "color": "aqua",
-        "bold": true
+        "translate": "json.kards.dialog.paiku.fashu.jielue.152",
+        "fallback": "4K "
     },
     "external_title": {
-        "text": ""
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
     },
     "body": [
         {
@@ -27,67 +20,40 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "神迹牌",
-                "color": "white",
-                "italic": false
+                "translate": "json.kards.dialog.jiaocheng.wanfa.2.105",
+                "fallback": "神迹牌"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "获得",
-                "color": "gray",
-                "italic": false,
-                "extra": [
-                    {
-                        "text": "15K",
-                        "color": "gold",
-                        "italic": false
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.fashu.jinjidiaoqian.154",
+                "fallback": "获得"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "若友方存活玩家小于等于2 则额外",
-                "color": "gray",
-                "italic": false,
-                "extra": [
-                    {
-                        "text": "使队伍所有玩家获得10K",
-                        "color": "gold",
-                        "italic": false
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.shenji.huoliquankai.370",
+                "fallback": "若友方存活玩家小于等于2 则额外"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "使用后本回合内获得",
-                "color": "gray",
-                "italic": false,
-                "extra": [
-                    {
-                        "text": "超频",
-                        "color": "dark_aqua",
-                        "italic": false,
-                        "bold": true
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.shenji.huoliquankai.371",
+                "fallback": "使用后本回合内获得"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "超频:每使用1张牌获得1K,使用[法术牌][装备牌]会额外获得1Kmax.",
-                "color": "dark_gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.shenji.huoliquankai.372",
+                "fallback": "超频:每使用1张牌获得1K,使用[法术牌][装备牌]会额外获得1Kmax."
             },
             "width": 1024
         }
@@ -96,8 +62,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "text": "返回§d神迹§a牌库",
-            "color": "green"
+            "translate": "json.kards.dialog.paiku.shenji.fanxiangfeileishen.365",
+            "fallback": "返回§d神迹§a牌库"
         },
         "action": {
             "type": "minecraft:show_dialog",

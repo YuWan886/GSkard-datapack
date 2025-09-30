@@ -1,18 +1,12 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "text": "6K ",
-        "extra": [
-            {
-                "text": "地狱之火",
-                "color": "dark_green"
-            }
-        ],
-        "color": "aqua",
-        "bold": true
+        "translate": "json.kards.dialog.paiku.fashu.qisihuisheng.210",
+        "fallback": "6K "
     },
     "external_title": {
-        "text": ""
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
     },
     "body": [
         {
@@ -26,50 +20,24 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "召唤4只",
-                "color": "gray",
-                "extra": [
-                    {
-                        "text": " 烈焰人",
-                        "color": "gold"
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.281",
+                "fallback": "召唤4只"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "然后若场上",
-                "color": "gray",
-                "extra": [
-                    {
-                        "text": " 下界怪物",
-                        "color": "red"
-                    },
-                    {
-                        "text": " 大于等于7只",
-                        "color": "gray"
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.juntuan.diyuzhihuo.287",
+                "fallback": "然后若场上"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "使烈焰人携带",
-                "color": "gray",
-                "extra": [
-                    {
-                        "text": " 荆棘",
-                        "color": "red"
-                    },
-                    {
-                        "text": " 效果",
-                        "color": "gray"
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.juntuan.diyuzhihuo.288",
+                "fallback": "使烈焰人携带"
             },
             "width": 1024
         }
@@ -78,8 +46,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "text": "返回§d军团牌§a牌库",
-            "color": "green"
+            "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.284",
+            "fallback": "返回§d军团牌§a牌库"
         },
         "action": {
             "type": "minecraft:show_dialog",

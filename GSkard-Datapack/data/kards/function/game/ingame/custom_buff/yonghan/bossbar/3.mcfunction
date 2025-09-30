@@ -1,5 +1,5 @@
 $bossbar add kards:yonghan_$(UUID) "" 
-$bossbar set kards:yonghan_$(UUID) name [{text:"永寒:移速-5% 满层后冻结2.5s",color:"aqua",bold:true}]
+$bossbar set kards:yonghan_$(UUID) name [{translate: "kards.function.game.ingame.custom_buff.yonghan.bossbar.3.1", fallback: "永寒:移速-5% 满层后冻结2.5s",color:"aqua",bold:true}]
 $bossbar set kards:yonghan_$(UUID) color blue
 $bossbar set kards:yonghan_$(UUID) players @s
 $bossbar set kards:yonghan_$(UUID) visible true

@@ -1,61 +1,49 @@
 {
-  "type": "minecraft:notice",
-  "title": {
-    "text": "3K ",
-    "extra": [
-      {
-        "text": "宰鸡敬猴",
-        "color": "light_purple"
-      }
+    "type": "minecraft:notice",
+    "title": {
+        "translate": "json.kards.dialog.paiku.fashu.guohechaiqiao.144",
+        "fallback": "3K "
+    },
+    "external_title": {
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "music_disc_mellohi"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "translate": "json.kards.dialog.paiku.fashu.neiheyinbao.208",
+                "fallback": "随机"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "translate": "json.kards.dialog.paiku.fashu.zaijijinhou.244",
+                "fallback": "敌方队伍图腾"
+            },
+            "width": 1024
+        }
     ],
-    "color": "aqua",
-    "bold": true
-  },
-  "external_title": {
-    "text": ""
-  },
-  "body": [
-    {
-      "type": "minecraft:item",
-      "item": {
-        "id": "music_disc_mellohi"
-      },
-      "show_decorations": false,
-      "show_tooltip": false
-    },
-    {
-      "type": "minecraft:plain_message",
-      "contents": {
-        "text": "随机",
-        "color": "gray",
-        "extra": [
-          {
-            "text": "杀死1个",
-            "color": "red"
-          }
-        ]
-      },
-      "width": 1024
-    },
-    {
-      "type": "minecraft:plain_message",
-      "contents": {
-        "text": "敌方队伍图腾",
-        "color": "gray"
-      },
-      "width": 1024
-    }
-  ],
-  "inputs": [],
-  "can_close_with_escape": true,
-  "action": {
-    "label": {
-      "text": "返回§d法术牌§a牌库",
-      "color": "green"
-    },
+    "inputs": [],
+    "can_close_with_escape": true,
     "action": {
-      "type": "minecraft:show_dialog",
-      "dialog": "kards:paiku/fashu/main"
+        "label": {
+            "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.125",
+            "fallback": "返回§d法术牌§a牌库"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/fashu/main"
+        }
     }
-  }
 }

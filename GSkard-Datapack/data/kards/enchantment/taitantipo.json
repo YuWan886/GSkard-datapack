@@ -1,49 +1,52 @@
 {
-  "anvil_cost": 12,
-  "supported_items": "#chest_armor",
-  "description": {"text":"泰坦体魄","color":"green"},
-  "effects": {
-    "minecraft:attributes": [
-      {
-        "attribute": "minecraft:max_health",
-        "id": "enchantment",
-        "amount": {
-          "type": "minecraft:linear",
-          "base": 20,
-          "per_level_above_first": 20
-        },
-        "operation": "add_value"
-      },
-      {
-        "attribute": "minecraft:knockback_resistance",
-        "id": "enchantment",
-        "amount": {
-          "type": "minecraft:linear",
-          "base": 0.2,
-          "per_level_above_first": 0.2
-        },
-        "operation": "add_value"
-      },
-      {
-        "attribute": "minecraft:scale",
-        "id": "enchantment",
-        "amount": 0.20,
-        "operation": "add_value"
-      }
-    ]
-  },
-  "max_cost": {
-    "base": 30,
-    "per_level_above_first": 15
-  },
-  "max_level": 5,
-  "min_cost": {
-    "base": 15,
-    "per_level_above_first": 10
-  },
-  "primary_items": "#minecraft:enchantable/chest_armor",
-  "slots": [
-    "chest"
-  ],
-  "weight": 2
+    "anvil_cost": 12,
+    "supported_items": "#chest_armor",
+    "description": {
+        "translate": "json.kards.dialog.xp_shop.enchantment.main.901",
+        "fallback": "泰坦体魄"
+    },
+    "effects": {
+        "minecraft:attributes": [
+            {
+                "attribute": "minecraft:max_health",
+                "id": "enchantment",
+                "amount": {
+                    "type": "minecraft:linear",
+                    "base": 20,
+                    "per_level_above_first": 20
+                },
+                "operation": "add_value"
+            },
+            {
+                "attribute": "minecraft:knockback_resistance",
+                "id": "enchantment",
+                "amount": {
+                    "type": "minecraft:linear",
+                    "base": 0.2,
+                    "per_level_above_first": 0.2
+                },
+                "operation": "add_value"
+            },
+            {
+                "attribute": "minecraft:scale",
+                "id": "enchantment",
+                "amount": 0.2,
+                "operation": "add_value"
+            }
+        ]
+    },
+    "max_cost": {
+        "base": 30,
+        "per_level_above_first": 15
+    },
+    "max_level": 5,
+    "min_cost": {
+        "base": 15,
+        "per_level_above_first": 10
+    },
+    "primary_items": "#minecraft:enchantable/chest_armor",
+    "slots": [
+        "chest"
+    ],
+    "weight": 2
 }

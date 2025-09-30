@@ -1,18 +1,12 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "text": "5K ",
-        "extra": [
-            {
-                "text": "诱敌",
-                "color": "dark_aqua"
-            }
-        ],
-        "color": "aqua",
-        "bold": true
+        "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.122",
+        "fallback": "5K "
     },
     "external_title": {
-        "text": ""
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
     },
     "body": [
         {
@@ -26,48 +20,32 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "陷阱卡",
-                "color": "dark_aqua",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.xianjing.hewei.663",
+                "fallback": "陷阱卡"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "使用后埋下陷阱 敌方在达到条件时触发 触发后失效",
-                "color": "gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.xianjing.hewei.664",
+                "fallback": "使用后埋下陷阱 敌方在达到条件时触发 触发后失效"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "条件：敌方任意玩家回合内使用",
-                "color": "gray",
-                "italic": false,
-                "extra": [
-                    {
-                        "text": "第2张法术牌",
-                        "color": "light_purple",
-                        "italic": false
-                    },
-                    {
-                        "text": "时",
-                        "color": "gray",
-                        "italic": false
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.xianjing.youdi.694",
+                "fallback": "条件：敌方任意玩家回合内使用"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "触发：该法术失效",
-                "color": "gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.xianjing.shufashixiao.689",
+                "fallback": "触发：该法术失效"
             },
             "width": 1024
         }
@@ -76,8 +54,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "text": "返回§c陷阱§a牌库",
-            "color": "green"
+            "translate": "json.kards.dialog.paiku.xianjing.hewei.667",
+            "fallback": "返回§c陷阱§a牌库"
         },
         "action": {
             "type": "minecraft:show_dialog",

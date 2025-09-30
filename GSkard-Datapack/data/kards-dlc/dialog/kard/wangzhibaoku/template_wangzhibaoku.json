@@ -1,9 +1,8 @@
 {
     "type": "notice",
     "title": {
-        "text": "模板：王之宝库",
-        "color": "white",
-        "italic": false
+        "translate": "json.kards-dlc.dialog.kard.wangzhibaoku.main.936",
+        "fallback": "模板：王之宝库"
     },
     "body": [
         {
@@ -24,142 +23,80 @@
         {
             "type": "plain_message",
             "contents": {
-                "text": "雷击 I",
-                "color": "gray",
-                "italic": false,
-                "bold": true
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.fengbaozhanchui.503",
+                "fallback": "雷击 I"
             },
             "width": 1024
         },
         {
             "type": "plain_message",
             "contents": {
-                "text": "右键召唤一道",
-                "color": "gray",
-                "italic": false,
-                "extra": [
-                    {
-                        "text": "闪电",
-                        "color": "gold",
-                        "italic": false
-                    },
-                    {
-                        "text": "劈向指定位置",
-                        "color": "gray",
-                        "italic": false
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.fengbaozhanchui.504",
+                "fallback": "右键召唤一道"
             },
             "width": 1024
         },
         {
             "type": "plain_message",
             "contents": {
-                "text": "对附近",
-                "color": "gray",
-                "italic": false,
-                "extra": [
-                    {
-                        "text": "2.8格",
-                        "color": "gold",
-                        "italic": false
-                    },
-                    {
-                        "text": "敌对生物造成",
-                        "color": "gray",
-                        "italic": false
-                    },
-                    {
-                        "text": "8♥闪电伤害",
-                        "color": "red",
-                        "italic": false
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.fengbaozhanchui.505",
+                "fallback": "对附近"
             },
             "width": 1024
         },
         {
             "type": "plain_message",
             "contents": {
-                "text": "CD8s",
-                "color": "gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.fengbaozhanchui.506",
+                "fallback": "CD8s"
             },
             "width": 1024
         },
         {
             "type": "plain_message",
             "contents": {
-                "text": "",
-                "color": "gray",
-                "italic": false
+                "translate": "json.kards.dialog.first_join.1.71",
+                "fallback": ""
             },
             "width": 1024
         },
         {
             "type": "plain_message",
             "contents": {
-                "text": "蓄能重击",
-                "color": "gray",
-                "italic": false,
-                "bold": true
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.fengbaozhanchui.507",
+                "fallback": "蓄能重击"
             },
             "width": 1024
         },
         {
             "type": "plain_message",
             "contents": {
-                "text": "长按shift1s后跃起 期间免疫击退与摔落伤害",
-                "color": "gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.fengbaozhanchui.508",
+                "fallback": "长按shift1s后跃起 期间免疫击退与摔落伤害"
             },
             "width": 1024
         },
         {
             "type": "plain_message",
             "contents": {
-                "text": "落地之后对周围",
-                "color": "gray",
-                "italic": false,
-                "extra": [
-                    {
-                        "text": "5格",
-                        "color": "gold",
-                        "italic": false
-                    },
-                    {
-                        "text": "内所有敌对生物造成",
-                        "color": "gray",
-                        "italic": false
-                    },
-                    {
-                        "text": "15♥的重击伤害",
-                        "color": "red",
-                        "italic": false
-                    },
-                    {
-                        "text": "并使其眩晕2.5s",
-                        "color": "gold",
-                        "italic": false
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.fengbaozhanchui.509",
+                "fallback": "落地之后对周围"
             },
             "width": 1024
         },
         {
             "type": "plain_message",
             "contents": {
-                "text": "25s补充一次",
-                "color": "gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.fengbaozhanchui.510",
+                "fallback": "25s补充一次"
             },
             "width": 1024
         }
     ],
     "action": {
         "label": {
-            "text": "返回§6王之宝库-§5DLC",
-            "color": "green"
+            "translate": "json.kards-dlc.dialog.kard.wangzhibaoku.template_wangzhibaoku.937",
+            "fallback": "返回§6王之宝库-§5DLC"
         },
         "action": {
             "type": "show_dialog",

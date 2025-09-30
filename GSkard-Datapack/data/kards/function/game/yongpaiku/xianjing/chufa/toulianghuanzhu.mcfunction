@@ -10,5 +10,5 @@ data modify entity @n[tag=copy,type=item] Item set from entity @s equipment.offh
 kill @e[type=item,nbt={Item:{id:"minecraft:music_disc_13"}}]
 data modify entity @n[tag=copy,type=item] PickupDelay set value 1
 
-tellraw @a [{selector: "@s"},{text: "触发了",color: "gray"},{text: "<偷梁换柱>",color: "dark_aqua",hover_event:{action:"show_text",value:"触发时复制一张同样的法术给以埋下陷阱的队伍随机玩家"}}]
+tellraw @a [{selector: "@s"},{translate: "kards.function.game.yongpaiku.xianjing.chufa.hewei.1", fallback: "触发了",color: "gray"},{translate: "kards.function.game.yongpaiku.xianjing.chufa.toulianghuanzhu.1", fallback: "<偷梁换柱>",color: "dark_aqua",hover_event:{action:"show_text",value:"触发时复制一张同样的法术给以埋下陷阱的队伍随机玩家"}}]
 execute as @a at @s run playsound minecraft:bra player @s ~ ~ ~ 100 1

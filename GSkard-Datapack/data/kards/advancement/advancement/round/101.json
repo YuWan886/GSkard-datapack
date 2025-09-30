@@ -5,10 +5,12 @@
             "count": 1
         },
         "title": {
-            "text": "输赢...真的那么重要吗?"
+            "translate": "json.kards.advancement.advancement.round.101.41",
+            "fallback": "输赢...真的那么重要吗?"
         },
         "description": {
-            "text": "游戏回合达到第101回合"
+            "translate": "json.kards.advancement.advancement.round.101.42",
+            "fallback": "游戏回合达到第101回合"
         },
         "frame": "challenge",
         "show_toast": true,

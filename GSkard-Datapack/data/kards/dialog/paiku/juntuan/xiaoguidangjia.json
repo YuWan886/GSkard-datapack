@@ -1,18 +1,12 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "text": "12K ",
-        "extra": [
-            {
-                "text": "小鬼当家",
-                "color": "dark_green"
-            }
-        ],
-        "color": "aqua",
-        "bold": true
+        "translate": "json.kards.dialog.paiku.fashu.chunriying.132",
+        "fallback": "12K "
     },
     "external_title": {
-        "text": ""
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
     },
     "body": [
         {
@@ -26,42 +20,24 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "召唤3只",
-                "color": "gray",
-                "extra": [
-                    {
-                        "text": " 携带附魔击退与火焰附加的小僵尸",
-                        "color": "gold"
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.juntuan.sanrenchengzhong.328",
+                "fallback": "召唤3只"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "若存在友方图腾",
-                "color": "gray",
-                "extra": [
-                    {
-                        "text": " 鸡",
-                        "color": "red"
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.juntuan.xiaoguidangjia.356",
+                "fallback": "若存在友方图腾"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "改为召唤",
-                "color": "gray",
-                "extra": [
-                    {
-                        "text": " 移速增加的小鸡骑士",
-                        "color": "gold"
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.juntuan.xiaoguidangjia.357",
+                "fallback": "改为召唤"
             },
             "width": 1024
         }
@@ -70,8 +46,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "text": "返回§d军团牌§a牌库",
-            "color": "green"
+            "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.284",
+            "fallback": "返回§d军团牌§a牌库"
         },
         "action": {
             "type": "minecraft:show_dialog",

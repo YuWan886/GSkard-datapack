@@ -1,4 +1,4 @@
-$bossbar add kards:xuanyun_$(UUID) [{text:"眩晕:无法移动与攻击",color:"white",bold:true}]
+$bossbar add kards:xuanyun_$(UUID) [{translate: "kards.function.game.ingame.custom_buff.xuanyun.bossbar.3.1", fallback: "眩晕:无法移动与攻击",color:"white",bold:true}]
 $bossbar set kards:xuanyun_$(UUID) color yellow
 $bossbar set kards:xuanyun_$(UUID) players @s
 $bossbar set kards:xuanyun_$(UUID) visible true

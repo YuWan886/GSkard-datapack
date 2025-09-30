@@ -1,20 +1,20 @@
 {
     "type": "minecraft:multi_action",
     "title": {
-        "text": "无用牌系列",
-        "color": "gray",
-        "bold": true
+        "translate": "json.kards.dialog.paiku.yansheng.main.720",
+        "fallback": "无用牌系列"
     },
     "external_title": {
-        "text": ""
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
     },
     "body": [],
     "inputs": [],
     "can_close_with_escape": true,
     "exit_action": {
         "label": {
-            "text": "返回§7其他",
-            "color": "green"
+            "translate": "json.kards.dialog.paiku.yansheng.jinzijue.708",
+            "fallback": "返回§7其他"
         },
         "action": {
             "type": "minecraft:show_dialog",
@@ -25,8 +25,8 @@
     "actions": [
         {
             "label": {
-                "text": "无用之基",
-                "color": "blue"
+                "translate": "json.kards.dialog.paiku.yansheng.wuyong.jiben.765",
+                "fallback": "无用之基"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -36,8 +36,8 @@
         },
         {
             "label": {
-                "text": "无用之法",
-                "color": "light_purple"
+                "translate": "json.kards.dialog.paiku.yansheng.wuyong.fashu.761",
+                "fallback": "无用之法"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -47,8 +47,8 @@
         },
         {
             "label": {
-                "text": "无用之神",
-                "color": "white"
+                "translate": "json.kards.dialog.paiku.yansheng.wuyong.main.767",
+                "fallback": "无用之神"
             },
             "action": {
                 "type": "minecraft:show_dialog",

@@ -1,18 +1,12 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "text": "8K ",
-        "extra": [
-            {
-                "text": "下界合金升级",
-                "color": "gold"
-            }
-        ],
-        "color": "aqua",
-        "bold": true
+        "translate": "json.kards.dialog.paiku.fashu.chunnuanhuakai.130",
+        "fallback": "8K "
     },
     "external_title": {
-        "text": ""
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
     },
     "body": [
         {
@@ -26,91 +20,56 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "装备牌",
-                "color": "gold",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.main.117",
+                "fallback": "装备牌"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "获得一件",
-                "color": "gray",
-                "italic": false,
-                "extra": [
-                    {
-                        "text": "下界合金护甲",
-                        "color": "gold",
-                        "italic": false
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.zhuangbei.xiajiehejinshengji.803",
+                "fallback": "获得一件"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "同一人抽取每次必定获得不同的护甲",
-                "color": "gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.zhuangbei.xiajiehejinshengji.804",
+                "fallback": "同一人抽取每次必定获得不同的护甲"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "套装效果：",
-                "color": "gray",
-                "italic": false
+                "translate": "json.kards.dialog.paiku.zhuangbei.xiajiehejinshengji.805",
+                "fallback": "套装效果："
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "穿戴2件时 获得",
-                "color": "gray",
-                "italic": false,
-                "extra": [
-                    {
-                        "text": "抗性提升2",
-                        "color": "gold",
-                        "italic": false
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.zhuangbei.xiajiehejinshengji.806",
+                "fallback": "穿戴2件时 获得"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "穿戴3件时 获得",
-                "color": "gray",
-                "italic": false,
-                "extra": [
-                    {
-                        "text": "抗性提升3",
-                        "color": "gold",
-                        "italic": false
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.zhuangbei.xiajiehejinshengji.807",
+                "fallback": "穿戴3件时 获得"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "穿戴4件时 获得",
-                "color": "gray",
-                "italic": false,
-                "extra": [
-                    {
-                        "text": "抗性提升4",
-                        "color": "gold",
-                        "italic": false
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.zhuangbei.xiajiehejinshengji.808",
+                "fallback": "穿戴4件时 获得"
             },
             "width": 1024
         }
@@ -119,8 +78,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "text": "返回§c装备§a牌库",
-            "color": "green"
+            "translate": "json.kards.dialog.paiku.zhuangbei.bianxiehuosai.770",
+            "fallback": "返回§c装备§a牌库"
         },
         "action": {
             "type": "minecraft:show_dialog",

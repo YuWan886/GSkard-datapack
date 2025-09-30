@@ -1,19 +1,12 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "text": "8Kmax ",
-        "extra": [
-            {
-                "text": "绝处逢生",
-                "color": "white",
-                "bold": true
-            }
-        ],
-        "color": "gold",
-        "bold": true
+        "translate": "json.kards.dialog.paiku.shenji.juechufengsheng.374",
+        "fallback": "8Kmax "
     },
     "external_title": {
-        "text": ""
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
     },
     "body": [
         {
@@ -27,34 +20,24 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "神迹牌",
-                "color": "white",
-                "italic": false
+                "translate": "json.kards.dialog.jiaocheng.wanfa.2.105",
+                "fallback": "神迹牌"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "获得一次瞬间治疗",
-                "color": "gray",
-                "italic": false
+                "translate": "json.kards.dialog.jiaocheng.wanfa.2.106",
+                "fallback": "获得一次瞬间治疗"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "恢复自身",
-                "color": "gray",
-                "italic": false,
-                "extra": [
-                    {
-                        "text": "所有生命值",
-                        "color": "gold",
-                        "italic": false
-                    }
-                ]
+                "translate": "json.kards.dialog.jiaocheng.wanfa.2.107",
+                "fallback": "恢复自身"
             },
             "width": 1024
         }
@@ -63,8 +46,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "text": "返回§d神迹§a牌库",
-            "color": "green"
+            "translate": "json.kards.dialog.paiku.shenji.fanxiangfeileishen.365",
+            "fallback": "返回§d神迹§a牌库"
         },
         "action": {
             "type": "minecraft:show_dialog",

@@ -1,20 +1,20 @@
 {
     "type": "minecraft:multi_action",
     "title": {
-        "text": "基本",
-        "color": "blue",
-        "bold": true
+        "translate": "json.kards.dialog.paiku.jiben.main.255",
+        "fallback": "基本"
     },
     "external_title": {
-        "text": ""
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
     },
     "body": [],
     "inputs": [],
     "can_close_with_escape": true,
     "exit_action": {
         "label": {
-            "text": "返回§6主§a牌库",
-            "color": "green"
+            "translate": "json.kards.dialog.paiku.fashu.main.163",
+            "fallback": "返回§6主§a牌库"
         },
         "action": {
             "type": "show_dialog",
@@ -25,8 +25,8 @@
     "actions": [
         {
             "label": {
-                "text": "僵尸",
-                "color": "blue"
+                "translate": "json.kards.dialog.paiku.jiben.main.256",
+                "fallback": "僵尸"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -36,8 +36,8 @@
         },
         {
             "label": {
-                "text": "凋零骷髅",
-                "color": "blue"
+                "translate": "json.kards.dialog.paiku.jiben.main.257",
+                "fallback": "凋零骷髅"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -47,8 +47,8 @@
         },
         {
             "label": {
-                "text": "恶魂",
-                "color": "blue"
+                "translate": "json.kards.dialog.paiku.jiben.main.258",
+                "fallback": "恶魂"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -58,8 +58,8 @@
         },
         {
             "label": {
-                "text": "剧毒蜘蛛",
-                "color": "blue"
+                "translate": "json.kards.dialog.paiku.jiben.main.259",
+                "fallback": "剧毒蜘蛛"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -69,8 +69,8 @@
         },
         {
             "label": {
-                "text": "苦力怕",
-                "color": "blue"
+                "translate": "json.kards.dialog.jiaocheng.wanfa.1.96",
+                "fallback": "苦力怕"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -80,8 +80,8 @@
         },
         {
             "label": {
-                "text": "骷髅",
-                "color": "blue"
+                "translate": "json.kards.dialog.paiku.jiben.main.260",
+                "fallback": "骷髅"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -91,8 +91,8 @@
         },
         {
             "label": {
-                "text": "烈焰人",
-                "color": "blue"
+                "translate": "json.kards.dialog.paiku.jiben.main.261",
+                "fallback": "烈焰人"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -102,8 +102,8 @@
         },
         {
             "label": {
-                "text": "流浪者",
-                "color": "blue"
+                "translate": "json.kards.dialog.paiku.jiben.main.262",
+                "fallback": "流浪者"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -113,8 +113,8 @@
         },
         {
             "label": {
-                "text": "马蜂",
-                "color": "blue"
+                "translate": "json.kards.dialog.paiku.jiben.main.263",
+                "fallback": "马蜂"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -124,8 +124,8 @@
         },
         {
             "label": {
-                "text": "蛮兵",
-                "color": "blue"
+                "translate": "json.kards.dialog.paiku.jiben.main.264",
+                "fallback": "蛮兵"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -135,8 +135,8 @@
         },
         {
             "label": {
-                "text": "蜜蜂",
-                "color": "blue"
+                "translate": "json.kards.dialog.paiku.jiben.main.265",
+                "fallback": "蜜蜂"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -146,8 +146,8 @@
         },
         {
             "label": {
-                "text": "末影螨",
-                "color": "blue"
+                "translate": "json.kards.dialog.paiku.jiben.main.266",
+                "fallback": "末影螨"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -157,8 +157,8 @@
         },
         {
             "label": {
-                "text": "末影人",
-                "color": "blue"
+                "translate": "json.kards.dialog.paiku.jiben.main.267",
+                "fallback": "末影人"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -168,8 +168,8 @@
         },
         {
             "label": {
-                "text": "恼鬼",
-                "color": "blue"
+                "translate": "json.kards.dialog.paiku.jiben.main.268",
+                "fallback": "恼鬼"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -179,8 +179,8 @@
         },
         {
             "label": {
-                "text": "溺尸",
-                "color": "blue"
+                "translate": "json.kards.dialog.paiku.jiben.main.269",
+                "fallback": "溺尸"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -190,8 +190,8 @@
         },
         {
             "label": {
-                "text": "女巫",
-                "color": "blue"
+                "translate": "json.kards.dialog.paiku.jiben.main.270",
+                "fallback": "女巫"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -201,8 +201,8 @@
         },
         {
             "label": {
-                "text": "杀手兔",
-                "color": "blue"
+                "translate": "json.kards.dialog.paiku.jiben.main.271",
+                "fallback": "杀手兔"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -212,8 +212,8 @@
         },
         {
             "label": {
-                "text": "卫道士",
-                "color": "blue"
+                "translate": "json.kards.dialog.paiku.jiben.main.272",
+                "fallback": "卫道士"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -223,8 +223,8 @@
         },
         {
             "label": {
-                "text": "无人机",
-                "color": "blue"
+                "translate": "json.kards.dialog.paiku.jiben.main.273",
+                "fallback": "无人机"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -234,8 +234,8 @@
         },
         {
             "label": {
-                "text": "小幻翼",
-                "color": "blue"
+                "translate": "json.kards.dialog.paiku.jiben.main.274",
+                "fallback": "小幻翼"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -245,8 +245,8 @@
         },
         {
             "label": {
-                "text": "旋风人",
-                "color": "blue"
+                "translate": "json.kards.dialog.paiku.jiben.main.275",
+                "fallback": "旋风人"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -256,8 +256,8 @@
         },
         {
             "label": {
-                "text": "疣猪兽",
-                "color": "blue"
+                "translate": "json.kards.dialog.paiku.jiben.main.276",
+                "fallback": "疣猪兽"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -267,8 +267,8 @@
         },
         {
             "label": {
-                "text": "远古守卫者",
-                "color": "blue"
+                "translate": "json.kards.dialog.paiku.jiben.main.277",
+                "fallback": "远古守卫者"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -278,8 +278,8 @@
         },
         {
             "label": {
-                "text": "沼骸",
-                "color": "blue"
+                "translate": "json.kards.dialog.paiku.jiben.main.278",
+                "fallback": "沼骸"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -289,8 +289,8 @@
         },
         {
             "label": {
-                "text": "蜘蛛",
-                "color": "blue"
+                "translate": "json.kards.dialog.paiku.jiben.main.279",
+                "fallback": "蜘蛛"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -300,8 +300,8 @@
         },
         {
             "label": {
-                "text": "猪灵",
-                "color": "blue"
+                "translate": "json.kards.dialog.paiku.jiben.main.280",
+                "fallback": "猪灵"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -311,8 +311,8 @@
         },
         {
             "label": {
-                "text": "DLC",
-                "color": "blue"
+                "translate": "json.kards.dialog.paiku.fashu.main.206",
+                "fallback": "DLC"
             },
             "action": {
                 "type": "show_dialog",

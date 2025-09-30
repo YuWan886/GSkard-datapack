@@ -1,18 +1,12 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "text": "15K ",
-        "extra": [
-            {
-                "text": "嗜血狼群",
-                "color": "dark_green"
-            }
-        ],
-        "color": "aqua",
-        "bold": true
+        "translate": "json.kards.dialog.paiku.juntuan.shidi.336",
+        "fallback": "15K "
     },
     "external_title": {
-        "text": ""
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
     },
     "body": [
         {
@@ -26,42 +20,24 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "召唤5只",
-                "color": "gray",
-                "extra": [
-                    {
-                        "text": " 攻击回血附带凋零的狼",
-                        "color": "gold"
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.juntuan.shixuelangqun.340",
+                "fallback": "召唤5只"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "若使用后",
-                "color": "gray",
-                "extra": [
-                    {
-                        "text": " K等于0",
-                        "color": "gold"
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.juntuan.shixuelangqun.341",
+                "fallback": "若使用后"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "使敌方所有玩家",
-                "color": "gray",
-                "extra": [
-                    {
-                        "text": " 失明20s",
-                        "color": "gold"
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.juntuan.shixuelangqun.342",
+                "fallback": "使敌方所有玩家"
             },
             "width": 1024
         }
@@ -70,8 +46,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "text": "返回§d军团牌§a牌库",
-            "color": "green"
+            "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.284",
+            "fallback": "返回§d军团牌§a牌库"
         },
         "action": {
             "type": "minecraft:show_dialog",

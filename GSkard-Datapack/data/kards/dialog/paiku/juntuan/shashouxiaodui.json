@@ -1,18 +1,12 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "text": "4K ",
-        "extra": [
-            {
-                "text": "杀手小队",
-                "color": "dark_green"
-            }
-        ],
-        "color": "aqua",
-        "bold": true
+        "translate": "json.kards.dialog.paiku.fashu.jielue.152",
+        "fallback": "4K "
     },
     "external_title": {
-        "text": ""
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
     },
     "body": [
         {
@@ -26,40 +20,24 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "召唤4只",
-                "color": "gray",
-                "extra": [
-                    {
-                        "text": " 杀手兔",
-                        "color": "gold"
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.281",
+                "fallback": "召唤4只"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "若其受",
-                "color": "gray",
-                "extra": [
-                    {
-                        "text": " [无形]",
-                        "color": "dark_gray"
-                    },
-                    {
-                        "text": " 影响",
-                        "color": "gray"
-                    }
-                ]
+                "translate": "json.kards.dialog.paiku.juntuan.shashouxiaodui.331",
+                "fallback": "若其受"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text": "获得无限时长的隐身buff",
-                "color": "gray"
+                "translate": "json.kards.dialog.paiku.juntuan.shashouxiaodui.332",
+                "fallback": "获得无限时长的隐身buff"
             },
             "width": 1024
         }
@@ -68,8 +46,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "text": "返回§d军团牌§a牌库",
-            "color": "green"
+            "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.284",
+            "fallback": "返回§d军团牌§a牌库"
         },
         "action": {
             "type": "minecraft:show_dialog",

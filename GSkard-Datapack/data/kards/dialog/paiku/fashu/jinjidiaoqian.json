@@ -1,67 +1,49 @@
 {
-  "type": "minecraft:notice",
-  "title": {
-    "text": "4K ",
-    "extra": [
-      {
-        "text": "紧急调遣",
-        "color": "light_purple"
-      }
+    "type": "minecraft:notice",
+    "title": {
+        "translate": "json.kards.dialog.paiku.fashu.jielue.152",
+        "fallback": "4K "
+    },
+    "external_title": {
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "music_disc_mellohi"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "translate": "json.kards.dialog.paiku.fashu.jinjidiaoqian.154",
+                "fallback": "获得"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "translate": "json.kards.dialog.paiku.fashu.jinjidiaoqian.155",
+                "fallback": "若剩余点数大于等于5 则抽1张"
+            },
+            "width": 1024
+        }
     ],
-    "color": "aqua",
-    "bold": true
-  },
-  "external_title": {
-    "text": ""
-  },
-  "body": [
-    {
-      "type": "minecraft:item",
-      "item": {
-        "id": "music_disc_mellohi"
-      },
-      "show_decorations": false,
-      "show_tooltip": false
-    },
-    {
-      "type": "minecraft:plain_message",
-      "contents": {
-        "text": "获得",
-        "color": "gray",
-        "extra": [
-          {
-            "text": "3Kmax",
-            "color": "gold"
-          }
-        ]
-      },
-      "width": 1024
-    },
-    {
-      "type": "minecraft:plain_message",
-      "contents": {
-        "text": "若剩余点数大于等于5 则抽1张",
-        "color": "gray",
-        "extra": [
-          {
-            "text": "法术牌",
-            "color": "gold"
-          }
-        ]
-      },
-      "width": 1024
-    }
-  ],
-  "inputs": [],
-  "can_close_with_escape": true,
-  "action": {
-    "label": {
-      "text": "返回§d法术牌§a牌库",
-      "color": "green"
-    },
+    "inputs": [],
+    "can_close_with_escape": true,
     "action": {
-      "type": "minecraft:show_dialog",
-      "dialog": "kards:paiku/fashu/main"
+        "label": {
+            "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.125",
+            "fallback": "返回§d法术牌§a牌库"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/fashu/main"
+        }
     }
-  }
 }

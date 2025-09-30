@@ -1,14 +1,13 @@
 {
     "type": "minecraft:multi_action",
     "title": {
-        "text": "陷阱-§5DLC",
-        "color": "dark_aqua",
-        "bold": true
+        "translate": "json.kards-dlc.dialog.kard.xianjing.main.938",
+        "fallback": "陷阱-§5DLC"
     },
     "exit_action": {
         "label": {
-            "text": "返回§6主§a牌库-§3陷阱",
-            "color": "green"
+            "translate": "json.kards-dlc.dialog.kard.xianjing.main.939",
+            "fallback": "返回§6主§a牌库-§3陷阱"
         },
         "action": {
             "type": "show_dialog",
@@ -19,8 +18,8 @@
     "actions": [
         {
             "label": {
-                "text": "模板：陷阱",
-                "color": "dark_aqua"
+                "translate": "json.kards-dlc.dialog.kard.xianjing.main.940",
+                "fallback": "模板：陷阱"
             },
             "action": {
                 "type": "show_dialog",

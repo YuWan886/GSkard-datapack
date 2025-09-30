@@ -1,4 +1,4 @@
-execute unless items entity @s container.* #creeper_drop_music_discs run return run tellraw @a [{selector:"@s"},{text: "没有牌可以被",color:"aqua"},{selector:"@a[tag=User,limit=1]"},{text: "偷走",color:"aqua"}]
+execute unless items entity @s container.* #creeper_drop_music_discs run return run tellraw @a [{selector:"@s"},{translate: "kards.function.game.yongpaiku.fashu.shunshouqianyang.2.1", fallback: "没有牌可以被",color:"aqua"},{selector:"@a[tag=User,limit=1]"},{translate: "kards.function.game.yongpaiku.fashu.shunshouqianyang.2.2", fallback: "偷走",color:"aqua"}]
 
 execute store result score @s random_clear run random value 0..35
 execute if score @s random_clear matches 0 unless items entity @s container.0 #kards:kard run return run function kards:game/yongpaiku/fashu/shunshouqianyang/2
@@ -120,4 +120,4 @@ tag @n[tag=copy,type=item] add copy_end
 tag @n[tag=copy,type=item] remove copy
 kill @e[type=item,nbt={Item:{id:"minecraft:music_disc_11"}},tag=copy_end]
 
-tellraw @a [{selector:"@s"},{text: "的一张牌被",color:"aqua"},{selector:"@a[tag=User,limit=1]"},{text: "偷走了！",color:"aqua"}]
+tellraw @a [{selector:"@s"},{translate: "kards.function.game.yongpaiku.fashu.guohechaiqiao.2.1", fallback: "的一张牌被",color:"aqua"},{selector:"@a[tag=User,limit=1]"},{translate: "kards.function.game.yongpaiku.fashu.shunshouqianyang.2.3", fallback: "偷走了！",color:"aqua"}]
