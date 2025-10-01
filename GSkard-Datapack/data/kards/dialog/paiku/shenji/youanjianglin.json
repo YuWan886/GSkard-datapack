@@ -1,7 +1,17 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "json.kards.dialog.paiku.shenji.youanjianglin.413",
+        "extra": [
+            {
+                "color": "white",
+                "bold": true,
+                "translate": "json.kards.dialog.paiku.shenji.main.646",
+                "fallback": "幽谙降临"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.shenji.youanjianglin.673",
         "fallback": "20K "
     },
     "external_title": {
@@ -20,7 +30,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.jiaocheng.wanfa.2.105",
+                "color": "white",
+                "italic": false,
+                "translate": "json.kards.dialog.jiaocheng.wanfa.2.153",
                 "fallback": "神迹牌"
             },
             "width": 1024
@@ -28,7 +40,18 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.jiben.diaolingkulou.253",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "color": "gold",
+                        "italic": false,
+                        "bold": true,
+                        "translate": "json.kards.dialog.paiku.shenji.youanjianglin.674",
+                        "fallback": "监守者"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.jiben.diaolingkulou.395",
                 "fallback": "召唤1只"
             },
             "width": 1024
@@ -36,7 +59,29 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.shenji.youanjianglin.414",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "color": "red",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.shenji.youanjianglin.676",
+                        "fallback": "15♥"
+                    },
+                    {
+                        "color": "gold",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.shenji.youanjianglin.677",
+                        "fallback": "*敌方玩家存活人数"
+                    },
+                    {
+                        "color": "gray",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.shenji.youanjianglin.678",
+                        "fallback": "]"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.shenji.youanjianglin.675",
                 "fallback": "监守者基础血量=["
             },
             "width": 1024
@@ -44,7 +89,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.shenji.youanjianglin.415",
+                "color": "dark_gray",
+                "italic": true,
+                "translate": "json.kards.dialog.paiku.shenji.youanjianglin.679",
                 "fallback": "血量最多为100♥"
             },
             "width": 1024
@@ -54,7 +101,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.shenji.fanxiangfeileishen.365",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.shenji.fanxiangfeileishen.605",
             "fallback": "返回§d神迹§a牌库"
         },
         "action": {

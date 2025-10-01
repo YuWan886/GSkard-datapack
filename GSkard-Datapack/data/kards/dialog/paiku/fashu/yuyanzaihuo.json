@@ -1,7 +1,16 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "json.kards.dialog.paiku.fashu.duming.139",
+        "extra": [
+            {
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.main.315",
+                "fallback": "预言灾祸"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.duming.254",
         "fallback": "0K "
     },
     "external_title": {
@@ -20,7 +29,15 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.fashu.yuyanzaihuo.243",
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "gold",
+                        "translate": "json.kards.dialog.paiku.fashu.yuyanzaihuo.381",
+                        "fallback": "抗性提升4"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.fashu.yuyanzaihuo.380",
                 "fallback": "在60s内 获得"
             },
             "width": 1024
@@ -30,7 +47,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.125",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.232",
             "fallback": "返回§d法术牌§a牌库"
         },
         "action": {

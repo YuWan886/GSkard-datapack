@@ -1,7 +1,16 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "json.kards.dialog.paiku.fashu.chongzhu.128",
+        "extra": [
+            {
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.chongzhu.238",
+                "fallback": "重铸"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.chongzhu.237",
         "fallback": "2K "
     },
     "external_title": {
@@ -20,7 +29,15 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.fashu.chongzhu.129",
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "gold",
+                        "translate": "json.kards.dialog.paiku.fashu.chongzhu.240",
+                        "fallback": "抽1张装备牌"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.fashu.chongzhu.239",
                 "fallback": "熔铸所有的装备牌 每熔铸一张则"
             },
             "width": 1024
@@ -30,7 +47,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.125",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.232",
             "fallback": "返回§d法术牌§a牌库"
         },
         "action": {

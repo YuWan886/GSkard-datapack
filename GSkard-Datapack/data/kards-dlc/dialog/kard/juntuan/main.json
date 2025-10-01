@@ -1,12 +1,15 @@
 {
     "type": "multi_action",
     "title": {
-        "translate": "json.kards-dlc.dialog.kard.juntuan.main.922",
+        "color": "dark_green",
+        "bold": true,
+        "translate": "json.kards-dlc.dialog.kard.juntuan.main.1361",
         "fallback": "军团-§5DLC"
     },
     "exit_action": {
         "label": {
-            "translate": "json.kards-dlc.dialog.kard.juntuan.main.923",
+            "color": "green",
+            "translate": "json.kards-dlc.dialog.kard.juntuan.main.1362",
             "fallback": "返回§6主§a牌库-§2军团"
         },
         "action": {
@@ -18,7 +21,8 @@
     "actions": [
         {
             "label": {
-                "translate": "json.kards-dlc.dialog.kard.juntuan.main.924",
+                "color": "dark_green",
+                "translate": "json.kards-dlc.dialog.kard.juntuan.main.1363",
                 "fallback": "模板：军团"
             },
             "action": {

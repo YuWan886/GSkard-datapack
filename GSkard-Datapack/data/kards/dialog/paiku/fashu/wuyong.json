@@ -1,7 +1,16 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "json.kards.dialog.paiku.fashu.chongzhu.128",
+        "extra": [
+            {
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.main.307",
+                "fallback": "无用"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.chongzhu.237",
         "fallback": "2K "
     },
     "external_title": {
@@ -20,7 +29,8 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.fashu.wuyong.232",
+                "color": "gray",
+                "translate": "json.kards.dialog.paiku.fashu.wuyong.361",
                 "fallback": "获得三张没有用的牌"
             },
             "width": 1024
@@ -28,7 +38,8 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.fashu.wuyong.233",
+                "color": "gray",
+                "translate": "json.kards.dialog.paiku.fashu.wuyong.362",
                 "fallback": "可以用来触发陷阱"
             },
             "width": 1024
@@ -38,7 +49,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.125",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.232",
             "fallback": "返回§d法术牌§a牌库"
         },
         "action": {

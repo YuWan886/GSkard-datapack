@@ -1,7 +1,16 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.122",
+        "extra": [
+            {
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.main.313",
+                "fallback": "以智取胜"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.227",
         "fallback": "5K "
     },
     "external_title": {
@@ -20,7 +29,15 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.fashu.chunnuanhuakai.131",
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "gold",
+                        "translate": "json.kards.dialog.paiku.fashu.yizhiqusheng.376",
+                        "fallback": "1张军团牌"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.fashu.chunnuanhuakai.243",
                 "fallback": "抽"
             },
             "width": 1024
@@ -28,7 +45,15 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.fashu.yizhiqusheng.241",
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "gold",
+                        "translate": "json.kards.dialog.paiku.fashu.yizhiqusheng.378",
+                        "fallback": "1张装备牌"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.fashu.yizhiqusheng.377",
                 "fallback": "和"
             },
             "width": 1024
@@ -38,7 +63,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.125",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.232",
             "fallback": "返回§d法术牌§a牌库"
         },
         "action": {

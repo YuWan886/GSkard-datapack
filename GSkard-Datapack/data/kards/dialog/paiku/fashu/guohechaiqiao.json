@@ -1,7 +1,16 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "json.kards.dialog.paiku.fashu.guohechaiqiao.144",
+        "extra": [
+            {
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.guohechaiqiao.264",
+                "fallback": "过河拆桥"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.guohechaiqiao.263",
         "fallback": "3K "
     },
     "external_title": {
@@ -20,7 +29,8 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.fashu.guohechaiqiao.145",
+                "color": "gray",
+                "translate": "json.kards.dialog.paiku.fashu.guohechaiqiao.265",
                 "fallback": "随机弃掉敌方1名玩家1张牌"
             },
             "width": 1024
@@ -30,7 +40,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.125",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.232",
             "fallback": "返回§d法术牌§a牌库"
         },
         "action": {

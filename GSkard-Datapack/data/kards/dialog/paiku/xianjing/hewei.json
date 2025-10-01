@@ -1,7 +1,16 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "json.kards.dialog.paiku.fashu.guohechaiqiao.144",
+        "extra": [
+            {
+                "color": "dark_aqua",
+                "translate": "json.kards.dialog.paiku.xianjing.hewei.1056",
+                "fallback": "合围"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.guohechaiqiao.263",
         "fallback": "3K "
     },
     "external_title": {
@@ -20,7 +29,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.xianjing.hewei.663",
+                "color": "dark_aqua",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.xianjing.hewei.1057",
                 "fallback": "陷阱卡"
             },
             "width": 1024
@@ -28,7 +39,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.xianjing.hewei.664",
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.xianjing.hewei.1058",
                 "fallback": "使用后埋下陷阱 敌方在达到条件时触发 触发后失效"
             },
             "width": 1024
@@ -36,7 +49,35 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.xianjing.hewei.665",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "color": "blue",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.xianjing.hewei.1060",
+                        "fallback": "基础牌"
+                    },
+                    {
+                        "color": "gray",
+                        "italic": false,
+                        "translate": "json.kards.dialog.jiaocheng.wanfa.3.174",
+                        "fallback": "或"
+                    },
+                    {
+                        "color": "dark_green",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.main.221",
+                        "fallback": "军团牌"
+                    },
+                    {
+                        "color": "gray",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.xianjing.hewei.1061",
+                        "fallback": "时"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.xianjing.hewei.1059",
                 "fallback": "条件：敌方任意玩家使用"
             },
             "width": 1024
@@ -44,7 +85,29 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.xianjing.hewei.666",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "color": "green",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.xianjing.hewei.1063",
+                        "fallback": "友方区域"
+                    },
+                    {
+                        "color": "gray",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.xianjing.hewei.1064",
+                        "fallback": "所有"
+                    },
+                    {
+                        "color": "red",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.xianjing.hewei.1065",
+                        "fallback": "敌对生物"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.xianjing.hewei.1062",
                 "fallback": "触发：清除"
             },
             "width": 1024
@@ -54,7 +117,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.xianjing.hewei.667",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.xianjing.hewei.1066",
             "fallback": "返回§c陷阱§a牌库"
         },
         "action": {

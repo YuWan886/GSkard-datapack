@@ -1,7 +1,17 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "json.kards.dialog.paiku.shenji.lairichanghuan.375",
+        "extra": [
+            {
+                "color": "white",
+                "bold": true,
+                "translate": "json.kards.dialog.paiku.shenji.lairichanghuan.627",
+                "fallback": "来日偿还"
+            }
+        ],
+        "color": "gold",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.shenji.lairichanghuan.626",
         "fallback": "5Kmax "
     },
     "external_title": {
@@ -20,7 +30,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.jiaocheng.wanfa.2.105",
+                "color": "white",
+                "italic": false,
+                "translate": "json.kards.dialog.jiaocheng.wanfa.2.153",
                 "fallback": "神迹牌"
             },
             "width": 1024
@@ -28,7 +40,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.shenji.lairichanghuan.376",
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.shenji.lairichanghuan.628",
                 "fallback": "将你上回合至现在受到的所有伤害"
             },
             "width": 1024
@@ -36,7 +50,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.shenji.lairichanghuan.377",
+                "color": "red",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.shenji.lairichanghuan.629",
                 "fallback": "分配至敌方所有玩家"
             },
             "width": 1024
@@ -44,7 +60,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.shenji.lairichanghuan.378",
+                "color": "dark_gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.shenji.lairichanghuan.630",
                 "fallback": "一回合只能使用一次"
             },
             "width": 1024
@@ -54,7 +72,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.shenji.fanxiangfeileishen.365",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.shenji.fanxiangfeileishen.605",
             "fallback": "返回§d神迹§a牌库"
         },
         "action": {

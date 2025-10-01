@@ -1,7 +1,16 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "json.kards.dialog.paiku.fashu.jielue.152",
+        "extra": [
+            {
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.main.304",
+                "fallback": "酸辣无骨鸡爪"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.jielue.273",
         "fallback": "4K "
     },
     "external_title": {
@@ -20,7 +29,8 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.fashu.suanlawugujizhua.226",
+                "color": "gray",
+                "translate": "json.kards.dialog.paiku.fashu.suanlawugujizhua.353",
                 "fallback": "美味的酸辣无骨鸡爪 就是太辣了"
             },
             "width": 1024
@@ -28,7 +38,8 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.fashu.suanlawugujizhua.227",
+                "color": "red",
+                "translate": "json.kards.dialog.paiku.fashu.suanlawugujizhua.354",
                 "fallback": "获得一个酸辣无骨鸡爪"
             },
             "width": 1024
@@ -36,7 +47,8 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.fashu.suanlawugujizhua.228",
+                "color": "gray",
+                "translate": "json.kards.dialog.paiku.fashu.suanlawugujizhua.355",
                 "fallback": "概率获得[再来一罐]"
             },
             "width": 1024
@@ -46,7 +58,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.125",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.232",
             "fallback": "返回§d法术牌§a牌库"
         },
         "action": {

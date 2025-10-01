@@ -1,7 +1,16 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "json.kards.dialog.paiku.fashu.chaotuoxili.126",
+        "extra": [
+            {
+                "color": "dark_gray",
+                "translate": "json.kards.dialog.paiku.zuzhou.hunluan.1237",
+                "fallback": "混乱"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.chaotuoxili.233",
         "fallback": "1K "
     },
     "external_title": {
@@ -20,7 +29,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.main.118",
+                "color": "dark_gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.main.223",
                 "fallback": "诅咒牌"
             },
             "width": 1024
@@ -28,7 +39,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.zuzhou.hunluan.814",
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.zuzhou.hunluan.1238",
                 "fallback": "打开敌方队伍友伤 持续至回合结束"
             },
             "width": 1024
@@ -36,7 +49,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.fashu.yingyuzhili.239",
+                "color": "dark_gray",
+                "italic": true,
+                "translate": "json.kards.dialog.paiku.fashu.yingyuzhili.373",
                 "fallback": "PVP回合禁用"
             },
             "width": 1024
@@ -46,7 +61,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.zuzhou.chengmo.811",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.zuzhou.chengmo.1232",
             "fallback": "返回§c诅咒§a牌库"
         },
         "action": {

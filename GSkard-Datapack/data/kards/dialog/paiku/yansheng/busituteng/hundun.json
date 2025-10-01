@@ -1,7 +1,9 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "json.kards.dialog.paiku.yansheng.busituteng.hundun.741",
+        "color": "gray",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.yansheng.busituteng.hundun.1149",
         "fallback": "混沌图腾"
     },
     "external_title": {
@@ -20,7 +22,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.yansheng.busituteng.baonu.732",
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.yansheng.busituteng.baonu.1140",
                 "fallback": "触发后"
             },
             "width": 1024
@@ -28,7 +32,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.yansheng.busituteng.hundun.742",
+                "color": "dark_green",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.yansheng.busituteng.hundun.1150",
                 "fallback": " ♥+24 60s"
             },
             "width": 1024
@@ -36,7 +42,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.yansheng.busituteng.hundun.743",
+                "color": "dark_green",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.yansheng.busituteng.hundun.1151",
                 "fallback": " ♥+24"
             },
             "width": 1024
@@ -44,7 +52,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.yansheng.busituteng.hundun.744",
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.yansheng.busituteng.hundun.1152",
                 "fallback": "在以下效果中随机一个"
             },
             "width": 1024
@@ -52,7 +62,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.yansheng.busituteng.hundun.745",
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.yansheng.busituteng.hundun.1153",
                 "fallback": " -对最近的一个敌方玩家造成25♥真实伤害"
             },
             "width": 1024
@@ -60,7 +72,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.yansheng.busituteng.hundun.746",
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.yansheng.busituteng.hundun.1154",
                 "fallback": " -对周围7格所有敌对生物造成15♥真实伤害"
             },
             "width": 1024
@@ -68,7 +82,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.yansheng.busituteng.hundun.747",
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.yansheng.busituteng.hundun.1155",
                 "fallback": " -再获得一个\"混沌图腾\""
             },
             "width": 1024
@@ -76,7 +92,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.yansheng.busituteng.hundun.748",
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.yansheng.busituteng.hundun.1156",
                 "fallback": " -冻结 点燃6格内敌对生物7.5s"
             },
             "width": 1024
@@ -84,7 +102,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.yansheng.busituteng.hundun.749",
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.yansheng.busituteng.hundun.1157",
                 "fallback": " -将6格内\"敌对的非玩家生物\"传送至敌方阵营"
             },
             "width": 1024
@@ -92,7 +112,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.yansheng.busituteng.dongjie.740",
+                "color": "dark_gray",
+                "italic": true,
+                "translate": "json.kards.dialog.paiku.yansheng.busituteng.dongjie.1148",
                 "fallback": " 冻结:无法移动和攻击,每1.25s受到5♥冰冻伤害"
             },
             "width": 1024
@@ -100,7 +122,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.yansheng.busituteng.hundun.750",
+                "color": "dark_gray",
+                "italic": true,
+                "translate": "json.kards.dialog.paiku.yansheng.busituteng.hundun.1158",
                 "fallback": " 点燃:每0.5s受到0.625♥的火焰伤害"
             },
             "width": 1024
@@ -110,7 +134,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.yansheng.busituteng.hundun.751",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.yansheng.busituteng.hundun.1159",
             "fallback": "返回§6不死图腾§a库"
         },
         "action": {

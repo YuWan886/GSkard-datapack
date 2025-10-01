@@ -1,7 +1,9 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "json.kards.dialog.paiku.fashu.main.189",
+        "color": "red",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.main.304",
         "fallback": "酸辣无骨鸡爪"
     },
     "external_title": {
@@ -20,7 +22,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.yansheng.suanlawugujizhua.722",
+                "color": "gold",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.yansheng.suanlawugujizhua.1130",
                 "fallback": "美味可食用"
             },
             "width": 1024
@@ -28,7 +32,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.yansheng.suanlawugujizhua.723",
+                "color": "green",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.yansheng.suanlawugujizhua.1131",
                 "fallback": "食用后恢复5♥"
             },
             "width": 1024
@@ -36,7 +42,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.yansheng.suanlawugujizhua.724",
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.yansheng.suanlawugujizhua.1132",
                 "fallback": "将1个酸辣无骨鸡爪置入敌方随机一名玩家手中"
             },
             "width": 1024
@@ -44,7 +52,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.yansheng.suanlawugujizhua.725",
+                "color": "dark_gray",
+                "italic": true,
+                "translate": "json.kards.dialog.paiku.yansheng.suanlawugujizhua.1133",
                 "fallback": "为什么无骨鸡爪是一根骨头?"
             },
             "width": 1024
@@ -54,7 +64,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.yansheng.jinzijue.708",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.yansheng.jinzijue.1116",
             "fallback": "返回§7其他"
         },
         "action": {

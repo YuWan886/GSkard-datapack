@@ -1,7 +1,9 @@
 {
     "type": "minecraft:multi_action",
     "title": {
-        "translate": "json.kards.dialog.setting.random_start.main.836",
+        "color": "gold",
+        "bold": true,
+        "translate": "json.kards.dialog.setting.random_start.main.1259",
         "fallback": "随机规则设置"
     },
     "external_title": {
@@ -20,16 +22,20 @@
     "actions": [
         {
             "label": {
-                "translate": "json.kards.dialog.setting.random_start.main.837",
+                "color": "green",
+                "translate": "json.kards.dialog.setting.random_start.main.1260",
                 "fallback": "宝库现世"
             },
             "tooltip": [
                 {
-                    "translate": "json.kards.dialog.setting.random_start.main.838",
+                    "color": "gray",
+                    "translate": "json.kards.dialog.setting.random_start.main.1261",
                     "fallback": "所有玩家抽取"
                 },
                 {
-                    "translate": "json.kards.dialog.setting.random_start.main.839",
+                    "color": "green",
+                    "bold": true,
+                    "translate": "json.kards.dialog.setting.random_start.main.1262",
                     "fallback": "[王之宝库]"
                 }
             ],
@@ -41,16 +47,20 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.setting.random_start.main.840",
+                "color": "gold",
+                "translate": "json.kards.dialog.setting.random_start.main.1263",
                 "fallback": "藏宝库"
             },
             "tooltip": [
                 {
-                    "translate": "json.kards.dialog.setting.random_start.main.841",
+                    "color": "gray",
+                    "translate": "json.kards.dialog.setting.random_start.main.1264",
                     "fallback": "开局额外抽取"
                 },
                 {
-                    "translate": "json.kards.dialog.setting.random_start.main.842",
+                    "color": "gold",
+                    "bold": true,
+                    "translate": "json.kards.dialog.setting.random_start.main.1265",
                     "fallback": "3张神迹牌 每回合额外抽2张牌"
                 }
             ],
@@ -62,16 +72,20 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.setting.random_start.main.843",
+                "color": "light_purple",
+                "translate": "json.kards.dialog.setting.random_start.main.1266",
                 "fallback": "魔法战争"
             },
             "tooltip": [
                 {
-                    "translate": "json.kards.dialog.setting.random_start.main.844",
+                    "color": "gray",
+                    "translate": "json.kards.dialog.setting.random_start.main.1267",
                     "fallback": "所有人抽取的卡变为"
                 },
                 {
-                    "translate": "json.kards.dialog.setting.random_start.main.845",
+                    "color": "light_purple",
+                    "bold": true,
+                    "translate": "json.kards.dialog.setting.random_start.main.1268",
                     "fallback": "法术卡"
                 }
             ],
@@ -83,16 +97,20 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.setting.random_start.main.846",
+                "color": "white",
+                "translate": "json.kards.dialog.setting.random_start.main.1269",
                 "fallback": "神之战"
             },
             "tooltip": [
                 {
-                    "translate": "json.kards.dialog.setting.random_start.main.844",
+                    "color": "gray",
+                    "translate": "json.kards.dialog.setting.random_start.main.1267",
                     "fallback": "所有人抽取的卡变为"
                 },
                 {
-                    "translate": "json.kards.dialog.setting.random_start.main.847",
+                    "color": "white",
+                    "bold": true,
+                    "translate": "json.kards.dialog.setting.random_start.main.1270",
                     "fallback": "神迹卡"
                 }
             ],
@@ -104,24 +122,32 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.setting.random_start.main.848",
+                "color": "green",
+                "translate": "json.kards.dialog.setting.random_start.main.1271",
                 "fallback": "无尽战争"
             },
             "tooltip": [
                 {
-                    "translate": "json.kards.dialog.setting.random_start.main.849",
+                    "color": "gray",
+                    "translate": "json.kards.dialog.setting.random_start.main.1272",
                     "fallback": "所有人的"
                 },
                 {
-                    "translate": "json.kards.dialog.setting.random_start.main.850",
+                    "color": "green",
+                    "bold": true,
+                    "translate": "json.kards.dialog.setting.random_start.main.1273",
                     "fallback": "Kmax被设为9999"
                 },
                 {
-                    "translate": "json.kards.dialog.setting.random_start.main.851",
+                    "color": "gray",
+                    "bold": true,
+                    "translate": "json.kards.dialog.setting.random_start.main.1274",
                     "fallback": " 每回合额外抽"
                 },
                 {
-                    "translate": "json.kards.dialog.setting.random_start.main.852",
+                    "color": "green",
+                    "bold": true,
+                    "translate": "json.kards.dialog.setting.random_start.main.1275",
                     "fallback": "3张牌"
                 }
             ],
@@ -133,12 +159,15 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.setting.random_start.main.853",
+                "color": "red",
+                "translate": "json.kards.dialog.setting.random_start.main.1276",
                 "fallback": "嘎吱恐惧"
             },
             "tooltip": [
                 {
-                    "translate": "json.kards.dialog.setting.random_start.main.854",
+                    "color": "red",
+                    "bold": true,
+                    "translate": "json.kards.dialog.setting.random_start.main.1277",
                     "fallback": "两方场地中央生成一只移速增加的嘎吱怪"
                 }
             ],
@@ -150,16 +179,20 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.shenji.main.392",
+                "color": "green",
+                "translate": "json.kards.dialog.paiku.shenji.main.640",
                 "fallback": "墓园狂欢"
             },
             "tooltip": [
                 {
-                    "translate": "json.kards.dialog.setting.random_start.main.855",
+                    "color": "gray",
+                    "translate": "json.kards.dialog.setting.random_start.main.1278",
                     "fallback": "所有人默认使用"
                 },
                 {
-                    "translate": "json.kards.dialog.setting.random_start.main.856",
+                    "color": "green",
+                    "bold": true,
+                    "translate": "json.kards.dialog.setting.random_start.main.1279",
                     "fallback": "[墓园狂欢]"
                 }
             ],
@@ -171,16 +204,20 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.setting.random_start.main.857",
+                "color": "red",
+                "translate": "json.kards.dialog.setting.random_start.main.1280",
                 "fallback": "狂轰滥炸"
             },
             "tooltip": [
                 {
-                    "translate": "json.kards.dialog.setting.random_start.main.858",
+                    "color": "gray",
+                    "translate": "json.kards.dialog.setting.random_start.main.1281",
                     "fallback": "所有人只能抽取到"
                 },
                 {
-                    "translate": "json.kards.dialog.setting.random_start.main.859",
+                    "color": "red",
+                    "bold": true,
+                    "translate": "json.kards.dialog.setting.random_start.main.1282",
                     "fallback": "[爆炸军团]"
                 }
             ],
@@ -192,20 +229,24 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.setting.random_start.main.860",
+                "color": "gray",
+                "translate": "json.kards.dialog.setting.random_start.main.1283",
                 "fallback": "灾难之星"
             },
             "tooltip": [
                 {
-                    "translate": "json.kards.dialog.setting.random_start.main.861",
+                    "color": "gray",
+                    "translate": "json.kards.dialog.setting.random_start.main.1284",
                     "fallback": "讲述"
                 },
                 {
-                    "translate": "json.kards.dialog.setting.random_start.main.862",
+                    "color": "gray",
+                    "translate": "json.kards.dialog.setting.random_start.main.1285",
                     "fallback": "[河豚][雷暴][失重]"
                 },
                 {
-                    "translate": "json.kards.dialog.setting.random_start.main.863",
+                    "color": "gray",
+                    "translate": "json.kards.dialog.setting.random_start.main.1286",
                     "fallback": "的故事"
                 }
             ],
@@ -217,12 +258,15 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.setting.random_start.main.864",
+                "color": "red",
+                "translate": "json.kards.dialog.setting.random_start.main.1287",
                 "fallback": "Move or Die"
             },
             "tooltip": [
                 {
-                    "translate": "json.kards.dialog.setting.random_start.main.865",
+                    "color": "red",
+                    "bold": true,
+                    "translate": "json.kards.dialog.setting.random_start.main.1288",
                     "fallback": "不动就会死!"
                 }
             ],
@@ -234,12 +278,15 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.setting.random_start.main.866",
+                "color": "red",
+                "translate": "json.kards.dialog.setting.random_start.main.1289",
                 "fallback": "死神降临"
             },
             "tooltip": [
                 {
-                    "translate": "json.kards.dialog.setting.random_start.main.867",
+                    "color": "red",
+                    "bold": true,
+                    "translate": "json.kards.dialog.setting.random_start.main.1290",
                     "fallback": "11回合后 每回合杀死一个生命最低的玩家"
                 }
             ],
@@ -251,16 +298,21 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.setting.random_start.main.868",
+                "color": "dark_green",
+                "translate": "json.kards.dialog.setting.random_start.main.1291",
                 "fallback": "舞会"
             },
             "tooltip": [
                 {
-                    "translate": "json.kards.dialog.setting.random_start.main.858",
+                    "color": "gray",
+                    "bold": true,
+                    "translate": "json.kards.dialog.setting.random_start.main.1281",
                     "fallback": "所有人只能抽取到"
                 },
                 {
-                    "translate": "json.kards.dialog.setting.random_start.main.869",
+                    "color": "dark_green",
+                    "bold": true,
+                    "translate": "json.kards.dialog.setting.random_start.main.1292",
                     "fallback": "[舞王僵尸]"
                 }
             ],
@@ -272,24 +324,33 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.setting.random_start.main.870",
+                "color": "light_purple",
+                "translate": "json.kards.dialog.setting.random_start.main.1293",
                 "fallback": "电表倒转"
             },
             "tooltip": [
                 {
-                    "translate": "json.kards.dialog.setting.random_start.main.871",
+                    "color": "gray",
+                    "bold": true,
+                    "translate": "json.kards.dialog.setting.random_start.main.1294",
                     "fallback": "每使用1张牌 都有概率额外获得"
                 },
                 {
-                    "translate": "json.kards.dialog.setting.random_start.main.872",
+                    "color": "light_purple",
+                    "bold": true,
+                    "translate": "json.kards.dialog.setting.random_start.main.1295",
                     "fallback": "[春暖花开]"
                 },
                 {
-                    "translate": "json.kards.dialog.setting.random_start.main.873",
+                    "color": "white",
+                    "bold": true,
+                    "translate": "json.kards.dialog.setting.random_start.main.1296",
                     "fallback": "[好高骛远]"
                 },
                 {
-                    "translate": "json.kards.dialog.setting.random_start.main.874",
+                    "color": "gold",
+                    "bold": true,
+                    "translate": "json.kards.dialog.setting.random_start.main.1297",
                     "fallback": "6K"
                 }
             ],
@@ -301,16 +362,21 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.setting.random_start.main.875",
+                "color": "white",
+                "translate": "json.kards.dialog.setting.random_start.main.1298",
                 "fallback": "无尽贪婪"
             },
             "tooltip": [
                 {
-                    "translate": "json.kards.dialog.setting.random_start.main.855",
+                    "color": "gray",
+                    "bold": true,
+                    "translate": "json.kards.dialog.setting.random_start.main.1278",
                     "fallback": "所有人默认使用"
                 },
                 {
-                    "translate": "json.kards.dialog.setting.random_start.main.876",
+                    "color": "white",
+                    "bold": true,
+                    "translate": "json.kards.dialog.setting.random_start.main.1299",
                     "fallback": "[贪欲魔盒]"
                 }
             ],
@@ -323,7 +389,25 @@
     ],
     "exit_action": {
         "label": {
-            "translate": "json.kards.dialog.setting.random_start.main.877",
+            "color": "gray",
+            "extra": [
+                {
+                    "color": "red",
+                    "translate": "json.kards.dialog.setting.random_start.main.1301",
+                    "fallback": "禁用"
+                },
+                {
+                    "color": "gray",
+                    "translate": "json.kards.dialog.jiaocheng.wanfa.3.174",
+                    "fallback": "或"
+                },
+                {
+                    "color": "green",
+                    "translate": "json.kards.dialog.setting.random_start.main.1302",
+                    "fallback": "启用"
+                }
+            ],
+            "translate": "json.kards.dialog.setting.random_start.main.1300",
             "fallback": "点击以"
         },
         "action": {

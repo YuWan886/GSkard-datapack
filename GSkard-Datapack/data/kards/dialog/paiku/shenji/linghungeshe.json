@@ -1,7 +1,17 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.122",
+        "extra": [
+            {
+                "color": "white",
+                "bold": true,
+                "translate": "json.kards.dialog.paiku.shenji.linghungeshe.631",
+                "fallback": "灵魂割舍"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.227",
         "fallback": "5K "
     },
     "external_title": {
@@ -20,7 +30,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.jiaocheng.wanfa.2.105",
+                "color": "white",
+                "italic": false,
+                "translate": "json.kards.dialog.jiaocheng.wanfa.2.153",
                 "fallback": "神迹牌"
             },
             "width": 1024
@@ -28,7 +40,23 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.shenji.linghungeshe.379",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "color": "red",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.shenji.linghungeshe.633",
+                        "fallback": "25♥"
+                    },
+                    {
+                        "color": "gray",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.shenji.linghungeshe.634",
+                        "fallback": "的所有玩家"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.shenji.linghungeshe.632",
                 "fallback": "斩杀敌方生命低于"
             },
             "width": 1024
@@ -38,7 +66,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.shenji.fanxiangfeileishen.365",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.shenji.fanxiangfeileishen.605",
             "fallback": "返回§d神迹§a牌库"
         },
         "action": {

@@ -1,7 +1,16 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "json.kards.dialog.paiku.fashu.chunnuanhuakai.130",
+        "extra": [
+            {
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.main.319",
+                "fallback": "骤然引爆"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.chunnuanhuakai.241",
         "fallback": "8K "
     },
     "external_title": {
@@ -20,7 +29,15 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.jiaocheng.wanfa.1.98",
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "gold",
+                        "translate": "json.kards.dialog.paiku.fashu.zhouranyingbao.385",
+                        "fallback": "威力与血量加强 引爆速度大幅度加快"
+                    }
+                ],
+                "translate": "json.kards.dialog.jiaocheng.wanfa.1.117",
                 "fallback": "召唤一只"
             },
             "width": 1024
@@ -28,7 +45,8 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.fashu.zhouranyingbao.245",
+                "color": "gray",
+                "translate": "json.kards.dialog.paiku.fashu.zhouranyingbao.386",
                 "fallback": "的苦力怕"
             },
             "width": 1024
@@ -38,7 +56,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.125",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.232",
             "fallback": "返回§d法术牌§a牌库"
         },
         "action": {

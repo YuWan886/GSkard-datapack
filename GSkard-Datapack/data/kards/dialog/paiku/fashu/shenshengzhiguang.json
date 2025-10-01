@@ -1,7 +1,16 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "json.kards.dialog.paiku.fashu.chaotuoxili.126",
+        "extra": [
+            {
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.main.297",
+                "fallback": "神圣之光"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.chaotuoxili.233",
         "fallback": "1K "
     },
     "external_title": {
@@ -20,7 +29,15 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.fashu.shenshengzhiguang.215",
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "green",
+                        "translate": "json.kards.dialog.paiku.fashu.qisihuisheng.328",
+                        "fallback": "16♥"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.fashu.shenshengzhiguang.336",
                 "fallback": "为自身回复"
             },
             "width": 1024
@@ -30,7 +47,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.125",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.232",
             "fallback": "返回§d法术牌§a牌库"
         },
         "action": {

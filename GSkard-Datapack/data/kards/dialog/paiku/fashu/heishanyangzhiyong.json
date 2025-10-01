@@ -1,7 +1,16 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "json.kards.dialog.paiku.fashu.duming.139",
+        "extra": [
+            {
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.heishanyangzhiyong.266",
+                "fallback": "黑山羊之拥"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.duming.254",
         "fallback": "0K "
     },
     "external_title": {
@@ -20,7 +29,8 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.fashu.heishanyangzhiyong.146",
+                "color": "gray",
+                "translate": "json.kards.dialog.paiku.fashu.heishanyangzhiyong.267",
                 "fallback": "使用后随机获得1个以下效果"
             },
             "width": 1024
@@ -28,7 +38,8 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.fashu.heishanyangzhiyong.147",
+                "color": "gray",
+                "translate": "json.kards.dialog.paiku.fashu.heishanyangzhiyong.268",
                 "fallback": " -2Kmax 生命恢复8♥"
             },
             "width": 1024
@@ -36,7 +47,8 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.fashu.heishanyangzhiyong.148",
+                "color": "gray",
+                "translate": "json.kards.dialog.paiku.fashu.heishanyangzhiyong.269",
                 "fallback": " -3Kmax 生命恢复15♥"
             },
             "width": 1024
@@ -44,7 +56,8 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.fashu.heishanyangzhiyong.149",
+                "color": "gray",
+                "translate": "json.kards.dialog.paiku.fashu.heishanyangzhiyong.270",
                 "fallback": " -4Kmax 生命恢复24♥"
             },
             "width": 1024
@@ -52,7 +65,8 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.fashu.heishanyangzhiyong.150",
+                "color": "gray",
+                "translate": "json.kards.dialog.paiku.fashu.heishanyangzhiyong.271",
                 "fallback": " -6Kmax 全队生命恢复20♥ 你额外恢复10♥"
             },
             "width": 1024
@@ -60,7 +74,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.fashu.heishanyangzhiyong.151",
+                "color": "dark_gray",
+                "italic": true,
+                "translate": "json.kards.dialog.paiku.fashu.heishanyangzhiyong.272",
                 "fallback": "嘿~嘿~我看到祂了"
             },
             "width": 1024
@@ -70,7 +86,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.125",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.232",
             "fallback": "返回§d法术牌§a牌库"
         },
         "action": {

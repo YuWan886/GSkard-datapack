@@ -1,7 +1,16 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "json.kards.dialog.paiku.fashu.diyu.136",
+        "extra": [
+            {
+                "color": "dark_green",
+                "translate": "json.kards.dialog.paiku.juntuan.main.491",
+                "fallback": "三人成众"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.diyu.250",
         "fallback": "9K "
     },
     "external_title": {
@@ -20,7 +29,15 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.juntuan.sanrenchengzhong.328",
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "gold",
+                        "translate": "json.kards.dialog.paiku.juntuan.sanrenchengzhong.515",
+                        "fallback": " 大岩浆怪"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.juntuan.sanrenchengzhong.514",
                 "fallback": "召唤3只"
             },
             "width": 1024
@@ -28,7 +45,8 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.juntuan.sanrenchengzhong.329",
+                "color": "gray",
+                "translate": "json.kards.dialog.paiku.juntuan.sanrenchengzhong.516",
                 "fallback": "最小岩浆怪在30s后会变为大岩浆怪"
             },
             "width": 1024
@@ -36,7 +54,8 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.juntuan.sanrenchengzhong.330",
+                "color": "gray",
+                "translate": "json.kards.dialog.paiku.juntuan.sanrenchengzhong.517",
                 "fallback": "非用牌回合的时间不计入"
             },
             "width": 1024
@@ -46,7 +65,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.284",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.455",
             "fallback": "返回§d军团牌§a牌库"
         },
         "action": {

@@ -1,7 +1,16 @@
 {
     "type": "notice",
     "title": {
-        "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.122",
+        "extra": [
+            {
+                "color": "dark_aqua",
+                "translate": "json.kards-dlc.dialog.kard.xianjing.main.1379",
+                "fallback": "模板：陷阱"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.227",
         "fallback": "5K "
     },
     "body": [
@@ -16,7 +25,9 @@
         {
             "type": "plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.xianjing.hewei.663",
+                "color": "dark_aqua",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.xianjing.hewei.1057",
                 "fallback": "陷阱卡"
             },
             "width": 1024
@@ -24,7 +35,9 @@
         {
             "type": "plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.xianjing.hewei.664",
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.xianjing.hewei.1058",
                 "fallback": "使用后埋下陷阱 敌方在达到条件时触发 触发后失效"
             },
             "width": 1024
@@ -32,7 +45,23 @@
         {
             "type": "plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.xianjing.hewei.665",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "color": "light_purple",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.main.220",
+                        "fallback": "法术牌"
+                    },
+                    {
+                        "color": "gray",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.xianjing.hewei.1061",
+                        "fallback": "时"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.xianjing.hewei.1059",
                 "fallback": "条件：敌方任意玩家使用"
             },
             "width": 1024
@@ -40,7 +69,9 @@
         {
             "type": "plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.xianjing.shufashixiao.689",
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.xianjing.shufashixiao.1090",
                 "fallback": "触发：该法术失效"
             },
             "width": 1024
@@ -48,7 +79,8 @@
     ],
     "action": {
         "label": {
-            "translate": "json.kards-dlc.dialog.kard.xianjing.template_xianjing.941",
+            "color": "green",
+            "translate": "json.kards-dlc.dialog.kard.xianjing.template_xianjing.1380",
             "fallback": "返回§c陷阱§a牌库-§5DLC"
         },
         "action": {

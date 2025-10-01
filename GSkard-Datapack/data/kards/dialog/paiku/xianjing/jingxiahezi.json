@@ -1,7 +1,16 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.122",
+        "extra": [
+            {
+                "color": "dark_aqua",
+                "translate": "json.kards.dialog.paiku.xianjing.jingxiahezi.1067",
+                "fallback": "惊吓盒子"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.227",
         "fallback": "5K "
     },
     "external_title": {
@@ -20,7 +29,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.xianjing.hewei.663",
+                "color": "dark_aqua",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.xianjing.hewei.1057",
                 "fallback": "陷阱卡"
             },
             "width": 1024
@@ -28,7 +39,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.xianjing.hewei.664",
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.xianjing.hewei.1058",
                 "fallback": "使用后埋下陷阱 敌方在达到条件时触发 触发后失效"
             },
             "width": 1024
@@ -36,7 +49,23 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.xianjing.hewei.665",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "color": "light_purple",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.main.220",
+                        "fallback": "法术牌"
+                    },
+                    {
+                        "color": "gray",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.xianjing.hewei.1061",
+                        "fallback": "时"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.xianjing.hewei.1059",
                 "fallback": "条件：敌方任意玩家使用"
             },
             "width": 1024
@@ -44,7 +73,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.xianjing.jingxiahezi.668",
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.xianjing.jingxiahezi.1068",
                 "fallback": "触发：在敌方场地召唤加速爆炸的苦力怕"
             },
             "width": 1024
@@ -54,7 +85,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.xianjing.hewei.667",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.xianjing.hewei.1066",
             "fallback": "返回§c陷阱§a牌库"
         },
         "action": {

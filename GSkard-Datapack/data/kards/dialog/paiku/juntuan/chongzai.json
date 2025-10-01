@@ -1,7 +1,16 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "json.kards.dialog.paiku.fashu.jielue.152",
+        "extra": [
+            {
+                "color": "dark_green",
+                "translate": "json.kards.dialog.paiku.juntuan.chongzai.456",
+                "fallback": "虫灾"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.jielue.273",
         "fallback": "4K "
     },
     "external_title": {
@@ -20,7 +29,15 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.juntuan.chongzai.285",
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "gold",
+                        "translate": "json.kards.dialog.paiku.jiben.moyingman.433",
+                        "fallback": " 末影螨"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.juntuan.chongzai.457",
                 "fallback": "于每个友方单位召唤2只"
             },
             "width": 1024
@@ -28,7 +45,8 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.juntuan.chongzai.286",
+                "color": "gray",
+                "translate": "json.kards.dialog.paiku.juntuan.chongzai.458",
                 "fallback": "每次至多生成20只"
             },
             "width": 1024
@@ -38,7 +56,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.284",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.455",
             "fallback": "返回§d军团牌§a牌库"
         },
         "action": {

@@ -1,7 +1,16 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "json.kards.dialog.paiku.fashu.duming.139",
+        "extra": [
+            {
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.duming.255",
+                "fallback": "赌命"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.duming.254",
         "fallback": "0K "
     },
     "external_title": {
@@ -20,7 +29,16 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.fashu.duming.140",
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "gold",
+                        "bold": true,
+                        "translate": "json.kards.dialog.paiku.fashu.duming.257",
+                        "fallback": " 赌命"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.fashu.duming.256",
                 "fallback": "使用后与敌方1位随机玩家进行"
             },
             "width": 1024
@@ -28,7 +46,15 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.fashu.duming.141",
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "aqua",
+                        "translate": "json.kards.dialog.paiku.fashu.duming.259",
+                        "fallback": "7.5♥破甲伤害"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.fashu.duming.258",
                 "fallback": "赌命成功则对对方造成"
             },
             "width": 1024
@@ -36,7 +62,15 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.fashu.duming.142",
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "aqua",
+                        "translate": "json.kards.dialog.paiku.fashu.duming.259",
+                        "fallback": "7.5♥破甲伤害"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.fashu.duming.260",
                 "fallback": "赌命失败则对自己造成"
             },
             "width": 1024
@@ -46,7 +80,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.125",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.232",
             "fallback": "返回§d法术牌§a牌库"
         },
         "action": {

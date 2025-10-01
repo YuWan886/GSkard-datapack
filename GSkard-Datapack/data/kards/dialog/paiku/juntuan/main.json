@@ -1,7 +1,9 @@
 {
     "type": "minecraft:multi_action",
     "title": {
-        "translate": "json.kards.dialog.paiku.juntuan.main.299",
+        "color": "dark_green",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.juntuan.main.488",
         "fallback": "军团"
     },
     "external_title": {
@@ -13,7 +15,8 @@
     "can_close_with_escape": true,
     "exit_action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.fashu.main.163",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.fashu.main.290",
             "fallback": "返回§6主§a牌库"
         },
         "action": {
@@ -25,7 +28,8 @@
     "actions": [
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.juntuan.main.300",
+                "color": "dark_green",
+                "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.448",
                 "fallback": "爆炸军团"
             },
             "action": {
@@ -36,7 +40,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.juntuan.main.301",
+                "color": "dark_green",
+                "translate": "json.kards.dialog.paiku.juntuan.chongzai.456",
                 "fallback": "虫灾"
             },
             "action": {
@@ -47,7 +52,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.juntuan.main.302",
+                "color": "dark_green",
+                "translate": "json.kards.dialog.paiku.juntuan.diyuzhihuo.459",
                 "fallback": "地狱之火"
             },
             "action": {
@@ -58,7 +64,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.juntuan.main.303",
+                "color": "dark_green",
+                "translate": "json.kards.dialog.paiku.juntuan.errenchengjun.466",
                 "fallback": "二人成军"
             },
             "action": {
@@ -69,7 +76,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.juntuan.main.304",
+                "color": "dark_green",
+                "translate": "json.kards.dialog.paiku.juntuan.fengyongerzhi.472",
                 "fallback": "蜂拥而至"
             },
             "action": {
@@ -80,7 +88,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.juntuan.main.305",
+                "color": "dark_green",
+                "translate": "json.kards.dialog.paiku.juntuan.jieluexiaodui.478",
                 "fallback": "劫掠小队"
             },
             "action": {
@@ -91,7 +100,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.juntuan.main.306",
+                "color": "dark_green",
+                "translate": "json.kards.dialog.paiku.juntuan.jufengguojing.485",
                 "fallback": "飓风过境"
             },
             "action": {
@@ -102,7 +112,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.juntuan.main.307",
+                "color": "dark_green",
+                "translate": "json.kards.dialog.paiku.juntuan.main.489",
                 "fallback": "猛毒爪牙"
             },
             "action": {
@@ -113,7 +124,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.juntuan.main.308",
+                "color": "dark_green",
+                "translate": "json.kards.dialog.paiku.juntuan.main.490",
                 "fallback": "末日来临"
             },
             "action": {
@@ -124,7 +136,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.juntuan.main.309",
+                "color": "dark_green",
+                "translate": "json.kards.dialog.paiku.juntuan.main.491",
                 "fallback": "三人成众"
             },
             "action": {
@@ -135,7 +148,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.juntuan.main.310",
+                "color": "dark_green",
+                "translate": "json.kards.dialog.paiku.juntuan.main.492",
                 "fallback": "杀手小队"
             },
             "action": {
@@ -146,7 +160,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.juntuan.main.311",
+                "color": "dark_green",
+                "translate": "json.kards.dialog.paiku.juntuan.main.493",
                 "fallback": "深海恐惧"
             },
             "action": {
@@ -157,7 +172,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.juntuan.main.312",
+                "color": "dark_green",
+                "translate": "json.kards.dialog.paiku.juntuan.main.494",
                 "fallback": "尸帝"
             },
             "action": {
@@ -168,7 +184,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.juntuan.main.313",
+                "color": "dark_green",
+                "translate": "json.kards.dialog.paiku.juntuan.main.495",
                 "fallback": "嗜血狼群"
             },
             "action": {
@@ -179,7 +196,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.juntuan.main.314",
+                "color": "dark_green",
+                "translate": "json.kards.dialog.paiku.juntuan.main.496",
                 "fallback": "死灵巫师"
             },
             "action": {
@@ -190,7 +208,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.juntuan.main.315",
+                "color": "dark_green",
+                "translate": "json.kards.dialog.paiku.juntuan.main.497",
                 "fallback": "亡灵大军"
             },
             "action": {
@@ -201,7 +220,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.juntuan.main.316",
+                "color": "dark_green",
+                "translate": "json.kards.dialog.paiku.juntuan.main.498",
                 "fallback": "我即浪潮"
             },
             "action": {
@@ -212,7 +232,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.juntuan.main.317",
+                "color": "dark_green",
+                "translate": "json.kards.dialog.paiku.juntuan.main.499",
                 "fallback": "巫法联会"
             },
             "action": {
@@ -223,7 +244,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.juntuan.main.318",
+                "color": "dark_green",
+                "translate": "json.kards.dialog.paiku.juntuan.main.500",
                 "fallback": "无人机群"
             },
             "action": {
@@ -234,7 +256,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.juntuan.main.319",
+                "color": "dark_green",
+                "translate": "json.kards.dialog.paiku.juntuan.main.501",
                 "fallback": "舞王僵尸"
             },
             "action": {
@@ -245,7 +268,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.juntuan.main.320",
+                "color": "dark_green",
+                "translate": "json.kards.dialog.paiku.juntuan.main.502",
                 "fallback": "下界入侵"
             },
             "action": {
@@ -256,7 +280,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.juntuan.main.321",
+                "color": "dark_green",
+                "translate": "json.kards.dialog.paiku.juntuan.main.503",
                 "fallback": "小鬼当家"
             },
             "action": {
@@ -267,7 +292,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.juntuan.main.322",
+                "color": "dark_green",
+                "translate": "json.kards.dialog.paiku.juntuan.main.504",
                 "fallback": "小猪快跑"
             },
             "action": {
@@ -278,7 +304,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.juntuan.main.323",
+                "color": "dark_green",
+                "translate": "json.kards.dialog.paiku.juntuan.main.505",
                 "fallback": "行尸走肉"
             },
             "action": {
@@ -289,7 +316,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.juntuan.main.324",
+                "color": "dark_green",
+                "translate": "json.kards.dialog.paiku.juntuan.main.506",
                 "fallback": "灾厄双星"
             },
             "action": {
@@ -300,7 +328,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.fashu.main.206",
+                "color": "dark_green",
+                "translate": "json.kards.dialog.paiku.fashu.main.321",
                 "fallback": "DLC"
             },
             "action": {

@@ -1,7 +1,9 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "json.kards.dialog.paiku.wangzhibaoku.main.549",
+        "color": "gray",
+        "italic": false,
+        "translate": "json.kards.dialog.paiku.wangzhibaoku.main.892",
         "fallback": "死神之镰"
     },
     "external_title": {
@@ -20,7 +22,16 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.sishenzhilian.580",
+                "color": "red",
+                "italic": false,
+                "extra": [
+                    {
+                        "color": "gray",
+                        "translate": "json.kards.dialog.paiku.wangzhibaoku.sishenzhilian.924",
+                        "fallback": " II"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.sishenzhilian.923",
                 "fallback": "嗜血"
             },
             "width": 1024
@@ -28,7 +39,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.sishenzhilian.581",
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.sishenzhilian.925",
                 "fallback": "每次攻击有30%概率恢复1♥"
             },
             "width": 1024
@@ -36,7 +49,17 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.sishenzhilian.582",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "color": "gray",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.wangzhibaoku.sishenzhilian.927",
+                        "fallback": "攻击时若目标生命低于10% 视为直接击杀"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.sishenzhilian.926",
                 "fallback": "处决\n"
             },
             "width": 1024
@@ -44,7 +67,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.sishenzhilian.583",
+                "color": "dark_purple",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.sishenzhilian.928",
                 "fallback": "灵魂打击"
             },
             "width": 1024
@@ -52,7 +77,17 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.sishenzhilian.584",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "color": "white",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.wangzhibaoku.kunanyaolan.861",
+                        "fallback": "真实伤害"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.sishenzhilian.929",
                 "fallback": "每次攻击对目标额外造成其1%最大生命的"
             },
             "width": 1024
@@ -60,7 +95,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.sishenzhilian.585",
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.sishenzhilian.930",
                 "fallback": "CD1.25s"
             },
             "width": 1024
@@ -68,7 +105,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.sishenzhilian.586",
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.sishenzhilian.931",
                 "fallback": "灵魂收割"
             },
             "width": 1024
@@ -76,7 +115,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.sishenzhilian.587",
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.sishenzhilian.932",
                 "fallback": "击杀生物后获得1个灵魂"
             },
             "width": 1024
@@ -84,7 +125,8 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.sishenzhilian.588",
+                "color": "gray",
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.sishenzhilian.933",
                 "fallback": "\n\n一个大盗从死神手上盗走了它...小心被死神找上了门"
             },
             "width": 1024
@@ -94,7 +136,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.wangzhibaoku.diaolingtaidao.497",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.wangzhibaoku.diaolingtaidao.818",
             "fallback": "返回§6王之宝库"
         },
         "action": {

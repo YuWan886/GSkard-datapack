@@ -1,6 +1,9 @@
 {
     "type": "notice",
     "title": {
+        "type": "text",
+        "color": "gold",
+        "bold": true,
         "translate": "json.kards.dialog.first_join.1.71",
         "fallback": ""
     },
@@ -20,6 +23,28 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "green",
+                        "bold": true,
+                        "translate": "json.kards.dialog.first_join.1.74",
+                        "fallback": "GSkard\n\n"
+                    },
+                    {
+                        "color": "gray",
+                        "bold": true,
+                        "translate": "json.kards.dialog.first_join.1.75",
+                        "fallback": "在游玩开始之前\n\n"
+                    },
+                    {
+                        "color": "gold",
+                        "bold": true,
+                        "translate": "json.kards.dialog.first_join.1.76",
+                        "fallback": "在游玩开始之前 请检查您的材质包"
+                    }
+                ],
+                "bold": true,
                 "translate": "json.kards.dialog.first_join.1.73",
                 "fallback": "欢迎来到\n\n"
             },
@@ -36,7 +61,23 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.first_join.1.74",
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "green",
+                        "bold": true,
+                        "translate": "json.kards.dialog.first_join.1.78",
+                        "fallback": "若您材质包加载正确 那么应该看到的是\n\n"
+                    },
+                    {
+                        "color": "gray",
+                        "bold": true,
+                        "translate": "json.kards.dialog.first_join.1.79",
+                        "fallback": "就被管家活活打断了双腿.jpg\n"
+                    }
+                ],
+                "bold": true,
+                "translate": "json.kards.dialog.first_join.1.77",
                 "fallback": "如上\n\n"
             },
             "width": 1024
@@ -44,7 +85,29 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.first_join.1.75",
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "gold",
+                        "bold": true,
+                        "translate": "json.kards.dialog.first_join.1.81",
+                        "fallback": "界面尺寸"
+                    },
+                    {
+                        "color": "gray",
+                        "bold": true,
+                        "translate": "json.kards.dialog.first_join.1.82",
+                        "fallback": "调整至"
+                    },
+                    {
+                        "color": "gold",
+                        "bold": true,
+                        "translate": "json.kards.dialog.first_join.1.83",
+                        "fallback": "2"
+                    }
+                ],
+                "bold": true,
+                "translate": "json.kards.dialog.first_join.1.80",
                 "fallback": "建议将"
             },
             "width": 1024
@@ -54,7 +117,9 @@
     "can_close_with_escape": false,
     "action": {
         "label": {
-            "translate": "json.kards.dialog.first_join.1.76",
+            "color": "green",
+            "bold": true,
+            "translate": "json.kards.dialog.first_join.1.84",
             "fallback": "下一页"
         },
         "action": {

@@ -1,7 +1,17 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.122",
+        "extra": [
+            {
+                "color": "white",
+                "bold": true,
+                "translate": "json.kards.dialog.paiku.shenji.jinfajiejie.622",
+                "fallback": "禁法结界"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.227",
         "fallback": "5K "
     },
     "external_title": {
@@ -20,7 +30,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.jiaocheng.wanfa.2.105",
+                "color": "white",
+                "italic": false,
+                "translate": "json.kards.dialog.jiaocheng.wanfa.2.153",
                 "fallback": "神迹牌"
             },
             "width": 1024
@@ -28,7 +40,17 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.shenji.jinfajiejie.373",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "color": "red",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.shenji.jinfajiejie.624",
+                        "fallback": "费用减半"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.shenji.jinfajiejie.623",
                 "fallback": "敌方下回合"
             },
             "width": 1024
@@ -38,7 +60,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.shenji.fanxiangfeileishen.365",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.shenji.fanxiangfeileishen.605",
             "fallback": "返回§d神迹§a牌库"
         },
         "action": {

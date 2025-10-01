@@ -1,7 +1,16 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "json.kards.dialog.paiku.fashu.chunnuanhuakai.130",
+        "extra": [
+            {
+                "color": "gold",
+                "translate": "json.kards.dialog.paiku.zhuangbei.jianduandunpai.1186",
+                "fallback": "尖端盾牌"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.chunnuanhuakai.241",
         "fallback": "8K "
     },
     "external_title": {
@@ -20,7 +29,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.main.117",
+                "color": "gold",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.main.222",
                 "fallback": "装备牌"
             },
             "width": 1024
@@ -28,7 +39,17 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.zhuangbei.bianxiehuosai.769",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "color": "gold",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.zhuangbei.jianduandunpai.1186",
+                        "fallback": "尖端盾牌"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.zhuangbei.bianxiehuosai.1178",
                 "fallback": "获得一个"
             },
             "width": 1024
@@ -36,7 +57,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.zhuangbei.jianduandunpai.773",
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.zhuangbei.jianduandunpai.1187",
                 "fallback": "使用时能够格挡25°的伤害 每次格挡后禁用0.2s"
             },
             "width": 1024
@@ -46,7 +69,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.zhuangbei.bianxiehuosai.770",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.zhuangbei.bianxiehuosai.1180",
             "fallback": "返回§c装备§a牌库"
         },
         "action": {

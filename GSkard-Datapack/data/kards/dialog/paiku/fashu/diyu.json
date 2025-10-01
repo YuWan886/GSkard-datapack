@@ -1,7 +1,16 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "json.kards.dialog.paiku.fashu.diyu.136",
+        "extra": [
+            {
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.diyu.251",
+                "fallback": "地狱"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.diyu.250",
         "fallback": "9K "
     },
     "external_title": {
@@ -20,7 +29,8 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.fashu.diyu.137",
+                "color": "gray",
+                "translate": "json.kards.dialog.paiku.fashu.diyu.252",
                 "fallback": "在地方场地周围放置一圈岩浆 怪物获得火焰抗性效果"
             },
             "width": 1024
@@ -28,7 +38,8 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.fashu.diyu.138",
+                "color": "gray",
+                "translate": "json.kards.dialog.paiku.fashu.diyu.253",
                 "fallback": "持续到回合结束 不可叠加"
             },
             "width": 1024
@@ -38,7 +49,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.125",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.232",
             "fallback": "返回§d法术牌§a牌库"
         },
         "action": {

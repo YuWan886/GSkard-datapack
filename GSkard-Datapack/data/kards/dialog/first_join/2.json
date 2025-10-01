@@ -1,6 +1,9 @@
 {
     "type": "minecraft:confirmation",
     "title": {
+        "type": "text",
+        "color": "gray",
+        "bold": true,
         "translate": "json.kards.dialog.first_join.1.71",
         "fallback": ""
     },
@@ -20,7 +23,29 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.first_join.2.77",
+                "color": "gray",
+                "bold": true,
+                "extra": [
+                    {
+                        "bold": true,
+                        "color": "green",
+                        "translate": "json.kards.dialog.first_join.2.86",
+                        "fallback": "v1.46\n\n"
+                    },
+                    {
+                        "bold": true,
+                        "color": "gray",
+                        "translate": "json.kards.dialog.first_join.2.87",
+                        "fallback": "仍然建议查看教程中的\n\n"
+                    },
+                    {
+                        "bold": true,
+                        "color": "gold",
+                        "translate": "json.kards.dialog.first_join.2.88",
+                        "fallback": "| 使用卡牌 |\n\n| 资源详情 |"
+                    }
+                ],
+                "translate": "json.kards.dialog.first_join.2.85",
                 "fallback": "若您上次游玩的版本为"
             },
             "width": 1024
@@ -30,7 +55,9 @@
     "can_close_with_escape": false,
     "yes": {
         "label": {
-            "translate": "json.kards.dialog.first_join.2.78",
+            "color": "red",
+            "bold": true,
+            "translate": "json.kards.dialog.first_join.2.89",
             "fallback": "不必了，我可是牌佬"
         },
         "action": {
@@ -40,11 +67,15 @@
     },
     "no": {
         "label": {
-            "translate": "json.kards.dialog.first_join.2.79",
+            "color": "gold",
+            "bold": true,
+            "translate": "json.kards.dialog.first_join.2.90",
             "fallback": "还是再看看教程吧~"
         },
         "tooltip": {
-            "translate": "json.kards.dialog.first_join.2.80",
+            "color": "gray",
+            "bold": true,
+            "translate": "json.kards.dialog.first_join.2.91",
             "fallback": "进入教程主菜单"
         },
         "action": {

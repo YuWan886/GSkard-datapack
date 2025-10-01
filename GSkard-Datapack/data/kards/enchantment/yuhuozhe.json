@@ -1,7 +1,8 @@
 {
     "anvil_cost": 8,
     "description": {
-        "translate": "json.kards.dialog.xp_shop.enchantment.main.908",
+        "color": "red",
+        "translate": "json.kards.dialog.xp_shop.enchantment.main.1343",
         "fallback": "浴火者"
     },
     "effects": {

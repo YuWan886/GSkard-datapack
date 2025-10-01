@@ -4,7 +4,7 @@ scoreboard players operation system sishenjianglin < @a[gamemode=adventure] sish
 execute as @a[gamemode=adventure] if score @s sishenjianglin = system sishenjianglin run tag @s add sishenjianglin
 execute as @a[tag=sishenjianglin] run say 1
 title @a times 0t 6s 0t
-title @a title [{translate: "json.kards.dialog.setting.random_start.main.866", fallback: "死神降临",color:"dark_red","bold":true}]
+title @a title [{translate: "json.kards.dialog.setting.random_start.main.1289", fallback: "死神降临",color:"dark_red","bold":true}]
 schedule function kards:game/random_start/event/sishenjianglin/2 3s
 execute as @a at @s run playsound minecraft:entity.wither.spawn player @s ~ ~ ~ 100 2
 

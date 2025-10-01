@@ -1,7 +1,16 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "json.kards.dialog.paiku.fashu.guohechaiqiao.144",
+        "extra": [
+            {
+                "color": "gold",
+                "translate": "json.kards.dialog.paiku.zhuangbei.main.1207",
+                "fallback": "迅捷之羽"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.guohechaiqiao.263",
         "fallback": "3K "
     },
     "external_title": {
@@ -20,7 +29,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.main.117",
+                "color": "gold",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.main.222",
                 "fallback": "装备牌"
             },
             "width": 1024
@@ -28,7 +39,23 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.zhuangbei.bianxiehuosai.769",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "color": "gold",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.zhuangbei.main.1207",
+                        "fallback": "迅捷之羽"
+                    },
+                    {
+                        "color": "gray",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.zhuangbei.xunjiezhiyu.1227",
+                        "fallback": "(增加移速)"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.zhuangbei.bianxiehuosai.1178",
                 "fallback": "获得一个"
             },
             "width": 1024
@@ -38,7 +65,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.zhuangbei.bianxiehuosai.770",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.zhuangbei.bianxiehuosai.1180",
             "fallback": "返回§c装备§a牌库"
         },
         "action": {

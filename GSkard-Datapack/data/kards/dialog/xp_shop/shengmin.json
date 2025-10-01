@@ -1,7 +1,9 @@
 {
     "type": "minecraft:multi_action",
     "title": {
-        "translate": "json.kards.dialog.xp_shop.shengmin.885",
+        "color": "green",
+        "bold": true,
+        "translate": "json.kards.dialog.xp_shop.shengmin.1310",
         "fallback": "生命"
     },
     "external_title": {
@@ -15,11 +17,12 @@
     "actions": [
         {
             "label": {
-                "translate": "json.kards.dialog.xp_shop.shengmin.886",
+                "color": "green",
+                "translate": "json.kards.dialog.xp_shop.shengmin.1311",
                 "fallback": "回复2♥"
             },
             "tooltip": {
-                "translate": "json.kards.dialog.xp_shop.shengmin.887",
+                "translate": "json.kards.dialog.xp_shop.shengmin.1312",
                 "fallback": "消耗5级 回复2♥"
             },
             "action": {
@@ -29,11 +32,12 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.xp_shop.shengmin.888",
+                "color": "green",
+                "translate": "json.kards.dialog.xp_shop.shengmin.1313",
                 "fallback": "回复6♥"
             },
             "tooltip": {
-                "translate": "json.kards.dialog.xp_shop.shengmin.889",
+                "translate": "json.kards.dialog.xp_shop.shengmin.1314",
                 "fallback": "消耗10级 回复6♥"
             },
             "action": {
@@ -43,11 +47,12 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.xp_shop.shengmin.890",
+                "color": "green",
+                "translate": "json.kards.dialog.xp_shop.shengmin.1315",
                 "fallback": "回复15♥"
             },
             "tooltip": {
-                "translate": "json.kards.dialog.xp_shop.shengmin.891",
+                "translate": "json.kards.dialog.xp_shop.shengmin.1316",
                 "fallback": "消耗20级 回复15♥"
             },
             "action": {
@@ -57,11 +62,12 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.xp_shop.shengmin.892",
+                "color": "green",
+                "translate": "json.kards.dialog.xp_shop.shengmin.1317",
                 "fallback": "回复25♥"
             },
             "tooltip": {
-                "translate": "json.kards.dialog.xp_shop.shengmin.893",
+                "translate": "json.kards.dialog.xp_shop.shengmin.1318",
                 "fallback": "消耗30级 回复25♥"
             },
             "action": {

@@ -1,12 +1,15 @@
 {
     "type": "multi_action",
     "title": {
-        "translate": "json.kards-dlc.dialog.kard.wangzhibaoku.main.934",
+        "color": "gold",
+        "bold": true,
+        "translate": "json.kards-dlc.dialog.kard.wangzhibaoku.main.1373",
         "fallback": "王之宝库-§5DLC"
     },
     "exit_action": {
         "label": {
-            "translate": "json.kards-dlc.dialog.kard.wangzhibaoku.main.935",
+            "color": "green",
+            "translate": "json.kards-dlc.dialog.kard.wangzhibaoku.main.1374",
             "fallback": "返回§6主§a牌库-§f王之宝库"
         },
         "action": {
@@ -18,7 +21,8 @@
     "actions": [
         {
             "label": {
-                "translate": "json.kards-dlc.dialog.kard.wangzhibaoku.main.936",
+                "color": "white",
+                "translate": "json.kards-dlc.dialog.kard.wangzhibaoku.main.1375",
                 "fallback": "模板：王之宝库"
             },
             "action": {

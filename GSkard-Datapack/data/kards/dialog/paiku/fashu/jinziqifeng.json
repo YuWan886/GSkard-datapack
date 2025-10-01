@@ -1,7 +1,16 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "json.kards.dialog.paiku.fashu.guohechaiqiao.144",
+        "extra": [
+            {
+                "color": "light_purple",
+                "translate": "json.kards.advancement.advancement.jinzijue.first_use.29",
+                "fallback": "禁字启封"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.guohechaiqiao.263",
         "fallback": "3K "
     },
     "external_title": {
@@ -20,7 +29,15 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.fashu.jinziqifeng.156",
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "light_purple",
+                        "translate": "json.kards.dialog.paiku.main.220",
+                        "fallback": "法术牌"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.fashu.jinziqifeng.280",
                 "fallback": "使用后每次抽取"
             },
             "width": 1024
@@ -28,7 +45,15 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.fashu.jinziqifeng.157",
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "dark_red",
+                        "translate": "json.kards.dialog.paiku.fashu.jinziqifeng.282",
+                        "fallback": "[禁字决]"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.fashu.jinziqifeng.281",
                 "fallback": "时 有一定概率将其替换为"
             },
             "width": 1024
@@ -36,7 +61,15 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.fashu.jinziqifeng.158",
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "dark_red",
+                        "translate": "json.kards.dialog.paiku.fashu.jinziqifeng.282",
+                        "fallback": "[禁字决]"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.fashu.jinziqifeng.283",
                 "fallback": "每次使用增加10%抽取到"
             },
             "width": 1024
@@ -44,7 +77,8 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.fashu.jinziqifeng.159",
+                "color": "gray",
+                "translate": "json.kards.dialog.paiku.fashu.jinziqifeng.284",
                 "fallback": "的概率"
             },
             "width": 1024
@@ -52,7 +86,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.fashu.jinziqifeng.160",
+                "color": "dark_gray",
+                "italic": true,
+                "translate": "json.kards.dialog.paiku.fashu.jinziqifeng.285",
                 "fallback": "(最多增加至60%)"
             },
             "width": 1024
@@ -62,7 +98,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.125",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.232",
             "fallback": "返回§d法术牌§a牌库"
         },
         "action": {

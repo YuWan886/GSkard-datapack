@@ -1,7 +1,10 @@
 {
     "type": "minecraft:multi_action",
     "title": {
-        "translate": "json.kards.dialog.jiaocheng.main.81",
+        "type": "text",
+        "color": "gray",
+        "bold": true,
+        "translate": "json.kards.dialog.jiaocheng.main.92",
         "fallback": "教程主菜单"
     },
     "external_title": {
@@ -12,14 +15,53 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.jiaocheng.main.82",
+                "color": "green",
+                "extra": [
+                    {
+                        "color": "gold",
+                        "bold": true,
+                        "translate": "json.kards.dialog.jiaocheng.main.94",
+                        "fallback": "Esc键"
+                    },
+                    {
+                        "color": "green",
+                        "translate": "json.kards.dialog.jiaocheng.main.95",
+                        "fallback": "退出该界面"
+                    },
+                    {
+                        "color": "green",
+                        "translate": "json.kards.dialog.jiaocheng.main.96",
+                        "fallback": "\n\n若希望再次浏览本界面 可以直接按"
+                    },
+                    {
+                        "color": "gold",
+                        "bold": true,
+                        "translate": "json.kards.dialog.jiaocheng.main.97",
+                        "fallback": "G键"
+                    },
+                    {
+                        "color": "green",
+                        "translate": "json.kards.dialog.jiaocheng.main.98",
+                        "fallback": "打开"
+                    },
+                    {
+                        "color": "gray",
+                        "underlined": true,
+                        "bold": true,
+                        "translate": "json.kards.dialog.jiaocheng.main.99",
+                        "fallback": "\n\n建议将界面尺寸调小以更好地浏览\n\n可点击下方按钮进入对应章节"
+                    }
+                ],
+                "translate": "json.kards.dialog.jiaocheng.main.93",
                 "fallback": "你可以直接通过"
             }
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.jiaocheng.main.83",
+                "color": "gold",
+                "bold": true,
+                "translate": "json.kards.dialog.jiaocheng.main.100",
                 "fallback": "\n\n| 简介 |"
             },
             "width": 256
@@ -27,7 +69,16 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.jiaocheng.main.84",
+                "color": "gray",
+                "bold": true,
+                "extra": [
+                    {
+                        "color": "gold",
+                        "translate": "json.kards.dialog.jiaocheng.main.102",
+                        "fallback": "回合制的卡牌对战游戏\n"
+                    }
+                ],
+                "translate": "json.kards.dialog.jiaocheng.main.101",
                 "fallback": "\nGSkard是一张"
             },
             "width": 256
@@ -35,7 +86,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.jiaocheng.main.85",
+                "color": "gray",
+                "bold": true,
+                "translate": "json.kards.dialog.jiaocheng.main.103",
                 "fallback": "不同于传统的卡牌桌游\n"
             },
             "width": 256
@@ -43,7 +96,17 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.jiaocheng.main.86",
+                "color": "gray",
+                "bold": true,
+                "extra": [
+                    {
+                        "color": "gold",
+                        "bold": true,
+                        "translate": "json.kards.dialog.jiaocheng.main.105",
+                        "fallback": "卡牌召唤怪物以攻击敌方玩家\n"
+                    }
+                ],
+                "translate": "json.kards.dialog.jiaocheng.main.104",
                 "fallback": "本地图的主要攻击方式是用"
             },
             "width": 512
@@ -51,7 +114,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.jiaocheng.main.87",
+                "color": "gray",
+                "bold": true,
+                "translate": "json.kards.dialog.jiaocheng.main.106",
                 "fallback": "在怪物与玩家的碰撞中 最终活下来的一方队伍胜利\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
             },
             "width": 512
@@ -63,7 +128,8 @@
     "actions": [
         {
             "label": {
-                "translate": "json.kards.dialog.jiaocheng.main.88",
+                "color": "gold",
+                "translate": "json.kards.dialog.jiaocheng.main.107",
                 "fallback": "获取卡牌信息"
             },
             "width": 125,
@@ -74,7 +140,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.jiaocheng.main.89",
+                "color": "gold",
+                "translate": "json.kards.dialog.jiaocheng.main.108",
                 "fallback": "使用卡牌"
             },
             "width": 125,
@@ -85,7 +152,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.jiaocheng.main.90",
+                "color": "gold",
+                "translate": "json.kards.dialog.jiaocheng.main.109",
                 "fallback": "资源获取"
             },
             "width": 125,
@@ -96,7 +164,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.jiaocheng.main.91",
+                "color": "gold",
+                "translate": "json.kards.dialog.jiaocheng.main.110",
                 "fallback": "回合信息"
             },
             "width": 125,
@@ -108,11 +177,13 @@
     ],
     "exit_action": {
         "label": {
-            "translate": "json.kards.dialog.jiaocheng.main.92",
+            "color": "gold",
+            "translate": "json.kards.dialog.jiaocheng.main.111",
             "fallback": "完成教程"
         },
         "tooltip": {
-            "translate": "json.kards.dialog.jiaocheng.main.93",
+            "color": "gray",
+            "translate": "json.kards.dialog.jiaocheng.main.112",
             "fallback": "请确保阅读完毕"
         },
         "width": 125,

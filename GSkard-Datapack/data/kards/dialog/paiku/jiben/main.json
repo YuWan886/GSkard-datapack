@@ -1,7 +1,9 @@
 {
     "type": "minecraft:multi_action",
     "title": {
-        "translate": "json.kards.dialog.paiku.jiben.main.255",
+        "color": "blue",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.jiben.main.413",
         "fallback": "基本"
     },
     "external_title": {
@@ -13,7 +15,8 @@
     "can_close_with_escape": true,
     "exit_action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.fashu.main.163",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.fashu.main.290",
             "fallback": "返回§6主§a牌库"
         },
         "action": {
@@ -25,7 +28,8 @@
     "actions": [
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.jiben.main.256",
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.jiben.jiangshi.400",
                 "fallback": "僵尸"
             },
             "action": {
@@ -36,7 +40,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.jiben.main.257",
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.jiben.diaolingkulou.394",
                 "fallback": "凋零骷髅"
             },
             "action": {
@@ -47,7 +52,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.jiben.main.258",
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.jiben.ehun.398",
                 "fallback": "恶魂"
             },
             "action": {
@@ -58,7 +64,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.jiben.main.259",
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.jiben.juduzhizhu.402",
                 "fallback": "剧毒蜘蛛"
             },
             "action": {
@@ -69,7 +76,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.jiaocheng.wanfa.1.96",
+                "color": "blue",
+                "translate": "json.kards.dialog.jiaocheng.wanfa.1.115",
                 "fallback": "苦力怕"
             },
             "action": {
@@ -80,7 +88,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.jiben.main.260",
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.jiben.kulou.405",
                 "fallback": "骷髅"
             },
             "action": {
@@ -91,7 +100,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.jiben.main.261",
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.jiben.lieyanren.407",
                 "fallback": "烈焰人"
             },
             "action": {
@@ -102,7 +112,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.jiben.main.262",
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.jiben.liulangzhe.409",
                 "fallback": "流浪者"
             },
             "action": {
@@ -113,7 +124,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.jiben.main.263",
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.jiben.mafeng.411",
                 "fallback": "马蜂"
             },
             "action": {
@@ -124,7 +136,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.jiben.main.264",
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.jiben.main.414",
                 "fallback": "蛮兵"
             },
             "action": {
@@ -135,7 +148,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.jiben.main.265",
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.jiben.main.415",
                 "fallback": "蜜蜂"
             },
             "action": {
@@ -146,7 +160,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.jiben.main.266",
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.jiben.main.416",
                 "fallback": "末影螨"
             },
             "action": {
@@ -157,7 +172,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.jiben.main.267",
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.jiben.main.417",
                 "fallback": "末影人"
             },
             "action": {
@@ -168,7 +184,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.jiben.main.268",
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.jiben.main.418",
                 "fallback": "恼鬼"
             },
             "action": {
@@ -179,7 +196,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.jiben.main.269",
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.jiben.main.419",
                 "fallback": "溺尸"
             },
             "action": {
@@ -190,7 +208,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.jiben.main.270",
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.jiben.main.420",
                 "fallback": "女巫"
             },
             "action": {
@@ -201,7 +220,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.jiben.main.271",
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.jiben.main.421",
                 "fallback": "杀手兔"
             },
             "action": {
@@ -212,7 +232,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.jiben.main.272",
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.jiben.main.422",
                 "fallback": "卫道士"
             },
             "action": {
@@ -223,7 +244,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.jiben.main.273",
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.jiben.main.423",
                 "fallback": "无人机"
             },
             "action": {
@@ -234,7 +256,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.jiben.main.274",
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.jiben.main.424",
                 "fallback": "小幻翼"
             },
             "action": {
@@ -245,7 +268,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.jiben.main.275",
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.jiben.main.425",
                 "fallback": "旋风人"
             },
             "action": {
@@ -256,7 +280,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.jiben.main.276",
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.jiben.main.426",
                 "fallback": "疣猪兽"
             },
             "action": {
@@ -267,7 +292,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.jiben.main.277",
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.jiben.main.427",
                 "fallback": "远古守卫者"
             },
             "action": {
@@ -278,7 +304,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.jiben.main.278",
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.jiben.main.428",
                 "fallback": "沼骸"
             },
             "action": {
@@ -289,7 +316,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.jiben.main.279",
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.jiben.main.429",
                 "fallback": "蜘蛛"
             },
             "action": {
@@ -300,7 +328,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.jiben.main.280",
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.jiben.main.430",
                 "fallback": "猪灵"
             },
             "action": {
@@ -311,7 +340,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.fashu.main.206",
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.fashu.main.321",
                 "fallback": "DLC"
             },
             "action": {

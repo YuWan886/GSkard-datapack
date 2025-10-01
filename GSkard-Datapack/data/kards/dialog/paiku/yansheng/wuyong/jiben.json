@@ -1,7 +1,9 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "json.kards.dialog.paiku.yansheng.wuyong.jiben.765",
+        "color": "blue",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.yansheng.wuyong.jiben.1173",
         "fallback": "无用之基"
     },
     "external_title": {
@@ -20,7 +22,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.yansheng.wuyong.jiben.766",
+                "color": "blue",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.yansheng.wuyong.jiben.1174",
                 "fallback": "衍生牌-基本牌"
             },
             "width": 1024
@@ -28,7 +32,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.yansheng.wuyong.fashu.763",
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.yansheng.wuyong.fashu.1171",
                 "fallback": "没有作用"
             },
             "width": 1024
@@ -36,7 +42,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.fashu.wuyong.233",
+                "color": "gold",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.fashu.wuyong.362",
                 "fallback": "可以用来触发陷阱"
             },
             "width": 1024
@@ -46,7 +54,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.yansheng.wuyong.fashu.764",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.yansheng.wuyong.fashu.1172",
             "fallback": "返回§6无用牌系列"
         },
         "action": {

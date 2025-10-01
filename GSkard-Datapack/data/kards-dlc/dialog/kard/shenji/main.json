@@ -1,12 +1,15 @@
 {
     "type": "minecraft:multi_action",
     "title": {
-        "translate": "json.kards-dlc.dialog.kard.shenji.main.926",
+        "color": "white",
+        "bold": true,
+        "translate": "json.kards-dlc.dialog.kard.shenji.main.1365",
         "fallback": "神迹-§5DLC"
     },
     "exit_action": {
         "label": {
-            "translate": "json.kards-dlc.dialog.kard.shenji.main.927",
+            "color": "green",
+            "translate": "json.kards-dlc.dialog.kard.shenji.main.1366",
             "fallback": "返回§6主§a牌库-§f神迹"
         },
         "action": {
@@ -18,7 +21,8 @@
     "actions": [
         {
             "label": {
-                "translate": "json.kards-dlc.dialog.kard.shenji.main.928",
+                "color": "white",
+                "translate": "json.kards-dlc.dialog.kard.shenji.main.1367",
                 "fallback": "模板：神迹"
             },
             "action": {

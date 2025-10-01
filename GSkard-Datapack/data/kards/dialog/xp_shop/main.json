@@ -1,7 +1,9 @@
 {
     "type": "minecraft:multi_action",
     "title": {
-        "translate": "json.kards.dialog.xp_shop.main.878",
+        "color": "gold",
+        "bold": true,
+        "translate": "json.kards.dialog.xp_shop.main.1303",
         "fallback": "    商店"
     },
     "external_title": {
@@ -12,7 +14,7 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.xp_shop.main.879",
+                "translate": "json.kards.dialog.xp_shop.main.1304",
                 "fallback": "\n\n\n\n\n\n\n"
             }
         },
@@ -27,7 +29,7 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.xp_shop.main.880",
+                "translate": "json.kards.dialog.xp_shop.main.1305",
                 "fallback": "\n"
             }
         }
@@ -38,11 +40,12 @@
     "actions": [
         {
             "label": {
-                "translate": "json.kards.dialog.xp_shop.main.881",
+                "color": "green",
+                "translate": "json.kards.dialog.xp_shop.main.1306",
                 "fallback": "天赋商店"
             },
             "tooltip": {
-                "translate": "json.kards.dialog.xp_shop.main.882",
+                "translate": "json.kards.dialog.xp_shop.main.1307",
                 "fallback": "选择或升级天赋"
             },
             "action": {
@@ -53,11 +56,12 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.xp_shop.main.883",
+                "color": "gold",
+                "translate": "json.kards.dialog.xp_shop.main.1308",
                 "fallback": "经验商店"
             },
             "tooltip": {
-                "translate": "json.kards.dialog.xp_shop.main.884",
+                "translate": "json.kards.dialog.xp_shop.main.1309",
                 "fallback": "购买附魔书"
             },
             "action": {
