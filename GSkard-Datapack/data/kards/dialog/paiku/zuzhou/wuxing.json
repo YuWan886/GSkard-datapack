@@ -1,7 +1,16 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "json.kards.dialog.paiku.fashu.jielue.152",
+        "extra": [
+            {
+                "color": "dark_gray",
+                "translate": "json.kards.dialog.paiku.zuzhou.main.1246",
+                "fallback": "无形"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.jielue.273",
         "fallback": "4K "
     },
     "external_title": {
@@ -20,7 +29,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.main.118",
+                "color": "dark_gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.main.223",
                 "fallback": "诅咒牌"
             },
             "width": 1024
@@ -28,7 +39,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.zuzhou.wuxing.831",
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.zuzhou.wuxing.1251",
                 "fallback": "给敌方场地怪物隐身 持续5s"
             },
             "width": 1024
@@ -38,7 +51,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.zuzhou.chengmo.811",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.zuzhou.chengmo.1232",
             "fallback": "返回§c诅咒§a牌库"
         },
         "action": {

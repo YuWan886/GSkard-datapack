@@ -1,7 +1,16 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.122",
+        "extra": [
+            {
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.228",
+                "fallback": "背水一战"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.227",
         "fallback": "5K "
     },
     "external_title": {
@@ -20,7 +29,15 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.123",
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "gold",
+                        "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.230",
+                        "fallback": " 此外队伍中每有一个玩家死亡 你就获得10点数 抽2张牌"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.229",
                 "fallback": "抽2张牌"
             },
             "width": 1024
@@ -28,7 +45,8 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.124",
+                "color": "gray",
+                "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.231",
                 "fallback": "最多获得30K 8张牌"
             },
             "width": 1024
@@ -38,7 +56,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.125",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.232",
             "fallback": "返回§d法术牌§a牌库"
         },
         "action": {

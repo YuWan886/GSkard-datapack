@@ -1,7 +1,9 @@
 {
     "type": "minecraft:multi_action",
     "title": {
-        "translate": "json.kards.dialog.paiku.zuzhou.main.817",
+        "color": "dark_gray",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.zuzhou.main.1243",
         "fallback": "诅咒"
     },
     "external_title": {
@@ -13,7 +15,8 @@
     "can_close_with_escape": true,
     "exit_action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.fashu.main.163",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.fashu.main.290",
             "fallback": "返回§6主§a牌库"
         },
         "action": {
@@ -25,7 +28,8 @@
     "actions": [
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.zuzhou.main.818",
+                "color": "dark_gray",
+                "translate": "json.kards.dialog.paiku.zuzhou.chengmo.1230",
                 "fallback": "沉默"
             },
             "action": {
@@ -36,7 +40,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.zuzhou.main.819",
+                "color": "dark_gray",
+                "translate": "json.kards.dialog.paiku.zuzhou.diandao.1233",
                 "fallback": "颠倒"
             },
             "action": {
@@ -47,7 +52,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.zuzhou.main.820",
+                "color": "dark_gray",
+                "translate": "json.kards.dialog.paiku.zuzhou.duantui.1235",
                 "fallback": "断腿"
             },
             "action": {
@@ -58,7 +64,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.zuzhou.main.821",
+                "color": "dark_gray",
+                "translate": "json.kards.dialog.paiku.zuzhou.hunluan.1237",
                 "fallback": "混乱"
             },
             "action": {
@@ -69,7 +76,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.zuzhou.main.822",
+                "color": "dark_gray",
+                "translate": "json.kards.dialog.paiku.zuzhou.jieduan.1239",
                 "fallback": "截断"
             },
             "action": {
@@ -80,7 +88,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.zuzhou.main.823",
+                "color": "dark_gray",
+                "translate": "json.kards.dialog.paiku.zuzhou.kujie.1241",
                 "fallback": "枯竭"
             },
             "action": {
@@ -91,7 +100,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.zuzhou.main.824",
+                "color": "dark_gray",
+                "translate": "json.kards.dialog.paiku.zuzhou.main.1244",
                 "fallback": "屏蔽"
             },
             "action": {
@@ -102,7 +112,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.zuzhou.main.825",
+                "color": "dark_gray",
+                "translate": "json.kards.dialog.paiku.zuzhou.main.1245",
                 "fallback": "无力"
             },
             "action": {
@@ -113,7 +124,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.zuzhou.main.826",
+                "color": "dark_gray",
+                "translate": "json.kards.dialog.paiku.zuzhou.main.1246",
                 "fallback": "无形"
             },
             "action": {
@@ -124,7 +136,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.zuzhou.main.827",
+                "color": "dark_gray",
+                "translate": "json.kards.dialog.paiku.zuzhou.main.1247",
                 "fallback": "障眼"
             },
             "action": {
@@ -135,7 +148,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.zuzhou.main.828",
+                "color": "dark_gray",
+                "translate": "json.kards.dialog.paiku.zuzhou.main.1248",
                 "fallback": "重伤"
             },
             "action": {
@@ -146,7 +160,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.fashu.main.206",
+                "color": "dark_gray",
+                "translate": "json.kards.dialog.paiku.fashu.main.321",
                 "fallback": "DLC"
             },
             "action": {

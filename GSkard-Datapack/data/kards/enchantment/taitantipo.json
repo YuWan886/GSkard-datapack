@@ -2,7 +2,8 @@
     "anvil_cost": 12,
     "supported_items": "#chest_armor",
     "description": {
-        "translate": "json.kards.dialog.xp_shop.enchantment.main.901",
+        "color": "green",
+        "translate": "json.kards.dialog.xp_shop.enchantment.main.1332",
         "fallback": "泰坦体魄"
     },
     "effects": {

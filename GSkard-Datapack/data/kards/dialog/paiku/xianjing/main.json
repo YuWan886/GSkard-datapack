@@ -1,7 +1,9 @@
 {
     "type": "minecraft:multi_action",
     "title": {
-        "translate": "json.kards.dialog.paiku.xianjing.main.670",
+        "color": "dark_aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.xianjing.main.1071",
         "fallback": "陷阱"
     },
     "external_title": {
@@ -13,7 +15,8 @@
     "can_close_with_escape": true,
     "exit_action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.fashu.main.163",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.fashu.main.290",
             "fallback": "返回§6主§a牌库"
         },
         "action": {
@@ -25,7 +28,8 @@
     "actions": [
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.xianjing.main.671",
+                "color": "dark_aqua",
+                "translate": "json.kards.dialog.paiku.xianjing.hewei.1056",
                 "fallback": "合围"
             },
             "action": {
@@ -36,7 +40,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.xianjing.main.672",
+                "color": "dark_aqua",
+                "translate": "json.kards.dialog.paiku.xianjing.jingxiahezi.1067",
                 "fallback": "惊吓盒子"
             },
             "action": {
@@ -47,7 +52,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.xianjing.main.673",
+                "color": "dark_aqua",
+                "translate": "json.kards.dialog.paiku.xianjing.laizishenchu.1069",
                 "fallback": "来自深处"
             },
             "action": {
@@ -58,7 +64,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.xianjing.main.674",
+                "color": "dark_aqua",
+                "translate": "json.kards.dialog.paiku.xianjing.main.1072",
                 "fallback": "魔力腐蚀"
             },
             "action": {
@@ -69,7 +76,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.xianjing.main.675",
+                "color": "dark_aqua",
+                "translate": "json.kards.dialog.paiku.xianjing.main.1073",
                 "fallback": "千钧一发"
             },
             "action": {
@@ -80,7 +88,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.xianjing.main.676",
+                "color": "dark_aqua",
+                "translate": "json.kards.dialog.paiku.xianjing.main.1074",
                 "fallback": "轻虑浅谋"
             },
             "action": {
@@ -91,7 +100,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.xianjing.main.677",
+                "color": "dark_aqua",
+                "translate": "json.kards.dialog.paiku.xianjing.main.1075",
                 "fallback": "施法小鬼"
             },
             "action": {
@@ -102,7 +112,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.xianjing.main.678",
+                "color": "dark_aqua",
+                "translate": "json.kards.dialog.paiku.xianjing.main.1076",
                 "fallback": "术法失效"
             },
             "action": {
@@ -113,7 +124,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.xianjing.main.679",
+                "color": "dark_aqua",
+                "translate": "json.kards.dialog.paiku.xianjing.main.1077",
                 "fallback": "殊死防守"
             },
             "action": {
@@ -124,7 +136,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.xianjing.main.680",
+                "color": "dark_aqua",
+                "translate": "json.kards.dialog.paiku.xianjing.main.1078",
                 "fallback": "损耗过度"
             },
             "action": {
@@ -135,7 +148,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.xianjing.main.681",
+                "color": "dark_aqua",
+                "translate": "json.kards.dialog.paiku.xianjing.main.1079",
                 "fallback": "偷梁换柱"
             },
             "action": {
@@ -146,7 +160,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.xianjing.main.682",
+                "color": "dark_aqua",
+                "translate": "json.kards.dialog.paiku.xianjing.main.1080",
                 "fallback": "遥远的桥"
             },
             "action": {
@@ -157,7 +172,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.xianjing.main.683",
+                "color": "dark_aqua",
+                "translate": "json.kards.dialog.paiku.xianjing.main.1081",
                 "fallback": "诱敌"
             },
             "action": {
@@ -168,7 +184,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.fashu.main.206",
+                "color": "dark_aqua",
+                "translate": "json.kards.dialog.paiku.fashu.main.321",
                 "fallback": "DLC"
             },
             "action": {

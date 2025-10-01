@@ -1,12 +1,15 @@
 {
     "type": "multi_action",
     "title": {
-        "translate": "json.kards-dlc.dialog.kard.jiben.main.918",
+        "color": "blue",
+        "bold": true,
+        "translate": "json.kards-dlc.dialog.kard.jiben.main.1357",
         "fallback": "基本-§5DLC"
     },
     "exit_action": {
         "label": {
-            "translate": "json.kards-dlc.dialog.kard.jiben.main.919",
+            "color": "green",
+            "translate": "json.kards-dlc.dialog.kard.jiben.main.1358",
             "fallback": "返回§6主§a牌库-§9基本"
         },
         "action": {
@@ -18,7 +21,8 @@
     "actions": [
         {
             "label": {
-                "translate": "json.kards-dlc.dialog.kard.jiben.main.920",
+                "color": "blue",
+                "translate": "json.kards-dlc.dialog.kard.jiben.main.1359",
                 "fallback": "模板：基本"
             },
             "action": {

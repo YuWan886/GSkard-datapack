@@ -1,7 +1,16 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "json.kards.dialog.paiku.juntuan.shenghaikongju.333",
+        "extra": [
+            {
+                "color": "dark_green",
+                "translate": "json.kards.dialog.paiku.juntuan.main.497",
+                "fallback": "亡灵大军"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.juntuan.shenghaikongju.523",
         "fallback": "10K "
     },
     "external_title": {
@@ -20,7 +29,25 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.juntuan.errenchengjun.289",
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "gold",
+                        "translate": "json.kards.dialog.paiku.jiben.kulou.406",
+                        "fallback": " 骷髅"
+                    },
+                    {
+                        "color": "gray",
+                        "translate": "json.kards.dialog.paiku.juntuan.wanglingdajun.552",
+                        "fallback": " 和2只"
+                    },
+                    {
+                        "color": "gold",
+                        "translate": "json.kards.dialog.paiku.jiben.diaolingkulou.396",
+                        "fallback": " 凋零骷髅"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.juntuan.errenchengjun.467",
                 "fallback": "召唤2只"
             },
             "width": 1024
@@ -28,7 +55,20 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.juntuan.wanglingdajun.347",
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "blue",
+                        "translate": "json.kards.dialog.paiku.juntuan.wanglingdajun.554",
+                        "fallback": " [恶魂]"
+                    },
+                    {
+                        "color": "gray",
+                        "translate": "json.kards.dialog.paiku.juntuan.wanglingdajun.555",
+                        "fallback": " 自动消耗1张并额外消耗4K"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.juntuan.wanglingdajun.553",
                 "fallback": "若背包有基本牌"
             },
             "width": 1024
@@ -36,7 +76,25 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.juntuan.wanglingdajun.348",
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "gold",
+                        "translate": "json.kards.dialog.paiku.juntuan.wanglingdajun.557",
+                        "fallback": " 为远程攻击"
+                    },
+                    {
+                        "color": "gray",
+                        "translate": "json.kards.dialog.paiku.juntuan.wanglingdajun.558",
+                        "fallback": " 并召唤1只"
+                    },
+                    {
+                        "color": "gold",
+                        "translate": "json.kards.dialog.paiku.juntuan.wanglingdajun.559",
+                        "fallback": " 快乐恶魂为坐骑令召唤的生物骑乘"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.juntuan.wanglingdajun.556",
                 "fallback": "改凋零骷髅"
             },
             "width": 1024
@@ -46,7 +104,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.284",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.455",
             "fallback": "返回§d军团牌§a牌库"
         },
         "action": {

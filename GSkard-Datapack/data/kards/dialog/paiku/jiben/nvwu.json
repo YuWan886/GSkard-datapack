@@ -1,7 +1,16 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "json.kards.dialog.paiku.fashu.jielue.152",
+        "extra": [
+            {
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.jiben.main.420",
+                "fallback": "女巫"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.jielue.273",
         "fallback": "4K "
     },
     "external_title": {
@@ -20,7 +29,15 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.jiben.diaolingkulou.253",
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "gold",
+                        "translate": "json.kards.dialog.paiku.jiben.nvwu.437",
+                        "fallback": " 女巫"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.jiben.diaolingkulou.395",
                 "fallback": "召唤1只"
             },
             "width": 1024
@@ -30,7 +47,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.jiben.diaolingkulou.254",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.jiben.diaolingkulou.397",
             "fallback": "返回§d基本牌§a牌库"
         },
         "action": {

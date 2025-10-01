@@ -1,7 +1,17 @@
 {
     "type": "notice",
     "title": {
-        "translate": "json.kards.dialog.paiku.fashu.jielue.152",
+        "extra": [
+            {
+                "color": "white",
+                "bold": true,
+                "translate": "json.kards-dlc.dialog.kard.shenji.main.1367",
+                "fallback": "模板：神迹"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.jielue.273",
         "fallback": "4K "
     },
     "body": [
@@ -16,7 +26,9 @@
         {
             "type": "plain_message",
             "contents": {
-                "translate": "json.kards.dialog.jiaocheng.wanfa.2.105",
+                "color": "white",
+                "italic": false,
+                "translate": "json.kards.dialog.jiaocheng.wanfa.2.153",
                 "fallback": "神迹牌"
             },
             "width": 1024
@@ -24,7 +36,17 @@
         {
             "type": "plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.fashu.jinjidiaoqian.154",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "color": "gold",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.shenji.huoliquankai.616",
+                        "fallback": "15K"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.fashu.jinjidiaoqian.277",
                 "fallback": "获得"
             },
             "width": 1024
@@ -32,7 +54,17 @@
         {
             "type": "plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.shenji.huoliquankai.370",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "color": "gold",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.shenji.huoliquankai.618",
+                        "fallback": "使队伍所有玩家获得10K"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.shenji.huoliquankai.617",
                 "fallback": "若友方存活玩家小于等于2 则额外"
             },
             "width": 1024
@@ -40,7 +72,18 @@
         {
             "type": "plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.shenji.huoliquankai.371",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "color": "dark_aqua",
+                        "italic": false,
+                        "bold": true,
+                        "translate": "json.kards.dialog.paiku.shenji.huoliquankai.620",
+                        "fallback": "超频"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.shenji.huoliquankai.619",
                 "fallback": "使用后本回合内获得"
             },
             "width": 1024
@@ -48,7 +91,9 @@
         {
             "type": "plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.shenji.huoliquankai.372",
+                "color": "dark_gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.shenji.huoliquankai.621",
                 "fallback": "超频:每使用1张牌获得1K,使用[法术牌][装备牌]会额外获得1Kmax."
             },
             "width": 1024
@@ -56,7 +101,8 @@
     ],
     "action": {
         "label": {
-            "translate": "json.kards-dlc.dialog.kard.shenji.template_shenji.929",
+            "color": "green",
+            "translate": "json.kards-dlc.dialog.kard.shenji.template_shenji.1368",
             "fallback": "返回§d神迹§a牌库-§5DLC"
         },
         "action": {

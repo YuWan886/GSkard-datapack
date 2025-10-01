@@ -1,7 +1,16 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "json.kards.dialog.paiku.fashu.sijiruchun.222",
+        "extra": [
+            {
+                "color": "dark_green",
+                "translate": "json.kards.dialog.paiku.juntuan.main.496",
+                "fallback": "死灵巫师"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.sijiruchun.346",
         "fallback": "7K "
     },
     "external_title": {
@@ -20,7 +29,15 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.jiben.diaolingkulou.253",
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "gold",
+                        "translate": "json.kards.dialog.paiku.juntuan.silingwushi.542",
+                        "fallback": " 特殊的女巫"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.jiben.diaolingkulou.395",
                 "fallback": "召唤1只"
             },
             "width": 1024
@@ -28,7 +45,15 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.juntuan.main.314",
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "gold",
+                        "translate": "json.kards.dialog.paiku.juntuan.silingwushi.543",
+                        "fallback": " 不会掷出药水"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.juntuan.main.496",
                 "fallback": "死灵巫师"
             },
             "width": 1024
@@ -36,7 +61,20 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.juntuan.silingwushi.343",
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "gray",
+                        "translate": "json.kards.dialog.paiku.juntuan.silingwushi.545",
+                        "fallback": " 位于死灵巫师处生成1只"
+                    },
+                    {
+                        "color": "blue",
+                        "translate": "json.kards.dialog.paiku.juntuan.silingwushi.546",
+                        "fallback": " 死灵仆从"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.juntuan.silingwushi.544",
                 "fallback": "在场时友方单位被玩家击杀后"
             },
             "width": 1024
@@ -44,6 +82,13 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "extra": [
+                    {
+                        "color": "blue",
+                        "translate": "json.kards.dialog.paiku.juntuan.silingwushi.546",
+                        "fallback": " 死灵仆从"
+                    }
+                ],
                 "translate": "json.kards.dialog.first_join.1.71",
                 "fallback": ""
             },
@@ -52,7 +97,8 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.juntuan.silingwushi.344",
+                "color": "gold",
+                "translate": "json.kards.dialog.paiku.juntuan.silingwushi.547",
                 "fallback": "生命值1♥ 攻击力低"
             },
             "width": 1024
@@ -60,7 +106,20 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.juntuan.silingwushi.345",
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "gold",
+                        "translate": "json.kards.dialog.paiku.juntuan.silingwushi.549",
+                        "fallback": " 中毒"
+                    },
+                    {
+                        "color": "gray",
+                        "translate": "json.kards.dialog.paiku.juntuan.silingwushi.550",
+                        "fallback": " 2s"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.juntuan.silingwushi.548",
                 "fallback": "攻击附带"
             },
             "width": 1024
@@ -68,7 +127,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.juntuan.silingwushi.346",
+                "color": "dark_gray",
+                "italic": true,
+                "translate": "json.kards.dialog.paiku.juntuan.silingwushi.551",
                 "fallback": "(死灵仆从不算入击杀数)"
             },
             "width": 1024
@@ -78,7 +139,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.284",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.455",
             "fallback": "返回§d军团牌§a牌库"
         },
         "action": {

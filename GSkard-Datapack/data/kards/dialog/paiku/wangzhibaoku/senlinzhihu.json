@@ -1,7 +1,9 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "json.kards.dialog.paiku.wangzhibaoku.main.556",
+        "color": "green",
+        "italic": false,
+        "translate": "json.kards.dialog.paiku.wangzhibaoku.main.899",
         "fallback": "森林之护"
     },
     "external_title": {
@@ -23,7 +25,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.senlinzhihu.563",
+                "color": "dark_gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.senlinzhihu.906",
                 "fallback": "获得30♥最大生命"
             },
             "width": 1024
@@ -31,7 +35,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.senlinzhihu.564",
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.senlinzhihu.907",
                 "fallback": "生息 I"
             },
             "width": 1024
@@ -39,7 +45,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.senlinzhihu.565",
+                "color": "dark_gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.senlinzhihu.908",
                 "fallback": "每4.5s回复周围5格友方非图腾生物1♥ 自身获得双倍"
             },
             "width": 1024
@@ -47,7 +55,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.senlinzhihu.566",
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.senlinzhihu.909",
                 "fallback": "森林之御"
             },
             "width": 1024
@@ -55,7 +65,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.senlinzhihu.567",
+                "color": "dark_gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.senlinzhihu.910",
                 "fallback": "每损失10♥ 获得6♥临时生命20s"
             },
             "width": 1024
@@ -63,7 +75,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.kunanyaolan.536",
+                "color": "white",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.kunanyaolan.872",
                 "fallback": "传奇护具"
             },
             "width": 1024
@@ -73,7 +87,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.wangzhibaoku.diaolingtaidao.497",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.wangzhibaoku.diaolingtaidao.818",
             "fallback": "返回§6王之宝库"
         },
         "action": {

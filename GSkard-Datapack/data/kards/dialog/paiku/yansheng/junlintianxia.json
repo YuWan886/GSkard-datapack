@@ -1,7 +1,9 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "json.kards.dialog.paiku.yansheng.junlintianxia.709",
+        "color": "white",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.yansheng.junlintianxia.1117",
         "fallback": "君临天下"
     },
     "external_title": {
@@ -20,7 +22,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.yansheng.junlintianxia.710",
+                "color": "gold",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.yansheng.junlintianxia.1118",
                 "fallback": "使用后召唤天界打击"
             },
             "width": 1024
@@ -28,7 +32,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.yansheng.junlintianxia.711",
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.yansheng.junlintianxia.1119",
                 "fallback": "对周围7格敌人造成20♥真实伤害,使其眩晕3s并回复自身32♥"
             },
             "width": 1024
@@ -38,7 +44,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.yansheng.jinzijue.708",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.yansheng.jinzijue.1116",
             "fallback": "返回§7其他"
         },
         "action": {

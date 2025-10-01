@@ -1,7 +1,9 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "json.kards.dialog.paiku.wangzhibaoku.fengbaozhanchui.502",
+        "color": "white",
+        "italic": false,
+        "translate": "json.kards.dialog.paiku.wangzhibaoku.fengbaozhanchui.826",
         "fallback": "风暴战锤"
     },
     "external_title": {
@@ -27,7 +29,10 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.fengbaozhanchui.503",
+                "color": "gray",
+                "italic": false,
+                "bold": true,
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.fengbaozhanchui.827",
                 "fallback": "雷击 I"
             },
             "width": 1024
@@ -35,7 +40,23 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.fengbaozhanchui.504",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "color": "gold",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.wangzhibaoku.fengbaozhanchui.829",
+                        "fallback": "闪电"
+                    },
+                    {
+                        "color": "gray",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.wangzhibaoku.fengbaozhanchui.830",
+                        "fallback": "劈向指定位置"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.fengbaozhanchui.828",
                 "fallback": "右键召唤一道"
             },
             "width": 1024
@@ -43,7 +64,29 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.fengbaozhanchui.505",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "color": "gold",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.wangzhibaoku.fengbaozhanchui.832",
+                        "fallback": "2.8格"
+                    },
+                    {
+                        "color": "gray",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.wangzhibaoku.fengbaozhanchui.833",
+                        "fallback": "敌对生物造成"
+                    },
+                    {
+                        "color": "red",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.wangzhibaoku.fengbaozhanchui.834",
+                        "fallback": "8♥闪电伤害"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.fengbaozhanchui.831",
                 "fallback": "对附近"
             },
             "width": 1024
@@ -51,7 +94,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.fengbaozhanchui.506",
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.fengbaozhanchui.835",
                 "fallback": "CD8s"
             },
             "width": 1024
@@ -59,6 +104,8 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "color": "gray",
+                "italic": false,
                 "translate": "json.kards.dialog.first_join.1.71",
                 "fallback": ""
             },
@@ -67,7 +114,10 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.fengbaozhanchui.507",
+                "color": "gray",
+                "italic": false,
+                "bold": true,
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.fengbaozhanchui.836",
                 "fallback": "蓄能重击"
             },
             "width": 1024
@@ -75,7 +125,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.fengbaozhanchui.508",
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.fengbaozhanchui.837",
                 "fallback": "长按shift1s后跃起 期间免疫击退与摔落伤害"
             },
             "width": 1024
@@ -83,7 +135,35 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.fengbaozhanchui.509",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "color": "gold",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.wangzhibaoku.fengbaozhanchui.839",
+                        "fallback": "5格"
+                    },
+                    {
+                        "color": "gray",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.wangzhibaoku.fengbaozhanchui.840",
+                        "fallback": "内所有敌对生物造成"
+                    },
+                    {
+                        "color": "red",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.wangzhibaoku.fengbaozhanchui.841",
+                        "fallback": "15♥的重击伤害"
+                    },
+                    {
+                        "color": "gold",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.wangzhibaoku.fengbaozhanchui.842",
+                        "fallback": "并使其眩晕2.5s"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.fengbaozhanchui.838",
                 "fallback": "落地之后对周围"
             },
             "width": 1024
@@ -91,7 +171,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.fengbaozhanchui.510",
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.fengbaozhanchui.843",
                 "fallback": "25s补充一次"
             },
             "width": 1024
@@ -101,7 +183,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.wangzhibaoku.diaolingtaidao.497",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.wangzhibaoku.diaolingtaidao.818",
             "fallback": "返回§6王之宝库"
         },
         "action": {

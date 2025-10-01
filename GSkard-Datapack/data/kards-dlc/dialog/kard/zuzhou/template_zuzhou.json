@@ -1,7 +1,16 @@
 {
     "type": "notice",
     "title": {
-        "translate": "json.kards.dialog.paiku.fashu.guohechaiqiao.144",
+        "extra": [
+            {
+                "color": "dark_gray",
+                "translate": "json.kards-dlc.dialog.kard.zuzhou.main.1395",
+                "fallback": "模板：诅咒"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.guohechaiqiao.263",
         "fallback": "3K "
     },
     "body": [
@@ -16,7 +25,9 @@
         {
             "type": "plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.main.118",
+                "color": "dark_gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.main.223",
                 "fallback": "诅咒牌"
             },
             "width": 1024
@@ -24,7 +35,9 @@
         {
             "type": "plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.zuzhou.duantui.813",
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.zuzhou.duantui.1236",
                 "fallback": "给敌方玩家施加缓慢2以及不能跳跃 持续15s"
             },
             "width": 1024
@@ -32,7 +45,8 @@
     ],
     "action": {
         "label": {
-            "translate": "json.kards-dlc.dialog.kard.zuzhou.template_zuzhou.957",
+            "color": "green",
+            "translate": "json.kards-dlc.dialog.kard.zuzhou.template_zuzhou.1396",
             "fallback": "返回§c诅咒§a牌库-§5DLC"
         },
         "action": {

@@ -1,7 +1,9 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "json.kards.dialog.paiku.wangzhibaoku.main.553",
+        "color": "aqua",
+        "italic": false,
+        "translate": "json.kards.dialog.paiku.wangzhibaoku.main.896",
         "fallback": "正义长戟"
     },
     "external_title": {
@@ -12,7 +14,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.zhengyichangji.648",
+                "color": "white",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.zhengyichangji.1041",
                 "fallback": "雷击"
             },
             "width": 1024
@@ -28,7 +32,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.zhengyichangji.649",
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.zhengyichangji.1042",
                 "fallback": "投掷攻击时召唤1道闪电劈向对方并对其与其附近2.5格敌人造成1.5♥真实伤害 附带0.5s眩晕"
             },
             "width": 1024
@@ -36,7 +42,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.zhengyichangji.650",
+                "color": "white",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.zhengyichangji.1043",
                 "fallback": "制裁"
             },
             "width": 1024
@@ -44,7 +52,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.zhengyichangji.651",
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.zhengyichangji.1044",
                 "fallback": "近战攻击时对5格内敌对生物造成3.5♥真实伤害 CD:5s"
             },
             "width": 1024
@@ -52,7 +62,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.zhengyichangji.652",
+                "color": "dark_gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.zhengyichangji.1045",
                 "fallback": "“自私的神遗落于世的权柄,"
             },
             "width": 1024
@@ -60,7 +72,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.zhengyichangji.653",
+                "color": "dark_gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.zhengyichangji.1046",
                 "fallback": "只用一掷,便能划破风暴和人怨."
             },
             "width": 1024
@@ -68,7 +82,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.zhengyichangji.654",
+                "color": "dark_gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.zhengyichangji.1047",
                 "fallback": "渎神的黄金时代到来后,"
             },
             "width": 1024
@@ -76,7 +92,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.zhengyichangji.655",
+                "color": "dark_gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.zhengyichangji.1048",
                 "fallback": "无可容忍的众人不再肩负神谕."
             },
             "width": 1024
@@ -84,7 +102,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.zhengyichangji.656",
+                "color": "dark_gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.zhengyichangji.1049",
                 "fallback": "部分序神相与其勾结,"
             },
             "width": 1024
@@ -92,7 +112,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.zhengyichangji.657",
+                "color": "dark_gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.zhengyichangji.1050",
                 "fallback": "以直面主神的机会,换取新时代的地位."
             },
             "width": 1024
@@ -100,7 +122,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.zhengyichangji.658",
+                "color": "dark_gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.zhengyichangji.1051",
                 "fallback": "于是众神的神怒不再遏制,在天上展开厮杀,"
             },
             "width": 1024
@@ -108,7 +132,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.zhengyichangji.659",
+                "color": "dark_gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.zhengyichangji.1052",
                 "fallback": "天空蒙乌,雨水猩红,日失其晖,"
             },
             "width": 1024
@@ -116,7 +142,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.zhengyichangji.660",
+                "color": "dark_gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.zhengyichangji.1053",
                 "fallback": "最后只余混杂的尸骸和藏宝."
             },
             "width": 1024
@@ -124,7 +152,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.zhengyichangji.661",
+                "color": "dark_gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.zhengyichangji.1054",
                 "fallback": "可活到了新世界的神,也未受众人供奉,"
             },
             "width": 1024
@@ -132,7 +162,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.zhengyichangji.662",
+                "color": "dark_gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.zhengyichangji.1055",
                 "fallback": "当软弱展露出来的一刻,便已再无神性可言.”"
             },
             "width": 1024
@@ -142,7 +174,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.wangzhibaoku.diaolingtaidao.497",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.wangzhibaoku.diaolingtaidao.818",
             "fallback": "返回§6王之宝库"
         },
         "action": {

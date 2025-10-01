@@ -1,7 +1,16 @@
 {
     "type": "notice",
     "title": {
-        "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.122",
+        "extra": [
+            {
+                "color": "gold",
+                "translate": "json.kards-dlc.dialog.kard.zhuangbei.main.1390",
+                "fallback": "模板：装备"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.227",
         "fallback": "5K "
     },
     "body": [
@@ -16,7 +25,9 @@
         {
             "type": "plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.main.117",
+                "color": "gold",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.main.222",
                 "fallback": "装备牌"
             },
             "width": 1024
@@ -24,7 +35,17 @@
         {
             "type": "plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.zhuangbei.jinjian.775",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "color": "gold",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.zhuangbei.main.1201",
+                        "fallback": "铁斧"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.zhuangbei.jinjian.1191",
                 "fallback": "获得一把"
             },
             "width": 1024
@@ -32,7 +53,8 @@
     ],
     "action": {
         "label": {
-            "translate": "json.kards-dlc.dialog.kard.zhuangbei.template_shipin.953",
+            "color": "green",
+            "translate": "json.kards-dlc.dialog.kard.zhuangbei.template_shipin.1392",
             "fallback": "返回§c装备§a牌库-§5DLC"
         },
         "action": {

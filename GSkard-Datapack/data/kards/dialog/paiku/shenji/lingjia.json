@@ -1,7 +1,17 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "json.kards.dialog.paiku.juntuan.shenghaikongju.333",
+        "extra": [
+            {
+                "color": "white",
+                "bold": true,
+                "translate": "json.kards.dialog.paiku.shenji.lingjia.635",
+                "fallback": "凌驾"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.juntuan.shenghaikongju.523",
         "fallback": "10K "
     },
     "external_title": {
@@ -20,7 +30,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.jiaocheng.wanfa.2.105",
+                "color": "white",
+                "italic": false,
+                "translate": "json.kards.dialog.jiaocheng.wanfa.2.153",
                 "fallback": "神迹牌"
             },
             "width": 1024
@@ -28,7 +40,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.shenji.lingjia.380",
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.shenji.lingjia.636",
                 "fallback": "使用后获得一张随时使用的卡牌"
             },
             "width": 1024
@@ -36,7 +50,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.shenji.lingjia.381",
+                "color": "light_purple",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.shenji.lingjia.637",
                 "fallback": "[君临天下]"
             },
             "width": 1024
@@ -44,7 +60,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.shenji.lingjia.382",
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.shenji.lingjia.638",
                 "fallback": " 使用后对周围7格敌人造成20♥真实伤害,使其眩晕10s并回复自身32♥,抽一张卡"
             },
             "width": 1024
@@ -54,7 +72,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.shenji.fanxiangfeileishen.365",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.shenji.fanxiangfeileishen.605",
             "fallback": "返回§d神迹§a牌库"
         },
         "action": {

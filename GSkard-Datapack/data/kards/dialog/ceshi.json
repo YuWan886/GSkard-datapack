@@ -2,6 +2,7 @@
     "type": "minecraft:multi_action",
     "title": [
         {
+            "color": "gray",
             "translate": "json.kards.dialog.ceshi.65",
             "fallback": "你当前的构想 "
         }
@@ -10,6 +11,7 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "color": "green",
                 "translate": "json.kards.dialog.ceshi.66",
                 "fallback": "点击以升级对应天赋"
             },
@@ -35,22 +37,27 @@
             ],
             "tooltip": [
                 {
+                    "color": "gold",
                     "translate": "json.kards.dialog.ceshi.68",
                     "fallback": "生存天赋\n"
                 },
                 {
+                    "color": "gold",
                     "translate": "json.kards.dialog.ceshi.68",
                     "fallback": "生存天赋\n"
                 },
                 {
+                    "color": "gray",
                     "translate": "json.kards.dialog.ceshi.68",
                     "fallback": "生存天赋\n"
                 },
                 {
+                    "color": "gray",
                     "translate": "json.kards.dialog.ceshi.68",
                     "fallback": "生存天赋\n"
                 },
                 {
+                    "color": "gray",
                     "translate": "json.kards.dialog.ceshi.68",
                     "fallback": "生存天赋\n"
                 }
@@ -69,22 +76,27 @@
             ],
             "tooltip": [
                 {
+                    "color": "gold",
                     "translate": "json.kards.dialog.ceshi.70",
                     "fallback": "战斗天赋\n"
                 },
                 {
+                    "color": "gold",
                     "translate": "json.kards.dialog.ceshi.70",
                     "fallback": "战斗天赋\n"
                 },
                 {
+                    "color": "gold",
                     "translate": "json.kards.dialog.ceshi.70",
                     "fallback": "战斗天赋\n"
                 },
                 {
+                    "color": "gold",
                     "translate": "json.kards.dialog.ceshi.70",
                     "fallback": "战斗天赋\n"
                 },
                 {
+                    "color": "gray",
                     "translate": "json.kards.dialog.ceshi.70",
                     "fallback": "战斗天赋\n"
                 }

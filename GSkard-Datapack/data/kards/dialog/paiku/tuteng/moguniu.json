@@ -1,7 +1,16 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "json.kards.dialog.paiku.tuteng.moguniu.445",
+        "extra": [
+            {
+                "color": "red",
+                "translate": "json.kards.dialog.paiku.tuteng.main.711",
+                "fallback": "蘑菇牛"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.tuteng.moguniu.719",
         "fallback": "18K "
     },
     "external_title": {
@@ -20,7 +29,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.tuteng.baomao.416",
+                "color": "red",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.tuteng.baomao.681",
                 "fallback": "图腾牌"
             },
             "width": 1024
@@ -28,7 +39,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.tuteng.moguniu.446",
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.tuteng.moguniu.720",
                 "fallback": "在队伍图腾区生成蘑菇牛"
             },
             "width": 1024
@@ -36,7 +49,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.tuteng.baomao.418",
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.tuteng.baomao.683",
                 "fallback": "图腾存活效果："
             },
             "width": 1024
@@ -44,7 +59,23 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.tuteng.moguniu.447",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "color": "gold",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.tuteng.moguniu.722",
+                        "fallback": "免疫"
+                    },
+                    {
+                        "color": "gray",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.tuteng.moguniu.723",
+                        "fallback": "失明 缓慢 虚弱等负面效果"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.tuteng.moguniu.721",
                 "fallback": "1.队伍玩家"
             },
             "width": 1024
@@ -54,7 +85,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.tuteng.baomao.421",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.tuteng.baomao.689",
             "fallback": "返回§c图腾§a牌库"
         },
         "action": {

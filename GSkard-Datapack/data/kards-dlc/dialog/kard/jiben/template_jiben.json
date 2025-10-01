@@ -1,7 +1,16 @@
 {
     "type": "notice",
     "title": {
-        "translate": "json.kards.dialog.paiku.fashu.chunnuanhuakai.130",
+        "extra": [
+            {
+                "color": "blue",
+                "translate": "json.kards-dlc.dialog.kard.jiben.main.1359",
+                "fallback": "模板：基本"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.chunnuanhuakai.241",
         "fallback": "8K "
     },
     "body": [
@@ -16,7 +25,15 @@
         {
             "type": "plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.jiben.diaolingkulou.253",
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "gold",
+                        "translate": "json.kards.dialog.paiku.jiben.yuangushouweizhe.444",
+                        "fallback": " 远古守卫者"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.jiben.diaolingkulou.395",
                 "fallback": "召唤1只"
             },
             "width": 1024
@@ -24,7 +41,8 @@
     ],
     "action": {
         "label": {
-            "translate": "json.kards-dlc.dialog.kard.jiben.template_jiben.921",
+            "color": "green",
+            "translate": "json.kards-dlc.dialog.kard.jiben.template_jiben.1360",
             "fallback": "返回§d基本牌§a牌库-§5DLC"
         },
         "action": {

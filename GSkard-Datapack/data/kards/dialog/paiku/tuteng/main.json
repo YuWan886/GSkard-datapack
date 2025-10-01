@@ -1,7 +1,9 @@
 {
     "type": "minecraft:multi_action",
     "title": {
-        "translate": "json.kards.dialog.paiku.tuteng.main.431",
+        "color": "red",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.tuteng.main.710",
         "fallback": "图腾"
     },
     "external_title": {
@@ -13,7 +15,8 @@
     "can_close_with_escape": true,
     "exit_action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.fashu.main.163",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.fashu.main.290",
             "fallback": "返回§6主§a牌库"
         },
         "action": {
@@ -25,7 +28,8 @@
     "actions": [
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.tuteng.main.432",
+                "color": "red",
+                "translate": "json.kards.dialog.paiku.tuteng.baomao.680",
                 "fallback": "豹猫"
             },
             "action": {
@@ -36,7 +40,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.tuteng.main.433",
+                "color": "red",
+                "translate": "json.kards.dialog.paiku.tuteng.cunmin.690",
                 "fallback": "村民"
             },
             "action": {
@@ -47,7 +52,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.tuteng.main.434",
+                "color": "red",
+                "translate": "json.kards.dialog.paiku.tuteng.haigui.700",
                 "fallback": "海龟"
             },
             "action": {
@@ -58,7 +64,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.tuteng.main.435",
+                "color": "red",
+                "translate": "json.kards.dialog.paiku.tuteng.ji.704",
                 "fallback": "鸡"
             },
             "action": {
@@ -69,7 +76,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.tuteng.main.436",
+                "color": "red",
+                "translate": "json.kards.dialog.paiku.tuteng.liulangshangren.708",
                 "fallback": "流浪商人"
             },
             "action": {
@@ -80,7 +88,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.tuteng.main.437",
+                "color": "red",
+                "translate": "json.kards.dialog.paiku.tuteng.main.711",
                 "fallback": "蘑菇牛"
             },
             "action": {
@@ -91,7 +100,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.tuteng.main.438",
+                "color": "red",
+                "translate": "json.kards.dialog.paiku.tuteng.main.712",
                 "fallback": "牛"
             },
             "action": {
@@ -102,7 +112,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.tuteng.main.439",
+                "color": "red",
+                "translate": "json.kards.dialog.paiku.tuteng.main.713",
                 "fallback": "培养尸"
             },
             "action": {
@@ -113,7 +124,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.tuteng.main.440",
+                "color": "red",
+                "translate": "json.kards.dialog.paiku.tuteng.main.714",
                 "fallback": "铁傀儡"
             },
             "action": {
@@ -124,7 +136,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.tuteng.main.441",
+                "color": "red",
+                "translate": "json.kards.dialog.paiku.tuteng.main.715",
                 "fallback": "兔"
             },
             "action": {
@@ -135,7 +148,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.tuteng.main.442",
+                "color": "red",
+                "translate": "json.kards.dialog.paiku.tuteng.main.716",
                 "fallback": "羊"
             },
             "action": {
@@ -146,7 +160,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.tuteng.main.443",
+                "color": "red",
+                "translate": "json.kards.dialog.paiku.tuteng.main.717",
                 "fallback": "侦测贝"
             },
             "action": {
@@ -157,7 +172,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.tuteng.main.444",
+                "color": "red",
+                "translate": "json.kards.dialog.paiku.tuteng.main.718",
                 "fallback": "猪"
             },
             "action": {
@@ -168,7 +184,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.fashu.main.206",
+                "color": "red",
+                "translate": "json.kards.dialog.paiku.fashu.main.321",
                 "fallback": "DLC"
             },
             "action": {

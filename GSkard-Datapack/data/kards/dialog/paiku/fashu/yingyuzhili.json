@@ -1,7 +1,16 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "json.kards.dialog.paiku.fashu.duming.139",
+        "extra": [
+            {
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.main.311",
+                "fallback": "盈余之力"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.duming.254",
         "fallback": "0K "
     },
     "external_title": {
@@ -20,7 +29,15 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.fashu.yingyuzhili.237",
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "red",
+                        "translate": "json.kards.dialog.paiku.fashu.yingyuzhili.370",
+                        "fallback": "减半"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.fashu.yingyuzhili.369",
                 "fallback": "使你的费用"
             },
             "width": 1024
@@ -28,7 +45,15 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.fashu.yingyuzhili.238",
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "gold",
+                        "translate": "json.kards.dialog.paiku.fashu.yingyuzhili.372",
+                        "fallback": "等额生命恢复至友方所有玩家"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.fashu.yingyuzhili.371",
                 "fallback": "然后剩余费用转化为"
             },
             "width": 1024
@@ -36,7 +61,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.fashu.yingyuzhili.239",
+                "color": "dark_gray",
+                "italic": true,
+                "translate": "json.kards.dialog.paiku.fashu.yingyuzhili.373",
                 "fallback": "PVP回合禁用"
             },
             "width": 1024
@@ -46,7 +73,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.125",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.232",
             "fallback": "返回§d法术牌§a牌库"
         },
         "action": {

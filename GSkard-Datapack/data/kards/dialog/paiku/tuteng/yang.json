@@ -1,7 +1,16 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "json.kards.dialog.paiku.fashu.chunriying.132",
+        "extra": [
+            {
+                "color": "red",
+                "translate": "json.kards.dialog.paiku.tuteng.main.716",
+                "fallback": "羊"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.chunriying.245",
         "fallback": "12K "
     },
     "external_title": {
@@ -20,7 +29,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.tuteng.baomao.416",
+                "color": "red",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.tuteng.baomao.681",
                 "fallback": "图腾牌"
             },
             "width": 1024
@@ -28,7 +39,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.tuteng.yang.458",
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.tuteng.yang.748",
                 "fallback": "在队伍图腾区生成羊"
             },
             "width": 1024
@@ -36,7 +49,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.tuteng.baomao.418",
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.tuteng.baomao.683",
                 "fallback": "图腾存活效果："
             },
             "width": 1024
@@ -44,7 +59,17 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.tuteng.yang.459",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "color": "green",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.tuteng.yang.750",
+                        "fallback": "6♥"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.tuteng.yang.749",
                 "fallback": "1.每回合结束时为队伍玩家回复血量"
             },
             "width": 1024
@@ -52,7 +77,17 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.tuteng.yang.460",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "color": "green",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.tuteng.yang.752",
+                        "fallback": "1♥"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.tuteng.yang.751",
                 "fallback": "2.每回合结束时为队伍图腾回复血量"
             },
             "width": 1024
@@ -62,7 +97,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.tuteng.baomao.421",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.tuteng.baomao.689",
             "fallback": "返回§c图腾§a牌库"
         },
         "action": {

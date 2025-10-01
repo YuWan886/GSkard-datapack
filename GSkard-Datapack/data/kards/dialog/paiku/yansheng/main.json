@@ -1,7 +1,9 @@
 {
     "type": "minecraft:multi_action",
     "title": {
-        "translate": "json.kards.dialog.paiku.main.120",
+        "color": "gray",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.main.225",
         "fallback": "其他"
     },
     "external_title": {
@@ -13,7 +15,8 @@
     "can_close_with_escape": true,
     "exit_action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.fashu.main.163",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.fashu.main.290",
             "fallback": "返回§6主§a牌库"
         },
         "action": {
@@ -25,7 +28,8 @@
     "actions": [
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.yansheng.main.719",
+                "color": "gold",
+                "translate": "json.kards.dialog.paiku.yansheng.main.1127",
                 "fallback": "不死图腾"
             },
             "action": {
@@ -36,7 +40,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.yansheng.main.720",
+                "color": "gray",
+                "translate": "json.kards.dialog.paiku.yansheng.main.1128",
                 "fallback": "无用牌系列"
             },
             "action": {
@@ -47,7 +52,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.fashu.main.189",
+                "color": "red",
+                "translate": "json.kards.dialog.paiku.fashu.main.304",
                 "fallback": "酸辣无骨鸡爪"
             },
             "action": {
@@ -58,7 +64,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.yansheng.jinzijue.695",
+                "color": "dark_red",
+                "translate": "json.kards.dialog.paiku.yansheng.jinzijue.1103",
                 "fallback": "禁字决"
             },
             "action": {
@@ -69,7 +76,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.yansheng.junlintianxia.709",
+                "color": "white",
+                "translate": "json.kards.dialog.paiku.yansheng.junlintianxia.1117",
                 "fallback": "君临天下"
             },
             "action": {
@@ -80,7 +88,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.yansheng.longxi.715",
+                "color": "gold",
+                "translate": "json.kards.dialog.paiku.yansheng.longxi.1123",
                 "fallback": "龙息"
             },
             "action": {
@@ -91,7 +100,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.yansheng.main.721",
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.yansheng.main.1129",
                 "fallback": "贪欲"
             },
             "action": {
@@ -102,7 +112,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.yansheng.kuanghuanzombie.712",
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.yansheng.kuanghuanzombie.1120",
                 "fallback": "狂欢僵尸"
             },
             "action": {
@@ -113,7 +124,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.fashu.main.206",
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.main.321",
                 "fallback": "DLC"
             },
             "action": {

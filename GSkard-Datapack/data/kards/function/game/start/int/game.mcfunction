@@ -3,7 +3,7 @@ scoreboard players set #system GameStatus 1
 scoreboard players reset 红队
 scoreboard players reset 蓝队
 
-scoreboard objectives add health health [{translate: "json.kards.dialog.xp_shop.shengmin.885", fallback: "生命",color:"green"}]
+scoreboard objectives add health health [{translate: "json.kards.dialog.xp_shop.shengmin.1310", fallback: "生命",color:"green"}]
 
 scoreboard objectives setdisplay list health
 scoreboard objectives setdisplay below_name kardCount

@@ -1,7 +1,9 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "json.kards.dialog.paiku.wangzhibaoku.feishenghufu.498",
+        "color": "gold",
+        "italic": false,
+        "translate": "json.kards.dialog.paiku.wangzhibaoku.feishenghufu.819",
         "fallback": "飞升护符"
     },
     "external_title": {
@@ -20,7 +22,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.feishenghufu.499",
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.feishenghufu.820",
                 "fallback": "茁壮 I"
             },
             "width": 1024
@@ -28,7 +32,29 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.feishenghufu.500",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "color": "gold",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.wangzhibaoku.feishenghufu.822",
+                        "fallback": "17回合"
+                    },
+                    {
+                        "color": "gray",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.wangzhibaoku.feishenghufu.823",
+                        "fallback": "之后 获得"
+                    },
+                    {
+                        "color": "gold",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.wangzhibaoku.feishenghufu.824",
+                        "fallback": "力量4"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.feishenghufu.821",
                 "fallback": "第"
             },
             "width": 1024
@@ -36,7 +62,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.feishenghufu.501",
+                "color": "white",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.feishenghufu.825",
                 "fallback": "传奇护符(背包内生效)"
             },
             "width": 1024
@@ -46,7 +74,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.wangzhibaoku.diaolingtaidao.497",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.wangzhibaoku.diaolingtaidao.818",
             "fallback": "返回§6王之宝库"
         },
         "action": {

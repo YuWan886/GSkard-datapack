@@ -1,7 +1,16 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "json.kards.dialog.paiku.fashu.chunriying.132",
+        "extra": [
+            {
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.chunriying.246",
+                "fallback": "《春日影》"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.chunriying.245",
         "fallback": "12K "
     },
     "external_title": {
@@ -20,7 +29,8 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.fashu.chunriying.133",
+                "color": "gray",
+                "translate": "json.kards.dialog.paiku.fashu.chunriying.247",
                 "fallback": "放下一个音符盒并播放《春日影》"
             },
             "width": 1024
@@ -28,7 +38,8 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.fashu.chunriying.134",
+                "color": "gray",
+                "translate": "json.kards.dialog.paiku.fashu.chunriying.248",
                 "fallback": "春日影期间中心附近的实体无法移动并使其强制朝向音符盒 持续5秒"
             },
             "width": 1024
@@ -36,7 +47,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.fashu.chunriying.135",
+                "color": "dark_gray",
+                "italic": true,
+                "translate": "json.kards.dialog.paiku.fashu.chunriying.249",
                 "fallback": "(BY MY GO!!!)"
             },
             "width": 1024
@@ -46,7 +59,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.125",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.232",
             "fallback": "返回§d法术牌§a牌库"
         },
         "action": {

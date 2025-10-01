@@ -1,7 +1,9 @@
 {
     "type": "minecraft:multi_action",
     "title": {
-        "translate": "json.kards.dialog.paiku.fashu.main.162",
+        "color": "light_purple",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.main.289",
         "fallback": "法术"
     },
     "external_title": {
@@ -13,7 +15,8 @@
     "can_close_with_escape": true,
     "exit_action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.fashu.main.163",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.fashu.main.290",
             "fallback": "返回§6主§a牌库"
         },
         "action": {
@@ -25,7 +28,8 @@
     "actions": [
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.fashu.main.164",
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.228",
                 "fallback": "背水一战"
             },
             "action": {
@@ -36,7 +40,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.fashu.main.165",
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.chaotuoxili.234",
                 "fallback": "超脱洗礼"
             },
             "action": {
@@ -47,7 +52,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.fashu.main.166",
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.chongzhu.238",
                 "fallback": "重铸"
             },
             "action": {
@@ -58,7 +64,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.fashu.main.167",
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.chunnuanhuakai.242",
                 "fallback": "春暖花开"
             },
             "action": {
@@ -69,7 +76,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.fashu.main.168",
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.main.291",
                 "fallback": "春日影"
             },
             "action": {
@@ -80,7 +88,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.fashu.main.169",
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.diyu.251",
                 "fallback": "地狱"
             },
             "action": {
@@ -91,7 +100,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.fashu.main.170",
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.duming.255",
                 "fallback": "赌命"
             },
             "action": {
@@ -102,7 +112,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.fashu.main.171",
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.fanzhuan.261",
                 "fallback": "反转"
             },
             "action": {
@@ -113,7 +124,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.fashu.main.172",
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.guohechaiqiao.264",
                 "fallback": "过河拆桥"
             },
             "action": {
@@ -124,7 +136,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.fashu.main.173",
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.heishanyangzhiyong.266",
                 "fallback": "黑山羊之拥"
             },
             "action": {
@@ -135,7 +148,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.fashu.main.174",
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.jielue.274",
                 "fallback": "劫掠"
             },
             "action": {
@@ -146,7 +160,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.fashu.main.175",
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.jinjidiaoqian.276",
                 "fallback": "紧急调遣"
             },
             "action": {
@@ -157,6 +172,7 @@
         },
         {
             "label": {
+                "color": "light_purple",
                 "translate": "json.kards.advancement.advancement.jinzijue.first_use.29",
                 "fallback": "禁字启封"
             },
@@ -168,7 +184,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.fashu.main.176",
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.langqunzhanshu.286",
                 "fallback": "狼群战术"
             },
             "action": {
@@ -179,7 +196,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.fashu.main.177",
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.main.292",
                 "fallback": "漫水"
             },
             "action": {
@@ -190,7 +208,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.fashu.main.178",
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.main.293",
                 "fallback": "内核引爆"
             },
             "action": {
@@ -201,7 +220,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.fashu.main.179",
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.main.294",
                 "fallback": "起死回生"
             },
             "action": {
@@ -212,7 +232,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.fashu.main.180",
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.main.295",
                 "fallback": "闪电轰鸣"
             },
             "action": {
@@ -223,7 +244,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.fashu.main.181",
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.main.296",
                 "fallback": "生产令"
             },
             "action": {
@@ -234,7 +256,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.fashu.main.182",
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.main.297",
                 "fallback": "神圣之光"
             },
             "action": {
@@ -245,7 +268,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.fashu.main.183",
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.main.298",
                 "fallback": "石化皮肤"
             },
             "action": {
@@ -256,7 +280,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.fashu.main.184",
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.main.299",
                 "fallback": "视角干扰"
             },
             "action": {
@@ -267,7 +292,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.fashu.main.185",
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.main.300",
                 "fallback": "水流涌动"
             },
             "action": {
@@ -278,7 +304,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.fashu.main.186",
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.main.301",
                 "fallback": "顺手牵羊"
             },
             "action": {
@@ -289,7 +316,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.fashu.main.187",
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.main.302",
                 "fallback": "四季如春"
             },
             "action": {
@@ -300,7 +328,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.fashu.main.188",
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.main.303",
                 "fallback": "死刑宣告"
             },
             "action": {
@@ -311,7 +340,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.fashu.main.189",
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.main.304",
                 "fallback": "酸辣无骨鸡爪"
             },
             "action": {
@@ -322,7 +352,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.fashu.main.190",
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.main.305",
                 "fallback": "图腾进击"
             },
             "action": {
@@ -333,7 +364,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.fashu.main.191",
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.main.306",
                 "fallback": "五谷丰登"
             },
             "action": {
@@ -344,7 +376,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.fashu.main.192",
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.main.307",
                 "fallback": "无用"
             },
             "action": {
@@ -355,7 +388,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.fashu.main.193",
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.main.308",
                 "fallback": "鲜血转化"
             },
             "action": {
@@ -366,7 +400,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.fashu.main.194",
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.main.309",
                 "fallback": "心灵焚烧"
             },
             "action": {
@@ -377,7 +412,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.fashu.main.195",
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.main.310",
                 "fallback": "洗牌"
             },
             "action": {
@@ -388,7 +424,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.fashu.main.196",
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.main.311",
                 "fallback": "盈余之力"
             },
             "action": {
@@ -399,7 +436,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.fashu.main.197",
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.main.312",
                 "fallback": "隐匿仓库"
             },
             "action": {
@@ -410,7 +448,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.fashu.main.198",
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.main.313",
                 "fallback": "以智取胜"
             },
             "action": {
@@ -421,7 +460,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.fashu.main.199",
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.main.314",
                 "fallback": "有偿借贷"
             },
             "action": {
@@ -432,7 +472,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.fashu.main.200",
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.main.315",
                 "fallback": "预言灾祸"
             },
             "action": {
@@ -443,7 +484,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.fashu.main.201",
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.main.316",
                 "fallback": "宰鸡敬猴"
             },
             "action": {
@@ -454,7 +496,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.fashu.main.202",
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.main.317",
                 "fallback": "战时生产"
             },
             "action": {
@@ -465,7 +508,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.fashu.main.203",
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.main.318",
                 "fallback": "整修"
             },
             "action": {
@@ -476,7 +520,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.fashu.main.204",
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.main.319",
                 "fallback": "骤然引爆"
             },
             "action": {
@@ -487,7 +532,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.fashu.main.205",
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.main.320",
                 "fallback": "诅咒护甲"
             },
             "action": {
@@ -498,7 +544,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.fashu.main.206",
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.main.321",
                 "fallback": "DLC"
             },
             "action": {

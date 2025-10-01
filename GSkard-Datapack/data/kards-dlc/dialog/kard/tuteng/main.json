@@ -1,12 +1,15 @@
 {
     "type": "minecraft:multi_action",
     "title": {
-        "translate": "json.kards-dlc.dialog.kard.tuteng.main.930",
+        "color": "red",
+        "bold": true,
+        "translate": "json.kards-dlc.dialog.kard.tuteng.main.1369",
         "fallback": "图腾-§5DLC"
     },
     "exit_action": {
         "label": {
-            "translate": "json.kards-dlc.dialog.kard.tuteng.main.931",
+            "color": "green",
+            "translate": "json.kards-dlc.dialog.kard.tuteng.main.1370",
             "fallback": "返回§6主§a牌库-§c图腾"
         },
         "action": {
@@ -18,7 +21,8 @@
     "actions": [
         {
             "label": {
-                "translate": "json.kards-dlc.dialog.kard.tuteng.main.932",
+                "color": "red",
+                "translate": "json.kards-dlc.dialog.kard.tuteng.main.1371",
                 "fallback": "模板：图腾"
             },
             "action": {

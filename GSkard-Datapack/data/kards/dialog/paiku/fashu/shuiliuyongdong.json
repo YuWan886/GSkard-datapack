@@ -1,7 +1,16 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "json.kards.dialog.paiku.fashu.jielue.152",
+        "extra": [
+            {
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.main.300",
+                "fallback": "水流涌动"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.jielue.273",
         "fallback": "4K "
     },
     "external_title": {
@@ -20,7 +29,15 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.fashu.chunnuanhuakai.131",
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "gold",
+                        "translate": "json.kards.dialog.paiku.fashu.shuiliuyongdong.341",
+                        "fallback": "1张牌"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.fashu.chunnuanhuakai.243",
                 "fallback": "抽"
             },
             "width": 1024
@@ -28,7 +45,15 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.fashu.shuiliuyongdong.218",
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "green",
+                        "translate": "json.kards.dialog.paiku.fashu.chaotuoxili.236",
+                        "fallback": "8♥"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.fashu.shuiliuyongdong.342",
                 "fallback": " 队伍所有玩家回复"
             },
             "width": 1024
@@ -36,7 +61,15 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.fashu.shuiliuyongdong.219",
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "gray",
+                        "translate": "json.kards.dialog.paiku.fashu.shuiliuyongdong.344",
+                        "fallback": "回复"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.fashu.shuiliuyongdong.343",
                 "fallback": "若剩余点数大于等于4 则额外"
             },
             "width": 1024
@@ -44,7 +77,8 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.fashu.shuiliuyongdong.220",
+                "color": "green",
+                "translate": "json.kards.dialog.paiku.fashu.chaotuoxili.236",
                 "fallback": "8♥"
             },
             "width": 1024
@@ -54,7 +88,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.125",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.232",
             "fallback": "返回§d法术牌§a牌库"
         },
         "action": {

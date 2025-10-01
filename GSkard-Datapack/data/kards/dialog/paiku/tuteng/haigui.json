@@ -1,7 +1,16 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "json.kards.dialog.paiku.juntuan.shenghaikongju.333",
+        "extra": [
+            {
+                "color": "red",
+                "translate": "json.kards.dialog.paiku.tuteng.haigui.700",
+                "fallback": "海龟"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.juntuan.shenghaikongju.523",
         "fallback": "10K "
     },
     "external_title": {
@@ -20,7 +29,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.tuteng.baomao.416",
+                "color": "red",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.tuteng.baomao.681",
                 "fallback": "图腾牌"
             },
             "width": 1024
@@ -28,7 +39,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.tuteng.haigui.426",
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.tuteng.haigui.701",
                 "fallback": "在队伍图腾区生成海龟"
             },
             "width": 1024
@@ -36,7 +49,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.tuteng.baomao.418",
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.tuteng.baomao.683",
                 "fallback": "图腾存活效果："
             },
             "width": 1024
@@ -44,7 +59,17 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.tuteng.haigui.427",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "color": "red",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.tuteng.haigui.703",
+                        "fallback": "缓慢1"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.tuteng.haigui.702",
                 "fallback": "1.敌方使用的怪物获得"
             },
             "width": 1024
@@ -54,7 +79,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.tuteng.baomao.421",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.tuteng.baomao.689",
             "fallback": "返回§c图腾§a牌库"
         },
         "action": {

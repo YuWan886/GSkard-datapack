@@ -1,7 +1,9 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "json.kards.dialog.paiku.wangzhibaoku.jishengnianye.515",
+        "color": "green",
+        "italic": false,
+        "translate": "json.kards.dialog.paiku.wangzhibaoku.jishengnianye.848",
         "fallback": "寄生黏液"
     },
     "external_title": {
@@ -20,7 +22,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.jishengnianye.516",
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.jishengnianye.849",
                 "fallback": "非信者"
             },
             "width": 1024
@@ -28,7 +32,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.jishengnianye.517",
+                "color": "dark_gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.jishengnianye.850",
                 "fallback": "你的禁字决层数被锁定为0 生命上限锁定为100♥"
             },
             "width": 1024
@@ -36,7 +42,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.jishengnianye.518",
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.jishengnianye.851",
                 "fallback": "寄生"
             },
             "width": 1024
@@ -44,7 +52,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.jishengnianye.519",
+                "color": "dark_gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.jishengnianye.852",
                 "fallback": "当佩戴者血量在50♥以上时 获得力量5 凋零2"
             },
             "width": 1024
@@ -52,7 +62,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.jishengnianye.520",
+                "color": "dark_gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.jishengnianye.853",
                 "fallback": "当佩戴者血量在15♥~50♥时 获得力量4 抗性提升1 缓慢2"
             },
             "width": 1024
@@ -60,7 +72,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.jishengnianye.521",
+                "color": "dark_gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.jishengnianye.854",
                 "fallback": "当佩戴者血量在15♥以下时 获得生命回复3 速度2 且攻击距离被修改为0"
             },
             "width": 1024
@@ -68,7 +82,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.jishengnianye.522",
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.jishengnianye.855",
                 "fallback": "共生"
             },
             "width": 1024
@@ -76,7 +92,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.jishengnianye.523",
+                "color": "dark_gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.jishengnianye.856",
                 "fallback": "当你佩戴上他时 将永远无法取下"
             },
             "width": 1024
@@ -84,7 +102,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.jishengnianye.524",
+                "color": "white",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.jishengnianye.857",
                 "fallback": "传奇护符(食用后佩戴)"
             },
             "width": 1024
@@ -94,7 +114,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.wangzhibaoku.diaolingtaidao.497",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.wangzhibaoku.diaolingtaidao.818",
             "fallback": "返回§6王之宝库"
         },
         "action": {

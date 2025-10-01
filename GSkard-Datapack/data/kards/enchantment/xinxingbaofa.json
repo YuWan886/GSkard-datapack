@@ -1,6 +1,7 @@
 {
     "description": {
-        "translate": "json.kards.dialog.xp_shop.enchantment.main.907",
+        "color": "red",
+        "translate": "json.kards.dialog.xp_shop.enchantment.main.1341",
         "fallback": "新星爆发"
     },
     "supported_items": "#kards:melee_weapon",

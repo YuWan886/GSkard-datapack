@@ -1,11 +1,15 @@
 {
     "type": "minecraft:multi_action",
     "title": {
-        "translate": "json.kards.dialog.paiku.main.113",
+        "color": "gold",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.main.218",
         "fallback": "        牌库"
     },
     "external_title": {
-        "translate": "json.kards.dialog.paiku.main.114",
+        "color": "gold",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.main.219",
         "fallback": "牌库"
     },
     "body": [],
@@ -15,7 +19,8 @@
     "actions": [
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.main.115",
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.main.220",
                 "fallback": "法术牌"
             },
             "action": {
@@ -25,7 +30,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.jiaocheng.wanfa.1.97",
+                "color": "blue",
+                "translate": "json.kards.dialog.jiaocheng.wanfa.1.116",
                 "fallback": "基本牌"
             },
             "action": {
@@ -35,7 +41,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.main.116",
+                "color": "dark_green",
+                "translate": "json.kards.dialog.paiku.main.221",
                 "fallback": "军团牌"
             },
             "action": {
@@ -45,7 +52,9 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.jiaocheng.wanfa.2.105",
+                "color": "white",
+                "bold": true,
+                "translate": "json.kards.dialog.jiaocheng.wanfa.2.153",
                 "fallback": "神迹牌"
             },
             "action": {
@@ -55,7 +64,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.main.117",
+                "color": "gold",
+                "translate": "json.kards.dialog.paiku.main.222",
                 "fallback": "装备牌"
             },
             "action": {
@@ -65,7 +75,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.main.118",
+                "color": "dark_gray",
+                "translate": "json.kards.dialog.paiku.main.223",
                 "fallback": "诅咒牌"
             },
             "action": {
@@ -75,7 +86,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.main.119",
+                "color": "dark_aqua",
+                "translate": "json.kards.dialog.paiku.main.224",
                 "fallback": "陷阱牌"
             },
             "action": {
@@ -85,7 +97,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.main.120",
+                "color": "gray",
+                "translate": "json.kards.dialog.paiku.main.225",
                 "fallback": "其他"
             },
             "action": {
@@ -95,7 +108,9 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.main.121",
+                "color": "gold",
+                "bold": true,
+                "translate": "json.kards.dialog.paiku.main.226",
                 "fallback": "王之宝库"
             },
             "action": {

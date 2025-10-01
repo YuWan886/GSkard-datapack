@@ -1,7 +1,10 @@
 {
     "type": "minecraft:multi_action",
     "title": {
-        "translate": "json.kards.dialog.jiaocheng.main.90",
+        
+        "color": "gray",
+        "bold": true,
+        "translate": "json.kards.dialog.jiaocheng.main.109",
         "fallback": "资源获取"
     },
     "external_title": {
@@ -13,7 +16,211 @@
             "type": "minecraft:plain_message",
             "width": 1024,
             "contents": {
-                "translate": "json.kards.dialog.jiaocheng.wanfa.3.111",
+                "color": "gold",
+                "bold": true,
+                "extra": [
+                    {
+                        "color": "gray",
+                        "bold": true,
+                        "translate": "json.kards.dialog.jiaocheng.wanfa.3.166",
+                        "fallback": "> 游戏中有"
+                    },
+                    {
+                        "color": "gold",
+                        "bold": true,
+                        "translate": "json.kards.dialog.jiaocheng.wanfa.3.167",
+                        "fallback": "5种"
+                    },
+                    {
+                        "color": "gray",
+                        "bold": true,
+                        "translate": "json.kards.dialog.jiaocheng.wanfa.3.168",
+                        "fallback": "资源 <\n\n"
+                    },
+                    {
+                        "color": "gold",
+                        "bold": true,
+                        "translate": "json.kards.dialog.jiaocheng.wanfa.3.169",
+                        "fallback": "卡牌 构想 经验 K与Kmax\n\n"
+                    },
+                    {
+                        "color": "gray",
+                        "bold": true,
+                        "translate": "json.kards.dialog.jiaocheng.wanfa.3.170",
+                        "fallback": "本章会例举其作用与直接的获取方式\n\n"
+                    },
+                    {
+                        "color": "gray",
+                        "bold": true,
+                        "extra": [
+                            {
+                                "color": "gray",
+                                "bold": true,
+                                "translate": "json.kards.dialog.jiaocheng.wanfa.3.172",
+                                "fallback": "· 卡牌是"
+                            },
+                            {
+                                "color": "red",
+                                "bold": true,
+                                "translate": "json.kards.dialog.jiaocheng.wanfa.3.173",
+                                "fallback": "进攻"
+                            },
+                            {
+                                "color": "gray",
+                                "bold": true,
+                                "translate": "json.kards.dialog.jiaocheng.wanfa.3.174",
+                                "fallback": "或"
+                            },
+                            {
+                                "color": "green",
+                                "bold": true,
+                                "translate": "json.kards.dialog.jiaocheng.wanfa.3.175",
+                                "fallback": "防御"
+                            },
+                            {
+                                "color": "gray",
+                                "bold": true,
+                                "translate": "json.kards.dialog.jiaocheng.wanfa.3.176",
+                                "fallback": "的手段\n\n"
+                            },
+                            {
+                                "color": "gray",
+                                "bold": true,
+                                "translate": "json.kards.dialog.jiaocheng.wanfa.3.177",
+                                "fallback": "· 每个"
+                            },
+                            {
+                                "color": "green",
+                                "bold": true,
+                                "translate": "json.kards.dialog.jiaocheng.wanfa.2.148",
+                                "fallback": "友方回合"
+                            },
+                            {
+                                "color": "gray",
+                                "bold": true,
+                                "translate": "json.kards.dialog.jiaocheng.wanfa.3.178",
+                                "fallback": "开始时 你都会抽到不定数量的不同种类的卡牌\n\n"
+                            }
+                        ],
+                        "translate": "json.kards.dialog.jiaocheng.wanfa.3.171",
+                        "fallback": "| 卡牌 |\n\n"
+                    },
+                    {
+                        "color": "gray",
+                        "bold": true,
+                        "extra": [
+                            {
+                                "color": "gray",
+                                "bold": true,
+                                "translate": "json.kards.dialog.jiaocheng.wanfa.3.180",
+                                "fallback": "· 构想可以在对局内升级天赋\n\n"
+                            },
+                            {
+                                "color": "gray",
+                                "bold": true,
+                                "translate": "json.kards.dialog.jiaocheng.wanfa.3.177",
+                                "fallback": "· 每个"
+                            },
+                            {
+                                "color": "green",
+                                "bold": true,
+                                "translate": "json.kards.dialog.jiaocheng.wanfa.2.148",
+                                "fallback": "友方回合"
+                            },
+                            {
+                                "color": "gray",
+                                "bold": true,
+                                "translate": "json.kards.dialog.jiaocheng.wanfa.3.181",
+                                "fallback": "开始时获得1点构想\n\n"
+                            }
+                        ],
+                        "translate": "json.kards.dialog.jiaocheng.wanfa.3.179",
+                        "fallback": "| 构想 |\n\n"
+                    },
+                    {
+                        "color": "gray",
+                        "bold": true,
+                        "extra": [
+                            {
+                                "color": "gray",
+                                "bold": true,
+                                "translate": "json.kards.dialog.jiaocheng.wanfa.3.183",
+                                "fallback": "· 经验是"
+                            },
+                            {
+                                "color": "gold",
+                                "bold": true,
+                                "translate": "json.kards.dialog.jiaocheng.wanfa.3.184",
+                                "fallback": "战力提升"
+                            },
+                            {
+                                "color": "gray",
+                                "bold": true,
+                                "translate": "json.kards.dialog.jiaocheng.wanfa.3.185",
+                                "fallback": "的重要资源\n\n"
+                            },
+                            {
+                                "color": "gray",
+                                "bold": true,
+                                "translate": "json.kards.dialog.jiaocheng.wanfa.3.186",
+                                "fallback": "· 经验在"
+                            },
+                            {
+                                "color": "gold",
+                                "bold": true,
+                                "translate": "json.kards.dialog.jiaocheng.wanfa.3.187",
+                                "fallback": "击杀怪物 使用一定数量卡牌"
+                            },
+                            {
+                                "color": "gray",
+                                "bold": true,
+                                "translate": "json.kards.dialog.jiaocheng.wanfa.3.188",
+                                "fallback": "增加\n\n"
+                            }
+                        ],
+                        "translate": "json.kards.dialog.jiaocheng.wanfa.3.182",
+                        "fallback": "| 经验 |\n\n"
+                    },
+                    {
+                        "color": "gray",
+                        "bold": true,
+                        "extra": [
+                            {
+                                "color": "gray",
+                                "bold": true,
+                                "translate": "json.kards.dialog.jiaocheng.wanfa.3.190",
+                                "fallback": "· 它们都是使用卡牌时需要消耗的资源\n\n"
+                            },
+                            {
+                                "color": "gray",
+                                "bold": true,
+                                "translate": "json.kards.dialog.jiaocheng.wanfa.3.191",
+                                "fallback": "· K在每个友方回合开始时 会自动增加至Kmax的值\n\n"
+                            },
+                            {
+                                "color": "gray",
+                                "bold": true,
+                                "translate": "json.kards.dialog.jiaocheng.wanfa.3.192",
+                                "fallback": "· Kmax在每个友方回合开始时 会获得一定的值\n\n"
+                            },
+                            {
+                                "color": "gray",
+                                "bold": true,
+                                "translate": "json.kards.dialog.jiaocheng.wanfa.3.193",
+                                "fallback": "· 例如你拥有10Kmax 若每回合获得2Kmax\n\n则下个友方回合开始时你将增长为"
+                            },
+                            {
+                                "color": "gold",
+                                "bold": true,
+                                "translate": "json.kards.dialog.jiaocheng.wanfa.3.194",
+                                "fallback": "12Kmax与获得12K\n\n\n\n\n\n"
+                            }
+                        ],
+                        "translate": "json.kards.dialog.jiaocheng.wanfa.3.189",
+                        "fallback": "| K与Kmax |\n\n"
+                    }
+                ],
+                "translate": "json.kards.dialog.jiaocheng.wanfa.3.165",
                 "fallback": "资源有哪些？\n\n\n"
             }
         }
@@ -23,7 +230,8 @@
     "actions": [
         {
             "label": {
-                "translate": "json.kards.dialog.jiaocheng.main.88",
+                "color": "gold",
+                "translate": "json.kards.dialog.jiaocheng.main.107",
                 "fallback": "获取卡牌信息"
             },
             "width": 125,
@@ -34,7 +242,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.jiaocheng.main.89",
+                "color": "gold",
+                "translate": "json.kards.dialog.jiaocheng.main.108",
                 "fallback": "使用卡牌"
             },
             "width": 125,
@@ -45,7 +254,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.jiaocheng.main.90",
+                "color": "gold",
+                "translate": "json.kards.dialog.jiaocheng.main.109",
                 "fallback": "资源获取"
             },
             "width": 125,
@@ -56,7 +266,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.jiaocheng.main.91",
+                "color": "gold",
+                "translate": "json.kards.dialog.jiaocheng.main.110",
                 "fallback": "回合信息"
             },
             "width": 125,
@@ -69,11 +280,13 @@
     "columns": 4,
     "exit_action": {
         "label": {
-            "translate": "json.kards.dialog.jiaocheng.main.92",
+            "color": "gold",
+            "translate": "json.kards.dialog.jiaocheng.main.111",
             "fallback": "完成教程"
         },
         "tooltip": {
-            "translate": "json.kards.dialog.jiaocheng.main.93",
+            "color": "gray",
+            "translate": "json.kards.dialog.jiaocheng.main.112",
             "fallback": "请确保阅读完毕"
         },
         "width": 125,

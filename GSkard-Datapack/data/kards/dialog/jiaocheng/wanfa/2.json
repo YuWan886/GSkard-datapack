@@ -1,7 +1,10 @@
 {
     "type": "minecraft:multi_action",
     "title": {
-        "translate": "json.kards.dialog.jiaocheng.main.89",
+        
+        "color": "gray",
+        "bold": true,
+        "translate": "json.kards.dialog.jiaocheng.main.108",
         "fallback": "使用卡牌"
     },
     "external_title": {
@@ -16,30 +19,40 @@
                 "components": {
                     "item_name": [
                         {
-                            "translate": "json.kards.dialog.jiaocheng.wanfa.1.94",
+                            "color": "aqua",
+                            "italic": false,
+                            "translate": "json.kards.dialog.jiaocheng.wanfa.1.113",
                             "fallback": "2K"
                         },
                         {
-                            "translate": "json.kards.dialog.jiaocheng.wanfa.1.95",
+                            "translate": "json.kards.dialog.jiaocheng.wanfa.1.114",
                             "fallback": " "
                         },
                         {
-                            "translate": "json.kards.dialog.jiaocheng.wanfa.1.96",
+                            "color": "blue",
+                            "italic": false,
+                            "translate": "json.kards.dialog.jiaocheng.wanfa.1.115",
                             "fallback": "苦力怕"
                         }
                     ],
                     "lore": [
                         {
-                            "translate": "json.kards.dialog.jiaocheng.wanfa.1.97",
+                            "color": "blue",
+                            "italic": false,
+                            "translate": "json.kards.dialog.jiaocheng.wanfa.1.116",
                             "fallback": "基本牌"
                         },
                         [
                             {
-                                "translate": "json.kards.dialog.jiaocheng.wanfa.1.98",
+                                "color": "gray",
+                                "italic": false,
+                                "translate": "json.kards.dialog.jiaocheng.wanfa.1.117",
                                 "fallback": "召唤一只"
                             },
                             {
-                                "translate": "json.kards.dialog.jiaocheng.wanfa.1.96",
+                                "color": "gold",
+                                "italic": false,
+                                "translate": "json.kards.dialog.jiaocheng.wanfa.1.115",
                                 "fallback": "苦力怕"
                             }
                         ]
@@ -61,7 +74,65 @@
             "type": "minecraft:plain_message",
             "width": 512,
             "contents": {
-                "translate": "json.kards.dialog.jiaocheng.wanfa.2.102",
+                "color": "gold",
+                "bold": true,
+                "extra": [
+                    {
+                        "color": "gray",
+                        "bold": true,
+                        "translate": "json.kards.dialog.jiaocheng.wanfa.2.142",
+                        "fallback": "| 在对局中玩家可以通过"
+                    },
+                    {
+                        "color": "gold",
+                        "bold": true,
+                        "translate": "json.kards.dialog.jiaocheng.wanfa.2.143",
+                        "fallback": "把卡牌放置在副手"
+                    },
+                    {
+                        "color": "gray",
+                        "bold": true,
+                        "translate": "json.kards.dialog.jiaocheng.wanfa.2.144",
+                        "fallback": "来使用卡牌\n\n"
+                    },
+                    {
+                        "color": "gray",
+                        "bold": true,
+                        "translate": "json.kards.dialog.jiaocheng.wanfa.2.145",
+                        "fallback": "| 卡牌的使用需要一定的点数 本地图称其为 "
+                    },
+                    {
+                        "color": "gold",
+                        "bold": true,
+                        "translate": "json.kards.dialog.jiaocheng.wanfa.2.146",
+                        "fallback": "K      \n\n"
+                    },
+                    {
+                        "color": "gray",
+                        "bold": true,
+                        "translate": "json.kards.dialog.jiaocheng.wanfa.2.147",
+                        "fallback": "| 同时卡牌的使用也需要在"
+                    },
+                    {
+                        "color": "gold",
+                        "bold": true,
+                        "translate": "json.kards.dialog.jiaocheng.wanfa.2.148",
+                        "fallback": "友方回合"
+                    },
+                    {
+                        "color": "gray",
+                        "bold": true,
+                        "translate": "json.kards.dialog.jiaocheng.wanfa.2.149",
+                        "fallback": "才能够进行      \n\n"
+                    },
+                    {
+                        "color": "gray",
+                        "bold": true,
+                        "translate": "json.kards.dialog.jiaocheng.wanfa.2.150",
+                        "fallback": "| 小部分牌使用时不消耗K转为消耗Kmax 如       "
+                    }
+                ],
+                "translate": "json.kards.dialog.jiaocheng.wanfa.2.141",
                 "fallback": "\n我该如何使用卡牌？\n\n\n"
             }
         },
@@ -72,36 +143,46 @@
                 "components": {
                     "item_name": [
                         {
-                            "translate": "json.kards.dialog.jiaocheng.wanfa.2.103",
+                            "color": "gold",
+                            "translate": "json.kards.dialog.jiaocheng.wanfa.2.151",
                             "fallback": "8Kmax"
                         },
                         {
-                            "translate": "json.kards.dialog.jiaocheng.wanfa.1.95",
+                            "translate": "json.kards.dialog.jiaocheng.wanfa.1.114",
                             "fallback": " "
                         },
                         {
-                            "translate": "json.kards.dialog.jiaocheng.wanfa.2.104",
+                            "color": "white",
+                            "translate": "json.kards.dialog.jiaocheng.wanfa.2.152",
                             "fallback": "绝处逢生"
                         }
                     ],
                     "lore": [
                         {
-                            "translate": "json.kards.dialog.jiaocheng.wanfa.2.105",
+                            "color": "white",
+                            "italic": false,
+                            "translate": "json.kards.dialog.jiaocheng.wanfa.2.153",
                             "fallback": "神迹牌"
                         },
                         [
                             {
-                                "translate": "json.kards.dialog.jiaocheng.wanfa.2.106",
+                                "color": "gray",
+                                "italic": false,
+                                "translate": "json.kards.dialog.jiaocheng.wanfa.2.154",
                                 "fallback": "获得一次瞬间治疗"
                             }
                         ],
                         [
                             {
-                                "translate": "json.kards.dialog.jiaocheng.wanfa.2.107",
+                                "color": "gray",
+                                "italic": false,
+                                "translate": "json.kards.dialog.jiaocheng.wanfa.2.155",
                                 "fallback": "恢复自身"
                             },
                             {
-                                "translate": "json.kards.dialog.jiaocheng.wanfa.2.108",
+                                "color": "gold",
+                                "italic": false,
+                                "translate": "json.kards.dialog.jiaocheng.wanfa.2.156",
                                 "fallback": "所有生命值"
                             }
                         ]
@@ -124,11 +205,57 @@
             "width": 512,
             "contents": [
                 {
-                    "translate": "json.kards.dialog.jiaocheng.wanfa.2.109",
+                    "color": "gray",
+                    "bold": true,
+                    "extra": [
+                        {
+                            "color": "gold",
+                            "bold": true,
+                            "translate": "json.kards.dialog.jiaocheng.wanfa.2.158",
+                            "fallback": "8Kmax                 \n\n"
+                        }
+                    ],
+                    "translate": "json.kards.dialog.jiaocheng.wanfa.2.157",
                     "fallback": "· 这张牌使用时需要消耗"
                 },
                 {
-                    "translate": "json.kards.dialog.jiaocheng.wanfa.2.110",
+                    "color": "gray",
+                    "bold": true,
+                    "extra": [
+                        {
+                            "color": "gold",
+                            "bold": true,
+                            "translate": "json.kards.dialog.jiaocheng.wanfa.2.160",
+                            "fallback": "可以在敌方回合使用!             \n\n"
+                        },
+                        {
+                            "color": "gray",
+                            "bold": true,
+                            "extra": [
+                                {
+                                    "color": "gold",
+                                    "bold": true,
+                                    "translate": "json.kards.dialog.jiaocheng.wanfa.2.162",
+                                    "fallback": " 他仍会继续使用!           "
+                                },
+                                {
+                                    "color": "gray",
+                                    "bold": true,
+                                    "translate": "json.kards.dialog.jiaocheng.wanfa.2.163",
+                                    "fallback": "\n\n并将Kmax减为"
+                                },
+                                {
+                                    "color": "red",
+                                    "bold": true,
+                                    "translate": "json.kards.dialog.jiaocheng.wanfa.2.164",
+                                    "fallback": "负数                        \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+                                }
+                            ],
+                            "translate": "json.kards.dialog.jiaocheng.wanfa.2.161",
+                            "fallback": "· 若你剩余Kmax不足"
+                        }
+                    ],
+                    "translate": "json.kards.dialog.jiaocheng.wanfa.2.159",
                     "fallback": "· 特殊的是 他们"
                 }
             ]
@@ -139,7 +266,8 @@
     "actions": [
         {
             "label": {
-                "translate": "json.kards.dialog.jiaocheng.main.88",
+                "color": "gold",
+                "translate": "json.kards.dialog.jiaocheng.main.107",
                 "fallback": "获取卡牌信息"
             },
             "width": 125,
@@ -150,7 +278,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.jiaocheng.main.89",
+                "color": "gold",
+                "translate": "json.kards.dialog.jiaocheng.main.108",
                 "fallback": "使用卡牌"
             },
             "width": 125,
@@ -161,7 +290,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.jiaocheng.main.90",
+                "color": "gold",
+                "translate": "json.kards.dialog.jiaocheng.main.109",
                 "fallback": "资源获取"
             },
             "width": 125,
@@ -172,7 +302,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.jiaocheng.main.91",
+                "color": "gold",
+                "translate": "json.kards.dialog.jiaocheng.main.110",
                 "fallback": "回合信息"
             },
             "width": 125,
@@ -185,11 +316,13 @@
     "columns": 4,
     "exit_action": {
         "label": {
-            "translate": "json.kards.dialog.jiaocheng.main.92",
+            "color": "gold",
+            "translate": "json.kards.dialog.jiaocheng.main.111",
             "fallback": "完成教程"
         },
         "tooltip": {
-            "translate": "json.kards.dialog.jiaocheng.main.93",
+            "color": "gray",
+            "translate": "json.kards.dialog.jiaocheng.main.112",
             "fallback": "请确保阅读完毕"
         },
         "width": 125,

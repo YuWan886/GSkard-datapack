@@ -1,7 +1,9 @@
 {
     "type": "minecraft:multi_action",
     "title": {
-        "translate": "json.kards.dialog.paiku.shenji.main.383",
+        "color": "white",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.shenji.main.639",
         "fallback": "神迹"
     },
     "external_title": {
@@ -13,7 +15,8 @@
     "can_close_with_escape": true,
     "exit_action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.fashu.main.163",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.fashu.main.290",
             "fallback": "返回§6主§a牌库"
         },
         "action": {
@@ -25,7 +28,9 @@
     "actions": [
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.shenji.main.384",
+                "color": "white",
+                "bold": true,
+                "translate": "json.kards.dialog.paiku.shenji.fanxiangfeileishen.602",
                 "fallback": "飞雷神•反"
             },
             "action": {
@@ -36,7 +41,9 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.shenji.main.385",
+                "color": "white",
+                "bold": true,
+                "translate": "json.kards.dialog.paiku.shenji.feileishen.606",
                 "fallback": "飞雷神"
             },
             "action": {
@@ -47,7 +54,9 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.shenji.fuzhi.368",
+                "color": "white",
+                "bold": true,
+                "translate": "json.kards.dialog.paiku.shenji.fuzhi.610",
                 "fallback": "复制"
             },
             "action": {
@@ -58,7 +67,9 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.shenji.main.386",
+                "color": "white",
+                "bold": true,
+                "translate": "json.kards.dialog.paiku.shenji.haogaowuyuan.612",
                 "fallback": "好高骛远"
             },
             "action": {
@@ -69,7 +80,9 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.shenji.main.387",
+                "color": "white",
+                "bold": true,
+                "translate": "json.kards.dialog.paiku.shenji.huoliquankai.615",
                 "fallback": "火力全开"
             },
             "action": {
@@ -80,7 +93,9 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.shenji.main.388",
+                "color": "white",
+                "bold": true,
+                "translate": "json.kards.dialog.paiku.shenji.jinfajiejie.622",
                 "fallback": "禁法结界"
             },
             "action": {
@@ -91,7 +106,9 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.jiaocheng.wanfa.2.104",
+                "color": "white",
+                "bold": true,
+                "translate": "json.kards.dialog.jiaocheng.wanfa.2.152",
                 "fallback": "绝处逢生"
             },
             "action": {
@@ -102,7 +119,9 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.shenji.main.389",
+                "color": "white",
+                "bold": true,
+                "translate": "json.kards.dialog.paiku.shenji.lairichanghuan.627",
                 "fallback": "来日偿还"
             },
             "action": {
@@ -113,7 +132,9 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.shenji.main.390",
+                "color": "white",
+                "bold": true,
+                "translate": "json.kards.dialog.paiku.shenji.linghungeshe.631",
                 "fallback": "灵魂割舍"
             },
             "action": {
@@ -124,7 +145,9 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.shenji.main.391",
+                "color": "white",
+                "bold": true,
+                "translate": "json.kards.dialog.paiku.shenji.lingjia.635",
                 "fallback": "凌驾"
             },
             "action": {
@@ -135,7 +158,9 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.shenji.main.392",
+                "color": "white",
+                "bold": true,
+                "translate": "json.kards.dialog.paiku.shenji.main.640",
                 "fallback": "墓园狂欢"
             },
             "action": {
@@ -146,7 +171,9 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.shenji.main.393",
+                "color": "white",
+                "bold": true,
+                "translate": "json.kards.dialog.paiku.shenji.main.641",
                 "fallback": "胜利号角"
             },
             "action": {
@@ -157,7 +184,9 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.shenji.main.394",
+                "color": "white",
+                "bold": true,
+                "translate": "json.kards.dialog.paiku.shenji.main.642",
                 "fallback": "神之一手"
             },
             "action": {
@@ -168,7 +197,9 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.shenji.main.395",
+                "color": "white",
+                "bold": true,
+                "translate": "json.kards.dialog.paiku.shenji.main.643",
                 "fallback": "时空崩塌"
             },
             "action": {
@@ -179,7 +210,9 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.shenji.main.396",
+                "color": "white",
+                "bold": true,
+                "translate": "json.kards.dialog.paiku.shenji.main.644",
                 "fallback": "贪欲魔盒"
             },
             "action": {
@@ -190,7 +223,9 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.main.121",
+                "color": "white",
+                "bold": true,
+                "translate": "json.kards.dialog.paiku.main.226",
                 "fallback": "王之宝库"
             },
             "action": {
@@ -201,7 +236,9 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.shenji.main.397",
+                "color": "white",
+                "bold": true,
+                "translate": "json.kards.dialog.paiku.shenji.main.645",
                 "fallback": "虚空回响"
             },
             "action": {
@@ -212,7 +249,9 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.shenji.main.398",
+                "color": "white",
+                "bold": true,
+                "translate": "json.kards.dialog.paiku.shenji.main.646",
                 "fallback": "幽谙降临"
             },
             "action": {
@@ -223,7 +262,8 @@
         },
         {
             "label": {
-                "translate": "json.kards.dialog.paiku.fashu.main.206",
+                "color": "white",
+                "translate": "json.kards.dialog.paiku.fashu.main.321",
                 "fallback": "DLC"
             },
             "action": {

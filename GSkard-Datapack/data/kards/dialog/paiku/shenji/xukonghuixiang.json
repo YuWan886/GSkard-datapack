@@ -1,7 +1,17 @@
 {
     "type": "minecraft:notice",
     "title": {
-        "translate": "json.kards.dialog.paiku.fashu.chongzhu.128",
+        "extra": [
+            {
+                "color": "white",
+                "bold": true,
+                "translate": "json.kards.dialog.paiku.shenji.main.645",
+                "fallback": "虚空回响"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.chongzhu.237",
         "fallback": "2K "
     },
     "external_title": {
@@ -20,7 +30,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.jiaocheng.wanfa.2.105",
+                "color": "white",
+                "italic": false,
+                "translate": "json.kards.dialog.jiaocheng.wanfa.2.153",
                 "fallback": "神迹牌"
             },
             "width": 1024
@@ -28,7 +40,42 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.shenji.xukonghuixiang.412",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "color": "blue",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.shenji.xukonghuixiang.671",
+                        "fallback": "基本牌 "
+                    },
+                    {
+                        "color": "gray",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.fashu.chunnuanhuakai.243",
+                        "fallback": "抽"
+                    },
+                    {
+                        "color": "gold",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.fashu.shuiliuyongdong.341",
+                        "fallback": "1张牌"
+                    },
+                    {
+                        "color": "gray",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.shenji.xukonghuixiang.672",
+                        "fallback": " 获得"
+                    },
+                    {
+                        "color": "dark_aqua",
+                        "italic": false,
+                        "bold": true,
+                        "translate": "json.kards.dialog.paiku.shenji.huoliquankai.620",
+                        "fallback": "超频"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.shenji.xukonghuixiang.670",
                 "fallback": "本回合内 你每使用1张"
             },
             "width": 1024
@@ -36,7 +83,9 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "translate": "json.kards.dialog.paiku.shenji.huoliquankai.372",
+                "color": "dark_gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.shenji.huoliquankai.621",
                 "fallback": "超频:每使用1张牌获得1K,使用[法术牌][装备牌]会额外获得1Kmax."
             },
             "width": 1024
@@ -46,7 +95,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "translate": "json.kards.dialog.paiku.shenji.fanxiangfeileishen.365",
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.shenji.fanxiangfeileishen.605",
             "fallback": "返回§d神迹§a牌库"
         },
         "action": {
