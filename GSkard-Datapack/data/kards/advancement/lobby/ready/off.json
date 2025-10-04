@@ -1,18 +1,18 @@
 {
-    "criteria": {
-        "requirement": {
-            "trigger": "minecraft:consume_item",
-            "conditions": {
-                "item": {
-                    "items": "minecraft:blaze_rod",
-                    "predicates": {
-                        "custom_data": "{kards:'取消准备'}"
-                    }
-                }
-            }
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:blaze_rod",
+          "predicates": {
+            "custom_data": "{kards:'取消准备'}"
+          }
         }
-    },
-    "rewards": {
-        "function": "kards:lobby/ready/off"
+      }
     }
+  },
+  "rewards": {
+    "function": "kards:lobby/ready/off"
+  }
 }

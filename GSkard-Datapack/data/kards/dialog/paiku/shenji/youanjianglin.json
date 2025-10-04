@@ -1,22 +1,19 @@
 {
     "type": "minecraft:notice",
     "title": {
+        "text": "20K ",
         "extra": [
             {
+                "text": "幽谙降临",
                 "color": "white",
-                "bold": true,
-                "translate": "json.kards.dialog.paiku.shenji.main.646",
-                "fallback": "幽谙降临"
+                "bold": true
             }
         ],
         "color": "aqua",
-        "bold": true,
-        "translate": "json.kards.dialog.paiku.shenji.youanjianglin.673",
-        "fallback": "20K "
+        "bold": true
     },
     "external_title": {
-        "translate": "json.kards.dialog.first_join.1.71",
-        "fallback": ""
+        "text": ""
     },
     "body": [
         {
@@ -30,69 +27,61 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "神迹牌",
                 "color": "white",
-                "italic": false,
-                "translate": "json.kards.dialog.jiaocheng.wanfa.2.153",
-                "fallback": "神迹牌"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "召唤1只",
                 "color": "gray",
                 "italic": false,
                 "extra": [
                     {
+                        "text": "监守者",
                         "color": "gold",
                         "italic": false,
-                        "bold": true,
-                        "translate": "json.kards.dialog.paiku.shenji.youanjianglin.674",
-                        "fallback": "监守者"
+                        "bold": true
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.jiben.diaolingkulou.395",
-                "fallback": "召唤1只"
+                ]
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "监守者基础血量=[",
                 "color": "gray",
                 "italic": false,
                 "extra": [
                     {
+                        "text": "15♥",
                         "color": "red",
-                        "italic": false,
-                        "translate": "json.kards.dialog.paiku.shenji.youanjianglin.676",
-                        "fallback": "15♥"
+                        "italic": false
                     },
                     {
+                        "text": "*敌方玩家存活人数",
                         "color": "gold",
-                        "italic": false,
-                        "translate": "json.kards.dialog.paiku.shenji.youanjianglin.677",
-                        "fallback": "*敌方玩家存活人数"
+                        "italic": false
                     },
                     {
+                        "text": "]",
                         "color": "gray",
-                        "italic": false,
-                        "translate": "json.kards.dialog.paiku.shenji.youanjianglin.678",
-                        "fallback": "]"
+                        "italic": false
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.shenji.youanjianglin.675",
-                "fallback": "监守者基础血量=["
+                ]
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "血量最多为100♥",
                 "color": "dark_gray",
-                "italic": true,
-                "translate": "json.kards.dialog.paiku.shenji.youanjianglin.679",
-                "fallback": "血量最多为100♥"
+                "italic": true
             },
             "width": 1024
         }
@@ -101,9 +90,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "color": "green",
-            "translate": "json.kards.dialog.paiku.shenji.fanxiangfeileishen.605",
-            "fallback": "返回§d神迹§a牌库"
+            "text": "返回§d神迹§a牌库",
+            "color": "green"
         },
         "action": {
             "type": "minecraft:show_dialog",

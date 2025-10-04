@@ -1,22 +1,19 @@
 {
     "type": "minecraft:notice",
     "title": {
+        "text": "0K ",
         "extra": [
             {
+                "text": "飞雷神",
                 "color": "white",
-                "bold": true,
-                "translate": "json.kards.dialog.paiku.shenji.feileishen.606",
-                "fallback": "飞雷神"
+                "bold": true
             }
         ],
         "color": "aqua",
-        "bold": true,
-        "translate": "json.kards.dialog.paiku.fashu.duming.254",
-        "fallback": "0K "
+        "bold": true
     },
     "external_title": {
-        "translate": "json.kards.dialog.first_join.1.71",
-        "fallback": ""
+        "text": ""
     },
     "body": [
         {
@@ -30,48 +27,43 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "神迹牌",
                 "color": "white",
-                "italic": false,
-                "translate": "json.kards.dialog.jiaocheng.wanfa.2.153",
-                "fallback": "神迹牌"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "使用后你传送到",
                 "color": "gray",
                 "italic": false,
                 "extra": [
                     {
+                        "text": "敌方区域",
                         "color": "red",
-                        "italic": false,
-                        "translate": "json.kards.dialog.paiku.shenji.feileishen.608",
-                        "fallback": "敌方区域"
+                        "italic": false
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.shenji.feileishen.607",
-                "fallback": "使用后你传送到"
+                ]
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": " 10s后折回",
                 "color": "gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.shenji.feileishen.609",
-                "fallback": " 10s后折回"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "PVP回合禁用",
                 "color": "dark_gray",
-                "italic": true,
-                "translate": "json.kards.dialog.paiku.fashu.yingyuzhili.373",
-                "fallback": "PVP回合禁用"
+                "italic": true
             },
             "width": 1024
         }
@@ -80,9 +72,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "color": "green",
-            "translate": "json.kards.dialog.paiku.shenji.fanxiangfeileishen.605",
-            "fallback": "返回§d神迹§a牌库"
+            "text": "返回§d神迹§a牌库",
+            "color": "green"
         },
         "action": {
             "type": "minecraft:show_dialog",

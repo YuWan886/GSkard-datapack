@@ -1,0 +1,9 @@
+data modify storage kards:dialog temp.1 merge from storage kards:dialog temp.temp
+data modify storage kards:dialog temp.2 merge from storage kards:dialog temp.temp
+data modify storage kards:dialog temp.3 merge from storage kards:dialog temp.temp
+data modify storage kards:dialog temp.4 merge from storage kards:dialog temp.temp
+data modify storage kards:dialog temp.5 merge from storage kards:dialog temp.temp
+data modify storage kards:dialog temp.6 merge from storage kards:dialog temp.temp
+data modify storage kards:dialog temp.7 merge from storage kards:dialog temp.temp
+data modify storage kards:dialog temp.8 merge from storage kards:dialog temp.temp
+data modify storage kards:dialog temp.9 merge from storage kards:dialog temp.temp

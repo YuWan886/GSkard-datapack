@@ -1,16 +1,14 @@
 {
     "type": "multi_action",
     "title": {
+        "text": "军团-§5DLC",
         "color": "dark_green",
-        "bold": true,
-        "translate": "json.kards-dlc.dialog.kard.juntuan.main.1361",
-        "fallback": "军团-§5DLC"
+        "bold": true
     },
     "exit_action": {
         "label": {
-            "color": "green",
-            "translate": "json.kards-dlc.dialog.kard.juntuan.main.1362",
-            "fallback": "返回§6主§a牌库-§2军团"
+            "text": "返回§6主§a牌库-§2军团",
+            "color": "green"
         },
         "action": {
             "type": "show_dialog",
@@ -21,9 +19,8 @@
     "actions": [
         {
             "label": {
-                "color": "dark_green",
-                "translate": "json.kards-dlc.dialog.kard.juntuan.main.1363",
-                "fallback": "模板：军团"
+                "text": "模板：军团",
+                "color": "dark_green"
             },
             "action": {
                 "type": "show_dialog",

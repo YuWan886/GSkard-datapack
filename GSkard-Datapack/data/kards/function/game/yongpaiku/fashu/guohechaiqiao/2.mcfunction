@@ -1,4 +1,4 @@
-
+execute unless items entity @s container.* #kards:kard run return run tellraw @a [{selector:"@s"},{text: "的滚木被",color:"aqua"},{selector:"@a[tag=User,limit=1]"},{text: "弃掉了!",color:"aqua"}]
 execute store result score @s random_clear run random value 0..35
 
 execute if score @s random_clear matches 0 unless items entity @s container.0 #kards:kard run return run function kards:game/yongpaiku/fashu/guohechaiqiao/2
@@ -75,4 +75,4 @@ execute if score @s random_clear matches 33 if items entity @s container.33 #kar
 execute if score @s random_clear matches 34 if items entity @s container.34 #kards:kard run item replace entity @s container.34 with air
 execute if score @s random_clear matches 35 if items entity @s container.35 #kards:kard run item replace entity @s container.35 with air
 
-tellraw @a [{selector:"@s"},{translate: "kards.function.game.yongpaiku.fashu.guohechaiqiao.2.1", fallback: "的一张牌被",color:"aqua"},{selector:"@a[tag=User,limit=1]"},{translate: "kards.function.game.yongpaiku.fashu.guohechaiqiao.2.2", fallback: "弃掉了！",color:"aqua"}]
+tellraw @a [{selector:"@s"},{text: "的一张牌被",color:"aqua"},{selector:"@a[tag=User,limit=1]"},{text: "弃掉了！",color:"aqua"}]

@@ -8,6 +8,8 @@ execute if score #system random_start matches 13 run function kards:game/random_
 
 scoreboard players set @s pingbi 0
 scoreboard players add @s use_kard 1
+scoreboard players add @s[tag=Talent_junhengfazhan] Talent_junhengfazhan 1
+execute if score @s Talent_junhengfazhan matches 6 run function kards:game/player/talent/enable/junhengfazhan/1
 
 scoreboard players remove @s[scores={kujie=1..}] kardCount 1
 scoreboard players add @s[scores={ChaoPin=1}] kardCount 1

@@ -1,23 +1,20 @@
 {
     "type": "minecraft:multi_action",
     "title": {
+        "text": "其他",
         "color": "gray",
-        "bold": true,
-        "translate": "json.kards.dialog.paiku.main.225",
-        "fallback": "其他"
+        "bold": true
     },
     "external_title": {
-        "translate": "json.kards.dialog.first_join.1.71",
-        "fallback": ""
+        "text": ""
     },
     "body": [],
     "inputs": [],
     "can_close_with_escape": true,
     "exit_action": {
         "label": {
-            "color": "green",
-            "translate": "json.kards.dialog.paiku.fashu.main.290",
-            "fallback": "返回§6主§a牌库"
+            "text": "返回§6主§a牌库",
+            "color": "green"
         },
         "action": {
             "type": "show_dialog",
@@ -28,9 +25,8 @@
     "actions": [
         {
             "label": {
-                "color": "gold",
-                "translate": "json.kards.dialog.paiku.yansheng.main.1127",
-                "fallback": "不死图腾"
+                "text": "不死图腾",
+                "color": "gold"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -40,9 +36,8 @@
         },
         {
             "label": {
-                "color": "gray",
-                "translate": "json.kards.dialog.paiku.yansheng.main.1128",
-                "fallback": "无用牌系列"
+                "text": "无用牌系列",
+                "color": "gray"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -52,9 +47,8 @@
         },
         {
             "label": {
-                "color": "red",
-                "translate": "json.kards.dialog.paiku.fashu.main.304",
-                "fallback": "酸辣无骨鸡爪"
+                "text": "酸辣无骨鸡爪",
+                "color": "red"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -64,9 +58,8 @@
         },
         {
             "label": {
-                "color": "dark_red",
-                "translate": "json.kards.dialog.paiku.yansheng.jinzijue.1103",
-                "fallback": "禁字决"
+                "text": "禁字决",
+                "color": "dark_red"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -76,9 +69,8 @@
         },
         {
             "label": {
-                "color": "white",
-                "translate": "json.kards.dialog.paiku.yansheng.junlintianxia.1117",
-                "fallback": "君临天下"
+                "text": "君临天下",
+                "color": "white"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -88,9 +80,8 @@
         },
         {
             "label": {
-                "color": "gold",
-                "translate": "json.kards.dialog.paiku.yansheng.longxi.1123",
-                "fallback": "龙息"
+                "text": "龙息",
+                "color": "gold"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -100,9 +91,8 @@
         },
         {
             "label": {
-                "color": "light_purple",
-                "translate": "json.kards.dialog.paiku.yansheng.main.1129",
-                "fallback": "贪欲"
+                "text": "贪欲",
+                "color": "light_purple"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -112,9 +102,8 @@
         },
         {
             "label": {
-                "color": "blue",
-                "translate": "json.kards.dialog.paiku.yansheng.kuanghuanzombie.1120",
-                "fallback": "狂欢僵尸"
+                "text": "狂欢僵尸",
+                "color": "blue"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -124,9 +113,8 @@
         },
         {
             "label": {
-                "color": "light_purple",
-                "translate": "json.kards.dialog.paiku.fashu.main.321",
-                "fallback": "DLC"
+                "text": "DLC",
+                "color": "light_purple"
             },
             "action": {
                 "type": "show_dialog",

@@ -1,14 +1,12 @@
 {
     "type": "minecraft:notice",
     "title": {
+        "text": "讲述者",
         "color": "dark_purple",
-        "italic": false,
-        "translate": "json.kards.dialog.paiku.wangzhibaoku.jiangshuzhe.844",
-        "fallback": "讲述者"
+        "italic": false
     },
     "external_title": {
-        "translate": "json.kards.dialog.first_join.1.71",
-        "fallback": ""
+        "text": ""
     },
     "body": [
         {
@@ -22,40 +20,36 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "你的回合开始时",
                 "color": "gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.jiangshuzhe.845",
-                "fallback": "你的回合开始时"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "讲述一个故事",
                 "color": "gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.jiangshuzhe.846",
-                "fallback": "讲述一个故事"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "传奇护符(背包内生效)",
                 "color": "white",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.feishenghufu.825",
-                "fallback": "传奇护符(背包内生效)"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "那么..今日讲述的故事是什么呢...?",
                 "color": "dark_gray",
-                "italic": true,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.jiangshuzhe.847",
-                "fallback": "那么..今日讲述的故事是什么呢...?"
+                "italic": true
             },
             "width": 1024
         }
@@ -64,9 +58,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "color": "green",
-            "translate": "json.kards.dialog.paiku.wangzhibaoku.diaolingtaidao.818",
-            "fallback": "返回§6王之宝库"
+            "text": "返回§6王之宝库",
+            "color": "green"
         },
         "action": {
             "type": "minecraft:show_dialog",

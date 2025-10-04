@@ -13,6 +13,6 @@ item replace entity @s weapon.offhand with air
 execute store result score @s ronghui_zhuangbei run clear @s minecraft:music_disc_13 0
 clear @s minecraft:music_disc_13
 scoreboard players operation @s zhuangbeicishu = @s ronghui_zhuangbei
-tellraw @a [{translate: "kards.function.game.yongpaiku.fashu.chongzhu.1", fallback: "装备牌回收数:",color:"dark_red",bold:false},{score:{objective:"ronghui_zhuangbei",name:"@s"},color:"green",bold:false}]
+tellraw @a [{text: "装备牌回收数:",color:"dark_red",bold:false},{score:{objective:"ronghui_zhuangbei",name:"@s"},color:"green",bold:false}]
 scoreboard players set @s ronghui_zhuangbei 0
 

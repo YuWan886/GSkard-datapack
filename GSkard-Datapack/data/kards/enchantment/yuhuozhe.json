@@ -1,17 +1,15 @@
 {
     "anvil_cost": 8,
-    "description": {
-        "color": "red",
-        "translate": "json.kards.dialog.xp_shop.enchantment.main.1343",
-        "fallback": "浴火者"
-    },
+    "description": {"text": "浴火者","color": "red"},
     "effects": {
-        "minecraft:tick": [
+        "minecraft:post_attack": [
             {
                 "effect": {
-                    "type": "run_function",
+                    "type": "minecraft:run_function",
                     "function": "kards:enchantment/yuhuozhe"
-                }
+                },
+                "enchanted": "victim",
+                "affected": "victim"
             }
         ]
     },

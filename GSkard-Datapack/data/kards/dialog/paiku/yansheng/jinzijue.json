@@ -1,14 +1,12 @@
 {
     "type": "minecraft:notice",
     "title": {
+        "text": "禁字决",
         "color": "dark_red",
-        "bold": true,
-        "translate": "json.kards.dialog.paiku.yansheng.jinzijue.1103",
-        "fallback": "禁字决"
+        "bold": true
     },
     "external_title": {
-        "translate": "json.kards.dialog.first_join.1.71",
-        "fallback": ""
+        "text": ""
     },
     "body": [
         {
@@ -22,121 +20,109 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "启封",
+                "color": "dark_red",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "首次使用时生命上限被修正至100♥ 每次使用后扣除你的10♥生命上限 依据使用次数获得以下效果",
+                "color": "gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "1.速度1",
+                "color": "gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "2.抗性提升1 免疫失明效果",
+                "color": "gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "3.力量1 急迫3 免疫挖掘疲劳效果",
+                "color": "gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "4.力量2 速度2 生命回复1 免疫缓慢效果",
+                "color": "gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "5.力量3 抗性提升2 免疫中毒与凋零效果",
+                "color": "gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "6.力量4 抗性提升3 速度4 生命回复2 30s获得一次额外生命 免疫飘浮效果",
+                "color": "gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "7.生命回复3 不会被死神之镰处决 无法被灵魂割舍斩杀",
+                "color": "gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "8.抗性提升4",
+                "color": "gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "9.无",
+                "color": "gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "10.[禁忌出世 禁字封闭]:所有人的禁字决抽取概率设为0% 无法再使用禁字决",
                 "color": "dark_red",
                 "italic": false,
-                "translate": "json.kards.dialog.paiku.yansheng.jinzijue.1104",
-                "fallback": "启封"
-            },
-            "width": 1024
-        },
-        {
-            "type": "minecraft:plain_message",
-            "contents": {
-                "color": "gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.yansheng.jinzijue.1105",
-                "fallback": "首次使用时生命上限被修正至100♥ 每次使用后扣除你的10♥生命上限 依据使用次数获得以下效果"
-            },
-            "width": 1024
-        },
-        {
-            "type": "minecraft:plain_message",
-            "contents": {
-                "color": "gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.yansheng.jinzijue.1106",
-                "fallback": "1.速度1"
-            },
-            "width": 1024
-        },
-        {
-            "type": "minecraft:plain_message",
-            "contents": {
-                "color": "gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.yansheng.jinzijue.1107",
-                "fallback": "2.抗性提升1 免疫失明效果"
-            },
-            "width": 1024
-        },
-        {
-            "type": "minecraft:plain_message",
-            "contents": {
-                "color": "gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.yansheng.jinzijue.1108",
-                "fallback": "3.力量1 急迫3 免疫挖掘疲劳效果"
-            },
-            "width": 1024
-        },
-        {
-            "type": "minecraft:plain_message",
-            "contents": {
-                "color": "gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.yansheng.jinzijue.1109",
-                "fallback": "4.力量2 速度2 生命回复1 免疫缓慢效果"
-            },
-            "width": 1024
-        },
-        {
-            "type": "minecraft:plain_message",
-            "contents": {
-                "color": "gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.yansheng.jinzijue.1110",
-                "fallback": "5.力量3 抗性提升2 免疫中毒与凋零效果"
-            },
-            "width": 1024
-        },
-        {
-            "type": "minecraft:plain_message",
-            "contents": {
-                "color": "gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.yansheng.jinzijue.1111",
-                "fallback": "6.力量4 抗性提升3 速度4 生命回复2 30s获得一次额外生命 免疫飘浮效果"
-            },
-            "width": 1024
-        },
-        {
-            "type": "minecraft:plain_message",
-            "contents": {
-                "color": "gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.yansheng.jinzijue.1112",
-                "fallback": "7.生命回复3 不会被死神之镰处决 无法被灵魂割舍斩杀"
-            },
-            "width": 1024
-        },
-        {
-            "type": "minecraft:plain_message",
-            "contents": {
-                "color": "gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.yansheng.jinzijue.1113",
-                "fallback": "8.抗性提升4"
-            },
-            "width": 1024
-        },
-        {
-            "type": "minecraft:plain_message",
-            "contents": {
-                "color": "gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.yansheng.jinzijue.1114",
-                "fallback": "9.无"
-            },
-            "width": 1024
-        },
-        {
-            "type": "minecraft:plain_message",
-            "contents": {
-                "color": "dark_red",
-                "italic": false,
-                "bold": false,
-                "translate": "json.kards.dialog.paiku.yansheng.jinzijue.1115",
-                "fallback": "10.[禁忌出世 禁字封闭]:所有人的禁字决抽取概率设为0% 无法再使用禁字决"
+                "bold": false
             },
             "width": 1024
         }
@@ -145,9 +131,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "color": "green",
-            "translate": "json.kards.dialog.paiku.yansheng.jinzijue.1116",
-            "fallback": "返回§7其他"
+            "text": "返回§7其他",
+            "color": "green"
         },
         "action": {
             "type": "minecraft:show_dialog",

@@ -1,79 +1,69 @@
 {
-    "type": "minecraft:multi_action",
-    "title": {
-        "color": "green",
-        "bold": true,
-        "translate": "json.kards.dialog.xp_shop.shengmin.1310",
-        "fallback": "生命"
+  "type": "minecraft:multi_action",
+  "title": {
+    "text": "生命",
+    "color": "green",
+    "bold": true
+  },
+  "external_title": {
+    "text": ""
+  },
+  "body": [],
+  "inputs": [],
+  "can_close_with_escape": true,
+  "columns": 2,
+  "actions": [
+    {
+      "label": {
+        "text": "回复2♥",
+        "color": "green" 
+      },
+      "tooltip": {
+        "text": "消耗5级 回复2♥"
+      },
+      "action": {
+        "type": "run_command",
+        "command": "/trigger dialog set 102"
+      }
     },
-    "external_title": {
-        "translate": "json.kards.dialog.first_join.1.71",
-        "fallback": ""
+    {
+      "label": {
+        "text": "回复6♥",
+        "color": "green"
+      },
+      "tooltip": {
+        "text": "消耗10级 回复6♥"
+      },
+      "action": {
+        "type": "run_command",
+        "command": "/trigger dialog set 103"
+      }
     },
-    "body": [],
-    "inputs": [],
-    "can_close_with_escape": true,
-    "columns": 2,
-    "actions": [
-        {
-            "label": {
-                "color": "green",
-                "translate": "json.kards.dialog.xp_shop.shengmin.1311",
-                "fallback": "回复2♥"
-            },
-            "tooltip": {
-                "translate": "json.kards.dialog.xp_shop.shengmin.1312",
-                "fallback": "消耗5级 回复2♥"
-            },
-            "action": {
-                "type": "run_command",
-                "command": "/trigger dialog set 102"
-            }
-        },
-        {
-            "label": {
-                "color": "green",
-                "translate": "json.kards.dialog.xp_shop.shengmin.1313",
-                "fallback": "回复6♥"
-            },
-            "tooltip": {
-                "translate": "json.kards.dialog.xp_shop.shengmin.1314",
-                "fallback": "消耗10级 回复6♥"
-            },
-            "action": {
-                "type": "run_command",
-                "command": "/trigger dialog set 103"
-            }
-        },
-        {
-            "label": {
-                "color": "green",
-                "translate": "json.kards.dialog.xp_shop.shengmin.1315",
-                "fallback": "回复15♥"
-            },
-            "tooltip": {
-                "translate": "json.kards.dialog.xp_shop.shengmin.1316",
-                "fallback": "消耗20级 回复15♥"
-            },
-            "action": {
-                "type": "run_command",
-                "command": "/trigger dialog set 104"
-            }
-        },
-        {
-            "label": {
-                "color": "green",
-                "translate": "json.kards.dialog.xp_shop.shengmin.1317",
-                "fallback": "回复25♥"
-            },
-            "tooltip": {
-                "translate": "json.kards.dialog.xp_shop.shengmin.1318",
-                "fallback": "消耗30级 回复25♥"
-            },
-            "action": {
-                "type": "run_command",
-                "command": "/trigger dialog set 105"
-            }
-        }
-    ]
+    {
+      "label": {
+        "text": "回复15♥",
+        "color": "green"
+      },
+      "tooltip": {
+        "text": "消耗20级 回复15♥"
+      },
+      "action": {
+        "type": "run_command",
+        "command": "/trigger dialog set 104"
+      }
+    },
+    {
+      "label": {
+        "text": "回复25♥",
+        "color": "green"
+      },
+      "tooltip": {
+        "text": "消耗30级 回复25♥"
+      },
+      "action": {
+        "type": "run_command",
+        "command": "/trigger dialog set 105"
+      }
+    }
+  ]
 }

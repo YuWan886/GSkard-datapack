@@ -1,71 +1,64 @@
 {
-    "type": "minecraft:notice",
-    "title": {
-        "extra": [
-            {
-                "color": "light_purple",
-                "translate": "json.kards.dialog.paiku.fashu.chunriying.246",
-                "fallback": "《春日影》"
-            }
-        ],
-        "color": "aqua",
-        "bold": true,
-        "translate": "json.kards.dialog.paiku.fashu.chunriying.245",
-        "fallback": "12K "
-    },
-    "external_title": {
-        "translate": "json.kards.dialog.first_join.1.71",
-        "fallback": ""
-    },
-    "body": [
-        {
-            "type": "minecraft:item",
-            "item": {
-                "id": "music_disc_mellohi"
-            },
-            "show_decorations": false,
-            "show_tooltip": false
-        },
-        {
-            "type": "minecraft:plain_message",
-            "contents": {
-                "color": "gray",
-                "translate": "json.kards.dialog.paiku.fashu.chunriying.247",
-                "fallback": "放下一个音符盒并播放《春日影》"
-            },
-            "width": 1024
-        },
-        {
-            "type": "minecraft:plain_message",
-            "contents": {
-                "color": "gray",
-                "translate": "json.kards.dialog.paiku.fashu.chunriying.248",
-                "fallback": "春日影期间中心附近的实体无法移动并使其强制朝向音符盒 持续5秒"
-            },
-            "width": 1024
-        },
-        {
-            "type": "minecraft:plain_message",
-            "contents": {
-                "color": "dark_gray",
-                "italic": true,
-                "translate": "json.kards.dialog.paiku.fashu.chunriying.249",
-                "fallback": "(BY MY GO!!!)"
-            },
-            "width": 1024
-        }
+  "type": "minecraft:notice",
+  "title": {
+    "text": "12K ",
+    "extra": [
+      {
+        "text": "《春日影》",
+        "color": "light_purple"
+      }
     ],
-    "inputs": [],
-    "can_close_with_escape": true,
-    "action": {
-        "label": {
-            "color": "green",
-            "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.232",
-            "fallback": "返回§d法术牌§a牌库"
-        },
-        "action": {
-            "type": "minecraft:show_dialog",
-            "dialog": "kards:paiku/fashu/main"
-        }
+    "color": "aqua",
+    "bold": true
+  },
+  "external_title": {
+    "text": ""
+  },
+  "body": [
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "music_disc_mellohi"
+      },
+      "show_decorations": false,
+      "show_tooltip": false
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "放下一个音符盒并播放《春日影》",
+        "color": "gray"
+      },
+      "width": 1024
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "春日影期间中心附近的实体无法移动并使其强制朝向音符盒 持续5秒",
+        "color": "gray"
+      },
+      "width": 1024
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "(BY MY GO!!!)",
+        "color": "dark_gray",
+        "italic": true
+      },
+      "width": 1024
     }
+  ],
+  "inputs": [],
+  "can_close_with_escape": true,
+  "action": {
+    "label": {
+      "text": "返回§d法术牌§a牌库",
+      "color": "green"
+    },
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "kards:paiku/fashu/main"
+    }
+  }
 }

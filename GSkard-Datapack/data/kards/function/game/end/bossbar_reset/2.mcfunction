@@ -6,4 +6,4 @@ $bossbar remove kards:pojia_$(UUID)
 $bossbar remove kards:xuanyun_$(UUID)
 $bossbar remove kards:yonghan_$(UUID)
 $bossbar remove kards:zhongshang_$(UUID)
-
+$bossbar remove kards:xiansheng_$(UUID)

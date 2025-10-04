@@ -1,17 +1,15 @@
 {
     "type": "notice",
     "title": {
+        "text": "3K ",
         "extra": [
             {
-                "color": "dark_gray",
-                "translate": "json.kards-dlc.dialog.kard.zuzhou.main.1395",
-                "fallback": "模板：诅咒"
+                "text": "模板：诅咒",
+                "color": "dark_gray"
             }
         ],
         "color": "aqua",
-        "bold": true,
-        "translate": "json.kards.dialog.paiku.fashu.guohechaiqiao.263",
-        "fallback": "3K "
+        "bold": true
     },
     "body": [
         {
@@ -25,29 +23,26 @@
         {
             "type": "plain_message",
             "contents": {
+                "text": "诅咒牌",
                 "color": "dark_gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.main.223",
-                "fallback": "诅咒牌"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "plain_message",
             "contents": {
+                "text": "给敌方玩家施加缓慢2以及不能跳跃 持续15s",
                 "color": "gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.zuzhou.duantui.1236",
-                "fallback": "给敌方玩家施加缓慢2以及不能跳跃 持续15s"
+                "italic": false
             },
             "width": 1024
         }
     ],
     "action": {
         "label": {
-            "color": "green",
-            "translate": "json.kards-dlc.dialog.kard.zuzhou.template_zuzhou.1396",
-            "fallback": "返回§c诅咒§a牌库-§5DLC"
+            "text": "返回§c诅咒§a牌库-§5DLC",
+            "color": "green"
         },
         "action": {
             "type": "show_dialog",

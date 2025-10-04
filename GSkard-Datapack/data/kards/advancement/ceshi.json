@@ -1,15 +1,15 @@
 {
-    "criteria": {
-        "requirement": {
-            "trigger": "minecraft:consume_item",
-            "conditions": {
-                "item": {
-                    "items": "minecraft:ender_eye"
-                }
-            }
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:ender_eye"
         }
-    },
-    "rewards": {
-        "function": "kards:ceshi/1"
+      }
     }
+  },
+  "rewards": {
+    "function": "kards:ceshi/1"
+  }
 }

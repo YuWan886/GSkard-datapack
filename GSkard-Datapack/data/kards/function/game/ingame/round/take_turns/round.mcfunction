@@ -1,7 +1,9 @@
 #回合轮换之前生效
 title @a times 0t 70t 20t
-team modify blue friendlyFire false
-team modify red friendlyFire false
+execute if score red FriendlyFire matches 1 run scoreboard players set red FriendlyFire 0
+execute if score blue FriendlyFire matches 1 run scoreboard players set blue FriendlyFire 0
+execute if score red FriendlyFire matches 0 run team modify red friendlyFire false
+execute if score blue FriendlyFire matches 0 run team modify blue friendlyFire false
 scoreboard players operation time roundtime = #system roundtime
 scoreboard players set @a[scores={CanuseKard=1}] lairichanghuan 0
 scoreboard players set @a changhuan_times 0
@@ -16,7 +18,6 @@ weather clear
 #检测pvp
 execute if score 回合数 GameRound = #system RoundCount run return run function kards:game/ingame/round/pvpround/waitstart
 #回合轮换
-scoreboard players add 回合数 GameRound 1
 function kards:game/ingame/round/turns/panding
 
 execute if score 回合数 GameRound matches 11 run advancement grant @a only kards:advancement/round/11
@@ -31,11 +32,17 @@ execute as @a[scores={CanuseKard=1}] run function kards:game/ingame/round/talent
 #回合规则
 function kards:game/random_start/round_event
 #检测回合 事件通知
-execute if score 回合数 GameRound = #system RoundCount run tellraw @a [{translate: "kards.function.game.ingame.round.take_turns.round.1", fallback: "Final GameRound 最后回合",color:"gold",bold:true}]
-execute if score 回合数 GameRound = #system DifficultyRound run tellraw @a [{translate: "kards.function.game.ingame.round.take_turns.round.2", fallback: "当前游戏难度：困难",color:"gold",bold:true},{translate: "kards.function.game.ingame.round.take_turns.round.3", fallback: "\n怪物造成的伤害提升至1.5倍 玩家受到的部分伤害提升",color:"gold",bold:true}]
-execute if score 回合数 GameRound = #system DifficultyRound run difficulty hard
+execute if score 回合数 GameRound = #system RoundCount run tellraw @a [{text: "Final GameRound 最后回合",color:"gold",bold:true}]
+
 #基础生效
-execute as @a[scores={CanuseKard=1}] run scoreboard players operation @s kardCount = @s kardCountmax
+execute as @a[scores={CanuseKard=1},tag=!Talent_xukongcunzhe] run scoreboard players operation @s kardCount = @s kardCountmax
+
+execute as @a[scores={CanuseKard=1},tag=Talent_xukongcunzhe] run scoreboard players operation @s temp = @s kardCountmax
+scoreboard players set #system temp 2
+execute as @a[scores={CanuseKard=1},tag=Talent_xukongcunzhe] run scoreboard players operation @s temp /= #system temp
+execute as @a[scores={CanuseKard=1},tag=Talent_xukongcunzhe] run scoreboard players operation @s kardCount += @s temp
+
+
 function kards:game/ingame/round/take_turns/choupai with storage minecraft:system choupai
 function kards:game/ingame/round/fashu with storage minecraft:changdidaxiao
 #人数补偿
@@ -63,42 +70,47 @@ execute if score #system r_death matches 4 run scoreboard players add @a[team=re
 execute if score #system r_death matches 4 run scoreboard players add @a[team=red,scores={CanuseKard=1}] cishu 4
 execute if score #system r_death matches 5.. run scoreboard players add @a[team=red,scores={CanuseKard=1}] kardCount 20
 execute if score #system r_death matches 5.. run scoreboard players add @a[team=red,scores={CanuseKard=1}] cishu 5
-#墓园狂欢额外抽卡
+
+execute as @a[tag=Talent_yaoyezhuhuo] run function kards:game/player/talent/enable/yaoyezhuhuo/1
+
+
+#墓园狂欢
 scoreboard players add @a[scores={muyuankuanghuan=1,CanuseKard=1}] cishu 2
+
 #超频
 scoreboard players remove @a[scores={ChaoPin=1..}] ChaoPin 1
 #> buff生效
-tellraw @a [{translate: "kards.function.game.ingame.round.take_turns.round.4", fallback: "==========事件==========",color:"gray",bold:true}]
+tellraw @a [{text: "==========事件==========",color:"gray",bold:true}]
 #重伤
 scoreboard players remove @a[scores={ZhongShang_Round=1..}] ZhongShang_Round 1
-execute if entity @a[scores={ZhongShang_Round=1..}] run tellraw @a [{translate: "kards.function.game.ingame.round.take_turns.round.5", fallback: "[重伤]",color:"dark_gray",bold:true},{translate: "kards.function.game.ingame.round.take_turns.round.6", fallback: "生效至\n",color:"gray"},{selector:"@a[scores={ZhongShang_Round=1..}]",bold:true},{translate: "kards.function.game.ingame.round.take_turns.round.7", fallback: "\n他们本回合非瞬间治疗的治疗效果失效",color:"gray",bold:true}]
-execute if entity @a[scores={ZhongShang_Round=0}] run tellraw @a [{selector:"@a[scores={ZhongShang_Round=0}]",bold:true},{translate: "kards.function.game.ingame.round.take_turns.round.8", fallback: "脱离了",color:"gray",bold:true},{translate: "kards.function.game.ingame.round.take_turns.round.5", fallback: "[重伤]",color:"dark_gray",bold:true},{translate: "kards.function.game.ingame.round.take_turns.round.9", fallback: "状态",color:"gray"}]
-execute if entity @a[scores={ZhongShang_Round=0}] unless entity @a[scores={ZhongShang_Round=1..}] run tellraw @a [{translate: "kards.function.game.ingame.round.take_turns.round.10", fallback: "-",color:"gray"}]
-execute unless entity @a[scores={ZhongShang_Round=0}] if entity @a[scores={ZhongShang_Round=1..}] run tellraw @a [{translate: "kards.function.game.ingame.round.take_turns.round.10", fallback: "-",color:"gray"}]
-execute if entity @a[scores={ZhongShang_Round=0}] if entity @a[scores={ZhongShang_Round=1..}] run tellraw @a [{translate: "kards.function.game.ingame.round.take_turns.round.10", fallback: "-",color:"gray"}]
+execute if entity @a[scores={ZhongShang_Round=1..}] run tellraw @a [{text: "[重伤]",color:"dark_gray",bold:true},{text:"生效至\n",color:"gray"},{selector:"@a[scores={ZhongShang_Round=1..}]",bold:true},{text: "\n他们本回合生命恢复效率减半",color:"gray",bold:true}]
+execute if entity @a[scores={ZhongShang_Round=0}] run tellraw @a [{selector:"@a[scores={ZhongShang_Round=0}]",bold:true},{text: "脱离了",color:"gray",bold:true},{text: "[重伤]",color:"dark_gray",bold:true},{text:"状态",color:"gray"}]
+execute if entity @a[scores={ZhongShang_Round=0}] unless entity @a[scores={ZhongShang_Round=1..}] run tellraw @a [{text: "-",color:"gray"}]
+execute unless entity @a[scores={ZhongShang_Round=0}] if entity @a[scores={ZhongShang_Round=1..}] run tellraw @a [{text: "-",color:"gray"}]
+execute if entity @a[scores={ZhongShang_Round=0}] if entity @a[scores={ZhongShang_Round=1..}] run tellraw @a [{text: "-",color:"gray"}]
 #沉默
 scoreboard players remove @a[scores={chengmo=1..}] chengmo 1
 #狼群战术
-execute if entity @a[scores={langqunzhanshu=1..}] run tellraw @a [{translate: "kards.function.game.ingame.round.take_turns.round.11", fallback: "[狼群战术]",color:"light_purple",bold:true},{translate: "kards.function.game.ingame.round.take_turns.round.6", fallback: "生效至\n",color:"gray"},{selector:"@a[scores={langqunzhanshu=1}]",bold:true},{translate: "kards.function.game.ingame.round.take_turns.round.12", fallback: "\n他们本回合不抽卡",color:"gray",bold:true}]
-execute if entity @a[scores={langqunzhanshu=1..}] run tellraw @a [{translate: "kards.function.game.ingame.round.take_turns.round.10", fallback: "-",color:"gray"}]
+execute if entity @a[scores={langqunzhanshu=1..}] run tellraw @a [{text: "[狼群战术]",color:"light_purple",bold:true},{text:"生效至\n",color:"gray"},{selector:"@a[scores={langqunzhanshu=1}]",bold:true},{text: "\n他们本回合不抽卡",color:"gray",bold:true}]
+execute if entity @a[scores={langqunzhanshu=1..}] run tellraw @a [{text: "-",color:"gray"}]
 scoreboard players set @a[scores={langqunzhanshu=1..}] cishu 0
 scoreboard players set @a[scores={langqunzhanshu=1..}] langqunzhanshu 0
 #隐匿仓库
-execute if entity @a[scores={yinnicangku=1..,CanuseKard=1}] run tellraw @a [{translate: "kards.function.game.ingame.round.take_turns.round.13", fallback: "[隐匿仓库]",color:"light_purple",bold:true},{translate: "kards.function.game.ingame.round.take_turns.round.6", fallback: "生效至\n",color:"gray"},{selector:"@a[scores={yinnicangku=1,CanuseKard=1}]",bold:true},{translate: "kards.function.game.ingame.round.take_turns.round.14", fallback: "\n他们本回合多12K",color:"gray",bold:true}]
-execute if entity @e[scores={yinnicangku=1..,CanuseKard=1}] run tellraw @a [{translate: "kards.function.game.ingame.round.take_turns.round.10", fallback: "-",color:"gray"}]
+execute if entity @a[scores={yinnicangku=1..,CanuseKard=1}] run tellraw @a [{text: "[隐匿仓库]",color:"light_purple",bold:true},{text:"生效至\n",color:"gray"},{selector:"@a[scores={yinnicangku=1,CanuseKard=1}]",bold:true},{text: "\n他们本回合多12K",color:"gray",bold:true}]
+execute if entity @e[scores={yinnicangku=1..,CanuseKard=1}] run tellraw @a [{text: "-",color:"gray"}]
 scoreboard players add @a[scores={yinnicangku=1,CanuseKard=1}] kardCount 12
 scoreboard players set @a[scores={yinnicangku=1,CanuseKard=1}] yinnicangku 0
 #生产令
-execute if entity @a[scores={shengchanling=1..,CanuseKard=1}] run tellraw @a [{translate: "kards.function.game.ingame.round.take_turns.round.15", fallback: "[生产令]",color:"light_purple",bold:true},{translate: "kards.function.game.ingame.round.take_turns.round.6", fallback: "生效至\n",color:"gray"},{selector:"@a[scores={shengchanling=1,CanuseKard=1}]",bold:true},{translate: "kards.function.game.ingame.round.take_turns.round.16", fallback: "\n他们本回合多2张牌",color:"gray",bold:true}]
-execute if entity @e[scores={shengchanling=1..,CanuseKard=1}] run tellraw @a [{translate: "kards.function.game.ingame.round.take_turns.round.10", fallback: "-",color:"gray"}]
+execute if entity @a[scores={shengchanling=1..,CanuseKard=1}] run tellraw @a [{text: "[生产令]",color:"light_purple",bold:true},{text:"生效至\n",color:"gray"},{selector:"@a[scores={shengchanling=1,CanuseKard=1}]",bold:true},{text: "\n他们本回合多2张牌",color:"gray",bold:true}]
+execute if entity @e[scores={shengchanling=1..,CanuseKard=1}] run tellraw @a [{text: "-",color:"gray"}]
 scoreboard players add @a[scores={shengchanling=1..,CanuseKard=1}] cishu 2
 scoreboard players remove @a[scores={shengchanling=1..,CanuseKard=1}] shengchanling 1
 #枯竭
 scoreboard players remove @a[scores={kujie=1..}] kujie 1
 
-execute if entity @a[team=red,scores={kujie=1..}] run tellraw @a [[{translate: "kards.function.game.end.win.red_win.1", fallback: "红队",color:"red",bold:true},{translate: "kards.function.game.ingame.round.take_turns.round.17", fallback: "[枯竭]",color:"dark_gray",bold:true},{translate: "kards.function.game.ingame.round.take_turns.round.18", fallback: "生效中",color:"dark_gray",bold:true}],{translate: "kards.function.game.ingame.round.take_turns.round.19", fallback: "\n使用牌后额外扣除1K直至回合结束",color:"gold"}]
-execute if entity @a[team=blue,scores={kujie=1..}] run tellraw @a [[{translate: "kards.function.game.end.win.blue_win.2", fallback: "蓝队",color:"blue",bold:true},{translate: "kards.function.game.ingame.round.take_turns.round.17", fallback: "[枯竭]",color:"dark_gray",bold:true},{translate: "kards.function.game.ingame.round.take_turns.round.18", fallback: "生效中",color:"dark_gray",bold:true}],{translate: "kards.function.game.ingame.round.take_turns.round.19", fallback: "\n使用牌后额外扣除1K直至回合结束",color:"gold"}]
-execute if entity @a[scores={kujie=1..}] run tellraw @a [{translate: "kards.function.game.ingame.round.take_turns.round.10", fallback: "-",color:"gray"}]
+execute if entity @a[team=red,scores={kujie=1..}] run tellraw @a [[{text: "红队",color:"red",bold:true},{text: "[枯竭]",color:"dark_gray",bold:true},{text: "生效中",color:"dark_gray",bold:true}],{text:"\n使用牌后额外扣除1K直至回合结束",color:"gold"}]
+execute if entity @a[team=blue,scores={kujie=1..}] run tellraw @a [[{text: "蓝队",color:"blue",bold:true},{text: "[枯竭]",color:"dark_gray",bold:true},{text: "生效中",color:"dark_gray",bold:true}],{text:"\n使用牌后额外扣除1K直至回合结束",color:"gold"}]
+execute if entity @a[scores={kujie=1..}] run tellraw @a [{text: "-",color:"gray"}]
 #地狱、漫水
 execute if score 红队 diyu matches 1 run scoreboard players set 红队 diyu 0
 execute if score 蓝队 diyu matches 1 run scoreboard players set 蓝队 diyu 0
@@ -111,7 +123,7 @@ tag @a[tag=zuzhouhujia] remove zuzhouhujia
 
 #马蜂
 scoreboard players remove @a[scores={hurt_by_mafeng=1,CanuseKard=1}] kardCount 2
-execute if entity @a[scores={hurt_by_mafeng=1,CanuseKard=1}] run tellraw @a [{selector:"@a[scores={hurt_by_mafeng=1,CanuseKard=1}]"},{translate: "kards.function.game.ingame.round.take_turns.round.20", fallback: "上回合被马蜂蛰了 -2K",color:"gray"}]
+execute if entity @a[scores={hurt_by_mafeng=1,CanuseKard=1}] run tellraw @a [{selector:"@a[scores={hurt_by_mafeng=1,CanuseKard=1}]"},{text:"上回合被马蜂蛰了 -2K",color:"gray"}]
 scoreboard players reset @a[scores={hurt_by_mafeng=1,CanuseKard=1}] hurt_by_mafeng
 
 scoreboard players set @a jiben 0
@@ -119,7 +131,7 @@ scoreboard players set @a xukonghuixiang 0
 function kards:game/ingame/round/skill
 function kards:game/ingame/round/tuteng
 
-scoreboard players set @a[scores={CanuseKard=0}] kardCount 0
+scoreboard players set @a[scores={CanuseKard=0},tag=!Talent_xukongcunzhe] kardCount 0
 
 #酸辣无骨鸡爪
 execute as @a[gamemode=adventure] store result score @s suanlawugujizhua run clear @s bone[custom_data={kards:'鸡爪'}] 0
@@ -134,4 +146,4 @@ scoreboard players set @a[gamemode=spectator] kardCount 0
 scoreboard players set @a[gamemode=spectator] CanuseKard 0
 #pvp
 execute if score 回合数 GameRound matches 0 run scoreboard players set @a[gamemode=spectator] cishu 0
-#tellraw @a [{translate: "kards.function.game.ingame.round.take_turns.round.21", fallback: "=======================",color:"gray",bold:true}]
+#tellraw @a [{text: "=======================",color:"gray",bold:true}]

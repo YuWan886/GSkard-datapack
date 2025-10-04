@@ -5,12 +5,10 @@
             "count": 1
         },
         "title": {
-            "translate": "json.kards.advancement.advancement.run.5.57",
-            "fallback": "跑酷高手..?"
+            "text": "跑酷高手..?"
         },
         "description": {
-            "translate": "json.kards.advancement.advancement.run.5.58",
-            "fallback": "在1s内完成跑酷...世上竟有超人?"
+            "text": "在1s内完成跑酷...世上竟有超人?"
         },
         "frame": "challenge",
         "show_toast": true,

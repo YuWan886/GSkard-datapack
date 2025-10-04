@@ -1,14 +1,12 @@
 {
     "type": "minecraft:notice",
     "title": {
+        "text": "天神石板甲",
         "color": "gold",
-        "italic": false,
-        "translate": "json.kards.dialog.paiku.wangzhibaoku.main.895",
-        "fallback": "天神石板甲"
+        "italic": false
     },
     "external_title": {
-        "translate": "json.kards.dialog.first_join.1.71",
-        "fallback": ""
+        "text": ""
     },
     "body": [
         {
@@ -28,227 +26,201 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "如有神助",
                 "color": "gray",
                 "italic": false,
-                "bold": true,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.tianshenshibanjia.934",
-                "fallback": "如有神助"
+                "bold": true
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "穿戴时记录你受到的伤害 每受到1♥伤害 使你获得1层",
                 "color": "gray",
                 "italic": false,
                 "extra": [
                     {
+                        "text": "显圣",
                         "color": "gold",
                         "italic": false,
-                        "bold": true,
-                        "translate": "json.kards.dialog.paiku.wangzhibaoku.tianshenshibanjia.936",
-                        "fallback": "显圣"
+                        "bold": true
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.tianshenshibanjia.935",
-                "fallback": "穿戴时记录你受到的伤害 每受到1♥伤害 使你获得1层"
+                ]
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "你每次受到伤害都会失去1层",
                 "color": "gray",
                 "italic": false,
                 "extra": [
                     {
+                        "text": "显圣",
                         "color": "gold",
                         "italic": false,
-                        "bold": true,
-                        "translate": "json.kards.dialog.paiku.wangzhibaoku.tianshenshibanjia.936",
-                        "fallback": "显圣"
+                        "bold": true
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.tianshenshibanjia.937",
-                "fallback": "你每次受到伤害都会失去1层"
+                ]
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "屹立不倒",
                 "color": "gray",
                 "italic": false,
-                "bold": true,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.tianshenshibanjia.938",
-                "fallback": "屹立不倒"
+                "bold": true
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "每拥有1层",
                 "color": "gray",
                 "italic": false,
                 "extra": [
                     {
+                        "text": "显圣",
                         "color": "gold",
                         "italic": false,
-                        "bold": true,
-                        "translate": "json.kards.dialog.paiku.wangzhibaoku.tianshenshibanjia.936",
-                        "fallback": "显圣"
+                        "bold": true
                     },
                     {
+                        "text": " 你的",
                         "color": "gray",
-                        "italic": false,
-                        "translate": "json.kards.dialog.paiku.wangzhibaoku.tianshenshibanjia.940",
-                        "fallback": " 你的"
+                        "italic": false
                     },
                     {
+                        "text": "击退抗性",
                         "color": "green",
-                        "italic": false,
-                        "translate": "json.kards.dialog.paiku.wangzhibaoku.tianshenshibanjia.941",
-                        "fallback": "击退抗性"
+                        "italic": false
                     },
                     {
+                        "text": "提升1.25% 最高提升至75%",
                         "color": "gray",
-                        "italic": false,
-                        "translate": "json.kards.dialog.paiku.wangzhibaoku.tianshenshibanjia.942",
-                        "fallback": "提升1.25% 最高提升至75%"
+                        "italic": false
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.tianshenshibanjia.939",
-                "fallback": "每拥有1层"
+                ]
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "圣威护卫",
                 "color": "gray",
                 "italic": false,
-                "bold": true,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.tianshenshibanjia.943",
-                "fallback": "圣威护卫"
+                "bold": true
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "每拥有15层",
                 "color": "gray",
                 "italic": false,
                 "extra": [
                     {
+                        "text": "显圣",
                         "color": "gold",
                         "italic": false,
-                        "bold": true,
-                        "translate": "json.kards.dialog.paiku.wangzhibaoku.tianshenshibanjia.936",
-                        "fallback": "显圣"
+                        "bold": true
                     },
                     {
+                        "text": " 为你提供1级",
                         "color": "gray",
-                        "italic": false,
-                        "translate": "json.kards.dialog.paiku.wangzhibaoku.tianshenshibanjia.945",
-                        "fallback": " 为你提供1级"
+                        "italic": false
                     },
                     {
+                        "text": "抗性提升",
                         "color": "green",
-                        "italic": false,
-                        "translate": "json.kards.dialog.paiku.wangzhibaoku.tianshenshibanjia.946",
-                        "fallback": "抗性提升"
+                        "italic": false
                     },
                     {
+                        "text": "效果 最高提升抗性提升4",
                         "color": "gray",
-                        "italic": false,
-                        "translate": "json.kards.dialog.paiku.wangzhibaoku.tianshenshibanjia.947",
-                        "fallback": "效果 最高提升抗性提升4"
+                        "italic": false
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.tianshenshibanjia.944",
-                "fallback": "每拥有15层"
+                ]
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "显圣之威",
                 "color": "gray",
                 "italic": false,
-                "bold": true,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.tianshenshibanjia.948",
-                "fallback": "显圣之威"
+                "bold": true
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "当你周围4格有敌对生物时 每秒消耗1层",
                 "color": "gray",
                 "italic": false,
                 "extra": [
                     {
+                        "text": "显圣",
                         "color": "gold",
                         "italic": false,
-                        "bold": true,
-                        "translate": "json.kards.dialog.paiku.wangzhibaoku.tianshenshibanjia.936",
-                        "fallback": "显圣"
+                        "bold": true
                     },
                     {
+                        "text": " 将4♥物理伤害分配给他们",
                         "color": "gray",
-                        "italic": false,
-                        "translate": "json.kards.dialog.paiku.wangzhibaoku.tianshenshibanjia.950",
-                        "fallback": " 将4♥物理伤害分配给他们"
+                        "italic": false
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.tianshenshibanjia.949",
-                "fallback": "当你周围4格有敌对生物时 每秒消耗1层"
+                ]
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "圣威汲取",
                 "color": "gray",
                 "italic": false,
-                "bold": true,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.tianshenshibanjia.951",
-                "fallback": "圣威汲取"
+                "bold": true
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "你杀死生物时获得2层",
                 "color": "gray",
                 "italic": false,
                 "extra": [
                     {
+                        "text": "显圣",
                         "color": "gold",
                         "italic": false,
-                        "bold": true,
-                        "translate": "json.kards.dialog.paiku.wangzhibaoku.tianshenshibanjia.936",
-                        "fallback": "显圣"
+                        "bold": true
                     },
                     {
+                        "text": " 若目标是玩家 额外获得6层",
                         "color": "gray",
-                        "italic": false,
-                        "translate": "json.kards.dialog.paiku.wangzhibaoku.tianshenshibanjia.953",
-                        "fallback": " 若目标是玩家 额外获得6层"
+                        "italic": false
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.tianshenshibanjia.952",
-                "fallback": "你杀死生物时获得2层"
+                ]
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "传奇护具",
                 "color": "white",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.kunanyaolan.872",
-                "fallback": "传奇护具"
+                "italic": false
             },
             "width": 1024
         }
@@ -257,9 +229,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "color": "green",
-            "translate": "json.kards.dialog.paiku.wangzhibaoku.diaolingtaidao.818",
-            "fallback": "返回§6王之宝库"
+            "text": "返回§6王之宝库",
+            "color": "green"
         },
         "action": {
             "type": "minecraft:show_dialog",

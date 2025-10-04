@@ -1,21 +1,18 @@
 {
     "type": "minecraft:notice",
     "title": {
+        "text": "10K ",
         "extra": [
             {
-                "color": "dark_green",
-                "translate": "json.kards.dialog.paiku.juntuan.main.493",
-                "fallback": "深海恐惧"
+                "text": "深海恐惧",
+                "color": "dark_green"
             }
         ],
         "color": "aqua",
-        "bold": true,
-        "translate": "json.kards.dialog.paiku.juntuan.shenghaikongju.523",
-        "fallback": "10K "
+        "bold": true
     },
     "external_title": {
-        "translate": "json.kards.dialog.first_join.1.71",
-        "fallback": ""
+        "text": ""
     },
     "body": [
         {
@@ -29,51 +26,44 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "召唤3只",
                 "color": "gray",
                 "extra": [
                     {
-                        "color": "gold",
-                        "translate": "json.kards.dialog.paiku.juntuan.shenghaikongju.524",
-                        "fallback": " 守卫者"
+                        "text": " 守卫者",
+                        "color": "gold"
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.juntuan.sanrenchengzhong.514",
-                "fallback": "召唤3只"
+                ]
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "color": "gray",
-                "translate": "json.kards.dialog.paiku.juntuan.shenghaikongju.525",
-                "fallback": "若回合数大于等于15"
+                "text": "若回合数大于等于15",
+                "color": "gray"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "改为召唤2只",
                 "color": "gray",
                 "extra": [
                     {
-                        "color": "gold",
-                        "translate": "json.kards.dialog.paiku.juntuan.shenghaikongju.524",
-                        "fallback": " 守卫者"
+                        "text": " 守卫者",
+                        "color": "gold"
                     },
                     {
-                        "color": "gray",
-                        "translate": "json.kards.dialog.paiku.juntuan.jieluexiaodui.484",
-                        "fallback": " 与1只"
+                        "text": " 与1只",
+                        "color": "gray"
                     },
                     {
-                        "color": "gold",
-                        "translate": "json.kards.dialog.paiku.jiben.yuangushouweizhe.444",
-                        "fallback": " 远古守卫者"
+                        "text": " 远古守卫者",
+                        "color": "gold"
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.juntuan.shenghaikongju.526",
-                "fallback": "改为召唤2只"
+                ]
             },
             "width": 1024
         }
@@ -82,9 +72,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "color": "green",
-            "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.455",
-            "fallback": "返回§d军团牌§a牌库"
+            "text": "返回§d军团牌§a牌库",
+            "color": "green"
         },
         "action": {
             "type": "minecraft:show_dialog",

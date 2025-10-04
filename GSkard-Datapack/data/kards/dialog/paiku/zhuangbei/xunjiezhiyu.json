@@ -1,21 +1,18 @@
 {
     "type": "minecraft:notice",
     "title": {
+        "text": "3K ",
         "extra": [
             {
-                "color": "gold",
-                "translate": "json.kards.dialog.paiku.zhuangbei.main.1207",
-                "fallback": "迅捷之羽"
+                "text": "迅捷之羽",
+                "color": "gold"
             }
         ],
         "color": "aqua",
-        "bold": true,
-        "translate": "json.kards.dialog.paiku.fashu.guohechaiqiao.263",
-        "fallback": "3K "
+        "bold": true
     },
     "external_title": {
-        "translate": "json.kards.dialog.first_join.1.71",
-        "fallback": ""
+        "text": ""
     },
     "body": [
         {
@@ -29,34 +26,30 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "装备牌",
                 "color": "gold",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.main.222",
-                "fallback": "装备牌"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "获得一个",
                 "color": "gray",
                 "italic": false,
                 "extra": [
                     {
+                        "text": "迅捷之羽",
                         "color": "gold",
-                        "italic": false,
-                        "translate": "json.kards.dialog.paiku.zhuangbei.main.1207",
-                        "fallback": "迅捷之羽"
+                        "italic": false
                     },
                     {
+                        "text": "(增加移速)",
                         "color": "gray",
-                        "italic": false,
-                        "translate": "json.kards.dialog.paiku.zhuangbei.xunjiezhiyu.1227",
-                        "fallback": "(增加移速)"
+                        "italic": false
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.zhuangbei.bianxiehuosai.1178",
-                "fallback": "获得一个"
+                ]
             },
             "width": 1024
         }
@@ -65,9 +58,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "color": "green",
-            "translate": "json.kards.dialog.paiku.zhuangbei.bianxiehuosai.1180",
-            "fallback": "返回§c装备§a牌库"
+            "text": "返回§c装备§a牌库",
+            "color": "green"
         },
         "action": {
             "type": "minecraft:show_dialog",

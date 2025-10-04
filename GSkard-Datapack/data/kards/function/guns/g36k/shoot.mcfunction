@@ -1,4 +1,6 @@
 scoreboard players reset @s G36K_Use
+execute unless items entity @s weapon.mainhand carrot_on_a_stick[custom_data={kards:"G36K"}] run return fail
+
 scoreboard players set @s G36K_Ray 300
 
 tag @s add G36K_Shoot

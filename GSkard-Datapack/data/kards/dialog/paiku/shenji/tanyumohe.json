@@ -1,22 +1,19 @@
 {
     "type": "minecraft:notice",
     "title": {
+        "text": "0K ",
         "extra": [
             {
+                "text": "贪欲魔盒",
                 "color": "white",
-                "bold": true,
-                "translate": "json.kards.dialog.paiku.shenji.main.644",
-                "fallback": "贪欲魔盒"
+                "bold": true
             }
         ],
         "color": "aqua",
-        "bold": true,
-        "translate": "json.kards.dialog.paiku.fashu.duming.254",
-        "fallback": "0K "
+        "bold": true
     },
     "external_title": {
-        "translate": "json.kards.dialog.first_join.1.71",
-        "fallback": ""
+        "text": ""
     },
     "body": [
         {
@@ -30,56 +27,49 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "神迹牌",
                 "color": "white",
-                "italic": false,
-                "translate": "json.kards.dialog.jiaocheng.wanfa.2.153",
-                "fallback": "神迹牌"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "现在开始 你以任意方式获取的以下种类的牌转化为特殊的衍生卡",
                 "color": "gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.shenji.muyuankuanghuan.647",
-                "fallback": "现在开始 你以任意方式获取的以下种类的牌转化为特殊的衍生卡"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "[诅咒牌]",
                 "color": "dark_gray",
                 "italic": false,
                 "extra": [
                     {
+                        "text": "[法术牌]",
                         "color": "light_purple",
-                        "italic": false,
-                        "translate": "json.kards.dialog.paiku.shenji.tanyumohe.663",
-                        "fallback": "[法术牌]"
+                        "italic": false
                     },
                     {
+                        "text": "[装备牌]",
                         "color": "gold",
-                        "italic": false,
-                        "translate": "json.kards.dialog.paiku.shenji.tanyumohe.664",
-                        "fallback": "[装备牌]"
+                        "italic": false
                     },
                     {
+                        "text": "转为",
                         "color": "gray",
-                        "italic": false,
-                        "translate": "json.kards.dialog.paiku.shenji.tanyumohe.665",
-                        "fallback": "转为"
+                        "italic": false
                     },
                     {
+                        "text": "[贪欲]*2",
                         "color": "light_purple",
-                        "italic": false,
-                        "translate": "json.kards.dialog.paiku.shenji.tanyumohe.666",
-                        "fallback": "[贪欲]*2"
+                        "italic": false
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.shenji.tanyumohe.662",
-                "fallback": "[诅咒牌]"
+                ]
             },
             "width": 1024
         }
@@ -88,9 +78,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "color": "green",
-            "translate": "json.kards.dialog.paiku.shenji.fanxiangfeileishen.605",
-            "fallback": "返回§d神迹§a牌库"
+            "text": "返回§d神迹§a牌库",
+            "color": "green"
         },
         "action": {
             "type": "minecraft:show_dialog",

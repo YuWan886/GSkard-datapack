@@ -1,30 +1,31 @@
 {
-    "description": "§b永寒之护",
-    "supported_items": "#minecraft:chest_armor",
-    "weight": 1,
-    "max_level": 1,
-    "min_cost": {
-        "base": 0,
-        "per_level_above_first": 0
-    },
-    "max_cost": {
-        "base": 0,
-        "per_level_above_first": 0
-    },
-    "anvil_cost": 0,
-    "slots": [
-        "chest"
-    ],
-    "effects": {
-        "minecraft:post_attack": [
-            {
-                "effect": {
-                    "type": "minecraft:run_function",
-                    "function": "kards:enchantment/yonghanzhihu"
-                },
-                "enchanted": "victim",
-                "affected": "attacker"
-            }
-        ]
-    }
+  "description": "§b永寒之护",
+  "supported_items": "#minecraft:chest_armor",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "chest"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "kards:enchantment/yonghanzhihu"
+        },
+        
+        "enchanted": "victim",
+        "affected": "attacker"
+      }
+    ]
+  }
 }

@@ -1,23 +1,20 @@
 {
     "type": "minecraft:multi_action",
     "title": {
+        "text": "诅咒",
         "color": "dark_gray",
-        "bold": true,
-        "translate": "json.kards.dialog.paiku.zuzhou.main.1243",
-        "fallback": "诅咒"
+        "bold": true
     },
     "external_title": {
-        "translate": "json.kards.dialog.first_join.1.71",
-        "fallback": ""
+        "text": ""
     },
     "body": [],
     "inputs": [],
     "can_close_with_escape": true,
     "exit_action": {
         "label": {
-            "color": "green",
-            "translate": "json.kards.dialog.paiku.fashu.main.290",
-            "fallback": "返回§6主§a牌库"
+            "text": "返回§6主§a牌库",
+            "color": "green"
         },
         "action": {
             "type": "show_dialog",
@@ -28,9 +25,8 @@
     "actions": [
         {
             "label": {
-                "color": "dark_gray",
-                "translate": "json.kards.dialog.paiku.zuzhou.chengmo.1230",
-                "fallback": "沉默"
+                "text": "沉默",
+                "color": "dark_gray"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -40,9 +36,8 @@
         },
         {
             "label": {
-                "color": "dark_gray",
-                "translate": "json.kards.dialog.paiku.zuzhou.diandao.1233",
-                "fallback": "颠倒"
+                "text": "颠倒",
+                "color": "dark_gray"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -52,9 +47,8 @@
         },
         {
             "label": {
-                "color": "dark_gray",
-                "translate": "json.kards.dialog.paiku.zuzhou.duantui.1235",
-                "fallback": "断腿"
+                "text": "断腿",
+                "color": "dark_gray"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -64,9 +58,8 @@
         },
         {
             "label": {
-                "color": "dark_gray",
-                "translate": "json.kards.dialog.paiku.zuzhou.hunluan.1237",
-                "fallback": "混乱"
+                "text": "混乱",
+                "color": "dark_gray"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -76,9 +69,8 @@
         },
         {
             "label": {
-                "color": "dark_gray",
-                "translate": "json.kards.dialog.paiku.zuzhou.jieduan.1239",
-                "fallback": "截断"
+                "text": "截断",
+                "color": "dark_gray"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -88,9 +80,8 @@
         },
         {
             "label": {
-                "color": "dark_gray",
-                "translate": "json.kards.dialog.paiku.zuzhou.kujie.1241",
-                "fallback": "枯竭"
+                "text": "枯竭",
+                "color": "dark_gray"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -100,9 +91,8 @@
         },
         {
             "label": {
-                "color": "dark_gray",
-                "translate": "json.kards.dialog.paiku.zuzhou.main.1244",
-                "fallback": "屏蔽"
+                "text": "屏蔽",
+                "color": "dark_gray"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -112,9 +102,8 @@
         },
         {
             "label": {
-                "color": "dark_gray",
-                "translate": "json.kards.dialog.paiku.zuzhou.main.1245",
-                "fallback": "无力"
+                "text": "无力",
+                "color": "dark_gray"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -124,9 +113,8 @@
         },
         {
             "label": {
-                "color": "dark_gray",
-                "translate": "json.kards.dialog.paiku.zuzhou.main.1246",
-                "fallback": "无形"
+                "text": "无形",
+                "color": "dark_gray"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -136,9 +124,8 @@
         },
         {
             "label": {
-                "color": "dark_gray",
-                "translate": "json.kards.dialog.paiku.zuzhou.main.1247",
-                "fallback": "障眼"
+                "text": "障眼",
+                "color": "dark_gray"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -148,9 +135,8 @@
         },
         {
             "label": {
-                "color": "dark_gray",
-                "translate": "json.kards.dialog.paiku.zuzhou.main.1248",
-                "fallback": "重伤"
+                "text": "重伤",
+                "color": "dark_gray"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -160,9 +146,8 @@
         },
         {
             "label": {
-                "color": "dark_gray",
-                "translate": "json.kards.dialog.paiku.fashu.main.321",
-                "fallback": "DLC"
+                "text": "DLC",
+                "color": "dark_gray"
             },
             "action": {
                 "type": "show_dialog",

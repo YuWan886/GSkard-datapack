@@ -1,21 +1,18 @@
 {
     "type": "minecraft:notice",
     "title": {
+        "text": "4K ",
         "extra": [
             {
-                "color": "dark_gray",
-                "translate": "json.kards.dialog.paiku.zuzhou.main.1245",
-                "fallback": "无力"
+                "text": "无力",
+                "color": "dark_gray"
             }
         ],
         "color": "aqua",
-        "bold": true,
-        "translate": "json.kards.dialog.paiku.fashu.jielue.273",
-        "fallback": "4K "
+        "bold": true
     },
     "external_title": {
-        "translate": "json.kards.dialog.first_join.1.71",
-        "fallback": ""
+        "text": ""
     },
     "body": [
         {
@@ -29,20 +26,18 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "诅咒牌",
                 "color": "dark_gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.main.223",
-                "fallback": "诅咒牌"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "给敌方玩家施加虚弱1(等效于-3攻击伤害) 持续20s",
                 "color": "gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.zuzhou.wuli.1250",
-                "fallback": "给敌方玩家施加虚弱1(等效于-3攻击伤害) 持续20s"
+                "italic": false
             },
             "width": 1024
         }
@@ -51,9 +46,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "color": "green",
-            "translate": "json.kards.dialog.paiku.zuzhou.chengmo.1232",
-            "fallback": "返回§c诅咒§a牌库"
+            "text": "返回§c诅咒§a牌库",
+            "color": "green"
         },
         "action": {
             "type": "minecraft:show_dialog",

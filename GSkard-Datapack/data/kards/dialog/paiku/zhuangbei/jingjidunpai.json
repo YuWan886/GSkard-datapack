@@ -1,21 +1,18 @@
 {
     "type": "minecraft:notice",
     "title": {
+        "text": "12K ",
         "extra": [
             {
-                "color": "gold",
-                "translate": "json.kards.dialog.paiku.zhuangbei.jingjidunpai.1188",
-                "fallback": "荆棘盾牌"
+                "text": "荆棘盾牌",
+                "color": "gold"
             }
         ],
         "color": "aqua",
-        "bold": true,
-        "translate": "json.kards.dialog.paiku.fashu.chunriying.245",
-        "fallback": "12K "
+        "bold": true
     },
     "external_title": {
-        "translate": "json.kards.dialog.first_join.1.71",
-        "fallback": ""
+        "text": ""
     },
     "body": [
         {
@@ -29,38 +26,34 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "装备牌",
                 "color": "gold",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.main.222",
-                "fallback": "装备牌"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "获得一个",
                 "color": "gray",
                 "italic": false,
                 "extra": [
                     {
+                        "text": "荆棘盾牌",
                         "color": "gold",
-                        "italic": false,
-                        "translate": "json.kards.dialog.paiku.zhuangbei.jingjidunpai.1188",
-                        "fallback": "荆棘盾牌"
+                        "italic": false
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.zhuangbei.bianxiehuosai.1178",
-                "fallback": "获得一个"
+                ]
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "使用时能够格挡伤害并对前方范围1.75格范围敌人造成2♥伤害 每次格挡后禁用3s",
                 "color": "gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.zhuangbei.jingjidunpai.1189",
-                "fallback": "使用时能够格挡伤害并对前方范围1.75格范围敌人造成2♥伤害 每次格挡后禁用3s"
+                "italic": false
             },
             "width": 1024
         }
@@ -69,9 +62,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "color": "green",
-            "translate": "json.kards.dialog.paiku.zhuangbei.bianxiehuosai.1180",
-            "fallback": "返回§c装备§a牌库"
+            "text": "返回§c装备§a牌库",
+            "color": "green"
         },
         "action": {
             "type": "minecraft:show_dialog",

@@ -1,45 +1,43 @@
 {
-    "display": {
-        "icon": {
-            "id": "minecraft:ender_eye",
-            "count": 1
-        },
-        "title": {
-            "translate": "json.kards.advancement.advancement.feileishen.death.21",
-            "fallback": "幻影快递"
-        },
-        "description": {
-            "translate": "json.kards.advancement.advancement.feileishen.death.22",
-            "fallback": "使用飞雷神然后死亡"
-        },
-        "frame": "task",
-        "show_toast": true,
-        "announce_to_chat": true,
-        "hidden": true
+  "display": {
+    "icon": {
+      "id": "minecraft:ender_eye",
+      "count": 1
     },
-    "parent": "kards:advancement/feileishen/first_use",
-    "criteria": {
-        "requirement": {
-            "trigger": "minecraft:entity_killed_player",
-            "conditions": {
-                "player": [
-                    {
-                        "condition": "minecraft:entity_scores",
-                        "entity": "this",
-                        "scores": {
-                            "feileishen": {
-                                "min": 1
-                            }
-                        }
-                    }
-                ],
-                "entity": {
-                    "type": "minecraft:player"
-                }
+    "title": {
+      "text": "幻影快递"
+    },
+    "description": {
+      "text": "使用飞雷神然后死亡"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "kards:advancement/feileishen/first_use",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:entity_killed_player",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "feileishen": {
+                "min": 1
+              }
             }
+          }
+        ],
+        "entity": {
+          "type": "minecraft:player"
         }
-    },
-    "rewards": {
-        "function": "kards:advancement/feileishen/death"
+      }
     }
+  },
+  "rewards": {
+    "function": "kards:advancement/feileishen/death"
+  }
 }

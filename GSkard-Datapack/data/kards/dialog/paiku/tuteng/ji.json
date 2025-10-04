@@ -1,21 +1,18 @@
 {
     "type": "minecraft:notice",
     "title": {
+        "text": "15K ",
         "extra": [
             {
-                "color": "red",
-                "translate": "json.kards.dialog.paiku.tuteng.ji.704",
-                "fallback": "鸡"
+                "text": "鸡",
+                "color": "red"
             }
         ],
         "color": "aqua",
-        "bold": true,
-        "translate": "json.kards.dialog.paiku.juntuan.shidi.527",
-        "fallback": "15K "
+        "bold": true
     },
     "external_title": {
-        "translate": "json.kards.dialog.first_join.1.71",
-        "fallback": ""
+        "text": ""
     },
     "body": [
         {
@@ -29,48 +26,43 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "图腾牌",
                 "color": "red",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.tuteng.baomao.681",
-                "fallback": "图腾牌"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "在队伍图腾区生成鸡",
                 "color": "gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.tuteng.ji.705",
-                "fallback": "在队伍图腾区生成鸡"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "图腾存活效果：",
                 "color": "gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.tuteng.baomao.683",
-                "fallback": "图腾存活效果："
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "1.每回合开始时 队伍所有玩家多获得",
                 "color": "gray",
                 "italic": false,
                 "extra": [
                     {
+                        "text": "5K",
                         "color": "gold",
-                        "italic": false,
-                        "translate": "json.kards.dialog.paiku.tuteng.ji.707",
-                        "fallback": "5K"
+                        "italic": false
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.tuteng.ji.706",
-                "fallback": "1.每回合开始时 队伍所有玩家多获得"
+                ]
             },
             "width": 1024
         }
@@ -79,9 +71,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "color": "green",
-            "translate": "json.kards.dialog.paiku.tuteng.baomao.689",
-            "fallback": "返回§c图腾§a牌库"
+            "text": "返回§c图腾§a牌库",
+            "color": "green"
         },
         "action": {
             "type": "minecraft:show_dialog",

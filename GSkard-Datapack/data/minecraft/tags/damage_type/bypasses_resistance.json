@@ -10,6 +10,9 @@
         "kards:chujue",
         "kards:move_or_die",
         "kards:peiyangshi",
-        "kards:zhongshang"
+        "kards:zhongshang",
+        "kards:flend",
+        "kards:gongsheng",
+        "kards:xixuegui"
     ]
 }

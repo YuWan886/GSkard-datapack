@@ -1,3 +1,0 @@
-scoreboard players remove @s Talent_Count 1
-tellraw @s [{translate: "kards.function.game.player.talent.combat.1.1", fallback: "[天赋]",color:"green"},{translate: "kards.function.game.player.talent.combat.1.2", fallback: "您消耗了",color:"gray"},{translate: "kards.function.game.player.talent.combat.1.3", fallback: "1点构想",color:"gold"},{translate: "kards.function.game.player.talent.combat.1.4", fallback: "升级了",color:"gray"},{translate: "kards.function.game.player.talent.survival.1.1", fallback: "巧计",color:"gold"}]
-

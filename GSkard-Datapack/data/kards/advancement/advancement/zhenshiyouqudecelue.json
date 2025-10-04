@@ -5,12 +5,10 @@
             "count": 1
         },
         "title": {
-            "translate": "json.kards.advancement.advancement.zhenshiyouqudecelue.19",
-            "fallback": "真是有趣的策略"
+            "text": "真是有趣的策略"
         },
         "description": {
-            "translate": "json.kards.advancement.advancement.zhenshiyouqudecelue.20",
-            "fallback": "敌方使用\"时空崩塌\"杀死敌方监守者"
+            "text": "敌方使用\"时空崩塌\"杀死敌方监守者"
         },
         "frame": "task",
         "show_toast": true,

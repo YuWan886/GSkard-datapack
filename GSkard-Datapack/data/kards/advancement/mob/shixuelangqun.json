@@ -12,6 +12,6 @@
         }
     },
     "rewards": {
-        "function": "kards:game/ingame/hurt/shixuelangqun"
+        "function": "kards:game/player/hurt/shixuelangqun"
     }
 }

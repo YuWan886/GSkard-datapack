@@ -1,21 +1,18 @@
 {
     "type": "minecraft:notice",
     "title": {
+        "text": "12K ",
         "extra": [
             {
-                "color": "dark_green",
-                "translate": "json.kards.dialog.paiku.juntuan.main.500",
-                "fallback": "无人机群"
+                "text": "无人机群",
+                "color": "dark_green"
             }
         ],
         "color": "aqua",
-        "bold": true,
-        "translate": "json.kards.dialog.paiku.fashu.chunriying.245",
-        "fallback": "12K "
+        "bold": true
     },
     "external_title": {
-        "translate": "json.kards.dialog.first_join.1.71",
-        "fallback": ""
+        "text": ""
     },
     "body": [
         {
@@ -29,32 +26,28 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "召唤4只",
                 "color": "gray",
                 "extra": [
                     {
-                        "color": "gold",
-                        "translate": "json.kards.dialog.paiku.juntuan.wurenjiqun.568",
-                        "fallback": " 无人机"
+                        "text": " 无人机",
+                        "color": "gold"
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.449",
-                "fallback": "召唤4只"
+                ]
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "无人机每隔5s发射",
                 "color": "gray",
                 "extra": [
                     {
-                        "color": "gold",
-                        "translate": "json.kards.dialog.paiku.juntuan.wurenjiqun.570",
-                        "fallback": " 乘坐潜影弹的末影螨"
+                        "text": " 乘坐潜影弹的末影螨",
+                        "color": "gold"
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.juntuan.wurenjiqun.569",
-                "fallback": "无人机每隔5s发射"
+                ]
             },
             "width": 1024
         }
@@ -63,9 +56,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "color": "green",
-            "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.455",
-            "fallback": "返回§d军团牌§a牌库"
+            "text": "返回§d军团牌§a牌库",
+            "color": "green"
         },
         "action": {
             "type": "minecraft:show_dialog",

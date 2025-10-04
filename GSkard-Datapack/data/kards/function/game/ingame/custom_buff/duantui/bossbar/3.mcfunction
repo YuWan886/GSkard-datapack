@@ -1,5 +1,4 @@
-$bossbar add kards:duantui_$(UUID) [{translate: "json.kards.dialog.paiku.zuzhou.duantui.1235", fallback: "断腿",color:"white",bold:true}]
-$bossbar set kards:duantui_$(UUID) color purple
+$bossbar add kards:duantui_$(UUID) [{text:"断腿",color:"white",bold:true}]
 $bossbar set kards:duantui_$(UUID) players @s
 $bossbar set kards:duantui_$(UUID) visible true
 

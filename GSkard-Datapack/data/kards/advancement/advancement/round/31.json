@@ -5,12 +5,10 @@
             "count": 1
         },
         "title": {
-            "translate": "json.kards.advancement.advancement.round.31.45",
-            "fallback": "现在是私事了!"
+            "text": "现在是私事了!"
         },
         "description": {
-            "translate": "json.kards.advancement.advancement.round.31.46",
-            "fallback": "游戏回合达到第31回合"
+            "text": "游戏回合达到第31回合"
         },
         "frame": "task",
         "show_toast": true,

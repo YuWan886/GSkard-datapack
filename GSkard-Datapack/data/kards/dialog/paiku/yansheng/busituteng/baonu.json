@@ -1,14 +1,12 @@
 {
     "type": "minecraft:notice",
     "title": {
+        "text": "暴怒图腾",
         "color": "dark_red",
-        "bold": true,
-        "translate": "json.kards.dialog.paiku.yansheng.busituteng.baonu.1139",
-        "fallback": "暴怒图腾"
+        "bold": true
     },
     "external_title": {
-        "translate": "json.kards.dialog.first_join.1.71",
-        "fallback": ""
+        "text": ""
     },
     "body": [
         {
@@ -22,60 +20,54 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "触发后",
                 "color": "gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.yansheng.busituteng.baonu.1140",
-                "fallback": "触发后"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": " ♥+20 60s",
                 "color": "dark_green",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.yansheng.busituteng.baonu.1141",
-                "fallback": " ♥+20 60s"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": " ♥+10",
                 "color": "dark_green",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.yansheng.busituteng.baonu.1142",
-                "fallback": " ♥+10"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": " 抗性提升5 10s",
                 "color": "dark_green",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.yansheng.busituteng.baonu.1143",
-                "fallback": " 抗性提升5 10s"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": " 速度5 30s",
                 "color": "dark_green",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.yansheng.busituteng.baonu.1144",
-                "fallback": " 速度5 30s"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": " 力量5 30s",
                 "color": "dark_green",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.yansheng.busituteng.baonu.1145",
-                "fallback": " 力量5 30s"
+                "italic": false
             },
             "width": 1024
         }
@@ -84,9 +76,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "color": "green",
-            "translate": "json.kards.dialog.paiku.yansheng.jinzijue.1116",
-            "fallback": "返回§7其他"
+            "text": "返回§7其他",
+            "color": "green"
         },
         "action": {
             "type": "minecraft:show_dialog",

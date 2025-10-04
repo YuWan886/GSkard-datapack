@@ -1,195 +1,164 @@
 {
     "type": "minecraft:multi_action",
     "title": {
-        
+        "text": "回合信息",
+        "type": "text",
         "color": "gray",
-        "bold": true,
-        "translate": "json.kards.dialog.jiaocheng.main.110",
-        "fallback": "回合信息"
+        "bold": true
     },
     "external_title": {
-        "translate": "json.kards.dialog.first_join.1.71",
-        "fallback": ""
+        "text": ""
     },
     "body": [
         {
             "type": "minecraft:plain_message",
             "width": 1024,
             "contents": {
+                "text": "什么是出牌回合与PVP回合?\n\n",
                 "color": "gold",
                 "bold": true,
                 "extra": [
                     {
+                        "text": "| 一把游戏分为",
                         "color": "gray",
-                        "bold": true,
-                        "translate": "json.kards.dialog.jiaocheng.wanfa.4.196",
-                        "fallback": "| 一把游戏分为"
+                        "bold": true
                     },
                     {
+                        "text": "出牌回合",
                         "color": "gold",
-                        "bold": true,
-                        "translate": "json.kards.dialog.jiaocheng.wanfa.4.197",
-                        "fallback": "出牌回合"
+                        "bold": true
                     },
                     {
+                        "text": "与",
                         "color": "gray",
-                        "bold": true,
-                        "translate": "json.kards.dialog.jiaocheng.wanfa.4.198",
-                        "fallback": "与"
+                        "bold": true
                     },
                     {
+                        "text": "PVP回合\n\n",
                         "color": "gold",
-                        "bold": true,
-                        "translate": "json.kards.dialog.jiaocheng.wanfa.4.199",
-                        "fallback": "PVP回合\n\n"
+                        "bold": true
                     },
                     {
+                        "text": "· ",
                         "color": "gray",
-                        "bold": true,
-                        "translate": "json.kards.dialog.jiaocheng.wanfa.1.130",
-                        "fallback": "· "
+                        "bold": true
                     },
                     {
+                        "text": "出牌回合",
                         "color": "gold",
-                        "bold": true,
-                        "translate": "json.kards.dialog.jiaocheng.wanfa.4.197",
-                        "fallback": "出牌回合"
+                        "bold": true
                     },
                     {
+                        "text": "是玩家出牌对战的回合\n\n",
                         "color": "gray",
-                        "bold": true,
-                        "translate": "json.kards.dialog.jiaocheng.wanfa.4.200",
-                        "fallback": "是玩家出牌对战的回合\n\n"
+                        "bold": true
                     },
                     {
+                        "text": "· ",
                         "color": "gray",
-                        "bold": true,
-                        "translate": "json.kards.dialog.jiaocheng.wanfa.1.130",
-                        "fallback": "· "
+                        "bold": true
                     },
                     {
+                        "text": "PVP回合",
                         "color": "gold",
-                        "bold": true,
-                        "translate": "json.kards.dialog.jiaocheng.wanfa.4.201",
-                        "fallback": "PVP回合"
+                        "bold": true
                     },
                     {
+                        "text": "是玩家在出牌回合难以决胜负的情况下进入的回合\n\n",
                         "color": "gray",
-                        "bold": true,
-                        "translate": "json.kards.dialog.jiaocheng.wanfa.4.202",
-                        "fallback": "是玩家在出牌回合难以决胜负的情况下进入的回合\n\n"
+                        "bold": true
                     },
                     {
+                        "text": "出牌回合\n\n",
                         "color": "gold",
-                        "bold": true,
-                        "translate": "json.kards.dialog.jiaocheng.wanfa.4.203",
-                        "fallback": "出牌回合\n\n"
+                        "bold": true
                     },
                     {
+                        "text": "| 玩家只能在",
                         "color": "gray",
-                        "bold": true,
-                        "translate": "json.kards.dialog.jiaocheng.wanfa.4.204",
-                        "fallback": "| 玩家只能在"
+                        "bold": true
                     },
                     {
+                        "text": "友方回合",
                         "color": "green",
-                        "bold": true,
-                        "translate": "json.kards.dialog.jiaocheng.wanfa.2.148",
-                        "fallback": "友方回合"
+                        "bold": true
                     },
                     {
+                        "text": "进行常规出牌\n\n",
                         "color": "gray",
-                        "bold": true,
-                        "translate": "json.kards.dialog.jiaocheng.wanfa.4.205",
-                        "fallback": "进行常规出牌\n\n"
+                        "bold": true
                     },
                     {
+                        "text": "| 反之不能在",
                         "color": "gray",
-                        "bold": true,
-                        "translate": "json.kards.dialog.jiaocheng.wanfa.4.206",
-                        "fallback": "| 反之不能在"
+                        "bold": true
                     },
                     {
+                        "text": "敌方回合",
                         "color": "red",
-                        "bold": true,
-                        "translate": "json.kards.dialog.jiaocheng.wanfa.4.207",
-                        "fallback": "敌方回合"
+                        "bold": true
                     },
                     {
+                        "text": "进行常规出牌\n\n",
                         "color": "gray",
-                        "bold": true,
-                        "translate": "json.kards.dialog.jiaocheng.wanfa.4.205",
-                        "fallback": "进行常规出牌\n\n"
+                        "bold": true
                     },
                     {
+                        "text": "| 对局中你可以通过头顶的",
                         "color": "gray",
-                        "bold": true,
-                        "translate": "json.kards.dialog.jiaocheng.wanfa.4.208",
-                        "fallback": "| 对局中你可以通过头顶的"
+                        "bold": true
                     },
                     {
+                        "text": "血条颜色与信息",
                         "color": "gold",
-                        "bold": true,
-                        "translate": "json.kards.dialog.jiaocheng.wanfa.4.209",
-                        "fallback": "血条颜色与信息"
+                        "bold": true
                     },
                     {
+                        "text": "来获悉回合信息\n\n",
                         "color": "gray",
-                        "bold": true,
-                        "translate": "json.kards.dialog.jiaocheng.wanfa.4.210",
-                        "fallback": "来获悉回合信息\n\n"
+                        "bold": true
                     },
                     {
+                        "text": "PVP回合\n\n",
                         "color": "gold",
-                        "bold": true,
-                        "translate": "json.kards.dialog.jiaocheng.wanfa.4.199",
-                        "fallback": "PVP回合\n\n"
+                        "bold": true
                     },
                     {
+                        "text": "| 所有玩家传送至",
                         "color": "gray",
-                        "bold": true,
-                        "translate": "json.kards.dialog.jiaocheng.wanfa.4.211",
-                        "fallback": "| 所有玩家传送至"
+                        "bold": true
                     },
                     {
+                        "text": "PVP场地",
                         "color": "green",
-                        "bold": true,
-                        "translate": "json.kards.dialog.jiaocheng.wanfa.4.212",
-                        "fallback": "PVP场地"
+                        "bold": true
                     },
                     {
+                        "text": "并获得一段",
                         "color": "gray",
-                        "bold": true,
-                        "translate": "json.kards.dialog.jiaocheng.wanfa.4.213",
-                        "fallback": "并获得一段"
+                        "bold": true
                     },
                     {
+                        "text": "准备时间\n\n",
                         "color": "gold",
-                        "bold": true,
-                        "translate": "json.kards.dialog.jiaocheng.wanfa.4.214",
-                        "fallback": "准备时间\n\n"
+                        "bold": true
                     },
                     {
+                        "text": "· 准备时间开始后所有玩家获得100K         \n\n",
                         "color": "gray",
-                        "bold": true,
-                        "translate": "json.kards.dialog.jiaocheng.wanfa.4.215",
-                        "fallback": "· 准备时间开始后所有玩家获得100K         \n\n"
+                        "bold": true
                     },
                     {
+                        "text": "· 准备时间内玩家可以常规用牌              \n\n",
                         "color": "gray",
-                        "bold": true,
-                        "translate": "json.kards.dialog.jiaocheng.wanfa.4.216",
-                        "fallback": "· 准备时间内玩家可以常规用牌              \n\n"
+                        "bold": true
                     },
                     {
+                        "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
                         "color": "gray",
-                        "bold": true,
-                        "translate": "json.kards.dialog.jiaocheng.wanfa.4.217",
-                        "fallback": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+                        "bold": true
                     }
-                ],
-                "translate": "json.kards.dialog.jiaocheng.wanfa.4.195",
-                "fallback": "什么是出牌回合与PVP回合?\n\n"
+                ]
             }
         }
     ],
@@ -198,9 +167,8 @@
     "actions": [
         {
             "label": {
-                "color": "gold",
-                "translate": "json.kards.dialog.jiaocheng.main.107",
-                "fallback": "获取卡牌信息"
+                "text": "获取卡牌信息",
+                "color": "gold"
             },
             "width": 125,
             "action": {
@@ -210,9 +178,8 @@
         },
         {
             "label": {
-                "color": "gold",
-                "translate": "json.kards.dialog.jiaocheng.main.108",
-                "fallback": "使用卡牌"
+                "text": "使用卡牌",
+                "color": "gold"
             },
             "width": 125,
             "action": {
@@ -222,9 +189,8 @@
         },
         {
             "label": {
-                "color": "gold",
-                "translate": "json.kards.dialog.jiaocheng.main.109",
-                "fallback": "资源获取"
+                "text": "资源获取",
+                "color": "gold"
             },
             "width": 125,
             "action": {
@@ -234,9 +200,8 @@
         },
         {
             "label": {
-                "color": "gold",
-                "translate": "json.kards.dialog.jiaocheng.main.110",
-                "fallback": "回合信息"
+                "text": "回合信息",
+                "color": "gold"
             },
             "width": 125,
             "action": {
@@ -247,20 +212,18 @@
     ],
     "columns": 4,
     "exit_action": {
-        "label": {
-            "color": "gold",
-            "translate": "json.kards.dialog.jiaocheng.main.111",
-            "fallback": "完成教程"
-        },
-        "tooltip": {
-            "color": "gray",
-            "translate": "json.kards.dialog.jiaocheng.main.112",
-            "fallback": "请确保阅读完毕"
-        },
-        "width": 125,
-        "action": {
-            "type": "minecraft:run_command",
-            "command": "trigger dialog set 2"
-        }
-    }
+    "label": {
+        "text": "完成教程",
+        "color": "gold"
+      },
+      "tooltip": {
+        "text": "请确保阅读完毕",
+        "color":"gray"
+      },
+      "width": 125,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger dialog set 2"
+      }
+  }
 }

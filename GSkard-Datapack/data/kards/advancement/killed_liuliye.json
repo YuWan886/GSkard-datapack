@@ -11,6 +11,6 @@
         }
     },
     "rewards": {
-        "function": "kards:game/ingame/killed/liuliye"
+        "function": "kards:game/player/killed/liuliye"
     }
 }

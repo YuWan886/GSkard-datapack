@@ -1,22 +1,19 @@
 {
     "type": "minecraft:notice",
     "title": {
+        "text": "4K ",
         "extra": [
             {
+                "text": "火力全开",
                 "color": "white",
-                "bold": true,
-                "translate": "json.kards.dialog.paiku.shenji.huoliquankai.615",
-                "fallback": "火力全开"
+                "bold": true
             }
         ],
         "color": "aqua",
-        "bold": true,
-        "translate": "json.kards.dialog.paiku.fashu.jielue.273",
-        "fallback": "4K "
+        "bold": true
     },
     "external_title": {
-        "translate": "json.kards.dialog.first_join.1.71",
-        "fallback": ""
+        "text": ""
     },
     "body": [
         {
@@ -30,75 +27,67 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "神迹牌",
                 "color": "white",
-                "italic": false,
-                "translate": "json.kards.dialog.jiaocheng.wanfa.2.153",
-                "fallback": "神迹牌"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "获得",
                 "color": "gray",
                 "italic": false,
                 "extra": [
                     {
+                        "text": "15K",
                         "color": "gold",
-                        "italic": false,
-                        "translate": "json.kards.dialog.paiku.shenji.huoliquankai.616",
-                        "fallback": "15K"
+                        "italic": false
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.fashu.jinjidiaoqian.277",
-                "fallback": "获得"
+                ]
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "若友方存活玩家小于等于2 则额外",
                 "color": "gray",
                 "italic": false,
                 "extra": [
                     {
+                        "text": "使队伍所有玩家获得10K",
                         "color": "gold",
-                        "italic": false,
-                        "translate": "json.kards.dialog.paiku.shenji.huoliquankai.618",
-                        "fallback": "使队伍所有玩家获得10K"
+                        "italic": false
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.shenji.huoliquankai.617",
-                "fallback": "若友方存活玩家小于等于2 则额外"
+                ]
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "使用后本回合内获得",
                 "color": "gray",
                 "italic": false,
                 "extra": [
                     {
+                        "text": "超频",
                         "color": "dark_aqua",
                         "italic": false,
-                        "bold": true,
-                        "translate": "json.kards.dialog.paiku.shenji.huoliquankai.620",
-                        "fallback": "超频"
+                        "bold": true
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.shenji.huoliquankai.619",
-                "fallback": "使用后本回合内获得"
+                ]
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "超频:每使用1张牌获得1K,使用[法术牌][装备牌]会额外获得1Kmax.",
                 "color": "dark_gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.shenji.huoliquankai.621",
-                "fallback": "超频:每使用1张牌获得1K,使用[法术牌][装备牌]会额外获得1Kmax."
+                "italic": false
             },
             "width": 1024
         }
@@ -107,9 +96,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "color": "green",
-            "translate": "json.kards.dialog.paiku.shenji.fanxiangfeileishen.605",
-            "fallback": "返回§d神迹§a牌库"
+            "text": "返回§d神迹§a牌库",
+            "color": "green"
         },
         "action": {
             "type": "minecraft:show_dialog",

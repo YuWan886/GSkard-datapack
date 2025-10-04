@@ -14,4 +14,4 @@ execute if entity @s[team=red] run scoreboard players set 红队 xianjin_qianjun
 execute if entity @s[team=blue] run scoreboard players set 蓝队 xianjin_qianjunyifa 0
 
 execute as @a at @s run playsound minecraft:whatfall master @s ~ ~ ~ 100 1
-tellraw @a [{selector: "@s"},{translate: "kards.function.game.yongpaiku.xianjing.chufa.hewei.1", fallback: "触发了",color: "gray"},{translate: "kards.function.game.yongpaiku.xianjing.chufa.qianjunyifa.1", fallback: "<千钧一发>",color: "dark_aqua",hover_event:{action:"show_text",value:"触发时让使用该陷阱牌队伍场地所有敌对怪物传送至触发者队伍场地"}}]
+tellraw @a [{selector: "@s"},{text: "触发了",color: "gray"},{text: "<千钧一发>",color: "dark_aqua",hover_event:{action:"show_text",value:"触发时让使用该陷阱牌队伍场地所有敌对怪物传送至触发者队伍场地"}}]

@@ -1,21 +1,18 @@
 {
     "type": "minecraft:notice",
     "title": {
+        "text": "6K ",
         "extra": [
             {
-                "color": "dark_aqua",
-                "translate": "json.kards.dialog.paiku.xianjing.main.1080",
-                "fallback": "遥远的桥"
+                "text": "遥远的桥",
+                "color": "dark_aqua"
             }
         ],
         "color": "aqua",
-        "bold": true,
-        "translate": "json.kards.dialog.paiku.fashu.qisihuisheng.326",
-        "fallback": "6K "
+        "bold": true
     },
     "external_title": {
-        "translate": "json.kards.dialog.first_join.1.71",
-        "fallback": ""
+        "text": ""
     },
     "body": [
         {
@@ -29,68 +26,60 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "陷阱卡",
                 "color": "dark_aqua",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.xianjing.hewei.1057",
-                "fallback": "陷阱卡"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "使用后埋下陷阱 敌方在达到条件时触发 触发后失效",
                 "color": "gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.xianjing.hewei.1058",
-                "fallback": "使用后埋下陷阱 敌方在达到条件时触发 触发后失效"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "条件：",
                 "color": "gray",
                 "italic": false,
                 "extra": [
                     {
+                        "text": "敌方回合结束时",
                         "color": "gray",
-                        "italic": false,
-                        "translate": "json.kards.dialog.paiku.xianjing.qinglvqianmou.1087",
-                        "fallback": "敌方回合结束时"
+                        "italic": false
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.xianjing.qinglvqianmou.1086",
-                "fallback": "条件："
+                ]
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "触发：清除",
                 "color": "gray",
                 "italic": false,
                 "extra": [
                     {
+                        "text": "友方区域",
                         "color": "green",
-                        "italic": false,
-                        "translate": "json.kards.dialog.paiku.xianjing.hewei.1063",
-                        "fallback": "友方区域"
+                        "italic": false
                     },
                     {
+                        "text": "所有",
                         "color": "gray",
-                        "italic": false,
-                        "translate": "json.kards.dialog.paiku.xianjing.hewei.1064",
-                        "fallback": "所有"
+                        "italic": false
                     },
                     {
+                        "text": "敌对生物",
                         "color": "red",
-                        "italic": false,
-                        "translate": "json.kards.dialog.paiku.xianjing.hewei.1065",
-                        "fallback": "敌对生物"
+                        "italic": false
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.xianjing.hewei.1062",
-                "fallback": "触发：清除"
+                ]
             },
             "width": 1024
         }
@@ -99,9 +88,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "color": "green",
-            "translate": "json.kards.dialog.paiku.xianjing.hewei.1066",
-            "fallback": "返回§c陷阱§a牌库"
+            "text": "返回§c陷阱§a牌库",
+            "color": "green"
         },
         "action": {
             "type": "minecraft:show_dialog",

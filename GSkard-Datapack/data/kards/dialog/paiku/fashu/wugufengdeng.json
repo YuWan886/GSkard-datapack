@@ -1,59 +1,53 @@
 {
-    "type": "minecraft:notice",
-    "title": {
-        "extra": [
-            {
-                "color": "light_purple",
-                "translate": "json.kards.dialog.paiku.fashu.main.306",
-                "fallback": "五谷丰登"
-            }
-        ],
-        "color": "aqua",
-        "bold": true,
-        "translate": "json.kards.dialog.paiku.fashu.duming.254",
-        "fallback": "0K "
-    },
-    "external_title": {
-        "translate": "json.kards.dialog.first_join.1.71",
-        "fallback": ""
-    },
-    "body": [
-        {
-            "type": "minecraft:item",
-            "item": {
-                "id": "music_disc_mellohi"
-            },
-            "show_decorations": false,
-            "show_tooltip": false
-        },
-        {
-            "type": "minecraft:plain_message",
-            "contents": {
-                "color": "gray",
-                "extra": [
-                    {
-                        "color": "gold",
-                        "translate": "json.kards.dialog.paiku.fashu.shuiliuyongdong.341",
-                        "fallback": "1张牌"
-                    }
-                ],
-                "translate": "json.kards.dialog.paiku.fashu.wugufengdeng.360",
-                "fallback": "所有玩家抽"
-            },
-            "width": 1024
-        }
+  "type": "minecraft:notice",
+  "title": {
+    "text": "0K ",
+    "extra": [
+      {
+        "text": "五谷丰登",
+        "color": "light_purple"
+      }
     ],
-    "inputs": [],
-    "can_close_with_escape": true,
-    "action": {
-        "label": {
-            "color": "green",
-            "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.232",
-            "fallback": "返回§d法术牌§a牌库"
-        },
-        "action": {
-            "type": "minecraft:show_dialog",
-            "dialog": "kards:paiku/fashu/main"
-        }
+    "color": "aqua",
+    "bold": true
+  },
+  "external_title": {
+    "text": ""
+  },
+  "body": [
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "music_disc_mellohi"
+      },
+      "show_decorations": false,
+      "show_tooltip": false
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "所有玩家抽",
+        "color": "gray",
+        "extra": [
+          {
+            "text": "1张牌",
+            "color": "gold"
+          }
+        ]
+      },
+      "width": 1024
     }
+  ],
+  "inputs": [],
+  "can_close_with_escape": true,
+  "action": {
+    "label": {
+      "text": "返回§d法术牌§a牌库",
+      "color": "green"
+    },
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "kards:paiku/fashu/main"
+    }
+  }
 }

@@ -5,12 +5,10 @@
             "count": 1
         },
         "title": {
-            "translate": "json.kards.advancement.advancement.laodeng.11",
-            "fallback": "老登"
+            "text": "老登"
         },
         "description": {
-            "translate": "json.kards.advancement.advancement.laodeng.12",
-            "fallback": "搞牌牢玩家"
+            "text": "搞牌牢玩家"
         },
         "frame": "task",
         "show_toast": true,

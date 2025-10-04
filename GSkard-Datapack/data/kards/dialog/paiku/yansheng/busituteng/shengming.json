@@ -1,14 +1,12 @@
 {
     "type": "minecraft:notice",
     "title": {
+        "text": "生命图腾",
         "color": "green",
-        "bold": true,
-        "translate": "json.kards.dialog.paiku.yansheng.busituteng.main.1164",
-        "fallback": "生命图腾"
+        "bold": true
     },
     "external_title": {
-        "translate": "json.kards.dialog.first_join.1.71",
-        "fallback": ""
+        "text": ""
     },
     "body": [
         {
@@ -22,50 +20,45 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "触发后",
                 "color": "gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.yansheng.busituteng.baonu.1140",
-                "fallback": "触发后"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": " ♥+30 60s",
                 "color": "dark_green",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.yansheng.busituteng.shengming.1165",
-                "fallback": " ♥+30 60s"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": " ♥+30",
                 "color": "dark_green",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.yansheng.busituteng.shengming.1166",
-                "fallback": " ♥+30"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": " 原地生成生命光柱 其存在20s",
                 "color": "gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.yansheng.busituteng.shengming.1167",
-                "fallback": " 原地生成生命光柱 其存在20s"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": " 生命光柱5格范围内的友方生物每秒恢复0.5♥",
                 "color": "gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.yansheng.busituteng.shengming.1168",
-                "fallback": " 生命光柱5格范围内的友方生物每秒恢复0.5♥"
+                "italic": false
             },
             "width": 1024
         }
@@ -74,9 +67,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "color": "green",
-            "translate": "json.kards.dialog.paiku.yansheng.jinzijue.1116",
-            "fallback": "返回§7其他"
+            "text": "返回§7其他",
+            "color": "green"
         },
         "action": {
             "type": "minecraft:show_dialog",

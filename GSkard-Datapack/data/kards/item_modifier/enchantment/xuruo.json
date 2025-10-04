@@ -3,9 +3,9 @@
         "function": "minecraft:set_enchantments",
         "enchantments": {
             "kards:xuruo": {
-                "min": 1,
-                "max": 2
-            }
+            "min": 1,
+            "max": 2
+      }
         },
         "add": true
     }

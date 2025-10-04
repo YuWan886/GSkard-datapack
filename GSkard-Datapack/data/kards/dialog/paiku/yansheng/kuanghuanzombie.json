@@ -1,14 +1,12 @@
 {
     "type": "minecraft:notice",
     "title": {
+        "text": "狂欢僵尸",
         "color": "blue",
-        "bold": true,
-        "translate": "json.kards.dialog.paiku.yansheng.kuanghuanzombie.1120",
-        "fallback": "狂欢僵尸"
+        "bold": true
     },
     "external_title": {
-        "translate": "json.kards.dialog.first_join.1.71",
-        "fallback": ""
+        "text": ""
     },
     "body": [
         {
@@ -22,30 +20,27 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "墓园狂欢",
                 "color": "white",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.shenji.main.640",
-                "fallback": "墓园狂欢"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "召唤一只狂欢僵尸",
                 "color": "gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.yansheng.kuanghuanzombie.1121",
-                "fallback": "召唤一只狂欢僵尸"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "每使用一定次数 狂欢僵尸都会增强",
                 "color": "gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.yansheng.kuanghuanzombie.1122",
-                "fallback": "每使用一定次数 狂欢僵尸都会增强"
+                "italic": false
             },
             "width": 1024
         }
@@ -54,9 +49,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "color": "green",
-            "translate": "json.kards.dialog.paiku.yansheng.jinzijue.1116",
-            "fallback": "返回§7其他"
+            "text": "返回§7其他",
+            "color": "green"
         },
         "action": {
             "type": "minecraft:show_dialog",

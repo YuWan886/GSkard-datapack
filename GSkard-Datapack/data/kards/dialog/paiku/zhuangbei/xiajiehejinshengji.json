@@ -1,21 +1,18 @@
 {
     "type": "minecraft:notice",
     "title": {
+        "text": "8K ",
         "extra": [
             {
-                "color": "gold",
-                "translate": "json.kards.dialog.paiku.zhuangbei.main.1205",
-                "fallback": "下界合金升级"
+                "text": "下界合金升级",
+                "color": "gold"
             }
         ],
         "color": "aqua",
-        "bold": true,
-        "translate": "json.kards.dialog.paiku.fashu.chunnuanhuakai.241",
-        "fallback": "8K "
+        "bold": true
     },
     "external_title": {
-        "translate": "json.kards.dialog.first_join.1.71",
-        "fallback": ""
+        "text": ""
     },
     "body": [
         {
@@ -29,102 +26,91 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "装备牌",
                 "color": "gold",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.main.222",
-                "fallback": "装备牌"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "获得一件",
                 "color": "gray",
                 "italic": false,
                 "extra": [
                     {
+                        "text": "下界合金护甲",
                         "color": "gold",
-                        "italic": false,
-                        "translate": "json.kards.dialog.paiku.zhuangbei.xiajiehejinshengji.1218",
-                        "fallback": "下界合金护甲"
+                        "italic": false
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.zhuangbei.xiajiehejinshengji.1217",
-                "fallback": "获得一件"
+                ]
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "同一人抽取每次必定获得不同的护甲",
                 "color": "gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.zhuangbei.xiajiehejinshengji.1219",
-                "fallback": "同一人抽取每次必定获得不同的护甲"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "套装效果：",
                 "color": "gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.zhuangbei.xiajiehejinshengji.1220",
-                "fallback": "套装效果："
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "穿戴2件时 获得",
                 "color": "gray",
                 "italic": false,
                 "extra": [
                     {
+                        "text": "抗性提升2",
                         "color": "gold",
-                        "italic": false,
-                        "translate": "json.kards.dialog.paiku.zhuangbei.xiajiehejinshengji.1222",
-                        "fallback": "抗性提升2"
+                        "italic": false
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.zhuangbei.xiajiehejinshengji.1221",
-                "fallback": "穿戴2件时 获得"
+                ]
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "穿戴3件时 获得",
                 "color": "gray",
                 "italic": false,
                 "extra": [
                     {
+                        "text": "抗性提升3",
                         "color": "gold",
-                        "italic": false,
-                        "translate": "json.kards.dialog.paiku.zhuangbei.xiajiehejinshengji.1224",
-                        "fallback": "抗性提升3"
+                        "italic": false
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.zhuangbei.xiajiehejinshengji.1223",
-                "fallback": "穿戴3件时 获得"
+                ]
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "穿戴4件时 获得",
                 "color": "gray",
                 "italic": false,
                 "extra": [
                     {
+                        "text": "抗性提升4",
                         "color": "gold",
-                        "italic": false,
-                        "translate": "json.kards.dialog.paiku.fashu.yuyanzaihuo.381",
-                        "fallback": "抗性提升4"
+                        "italic": false
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.zhuangbei.xiajiehejinshengji.1225",
-                "fallback": "穿戴4件时 获得"
+                ]
             },
             "width": 1024
         }
@@ -133,9 +119,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "color": "green",
-            "translate": "json.kards.dialog.paiku.zhuangbei.bianxiehuosai.1180",
-            "fallback": "返回§c装备§a牌库"
+            "text": "返回§c装备§a牌库",
+            "color": "green"
         },
         "action": {
             "type": "minecraft:show_dialog",

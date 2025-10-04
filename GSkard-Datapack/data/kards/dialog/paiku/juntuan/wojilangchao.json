@@ -1,21 +1,18 @@
 {
     "type": "minecraft:notice",
     "title": {
+        "text": "8K ",
         "extra": [
             {
-                "color": "dark_green",
-                "translate": "json.kards.dialog.paiku.juntuan.main.498",
-                "fallback": "我即浪潮"
+                "text": "我即浪潮",
+                "color": "dark_green"
             }
         ],
         "color": "aqua",
-        "bold": true,
-        "translate": "json.kards.dialog.paiku.fashu.chunnuanhuakai.241",
-        "fallback": "8K "
+        "bold": true
     },
     "external_title": {
-        "translate": "json.kards.dialog.first_join.1.71",
-        "fallback": ""
+        "text": ""
     },
     "body": [
         {
@@ -29,53 +26,46 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "召唤2只",
                 "color": "gray",
                 "extra": [
                     {
-                        "color": "gold",
-                        "translate": "json.kards.dialog.paiku.juntuan.wojilangchao.560",
-                        "fallback": " 骑着守卫者的三叉戟溺尸"
+                        "text": " 骑着守卫者的三叉戟溺尸",
+                        "color": "gold"
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.juntuan.errenchengjun.467",
-                "fallback": "召唤2只"
+                ]
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "若生成时敌方受",
                 "color": "gray",
                 "extra": [
                     {
-                        "color": "light_purple",
-                        "translate": "json.kards.dialog.paiku.juntuan.wojilangchao.562",
-                        "fallback": " [漫水]"
+                        "text": " [漫水]",
+                        "color": "light_purple"
                     },
                     {
-                        "color": "gray",
-                        "translate": "json.kards.dialog.paiku.juntuan.wojilangchao.563",
-                        "fallback": " 影响 额外消耗5K"
+                        "text": " 影响 额外消耗5K",
+                        "color": "gray"
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.juntuan.wojilangchao.561",
-                "fallback": "若生成时敌方受"
+                ]
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "使三叉戟附魔",
                 "color": "gray",
                 "extra": [
                     {
-                        "color": "gold",
-                        "translate": "json.kards.dialog.paiku.juntuan.wojilangchao.565",
-                        "fallback": " 雷击"
+                        "text": " 雷击",
+                        "color": "gold"
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.juntuan.wojilangchao.564",
-                "fallback": "使三叉戟附魔"
+                ]
             },
             "width": 1024
         }
@@ -84,9 +74,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "color": "green",
-            "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.455",
-            "fallback": "返回§d军团牌§a牌库"
+            "text": "返回§d军团牌§a牌库",
+            "color": "green"
         },
         "action": {
             "type": "minecraft:show_dialog",

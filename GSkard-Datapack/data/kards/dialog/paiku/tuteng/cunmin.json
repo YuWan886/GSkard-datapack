@@ -1,21 +1,18 @@
 {
     "type": "minecraft:notice",
     "title": {
+        "text": "10K ",
         "extra": [
             {
-                "color": "red",
-                "translate": "json.kards.dialog.paiku.tuteng.cunmin.690",
-                "fallback": "村民"
+                "text": "村民",
+                "color": "red"
             }
         ],
         "color": "aqua",
-        "bold": true,
-        "translate": "json.kards.dialog.paiku.juntuan.shenghaikongju.523",
-        "fallback": "10K "
+        "bold": true
     },
     "external_title": {
-        "translate": "json.kards.dialog.first_join.1.71",
-        "fallback": ""
+        "text": ""
     },
     "body": [
         {
@@ -29,102 +26,90 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "图腾牌",
                 "color": "red",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.tuteng.baomao.681",
-                "fallback": "图腾牌"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "在队伍图腾区生成村民",
                 "color": "gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.tuteng.cunmin.691",
-                "fallback": "在队伍图腾区生成村民"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "图腾存活效果：",
                 "color": "gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.tuteng.baomao.683",
-                "fallback": "图腾存活效果："
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "1.队伍使用的怪物获得",
                 "color": "gray",
                 "italic": false,
                 "extra": [
                     {
+                        "text": "抗性提升1",
                         "color": "gold",
-                        "italic": false,
-                        "translate": "json.kards.dialog.paiku.tuteng.cunmin.693",
-                        "fallback": "抗性提升1"
+                        "italic": false
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.tuteng.cunmin.692",
-                "fallback": "1.队伍使用的怪物获得"
+                ]
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "2.队伍铁傀儡获得",
                 "color": "gray",
                 "italic": false,
                 "extra": [
                     {
+                        "text": "速度2",
                         "color": "gold",
-                        "italic": false,
-                        "translate": "json.kards.dialog.paiku.tuteng.baomao.685",
-                        "fallback": "速度2"
+                        "italic": false
                     },
                     {
+                        "text": " 每回合结束时为铁傀儡",
                         "color": "gray",
-                        "italic": false,
-                        "translate": "json.kards.dialog.paiku.tuteng.cunmin.695",
-                        "fallback": " 每回合结束时为铁傀儡"
+                        "italic": false
                     },
                     {
+                        "text": "回复血量",
                         "color": "gold",
-                        "italic": false,
-                        "translate": "json.kards.dialog.paiku.tuteng.cunmin.696",
-                        "fallback": "回复血量"
+                        "italic": false
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.tuteng.cunmin.694",
-                "fallback": "2.队伍铁傀儡获得"
+                ]
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "3.无法与",
                 "color": "gray",
                 "italic": false,
                 "extra": [
                     {
+                        "text": "[培养尸]",
                         "color": "red",
-                        "italic": false,
-                        "translate": "json.kards.dialog.paiku.tuteng.cunmin.698",
-                        "fallback": "[培养尸]"
+                        "italic": false
                     },
                     {
+                        "text": "同时存在",
                         "color": "gray",
-                        "italic": false,
-                        "translate": "json.kards.dialog.paiku.tuteng.cunmin.699",
-                        "fallback": "同时存在"
+                        "italic": false
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.tuteng.cunmin.697",
-                "fallback": "3.无法与"
+                ]
             },
             "width": 1024
         }
@@ -133,9 +118,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "color": "green",
-            "translate": "json.kards.dialog.paiku.tuteng.baomao.689",
-            "fallback": "返回§c图腾§a牌库"
+            "text": "返回§c图腾§a牌库",
+            "color": "green"
         },
         "action": {
             "type": "minecraft:show_dialog",

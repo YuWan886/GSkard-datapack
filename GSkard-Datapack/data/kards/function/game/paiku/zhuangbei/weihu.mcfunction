@@ -1,3 +1,3 @@
 
-give @s music_disc_13[item_name=[{translate: "json.kards.dialog.paiku.tuteng.ji.707", fallback: "5K",color:"aqua"},{translate: "json.kards.dialog.jiaocheng.wanfa.1.114", fallback: " "},{translate: "json.kards.dialog.paiku.zhuangbei.main.1203", fallback: "维护",color:"gold"}],lore=[{translate: "json.kards.dialog.paiku.main.222", fallback: "装备牌",color:"gold",italic:false},{translate: "json.kards.dialog.paiku.zhuangbei.weihu.1216", fallback: "增加20级经验",color:"gray",italic:false}],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'维护',K:5},tooltip_style="kards:kard/equipment"]
+give @s music_disc_13[item_name=[{text: "5K",color:"aqua"},{text:" "},{text: "维护",color:"gold"}],lore=[{text: "装备牌",color:"gold",italic:false},{text: "增加20级经验",color:"gray",italic:false}],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'维护',K:5},tooltip_style="kards:kard/equipment"]
 scoreboard players set #kard_weihu kardCount 5

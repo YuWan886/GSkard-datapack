@@ -24,6 +24,10 @@
         "minecraft:freeze",
         "kards:duming",
         "minecraft:arrow",
-        "magic"
+        "magic",
+        "kards:flend",
+        "kards:gongsheng",
+        "kards:zhongyanzhixing",
+        "kards:xixuegui"
     ]
 }

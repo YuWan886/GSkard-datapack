@@ -1,22 +1,19 @@
 {
     "type": "minecraft:notice",
     "title": {
+        "text": "0K ",
         "extra": [
             {
+                "text": "复制",
                 "color": "white",
-                "bold": true,
-                "translate": "json.kards.dialog.paiku.shenji.fuzhi.610",
-                "fallback": "复制"
+                "bold": true
             }
         ],
         "color": "aqua",
-        "bold": true,
-        "translate": "json.kards.dialog.paiku.fashu.duming.254",
-        "fallback": "0K "
+        "bold": true
     },
     "external_title": {
-        "translate": "json.kards.dialog.first_join.1.71",
-        "fallback": ""
+        "text": ""
     },
     "body": [
         {
@@ -30,28 +27,25 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "神迹牌",
                 "color": "white",
-                "italic": false,
-                "translate": "json.kards.dialog.jiaocheng.wanfa.2.153",
-                "fallback": "神迹牌"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "复制",
                 "color": "gold",
                 "italic": false,
                 "extra": [
                     {
+                        "text": "物品栏第一格物品",
                         "color": "gray",
-                        "italic": false,
-                        "translate": "json.kards.dialog.paiku.shenji.fuzhi.611",
-                        "fallback": "物品栏第一格物品"
+                        "italic": false
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.shenji.fuzhi.610",
-                "fallback": "复制"
+                ]
             },
             "width": 1024
         }
@@ -60,9 +54,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "color": "green",
-            "translate": "json.kards.dialog.paiku.shenji.fanxiangfeileishen.605",
-            "fallback": "返回§d神迹§a牌库"
+            "text": "返回§d神迹§a牌库",
+            "color": "green"
         },
         "action": {
             "type": "minecraft:show_dialog",

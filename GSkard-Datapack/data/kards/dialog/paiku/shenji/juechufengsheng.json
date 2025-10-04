@@ -1,22 +1,19 @@
 {
     "type": "minecraft:notice",
     "title": {
+        "text": "8Kmax ",
         "extra": [
             {
+                "text": "绝处逢生",
                 "color": "white",
-                "bold": true,
-                "translate": "json.kards.dialog.jiaocheng.wanfa.2.152",
-                "fallback": "绝处逢生"
+                "bold": true
             }
         ],
         "color": "gold",
-        "bold": true,
-        "translate": "json.kards.dialog.paiku.shenji.juechufengsheng.625",
-        "fallback": "8Kmax "
+        "bold": true
     },
     "external_title": {
-        "translate": "json.kards.dialog.first_join.1.71",
-        "fallback": ""
+        "text": ""
     },
     "body": [
         {
@@ -30,38 +27,34 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "神迹牌",
                 "color": "white",
-                "italic": false,
-                "translate": "json.kards.dialog.jiaocheng.wanfa.2.153",
-                "fallback": "神迹牌"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "获得一次瞬间治疗",
                 "color": "gray",
-                "italic": false,
-                "translate": "json.kards.dialog.jiaocheng.wanfa.2.154",
-                "fallback": "获得一次瞬间治疗"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "恢复自身",
                 "color": "gray",
                 "italic": false,
                 "extra": [
                     {
+                        "text": "所有生命值",
                         "color": "gold",
-                        "italic": false,
-                        "translate": "json.kards.dialog.jiaocheng.wanfa.2.156",
-                        "fallback": "所有生命值"
+                        "italic": false
                     }
-                ],
-                "translate": "json.kards.dialog.jiaocheng.wanfa.2.155",
-                "fallback": "恢复自身"
+                ]
             },
             "width": 1024
         }
@@ -70,9 +63,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "color": "green",
-            "translate": "json.kards.dialog.paiku.shenji.fanxiangfeileishen.605",
-            "fallback": "返回§d神迹§a牌库"
+            "text": "返回§d神迹§a牌库",
+            "color": "green"
         },
         "action": {
             "type": "minecraft:show_dialog",

@@ -1,26 +1,26 @@
 {
-    "criteria": {
-        "requirement": {
-            "trigger": "minecraft:entity_hurt_player",
-            "conditions": {
-                "player": {
-                    "nbt": "{Tags:[\"diaolingtaidao\"]}"
-                },
-                "damage": {
-                    "blocked": true,
-                    "type": {
-                        "tags": [
-                            {
-                                "expected": false,
-                                "id": "is_projectile"
-                            }
-                        ]
-                    }
-                }
-            }
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"diaolingtaidao\"]}"
+        },
+        "damage": {
+          "blocked": true,
+          "type": {
+            "tags": [
+              {
+                "expected": false,
+                "id": "is_projectile"
+              }
+            ]
+          }
         }
-    },
-    "rewards": {
-        "function": "kards:game/player/shield/trigger_2"
+      }
     }
+  },
+  "rewards": {
+    "function": "kards:game/player/shield/trigger_2"
+  }
 }

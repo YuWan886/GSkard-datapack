@@ -1,16 +1,14 @@
 {
     "type": "minecraft:multi_action",
     "title": {
+        "text": "其他-§5DLC",
         "color": "gray",
-        "bold": true,
-        "translate": "json.kards-dlc.dialog.kard.yansheng.main.1381",
-        "fallback": "其他-§5DLC"
+        "bold": true
     },
     "exit_action": {
         "label": {
-            "color": "green",
-            "translate": "json.kards-dlc.dialog.kard.yansheng.main.1382",
-            "fallback": "返回§6主§a牌库-§7其他"
+            "text": "返回§6主§a牌库-§7其他",
+            "color": "green"
         },
         "action": {
             "type": "show_dialog",
@@ -21,9 +19,8 @@
     "actions": [
         {
             "label": {
-                "color": "red",
-                "translate": "json.kards-dlc.dialog.kard.yansheng.main.1383",
-                "fallback": "模板：其它"
+                "text": "模板：其它",
+                "color": "red"
             },
             "action": {
                 "type": "show_dialog",

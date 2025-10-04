@@ -1,68 +1,61 @@
 {
-    "type": "minecraft:notice",
-    "title": {
-        "extra": [
-            {
-                "color": "light_purple",
-                "translate": "json.kards.dialog.paiku.fashu.main.293",
-                "fallback": "内核引爆"
-            }
-        ],
-        "color": "aqua",
-        "bold": true,
-        "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.227",
-        "fallback": "5K "
-    },
-    "external_title": {
-        "translate": "json.kards.dialog.first_join.1.71",
-        "fallback": ""
-    },
-    "body": [
-        {
-            "type": "minecraft:item",
-            "item": {
-                "id": "music_disc_mellohi"
-            },
-            "show_decorations": false,
-            "show_tooltip": false
-        },
-        {
-            "type": "minecraft:plain_message",
-            "contents": {
-                "color": "gray",
-                "extra": [
-                    {
-                        "color": "red",
-                        "translate": "json.kards.dialog.paiku.fashu.neiheyinbao.324",
-                        "fallback": "引爆"
-                    }
-                ],
-                "translate": "json.kards.dialog.paiku.fashu.neiheyinbao.323",
-                "fallback": "随机"
-            },
-            "width": 1024
-        },
-        {
-            "type": "minecraft:plain_message",
-            "contents": {
-                "color": "gray",
-                "translate": "json.kards.dialog.paiku.fashu.neiheyinbao.325",
-                "fallback": "一个敌方队伍玩家"
-            },
-            "width": 1024
-        }
+  "type": "minecraft:notice",
+  "title": {
+    "text": "5K ",
+    "extra": [
+      {
+        "text": "内核引爆",
+        "color": "light_purple"
+      }
     ],
-    "inputs": [],
-    "can_close_with_escape": true,
-    "action": {
-        "label": {
-            "color": "green",
-            "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.232",
-            "fallback": "返回§d法术牌§a牌库"
-        },
-        "action": {
-            "type": "minecraft:show_dialog",
-            "dialog": "kards:paiku/fashu/main"
-        }
+    "color": "aqua",
+    "bold": true
+  },
+  "external_title": {
+    "text": ""
+  },
+  "body": [
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "music_disc_mellohi"
+      },
+      "show_decorations": false,
+      "show_tooltip": false
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "随机",
+        "color": "gray",
+        "extra": [
+          {
+            "text": "引爆",
+            "color": "red"
+          }
+        ]
+      },
+      "width": 1024
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "一个敌方队伍玩家",
+        "color": "gray"
+      },
+      "width": 1024
     }
+  ],
+  "inputs": [],
+  "can_close_with_escape": true,
+  "action": {
+    "label": {
+      "text": "返回§d法术牌§a牌库",
+      "color": "green"
+    },
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "kards:paiku/fashu/main"
+    }
+  }
 }

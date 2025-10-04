@@ -1,14 +1,12 @@
 {
     "type": "minecraft:notice",
     "title": {
+        "text": "祥兆玉石",
         "color": "dark_aqua",
-        "italic": false,
-        "translate": "json.kards.dialog.paiku.wangzhibaoku.main.900",
-        "fallback": "祥兆玉石"
+        "italic": false
     },
     "external_title": {
-        "translate": "json.kards.dialog.first_join.1.71",
-        "fallback": ""
+        "text": ""
     },
     "body": [
         {
@@ -22,143 +20,129 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "祥瑞",
                 "color": "gold",
                 "italic": false,
-                "bold": true,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.xiangzhaoyushi.1011",
-                "fallback": "祥瑞"
+                "bold": true
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "免疫负面效果",
                 "color": "gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.xiangzhaoyushi.1012",
-                "fallback": "免疫负面效果"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "福兆",
                 "color": "gold",
                 "italic": false,
-                "bold": true,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.xiangzhaoyushi.1013",
-                "fallback": "福兆"
+                "bold": true
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "每60s获得10♥额外生命",
                 "color": "gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.xiangzhaoyushi.1014",
-                "fallback": "每60s获得10♥额外生命"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "抑灾",
                 "color": "gold",
                 "italic": false,
-                "bold": true,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.xiangzhaoyushi.1015",
-                "fallback": "抑灾"
+                "bold": true
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "4格内敌对生物持续获得缓慢III",
                 "color": "gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.xiangzhaoyushi.1016",
-                "fallback": "4格内敌对生物持续获得缓慢III"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "传奇护符(背包内生效)",
                 "color": "white",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.feishenghufu.825",
-                "fallback": "传奇护符(背包内生效)"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "一石可佑一方平安 沃土绵延 盈财万贯",
                 "color": "dark_gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.xiangzhaoyushi.1017",
-                "fallback": "一石可佑一方平安 沃土绵延 盈财万贯"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "可惜此石只有一块 也只可庇佑一隅",
                 "color": "dark_gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.xiangzhaoyushi.1018",
-                "fallback": "可惜此石只有一块 也只可庇佑一隅"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "在漫长的夺石之争中 战争荡尽了多少贪欲者的国库 沾染上了无数平民和权贵的鲜血",
                 "color": "dark_gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.xiangzhaoyushi.1019",
-                "fallback": "在漫长的夺石之争中 战争荡尽了多少贪欲者的国库 沾染上了无数平民和权贵的鲜血"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "一石可致一方涂炭 焦土千里 饿殍遍地",
                 "color": "dark_gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.xiangzhaoyushi.1020",
-                "fallback": "一石可致一方涂炭 焦土千里 饿殍遍地"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "怎知此石效用无害 又惹得全世哄抢",
                 "color": "dark_gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.xiangzhaoyushi.1021",
-                "fallback": "怎知此石效用无害 又惹得全世哄抢"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "在富饶的金山银山外 铁骑寻觅过多少无辜者的性命 轻吹散了无数贪婪和自大的妄想",
                 "color": "dark_gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.xiangzhaoyushi.1022",
-                "fallback": "在富饶的金山银山外 铁骑寻觅过多少无辜者的性命 轻吹散了无数贪婪和自大的妄想"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "只叹怀玉者无罪 怀玉有罪",
                 "color": "dark_gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.xiangzhaoyushi.1023",
-                "fallback": "只叹怀玉者无罪 怀玉有罪"
+                "italic": false
             },
             "width": 1024
         }
@@ -167,9 +151,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "color": "green",
-            "translate": "json.kards.dialog.paiku.wangzhibaoku.diaolingtaidao.818",
-            "fallback": "返回§6王之宝库"
+            "text": "返回§6王之宝库",
+            "color": "green"
         },
         "action": {
             "type": "minecraft:show_dialog",

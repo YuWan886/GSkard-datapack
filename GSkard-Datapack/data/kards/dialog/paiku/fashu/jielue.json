@@ -1,52 +1,47 @@
 {
-    "type": "minecraft:notice",
-    "title": {
-        "extra": [
-            {
-                "color": "light_purple",
-                "translate": "json.kards.dialog.paiku.fashu.jielue.274",
-                "fallback": "劫掠"
-            }
-        ],
-        "color": "aqua",
-        "bold": true,
-        "translate": "json.kards.dialog.paiku.fashu.jielue.273",
-        "fallback": "4K "
-    },
-    "external_title": {
-        "translate": "json.kards.dialog.first_join.1.71",
-        "fallback": ""
-    },
-    "body": [
-        {
-            "type": "minecraft:item",
-            "item": {
-                "id": "music_disc_mellohi"
-            },
-            "show_decorations": false,
-            "show_tooltip": false
-        },
-        {
-            "type": "minecraft:plain_message",
-            "contents": {
-                "color": "gray",
-                "translate": "json.kards.dialog.paiku.fashu.jielue.275",
-                "fallback": "掠夺敌方一只图腾"
-            },
-            "width": 1024
-        }
+  "type": "minecraft:notice",
+  "title": {
+    "text": "4K ",
+    "extra": [
+      {
+        "text": "劫掠",
+        "color": "light_purple"
+      }
     ],
-    "inputs": [],
-    "can_close_with_escape": true,
-    "action": {
-        "label": {
-            "color": "green",
-            "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.232",
-            "fallback": "返回§d法术牌§a牌库"
-        },
-        "action": {
-            "type": "minecraft:show_dialog",
-            "dialog": "kards:paiku/fashu/main"
-        }
+    "color": "aqua",
+    "bold": true
+  },
+  "external_title": {
+    "text": ""
+  },
+  "body": [
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "music_disc_mellohi"
+      },
+      "show_decorations": false,
+      "show_tooltip": false
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "掠夺敌方一只图腾",
+        "color": "gray"
+      },
+      "width": 1024
     }
+  ],
+  "inputs": [],
+  "can_close_with_escape": true,
+  "action": {
+    "label": {
+      "text": "返回§d法术牌§a牌库",
+      "color": "green"
+    },
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "kards:paiku/fashu/main"
+    }
+  }
 }

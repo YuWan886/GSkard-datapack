@@ -1,12 +1,12 @@
 [
-    {
-        "function": "minecraft:set_enchantments",
-        "enchantments": {
-            "kards:liansuo": {
-                "min": 1,
-                "max": 2
-            }
-        },
-        "add": true
-    }
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "kards:liansuo": {
+        "min": 1,
+        "max": 2
+      }
+    },
+    "add": true
+  }
 ]

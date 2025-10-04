@@ -4,15 +4,13 @@ function kards:game/ingame/use_kard/general
 #回合计时
 execute if score #system GameStatus matches 1 run function kards:game/ingame/round/roundtime
 #分数小标题
-execute as @a[gamemode=adventure,tag=Ready] if score #system GameStatus matches 1..2 unless items entity @s weapon.mainhand lantern[custom_data={kards:"wuxiuzhihuo"}] run title @s actionbar [{translate: "kards.function.game.ingame.general.1", fallback: "K/Kmax  ",color:"dark_green"},{score:{objective:"kardCount",name:"@s"},color:"red"},{translate: "kards.function.game.ingame.general.2", fallback: "/",color: "red"},{score:{objective:"kardCountmax",name:"@s"},color:"red",bold: true}]
+execute as @a[gamemode=adventure,tag=Ready] if score #system GameStatus matches 1..2 unless items entity @s weapon.mainhand lantern[custom_data={kards:"wuxiuzhihuo"}] run title @s actionbar [{text: "K/Kmax  ",color:"dark_green"},{score:{objective:"kardCount",name:"@s"},color:"red"},{text: "/",color: "red"},{score:{objective:"kardCountmax",name:"@s"},color:"red",bold: true}]
 #赋值
 scoreboard players add @a touxiang 0
 scoreboard players add 红队 touxiang 0
 scoreboard players add 蓝队 touxiang 0
 scoreboard players add @a kardCount 0
 scoreboard players add @a jinziqifeng 0
-#升级
-function kards:game/ingame/shengji/general
 #图腾buff
 function kards:game/yongpaiku/tuteng/buff
 #神器
@@ -143,7 +141,7 @@ execute as @a if score @s qinglvqianmou matches 1 if score @s use_kard matches 0
 #execute as @a[gamemode=spectator] positioned -249.0 -10 -192.0 if score #system GameStatus matches 2 if entity @s unless entity @s[dz=56,dy=60,dx=77] at @s run tp @r[gamemode=adventure]
 
 #玩家死亡
-function kards:game/ingame/death/1
+function kards:game/player/death/1
 
 #禁字诀
 effect give @a[scores={jinzijue=1..}] speed 1 0 false
@@ -175,8 +173,8 @@ scoreboard players add @a[scores={jinzijue=6..}] jinzijue_1 1
 effect give @a[scores={jinzijue_1=600..}] absorption 30 9 false
 scoreboard players set @a[scores={jinzijue_1=600..}] jinzijue_1 0
 #禁字启封
-execute if entity @a[scores={jinzijue=10}] as @a if items entity @s container.* #creeper_drop_music_discs[minecraft:custom_data={kards:'禁字启封'}] run scoreboard players add @s cishu 1
-execute if entity @a[scores={jinzijue=10}] as @a if items entity @s container.* #creeper_drop_music_discs[minecraft:custom_data={kards:'禁字启封'}] run clear @s #creeper_drop_music_discs[minecraft:custom_data={kards:'禁字启封'}]
+execute if entity @a[scores={jinzijue=10}] as @a if items entity @s container.* #kards:kard[minecraft:custom_data={kards:'禁字启封'}] run scoreboard players add @s cishu 1
+execute if entity @a[scores={jinzijue=10}] as @a if items entity @s container.* #kards:kard[minecraft:custom_data={kards:'禁字启封'}] run clear @s #kards:kard[minecraft:custom_data={kards:'禁字启封'}]
 
 #音乐盒 春日影
 execute at @e[tag=droll] run particle minecraft:note ~0.5 ~ ~ 0.5 0.5 0.5 1 3

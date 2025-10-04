@@ -1,23 +1,20 @@
 {
     "type": "minecraft:multi_action",
     "title": {
+        "text": "军团",
         "color": "dark_green",
-        "bold": true,
-        "translate": "json.kards.dialog.paiku.juntuan.main.488",
-        "fallback": "军团"
+        "bold": true
     },
     "external_title": {
-        "translate": "json.kards.dialog.first_join.1.71",
-        "fallback": ""
+        "text": ""
     },
     "body": [],
     "inputs": [],
     "can_close_with_escape": true,
     "exit_action": {
         "label": {
-            "color": "green",
-            "translate": "json.kards.dialog.paiku.fashu.main.290",
-            "fallback": "返回§6主§a牌库"
+            "text": "返回§6主§a牌库",
+            "color": "green"
         },
         "action": {
             "type": "show_dialog",
@@ -28,9 +25,8 @@
     "actions": [
         {
             "label": {
-                "color": "dark_green",
-                "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.448",
-                "fallback": "爆炸军团"
+                "text": "爆炸军团",
+                "color": "dark_green"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -40,9 +36,8 @@
         },
         {
             "label": {
-                "color": "dark_green",
-                "translate": "json.kards.dialog.paiku.juntuan.chongzai.456",
-                "fallback": "虫灾"
+                "text": "虫灾",
+                "color": "dark_green"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -52,9 +47,8 @@
         },
         {
             "label": {
-                "color": "dark_green",
-                "translate": "json.kards.dialog.paiku.juntuan.diyuzhihuo.459",
-                "fallback": "地狱之火"
+                "text": "地狱之火",
+                "color": "dark_green"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -64,9 +58,8 @@
         },
         {
             "label": {
-                "color": "dark_green",
-                "translate": "json.kards.dialog.paiku.juntuan.errenchengjun.466",
-                "fallback": "二人成军"
+                "text": "二人成军",
+                "color": "dark_green"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -76,9 +69,8 @@
         },
         {
             "label": {
-                "color": "dark_green",
-                "translate": "json.kards.dialog.paiku.juntuan.fengyongerzhi.472",
-                "fallback": "蜂拥而至"
+                "text": "蜂拥而至",
+                "color": "dark_green"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -88,9 +80,8 @@
         },
         {
             "label": {
-                "color": "dark_green",
-                "translate": "json.kards.dialog.paiku.juntuan.jieluexiaodui.478",
-                "fallback": "劫掠小队"
+                "text": "劫掠小队",
+                "color": "dark_green"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -100,9 +91,8 @@
         },
         {
             "label": {
-                "color": "dark_green",
-                "translate": "json.kards.dialog.paiku.juntuan.jufengguojing.485",
-                "fallback": "飓风过境"
+                "text": "飓风过境",
+                "color": "dark_green"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -112,9 +102,8 @@
         },
         {
             "label": {
-                "color": "dark_green",
-                "translate": "json.kards.dialog.paiku.juntuan.main.489",
-                "fallback": "猛毒爪牙"
+                "text": "猛毒爪牙",
+                "color": "dark_green"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -124,9 +113,8 @@
         },
         {
             "label": {
-                "color": "dark_green",
-                "translate": "json.kards.dialog.paiku.juntuan.main.490",
-                "fallback": "末日来临"
+                "text": "末日来临",
+                "color": "dark_green"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -136,9 +124,8 @@
         },
         {
             "label": {
-                "color": "dark_green",
-                "translate": "json.kards.dialog.paiku.juntuan.main.491",
-                "fallback": "三人成众"
+                "text": "三人成众",
+                "color": "dark_green"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -148,9 +135,8 @@
         },
         {
             "label": {
-                "color": "dark_green",
-                "translate": "json.kards.dialog.paiku.juntuan.main.492",
-                "fallback": "杀手小队"
+                "text": "杀手小队",
+                "color": "dark_green"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -160,9 +146,8 @@
         },
         {
             "label": {
-                "color": "dark_green",
-                "translate": "json.kards.dialog.paiku.juntuan.main.493",
-                "fallback": "深海恐惧"
+                "text": "深海恐惧",
+                "color": "dark_green"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -172,9 +157,8 @@
         },
         {
             "label": {
-                "color": "dark_green",
-                "translate": "json.kards.dialog.paiku.juntuan.main.494",
-                "fallback": "尸帝"
+                "text": "尸帝",
+                "color": "dark_green"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -184,9 +168,8 @@
         },
         {
             "label": {
-                "color": "dark_green",
-                "translate": "json.kards.dialog.paiku.juntuan.main.495",
-                "fallback": "嗜血狼群"
+                "text": "嗜血狼群",
+                "color": "dark_green"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -196,9 +179,8 @@
         },
         {
             "label": {
-                "color": "dark_green",
-                "translate": "json.kards.dialog.paiku.juntuan.main.496",
-                "fallback": "死灵巫师"
+                "text": "死灵巫师",
+                "color": "dark_green"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -208,9 +190,8 @@
         },
         {
             "label": {
-                "color": "dark_green",
-                "translate": "json.kards.dialog.paiku.juntuan.main.497",
-                "fallback": "亡灵大军"
+                "text": "亡灵大军",
+                "color": "dark_green"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -220,9 +201,8 @@
         },
         {
             "label": {
-                "color": "dark_green",
-                "translate": "json.kards.dialog.paiku.juntuan.main.498",
-                "fallback": "我即浪潮"
+                "text": "我即浪潮",
+                "color": "dark_green"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -232,9 +212,8 @@
         },
         {
             "label": {
-                "color": "dark_green",
-                "translate": "json.kards.dialog.paiku.juntuan.main.499",
-                "fallback": "巫法联会"
+                "text": "巫法联会",
+                "color": "dark_green"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -244,9 +223,8 @@
         },
         {
             "label": {
-                "color": "dark_green",
-                "translate": "json.kards.dialog.paiku.juntuan.main.500",
-                "fallback": "无人机群"
+                "text": "无人机群",
+                "color": "dark_green"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -256,9 +234,8 @@
         },
         {
             "label": {
-                "color": "dark_green",
-                "translate": "json.kards.dialog.paiku.juntuan.main.501",
-                "fallback": "舞王僵尸"
+                "text": "舞王僵尸",
+                "color": "dark_green"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -268,9 +245,8 @@
         },
         {
             "label": {
-                "color": "dark_green",
-                "translate": "json.kards.dialog.paiku.juntuan.main.502",
-                "fallback": "下界入侵"
+                "text": "下界入侵",
+                "color": "dark_green"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -280,9 +256,8 @@
         },
         {
             "label": {
-                "color": "dark_green",
-                "translate": "json.kards.dialog.paiku.juntuan.main.503",
-                "fallback": "小鬼当家"
+                "text": "小鬼当家",
+                "color": "dark_green"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -292,9 +267,8 @@
         },
         {
             "label": {
-                "color": "dark_green",
-                "translate": "json.kards.dialog.paiku.juntuan.main.504",
-                "fallback": "小猪快跑"
+                "text": "小猪快跑",
+                "color": "dark_green"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -304,9 +278,8 @@
         },
         {
             "label": {
-                "color": "dark_green",
-                "translate": "json.kards.dialog.paiku.juntuan.main.505",
-                "fallback": "行尸走肉"
+                "text": "行尸走肉",
+                "color": "dark_green"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -316,9 +289,8 @@
         },
         {
             "label": {
-                "color": "dark_green",
-                "translate": "json.kards.dialog.paiku.juntuan.main.506",
-                "fallback": "灾厄双星"
+                "text": "灾厄双星",
+                "color": "dark_green"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -328,9 +300,8 @@
         },
         {
             "label": {
-                "color": "dark_green",
-                "translate": "json.kards.dialog.paiku.fashu.main.321",
-                "fallback": "DLC"
+                "text": "DLC",
+                "color": "dark_green"
             },
             "action": {
                 "type": "show_dialog",

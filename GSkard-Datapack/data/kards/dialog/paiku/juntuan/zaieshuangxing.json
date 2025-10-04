@@ -1,21 +1,18 @@
 {
     "type": "minecraft:notice",
     "title": {
+        "text": "14K ",
         "extra": [
             {
-                "color": "dark_green",
-                "translate": "json.kards.dialog.paiku.juntuan.main.506",
-                "fallback": "灾厄双星"
+                "text": "灾厄双星",
+                "color": "dark_green"
             }
         ],
         "color": "aqua",
-        "bold": true,
-        "translate": "json.kards.dialog.paiku.juntuan.zaieshuangxing.594",
-        "fallback": "14K "
+        "bold": true
     },
     "external_title": {
-        "translate": "json.kards.dialog.first_join.1.71",
-        "fallback": ""
+        "text": ""
     },
     "body": [
         {
@@ -29,72 +26,62 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "召唤1只",
                 "color": "gray",
                 "extra": [
                     {
-                        "color": "gold",
-                        "translate": "json.kards.dialog.paiku.juntuan.zaieshuangxing.595",
-                        "fallback": " 幻术师"
+                        "text": " 幻术师",
+                        "color": "gold"
                     },
                     {
-                        "color": "gray",
-                        "translate": "json.kards.dialog.paiku.juntuan.jieluexiaodui.480",
-                        "fallback": " 和1只"
+                        "text": " 和1只",
+                        "color": "gray"
                     },
                     {
-                        "color": "gold",
-                        "translate": "json.kards.dialog.paiku.juntuan.zaieshuangxing.596",
-                        "fallback": " 唤魔者"
+                        "text": " 唤魔者",
+                        "color": "gold"
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.jiben.diaolingkulou.395",
-                "fallback": "召唤1只"
+                ]
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "若友方",
                 "color": "gray",
                 "extra": [
                     {
-                        "color": "gold",
-                        "translate": "json.kards.dialog.paiku.juntuan.zaieshuangxing.598",
-                        "fallback": " 灾厄村民"
+                        "text": " 灾厄村民",
+                        "color": "gold"
                     },
                     {
-                        "color": "gray",
-                        "translate": "json.kards.dialog.paiku.juntuan.zaieshuangxing.599",
-                        "fallback": " 大于等于9"
+                        "text": " 大于等于9",
+                        "color": "gray"
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.juntuan.zaieshuangxing.597",
-                "fallback": "若友方"
+                ]
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "额外召唤1只",
                 "color": "gray",
                 "extra": [
                     {
-                        "color": "gold",
-                        "translate": "json.kards.dialog.paiku.juntuan.zaieshuangxing.600",
-                        "fallback": " 血量为40♥的劫掠兽"
+                        "text": " 血量为40♥的劫掠兽",
+                        "color": "gold"
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.juntuan.jieluexiaodui.483",
-                "fallback": "额外召唤1只"
+                ]
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "color": "dark_gray",
-                "translate": "json.kards.dialog.paiku.juntuan.zaieshuangxing.601",
-                "fallback": "灾厄村民:掠夺者 卫道士 幻术师 唤魔者"
+                "text": "灾厄村民:掠夺者 卫道士 幻术师 唤魔者",
+                "color": "dark_gray"
             },
             "width": 1024
         }
@@ -103,9 +90,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "color": "green",
-            "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.455",
-            "fallback": "返回§d军团牌§a牌库"
+            "text": "返回§d军团牌§a牌库",
+            "color": "green"
         },
         "action": {
             "type": "minecraft:show_dialog",

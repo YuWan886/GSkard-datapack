@@ -5,12 +5,10 @@
             "count": 1
         },
         "title": {
-            "translate": "json.kards.advancement.advancement.first_join_game.3",
-            "fallback": "GSkard"
+            "text": "GSkard"
         },
         "description": {
-            "translate": "json.kards.advancement.advancement.first_join_game.4",
-            "fallback": "你管这叫卡牌对战?"
+            "text": "你管这叫卡牌对战?"
         },
         "background": "minecraft:block/chiseled_tuff_bricks",
         "frame": "task",

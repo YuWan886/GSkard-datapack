@@ -1,14 +1,12 @@
 {
     "type": "minecraft:notice",
     "title": {
+        "text": "冻结图腾",
         "color": "aqua",
-        "bold": true,
-        "translate": "json.kards.dialog.paiku.yansheng.busituteng.dongjie.1146",
-        "fallback": "冻结图腾"
+        "bold": true
     },
     "external_title": {
-        "translate": "json.kards.dialog.first_join.1.71",
-        "fallback": ""
+        "text": ""
     },
     "body": [
         {
@@ -22,50 +20,45 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "触发后",
                 "color": "gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.yansheng.busituteng.baonu.1140",
-                "fallback": "触发后"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": " ♥+20 60s",
                 "color": "dark_green",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.yansheng.busituteng.baonu.1141",
-                "fallback": " ♥+20 60s"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": " ♥+10",
                 "color": "dark_green",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.yansheng.busituteng.baonu.1142",
-                "fallback": " ♥+10"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": " 冻结6格内敌对生物10s",
                 "color": "aqua",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.yansheng.busituteng.dongjie.1147",
-                "fallback": " 冻结6格内敌对生物10s"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": " 冻结:无法移动和攻击,每1.25s受到5♥冰冻伤害",
                 "color": "dark_gray",
-                "italic": true,
-                "translate": "json.kards.dialog.paiku.yansheng.busituteng.dongjie.1148",
-                "fallback": " 冻结:无法移动和攻击,每1.25s受到5♥冰冻伤害"
+                "italic": true
             },
             "width": 1024
         }
@@ -74,9 +67,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "color": "green",
-            "translate": "json.kards.dialog.paiku.yansheng.jinzijue.1116",
-            "fallback": "返回§7其他"
+            "text": "返回§7其他",
+            "color": "green"
         },
         "action": {
             "type": "minecraft:show_dialog",

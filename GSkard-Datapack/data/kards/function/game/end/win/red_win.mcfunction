@@ -14,8 +14,8 @@ scoreboard players reset 回合数
 scoreboard objectives setdisplay sidebar
 bossbar set roundtime visible false
 bossbar set pvptime visible false
-tellraw @a [{translate: "kards.function.game.end.win.blue_win.1", fallback: "15秒后返回大厅",color:"gold",bold:true}]
-title @a title [{translate: "kards.function.game.end.win.red_win.1", fallback: "红队",color:"red",bold:true},{translate: "kards.function.game.end.win.blue_win.3", fallback: " 胜利",color:"gold",bold:true}]
+tellraw @a [{text: "15秒后返回大厅",color:"gold",bold:true}]
+title @a title [{text: "红队",color:"red",bold:true},{text: " 胜利",color:"gold",bold:true}]
 schedule function kards:game/end/reset 15s
 
-give @a carrot_on_a_stick[item_name=[{translate: "kards.function.game.end.win.blue_win.4", fallback: "G36K",color:"gold",bold:true}],item_model="minecraft:golden_hoe"]
+give @a carrot_on_a_stick[item_name=[{text:"音符枪",color:"gold",bold:true}],item_model="minecraft:golden_hoe",custom_data={kards:"G36K_Ex"}]

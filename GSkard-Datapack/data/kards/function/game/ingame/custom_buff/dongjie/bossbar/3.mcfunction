@@ -1,4 +1,4 @@
-$bossbar add kards:dongjie_$(UUID) [{translate: "json.kards.dialog.paiku.wangzhibaoku.lindongzhikai.888", fallback: "冻结",color:"aqua",bold:true}]
+$bossbar add kards:dongjie_$(UUID) [{text:"冻结",color:"aqua",bold:true}]
 $bossbar set kards:dongjie_$(UUID) color blue
 $bossbar set kards:dongjie_$(UUID) players @s
 $bossbar set kards:dongjie_$(UUID) visible true

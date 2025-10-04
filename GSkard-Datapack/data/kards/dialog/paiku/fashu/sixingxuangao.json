@@ -1,59 +1,53 @@
 {
-    "type": "minecraft:notice",
-    "title": {
-        "extra": [
-            {
-                "color": "light_purple",
-                "translate": "json.kards.dialog.paiku.fashu.main.303",
-                "fallback": "死刑宣告"
-            }
-        ],
-        "color": "aqua",
-        "bold": true,
-        "translate": "json.kards.dialog.paiku.fashu.qisihuisheng.326",
-        "fallback": "6K "
-    },
-    "external_title": {
-        "translate": "json.kards.dialog.first_join.1.71",
-        "fallback": ""
-    },
-    "body": [
-        {
-            "type": "minecraft:item",
-            "item": {
-                "id": "music_disc_mellohi"
-            },
-            "show_decorations": false,
-            "show_tooltip": false
-        },
-        {
-            "type": "minecraft:plain_message",
-            "contents": {
-                "color": "gray",
-                "extra": [
-                    {
-                        "color": "red",
-                        "translate": "json.kards.dialog.paiku.fashu.sixingxuangao.352",
-                        "fallback": "铁砧"
-                    }
-                ],
-                "translate": "json.kards.dialog.paiku.fashu.sixingxuangao.351",
-                "fallback": "在敌方所有玩家头顶召唤一个"
-            },
-            "width": 1024
-        }
+  "type": "minecraft:notice",
+  "title": {
+    "text": "6K ",
+    "extra": [
+      {
+        "text": "死刑宣告",
+        "color": "light_purple"
+      }
     ],
-    "inputs": [],
-    "can_close_with_escape": true,
-    "action": {
-        "label": {
-            "color": "green",
-            "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.232",
-            "fallback": "返回§d法术牌§a牌库"
-        },
-        "action": {
-            "type": "minecraft:show_dialog",
-            "dialog": "kards:paiku/fashu/main"
-        }
+    "color": "aqua",
+    "bold": true
+  },
+  "external_title": {
+    "text": ""
+  },
+  "body": [
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "music_disc_mellohi"
+      },
+      "show_decorations": false,
+      "show_tooltip": false
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "在敌方所有玩家头顶召唤一个",
+        "color": "gray",
+        "extra": [
+          {
+            "text": "铁砧",
+            "color": "red"
+          }
+        ]
+      },
+      "width": 1024
     }
+  ],
+  "inputs": [],
+  "can_close_with_escape": true,
+  "action": {
+    "label": {
+      "text": "返回§d法术牌§a牌库",
+      "color": "green"
+    },
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "kards:paiku/fashu/main"
+    }
+  }
 }

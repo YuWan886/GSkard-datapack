@@ -6,12 +6,10 @@
             "count": 1
         },
         "title": {
-            "translate": "json.kards.advancement.advancement.lobby.find_running.37",
-            "fallback": "神秘跑酷点"
+            "text": "神秘跑酷点"
         },
         "description": {
-            "translate": "json.kards.advancement.advancement.lobby.find_running.38",
-            "fallback": "lengxiaoCN:我会一直看着你的...永远"
+            "text": "lengxiaoCN:我会一直看着你的...永远"
         },
         "background": "minecraft:block/chiseled_tuff_bricks",
         "frame": "task",

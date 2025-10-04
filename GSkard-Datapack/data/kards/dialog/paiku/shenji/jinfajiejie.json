@@ -1,22 +1,19 @@
 {
     "type": "minecraft:notice",
     "title": {
+        "text": "5K ",
         "extra": [
             {
+                "text": "禁法结界",
                 "color": "white",
-                "bold": true,
-                "translate": "json.kards.dialog.paiku.shenji.jinfajiejie.622",
-                "fallback": "禁法结界"
+                "bold": true
             }
         ],
         "color": "aqua",
-        "bold": true,
-        "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.227",
-        "fallback": "5K "
+        "bold": true
     },
     "external_title": {
-        "translate": "json.kards.dialog.first_join.1.71",
-        "fallback": ""
+        "text": ""
     },
     "body": [
         {
@@ -30,28 +27,25 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "神迹牌",
                 "color": "white",
-                "italic": false,
-                "translate": "json.kards.dialog.jiaocheng.wanfa.2.153",
-                "fallback": "神迹牌"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "敌方下回合",
                 "color": "gray",
                 "italic": false,
                 "extra": [
                     {
+                        "text": "费用减半",
                         "color": "red",
-                        "italic": false,
-                        "translate": "json.kards.dialog.paiku.shenji.jinfajiejie.624",
-                        "fallback": "费用减半"
+                        "italic": false
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.shenji.jinfajiejie.623",
-                "fallback": "敌方下回合"
+                ]
             },
             "width": 1024
         }
@@ -60,9 +54,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "color": "green",
-            "translate": "json.kards.dialog.paiku.shenji.fanxiangfeileishen.605",
-            "fallback": "返回§d神迹§a牌库"
+            "text": "返回§d神迹§a牌库",
+            "color": "green"
         },
         "action": {
             "type": "minecraft:show_dialog",

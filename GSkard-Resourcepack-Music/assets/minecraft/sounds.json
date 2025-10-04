@@ -3,7 +3,7 @@
         "replace": true,
         "sounds": [
             {
-                "name": "music/skill/chunriying",
+                "name": "chunriying",
                 "stream": true,
                 "volume": 0.5
             }
@@ -13,7 +13,7 @@
         "replace": true,
         "sounds": [
             {
-                "name": "music/dxmd",
+                "name": "dxmd",
                 "stream": true,
                 "volume": 0.5
             }
@@ -22,7 +22,7 @@
 	"oiiaioooooiai":{
 		"sounds": [
 			{
-                "name":"music/custom/oiiaioooooiai",
+                "name":"oiiaioooooiai",
 				"stream": true,
 				"volume": 0.5
 			}

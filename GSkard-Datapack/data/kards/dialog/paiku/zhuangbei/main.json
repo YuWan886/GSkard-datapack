@@ -1,23 +1,20 @@
 {
     "type": "minecraft:multi_action",
     "title": {
+        "text": "装备牌",
         "color": "gold",
-        "bold": true,
-        "translate": "json.kards.dialog.paiku.main.222",
-        "fallback": "装备牌"
+        "bold": true
     },
     "external_title": {
-        "translate": "json.kards.dialog.first_join.1.71",
-        "fallback": ""
+        "text": ""
     },
     "body": [],
     "inputs": [],
     "can_close_with_escape": true,
     "exit_action": {
         "label": {
-            "color": "green",
-            "translate": "json.kards.dialog.paiku.fashu.main.290",
-            "fallback": "返回§6主§a牌库"
+            "text": "返回§6主§a牌库",
+            "color": "green"
         },
         "action": {
             "type": "show_dialog",
@@ -28,9 +25,8 @@
     "actions": [
         {
             "label": {
-                "color": "gold",
-                "translate": "json.kards.dialog.paiku.zhuangbei.main.1198",
-                "fallback": "铁剑"
+                "text": "铁剑",
+                "color": "gold"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -40,9 +36,8 @@
         },
         {
             "label": {
-                "color": "gold",
-                "translate": "json.kards.dialog.paiku.zhuangbei.bianxiehuosai.1177",
-                "fallback": "便携活塞"
+                "text": "便携活塞",
+                "color": "gold"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -52,9 +47,8 @@
         },
         {
             "label": {
-                "color": "gold",
-                "translate": "json.kards.dialog.paiku.yansheng.main.1127",
-                "fallback": "不死图腾"
+                "text": "不死图腾",
+                "color": "gold"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -64,9 +58,8 @@
         },
         {
             "label": {
-                "color": "gold",
-                "translate": "json.kards.dialog.paiku.zhuangbei.dunpai.1182",
-                "fallback": "盾牌"
+                "text": "盾牌",
+                "color": "gold"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -76,9 +69,8 @@
         },
         {
             "label": {
-                "color": "gold",
-                "translate": "json.kards.dialog.paiku.zhuangbei.haiguilinjia.1184",
-                "fallback": "海龟鳞甲"
+                "text": "海龟鳞甲",
+                "color": "gold"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -88,9 +80,8 @@
         },
         {
             "label": {
-                "color": "gold",
-                "translate": "json.kards.dialog.paiku.zhuangbei.jianduandunpai.1186",
-                "fallback": "尖端盾牌"
+                "text": "尖端盾牌",
+                "color": "gold"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -100,9 +91,8 @@
         },
         {
             "label": {
-                "color": "gold",
-                "translate": "json.kards.dialog.paiku.zhuangbei.jingjidunpai.1188",
-                "fallback": "荆棘盾牌"
+                "text": "荆棘盾牌",
+                "color": "gold"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -112,9 +102,8 @@
         },
         {
             "label": {
-                "color": "gold",
-                "translate": "json.kards.dialog.paiku.zhuangbei.jinjian.1190",
-                "fallback": "金剑"
+                "text": "金剑",
+                "color": "gold"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -124,9 +113,8 @@
         },
         {
             "label": {
-                "color": "gold",
-                "translate": "json.kards.dialog.paiku.zhuangbei.jinshengji.1192",
-                "fallback": "金升级"
+                "text": "金升级",
+                "color": "gold"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -136,9 +124,8 @@
         },
         {
             "label": {
-                "color": "gold",
-                "translate": "json.kards.dialog.paiku.zhuangbei.linghunshougeqi.1195",
-                "fallback": "灵魂收割器"
+                "text": "灵魂收割器",
+                "color": "gold"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -148,9 +135,8 @@
         },
         {
             "label": {
-                "color": "gold",
-                "translate": "json.kards.dialog.paiku.yansheng.longxi.1123",
-                "fallback": "龙息"
+                "text": "龙息",
+                "color": "gold"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -160,9 +146,8 @@
         },
         {
             "label": {
-                "color": "gold",
-                "translate": "json.kards.dialog.paiku.zhuangbei.main.1199",
-                "fallback": "破碎剑刃"
+                "text": "破碎剑刃",
+                "color": "gold"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -172,9 +157,8 @@
         },
         {
             "label": {
-                "color": "gold",
-                "translate": "json.kards.dialog.paiku.zhuangbei.main.1200",
-                "fallback": "全息盾牌"
+                "text": "全息盾牌",
+                "color": "gold"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -184,9 +168,8 @@
         },
         {
             "label": {
-                "color": "gold",
-                "translate": "json.kards.dialog.paiku.zhuangbei.main.1201",
-                "fallback": "铁斧"
+                "text": "铁斧",
+                "color": "gold"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -196,9 +179,8 @@
         },
         {
             "label": {
-                "color": "gold",
-                "translate": "json.kards.dialog.paiku.zhuangbei.main.1202",
-                "fallback": "铁升级"
+                "text": "铁升级",
+                "color": "gold"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -208,9 +190,8 @@
         },
         {
             "label": {
-                "color": "gold",
-                "translate": "json.kards.dialog.paiku.zhuangbei.main.1203",
-                "fallback": "维护"
+                "text": "维护",
+                "color": "gold"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -220,9 +201,8 @@
         },
         {
             "label": {
-                "color": "gold",
-                "translate": "json.kards.dialog.paiku.zhuangbei.main.1204",
-                "fallback": "下界合金剑"
+                "text": "下界合金剑",
+                "color": "gold"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -232,9 +212,8 @@
         },
         {
             "label": {
-                "color": "gold",
-                "translate": "json.kards.dialog.paiku.zhuangbei.main.1205",
-                "fallback": "下界合金升级"
+                "text": "下界合金升级",
+                "color": "gold"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -244,9 +223,8 @@
         },
         {
             "label": {
-                "color": "gold",
-                "translate": "json.kards.dialog.paiku.zhuangbei.main.1206",
-                "fallback": "鞋钉"
+                "text": "鞋钉",
+                "color": "gold"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -256,9 +234,8 @@
         },
         {
             "label": {
-                "color": "gold",
-                "translate": "json.kards.dialog.paiku.zhuangbei.main.1207",
-                "fallback": "迅捷之羽"
+                "text": "迅捷之羽",
+                "color": "gold"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -268,9 +245,8 @@
         },
         {
             "label": {
-                "color": "gold",
-                "translate": "json.kards.dialog.paiku.zhuangbei.main.1208",
-                "fallback": "重锤"
+                "text": "重锤",
+                "color": "gold"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -280,9 +256,8 @@
         },
         {
             "label": {
-                "color": "gold",
-                "translate": "json.kards.dialog.paiku.zhuangbei.main.1209",
-                "fallback": "钻石斧"
+                "text": "钻石斧",
+                "color": "gold"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -292,9 +267,8 @@
         },
         {
             "label": {
-                "color": "gold",
-                "translate": "json.kards.dialog.paiku.zhuangbei.main.1210",
-                "fallback": "钻石剑"
+                "text": "钻石剑",
+                "color": "gold"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -304,9 +278,8 @@
         },
         {
             "label": {
-                "color": "gold",
-                "translate": "json.kards.dialog.paiku.zhuangbei.main.1211",
-                "fallback": "钻石升级"
+                "text": "钻石升级",
+                "color": "gold"
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -316,9 +289,8 @@
         },
         {
             "label": {
-                "color": "gold",
-                "translate": "json.kards.dialog.paiku.fashu.main.321",
-                "fallback": "DLC"
+                "text": "DLC",
+                "color": "gold"
             },
             "action": {
                 "type": "show_dialog",

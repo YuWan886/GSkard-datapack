@@ -1,21 +1,18 @@
 {
     "type": "minecraft:notice",
     "title": {
+        "text": "4K ",
         "extra": [
             {
-                "color": "dark_green",
-                "translate": "json.kards.dialog.paiku.juntuan.fengyongerzhi.472",
-                "fallback": "蜂拥而至"
+                "text": "蜂拥而至",
+                "color": "dark_green"
             }
         ],
         "color": "aqua",
-        "bold": true,
-        "translate": "json.kards.dialog.paiku.fashu.jielue.273",
-        "fallback": "4K "
+        "bold": true
     },
     "external_title": {
-        "translate": "json.kards.dialog.first_join.1.71",
-        "fallback": ""
+        "text": ""
     },
     "body": [
         {
@@ -29,48 +26,42 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "在中间召唤4只",
                 "color": "gray",
                 "extra": [
                     {
-                        "color": "gold",
-                        "translate": "json.kards.dialog.paiku.jiben.mifeng.432",
-                        "fallback": " 蜜蜂"
+                        "text": " 蜜蜂",
+                        "color": "gold"
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.juntuan.fengyongerzhi.473",
-                "fallback": "在中间召唤4只"
+                ]
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "若场上存在",
                 "color": "gray",
                 "extra": [
                     {
-                        "color": "green",
-                        "translate": "json.kards.dialog.paiku.juntuan.fengyongerzhi.475",
-                        "fallback": " 友方蜜蜂"
+                        "text": " 友方蜜蜂",
+                        "color": "green"
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.juntuan.fengyongerzhi.474",
-                "fallback": "若场上存在"
+                ]
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "改为",
                 "color": "gray",
                 "extra": [
                     {
-                        "color": "gold",
-                        "translate": "json.kards.dialog.paiku.juntuan.fengyongerzhi.477",
-                        "fallback": " 位于其召唤4只蜜蜂"
+                        "text": " 位于其召唤4只蜜蜂",
+                        "color": "gold"
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.juntuan.fengyongerzhi.476",
-                "fallback": "改为"
+                ]
             },
             "width": 1024
         }
@@ -79,9 +70,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "color": "green",
-            "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.455",
-            "fallback": "返回§d军团牌§a牌库"
+            "text": "返回§d军团牌§a牌库",
+            "color": "green"
         },
         "action": {
             "type": "minecraft:show_dialog",

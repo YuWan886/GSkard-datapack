@@ -1,21 +1,4 @@
 {
-    "function": "minecraft:set_components",
-    "components": {
-        "minecraft:blocks_attacks": {
-            "block_delay_seconds": 1,
-            "disable_cooldown_scale": 2,
-            "damage_reductions": [
-                {
-                    "base": 0,
-                    "factor": 0.8,
-                    "horizontal_blocking_angle": 360
-                }
-            ],
-            "item_damage": {
-                "threshold": 0,
-                "base": 0,
-                "factor": 0
-            }
-        }
-    }
-}
+  "function": "minecraft:set_components",
+  "components": {
+    "minecraft:blocks_attacks":{"block_delay_seconds": 1,"disable_cooldown_scale": 2,"damage_reductions": [{"base": 0,"factor": 0.8,"horizontal_blocking_angle": 360}],"item_damage": {"threshold": 0,"base": 0,"factor": 0}}}}

@@ -19,5 +19,5 @@ execute as @e[team=blue,tag=tuteng,type=!iron_golem] at @e[limit=1,tag=b_tuteng]
 execute as @e[team=blue,tag=tuteng,type=iron_golem] at @e[limit=1,tag=blue_marker_7] run tp @s ~ 0 ~
 
 title @s times 10t 2s 10t
-title @a title [{translate: "kards.function.game.yongpaiku.fashu.fanzhuan.1.1", fallback: "[反转]",color:"light_purple"}]
-title @a subtitle [{translate: "kards.function.game.yongpaiku.fashu.fanzhuan.1.2", fallback: "双方图腾交换",color:"gray"}]
+title @a title [{text:"[反转]",color:"light_purple"}]
+title @a subtitle [{text:"双方图腾交换",color:"gray"}]

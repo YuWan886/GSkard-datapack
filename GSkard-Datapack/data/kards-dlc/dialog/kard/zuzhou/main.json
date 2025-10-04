@@ -1,16 +1,14 @@
 {
     "type": "multi_action",
     "title": {
+        "text": "诅咒-§5DLC",
         "color": "dark_gray",
-        "bold": true,
-        "translate": "json.kards-dlc.dialog.kard.zuzhou.main.1393",
-        "fallback": "诅咒-§5DLC"
+        "bold": true
     },
     "exit_action": {
         "label": {
-            "color": "green",
-            "translate": "json.kards-dlc.dialog.kard.zuzhou.main.1394",
-            "fallback": "返回§6主§a牌库-§8诅咒"
+            "text": "返回§6主§a牌库-§8诅咒",
+            "color": "green"
         },
         "action": {
             "type": "show_dialog",
@@ -21,9 +19,8 @@
     "actions": [
         {
             "label": {
-                "color": "dark_gray",
-                "translate": "json.kards-dlc.dialog.kard.zuzhou.main.1395",
-                "fallback": "模板：诅咒"
+                "text": "模板：诅咒",
+                "color": "dark_gray"
             },
             "action": {
                 "type": "show_dialog",

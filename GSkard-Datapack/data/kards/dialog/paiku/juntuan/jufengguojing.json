@@ -1,21 +1,18 @@
 {
     "type": "minecraft:notice",
     "title": {
+        "text": "8K ",
         "extra": [
             {
-                "color": "dark_green",
-                "translate": "json.kards.dialog.paiku.juntuan.jufengguojing.485",
-                "fallback": "飓风过境"
+                "text": "飓风过境",
+                "color": "dark_green"
             }
         ],
         "color": "aqua",
-        "bold": true,
-        "translate": "json.kards.dialog.paiku.fashu.chunnuanhuakai.241",
-        "fallback": "8K "
+        "bold": true
     },
     "external_title": {
-        "translate": "json.kards.dialog.first_join.1.71",
-        "fallback": ""
+        "text": ""
     },
     "body": [
         {
@@ -29,41 +26,36 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "召唤2只",
                 "color": "gray",
                 "extra": [
                     {
-                        "color": "gold",
-                        "translate": "json.kards.dialog.paiku.jiben.xuanfengren.442",
-                        "fallback": " 旋风人"
+                        "text": " 旋风人",
+                        "color": "gold"
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.juntuan.errenchengjun.467",
-                "fallback": "召唤2只"
+                ]
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "每拥有12Kmax额外召唤1只",
                 "color": "gray",
                 "extra": [
                     {
-                        "color": "gold",
-                        "translate": "json.kards.dialog.paiku.jiben.xuanfengren.442",
-                        "fallback": " 旋风人"
+                        "text": " 旋风人",
+                        "color": "gold"
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.juntuan.jufengguojing.486",
-                "fallback": "每拥有12Kmax额外召唤1只"
+                ]
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "color": "gray",
-                "translate": "json.kards.dialog.paiku.juntuan.jufengguojing.487",
-                "fallback": "最多生成6只"
+                "text": "最多生成6只",
+                "color": "gray"
             },
             "width": 1024
         }
@@ -72,9 +64,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "color": "green",
-            "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.455",
-            "fallback": "返回§d军团牌§a牌库"
+            "text": "返回§d军团牌§a牌库",
+            "color": "green"
         },
         "action": {
             "type": "minecraft:show_dialog",

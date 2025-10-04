@@ -12,6 +12,6 @@
         }
     },
     "rewards": {
-        "function": "kards:game/ingame/hurt/mafeng"
+        "function": "kards:game/player/hurt/mafeng"
     }
 }

@@ -43,7 +43,7 @@ execute if score #system dituxuanze matches 101 positioned 295 0 55 run function
 execute if score #system dituxuanze matches 102 positioned -264 0 334 run function kards:game/marker/2
 execute if score #system dituxuanze matches 103 positioned -469 0 83 run function kards:game/marker/2
 
-tellraw @a [{translate: "kards.function.lobby.setting.map.truns_map.1", fallback: "提示 ",color: "green",bold: true},{translate: "kards.function.lobby.setting.map.truns_map.2", fallback: "地图已切换!",color: "gold"}]
+tellraw @a [{text: "提示 ",color: "green",bold: true},{text: "地图已切换!",color: "gold"}]
 
 execute store result score system ceshi if entity @e[type=marker]
 tellraw @a[tag=op] {score:{name:system,objective:ceshi}}

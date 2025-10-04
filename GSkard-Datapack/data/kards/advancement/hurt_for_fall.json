@@ -1,22 +1,22 @@
 {
-    "criteria": {
-        "requirement": {
-            "trigger": "minecraft:entity_hurt_player",
-            "conditions": {
-                "damage": {
-                    "type": {
-                        "tags": [
-                            {
-                                "id": "is_fall",
-                                "expected": true
-                            }
-                        ]
-                    }
-                }
-            }
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "tags": [
+              {
+                "id": "is_fall",
+                "expected": true
+              }
+            ]
+          }
         }
-    },
-    "rewards": {
-        "function": "kards:game/ingame/hurt/fall"
+      }
     }
+  },
+  "rewards": {
+    "function": "kards:game/player/hurt/fall"
+  }
 }

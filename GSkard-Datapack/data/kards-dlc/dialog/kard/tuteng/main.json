@@ -1,16 +1,14 @@
 {
     "type": "minecraft:multi_action",
     "title": {
+        "text": "图腾-§5DLC",
         "color": "red",
-        "bold": true,
-        "translate": "json.kards-dlc.dialog.kard.tuteng.main.1369",
-        "fallback": "图腾-§5DLC"
+        "bold": true
     },
     "exit_action": {
         "label": {
-            "color": "green",
-            "translate": "json.kards-dlc.dialog.kard.tuteng.main.1370",
-            "fallback": "返回§6主§a牌库-§c图腾"
+            "text": "返回§6主§a牌库-§c图腾",
+            "color": "green"
         },
         "action": {
             "type": "show_dialog",
@@ -21,9 +19,8 @@
     "actions": [
         {
             "label": {
-                "color": "red",
-                "translate": "json.kards-dlc.dialog.kard.tuteng.main.1371",
-                "fallback": "模板：图腾"
+                "text": "模板：图腾",
+                "color": "red"
             },
             "action": {
                 "type": "show_dialog",

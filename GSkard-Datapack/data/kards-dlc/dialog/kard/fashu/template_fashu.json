@@ -1,53 +1,48 @@
 {
-    "type": "notice",
-    "title": {
-        "extra": [
-            {
-                "color": "light_purple",
-                "translate": "json.kards-dlc.dialog.kard.fashu.main.1355",
-                "fallback": "模板：法术"
-            }
-        ],
-        "color": "aqua",
-        "bold": true,
-        "translate": "json.kards.dialog.paiku.fashu.chaotuoxili.233",
-        "fallback": "1K "
-    },
-    "body": [
-        {
-            "type": "item",
-            "item": {
-                "id": "music_disc_mellohi"
-            },
-            "show_decorations": false,
-            "show_tooltip": false
-        },
-        {
-            "type": "plain_message",
-            "contents": {
-                "color": "gray",
-                "extra": [
-                    {
-                        "color": "green",
-                        "translate": "json.kards.dialog.paiku.fashu.qisihuisheng.328",
-                        "fallback": "16♥"
-                    }
-                ],
-                "translate": "json.kards.dialog.paiku.fashu.shenshengzhiguang.336",
-                "fallback": "为自身回复"
-            },
-            "width": 1024
-        }
+  "type": "notice",
+  "title": {
+    "text": "1K ",
+    "extra": [
+      {
+        "text": "模板：法术",
+        "color": "light_purple"
+      }
     ],
-    "action": {
-        "label": {
-            "color": "green",
-            "translate": "json.kards-dlc.dialog.kard.fashu.template_fashu.1356",
-            "fallback": "返回§d法术牌§a牌库-§5DLC"
-        },
-        "action": {
-            "type": "show_dialog",
-            "dialog": "kards-dlc:kard/fashu/main"
-        }
+    "color": "aqua",
+    "bold": true
+  },
+  "body": [
+    {
+      "type": "item",
+      "item": {
+        "id": "music_disc_mellohi"
+      },
+      "show_decorations": false,
+      "show_tooltip": false
+    },
+    {
+      "type": "plain_message",
+      "contents": {
+        "text": "为自身回复",
+        "color": "gray",
+        "extra": [
+          {
+            "text": "16♥",
+            "color": "green"
+          }
+        ]
+      },
+      "width": 1024
     }
+  ],
+  "action": {
+    "label": {
+      "text": "返回§d法术牌§a牌库-§5DLC",
+      "color": "green"
+    },
+    "action": {
+      "type": "show_dialog",
+      "dialog": "kards-dlc:kard/fashu/main"
+    }
+  }
 }

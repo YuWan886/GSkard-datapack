@@ -13,6 +13,9 @@
         "kards:move_or_die",
         "kards:yonghan",
         "kards:zhongshang",
-        "kards:duming"
+        "kards:duming",
+        "kards:flend",
+        "kards:zhongyanzhixing",
+        "kards:xixuegui"
     ]
 }

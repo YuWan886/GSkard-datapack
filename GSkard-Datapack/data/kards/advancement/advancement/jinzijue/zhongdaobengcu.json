@@ -5,12 +5,10 @@
             "count": 1
         },
         "title": {
-            "translate": "json.kards.advancement.advancement.jinzijue.zhongdaobengcu.33",
-            "fallback": "中道崩殂"
+            "text": "中道崩殂"
         },
         "description": {
-            "translate": "json.kards.advancement.advancement.jinzijue.zhongdaobengcu.34",
-            "fallback": "禁字决层数大于等于4层时死亡"
+            "text": "禁字决层数大于等于4层时死亡"
         },
         "frame": "task",
         "show_toast": true,

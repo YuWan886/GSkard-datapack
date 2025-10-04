@@ -1,21 +1,18 @@
 {
     "type": "minecraft:notice",
     "title": {
+        "text": "16K ",
         "extra": [
             {
-                "color": "red",
-                "translate": "json.kards.dialog.paiku.tuteng.main.714",
-                "fallback": "铁傀儡"
+                "text": "铁傀儡",
+                "color": "red"
             }
         ],
         "color": "aqua",
-        "bold": true,
-        "translate": "json.kards.dialog.paiku.tuteng.tiekuilei.741",
-        "fallback": "16K "
+        "bold": true
     },
     "external_title": {
-        "translate": "json.kards.dialog.first_join.1.71",
-        "fallback": ""
+        "text": ""
     },
     "body": [
         {
@@ -29,58 +26,52 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "图腾牌",
                 "color": "red",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.tuteng.baomao.681",
-                "fallback": "图腾牌"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "在队伍区域中间生成铁傀儡",
                 "color": "gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.tuteng.tiekuilei.742",
-                "fallback": "在队伍区域中间生成铁傀儡"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "图腾存活效果：",
                 "color": "gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.tuteng.baomao.683",
-                "fallback": "图腾存活效果："
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "1.在铁傀儡5格范围内的敌方怪物获得",
                 "color": "gray",
                 "italic": false,
                 "extra": [
                     {
+                        "text": "虚弱2",
                         "color": "red",
-                        "italic": false,
-                        "translate": "json.kards.dialog.paiku.tuteng.tiekuilei.744",
-                        "fallback": "虚弱2"
+                        "italic": false
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.tuteng.tiekuilei.743",
-                "fallback": "1.在铁傀儡5格范围内的敌方怪物获得"
+                ]
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "2.铁傀儡会主动攻击敌方使用的怪物",
                 "color": "gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.tuteng.tiekuilei.745",
-                "fallback": "2.铁傀儡会主动攻击敌方使用的怪物"
+                "italic": false
             },
             "width": 1024
         }
@@ -89,9 +80,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "color": "green",
-            "translate": "json.kards.dialog.paiku.tuteng.baomao.689",
-            "fallback": "返回§c图腾§a牌库"
+            "text": "返回§c图腾§a牌库",
+            "color": "green"
         },
         "action": {
             "type": "minecraft:show_dialog",

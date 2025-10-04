@@ -1,14 +1,12 @@
 {
     "type": "minecraft:notice",
     "title": {
+        "text": "轻灵之语",
         "color": "white",
-        "italic": false,
-        "translate": "json.kards.dialog.paiku.wangzhibaoku.main.894",
-        "fallback": "轻灵之语"
+        "italic": false
     },
     "external_title": {
-        "translate": "json.kards.dialog.first_join.1.71",
-        "fallback": ""
+        "text": ""
     },
     "body": [
         {
@@ -25,49 +23,44 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "风之庇护",
                 "color": "aqua",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.qinglingzhiyu.901",
-                "fallback": "风之庇护"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "拿在手中时 获得38%移速加成",
                 "color": "gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.qinglingzhiyu.902",
-                "fallback": "拿在手中时 获得38%移速加成"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "color": "aqua",
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.qinglingzhiyu.903",
-                "fallback": "风袭"
+                "text": "风袭",
+                "color": "aqua"
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "使用轻灵之语近战攻击会使目标旋转1.75s",
                 "color": "gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.qinglingzhiyu.904",
-                "fallback": "使用轻灵之语近战攻击会使目标旋转1.75s"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "10s补充一次",
                 "color": "gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.qinglingzhiyu.905",
-                "fallback": "10s补充一次"
+                "italic": false
             },
             "width": 1024
         }
@@ -76,9 +69,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "color": "green",
-            "translate": "json.kards.dialog.paiku.wangzhibaoku.diaolingtaidao.818",
-            "fallback": "返回§6王之宝库"
+            "text": "返回§6王之宝库",
+            "color": "green"
         },
         "action": {
             "type": "minecraft:show_dialog",

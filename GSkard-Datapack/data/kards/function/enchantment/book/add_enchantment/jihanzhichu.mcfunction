@@ -1,5 +1,5 @@
 item modify entity @s weapon.mainhand {function:"set_enchantments",enchantments:{"kards:jihanzhichu":1},add:true}
 execute store result score @s mainhand_enchantment_levels run data get entity @s SelectedItem.components."minecraft:enchantments".kards:jihanzhichu
-tellraw @s [{translate: "kards.function.enchantment.book.add_enchantment.bingshuangjingji.1", fallback: "成功为主手物品添加附魔",color:"green"},{translate: "kards.function.enchantment.book.add_enchantment.jihanzhichu.1", fallback: "极寒之触 I",color:"gold"},{translate: "kards.function.enchantment.book.add_enchantment.bingshuangjingji.3", fallback: "\n当前物品",color:"gray"},{translate: "json.kards.dialog.xp_shop.enchantment.main.1327", fallback: "极寒之触",color:"gold"},{translate: "kards.function.enchantment.book.add_enchantment.bingshuangjingji.4", fallback: "等级为",color:"gray"},{score:{name:"@s",objective:"mainhand_enchantment_levels"},color:"green"}]
+tellraw @s [{text:"成功为主手物品添加附魔",color:"green"},{text:"极寒之触 I",color:"gold"},{text:"\n当前物品",color:"gray"},{text:"极寒之触",color:"gold"},{text:"等级为",color:"gray"},{score:{name:"@s",objective:"mainhand_enchantment_levels"},color:"green"}]
 item replace entity @s weapon.offhand with air
 execute at @s run playsound block.enchantment_table.use player @s ~ ~ ~ 100 1

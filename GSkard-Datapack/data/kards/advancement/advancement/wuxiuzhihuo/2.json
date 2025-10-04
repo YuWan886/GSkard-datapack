@@ -5,12 +5,10 @@
             "count": 1
         },
         "title": {
-            "translate": "json.kards.advancement.advancement.wuxiuzhihuo.2.63",
-            "fallback": "永恒熔铸"
+            "text": "永恒熔铸"
         },
         "description": {
-            "translate": "json.kards.advancement.advancement.wuxiuzhihuo.2.64",
-            "fallback": "无休止火的“无休”点数达到700点"
+            "text": "无休止火的“无休”点数达到700点"
         },
         "frame": "challenge",
         "show_toast": true,

@@ -1,21 +1,18 @@
 {
     "type": "minecraft:notice",
     "title": {
+        "text": "5K ",
         "extra": [
             {
-                "color": "gold",
-                "translate": "json.kards.dialog.paiku.zhuangbei.jinjian.1190",
-                "fallback": "金剑"
+                "text": "金剑",
+                "color": "gold"
             }
         ],
         "color": "aqua",
-        "bold": true,
-        "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.227",
-        "fallback": "5K "
+        "bold": true
     },
     "external_title": {
-        "translate": "json.kards.dialog.first_join.1.71",
-        "fallback": ""
+        "text": ""
     },
     "body": [
         {
@@ -29,28 +26,25 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "装备牌",
                 "color": "gold",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.main.222",
-                "fallback": "装备牌"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "获得一把",
                 "color": "gray",
                 "italic": false,
                 "extra": [
                     {
+                        "text": "金剑",
                         "color": "gold",
-                        "italic": false,
-                        "translate": "json.kards.dialog.paiku.zhuangbei.jinjian.1190",
-                        "fallback": "金剑"
+                        "italic": false
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.zhuangbei.jinjian.1191",
-                "fallback": "获得一把"
+                ]
             },
             "width": 1024
         }
@@ -59,9 +53,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "color": "green",
-            "translate": "json.kards.dialog.paiku.zhuangbei.bianxiehuosai.1180",
-            "fallback": "返回§c装备§a牌库"
+            "text": "返回§c装备§a牌库",
+            "color": "green"
         },
         "action": {
             "type": "minecraft:show_dialog",

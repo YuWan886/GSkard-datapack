@@ -12,6 +12,6 @@
         }
     },
     "rewards": {
-        "function": "kards:game/ingame/hurt/silingpucong"
+        "function": "kards:game/player/hurt/silingpucong"
     }
 }

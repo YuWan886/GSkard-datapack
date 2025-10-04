@@ -1,0 +1,1 @@
+$execute positioned $(X) $(Y) $(Z) run function kards:game/player/talent/enable/fushengzuzhou/3

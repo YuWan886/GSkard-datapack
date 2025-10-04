@@ -1,6 +1,6 @@
 
 scoreboard players add @s wuxiuzhihuo_shengji 1
 scoreboard players set @s wuxiuzhihuo_rongzhu 0
-tellraw @s {translate: "kards.function.game.yongpaiku.shenji.wangzhibaoku.wuxiuzhihuo.rongzhu.jiben.1", fallback: "无休之火熔铸了1张基本牌 成长点数+1",color:"gray"}
+tellraw @s {text: "无休之火熔铸了1张基本牌 成长点数+1",color:"gray"}
 execute at @s run kill @n[type=item,nbt={Item:{id:"minecraft:music_disc_mall"},Age:0s}]
 function kards:game/yongpaiku/shenji/wangzhibaoku/wuxiuzhihuo/rongzhu/all

@@ -12,8 +12,8 @@ execute if score @s dialog matches 117 run return run function kards:game/xp/sho
 execute if score @s dialog matches 118 run return run function kards:game/xp/shop/enchantment/zhicaizhe
 execute if score @s dialog matches 119 run return run function kards:game/xp/shop/enchantment/shenpanzhe
 
-execute if score @s dialog matches 200 if score #system random_gamerule matches -1 run return run function kards:lobby/setting/random_gamerule/kai
-execute if score @s dialog matches 200 if score #system random_gamerule matches 0.. run return run function kards:lobby/setting/random_gamerule/guan
+execute if score @s dialog matches 200 if score #system random_start matches -1 run return run function kards:lobby/setting/random_gamerule/kai
+execute if score @s dialog matches 200 if score #system random_start matches 0.. run return run function kards:lobby/setting/random_gamerule/guan
 execute if score @s dialog matches 201 run return run function kards:lobby/setting/random_gamerule/event/baokuxianshi
 execute if score @s dialog matches 202 run return run function kards:lobby/setting/random_gamerule/event/cangbaoku
 execute if score @s dialog matches 203 run return run function kards:lobby/setting/random_gamerule/event/mofazhanzheng
@@ -29,6 +29,24 @@ execute if score @s dialog matches 212 run return run function kards:lobby/setti
 execute if score @s dialog matches 213 run return run function kards:lobby/setting/random_gamerule/event/dianbiaodaozhuan
 execute if score @s dialog matches 214 run return run function kards:lobby/setting/random_gamerule/event/wujintanlan
 
-execute if score @s dialog matches 1000 run return run function kards:dialog/show
-execute if score @s dialog matches 1001 run return run function kards:game/player/talent/combat/add
-execute if score @s dialog matches 1002 run return run function kards:game/player/talent/survival/add
+#execute if score @s dialog matches 1000 run return run function kards:dialog/talent/show
+execute if score @s dialog matches 1001 run return run function kards:game/player/talent/set/xukongcunzhe
+execute if score @s dialog matches 1002 run return run function kards:game/player/talent/set/bujingtanyu
+execute if score @s dialog matches 1003 run return run function kards:game/player/talent/set/muyuankuanghuan
+execute if score @s dialog matches 1004 run return run function kards:game/player/talent/set/dengshenchangjie
+execute if score @s dialog matches 1005 run return run function kards:game/player/talent/set/huolizhiyuan
+execute if score @s dialog matches 1006 run return run function kards:game/player/talent/set/zhazhashi
+execute if score @s dialog matches 1007 run return run function kards:game/player/talent/set/yaoyezhuhuo
+execute if score @s dialog matches 1008 run return run function kards:game/player/talent/set/fushengzuzhou
+execute if score @s dialog matches 1009 run return run function kards:game/player/talent/set/ranjiweiguang
+execute if score @s dialog matches 1010 run return run function kards:game/player/talent/set/emoqiyue
+execute if score @s dialog matches 1011 run return run function kards:game/player/talent/set/gongsheng
+execute if score @s dialog matches 1012 run return run function kards:game/player/talent/set/duichongjijin
+execute if score @s dialog matches 1013 run return run function kards:game/player/talent/set/dianbiaodaozhuan
+execute if score @s dialog matches 1014 run return run function kards:game/player/talent/set/junhengfazhan
+execute if score @s dialog matches 1015 run return run function kards:game/player/talent/set/lingxiansiwei
+execute if score @s dialog matches 1016 run return run function kards:game/player/talent/set/shouhuzhe
+execute if score @s dialog matches 1017 run return run function kards:game/player/talent/set/huafanweijian
+execute if score @s dialog matches 1018 run return run function kards:game/player/talent/set/kapaiji
+execute if score @s dialog matches 1019 run return run function kards:game/player/talent/set/zhongyanzhixing
+execute if score @s dialog matches 1020 run return run function kards:game/player/talent/set/yongyuanzhongcheng

@@ -1,23 +1,20 @@
 {
     "type": "minecraft:multi_action",
     "title": {
+        "text": "王之宝库",
         "color": "gold",
-        "bold": true,
-        "translate": "json.kards.dialog.paiku.main.226",
-        "fallback": "王之宝库"
+        "bold": true
     },
     "external_title": {
-        "translate": "json.kards.dialog.first_join.1.71",
-        "fallback": ""
+        "text": ""
     },
     "body": [],
     "inputs": [],
     "can_close_with_escape": true,
     "exit_action": {
         "label": {
-            "color": "green",
-            "translate": "json.kards.dialog.paiku.fashu.main.290",
-            "fallback": "返回§6主§a牌库"
+            "text": "返回§6主§a牌库",
+            "color": "green"
         },
         "action": {
             "type": "minecraft:show_dialog",
@@ -28,10 +25,9 @@
     "actions": [
         {
             "label": {
+                "text": "风暴战锤",
                 "color": "white",
-                "bold": true,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.fengbaozhanchui.826",
-                "fallback": "风暴战锤"
+                "bold": true
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -41,10 +37,9 @@
         },
         {
             "label": {
+                "text": "苦难摇篮",
                 "color": "white",
-                "bold": true,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.kunanyaolan.858",
-                "fallback": "苦难摇篮"
+                "bold": true
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -54,10 +49,9 @@
         },
         {
             "label": {
+                "text": "死神之镰",
                 "color": "white",
-                "bold": true,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.main.892",
-                "fallback": "死神之镰"
+                "bold": true
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -67,10 +61,9 @@
         },
         {
             "label": {
+                "text": "石中剑",
                 "color": "white",
-                "bold": true,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.main.893",
-                "fallback": "石中剑"
+                "bold": true
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -80,10 +73,9 @@
         },
         {
             "label": {
+                "text": "轻灵之语",
                 "color": "white",
-                "bold": true,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.main.894",
-                "fallback": "轻灵之语"
+                "bold": true
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -93,10 +85,9 @@
         },
         {
             "label": {
+                "text": "凛冬之铠",
                 "color": "white",
-                "bold": true,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.lindongzhikai.873",
-                "fallback": "凛冬之铠"
+                "bold": true
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -106,10 +97,9 @@
         },
         {
             "label": {
+                "text": "天神石板甲",
                 "color": "white",
-                "bold": true,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.main.895",
-                "fallback": "天神石板甲"
+                "bold": true
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -119,10 +109,9 @@
         },
         {
             "label": {
+                "text": "讲述者",
                 "color": "white",
-                "bold": true,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.jiangshuzhe.844",
-                "fallback": "讲述者"
+                "bold": true
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -132,10 +121,9 @@
         },
         {
             "label": {
+                "text": "正义长戟",
                 "color": "white",
-                "bold": true,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.main.896",
-                "fallback": "正义长戟"
+                "bold": true
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -145,10 +133,9 @@
         },
         {
             "label": {
+                "text": "寄生黏液",
                 "color": "white",
-                "bold": true,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.jishengnianye.848",
-                "fallback": "寄生黏液"
+                "bold": true
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -158,10 +145,9 @@
         },
         {
             "label": {
+                "text": "无休之火",
                 "color": "white",
-                "bold": true,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.main.897",
-                "fallback": "无休之火"
+                "bold": true
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -171,10 +157,9 @@
         },
         {
             "label": {
+                "text": "炎阳大剑",
                 "color": "white",
-                "bold": true,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.main.898",
-                "fallback": "炎阳大剑"
+                "bold": true
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -184,10 +169,9 @@
         },
         {
             "label": {
+                "text": "凋零太刀",
                 "color": "white",
-                "bold": true,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.diaolingtaidao.759",
-                "fallback": "凋零太刀"
+                "bold": true
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -197,10 +181,9 @@
         },
         {
             "label": {
+                "text": "森林之护",
                 "color": "white",
-                "bold": true,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.main.899",
-                "fallback": "森林之护"
+                "bold": true
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -210,10 +193,9 @@
         },
         {
             "label": {
+                "text": "飞升护符",
                 "color": "white",
-                "bold": true,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.feishenghufu.819",
-                "fallback": "飞升护符"
+                "bold": true
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -223,10 +205,9 @@
         },
         {
             "label": {
+                "text": "祥兆玉石",
                 "color": "white",
-                "bold": true,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.main.900",
-                "fallback": "祥兆玉石"
+                "bold": true
             },
             "action": {
                 "type": "minecraft:show_dialog",
@@ -236,9 +217,8 @@
         },
         {
             "label": {
-                "color": "white",
-                "translate": "json.kards.dialog.paiku.fashu.main.321",
-                "fallback": "DLC"
+                "text": "DLC",
+                "color": "white"
             },
             "action": {
                 "type": "show_dialog",

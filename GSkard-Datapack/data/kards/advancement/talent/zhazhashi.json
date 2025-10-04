@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"Talent_zhazhashi\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "kards:game/player/talent/enable/zhazhashi/1"
+  }
+}

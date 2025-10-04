@@ -6,12 +6,10 @@
             "count": 1
         },
         "title": {
-            "translate": "json.kards.advancement.advancement.lobby.shenmidayedian.39",
-            "fallback": "神秘打野点"
+            "text": "神秘打野点"
         },
         "description": {
-            "translate": "json.kards.advancement.advancement.lobby.shenmidayedian.40",
-            "fallback": "这是何处阿?"
+            "text": "这是何处阿?"
         },
         "background": "minecraft:block/chiseled_tuff_bricks",
         "frame": "task",

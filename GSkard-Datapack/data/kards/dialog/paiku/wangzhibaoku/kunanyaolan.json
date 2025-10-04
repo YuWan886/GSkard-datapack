@@ -1,14 +1,12 @@
 {
     "type": "minecraft:notice",
     "title": {
+        "text": "苦难摇篮",
         "color": "dark_red",
-        "italic": false,
-        "translate": "json.kards.dialog.paiku.wangzhibaoku.kunanyaolan.858",
-        "fallback": "苦难摇篮"
+        "italic": false
     },
     "external_title": {
-        "translate": "json.kards.dialog.first_join.1.71",
-        "fallback": ""
+        "text": ""
     },
     "body": [
         {
@@ -22,137 +20,123 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "我之苦难",
                 "color": "gray",
                 "italic": false,
-                "bold": true,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.kunanyaolan.859",
-                "fallback": "我之苦难"
+                "bold": true
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "每受到10♥伤害就分配10♥",
                 "color": "gray",
                 "italic": false,
                 "extra": [
                     {
+                        "text": "真实伤害",
                         "color": "white",
-                        "italic": false,
-                        "translate": "json.kards.dialog.paiku.wangzhibaoku.kunanyaolan.861",
-                        "fallback": "真实伤害"
+                        "italic": false
                     },
                     {
+                        "text": "于敌方所有玩家",
                         "color": "gray",
-                        "italic": false,
-                        "translate": "json.kards.dialog.paiku.wangzhibaoku.kunanyaolan.862",
-                        "fallback": "于敌方所有玩家"
+                        "italic": false
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.kunanyaolan.860",
-                "fallback": "每受到10♥伤害就分配10♥"
+                ]
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "我之甘泽",
                 "color": "gray",
                 "italic": false,
-                "bold": true,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.kunanyaolan.863",
-                "fallback": "我之甘泽"
+                "bold": true
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "每2次造成伤害恢复0.5♥ 苦难化身造成的伤害视为你造成的",
+                "color": "gray",
+                "italic": false
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "苦难降临",
                 "color": "gray",
                 "italic": false,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.kunanyaolan.864",
-                "fallback": "每2次造成伤害恢复0.5♥ 苦难化身造成的伤害视为你造成的"
+                "bold": true
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "color": "gray",
-                "italic": false,
-                "bold": true,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.kunanyaolan.865",
-                "fallback": "苦难降临"
-            },
-            "width": 1024
-        },
-        {
-            "type": "minecraft:plain_message",
-            "contents": {
+                "text": "每受到20♥伤害就召唤1只",
                 "color": "gray",
                 "italic": false,
                 "extra": [
                     {
+                        "text": "\"苦难化身\"",
                         "color": "red",
                         "italic": false,
-                        "bold": true,
-                        "translate": "json.kards.dialog.paiku.wangzhibaoku.kunanyaolan.867",
-                        "fallback": "\"苦难化身\""
+                        "bold": true
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.kunanyaolan.866",
-                "fallback": "每受到20♥伤害就召唤1只"
+                ]
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "\n苦难化身",
                 "color": "red",
                 "italic": false,
-                "bold": true,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.kunanyaolan.868",
-                "fallback": "\n苦难化身"
+                "bold": true
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "无法被攻击 无法近战攻击",
                 "color": "gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.kunanyaolan.869",
-                "fallback": "无法被攻击 无法近战攻击"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "每秒对3格范围内最多3名敌人造成2.5♥魔法伤害 ",
                 "color": "gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.kunanyaolan.870",
-                "fallback": "每秒对3格范围内最多3名敌人造成2.5♥魔法伤害 "
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "存在时间15s",
                 "color": "gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.kunanyaolan.871",
-                "fallback": "存在时间15s"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "传奇护具",
                 "color": "white",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.wangzhibaoku.kunanyaolan.872",
-                "fallback": "传奇护具"
+                "italic": false
             },
             "width": 1024
         }
@@ -161,9 +145,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "color": "green",
-            "translate": "json.kards.dialog.paiku.wangzhibaoku.diaolingtaidao.818",
-            "fallback": "返回§6王之宝库"
+            "text": "返回§6王之宝库",
+            "color": "green"
         },
         "action": {
             "type": "minecraft:show_dialog",

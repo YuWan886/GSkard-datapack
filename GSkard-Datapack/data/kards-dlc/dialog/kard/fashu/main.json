@@ -1,16 +1,14 @@
 {
     "type": "multi_action",
     "title": {
+        "text": "法术-§5DLC",
         "color": "light_purple",
-        "bold": true,
-        "translate": "json.kards-dlc.dialog.kard.fashu.main.1353",
-        "fallback": "法术-§5DLC"
+        "bold": true
     },
     "exit_action": {
         "label": {
-            "color": "green",
-            "translate": "json.kards-dlc.dialog.kard.fashu.main.1354",
-            "fallback": "返回§6主§a牌库-§d法术"
+            "text": "返回§6主§a牌库-§d法术",
+            "color": "green"
         },
         "action": {
             "type": "show_dialog",
@@ -21,9 +19,8 @@
     "actions": [
         {
             "label": {
-                "color": "light_purple",
-                "translate": "json.kards-dlc.dialog.kard.fashu.main.1355",
-                "fallback": "模板：法术"
+                "text": "模板：法术",
+                "color": "light_purple"
             },
             "action": {
                 "type": "show_dialog",

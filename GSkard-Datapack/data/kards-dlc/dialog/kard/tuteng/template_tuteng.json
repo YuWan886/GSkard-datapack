@@ -1,17 +1,15 @@
 {
     "type": "notice",
     "title": {
+        "text": "12K ",
         "extra": [
             {
-                "color": "red",
-                "translate": "json.kards-dlc.dialog.kard.tuteng.main.1371",
-                "fallback": "模板：图腾"
+                "text": "模板：图腾",
+                "color": "red"
             }
         ],
         "color": "aqua",
-        "bold": true,
-        "translate": "json.kards.dialog.paiku.fashu.chunriying.245",
-        "fallback": "12K "
+        "bold": true
     },
     "body": [
         {
@@ -25,75 +23,67 @@
         {
             "type": "plain_message",
             "contents": {
+                "text": "图腾牌",
                 "color": "red",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.tuteng.baomao.681",
-                "fallback": "图腾牌"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "plain_message",
             "contents": {
+                "text": "在队伍图腾区生成羊",
                 "color": "gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.tuteng.yang.748",
-                "fallback": "在队伍图腾区生成羊"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "plain_message",
             "contents": {
+                "text": "图腾存活效果：",
                 "color": "gray",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.tuteng.baomao.683",
-                "fallback": "图腾存活效果："
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "plain_message",
             "contents": {
+                "text": "1.每回合结束时为队伍玩家回复血量",
                 "color": "gray",
                 "italic": false,
                 "extra": [
                     {
+                        "text": "6♥",
                         "color": "green",
-                        "italic": false,
-                        "translate": "json.kards.dialog.paiku.tuteng.yang.750",
-                        "fallback": "6♥"
+                        "italic": false
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.tuteng.yang.749",
-                "fallback": "1.每回合结束时为队伍玩家回复血量"
+                ]
             },
             "width": 1024
         },
         {
             "type": "plain_message",
             "contents": {
+                "text": "2.每回合结束时为队伍图腾回复血量",
                 "color": "gray",
                 "italic": false,
                 "extra": [
                     {
+                        "text": "1♥",
                         "color": "green",
-                        "italic": false,
-                        "translate": "json.kards.dialog.paiku.tuteng.yang.752",
-                        "fallback": "1♥"
+                        "italic": false
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.tuteng.yang.751",
-                "fallback": "2.每回合结束时为队伍图腾回复血量"
+                ]
             },
             "width": 1024
         }
     ],
     "action": {
         "label": {
-            "color": "green",
-            "translate": "json.kards-dlc.dialog.kard.tuteng.template_tuteng.1372",
-            "fallback": "返回§c图腾§a牌库-§5DLC"
+            "text": "返回§c图腾§a牌库-§5DLC",
+            "color": "green"
         },
         "action": {
             "type": "show_dialog",

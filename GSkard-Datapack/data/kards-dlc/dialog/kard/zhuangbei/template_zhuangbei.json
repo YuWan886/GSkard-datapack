@@ -1,17 +1,15 @@
 {
     "type": "notice",
     "title": {
+        "text": "5K ",
         "extra": [
             {
-                "color": "gold",
-                "translate": "json.kards-dlc.dialog.kard.zhuangbei.main.1390",
-                "fallback": "模板：装备"
+                "text": "模板：装备",
+                "color": "gold"
             }
         ],
         "color": "aqua",
-        "bold": true,
-        "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.227",
-        "fallback": "5K "
+        "bold": true
     },
     "body": [
         {
@@ -25,37 +23,33 @@
         {
             "type": "plain_message",
             "contents": {
+                "text": "装备牌",
                 "color": "gold",
-                "italic": false,
-                "translate": "json.kards.dialog.paiku.main.222",
-                "fallback": "装备牌"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "plain_message",
             "contents": {
+                "text": "获得一把",
                 "color": "gray",
                 "italic": false,
                 "extra": [
                     {
+                        "text": "铁斧",
                         "color": "gold",
-                        "italic": false,
-                        "translate": "json.kards.dialog.paiku.zhuangbei.main.1201",
-                        "fallback": "铁斧"
+                        "italic": false
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.zhuangbei.jinjian.1191",
-                "fallback": "获得一把"
+                ]
             },
             "width": 1024
         }
     ],
     "action": {
         "label": {
-            "color": "green",
-            "translate": "json.kards-dlc.dialog.kard.zhuangbei.template_shipin.1392",
-            "fallback": "返回§c装备§a牌库-§5DLC"
+            "text": "返回§c装备§a牌库-§5DLC",
+            "color": "green"
         },
         "action": {
             "type": "show_dialog",

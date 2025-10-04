@@ -1,21 +1,18 @@
 {
     "type": "minecraft:notice",
     "title": {
+        "text": "4K ",
         "extra": [
             {
-                "color": "dark_green",
-                "translate": "json.kards.dialog.paiku.juntuan.main.492",
-                "fallback": "杀手小队"
+                "text": "杀手小队",
+                "color": "dark_green"
             }
         ],
         "color": "aqua",
-        "bold": true,
-        "translate": "json.kards.dialog.paiku.fashu.jielue.273",
-        "fallback": "4K "
+        "bold": true
     },
     "external_title": {
-        "translate": "json.kards.dialog.first_join.1.71",
-        "fallback": ""
+        "text": ""
     },
     "body": [
         {
@@ -29,46 +26,40 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "召唤4只",
                 "color": "gray",
                 "extra": [
                     {
-                        "color": "gold",
-                        "translate": "json.kards.dialog.paiku.juntuan.shashouxiaodui.518",
-                        "fallback": " 杀手兔"
+                        "text": " 杀手兔",
+                        "color": "gold"
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.449",
-                "fallback": "召唤4只"
+                ]
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "若其受",
                 "color": "gray",
                 "extra": [
                     {
-                        "color": "dark_gray",
-                        "translate": "json.kards.dialog.paiku.juntuan.shashouxiaodui.520",
-                        "fallback": " [无形]"
+                        "text": " [无形]",
+                        "color": "dark_gray"
                     },
                     {
-                        "color": "gray",
-                        "translate": "json.kards.dialog.paiku.juntuan.shashouxiaodui.521",
-                        "fallback": " 影响"
+                        "text": " 影响",
+                        "color": "gray"
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.juntuan.shashouxiaodui.519",
-                "fallback": "若其受"
+                ]
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "color": "gray",
-                "translate": "json.kards.dialog.paiku.juntuan.shashouxiaodui.522",
-                "fallback": "获得无限时长的隐身buff"
+                "text": "获得无限时长的隐身buff",
+                "color": "gray"
             },
             "width": 1024
         }
@@ -77,9 +68,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "color": "green",
-            "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.455",
-            "fallback": "返回§d军团牌§a牌库"
+            "text": "返回§d军团牌§a牌库",
+            "color": "green"
         },
         "action": {
             "type": "minecraft:show_dialog",

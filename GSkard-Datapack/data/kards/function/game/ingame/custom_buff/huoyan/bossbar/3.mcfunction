@@ -1,4 +1,4 @@
-$bossbar add kards:huoyan_$(UUID) [{translate: "kards.function.game.ingame.custom_buff.huoyan.bossbar.3.1", fallback: "燃烧:持续掉血",color:"red",bold:true}]
+$bossbar add kards:huoyan_$(UUID) [{text:"燃烧:持续掉血",color:"red",bold:true}]
 $bossbar set kards:huoyan_$(UUID) players @s
 $bossbar set kards:huoyan_$(UUID) visible true
 $bossbar set kards:huoyan_$(UUID) color red

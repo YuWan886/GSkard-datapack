@@ -1,3 +1,3 @@
 
-give @s music_disc_13[item_name=[{translate: "kards.function.game.paiku.fashu.sijiruchun.1", fallback: "7K",color:"aqua"},{translate: "json.kards.dialog.jiaocheng.wanfa.1.114", fallback: " "},{translate: "json.kards.dialog.paiku.zhuangbei.main.1198", fallback: "铁剑",color:"gold"}],lore=[{translate: "json.kards.dialog.paiku.main.222", fallback: "装备牌",color:"gold",italic:false},{translate: "kards.function.game.paiku.zhuangbei.tiejian.1", fallback: "获得一把铁剑",color:"gray",italic:false}],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'铁剑',K:7},tooltip_style="kards:kard/equipment"]
+give @s music_disc_13[item_name=[{text: "7K",color:"aqua"},{text:" "},{text: "铁剑",color:"gold"}],lore=[{text: "装备牌",color:"gold",italic:false},{text: "获得一把铁剑",color:"gray",italic:false}],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'铁剑',K:7},tooltip_style="kards:kard/equipment"]
 scoreboard players set #kard_tiejian kardCount 7

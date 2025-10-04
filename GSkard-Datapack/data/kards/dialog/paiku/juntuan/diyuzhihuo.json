@@ -1,21 +1,18 @@
 {
     "type": "minecraft:notice",
     "title": {
+        "text": "6K ",
         "extra": [
             {
-                "color": "dark_green",
-                "translate": "json.kards.dialog.paiku.juntuan.diyuzhihuo.459",
-                "fallback": "地狱之火"
+                "text": "地狱之火",
+                "color": "dark_green"
             }
         ],
         "color": "aqua",
-        "bold": true,
-        "translate": "json.kards.dialog.paiku.fashu.qisihuisheng.326",
-        "fallback": "6K "
+        "bold": true
     },
     "external_title": {
-        "translate": "json.kards.dialog.first_join.1.71",
-        "fallback": ""
+        "text": ""
     },
     "body": [
         {
@@ -29,58 +26,50 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "召唤4只",
                 "color": "gray",
                 "extra": [
                     {
-                        "color": "gold",
-                        "translate": "json.kards.dialog.paiku.jiben.lieyanren.408",
-                        "fallback": " 烈焰人"
+                        "text": " 烈焰人",
+                        "color": "gold"
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.449",
-                "fallback": "召唤4只"
+                ]
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "然后若场上",
                 "color": "gray",
                 "extra": [
                     {
-                        "color": "red",
-                        "translate": "json.kards.dialog.paiku.juntuan.diyuzhihuo.461",
-                        "fallback": " 下界怪物"
+                        "text": " 下界怪物",
+                        "color": "red"
                     },
                     {
-                        "color": "gray",
-                        "translate": "json.kards.dialog.paiku.juntuan.diyuzhihuo.462",
-                        "fallback": " 大于等于7只"
+                        "text": " 大于等于7只",
+                        "color": "gray"
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.juntuan.diyuzhihuo.460",
-                "fallback": "然后若场上"
+                ]
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "使烈焰人携带",
                 "color": "gray",
                 "extra": [
                     {
-                        "color": "red",
-                        "translate": "json.kards.dialog.paiku.juntuan.diyuzhihuo.464",
-                        "fallback": " 荆棘"
+                        "text": " 荆棘",
+                        "color": "red"
                     },
                     {
-                        "color": "gray",
-                        "translate": "json.kards.dialog.paiku.juntuan.diyuzhihuo.465",
-                        "fallback": " 效果"
+                        "text": " 效果",
+                        "color": "gray"
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.juntuan.diyuzhihuo.463",
-                "fallback": "使烈焰人携带"
+                ]
             },
             "width": 1024
         }
@@ -89,9 +78,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "color": "green",
-            "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.455",
-            "fallback": "返回§d军团牌§a牌库"
+            "text": "返回§d军团牌§a牌库",
+            "color": "green"
         },
         "action": {
             "type": "minecraft:show_dialog",

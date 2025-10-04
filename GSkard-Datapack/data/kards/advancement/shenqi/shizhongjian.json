@@ -1,17 +1,17 @@
 {
-    "criteria": {
-        "requirement": {
-            "trigger": "minecraft:thrown_item_picked_up_by_player",
-            "conditions": {
-                "item": {
-                    "components": {
-                        "minecraft:custom_data": "{kards:'石中剑'}"
-                    }
-                }
-            }
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:thrown_item_picked_up_by_player",
+      "conditions": {
+        "item": {
+          "components": {
+            "minecraft:custom_data": "{kards:'石中剑'}"
+          }
         }
-    },
-    "rewards": {
-        "function": "kards:game/yongpaiku/shenji/wangzhibaoku/shizhongjian/1"
+      }
     }
+  },
+  "rewards": {
+    "function": "kards:game/yongpaiku/shenji/wangzhibaoku/shizhongjian/1"
+  }
 }

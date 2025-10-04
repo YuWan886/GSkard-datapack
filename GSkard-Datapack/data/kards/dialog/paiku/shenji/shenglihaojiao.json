@@ -1,22 +1,19 @@
 {
     "type": "minecraft:notice",
     "title": {
+        "text": "4K ",
         "extra": [
             {
+                "text": "胜利号角",
                 "color": "white",
-                "bold": true,
-                "translate": "json.kards.dialog.paiku.shenji.main.641",
-                "fallback": "胜利号角"
+                "bold": true
             }
         ],
         "color": "aqua",
-        "bold": true,
-        "translate": "json.kards.dialog.paiku.fashu.jielue.273",
-        "fallback": "4K "
+        "bold": true
     },
     "external_title": {
-        "translate": "json.kards.dialog.first_join.1.71",
-        "fallback": ""
+        "text": ""
     },
     "body": [
         {
@@ -30,28 +27,25 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "神迹牌",
                 "color": "white",
-                "italic": false,
-                "translate": "json.kards.dialog.jiaocheng.wanfa.2.153",
-                "fallback": "神迹牌"
+                "italic": false
             },
             "width": 1024
         },
         {
             "type": "minecraft:plain_message",
             "contents": {
+                "text": "3s内 召唤及已经生成的怪物获得",
                 "color": "gray",
                 "italic": false,
                 "extra": [
                     {
+                        "text": "力量4与速度4",
                         "color": "gold",
-                        "italic": false,
-                        "translate": "json.kards.dialog.paiku.shenji.shenglihaojiao.658",
-                        "fallback": "力量4与速度4"
+                        "italic": false
                     }
-                ],
-                "translate": "json.kards.dialog.paiku.shenji.shenglihaojiao.657",
-                "fallback": "3s内 召唤及已经生成的怪物获得"
+                ]
             },
             "width": 1024
         }
@@ -60,9 +54,8 @@
     "can_close_with_escape": true,
     "action": {
         "label": {
-            "color": "green",
-            "translate": "json.kards.dialog.paiku.shenji.fanxiangfeileishen.605",
-            "fallback": "返回§d神迹§a牌库"
+            "text": "返回§d神迹§a牌库",
+            "color": "green"
         },
         "action": {
             "type": "minecraft:show_dialog",
