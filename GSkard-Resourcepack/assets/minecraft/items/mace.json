@@ -10,14 +10,14 @@
             {
                 "model": {
                     "type": "model",
-                    "model": "kingbox/leishen"
+                    "model": "kards:kingbox/leishen"
                 },
-                "when": "zhengyizhichui"
+                "when": "fengbaozhanchui"
             },
             {
                 "model": {
                     "type": "model",
-                    "model": "yin/pilaoban"
+                    "model": "kards:yin/pilaoban"
                 },
                 "when": "pilaoban"
             }

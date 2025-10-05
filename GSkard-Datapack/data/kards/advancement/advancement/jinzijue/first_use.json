@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:redstone",
+            "count": 1
+        },
+        "title": {
+            "translate": "json.kards.advancement.advancement.jinzijue.first_use.29",
+            "fallback": "禁字启封"
+        },
+        "description": {
+            "translate": "json.kards.advancement.advancement.jinzijue.first_use.30",
+            "fallback": "首次使用禁字决"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "kards:advancement/jiaocheng",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "rewards": {
+        "function": "kards:advancement/jinzijue/first_use"
+    }
+}

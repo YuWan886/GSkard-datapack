@@ -1,0 +1,408 @@
+{
+    "type": "minecraft:multi_action",
+    "title": [
+        {
+            "color": "light_purple",
+            "bold": true,
+            "translate": "json.kards.dialog.xp_shop.enchantment.main.1319",
+            "fallback": "神话附魔"
+        }
+    ],
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:enchanted_book",
+                "count": 1
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "extra": [
+                    {
+                        "color": "gold",
+                        "translate": "json.kards.dialog.xp_shop.enchantment.main.1321",
+                        "fallback": "使用后附魔等级加算\n\n"
+                    }
+                ],
+                "color": "green",
+                "translate": "json.kards.dialog.xp_shop.enchantment.main.1320",
+                "fallback": "使用方法：将附魔书放置在副手然后按shift为主手武器添加附魔\n"
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "columns": 5,
+    "actions": [
+        {
+            "label": {
+                "color": "aqua",
+                "extra": [
+                    {
+                        "color": "gray",
+                        "translate": "json.kards.dialog.xp_shop.enchantment.main.1323",
+                        "fallback": " I"
+                    }
+                ],
+                "translate": "json.kards.dialog.xp_shop.enchantment.main.1322",
+                "fallback": "冰霜荆棘"
+            },
+            "tooltip": {
+                "extra": [
+                    {
+                        "color": "gray",
+                        "translate": "json.kards.dialog.xp_shop.enchantment.main.1325",
+                        "fallback": "\n\n附魔后:"
+                    },
+                    {
+                        "color": "aqua",
+                        "translate": "json.kards.dialog.xp_shop.enchantment.main.1326",
+                        "fallback": "\n对攻击者造成冰霜伤害\n同时令其降低移速与攻速"
+                    }
+                ],
+                "color": "gray",
+                "translate": "json.kards.dialog.xp_shop.enchantment.main.1324",
+                "fallback": "消耗70级"
+            },
+            "width": 75,
+            "action": {
+                "type": "run_command",
+                "command": "/trigger dialog set 110"
+            }
+        },
+        {
+            "label": {
+                "color": "blue",
+                "extra": [
+                    {
+                        "color": "gray",
+                        "translate": "json.kards.dialog.xp_shop.enchantment.main.1323",
+                        "fallback": " I"
+                    }
+                ],
+                "translate": "json.kards.dialog.xp_shop.enchantment.main.1327",
+                "fallback": "极寒之触"
+            },
+            "tooltip": {
+                "extra": [
+                    {
+                        "color": "gray",
+                        "translate": "json.kards.dialog.xp_shop.enchantment.main.1325",
+                        "fallback": "\n\n附魔后:"
+                    },
+                    {
+                        "color": "blue",
+                        "translate": "json.kards.dialog.xp_shop.enchantment.main.1329",
+                        "fallback": "\n对目标造成缓慢与挖掘疲劳\n攻击有概率令玩家冻结2.5s\n对非玩家生物概率提高"
+                    }
+                ],
+                "color": "gray",
+                "translate": "json.kards.dialog.xp_shop.enchantment.main.1328",
+                "fallback": "消耗80级"
+            },
+            "width": 75,
+            "action": {
+                "type": "run_command",
+                "command": "/trigger dialog set 111"
+            }
+        },
+        {
+            "label": {
+                "color": "green",
+                "extra": [
+                    {
+                        "color": "gray",
+                        "translate": "json.kards.dialog.xp_shop.enchantment.main.1323",
+                        "fallback": " I"
+                    }
+                ],
+                "translate": "json.kards.dialog.xp_shop.enchantment.main.1330",
+                "fallback": "大地神佑"
+            },
+            "tooltip": {
+                "extra": [
+                    {
+                        "color": "gray",
+                        "translate": "json.kards.dialog.xp_shop.enchantment.main.1325",
+                        "fallback": "\n\n附魔后:"
+                    },
+                    {
+                        "color": "green",
+                        "translate": "json.kards.dialog.xp_shop.enchantment.main.1331",
+                        "fallback": "\n着地1.25s后获得抗性提升"
+                    }
+                ],
+                "color": "gray",
+                "translate": "json.kards.dialog.xp_shop.enchantment.main.1324",
+                "fallback": "消耗70级"
+            },
+            "width": 75,
+            "action": {
+                "type": "run_command",
+                "command": "/trigger dialog set 112"
+            }
+        },
+        {
+            "label": {
+                "color": "green",
+                "extra": [
+                    {
+                        "color": "gray",
+                        "translate": "json.kards.dialog.xp_shop.enchantment.main.1323",
+                        "fallback": " I"
+                    }
+                ],
+                "translate": "json.kards.dialog.xp_shop.enchantment.main.1332",
+                "fallback": "泰坦体魄"
+            },
+            "tooltip": {
+                "extra": [
+                    {
+                        "color": "gray",
+                        "translate": "json.kards.dialog.xp_shop.enchantment.main.1325",
+                        "fallback": "\n\n附魔后:"
+                    },
+                    {
+                        "color": "green",
+                        "translate": "json.kards.dialog.xp_shop.enchantment.main.1334",
+                        "fallback": "\n增加体积、最大生命与击退抗性"
+                    }
+                ],
+                "color": "gray",
+                "translate": "json.kards.dialog.xp_shop.enchantment.main.1333",
+                "fallback": "消耗75级"
+            },
+            "width": 75,
+            "action": {
+                "type": "run_command",
+                "command": "/trigger dialog set 113"
+            }
+        },
+        {
+            "label": {
+                "color": "white",
+                "extra": [
+                    {
+                        "color": "gray",
+                        "translate": "json.kards.dialog.xp_shop.enchantment.main.1323",
+                        "fallback": " I"
+                    }
+                ],
+                "translate": "json.kards.dialog.xp_shop.enchantment.main.1335",
+                "fallback": "风行者"
+            },
+            "tooltip": {
+                "extra": [
+                    {
+                        "color": "gray",
+                        "translate": "json.kards.dialog.xp_shop.enchantment.main.1325",
+                        "fallback": "\n\n附魔后:"
+                    },
+                    {
+                        "color": "white",
+                        "translate": "json.kards.dialog.xp_shop.enchantment.main.1337",
+                        "fallback": "\n疾跑时会越跑越快"
+                    }
+                ],
+                "color": "gray",
+                "translate": "json.kards.dialog.xp_shop.enchantment.main.1336",
+                "fallback": "消耗85级"
+            },
+            "width": 75,
+            "action": {
+                "type": "run_command",
+                "command": "/trigger dialog set 114"
+            }
+        },
+        {
+            "label": {
+                "color": "white",
+                "extra": [
+                    {
+                        "color": "gray",
+                        "translate": "json.kards.dialog.xp_shop.enchantment.main.1323",
+                        "fallback": " I"
+                    }
+                ],
+                "translate": "json.kards.dialog.xp_shop.enchantment.main.1338",
+                "fallback": "跃斩"
+            },
+            "tooltip": {
+                "extra": [
+                    {
+                        "color": "gray",
+                        "translate": "json.kards.dialog.xp_shop.enchantment.main.1325",
+                        "fallback": "\n\n附魔后:"
+                    },
+                    {
+                        "color": "white",
+                        "translate": "json.kards.dialog.xp_shop.enchantment.main.1340",
+                        "fallback": "\n跳跃后获得力量"
+                    }
+                ],
+                "color": "gray",
+                "translate": "json.kards.dialog.xp_shop.enchantment.main.1339",
+                "fallback": "消耗95级"
+            },
+            "width": 75,
+            "action": {
+                "type": "run_command",
+                "command": "/trigger dialog set 115"
+            }
+        },
+        {
+            "label": {
+                "color": "red",
+                "extra": [
+                    {
+                        "color": "gray",
+                        "translate": "json.kards.dialog.xp_shop.enchantment.main.1323",
+                        "fallback": " I"
+                    }
+                ],
+                "translate": "json.kards.dialog.xp_shop.enchantment.main.1341",
+                "fallback": "新星爆发"
+            },
+            "tooltip": {
+                "extra": [
+                    {
+                        "color": "gray",
+                        "translate": "json.kards.dialog.xp_shop.enchantment.main.1325",
+                        "fallback": "\n\n附魔后:"
+                    },
+                    {
+                        "color": "red",
+                        "translate": "json.kards.dialog.xp_shop.enchantment.main.1342",
+                        "fallback": "\n攻击会点燃目标\n且有概率点燃其周围目标"
+                    }
+                ],
+                "color": "gray",
+                "translate": "json.kards.dialog.xp_shop.enchantment.main.1333",
+                "fallback": "消耗75级"
+            },
+            "width": 75,
+            "action": {
+                "type": "run_command",
+                "command": "/trigger dialog set 116"
+            }
+        },
+        {
+            "label": {
+                "color": "dark_red",
+                "extra": [
+                    {
+                        "color": "gray",
+                        "translate": "json.kards.dialog.xp_shop.enchantment.main.1323",
+                        "fallback": " I"
+                    }
+                ],
+                "translate": "json.kards.dialog.xp_shop.enchantment.main.1343",
+                "fallback": "浴火者"
+            },
+            "tooltip": {
+                "extra": [
+                    {
+                        "color": "gray",
+                        "translate": "json.kards.dialog.xp_shop.enchantment.main.1325",
+                        "fallback": "\n\n附魔后:"
+                    },
+                    {
+                        "color": "dark_red",
+                        "translate": "json.kards.dialog.xp_shop.enchantment.main.1344",
+                        "fallback": "\n受到伤害会点燃攻击者与自己\n但是每次受到燃烧伤害回复生命"
+                    }
+                ],
+                "color": "gray",
+                "translate": "json.kards.dialog.xp_shop.enchantment.main.1328",
+                "fallback": "消耗80级"
+            },
+            "width": 75,
+            "action": {
+                "type": "run_command",
+                "command": "/trigger dialog set 117"
+            }
+        },
+        {
+            "label": {
+                "color": "dark_aqua",
+                "extra": [
+                    {
+                        "color": "gray",
+                        "translate": "json.kards.dialog.xp_shop.enchantment.main.1323",
+                        "fallback": " I"
+                    }
+                ],
+                "translate": "json.kards.dialog.xp_shop.enchantment.main.1345",
+                "fallback": "制裁者"
+            },
+            "tooltip": {
+                "extra": [
+                    {
+                        "color": "gray",
+                        "translate": "json.kards.dialog.xp_shop.enchantment.main.1325",
+                        "fallback": "\n\n附魔后:"
+                    },
+                    {
+                        "color": "gold",
+                        "translate": "json.kards.dialog.xp_shop.enchantment.main.1346",
+                        "fallback": "\n每级效果加强\n"
+                    },
+                    {
+                        "color": "dark_aqua",
+                        "translate": "json.kards.dialog.xp_shop.enchantment.main.1347",
+                        "fallback": "\n箭矢不会受到重力影响\n箭矢可以暴击\n箭矢能够处决生命低于5♥的目标"
+                    }
+                ],
+                "color": "gray",
+                "translate": "json.kards.dialog.xp_shop.enchantment.main.1328",
+                "fallback": "消耗80级"
+            },
+            "width": 75,
+            "action": {
+                "type": "run_command",
+                "command": "/trigger dialog set 118"
+            }
+        },
+        {
+            "label": {
+                "color": "dark_aqua",
+                "extra": [
+                    {
+                        "color": "gray",
+                        "translate": "json.kards.dialog.xp_shop.enchantment.main.1323",
+                        "fallback": " I"
+                    }
+                ],
+                "translate": "json.kards.dialog.xp_shop.enchantment.main.1348",
+                "fallback": "审判者"
+            },
+            "tooltip": {
+                "extra": [
+                    {
+                        "color": "gray",
+                        "translate": "json.kards.dialog.xp_shop.enchantment.main.1325",
+                        "fallback": "\n\n附魔后:"
+                    },
+                    {
+                        "color": "dark_aqua",
+                        "translate": "json.kards.dialog.xp_shop.enchantment.main.1350",
+                        "fallback": "\n受到攻击时有几率向目标发射箭矢"
+                    }
+                ],
+                "color": "gray",
+                "translate": "json.kards.dialog.xp_shop.enchantment.main.1349",
+                "fallback": "消耗55级"
+            },
+            "width": 75,
+            "action": {
+                "type": "run_command",
+                "command": "/trigger dialog set 119"
+            }
+        }
+    ]
+}

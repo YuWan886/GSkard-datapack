@@ -1,0 +1,96 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "color": "light_purple",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.yansheng.main.1129",
+        "fallback": "贪欲"
+    },
+    "external_title": {
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "beetroot_soup"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "white",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.shenji.main.644",
+                "fallback": "贪欲魔盒"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gold",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.yansheng.tanyu.1134",
+                "fallback": "+2K并抽一张牌"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.yansheng.tanyu.1135",
+                "fallback": "每使用9张为队伍增加1层罪恶值"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "red",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.yansheng.tanyu.1136",
+                "fallback": "每层罪恶值将使队内玩家最大生命-2♥"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.yansheng.tanyu.1137",
+                "fallback": "当罪恶值达到3层时开启潘多拉魔盒 它将不定时的召唤怪物/使用诅咒牌/随机法术"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "red",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.yansheng.tanyu.1138",
+                "fallback": "层数越高 释放越频繁!"
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.yansheng.jinzijue.1116",
+            "fallback": "返回§7其他"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/yansheng/main"
+        }
+    }
+}

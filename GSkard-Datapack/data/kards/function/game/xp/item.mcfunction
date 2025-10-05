@@ -1,0 +1,4 @@
+#clear @s bookshelf[custom_data={kards:'xp_shop_item'}]
+
+give @s minecraft:bookshelf[minecraft:item_model="minecraft:experience_bottle",item_name={translate: "kards.function.game.start.int.player.11", fallback: "商店",color:"green"},consumable={consume_seconds:0,animation:"bundle",has_consume_particles:false,sound:"minecraft:block.copper_trapdoor.open"},custom_data={kards:'xp_shop_item'},use_cooldown={seconds:0.5}]
+execute if entity @s[gamemode=creative] run item replace entity @s weapon.mainhand with minecraft:bookshelf[minecraft:item_model="minecraft:experience_bottle",item_name={translate: "kards.function.game.start.int.player.11", fallback: "商店",color:"green"},consumable={consume_seconds:0,animation:"bundle",has_consume_particles:false,sound:"minecraft:block.copper_trapdoor.open"},custom_data={kards:'xp_shop_item'},use_cooldown={seconds:0.5}]

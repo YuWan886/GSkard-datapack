@@ -1,0 +1,97 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "extra": [
+            {
+                "color": "red",
+                "translate": "json.kards.dialog.paiku.tuteng.main.711",
+                "fallback": "蘑菇牛"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.tuteng.moguniu.719",
+        "fallback": "18K "
+    },
+    "external_title": {
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "music_disc_blocks"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "red",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.tuteng.baomao.681",
+                "fallback": "图腾牌"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.tuteng.moguniu.720",
+                "fallback": "在队伍图腾区生成蘑菇牛"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.tuteng.baomao.683",
+                "fallback": "图腾存活效果："
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "color": "gold",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.tuteng.moguniu.722",
+                        "fallback": "免疫"
+                    },
+                    {
+                        "color": "gray",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.tuteng.moguniu.723",
+                        "fallback": "失明 缓慢 虚弱等负面效果"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.tuteng.moguniu.721",
+                "fallback": "1.队伍玩家"
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.tuteng.baomao.689",
+            "fallback": "返回§c图腾§a牌库"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/tuteng/main"
+        }
+    }
+}

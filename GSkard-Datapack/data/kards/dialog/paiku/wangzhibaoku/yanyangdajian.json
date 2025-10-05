@@ -1,0 +1,228 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "color": "dark_red",
+        "italic": false,
+        "translate": "json.kards.dialog.paiku.wangzhibaoku.main.898",
+        "fallback": "炎阳大剑"
+    },
+    "external_title": {
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:iron_sword"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.yanyangdajian.1024",
+                "fallback": "击杀生物时 燃烧其血液"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "color": "gold",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.wangzhibaoku.yanyangdajian.1026",
+                        "fallback": "最近的敌人"
+                    },
+                    {
+                        "color": "gray",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.wangzhibaoku.yanyangdajian.1027",
+                        "fallback": "造成"
+                    },
+                    {
+                        "color": "red",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.wangzhibaoku.yanyangdajian.1028",
+                        "fallback": "7.5♥火焰伤害"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.yanyangdajian.1025",
+                "fallback": "对"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "color": "dark_red",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.wangzhibaoku.yanyangdajian.1029",
+                        "fallback": "[沸血]"
+                    },
+                    {
+                        "color": "gray",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.wangzhibaoku.yanyangdajian.1030",
+                        "fallback": "击杀了敌人"
+                    },
+                    {
+                        "color": "gold",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.wangzhibaoku.yanyangdajian.1031",
+                        "fallback": "再次"
+                    },
+                    {
+                        "color": "gray",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.wangzhibaoku.yanyangdajian.1032",
+                        "fallback": "释放该效果"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.diaolingtaidao.773",
+                "fallback": "若"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.first_join.1.71",
+                "fallback": ""
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "#e36c09",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.yanyangdajian.1033",
+                "fallback": "炎护"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.yanyangdajian.1034",
+                "fallback": "手持获得火焰保护"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.first_join.1.71",
+                "fallback": ""
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "#690101",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.yanyangdajian.1035",
+                "fallback": "焚烧之域"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "color": "#690101",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.wangzhibaoku.yanyangdajian.1035",
+                        "fallback": "焚烧之域"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.yanyangdajian.1036",
+                "fallback": "长按shift2.5s 开启"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "color": "gold",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.wangzhibaoku.yanyangdajian.1038",
+                        "fallback": "速度2与抗性提升1"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.yanyangdajian.1037",
+                "fallback": "期间获得"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gold",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.yanyangdajian.1039",
+                "fallback": "持续点燃5格内敌人并每秒额外造成1♥燃烧伤害"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.yanyangdajian.1040",
+                "fallback": "持续10s CD35s"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.first_join.1.71",
+                "fallback": ""
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.wangzhibaoku.diaolingtaidao.818",
+            "fallback": "返回§6王之宝库"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/wangzhibaoku/main"
+        }
+    }
+}

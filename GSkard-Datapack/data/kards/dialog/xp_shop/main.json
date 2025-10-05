@@ -1,0 +1,74 @@
+{
+    "type": "minecraft:multi_action",
+    "title": {
+        "color": "gold",
+        "bold": true,
+        "translate": "json.kards.dialog.xp_shop.main.1303",
+        "fallback": "    商店"
+    },
+    "external_title": {
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "translate": "json.kards.dialog.xp_shop.main.1304",
+                "fallback": "\n\n\n\n\n\n\n"
+            }
+        },
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:experience_bottle"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "translate": "json.kards.dialog.xp_shop.main.1305",
+                "fallback": "\n"
+            }
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "columns": 2,
+    "actions": [
+        {
+            "label": {
+                "color": "green",
+                "translate": "json.kards.dialog.xp_shop.main.1306",
+                "fallback": "天赋商店"
+            },
+            "tooltip": {
+                "translate": "json.kards.dialog.xp_shop.main.1307",
+                "fallback": "选择或升级天赋"
+            },
+            "action": {
+                "type": "minecraft:run_command",
+                "command": "trigger dialog set 1000"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "gold",
+                "translate": "json.kards.dialog.xp_shop.main.1308",
+                "fallback": "经验商店"
+            },
+            "tooltip": {
+                "translate": "json.kards.dialog.xp_shop.main.1309",
+                "fallback": "购买附魔书"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:xp_shop/enchantment/main"
+            },
+            "width": 75
+        }
+    ]
+}

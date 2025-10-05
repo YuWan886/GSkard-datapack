@@ -1,0 +1,8 @@
+scoreboard players set #kard_lengxiaoxixue kardCount 6
+
+give @s music_disc_mellohi[item_name=[{translate: "json.kards.dialog.setting.random_start.main.1297", fallback: "6K",color:"aqua"},{translate: "json.kards.dialog.jiaocheng.wanfa.1.114", fallback: " "},{translate: "kards.function.game.paiku.fashu.lengxiaoxixue.1", fallback: "冷效吸血",color:"light_purple"}],lore=[{translate: "json.kards.dialog.paiku.main.220", fallback: "法术牌",color:"light_purple",italic:false},\
+[{translate: "json.kards.dialog.paiku.wangzhibaoku.lindongzhikai.888", fallback: "冻结",color:"aqua",italic:false},{translate: "kards.function.game.paiku.fashu.lengxiaoxixue.2", fallback: "敌方全体玩家",color:"gray",italic:false},{translate: "kards.function.game.paiku.fashu.lengxiaoxixue.3", fallback: "1.2s",color:"red",italic:false}],\
+[{translate: "kards.function.game.paiku.fashu.lengxiaoxixue.4", fallback: "并对除你以外的全部存活玩家扣除",color:"gray",italic:false},{translate: "kards.function.game.paiku.fashu.lengxiaoxixue.5", fallback: "1.5❤",color:"red",italic:false}],\
+[{translate: "kards.function.game.paiku.fashu.lengxiaoxixue.6", fallback: "每扣除一名玩家的生命 就恢复你",color:"gray",italic:false},{translate: "kards.function.game.paiku.fashu.lengxiaoxixue.7", fallback: "3.5❤",color:"red",italic:false}],\
+{translate: "kards.function.game.paiku.fashu.lengxiaoxixue.8", fallback: "*ps:这个卡牌的名称真的没有在谐音()*",color:dark_gray,italic:1b},\
+{translate: "kards.function.game.paiku.fashu.lengxiaoxixue.9", fallback: "*相信我()*",color:dark_gray,italic:1b}],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'冷效吸血',K:6},tooltip_style="kards:kard/spell"]

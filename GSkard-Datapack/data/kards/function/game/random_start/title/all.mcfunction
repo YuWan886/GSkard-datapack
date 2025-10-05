@@ -1,0 +1,32 @@
+function kards:game/random_start/title/first
+schedule function kards:game/random_start/title/wait 20t append
+schedule function kards:game/random_start/title/wait 22t append
+schedule function kards:game/random_start/title/wait 24t append
+schedule function kards:game/random_start/title/wait 26t append
+schedule function kards:game/random_start/title/wait 28t append
+schedule function kards:game/random_start/title/wait 30t append
+schedule function kards:game/random_start/title/wait 32t append
+schedule function kards:game/random_start/title/wait 34t append
+schedule function kards:game/random_start/title/wait 36t append
+schedule function kards:game/random_start/title/wait 38t append
+schedule function kards:game/random_start/title/wait 40t append
+schedule function kards:game/random_start/title/wait 42t append
+schedule function kards:game/random_start/title/wait 44t append
+schedule function kards:game/random_start/title/wait 46t append
+schedule function kards:game/random_start/title/wait 48t append
+schedule function kards:game/random_start/title/wait 50t append
+schedule function kards:game/random_start/title/wait 52t append
+schedule function kards:game/random_start/title/wait 54t append
+schedule function kards:game/random_start/title/wait 56t append
+schedule function kards:game/random_start/title/wait 58t append
+schedule function kards:game/random_start/title/wait 60t append
+schedule function kards:game/random_start/title/wait 64t append
+schedule function kards:game/random_start/title/wait 68t append
+schedule function kards:game/random_start/title/wait 72t append
+schedule function kards:game/random_start/title/wait 76t append
+schedule function kards:game/random_start/title/wait 80t append
+schedule function kards:game/random_start/title/wait 85t append
+schedule function kards:game/random_start/title/wait 90t append
+schedule function kards:game/random_start/title/wait 100t append
+
+schedule function kards:game/random_start/title/end 120t append

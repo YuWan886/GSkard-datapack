@@ -1,0 +1,198 @@
+{
+    "type": "minecraft:multi_action",
+    "title": {
+        "color": "dark_aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.xianjing.main.1071",
+        "fallback": "陷阱"
+    },
+    "external_title": {
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
+    },
+    "body": [],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "exit_action": {
+        "label": {
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.fashu.main.290",
+            "fallback": "返回§6主§a牌库"
+        },
+        "action": {
+            "type": "show_dialog",
+            "dialog": "kards:paiku/main"
+        }
+    },
+    "columns": 5,
+    "actions": [
+        {
+            "label": {
+                "color": "dark_aqua",
+                "translate": "json.kards.dialog.paiku.xianjing.hewei.1056",
+                "fallback": "合围"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/xianjing/hewei"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "dark_aqua",
+                "translate": "json.kards.dialog.paiku.xianjing.jingxiahezi.1067",
+                "fallback": "惊吓盒子"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/xianjing/jingxiahezi"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "dark_aqua",
+                "translate": "json.kards.dialog.paiku.xianjing.laizishenchu.1069",
+                "fallback": "来自深处"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/xianjing/laizishenchu"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "dark_aqua",
+                "translate": "json.kards.dialog.paiku.xianjing.main.1072",
+                "fallback": "魔力腐蚀"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/xianjing/molifushi"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "dark_aqua",
+                "translate": "json.kards.dialog.paiku.xianjing.main.1073",
+                "fallback": "千钧一发"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/xianjing/qianjunyifa"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "dark_aqua",
+                "translate": "json.kards.dialog.paiku.xianjing.main.1074",
+                "fallback": "轻虑浅谋"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/xianjing/qinglvqianmou"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "dark_aqua",
+                "translate": "json.kards.dialog.paiku.xianjing.main.1075",
+                "fallback": "施法小鬼"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/xianjing/shifaxiaogui"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "dark_aqua",
+                "translate": "json.kards.dialog.paiku.xianjing.main.1076",
+                "fallback": "术法失效"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/xianjing/shufashixiao"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "dark_aqua",
+                "translate": "json.kards.dialog.paiku.xianjing.main.1077",
+                "fallback": "殊死防守"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/xianjing/shusifangshou"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "dark_aqua",
+                "translate": "json.kards.dialog.paiku.xianjing.main.1078",
+                "fallback": "损耗过度"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/xianjing/sunhaoguodu"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "dark_aqua",
+                "translate": "json.kards.dialog.paiku.xianjing.main.1079",
+                "fallback": "偷梁换柱"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/xianjing/toulianghuanzhu"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "dark_aqua",
+                "translate": "json.kards.dialog.paiku.xianjing.main.1080",
+                "fallback": "遥远的桥"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/xianjing/yaoyuandeqiao"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "dark_aqua",
+                "translate": "json.kards.dialog.paiku.xianjing.main.1081",
+                "fallback": "诱敌"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/xianjing/youdi"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "dark_aqua",
+                "translate": "json.kards.dialog.paiku.fashu.main.321",
+                "fallback": "DLC"
+            },
+            "action": {
+                "type": "show_dialog",
+                "dialog": "kards-dlc:kard/xianjing/main"
+            },
+            "width": 75
+        }
+    ]
+}

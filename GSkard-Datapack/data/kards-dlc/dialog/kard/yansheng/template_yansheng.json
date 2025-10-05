@@ -1,0 +1,90 @@
+{
+    "type": "notice",
+    "title": {
+        "color": "red",
+        "bold": true,
+        "translate": "json.kards-dlc.dialog.kard.yansheng.main.1381",
+        "fallback": "模板：其它"
+    },
+    "body": [
+        {
+            "type": "item",
+            "item": {
+                "id": "bone"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "plain_message",
+            "contents": {
+                "color": "gold",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.yansheng.suanlawugujizhua.1130",
+                "fallback": "美味可食用"
+            },
+            "width": 1024
+        },
+        {
+            "type": "plain_message",
+            "contents": {
+                "color": "red",
+                "italic": false,
+                "translate": "json.kards-dlc.dialog.kard.yansheng.template_yansheng.1382",
+                "fallback": "食用后扣除5♥"
+            },
+            "width": 1024
+        },
+        {
+            "type": "plain_message",
+            "contents": {
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.yansheng.suanlawugujizhua.1132",
+                "fallback": "将1个酸辣无骨鸡爪置入敌方随机一名玩家手中"
+            },
+            "width": 1024
+        },
+        {
+            "type": "plain_message",
+            "contents": {
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards-dlc.dialog.kard.yansheng.template_yansheng.1383",
+                "fallback": "回合开始时若背包内有酸辣无骨鸡爪 每有一个扣除自己2♥"
+            },
+            "width": 1024
+        },
+        {
+            "type": "plain_message",
+            "contents": {
+                "color": "red",
+                "italic": false,
+                "translate": "json.kards-dlc.dialog.kard.yansheng.template_yansheng.1384",
+                "fallback": "!若丢弃了酸辣无骨鸡爪 酸辣无骨鸡爪会成精向你复仇!"
+            },
+            "width": 1024
+        },
+        {
+            "type": "plain_message",
+            "contents": {
+                "color": "dark_gray",
+                "italic": true,
+                "translate": "json.kards.dialog.paiku.yansheng.suanlawugujizhua.1133",
+                "fallback": "为什么无骨鸡爪是一根骨头?"
+            },
+            "width": 1024
+        }
+    ],
+    "action": {
+        "label": {
+            "color": "green",
+            "translate": "json.kards-dlc.dialog.kard.yansheng.template_yansheng.1385",
+            "fallback": "返回§7其他-§5DLC"
+        },
+        "action": {
+            "type": "show_dialog",
+            "dialog": "kards-dlc:kard/yansheng/main"
+        }
+    }
+}

@@ -1,8 +1,11 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.yongpaiku.template.1",color:"gold"},{translate: "game.yongpaiku.shenji.fuzhi.1",color:"white",hover_event:{action:"show_text","value":{translate: "game.yongpaiku.shenji.fuzhi.2"}}}]
-function kards:game/yongpaiku/xianjin/jiance/shenjijiance
+function kards:game/yongpaiku/use_general/kard_general
+function kards:game/yongpaiku/xianjing/jiance/shenjijiance
 item replace entity @s weapon.offhand with air
-item replace entity @s weapon.mainhand from entity @s container.0
+summon item ~ ~ ~ {Item:{id:"music_disc_11"},PickupDelay:-1,Tags:["copy"]}
+data modify entity @n[tag=copy,type=item,tag=!copy_end] Item set from entity @s Inventory.[{Slot:0b}]
+kill @e[nbt={Item:{id:"minecraft:music_disc_11"}}]
+data modify entity @n[tag=copy,type=item,tag=!copy_end] PickupDelay set value 1
+tag @n[tag=copy,type=item] add copy_end
+tag @n[tag=copy,type=item] remove copy
+
 scoreboard players operation @s kardCount -= #kard_fuzhi kardCount
-scoreboard players remove @s[scores={kujie=1..}] kardCount 1
-scoreboard players set @s pingbi 0
-scoreboard players add @s use_kard 1

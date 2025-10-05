@@ -1,0 +1,2 @@
+
+gamerule drowningDamage true

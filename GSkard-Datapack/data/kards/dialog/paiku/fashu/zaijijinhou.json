@@ -1,0 +1,68 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "extra": [
+            {
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.main.316",
+                "fallback": "宰鸡敬猴"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.guohechaiqiao.263",
+        "fallback": "3K "
+    },
+    "external_title": {
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "music_disc_mellohi"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "red",
+                        "translate": "json.kards.dialog.paiku.fashu.zaijijinhou.382",
+                        "fallback": "杀死1个"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.fashu.neiheyinbao.323",
+                "fallback": "随机"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "translate": "json.kards.dialog.paiku.fashu.zaijijinhou.383",
+                "fallback": "敌方队伍图腾"
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.232",
+            "fallback": "返回§d法术牌§a牌库"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/fashu/main"
+        }
+    }
+}

@@ -1,12 +1,6 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.yongpaiku.template.1",color:"gold"},{translate: "game.yongpaiku.jiben.manbing.1",color:"blue"}]
-#红队用
-execute if entity @s[team=red] as @e[tag=7r] at @s run summon minecraft:piglin_brute ~ 0 ~ {Team:red,IsImmuneToZombification:true,equipment:{mainhand:{id:"minecraft:golden_axe"}},Health:40.0f}
-#蓝队用
-execute if entity @s[team=blue] as @e[tag=7b] at @s run summon minecraft:piglin_brute ~ 0 ~ {Team:blue,IsImmuneToZombification:true,equipment:{mainhand:{id:"minecraft:golden_axe"}},Health:40.0f}
-function kards:game/yongpaiku/xianjin/jiance/mobjiance
-scoreboard players add @s jiben 1
+function kards:game/yongpaiku/use_general/kard_general
+    execute if entity @s[team=red] at @e[tag=blue_marker_7,limit=1] run summon minecraft:piglin_brute ~ 0 ~ {Team:red,IsImmuneToZombification:true,equipment:{mainhand:{id:"minecraft:golden_axe"}},Health:40.0f,attributes:[{id:"follow_range",base:100},{id:"max_health",base:40}]}
+    execute if entity @s[team=blue] at @e[tag=red_marker_7,limit=1] run summon minecraft:piglin_brute ~ 0 ~ {Team:blue,IsImmuneToZombification:true,equipment:{mainhand:{id:"minecraft:golden_axe"}},Health:40.0f,attributes:[{id:"follow_range",base:100},{id:"max_health",base:40}]}
+function kards:game/yongpaiku/xianjing/jiance/mobjiance
 item replace entity @s weapon.offhand with air
 scoreboard players operation @s kardCount -= #kard_manbing kardCount
-scoreboard players remove @s[scores={kujie=1..}] kardCount 1
-scoreboard players set @s pingbi 0
-scoreboard players add @s use_kard 1

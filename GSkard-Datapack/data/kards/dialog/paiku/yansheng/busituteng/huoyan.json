@@ -1,0 +1,106 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "color": "red",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.yansheng.busituteng.huoyan.1160",
+        "fallback": "火焰图腾"
+    },
+    "external_title": {
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "totem_of_undying"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.yansheng.busituteng.baonu.1140",
+                "fallback": "触发后"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "dark_green",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.yansheng.busituteng.baonu.1141",
+                "fallback": " ♥+20 60s"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "dark_green",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.yansheng.busituteng.baonu.1142",
+                "fallback": " ♥+10"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "dark_green",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.yansheng.busituteng.huoyan.1161",
+                "fallback": " 防火 60s"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "red",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.yansheng.busituteng.huoyan.1162",
+                "fallback": " 点燃6格内敌对生物10s"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.yansheng.busituteng.huoyan.1163",
+                "fallback": " 并使其额外受到200%燃烧伤害"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "dark_gray",
+                "italic": true,
+                "translate": "json.kards.dialog.paiku.yansheng.busituteng.hundun.1158",
+                "fallback": " 点燃:每0.5s受到0.625♥的火焰伤害"
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.yansheng.jinzijue.1116",
+            "fallback": "返回§7其他"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/yansheng/busituteng/main"
+        }
+    }
+}

@@ -1,0 +1,122 @@
+{
+    "type": "minecraft:multi_action",
+    "title": {
+        "color": "gold",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.main.218",
+        "fallback": "        牌库"
+    },
+    "external_title": {
+        "color": "gold",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.main.219",
+        "fallback": "牌库"
+    },
+    "body": [],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "columns": 4,
+    "actions": [
+        {
+            "label": {
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.main.220",
+                "fallback": "法术牌"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/fashu/main"
+            }
+        },
+        {
+            "label": {
+                "color": "blue",
+                "translate": "json.kards.dialog.jiaocheng.wanfa.1.116",
+                "fallback": "基本牌"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/jiben/main"
+            }
+        },
+        {
+            "label": {
+                "color": "dark_green",
+                "translate": "json.kards.dialog.paiku.main.221",
+                "fallback": "军团牌"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/juntuan/main"
+            }
+        },
+        {
+            "label": {
+                "color": "white",
+                "bold": true,
+                "translate": "json.kards.dialog.jiaocheng.wanfa.2.153",
+                "fallback": "神迹牌"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/shenji/main"
+            }
+        },
+        {
+            "label": {
+                "color": "gold",
+                "translate": "json.kards.dialog.paiku.main.222",
+                "fallback": "装备牌"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/zhuangbei/main"
+            }
+        },
+        {
+            "label": {
+                "color": "dark_gray",
+                "translate": "json.kards.dialog.paiku.main.223",
+                "fallback": "诅咒牌"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/zuzhou/main"
+            }
+        },
+        {
+            "label": {
+                "color": "dark_aqua",
+                "translate": "json.kards.dialog.paiku.main.224",
+                "fallback": "陷阱牌"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/xianjing/main"
+            }
+        },
+        {
+            "label": {
+                "color": "gray",
+                "translate": "json.kards.dialog.paiku.main.225",
+                "fallback": "其他"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/yansheng/main"
+            }
+        },
+        {
+            "label": {
+                "color": "gold",
+                "bold": true,
+                "translate": "json.kards.dialog.paiku.main.226",
+                "fallback": "王之宝库"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/wangzhibaoku/main"
+            }
+        }
+    ]
+}

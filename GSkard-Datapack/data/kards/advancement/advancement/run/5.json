@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:ender_pearl",
+            "count": 1
+        },
+        "title": {
+            "translate": "json.kards.advancement.advancement.run.5.57",
+            "fallback": "跑酷高手..?"
+        },
+        "description": {
+            "translate": "json.kards.advancement.advancement.run.5.58",
+            "fallback": "在1s内完成跑酷...世上竟有超人?"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "kards:advancement/run/4",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "rewards": {
+        "function": "kards:advancement/run/5"
+    }
+}

@@ -1,0 +1,96 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "extra": [
+            {
+                "color": "dark_green",
+                "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.448",
+                "fallback": "爆炸军团"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.qisihuisheng.326",
+        "fallback": "6K "
+    },
+    "external_title": {
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "music_disc_cat"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "gold",
+                        "translate": "json.kards.dialog.paiku.jiben.kulipa.404",
+                        "fallback": " 苦力怕"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.449",
+                "fallback": "召唤4只"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "blue",
+                        "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.451",
+                        "fallback": " 基本牌 苦力怕"
+                    },
+                    {
+                        "color": "gray",
+                        "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.452",
+                        "fallback": " 自动使用1张并使"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.450",
+                "fallback": "若背包有"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "gold",
+                        "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.454",
+                        "fallback": " 会治疗友方怪物单位"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.453",
+                "fallback": "召唤的苦力怕爆炸后"
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.455",
+            "fallback": "返回§d军团牌§a牌库"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/juntuan/main"
+        }
+    }
+}

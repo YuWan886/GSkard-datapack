@@ -1,0 +1,219 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "extra": [
+            {
+                "color": "red",
+                "translate": "json.kards.dialog.paiku.tuteng.main.713",
+                "fallback": "培养尸"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.tuteng.moguniu.719",
+        "fallback": "18K "
+    },
+    "external_title": {
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "music_disc_blocks"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "red",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.tuteng.baomao.681",
+                "fallback": "图腾牌"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "color": "gold",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.tuteng.main.713",
+                        "fallback": "培养尸"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.tuteng.peiyangshi.726",
+                "fallback": "在队伍图腾区生成"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.tuteng.baomao.683",
+                "fallback": "图腾存活效果："
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "color": "gold",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.tuteng.peiyangshi.727",
+                        "fallback": "防火"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.tuteng.baomao.684",
+                "fallback": "1.队伍玩家获得"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "color": "gold",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.tuteng.main.713",
+                        "fallback": "培养尸"
+                    },
+                    {
+                        "color": "gray",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.tuteng.peiyangshi.729",
+                        "fallback": "在造成"
+                    },
+                    {
+                        "color": "gold",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.tuteng.peiyangshi.730",
+                        "fallback": "30♥"
+                    },
+                    {
+                        "color": "gray",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.tuteng.peiyangshi.731",
+                        "fallback": "的生命之后变为"
+                    },
+                    {
+                        "color": "dark_green",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.tuteng.peiyangshi.732",
+                        "fallback": "[尸帝]"
+                    },
+                    {
+                        "color": "gray",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.tuteng.peiyangshi.733",
+                        "fallback": " 置入随机一名友方玩家手中"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.tuteng.peiyangshi.728",
+                "fallback": "2."
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "color": "red",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.tuteng.main.713",
+                        "fallback": "培养尸"
+                    },
+                    {
+                        "color": "gray",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.tuteng.peiyangshi.735",
+                        "fallback": "时若队伍内有"
+                    },
+                    {
+                        "color": "red",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.tuteng.cunmin.690",
+                        "fallback": "村民"
+                    },
+                    {
+                        "color": "red",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.tuteng.peiyangshi.736",
+                        "fallback": " 培养尸"
+                    },
+                    {
+                        "color": "gray",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.tuteng.peiyangshi.737",
+                        "fallback": "会吞噬"
+                    },
+                    {
+                        "color": "red",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.tuteng.cunmin.690",
+                        "fallback": "村民"
+                    },
+                    {
+                        "color": "gray",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.tuteng.peiyangshi.738",
+                        "fallback": "以提升10♥培养值"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.tuteng.peiyangshi.734",
+                "fallback": "-放置"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "color": "white",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.tuteng.peiyangshi.740",
+                        "fallback": "5♥真实伤害"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.tuteng.peiyangshi.739",
+                "fallback": "-回合开始时对敌方随机1名玩家造成"
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.tuteng.baomao.689",
+            "fallback": "返回§c图腾§a牌库"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/tuteng/main"
+        }
+    }
+}

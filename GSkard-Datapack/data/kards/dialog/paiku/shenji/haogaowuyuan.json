@@ -1,0 +1,72 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "extra": [
+            {
+                "color": "white",
+                "bold": true,
+                "translate": "json.kards.dialog.paiku.shenji.haogaowuyuan.612",
+                "fallback": "好高骛远"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.duming.254",
+        "fallback": "0K "
+    },
+    "external_title": {
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "music_disc_strad"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "white",
+                "italic": false,
+                "translate": "json.kards.dialog.jiaocheng.wanfa.2.153",
+                "fallback": "神迹牌"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "color": "gold",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.shenji.haogaowuyuan.614",
+                        "fallback": "抽洗掉牌数+2的牌"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.shenji.haogaowuyuan.613",
+                "fallback": "将身上所有牌洗掉"
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.shenji.fanxiangfeileishen.605",
+            "fallback": "返回§d神迹§a牌库"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/shenji/main"
+        }
+    }
+}

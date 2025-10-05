@@ -1,0 +1,66 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "color": "blue",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.yansheng.kuanghuanzombie.1120",
+        "fallback": "狂欢僵尸"
+    },
+    "external_title": {
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "zombie_spawn_egg"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "white",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.shenji.main.640",
+                "fallback": "墓园狂欢"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.yansheng.kuanghuanzombie.1121",
+                "fallback": "召唤一只狂欢僵尸"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.yansheng.kuanghuanzombie.1122",
+                "fallback": "每使用一定次数 狂欢僵尸都会增强"
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.yansheng.jinzijue.1116",
+            "fallback": "返回§7其他"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/yansheng/main"
+        }
+    }
+}

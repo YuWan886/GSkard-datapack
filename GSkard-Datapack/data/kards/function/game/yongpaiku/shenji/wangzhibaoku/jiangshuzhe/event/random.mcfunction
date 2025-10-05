@@ -1,4 +1,5 @@
-execute if entity @a[tag=jiangshuzhe,team=red] run tellraw @a [{translate: "game.yongpaiku.shenji.wangzhibaoku.jiangshuzhe.event.random.1",color: "gray"},{selector: "@s"},{translate: "game.yongpaiku.shenji.wangzhibaoku.jiangshuzhe.event.random.2",color: "gray"}]
+
+execute if entity @a[tag=jiangshuzhe,team=red] run tellraw @a [{translate: "kards.function.game.yongpaiku.shenji.wangzhibaoku.jiangshuzhe.event.random.1", fallback: "由",color: "gray"},{selector: "@s"},{translate: "kards.function.game.yongpaiku.shenji.wangzhibaoku.jiangshuzhe.event.random.2", fallback: "讲述本回合的故事",color: "gray"}]
 execute store result score @s jiangshuzhe_random1 run random value 1..13
 execute if score @s jiangshuzhe_random1 matches 1 run function kards:game/yongpaiku/shenji/wangzhibaoku/jiangshuzhe/event/fanrong_kapai
 execute if score @s jiangshuzhe_random1 matches 2 run function kards:game/yongpaiku/shenji/wangzhibaoku/jiangshuzhe/event/fanrong_dianshu

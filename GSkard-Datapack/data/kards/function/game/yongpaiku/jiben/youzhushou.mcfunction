@@ -1,12 +1,6 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.yongpaiku.template.1",color:"gold"},{translate: "game.yongpaiku.jiben.youzhushou.1",color:"blue"}]
-    #红队用
-    execute if entity @s[team=red] as @e[tag=7r] at @s run summon hoglin ~ 0 ~ {Team:red,IsImmuneToZombification:true,Age:0,attributes:[{id:"minecraft:max_health",base:30.0d}],Health:30.0f,CannotBeHunted:1b}
-    #蓝队用
-    execute if entity @s[team=blue] as @e[tag=7b] at @s run summon hoglin ~ 0 ~ {Team:blue,IsImmuneToZombification:true,Age:0,attributes:[{id:"minecraft:max_health",base:30.0d}],Health:30.0f,CannotBeHunted:1b}
-function kards:game/yongpaiku/xianjin/jiance/mobjiance
-scoreboard players add @s jiben 1
+function kards:game/yongpaiku/use_general/kard_general
+    execute if entity @s[team=red] at @e[tag=blue_marker_7,limit=1] run summon hoglin ~ 0 ~ {Team:red,IsImmuneToZombification:true,Age:0,attributes:[{id:"follow_range",base:100},{id:"minecraft:max_health",base:30.0d}],Health:30.0f,CannotBeHunted:1b}
+    execute if entity @s[team=blue] at @e[tag=red_marker_7,limit=1] run summon hoglin ~ 0 ~ {Team:blue,IsImmuneToZombification:true,Age:0,attributes:[{id:"follow_range",base:100},{id:"minecraft:max_health",base:30.0d}],Health:30.0f,CannotBeHunted:1b}
+function kards:game/yongpaiku/xianjing/jiance/mobjiance
 item replace entity @s weapon.offhand with air
 scoreboard players operation @s kardCount -= #kard_youzhushou kardCount
-scoreboard players remove @s[scores={kujie=1..}] kardCount 1
-scoreboard players set @s pingbi 0
-scoreboard players add @s use_kard 1

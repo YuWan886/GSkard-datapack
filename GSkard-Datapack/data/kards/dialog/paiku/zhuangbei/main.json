@@ -1,0 +1,330 @@
+{
+    "type": "minecraft:multi_action",
+    "title": {
+        "color": "gold",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.main.222",
+        "fallback": "装备牌"
+    },
+    "external_title": {
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
+    },
+    "body": [],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "exit_action": {
+        "label": {
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.fashu.main.290",
+            "fallback": "返回§6主§a牌库"
+        },
+        "action": {
+            "type": "show_dialog",
+            "dialog": "kards:paiku/main"
+        }
+    },
+    "columns": 5,
+    "actions": [
+        {
+            "label": {
+                "color": "gold",
+                "translate": "json.kards.dialog.paiku.zhuangbei.main.1198",
+                "fallback": "铁剑"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/zhuangbei/tiejian"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "gold",
+                "translate": "json.kards.dialog.paiku.zhuangbei.bianxiehuosai.1177",
+                "fallback": "便携活塞"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/zhuangbei/bianxiehuosai"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "gold",
+                "translate": "json.kards.dialog.paiku.yansheng.main.1127",
+                "fallback": "不死图腾"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/zhuangbei/busituteng"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "gold",
+                "translate": "json.kards.dialog.paiku.zhuangbei.dunpai.1182",
+                "fallback": "盾牌"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/zhuangbei/dunpai"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "gold",
+                "translate": "json.kards.dialog.paiku.zhuangbei.haiguilinjia.1184",
+                "fallback": "海龟鳞甲"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/zhuangbei/haiguilinjia"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "gold",
+                "translate": "json.kards.dialog.paiku.zhuangbei.jianduandunpai.1186",
+                "fallback": "尖端盾牌"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/zhuangbei/jianduandunpai"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "gold",
+                "translate": "json.kards.dialog.paiku.zhuangbei.jingjidunpai.1188",
+                "fallback": "荆棘盾牌"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/zhuangbei/jingjidunpai"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "gold",
+                "translate": "json.kards.dialog.paiku.zhuangbei.jinjian.1190",
+                "fallback": "金剑"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/zhuangbei/jinjian"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "gold",
+                "translate": "json.kards.dialog.paiku.zhuangbei.jinshengji.1192",
+                "fallback": "金升级"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/zhuangbei/jinshengji"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "gold",
+                "translate": "json.kards.dialog.paiku.zhuangbei.linghunshougeqi.1195",
+                "fallback": "灵魂收割器"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/zhuangbei/linghunshougeqi"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "gold",
+                "translate": "json.kards.dialog.paiku.yansheng.longxi.1123",
+                "fallback": "龙息"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/zhuangbei/longxi"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "gold",
+                "translate": "json.kards.dialog.paiku.zhuangbei.main.1199",
+                "fallback": "破碎剑刃"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/zhuangbei/posuijianren"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "gold",
+                "translate": "json.kards.dialog.paiku.zhuangbei.main.1200",
+                "fallback": "全息盾牌"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/zhuangbei/quanxidunpai"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "gold",
+                "translate": "json.kards.dialog.paiku.zhuangbei.main.1201",
+                "fallback": "铁斧"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/zhuangbei/tiefu"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "gold",
+                "translate": "json.kards.dialog.paiku.zhuangbei.main.1202",
+                "fallback": "铁升级"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/zhuangbei/tieshengji"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "gold",
+                "translate": "json.kards.dialog.paiku.zhuangbei.main.1203",
+                "fallback": "维护"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/zhuangbei/weihu"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "gold",
+                "translate": "json.kards.dialog.paiku.zhuangbei.main.1204",
+                "fallback": "下界合金剑"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/zhuangbei/xiajiehejinjian"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "gold",
+                "translate": "json.kards.dialog.paiku.zhuangbei.main.1205",
+                "fallback": "下界合金升级"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/zhuangbei/xiajiehejinshengji"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "gold",
+                "translate": "json.kards.dialog.paiku.zhuangbei.main.1206",
+                "fallback": "鞋钉"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/zhuangbei/xieding"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "gold",
+                "translate": "json.kards.dialog.paiku.zhuangbei.main.1207",
+                "fallback": "迅捷之羽"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/zhuangbei/xunjiezhiyu"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "gold",
+                "translate": "json.kards.dialog.paiku.zhuangbei.main.1208",
+                "fallback": "重锤"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/zhuangbei/zhongchui"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "gold",
+                "translate": "json.kards.dialog.paiku.zhuangbei.main.1209",
+                "fallback": "钻石斧"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/zhuangbei/zuanshifu"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "gold",
+                "translate": "json.kards.dialog.paiku.zhuangbei.main.1210",
+                "fallback": "钻石剑"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/zhuangbei/zuanshijian"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "gold",
+                "translate": "json.kards.dialog.paiku.zhuangbei.main.1211",
+                "fallback": "钻石升级"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/zhuangbei/zuanshishengji"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "gold",
+                "translate": "json.kards.dialog.paiku.fashu.main.321",
+                "fallback": "DLC"
+            },
+            "action": {
+                "type": "show_dialog",
+                "dialog": "kards-dlc:kard/zhuangbei/main"
+            },
+            "width": 75
+        }
+    ]
+}

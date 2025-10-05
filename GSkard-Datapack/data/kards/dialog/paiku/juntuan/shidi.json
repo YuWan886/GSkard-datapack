@@ -1,0 +1,110 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "extra": [
+            {
+                "color": "dark_green",
+                "translate": "json.kards.dialog.paiku.juntuan.main.494",
+                "fallback": "尸帝"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.juntuan.shidi.527",
+        "fallback": "15K "
+    },
+    "external_title": {
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "music_disc_cat"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "gold",
+                        "translate": "json.kards.dialog.paiku.juntuan.shidi.528",
+                        "fallback": " 全套保护5附魔合金套"
+                    },
+                    {
+                        "color": "gray",
+                        "translate": "json.kards.dialog.paiku.juntuan.shidi.529",
+                        "fallback": " 与"
+                    },
+                    {
+                        "color": "gold",
+                        "translate": "json.kards.dialog.paiku.juntuan.shidi.530",
+                        "fallback": " 锋利5合金剑"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.jiben.diaolingkulou.395",
+                "fallback": "召唤1只"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "gold",
+                        "translate": "json.kards.dialog.paiku.juntuan.shidi.532",
+                        "fallback": " 僵尸抗性提升2"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.juntuan.shidi.531",
+                "fallback": "存活时持续给周围5格内"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "gold",
+                        "translate": "json.kards.dialog.paiku.juntuan.shidi.534",
+                        "fallback": " 尸帝仆从"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.juntuan.shidi.533",
+                "fallback": "将场上所有僵尸化为"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "red",
+                "translate": "json.kards.dialog.paiku.juntuan.shidi.535",
+                "fallback": "谁言僵尸无大帝"
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.455",
+            "fallback": "返回§d军团牌§a牌库"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/juntuan/main"
+        }
+    }
+}

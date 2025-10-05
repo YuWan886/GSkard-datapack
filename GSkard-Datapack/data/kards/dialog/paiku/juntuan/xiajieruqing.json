@@ -1,0 +1,96 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "extra": [
+            {
+                "color": "dark_green",
+                "translate": "json.kards.dialog.paiku.juntuan.main.502",
+                "fallback": "下界入侵"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.227",
+        "fallback": "5K "
+    },
+    "external_title": {
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "music_disc_cat"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "gold",
+                        "translate": "json.kards.dialog.paiku.juntuan.xiajieruqing.578",
+                        "fallback": " 金套猪灵"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.juntuan.errenchengjun.467",
+                "fallback": "召唤2只"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "red",
+                        "translate": "json.kards.dialog.paiku.juntuan.diyuzhihuo.461",
+                        "fallback": " 下界怪物"
+                    },
+                    {
+                        "color": "gray",
+                        "translate": "json.kards.dialog.paiku.juntuan.xiajieruqing.579",
+                        "fallback": " 大于等于3只"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.juntuan.diyuzhihuo.460",
+                "fallback": "然后若场上"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "gold",
+                        "translate": "json.kards.dialog.paiku.juntuan.xiajieruqing.580",
+                        "fallback": " 猪灵蛮兵"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.juntuan.jieluexiaodui.483",
+                "fallback": "额外召唤1只"
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.455",
+            "fallback": "返回§d军团牌§a牌库"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/juntuan/main"
+        }
+    }
+}

@@ -1,3 +1,2 @@
 
-advancement revoke @s only kards:shenqi/sishenzhilian/2
-scoreboard players add @s used_sishenzhilian 1
+$damage @s $(damage) kards:chujue by @p[tag=sishenzhilian_chujue_attacker]

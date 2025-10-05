@@ -1,0 +1,34 @@
+{
+    "type": "multi_action",
+    "title": {
+        "color": "blue",
+        "bold": true,
+        "translate": "json.kards-dlc.dialog.kard.jiben.main.1355",
+        "fallback": "基本-§5DLC"
+    },
+    "exit_action": {
+        "label": {
+            "color": "green",
+            "translate": "json.kards-dlc.dialog.kard.jiben.main.1356",
+            "fallback": "返回§6主§a牌库-§9基本"
+        },
+        "action": {
+            "type": "show_dialog",
+            "dialog": "kards:paiku/jiben/main"
+        }
+    },
+    "columns": 5,
+    "actions": [
+        {
+            "label": {
+                "color": "blue",
+                "translate": "json.kards-dlc.dialog.kard.jiben.main.1357",
+                "fallback": "模板：基本"
+            },
+            "action": {
+                "type": "show_dialog",
+                "dialog": "kards-dlc:kard/jiben/template_jiben"
+            }
+        }
+    ]
+}

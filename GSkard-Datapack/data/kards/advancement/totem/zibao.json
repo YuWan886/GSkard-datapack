@@ -13,6 +13,6 @@
         }
     },
     "rewards": {
-        "function": "kards:game/yongpaiku/yansheng/totem/zibao"
+        "function": "kards:game/yongpaiku/yansheng/totem/zibao/1"
     }
 }

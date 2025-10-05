@@ -1,10 +1,21 @@
 {
     "values": [
-        "kards:huoyantuteng",
+        "kards:huoyan",
         "kards:kunanyaolan",
+        "kards:kunanyaolan_wuli",
         "kards:qinglvqianmou",
         "kards:silie",
         "kards:silingfashu",
-        "kards:chujue"
+        "kards:chujue",
+        "kards:move_or_die",
+        "kards:la",
+        "kards:chan",
+        "kards:peiyangshi",
+        "kards:zhongshang",
+        "kards:yonghan",
+        "kards:duming",
+        "kards:flend",
+        "kards:gongsheng",
+        "kards:xixuegui"
     ]
 }

@@ -1,0 +1,91 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "extra": [
+            {
+                "color": "red",
+                "translate": "json.kards.dialog.paiku.tuteng.liulangshangren.708",
+                "fallback": "流浪商人"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.juntuan.zaieshuangxing.594",
+        "fallback": "14K "
+    },
+    "external_title": {
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "music_disc_blocks"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "red",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.tuteng.baomao.681",
+                "fallback": "图腾牌"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.tuteng.liulangshangren.709",
+                "fallback": "在队伍图腾区生成流浪商人"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.tuteng.baomao.683",
+                "fallback": "图腾存活效果："
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "color": "gold",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.fashu.shuiliuyongdong.341",
+                        "fallback": "1张牌"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.tuteng.ji.706",
+                "fallback": "1.每回合开始时 队伍所有玩家多获得"
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.tuteng.baomao.689",
+            "fallback": "返回§c图腾§a牌库"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/tuteng/main"
+        }
+    }
+}

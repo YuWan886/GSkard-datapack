@@ -5,13 +5,13 @@
             "conditions": {
                 "damage": {
                     "source_entity": {
-                        "nbt": "{Tags:[\"死灵仆从\"]}"
+                        "nbt": "{Tags:[\"silingpucong\"]}"
                     }
                 }
             }
         }
     },
     "rewards": {
-        "function": "kards:game/ingame/hurt/silingpucong"
+        "function": "kards:game/player/hurt/silingpucong"
     }
 }

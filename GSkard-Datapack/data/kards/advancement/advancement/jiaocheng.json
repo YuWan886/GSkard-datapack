@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:apple",
+            "count": 1
+        },
+        "title": {
+            "translate": "json.kards.advancement.advancement.jiaocheng.9",
+            "fallback": "完成新手教程"
+        },
+        "description": {
+            "translate": "json.kards.advancement.advancement.jiaocheng.10",
+            "fallback": "搞牌,启动!"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "parent": "kards:advancement/first_join_game",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "rewards": {
+        "function": "kards:advancement/jiaocheng"
+    }
+}

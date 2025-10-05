@@ -1,5 +1,7 @@
 #---暂定常加载区域---#
-#
+#Tag
+tag @a[gamemode=spectator,tag=!spectator] add spectator
+tag @a[gamemode=adventure,tag=spectator] remove spectator
 
 #全局buff
 effect give @a minecraft:night_vision infinite 0 true
@@ -18,31 +20,38 @@ execute store result score 人数 b_dp if entity @a[team=blue,gamemode=spectator
 execute store result score 人数 b_alive if entity @a[team=blue,gamemode=adventure]
 #启用trigger
 scoreboard players enable @a reset
-scoreboard players enable @a jiaocheng
 execute if score #system GameStatus matches 1..2 run scoreboard players enable @a[scores={touxiang=0}] touxiang
-scoreboard players enable @a music_kards
-scoreboard players enable @a music_lengxiao
+execute as @a[scores={Scale=1..}] run function kards:lobby/other/narrow_reset
+
 scoreboard players enable @a stopsound
-#背景音乐
-execute as @a if score @s music_kards matches 1.. run function kards:music/kards
-execute as @a if score @s music_lengxiao matches 1.. run function kards:music/lengxiao
+
 execute as @a if score @s stopsound matches 1.. run function kards:music/stop
-#首次进入
-advancement grant @a only kards:first_join_game
-#整着玩的
+#对话框部分
+scoreboard players enable @a dialog
+execute as @a[scores={dialog=1..}] run function kards:dialog/trigger
+#title @a[scores={dialog=1..}] times 0t 1t 0t
+#title @a[scores={dialog=1..}] title {translate: "kards.function.tick.1", fallback: "\uE002"}
+scoreboard players reset @a[scores={dialog=1..}] dialog
+## 整着玩的
+
 scoreboard players add #system Color 1
-execute if score #system Color matches 5 run team modify First prefix [{translate: "tick.1",color:"red"},{translate: "tick.2",color:"yellow"},{translate: "tick.3",color:"green"},{translate: "tick.4",color:"aqua"}]
+execute if score #system Color matches 5 run team modify First prefix [{translate: "kards.function.tick.2", fallback: "[",color:"red"},{translate: "kards.function.tick.3", fallback: "萌",color:"yellow"},{translate: "kards.function.tick.4", fallback: "新",color:"green"},{translate: "json.kards.dialog.paiku.shenji.youanjianglin.678", fallback: "]",color:"aqua"}]
 execute if score #system Color matches 5 run team modify First color red
-execute if score #system Color matches 10 run team modify First prefix [{translate: "tick.1",color:"aqua"},{translate: "tick.2",color:"red"},{translate: "tick.3",color:"yellow"},{translate: "tick.4",color:"green"}]
+execute if score #system Color matches 10 run team modify First prefix [{translate: "kards.function.tick.2", fallback: "[",color:"aqua"},{translate: "kards.function.tick.3", fallback: "萌",color:"red"},{translate: "kards.function.tick.4", fallback: "新",color:"yellow"},{translate: "json.kards.dialog.paiku.shenji.youanjianglin.678", fallback: "]",color:"green"}]
 execute if score #system Color matches 10 run team modify First color yellow
-execute if score #system Color matches 15 run team modify First prefix [{translate: "tick.1",color:"green"},{translate: "tick.2",color:"aqua"},{translate: "tick.3",color:"red"},{translate: "tick.4",color:"yellow"}]
+execute if score #system Color matches 15 run team modify First prefix [{translate: "kards.function.tick.2", fallback: "[",color:"green"},{translate: "kards.function.tick.3", fallback: "萌",color:"aqua"},{translate: "kards.function.tick.4", fallback: "新",color:"red"},{translate: "json.kards.dialog.paiku.shenji.youanjianglin.678", fallback: "]",color:"yellow"}]
 execute if score #system Color matches 15 run team modify First color green
-execute if score #system Color matches 20 run team modify First prefix [{translate: "tick.1",color:"yellow"},{translate: "tick.2",color:"green"},{translate: "tick.3",color:"aqua"},{translate: "tick.4",color:"red"}]
+execute if score #system Color matches 20 run team modify First prefix [{translate: "kards.function.tick.2", fallback: "[",color:"yellow"},{translate: "kards.function.tick.3", fallback: "萌",color:"green"},{translate: "kards.function.tick.4", fallback: "新",color:"aqua"},{translate: "json.kards.dialog.paiku.shenji.youanjianglin.678", fallback: "]",color:"red"}]
 execute if score #system Color matches 20 run team modify First color aqua
 execute if score #system Color matches 20 run scoreboard players set #system Color 0
 
 #oiiaioiiiiai
-#scoreboard players add #system oiiaioiiiiai 1
-execute as @e[type=cat,name=Oiiaioiiiiai] at @s run tp @s ~ ~ ~ ~50 ~
-#测试用
+execute as @e[type=cat,tag=Oiiaioiiiiai] at @s run rotate @s ~50 ~30
+execute as @e[type=cat,tag=Oiiaioiiiiai] if data entity @s {OnGround:1b} run data modify entity @s Motion set value [0f,1f,0f]
+effect give @e[type=cat,tag=Oiiaioiiiiai] instant_health 1 0 false
 
+#G36K
+execute as @a if score @s G36K_Use matches 1.. run function kards:guns/g36k/shoot
+execute as @a if score @s G36K_Ex_Use matches 1.. run function kards:guns/ex_g36k/shoot
+
+#测试用

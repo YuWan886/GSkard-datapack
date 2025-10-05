@@ -4,7 +4,14 @@
         "options": [
             "minecraft:sharpness",
             "minecraft:knockback",
-            "minecraft:fire_aspect"
+            "kards:fire_protection",
+            "kards:diaoling",
+            "kards:huanman",
+            "kards:liansuo",
+            "kards:piaofu",
+            "kards:shiming",
+            "kards:xuruo",
+            "kards:zhongdu"
         ],
         "only_compatible": false
     }

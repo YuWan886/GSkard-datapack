@@ -1,18 +1,17 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.yongpaiku.template.1",color:"gold"},{translate: "game.yongpaiku.juntuan.jieluexiaodui.1",color:"dark_green",hover_event:{action:"show_text","value":"在敌方召唤3只劫掠者1只卫道士"}}]
+function kards:game/yongpaiku/use_general/kard_general
+execute if entity @s[team=blue] at @e[tag=red_marker_6] run summon pillager ~ 0 ~ {equipment:{mainhand:{id:"minecraft:crossbow"}},Team:blue}
+execute if entity @s[team=blue] at @e[tag=red_marker_8] run summon pillager ~ 0 ~ {equipment:{mainhand:{id:"minecraft:crossbow"}},Team:blue}
+execute if entity @s[team=blue] at @e[tag=red_marker_7,limit=1] run summon vindicator ~ 0 ~ {equipment:{mainhand:{id:"minecraft:iron_axe"}},Team:blue,attributes:[{id:"follow_range",base:100}]}
+execute if entity @s[team=blue] if entity @e[tag=tuteng,team=red,type=villager] at @e[tag=red_marker_10] run summon vindicator ~ 0 ~ {equipment:{mainhand:{id:"minecraft:iron_axe"}},Team:blue,attributes:[{id:"follow_range",base:100}]}
+execute if entity @s[team=blue] if entity @e[tag=tuteng,team=red,type=villager] at @e[tag=red_marker_10] run summon pillager ~ 0 ~ {equipment:{mainhand:{id:"minecraft:crossbow"}},Team:blue}
 
-    #红队用
-    execute if entity @s[team=blue] as @e[tag=6b] at @s run summon pillager ~ 0 ~ {equipment:{mainhand:{id:"minecraft:crossbow"}},Team:blue}
-    execute if entity @s[team=blue] as @e[tag=8b] at @s run summon pillager ~ 0 ~ {equipment:{mainhand:{id:"minecraft:crossbow"}},Team:blue}
-    execute if entity @s[team=blue] as @e[tag=10b] at @s run summon pillager ~ 0 ~ {equipment:{mainhand:{id:"minecraft:crossbow"}},Team:blue}
-   execute if entity @s[team=blue] as @e[tag=7b] at @s run summon vindicator ~ 0 ~ {equipment:{mainhand:{id:"minecraft:iron_axe"}},Team:blue}
-   #蓝队用
-   execute if entity @s[team=red] as @e[tag=6r] at @s run summon pillager ~ 0 ~ {equipment:{mainhand:{id:"minecraft:crossbow"}},Team:red}
-   execute if entity @s[team=red] as @e[tag=8r] at @s run summon pillager ~ 0 ~ {equipment:{mainhand:{id:"minecraft:crossbow"}},Team:red}
-   execute if entity @s[team=red] as @e[tag=10r] at @s run summon pillager ~ 0 ~ {equipment:{mainhand:{id:"minecraft:crossbow"}},Team:red}
-   execute if entity @s[team=red] as @e[tag=7r] at @s run summon vindicator ~ 0 ~ {equipment:{mainhand:{id:"minecraft:iron_axe"}},Team:red}
-function kards:game/yongpaiku/xianjin/jiance/mobjiance
+
+execute if entity @s[team=red] at @e[tag=blue_marker_6] run summon pillager ~ 0 ~ {equipment:{mainhand:{id:"minecraft:crossbow"}},Team:red}
+execute if entity @s[team=red] at @e[tag=blue_marker_8] run summon pillager ~ 0 ~ {equipment:{mainhand:{id:"minecraft:crossbow"}},Team:red}
+execute if entity @s[team=red] at @e[tag=blue_marker_7,limit=1] run summon vindicator ~ 0 ~ {equipment:{mainhand:{id:"minecraft:iron_axe"}},Team:red,attributes:[{id:"follow_range",base:100}]}
+execute if entity @s[team=red] if entity @e[tag=tuteng,team=blue,type=villager] at @e[tag=blue_marker_10] run summon vindicator ~ 0 ~ {equipment:{mainhand:{id:"minecraft:iron_axe"}},Team:red,attributes:[{id:"follow_range",base:100}]}
+execute if entity @s[team=red] if entity @e[tag=tuteng,team=blue,type=villager] at @e[tag=blue_marker_10] run summon pillager ~ 0 ~ {equipment:{mainhand:{id:"minecraft:crossbow"}},Team:red}
+
+function kards:game/yongpaiku/xianjing/jiance/mobjiance
 item replace entity @s weapon.offhand with air
 scoreboard players operation @s kardCount -= #kard_jieluexiaodui kardCount
-scoreboard players remove @s[scores={kujie=1..}] kardCount 1
-scoreboard players set @s pingbi 0
-scoreboard players add @s use_kard 1

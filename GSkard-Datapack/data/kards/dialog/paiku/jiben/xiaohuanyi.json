@@ -1,0 +1,59 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "extra": [
+            {
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.jiben.main.424",
+                "fallback": "小幻翼"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.guohechaiqiao.263",
+        "fallback": "3K "
+    },
+    "external_title": {
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "music_disc_mall"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "gold",
+                        "translate": "json.kards.dialog.paiku.jiben.xiaohuanyi.441",
+                        "fallback": " 体积缩小的幻翼"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.jiben.diaolingkulou.395",
+                "fallback": "召唤1只"
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.jiben.diaolingkulou.397",
+            "fallback": "返回§d基本牌§a牌库"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/jiben/main"
+        }
+    }
+}

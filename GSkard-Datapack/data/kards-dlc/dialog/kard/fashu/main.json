@@ -1,0 +1,35 @@
+{
+    "type": "multi_action",
+    "title": {
+        "color": "light_purple",
+        "bold": true,
+        "translate": "json.kards-dlc.dialog.kard.fashu.main.1351",
+        "fallback": "法术-§5DLC"
+    },
+    "exit_action": {
+        "label": {
+            "color": "green",
+            "translate": "json.kards-dlc.dialog.kard.fashu.main.1352",
+            "fallback": "返回§6主§a牌库-§d法术"
+        },
+        "action": {
+            "type": "show_dialog",
+            "dialog": "kards:paiku/fashu/main"
+        }
+    },
+    "columns": 5,
+    "actions": [
+        {
+            "label": {
+                "color": "light_purple",
+                "translate": "json.kards-dlc.dialog.kard.fashu.main.1353",
+                "fallback": "模板：法术"
+            },
+            "action": {
+                "type": "show_dialog",
+                "dialog": "kards-dlc:kard/fashu/template_fashu"
+            },
+            "width": 75
+        }
+    ]
+}

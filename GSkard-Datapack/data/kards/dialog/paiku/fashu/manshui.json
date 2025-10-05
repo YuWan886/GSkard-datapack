@@ -1,0 +1,52 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "extra": [
+            {
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.main.292",
+                "fallback": "漫水"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.chongzhu.237",
+        "fallback": "2K "
+    },
+    "external_title": {
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "music_disc_mellohi"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "translate": "json.kards.dialog.paiku.fashu.manshui.322",
+                "fallback": "使敌方场地2格高区域空气替换为水 持续至回合结束 不可叠加"
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.232",
+            "fallback": "返回§d法术牌§a牌库"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/fashu/main"
+        }
+    }
+}

@@ -1,0 +1,83 @@
+{
+    "type": "minecraft:confirmation",
+    "title": {
+        "extra": [
+            {
+                "color": "white",
+                "bold": true,
+                "translate": "json.kards.dialog.paiku.main.226",
+                "fallback": "王之宝库"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.chunriying.245",
+        "fallback": "12K "
+    },
+    "external_title": {
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "music_disc_strad"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "white",
+                "italic": false,
+                "translate": "json.kards.dialog.jiaocheng.wanfa.2.153",
+                "fallback": "神迹牌"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "color": "gold",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.shenji.wangzhibaoku.668",
+                        "fallback": "传奇宝具"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.shenji.wangzhibaoku.667",
+                "fallback": "从王之宝库中抽取一把"
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "no": {
+        "label": {
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.shenji.fanxiangfeileishen.605",
+            "fallback": "返回§d神迹§a牌库"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/shenji/main"
+        }
+    },
+    "yes": {
+        "label": {
+            "color": "gold",
+            "translate": "json.kards.dialog.paiku.shenji.wangzhibaoku.669",
+            "fallback": "进入§6王之宝库"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/shenji/main"
+        }
+    }
+}

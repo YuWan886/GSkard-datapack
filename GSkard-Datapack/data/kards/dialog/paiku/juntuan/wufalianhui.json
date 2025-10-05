@@ -1,0 +1,91 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "extra": [
+            {
+                "color": "dark_green",
+                "translate": "json.kards.dialog.paiku.juntuan.main.499",
+                "fallback": "巫法联会"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.diyu.250",
+        "fallback": "9K "
+    },
+    "external_title": {
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "music_disc_cat"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "gold",
+                        "translate": "json.kards.dialog.paiku.jiben.nvwu.437",
+                        "fallback": " 女巫"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.juntuan.sanrenchengzhong.514",
+                "fallback": "召唤3只"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "dark_green",
+                        "translate": "json.kards.dialog.paiku.juntuan.wufalianhui.567",
+                        "fallback": " [死灵巫师]"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.juntuan.wufalianhui.566",
+                "fallback": "若存在友方"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "dark_green",
+                        "translate": "json.kards.dialog.paiku.juntuan.wufalianhui.567",
+                        "fallback": " [死灵巫师]"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.juntuan.shenghaikongju.526",
+                "fallback": "改为召唤2只"
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.455",
+            "fallback": "返回§d军团牌§a牌库"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/juntuan/main"
+        }
+    }
+}

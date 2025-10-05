@@ -1,0 +1,115 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "extra": [
+            {
+                "color": "dark_gray",
+                "translate": "json.kards.dialog.paiku.zuzhou.main.1248",
+                "fallback": "重伤"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.sijiruchun.346",
+        "fallback": "7K "
+    },
+    "external_title": {
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "music_disc_stal"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "dark_gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.main.223",
+                "fallback": "诅咒牌"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "color": "white",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.zuzhou.zhongshang.1254",
+                        "fallback": "3♥真实伤害"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.zuzhou.zhongshang.1253",
+                "fallback": "对敌方所有玩家造成"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "color": "gold",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.zuzhou.zhongshang.1256",
+                        "fallback": "禁疗"
+                    },
+                    {
+                        "color": "gray",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.zuzhou.zhongshang.1257",
+                        "fallback": " 持续至下回合结束"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.zuzhou.zhongshang.1255",
+                "fallback": "施加"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "dark_gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.zuzhou.zhongshang.1258",
+                "fallback": "禁疗:非瞬间治疗的治疗效果失效"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "dark_gray",
+                "italic": true,
+                "translate": "json.kards.dialog.paiku.fashu.yingyuzhili.373",
+                "fallback": "PVP回合禁用"
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.zuzhou.chengmo.1232",
+            "fallback": "返回§c诅咒§a牌库"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/zuzhou/main"
+        }
+    }
+}

@@ -1,7 +1,7 @@
-# 热血吸收
 
-scoreboard players add @s yanyangdajian_jisha 1
-execute as @s[scores={yanyangdajian_jisha=3..}] run effect give @s absorption 120 0 true
-execute as @s[scores={yanyangdajian_jisha=3..}] run scoreboard players set @s yanyangdajian_jisha 0
+#沸血
 
-advancement revoke @s only kards:shenqi/yanyangdajian
+execute if entity @s[team=red] run summon marker ~ ~ ~ {Tags:["marker_feixue","red"]}
+execute if entity @s[team=blue] run summon marker ~ ~ ~ {Tags:["marker_feixue","blue"]}
+#execute store result entity @n[tag=marker_feixue,type=marker] UUID int 1 run data get entity @s UUID
+tag @s add hurt_for_feixue

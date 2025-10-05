@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:music_disc_strad",
+            "count": 1
+        },
+        "title": {
+            "translate": "json.kards.advancement.advancement.first_join_game.3",
+            "fallback": "GSkard"
+        },
+        "description": {
+            "translate": "json.kards.advancement.advancement.first_join_game.4",
+            "fallback": "你管这叫卡牌对战?"
+        },
+        "background": "minecraft:block/chiseled_tuff_bricks",
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:tick"
+        }
+    },
+    "rewards": {
+        "function": "kards:advancement/first_join_game"
+    }
+}

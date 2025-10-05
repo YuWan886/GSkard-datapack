@@ -1,0 +1,96 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "extra": [
+            {
+                "color": "dark_green",
+                "translate": "json.kards.dialog.paiku.juntuan.main.505",
+                "fallback": "行尸走肉"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.227",
+        "fallback": "5K "
+    },
+    "external_title": {
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "music_disc_cat"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "gold",
+                        "translate": "json.kards.dialog.paiku.jiben.jiangshi.401",
+                        "fallback": " 僵尸"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.449",
+                "fallback": "召唤4只"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "blue",
+                        "translate": "json.kards.dialog.paiku.juntuan.xingshizourou.591",
+                        "fallback": " 基本牌"
+                    },
+                    {
+                        "color": "gray",
+                        "translate": "json.kards.dialog.paiku.juntuan.xingshizourou.592",
+                        "fallback": " 召唤的僵尸"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.juntuan.fengyongerzhi.474",
+                "fallback": "若场上存在"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "gold",
+                        "translate": "json.kards.dialog.paiku.juntuan.xingshizourou.593",
+                        "fallback": " 小僵尸"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.juntuan.errenchengjun.471",
+                "fallback": "改为召唤4只"
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.455",
+            "fallback": "返回§d军团牌§a牌库"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/juntuan/main"
+        }
+    }
+}

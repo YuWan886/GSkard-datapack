@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:redstone",
+            "count": 1
+        },
+        "title": {
+            "translate": "json.kards.advancement.advancement.jinzijue.banbuxian.27",
+            "fallback": "半步仙"
+        },
+        "description": {
+            "translate": "json.kards.advancement.advancement.jinzijue.banbuxian.28",
+            "fallback": "禁字决层数达到7层"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "parent": "kards:advancement/jinzijue/first_use",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "rewards": {
+        "function": "kards:advancement/jinzijue/banbuxian"
+    }
+}

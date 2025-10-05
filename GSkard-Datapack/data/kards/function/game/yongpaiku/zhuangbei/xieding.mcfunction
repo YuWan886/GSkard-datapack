@@ -1,8 +1,8 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.yongpaiku.template.1",color:"gold"},{translate: "game.yongpaiku.zhuangbei.xieding.1",color:"gold"}]
-give @s minecraft:lightning_rod[item_name={translate: "game.yongpaiku.zhuangbei.xieding.2",color:"gray"},lore=[[{translate: "game.yongpaiku.zhuangbei.bianxiehuosai.3",color:"gray",italic:false}],[{translate: "game.end.reset.11",color:"gray",italic:false}],[{translate: "game.yongpaiku.zhuangbei.bianxiehuosai.4",color:"gray",italic:false}],[{translate: "game.yongpaiku.zhuangbei.xieding.3",color:"blue",italic:false}]],max_stack_size=1,custom_data={kards:'鞋钉'}]
+function kards:game/yongpaiku/use_general/kard_general
+
+
+
+give @s minecraft:lightning_rod[custom_name={italic:false,translate: "json.kards.dialog.paiku.zhuangbei.main.1206", fallback: "鞋钉",color:"gray"},lore=[[{translate: "kards.function.game.yongpaiku.zhuangbei.bianxiehuosai.1", fallback: "放在背包最右侧一列佩戴 同个配件只生效一个",color:"gray",italic:false}],[{translate: "json.kards.dialog.first_join.1.71", fallback: "",color:"gray",italic:false}],[{translate: "kards.function.game.yongpaiku.zhuangbei.bianxiehuosai.2", fallback: "佩戴时：",color:"gray",italic:false}],[{translate: "kards.function.game.yongpaiku.zhuangbei.xieding.1", fallback: "+0.2 击退抗性",color:"blue",italic:false}]],max_stack_size=1,custom_data={kards:'鞋钉'}]
 
 item replace entity @s weapon.offhand with air
 scoreboard players operation @s kardCount -= #kard_xieding kardCount
-scoreboard players remove @s[scores={kujie=1..}] kardCount 1
-scoreboard players set @s pingbi 0
-scoreboard players add @s use_kard 1

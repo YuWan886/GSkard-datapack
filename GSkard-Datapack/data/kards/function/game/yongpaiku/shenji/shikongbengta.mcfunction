@@ -1,8 +1,11 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.yongpaiku.template.1",color:"gold"},{translate: "game.yongpaiku.shenji.shikongbengta.1",color:"white",hover_event:{action:"show_text","value":"清除双方所有非玩家生物"}}]
-function kards:game/yongpaiku/xianjin/jiance/shenjijiance
-kill @e[type=!player,type=!marker,type=!#kards:display]
+function kards:game/yongpaiku/use_general/kard_general
+
+
+function kards:game/yongpaiku/xianjing/jiance/shenjijiance
+
+execute if entity @s[team=red] if entity @e[team=red,type=warden] run advancement grant @a[team=blue] only kards:advancement/zhenshiyouqudecelue
+execute if entity @s[team=blue] if entity @e[team=blue,type=warden] run advancement grant @a[team=red] only kards:advancement/zhenshiyouqudecelue
+
+kill @e[type=!player,type=!marker,type=!#kards:display,type=!creaking]
 item replace entity @s weapon.offhand with air
 scoreboard players operation @s kardCount -= #kard_shikongbengta kardCount
-scoreboard players remove @s[scores={kujie=1..}] kardCount 1
-scoreboard players set @s pingbi 0
-scoreboard players add @s use_kard 1

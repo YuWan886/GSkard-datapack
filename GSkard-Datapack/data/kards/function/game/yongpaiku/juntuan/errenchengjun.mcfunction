@@ -1,14 +1,16 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.yongpaiku.template.1",color:"gold"},{translate: "game.yongpaiku.juntuan.errenchengjun.1",color:"dark_green",hover_event:{action:"show_text","value":"在敌方召唤两只史莱姆"}}]
+function kards:game/yongpaiku/use_general/kard_general
+execute if entity @s[team=red] at @e[tag=blue_marker_6] run summon slime ~ 0 ~ {Size:4,Team:red,Tags:["Mob_Start"]}
+execute if entity @s[team=red] at @e[tag=blue_marker_8] run summon slime ~ 0 ~ {Size:4,Team:red,Tags:["Mob_Start"]}
+execute if entity @s[team=red] unless entity @e[team=red,type=!player,tag=!tuteng,tag=!Mob_Start] at @e[tag=blue_marker_4] run summon slime ~ 0 ~ {Size:4,Team:red,Tags:["Mob_Start"]}
+execute if entity @s[team=red] unless entity @e[team=red,type=!player,tag=!tuteng,tag=!Mob_Start] at @e[tag=blue_marker_10] run summon slime ~ 0 ~ {Size:4,Team:red}
 
-    #红队用
-    execute if entity @s[team=red] as @e[tag=6r] at @s run summon slime ~ 0 ~ {Size:5,Team:red}
-    execute if entity @s[team=red] as @e[tag=8r] at @s run summon slime ~ 0 ~ {Size:5,Team:red}
-    #蓝队用
-    execute if entity @s[team=blue] as @e[tag=6b] at @s run summon slime ~ 0 ~ {Size:5,Team:blue}
-    execute if entity @s[team=blue] as @e[tag=8b] at @s run summon slime ~ 0 ~ {Size:5,Team:blue}
-function kards:game/yongpaiku/xianjin/jiance/mobjiance
+execute if entity @s[team=blue] at @e[tag=red_marker_6] run summon slime ~ 0 ~ {Size:4,Team:blue,Tags:["Mob_Start"]}
+execute if entity @s[team=blue] at @e[tag=red_marker_8] run summon slime ~ 0 ~ {Size:4,Team:blue,Tags:["Mob_Start"]}
+execute if entity @s[team=blue] unless entity @e[team=blue,type=!player,tag=!tuteng,tag=!Mob_Start] at @e[tag=red_marker_4] run summon slime ~ 0 ~ {Size:4,Team:blue,Tags:["Mob_Start"]}
+execute if entity @s[team=blue] unless entity @e[team=blue,type=!player,tag=!tuteng,tag=!Mob_Start] at @e[tag=red_marker_10] run summon slime ~ 0 ~ {Size:4,Team:blue}
+
+tag @e[tag=Mob_Start] remove Mob_Start
+
+function kards:game/yongpaiku/xianjing/jiance/mobjiance
 item replace entity @s weapon.offhand with air
 scoreboard players operation @s kardCount -= #kard_errenchengjun kardCount
-scoreboard players remove @s[scores={kujie=1..}] kardCount 1
-scoreboard players set @s pingbi 0
-scoreboard players add @s use_kard 1

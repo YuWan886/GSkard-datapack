@@ -1,0 +1,35 @@
+{
+  "model": {
+    "type": "condition",
+    "on_false": {
+      "type": "model",
+      "model": "kards:kingbox/light_feather/elysia"
+    },
+    "on_true": {
+      "type": "range_dispatch",
+      "entries": [
+        {
+          "model": {
+            "type": "model",
+            "model": "kards:kingbox/light_feather/elysia_1"
+          },
+          "threshold": 0.65
+        },
+        {
+          "model": {
+            "type": "model",
+            "model": "kards:kingbox/light_feather/elysia_2"
+          },
+          "threshold": 0.9
+        }
+      ],
+      "fallback": {
+        "type": "model",
+        "model": "kards:kingbox/light_feather/elysia_0"
+      },
+      "property": "use_duration",
+      "scale": 0.05
+    },
+    "property": "using_item"
+  }
+}

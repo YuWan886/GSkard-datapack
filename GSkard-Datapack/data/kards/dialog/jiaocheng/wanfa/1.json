@@ -1,0 +1,321 @@
+{
+    "type": "minecraft:multi_action",
+    "title": {
+        "type": "text",
+        "color": "gray",
+        "bold": true,
+        "translate": "json.kards.dialog.jiaocheng.main.107",
+        "fallback": "获取卡牌信息"
+    },
+    "external_title": {
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:music_disc_mall",
+                "components": {
+                    "item_name": [
+                        {
+                            "color": "aqua",
+                            "italic": false,
+                            "translate": "json.kards.dialog.jiaocheng.wanfa.1.113",
+                            "fallback": "2K"
+                        },
+                        {
+                            "translate": "json.kards.dialog.jiaocheng.wanfa.1.114",
+                            "fallback": " "
+                        },
+                        {
+                            "color": "blue",
+                            "italic": false,
+                            "translate": "json.kards.dialog.jiaocheng.wanfa.1.115",
+                            "fallback": "苦力怕"
+                        }
+                    ],
+                    "lore": [
+                        {
+                            "color": "blue",
+                            "italic": false,
+                            "translate": "json.kards.dialog.jiaocheng.wanfa.1.116",
+                            "fallback": "基本牌"
+                        },
+                        [
+                            {
+                                "color": "gray",
+                                "italic": false,
+                                "translate": "json.kards.dialog.jiaocheng.wanfa.1.117",
+                                "fallback": "召唤一只"
+                            },
+                            {
+                                "color": "gold",
+                                "italic": false,
+                                "translate": "json.kards.dialog.jiaocheng.wanfa.1.115",
+                                "fallback": "苦力怕"
+                            }
+                        ]
+                    ],
+                    "tooltip_display": {
+                        "hidden_components": [
+                            "jukebox_playable"
+                        ]
+                    },
+                    "custom_data": {
+                        "kards": "苦力怕",
+                        "K": 2
+                    },
+                    "tooltip_style": "kards:kard/common"
+                }
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 512,
+            "contents": {
+                "color": "gold",
+                "bold": true,
+                "extra": [
+                    {
+                        "color": "gray",
+                        "bold": true,
+                        "translate": "json.kards.dialog.jiaocheng.wanfa.1.119",
+                        "fallback": "你可以将鼠标指向上方的卡牌查看\n\n"
+                    },
+                    {
+                        "color": "gray",
+                        "translate": "json.kards.dialog.jiaocheng.wanfa.1.120",
+                        "fallback": "| 如上方这一张卡 打开背包指向它我们可以知道如下信息\n\n"
+                    },
+                    {
+                        "color": "gray",
+                        "extra": [
+                            {
+                                "color": "aqua",
+                                "translate": "json.kards.dialog.jiaocheng.wanfa.1.122",
+                                "fallback": "2K                                       \n\n"
+                            }
+                        ],
+                        "translate": "json.kards.dialog.jiaocheng.wanfa.1.121",
+                        "fallback": "· 花费:"
+                    },
+                    {
+                        "color": "gray",
+                        "extra": [
+                            {
+                                "color": "blue",
+                                "translate": "json.kards.dialog.jiaocheng.wanfa.1.124",
+                                "fallback": "苦力怕                                    \n\n"
+                            }
+                        ],
+                        "translate": "json.kards.dialog.jiaocheng.wanfa.1.123",
+                        "fallback": "· 牌名:"
+                    },
+                    {
+                        "color": "gray",
+                        "extra": [
+                            {
+                                "color": "blue",
+                                "translate": "json.kards.dialog.jiaocheng.wanfa.1.126",
+                                "fallback": "基本牌                                    \n\n"
+                            }
+                        ],
+                        "translate": "json.kards.dialog.jiaocheng.wanfa.1.125",
+                        "fallback": "· 牌种:"
+                    },
+                    {
+                        "color": "gray",
+                        "extra": [
+                            {
+                                "color": "gold",
+                                "translate": "json.kards.dialog.jiaocheng.wanfa.1.128",
+                                "fallback": "苦力怕                            "
+                            }
+                        ],
+                        "translate": "json.kards.dialog.jiaocheng.wanfa.1.127",
+                        "fallback": "· 效果:召唤一只"
+                    }
+                ],
+                "translate": "json.kards.dialog.jiaocheng.wanfa.1.118",
+                "fallback": "\n我如何了解一张卡牌?\n\n\n"
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 512,
+            "contents": {
+                "color": "gray",
+                "bold": true,
+                "extra": [
+                    {
+                        "color": "gray",
+                        "bold": true,
+                        "translate": "json.kards.dialog.jiaocheng.wanfa.1.130",
+                        "fallback": "· "
+                    },
+                    {
+                        "color": "red",
+                        "bold": true,
+                        "translate": "json.kards.dialog.jiaocheng.wanfa.1.131",
+                        "fallback": "[红队]Hart_GS"
+                    },
+                    {
+                        "color": "gray",
+                        "translate": "json.kards.dialog.jiaocheng.wanfa.1.132",
+                        "fallback": "使用了"
+                    },
+                    {
+                        "color": "blue",
+                        "hover_event": {
+                            "action": "show_text",
+                            "value": [
+                                {
+                                    "color": "blue",
+                                    "italic": false,
+                                    "translate": "json.kards.dialog.jiaocheng.wanfa.1.134",
+                                    "fallback": "基本牌\n"
+                                },
+                                [
+                                    {
+                                        "color": "gray",
+                                        "italic": false,
+                                        "translate": "json.kards.dialog.jiaocheng.wanfa.1.117",
+                                        "fallback": "召唤一只"
+                                    },
+                                    {
+                                        "color": "gold",
+                                        "italic": false,
+                                        "translate": "json.kards.dialog.jiaocheng.wanfa.1.115",
+                                        "fallback": "苦力怕"
+                                    }
+                                ]
+                            ]
+                        },
+                        "extra": [
+                            {
+                                "translate": "json.kards.dialog.jiaocheng.wanfa.1.135",
+                                "fallback": "                 \n\n\n\n"
+                            }
+                        ],
+                        "translate": "json.kards.dialog.jiaocheng.wanfa.1.133",
+                        "fallback": "[苦力怕]"
+                    },
+                    {
+                        "color": "gray",
+                        "extra": [
+                            {
+                                "color": "blue",
+                                "translate": "json.kards.dialog.jiaocheng.wanfa.1.133",
+                                "fallback": "[苦力怕]"
+                            },
+                            {
+                                "color": "gray",
+                                "translate": "json.kards.dialog.jiaocheng.wanfa.1.137",
+                                "fallback": "这段文字来获取这张卡的信息\n"
+                            }
+                        ],
+                        "translate": "json.kards.dialog.jiaocheng.wanfa.1.136",
+                        "fallback": "你可以把鼠标指向"
+                    }
+                ],
+                "translate": "json.kards.dialog.jiaocheng.wanfa.1.129",
+                "fallback": "\n| 当玩家使用了上方卡牌时 聊天消息会弹出类似信息   \n\n"
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 512,
+            "contents": {
+                "color": "gray",
+                "bold": true,
+                "extra": [
+                    {
+                        "color": "gold",
+                        "bold": true,
+                        "translate": "json.kards.dialog.jiaocheng.wanfa.1.139",
+                        "fallback": "暂停菜单"
+                    },
+                    {
+                        "color": "gray",
+                        "bold": true,
+                        "translate": "json.kards.dialog.jiaocheng.wanfa.1.140",
+                        "fallback": "以直接进入对应的牌库界面查看所有牌\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+                    }
+                ],
+                "translate": "json.kards.dialog.jiaocheng.wanfa.1.138",
+                "fallback": "          | 此外 你还可以通过"
+            }
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "actions": [
+        {
+            "label": {
+                "color": "gold",
+                "translate": "json.kards.dialog.jiaocheng.main.107",
+                "fallback": "获取卡牌信息"
+            },
+            "width": 125,
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:jiaocheng/wanfa/1"
+            }
+        },
+        {
+            "label": {
+                "color": "gold",
+                "translate": "json.kards.dialog.jiaocheng.main.108",
+                "fallback": "使用卡牌"
+            },
+            "width": 125,
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:jiaocheng/wanfa/2"
+            }
+        },
+        {
+            "label": {
+                "color": "gold",
+                "translate": "json.kards.dialog.jiaocheng.main.109",
+                "fallback": "资源获取"
+            },
+            "width": 125,
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:jiaocheng/wanfa/3"
+            }
+        },
+        {
+            "label": {
+                "color": "gold",
+                "translate": "json.kards.dialog.jiaocheng.main.110",
+                "fallback": "回合信息"
+            },
+            "width": 125,
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:jiaocheng/wanfa/4"
+            }
+        }
+    ],
+    "columns": 4,
+    "exit_action": {
+        "label": {
+            "color": "gold",
+            "translate": "json.kards.dialog.jiaocheng.main.111",
+            "fallback": "完成教程"
+        },
+        "tooltip": {
+            "color": "gray",
+            "translate": "json.kards.dialog.jiaocheng.main.112",
+            "fallback": "请确保阅读完毕"
+        },
+        "width": 125,
+        "action": {
+            "type": "minecraft:run_command",
+            "command": "trigger dialog set 2"
+        }
+    }
+}

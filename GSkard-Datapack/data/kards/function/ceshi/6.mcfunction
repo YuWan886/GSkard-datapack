@@ -1,0 +1,13 @@
+execute store result score @s Talent_Random_1 run random value 1..20
+execute store result score @s Talent_Random_2 run random value 1..20
+execute store result score @s Talent_Random_3 run random value 1..20
+execute store result score @s Talent_Random_4 run random value 1..20
+execute store result score @s Talent_Random_5 run random value 1..20
+execute store result score @s Talent_Random_6 run random value 1..20
+execute store result score @s Talent_Random_7 run random value 1..20
+execute store result score @s Talent_Random_8 run random value 1..20
+execute store result score @s Talent_Random_9 run random value 1..20
+
+
+
+tellraw @a [{translate: "kards.function.ceshi.5.1", fallback: "9个数分别是:"},{score:{name:"@s",objective:"Talent_Random_1"}},{translate: "kards.function.ceshi.4.2", fallback: " | "},{score:{name:"@s",objective:"Talent_Random_2"}},{translate: "kards.function.ceshi.4.2", fallback: " | "},{score:{name:"@s",objective:"Talent_Random_3"}},{translate: "kards.function.ceshi.4.2", fallback: " | "},{score:{name:"@s",objective:"Talent_Random_4"}},{translate: "kards.function.ceshi.4.2", fallback: " | "},{score:{name:"@s",objective:"Talent_Random_5"}},{translate: "kards.function.ceshi.4.2", fallback: " | "},{score:{name:"@s",objective:"Talent_Random_6"}},{translate: "kards.function.ceshi.4.2", fallback: " | "},{score:{name:"@s",objective:"Talent_Random_7"}},{translate: "kards.function.ceshi.4.2", fallback: " | "},{score:{name:"@s",objective:"Talent_Random_8"}},{translate: "kards.function.ceshi.4.2", fallback: " | "},{score:{name:"@s",objective:"Talent_Random_9"}}]

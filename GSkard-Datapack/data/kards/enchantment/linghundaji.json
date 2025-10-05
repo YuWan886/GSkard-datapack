@@ -1,0 +1,30 @@
+{
+    "description": "§5灵魂打击",
+    "supported_items": "#kards:melee_weapon",
+    "weight": 1,
+    "max_level": 4,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": [
+        "mainhand"
+    ],
+    "effects": {
+        "minecraft:post_attack": [
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "kards:enchantment/linghundaji/1"
+                },
+                "enchanted": "attacker",
+                "affected": "victim"
+            }
+        ]
+    }
+}

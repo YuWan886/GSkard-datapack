@@ -1,0 +1,12 @@
+[
+    {
+        "function": "minecraft:set_enchantments",
+        "enchantments": {
+            "minecraft:knockback": {
+                "min": 1,
+                "max": 4
+            }
+        },
+        "add": true
+    }
+]

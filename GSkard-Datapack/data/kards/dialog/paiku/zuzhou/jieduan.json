@@ -1,0 +1,63 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "extra": [
+            {
+                "color": "dark_gray",
+                "translate": "json.kards.dialog.paiku.zuzhou.jieduan.1239",
+                "fallback": "截断"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.chongzhu.237",
+        "fallback": "2K "
+    },
+    "external_title": {
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "music_disc_stal"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "dark_gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.main.223",
+                "fallback": "诅咒牌"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.zuzhou.jieduan.1240",
+                "fallback": "给敌方玩家施加挖掘疲劳 持续20s"
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.zuzhou.chengmo.1232",
+            "fallback": "返回§c诅咒§a牌库"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/zuzhou/main"
+        }
+    }
+}

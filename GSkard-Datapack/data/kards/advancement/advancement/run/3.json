@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:player_head",
+            "count": 1
+        },
+        "title": {
+            "translate": "json.kards.advancement.advancement.run.3.53",
+            "fallback": "跑酷高手3.0"
+        },
+        "description": {
+            "translate": "json.kards.advancement.advancement.run.3.54",
+            "fallback": "在20s内完成跑酷"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "parent": "kards:advancement/run/2",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "rewards": {
+        "function": "kards:advancement/run/3"
+    }
+}

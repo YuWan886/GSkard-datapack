@@ -1,0 +1,24 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "player": {
+                    "equipment": {
+                        "chest": {
+                            "components": {
+                                "minecraft:custom_data": "{kards:'天神石板甲'}"
+                            }
+                        }
+                    }
+                },
+                "entity": {
+                    "type": "player"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "kards:game/yongpaiku/shenji/wangzhibaoku/tianshenshibanjia/killed_player"
+    }
+}

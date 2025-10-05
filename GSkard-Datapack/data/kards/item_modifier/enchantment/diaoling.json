@@ -1,0 +1,12 @@
+[
+    {
+        "function": "minecraft:set_enchantments",
+        "enchantments": {
+            "kards:diaoling": {
+                "min": 1,
+                "max": 2
+            }
+        },
+        "add": true
+    }
+]

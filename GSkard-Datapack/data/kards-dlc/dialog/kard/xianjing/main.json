@@ -1,0 +1,34 @@
+{
+    "type": "minecraft:multi_action",
+    "title": {
+        "color": "dark_aqua",
+        "bold": true,
+        "translate": "json.kards-dlc.dialog.kard.xianjing.main.1375",
+        "fallback": "陷阱-§5DLC"
+    },
+    "exit_action": {
+        "label": {
+            "color": "green",
+            "translate": "json.kards-dlc.dialog.kard.xianjing.main.1376",
+            "fallback": "返回§6主§a牌库-§3陷阱"
+        },
+        "action": {
+            "type": "show_dialog",
+            "dialog": "kards:paiku/xianjing/main"
+        }
+    },
+    "columns": 5,
+    "actions": [
+        {
+            "label": {
+                "color": "dark_aqua",
+                "translate": "json.kards-dlc.dialog.kard.xianjing.main.1377",
+                "fallback": "模板：陷阱"
+            },
+            "action": {
+                "type": "show_dialog",
+                "dialog": "kards-dlc:kard/xianjing/template_xianjing"
+            }
+        }
+    ]
+}

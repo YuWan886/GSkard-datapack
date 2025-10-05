@@ -1,9 +1,0 @@
-[
-    {
-        "function": "minecraft:set_enchantments",
-        "enchantments": {
-            "kards:shiming": 1
-        },
-        "add": true
-    }
-]

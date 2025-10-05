@@ -1,0 +1,10 @@
+{
+    "condition": "minecraft:match_tool",
+    "predicate": {
+        "components": {
+            "minecraft:enchantments": {
+                "kards:liansuo": 5
+            }
+        }
+    }
+}

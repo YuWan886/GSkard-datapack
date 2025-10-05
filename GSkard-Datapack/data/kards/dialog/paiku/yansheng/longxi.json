@@ -1,0 +1,66 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "color": "gold",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.yansheng.longxi.1123",
+        "fallback": "龙息"
+    },
+    "external_title": {
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "dragon_breath"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.yansheng.longxi.1124",
+                "fallback": "F键使用 一次性物品"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.yansheng.longxi.1125",
+                "fallback": "净化队伍玩家负面效果"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.yansheng.longxi.1126",
+                "fallback": "周围敌对怪物获得飘浮"
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.yansheng.jinzijue.1116",
+            "fallback": "返回§7其他"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/yansheng/main"
+        }
+    }
+}

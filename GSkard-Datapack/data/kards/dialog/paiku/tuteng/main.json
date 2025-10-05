@@ -1,0 +1,198 @@
+{
+    "type": "minecraft:multi_action",
+    "title": {
+        "color": "red",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.tuteng.main.710",
+        "fallback": "图腾"
+    },
+    "external_title": {
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
+    },
+    "body": [],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "exit_action": {
+        "label": {
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.fashu.main.290",
+            "fallback": "返回§6主§a牌库"
+        },
+        "action": {
+            "type": "show_dialog",
+            "dialog": "kards:paiku/main"
+        }
+    },
+    "columns": 5,
+    "actions": [
+        {
+            "label": {
+                "color": "red",
+                "translate": "json.kards.dialog.paiku.tuteng.baomao.680",
+                "fallback": "豹猫"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/tuteng/baomao"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "red",
+                "translate": "json.kards.dialog.paiku.tuteng.cunmin.690",
+                "fallback": "村民"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/tuteng/cunmin"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "red",
+                "translate": "json.kards.dialog.paiku.tuteng.haigui.700",
+                "fallback": "海龟"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/tuteng/haigui"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "red",
+                "translate": "json.kards.dialog.paiku.tuteng.ji.704",
+                "fallback": "鸡"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/tuteng/ji"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "red",
+                "translate": "json.kards.dialog.paiku.tuteng.liulangshangren.708",
+                "fallback": "流浪商人"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/tuteng/liulangshangren"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "red",
+                "translate": "json.kards.dialog.paiku.tuteng.main.711",
+                "fallback": "蘑菇牛"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/tuteng/moguniu"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "red",
+                "translate": "json.kards.dialog.paiku.tuteng.main.712",
+                "fallback": "牛"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/tuteng/niu"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "red",
+                "translate": "json.kards.dialog.paiku.tuteng.main.713",
+                "fallback": "培养尸"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/tuteng/peiyangshi"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "red",
+                "translate": "json.kards.dialog.paiku.tuteng.main.714",
+                "fallback": "铁傀儡"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/tuteng/tiekuilei"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "red",
+                "translate": "json.kards.dialog.paiku.tuteng.main.715",
+                "fallback": "兔"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/tuteng/tu"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "red",
+                "translate": "json.kards.dialog.paiku.tuteng.main.716",
+                "fallback": "羊"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/tuteng/yang"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "red",
+                "translate": "json.kards.dialog.paiku.tuteng.main.717",
+                "fallback": "侦测贝"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/tuteng/zhencebei"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "red",
+                "translate": "json.kards.dialog.paiku.tuteng.main.718",
+                "fallback": "猪"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/tuteng/zhu"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "red",
+                "translate": "json.kards.dialog.paiku.fashu.main.321",
+                "fallback": "DLC"
+            },
+            "action": {
+                "type": "show_dialog",
+                "dialog": "kards-dlc:kard/tuteng/main"
+            },
+            "width": 75
+        }
+    ]
+}

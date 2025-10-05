@@ -1,5 +1,11 @@
-tellraw @s {translate: "game.yongpaiku.yansheng.totem.hundun.4.1",color: "dark_gray"}
-execute if entity @s[team=red] at @s[distance=..5] run team join red @e[distance=..5,type=!player,tag=!tuteng,type=!marker]
-execute if entity @s[team=blue] at @s[distance=..5] run team join blue @e[distance=..5,type=!player,tag=!tuteng,type=!marker]
-execute if entity @s[team=red] at @s[distance=..5] as @e[tag=7r,limit=1] at @s run tp @e[type=!player,tag=!tuteng,type=!marker] ~ -60 ~
-execute if entity @s[team=blue] at @s[distance=..5] as @e[tag=7b,limit=1] at @s run tp @e[type=!player,tag=!tuteng,type=!marker] ~ -60 ~
+
+tellraw @s [{translate: "kards.function.game.paiku.yansheng.busituteng.hundun.6", fallback: " -",color:"gray",italic:false},{translate: "kards.function.game.paiku.yansheng.busituteng.hundun.7", fallback: "冻结 ",color:"aqua",italic:false},{translate: "kards.function.game.paiku.yansheng.busituteng.hundun.8", fallback: "点燃",color:"dark_red",italic:false},{translate: "kards.function.game.paiku.yansheng.busituteng.hundun.9", fallback: "6格内敌对生物7.5s",color:"gray",italic:false}]
+#冰冻
+execute if entity @s[team=red] run scoreboard players add @e[distance=..6,team=blue,gamemode=!spectator] DongJie 150
+
+execute if entity @s[team=blue] run scoreboard players add @e[distance=..6,team=red,gamemode=!spectator] DongJie 150
+
+execute at @s run playsound minecraft:entity.player.hurt_freeze player @a[distance=..20] ~ ~ ~ 100 0
+#点燃
+execute if entity @s[team=red] run scoreboard players add @e[distance=..6,tag=!tuteng,team=blue,gamemode=!spectator] Fire 150
+execute if entity @s[team=blue] run scoreboard players add @e[distance=..6,tag=!tuteng,team=red,gamemode=!spectator] Fire 150

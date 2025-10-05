@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:lantern",
+            "count": 1
+        },
+        "title": {
+            "translate": "json.kards.advancement.advancement.wuxiuzhihuo.1.61",
+            "fallback": "无休复苏"
+        },
+        "description": {
+            "translate": "json.kards.advancement.advancement.wuxiuzhihuo.1.62",
+            "fallback": "无休止火的“无休”点数达到180点"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "kards:advancement/jiaocheng",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "rewards": {
+        "function": "kards:advancement/wuxiuzhihuo/1"
+    }
+}

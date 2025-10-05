@@ -1,0 +1,354 @@
+{
+    "type": "minecraft:multi_action",
+    "title": {
+        "color": "blue",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.jiben.main.413",
+        "fallback": "基本"
+    },
+    "external_title": {
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
+    },
+    "body": [],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "exit_action": {
+        "label": {
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.fashu.main.290",
+            "fallback": "返回§6主§a牌库"
+        },
+        "action": {
+            "type": "show_dialog",
+            "dialog": "kards:paiku/main"
+        }
+    },
+    "columns": 5,
+    "actions": [
+        {
+            "label": {
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.jiben.jiangshi.400",
+                "fallback": "僵尸"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/jiben/jiangshi"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.jiben.diaolingkulou.394",
+                "fallback": "凋零骷髅"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/jiben/diaolingkulou"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.jiben.ehun.398",
+                "fallback": "恶魂"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/jiben/ehun"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.jiben.juduzhizhu.402",
+                "fallback": "剧毒蜘蛛"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/jiben/juduzhizhu"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "blue",
+                "translate": "json.kards.dialog.jiaocheng.wanfa.1.115",
+                "fallback": "苦力怕"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/jiben/kulipa"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.jiben.kulou.405",
+                "fallback": "骷髅"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/jiben/kulou"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.jiben.lieyanren.407",
+                "fallback": "烈焰人"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/jiben/lieyanren"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.jiben.liulangzhe.409",
+                "fallback": "流浪者"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/jiben/liulangzhe"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.jiben.mafeng.411",
+                "fallback": "马蜂"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/jiben/mafeng"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.jiben.main.414",
+                "fallback": "蛮兵"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/jiben/manbing"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.jiben.main.415",
+                "fallback": "蜜蜂"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/jiben/mifeng"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.jiben.main.416",
+                "fallback": "末影螨"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/jiben/moyingman"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.jiben.main.417",
+                "fallback": "末影人"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/jiben/moyingren"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.jiben.main.418",
+                "fallback": "恼鬼"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/jiben/naogui"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.jiben.main.419",
+                "fallback": "溺尸"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/jiben/nishi"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.jiben.main.420",
+                "fallback": "女巫"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/jiben/nvwu"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.jiben.main.421",
+                "fallback": "杀手兔"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/jiben/shashoutu"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.jiben.main.422",
+                "fallback": "卫道士"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/jiben/weidaoshi"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.jiben.main.423",
+                "fallback": "无人机"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/jiben/wurenji"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.jiben.main.424",
+                "fallback": "小幻翼"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/jiben/xiaohuanyi"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.jiben.main.425",
+                "fallback": "旋风人"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/jiben/xuanfengren"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.jiben.main.426",
+                "fallback": "疣猪兽"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/jiben/youzhushou"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.jiben.main.427",
+                "fallback": "远古守卫者"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/jiben/yuangushouweizhe"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.jiben.main.428",
+                "fallback": "沼骸"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/jiben/zhaohai"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.jiben.main.429",
+                "fallback": "蜘蛛"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/jiben/zhizhu"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.jiben.main.430",
+                "fallback": "猪灵"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/jiben/zhuling"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.fashu.main.321",
+                "fallback": "DLC"
+            },
+            "action": {
+                "type": "show_dialog",
+                "dialog": "kards-dlc:kard/jiben/main"
+            },
+            "width": 75
+        }
+    ]
+}

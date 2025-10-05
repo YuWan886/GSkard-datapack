@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:note_block",
+            "count": 1
+        },
+        "title": {
+            "translate": "json.kards.advancement.advancement.death_in_chunriying.1",
+            "fallback": "为什么要演奏春日影!?"
+        },
+        "description": {
+            "translate": "json.kards.advancement.advancement.death_in_chunriying.2",
+            "fallback": "在\"春日影\"法术期间死亡"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "kards:advancement/jiaocheng",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "rewards": {
+        "function": "kards:advancement/death_in_chunriying"
+    }
+}

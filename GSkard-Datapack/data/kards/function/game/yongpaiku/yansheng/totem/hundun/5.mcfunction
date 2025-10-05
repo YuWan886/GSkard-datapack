@@ -1,2 +1,12 @@
-tellraw @s {translate: "game.yongpaiku.yansheng.totem.hundun.5.1",color: "dark_gray"}
-give @s minecraft:totem_of_undying[item_name={translate: "game.yongpaiku.yansheng.totem.hundun.5.2",color:"gray"},lore=[{translate: "game.yongpaiku.yansheng.totem.hundun.5.3",color:"gray",italic:false},{translate: "game.yongpaiku.yansheng.totem.hundun.5.4",color:"gray",italic:false}],custom_data={kards:'混沌图腾'}]
+
+tellraw @s [{translate: "kards.function.game.paiku.yansheng.busituteng.hundun.10", fallback: " -将6格内",color:"gray",italic:false},{translate: "kards.function.game.paiku.yansheng.busituteng.hundun.5", fallback: "\"敌对的非玩家生物\"",color:"gray",italic:false},{translate: "kards.function.game.paiku.yansheng.busituteng.hundun.11", fallback: "传送至敌方阵营",color:"gold",italic:false}]
+
+execute if entity @s[team=red] run tag @e[team=blue,type=#kards:mob,tag=!random_creaking,distance=..6] add hunduntuteng_chuansong
+execute if entity @s[team=red] as @e[team=blue,tag=hunduntuteng_chuansong] at @e[tag=blue_marker_7,limit=1] run tp @s ~ 1 ~
+execute if entity @s[team=red] run team join red @e[team=blue,tag=hunduntuteng_chuansong]
+
+execute if entity @s[team=blue] run tag @e[team=red,type=#kards:mob,tag=!random_creaking,distance=..6] add hunduntuteng_chuansong
+execute if entity @s[team=blue] as @e[team=red,tag=hunduntuteng_chuansong] at @e[tag=red_marker_7,limit=1] run tp @s ~ 1 ~
+execute if entity @s[team=blue] run team join blue @e[team=red,tag=hunduntuteng_chuansong]
+
+tag @e[tag=hunduntuteng_chuansong] remove hunduntuteng_chuansong

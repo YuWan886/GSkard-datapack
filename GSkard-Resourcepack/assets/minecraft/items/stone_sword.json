@@ -10,7 +10,7 @@
             {
                 "model": {
                     "type": "model",
-                    "model": "kingbox/the-sword-in-stone"
+                    "model": "kards:kingbox/the-sword-in-stone"
                 },
                 "when": "shizhongjian"
             }

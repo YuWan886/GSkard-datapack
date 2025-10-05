@@ -1,4 +1,4 @@
-execute store result score @s random4 run random value 1..12
+$execute store result score @s random4 run random value 1..$(tuteng)
 execute if score @s random4 matches 1 run function kards:game/paiku/tuteng/yang
 execute if score @s random4 matches 2 run function kards:game/paiku/tuteng/niu
 execute if score @s random4 matches 3 run function kards:game/paiku/tuteng/zhu
@@ -11,5 +11,10 @@ execute if score @s random4 matches 9 run function kards:game/paiku/tuteng/mogun
 execute if score @s random4 matches 10 run function kards:game/paiku/tuteng/liulangshangren
 execute if score @s random4 matches 11 run function kards:game/paiku/tuteng/haigui
 execute if score @s random4 matches 12 run function kards:game/paiku/tuteng/zhencebei
+execute if score @s random4 matches 13 run function kards:game/paiku/tuteng/peiyangshi
+
+execute if score @s random4 matches 14.. run function kards-dlc:kard/type/tuteng/ganeral
+
+
 scoreboard players set @s random4 0
 scoreboard players remove @s tutengcishu 1

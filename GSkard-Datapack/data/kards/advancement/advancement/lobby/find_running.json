@@ -1,0 +1,50 @@
+{
+    "parent": "kards:advancement/lobby/shenmidayedian",
+    "display": {
+        "icon": {
+            "id": "minecraft:golden_horse_armor",
+            "count": 1
+        },
+        "title": {
+            "translate": "json.kards.advancement.advancement.lobby.find_running.37",
+            "fallback": "神秘跑酷点"
+        },
+        "description": {
+            "translate": "json.kards.advancement.advancement.lobby.find_running.38",
+            "fallback": "lengxiaoCN:我会一直看着你的...永远"
+        },
+        "background": "minecraft:block/chiseled_tuff_bricks",
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "position": {
+                            "x": {
+                                "min": 52,
+                                "max": 57
+                            },
+                            "y": {
+                                "min": 232,
+                                "max": 233
+                            },
+                            "z": {
+                                "min": -54,
+                                "max": -48
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "kards:advancement/lobby/find_running"
+    }
+}

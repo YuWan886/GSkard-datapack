@@ -1,0 +1,86 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.yansheng.busituteng.dongjie.1146",
+        "fallback": "冻结图腾"
+    },
+    "external_title": {
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "totem_of_undying"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.yansheng.busituteng.baonu.1140",
+                "fallback": "触发后"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "dark_green",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.yansheng.busituteng.baonu.1141",
+                "fallback": " ♥+20 60s"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "dark_green",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.yansheng.busituteng.baonu.1142",
+                "fallback": " ♥+10"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "aqua",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.yansheng.busituteng.dongjie.1147",
+                "fallback": " 冻结6格内敌对生物10s"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "dark_gray",
+                "italic": true,
+                "translate": "json.kards.dialog.paiku.yansheng.busituteng.dongjie.1148",
+                "fallback": " 冻结:无法移动和攻击,每1.25s受到5♥冰冻伤害"
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.yansheng.jinzijue.1116",
+            "fallback": "返回§7其他"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/yansheng/busituteng/main"
+        }
+    }
+}

@@ -1,0 +1,1 @@
+execute if items entity @s weapon.offhand #kards:kard[custom_data~{kards:'模板：军团'}] if score @s kardCount >= #kard_template_juntuan kardCount run function kards-dlc:kard/type/juntuan/template_juntuan/use

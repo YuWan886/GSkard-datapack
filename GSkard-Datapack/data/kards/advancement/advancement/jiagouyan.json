@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:bone",
+            "count": 1
+        },
+        "title": {
+            "translate": "json.kards.advancement.advancement.jiagouyan.7",
+            "fallback": "六百六十六磕到甲沟炎了"
+        },
+        "description": {
+            "translate": "json.kards.advancement.advancement.jiagouyan.8",
+            "fallback": "“成功”地摔死!"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "kards:advancement/jiaocheng",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "rewards": {
+        "function": "kards:advancement/jiagouyan"
+    }
+}

@@ -1,7 +1,7 @@
-#懒得重写图案了 以前做的图案网站也不记得了 于是用的item replace from block
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.yongpaiku.template.1",color:"gold"},{translate: "game.yongpaiku.zhuangbei.dunpai.1",color:"gold"}]
-item replace entity @s weapon.offhand from block 7 -60 -48 container.8
+function kards:game/yongpaiku/use_general/kard_general
+
+
+
+#禁用时间为5s*disable_cooldown_scale
+item replace entity @s weapon.offhand with minecraft:shield[custom_name=[{translate: "json.kards.dialog.paiku.zhuangbei.dunpai.1182", fallback: "盾牌",color:"gold",italic:false}],lore=[{translate: "json.kards.dialog.first_join.1.71", fallback: ""},{translate: "kards.function.game.yongpaiku.zhuangbei.dunpai.1", fallback: "使用时",color:"gray",italic:false},{translate: "kards.function.game.yongpaiku.zhuangbei.dunpai.2", fallback: "0.8s 禁用时间",color:"blue",italic:false},{translate: "kards.function.game.yongpaiku.zhuangbei.dunpai.3", fallback: "90 格挡范围",color:"blue",italic:false}],blocks_attacks={"block_delay_seconds":0,"disable_cooldown_scale":0.16,"damage_reductions": [{"base": 0,"factor": 1,"horizontal_blocking_angle": 90}]},unbreakable={},banner_patterns=[{pattern:"minecraft:gradient_up",color:"gray"},{pattern:"globe",color:"black"},{pattern:"border",color:"black"}],custom_data={kards:'盾牌'},max_stack_size=1,tooltip_display={hidden_components:["unbreakable","banner_patterns"]}]
 scoreboard players operation @s kardCount -= #kard_dunpai kardCount
-scoreboard players remove @s[scores={kujie=1..}] kardCount 1
-scoreboard players set @s pingbi 0
-scoreboard players add @s use_kard 1

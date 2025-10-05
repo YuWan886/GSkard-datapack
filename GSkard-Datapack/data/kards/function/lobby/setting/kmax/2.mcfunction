@@ -1,5 +1,5 @@
 scoreboard players set #system kardCountmax 2
-tellraw @a [{translate: "lobby.setting.choupai.11and15.1.1",color: "gold"},{translate: "lobby.setting.kmax.1.1",color: "green"},{translate: "lobby.setting.kmax.2.1",color: "gold"}]
+tellraw @a [{translate: "kards.function.lobby.setting.choupai.11and15.1.1", fallback: "提示:",color: "gold"},{translate: "kards.function.lobby.setting.kmax.1.1", fallback: "每回合Kmax增加变为",color: "green"},{translate: "json.kards.dialog.first_join.1.83", fallback: "2",color: "gold"}]
 execute as @a at @s run playsound minecraft:block.amethyst_block.hit player @s ~ ~ ~ 100 2
 setblock 99 228 -29 air
-setblock 99 228 -29 minecraft:oak_wall_sign[facing=south]{front_text:{messages:[{click_event:{action:"run_command",command:"/function kards:lobby/setting/kmax/3"},color:"gold",translate: "lobby.setting.kmax.1.3"},{translate: "lobby.setting.kmax.2.1",color:"green"},{translate: "lobby.setting.choupai.11and15.4.2",color:"gray"},'']}} replace
+setblock 99 228 -29 minecraft:oak_wall_sign[facing=south]{front_text:{messages:[{click_event:{action:"run_command",command:"/function kards:lobby/setting/kmax/3"},color:"gold",translate: "kards.function.lobby.setting.kmax.1.2", fallback: "每回合Kmax增加"},{translate: "json.kards.dialog.first_join.1.83", fallback: "2",color:"green"},{translate: "kards.function.lobby.setting.choupai.11and15.4.2", fallback: "(默认)",color:"gray"},'']}} replace

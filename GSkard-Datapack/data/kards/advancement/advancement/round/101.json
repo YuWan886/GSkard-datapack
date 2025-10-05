@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:music_disc_strad",
+            "count": 1
+        },
+        "title": {
+            "translate": "json.kards.advancement.advancement.round.101.41",
+            "fallback": "输赢...真的那么重要吗?"
+        },
+        "description": {
+            "translate": "json.kards.advancement.advancement.round.101.42",
+            "fallback": "游戏回合达到第101回合"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "kards:advancement/round/51",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "rewards": {
+        "function": "kards:advancement/round/101"
+    }
+}

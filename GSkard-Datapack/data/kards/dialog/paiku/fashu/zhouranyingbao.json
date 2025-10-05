@@ -1,0 +1,68 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "extra": [
+            {
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.main.319",
+                "fallback": "骤然引爆"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.chunnuanhuakai.241",
+        "fallback": "8K "
+    },
+    "external_title": {
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "music_disc_mellohi"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "gold",
+                        "translate": "json.kards.dialog.paiku.fashu.zhouranyingbao.385",
+                        "fallback": "威力与血量加强 引爆速度大幅度加快"
+                    }
+                ],
+                "translate": "json.kards.dialog.jiaocheng.wanfa.1.117",
+                "fallback": "召唤一只"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "translate": "json.kards.dialog.paiku.fashu.zhouranyingbao.386",
+                "fallback": "的苦力怕"
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.232",
+            "fallback": "返回§d法术牌§a牌库"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/fashu/main"
+        }
+    }
+}

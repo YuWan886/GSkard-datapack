@@ -1,15 +1,15 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.yongpaiku.template.1",color:"gold"},{translate: "game.yongpaiku.juntuan.wuwangjiangshi.1.1",color:"dark_green",hover_event:{action:"show_text","value":"在敌方召唤1只舞王僵尸"}}]
+function kards:game/yongpaiku/use_general/kard_general
 
-    #红队用
-    execute if entity @s[team=red] as @e[tag=7r] at @s positioned ~ 0 ~ summon zombie run function kards:game/yongpaiku/juntuan/wuwangjiangshi/2
-    execute if entity @s[team=red] as @e[tag=7r] at @s positioned ~ 0 ~ run team join red @e[type=zombie,distance=..3,tag=wuwangjiangshi]
-    
-    #蓝队用
-    execute if entity @s[team=blue] as @e[tag=7b] at @s positioned ~ 0 ~ summon zombie run function kards:game/yongpaiku/juntuan/wuwangjiangshi/2
-    execute if entity @s[team=blue] as @e[tag=7b] at @s positioned ~ 0 ~ run team join blue @e[type=zombie,distance=..3,tag=wuwangjiangshi]
-function kards:game/yongpaiku/xianjin/jiance/mobjiance
+
+
+
+execute if entity @s[team=red] at @e[tag=blue_marker_7,limit=1] run summon minecraft:zombie ~ 0 ~ {Team:red,Health:30.0f,attributes:[{id:"follow_range",base:100},{id:"max_health",base:30}],IsBaby:false,Tags:["wuwangjiangshi","Mob_Start"],equipment:{head:{id:"minecraft:player_head",components:{profile:{name:jaruper}}}}}
+
+execute if entity @s[team=blue] at @e[tag=red_marker_7,limit=1] run summon minecraft:zombie ~ 0 ~ {Team:blue,Health:30.0f,attributes:[{id:"follow_range",base:100},{id:"max_health",base:30}],IsBaby:false,Tags:["wuwangjiangshi","Mob_Start"],equipment:{head:{id:"minecraft:player_head",components:{profile:{name:jaruper}}}}}
+
+scoreboard players set @e[tag=Mob_Start,type=zombie] wuwangchuchang 100
+tag @e[tag=Mob_Start,type=zombie] remove Mob_Start
+function kards:game/yongpaiku/xianjing/jiance/mobjiance
 item replace entity @s weapon.offhand with air
 scoreboard players operation @s kardCount -= #kard_wuwangjiangshi kardCount
-scoreboard players remove @s[scores={kujie=1..}] kardCount 1
-scoreboard players set @s pingbi 0
-scoreboard players add @s use_kard 1
+

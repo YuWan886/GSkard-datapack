@@ -1,0 +1,91 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "extra": [
+            {
+                "color": "dark_green",
+                "translate": "json.kards.dialog.paiku.juntuan.main.489",
+                "fallback": "猛毒爪牙"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.sijiruchun.346",
+        "fallback": "7K "
+    },
+    "external_title": {
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "music_disc_cat"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "gold",
+                        "translate": "json.kards.dialog.paiku.jiben.juduzhizhu.403",
+                        "fallback": " 剧毒蜘蛛"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.449",
+                "fallback": "召唤4只"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "gold",
+                        "translate": "json.kards.dialog.paiku.juntuan.mengduzhuaya.508",
+                        "fallback": " 大于等于20"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.juntuan.mengduzhuaya.507",
+                "fallback": "若Kmax"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "gold",
+                        "translate": "json.kards.dialog.paiku.juntuan.mengduzhuaya.510",
+                        "fallback": " 沼骸骑士"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.juntuan.mengduzhuaya.509",
+                "fallback": "每10Kmax使1只剧毒蜘蛛成为"
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.455",
+            "fallback": "返回§d军团牌§a牌库"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/juntuan/main"
+        }
+    }
+}

@@ -1,0 +1,1 @@
+scoreboard players remove @s enchantment_yuezhan_temp 1

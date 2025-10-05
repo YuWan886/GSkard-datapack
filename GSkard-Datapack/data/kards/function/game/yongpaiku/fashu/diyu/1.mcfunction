@@ -1,16 +1,12 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.yongpaiku.template.1",color:"gold"},{translate: "game.yongpaiku.fashu.diyu.1.1",color:"red",hover_event:{action:"show_text","value":"在地方场地周围放置一圈岩浆 怪物获得火焰抗性效果 持续至回合结束"}}]
-item replace entity @s weapon.offhand with air
+function kards:game/yongpaiku/use_general/kard_general
 scoreboard players operation @s kardCount -= #kard_diyu kardCount
-scoreboard players remove @s[scores={kujie=1..}] kardCount 1
-scoreboard players set @s pingbi 0
-scoreboard players add @s use_kard 1
-function kards:game/yongpaiku/xianjin/jiance/fashujiance
-execute if entity @s[team=red] if score 红队 xianjin_shufashixiao matches 1 run return run scoreboard players set 红队 xianjin_shufashixiao 0
-execute if entity @s[team=blue] if score 蓝队 xianjin_shufashixiao matches 1 run return run scoreboard players set 蓝队 xianjin_shufashixiao 0
-execute if entity @s[team=red] if score 红队 xianjin_youdi matches 1 run return run scoreboard players set 红队 xianjin_youdi 0
-execute if entity @s[team=blue] if score 蓝队 xianjin_youdi matches 1 run return run scoreboard players set 蓝队 xianjin_youdi 0
+function kards:game/yongpaiku/xianjing/jiance/fashujiance
 
-execute as @s[team=red] run effect give @e[type=!player,team=red,tag=!tuteng] fire_resistance 60 0 true
-execute as @s[team=blue] run effect give @e[type=!player,team=blue,tag=!tuteng] fire_resistance 60 0 true
+execute if entity @s[type=player] unless items entity @s weapon.offhand * run return fail
+item replace entity @s weapon.offhand with air
+
+execute if entity @s[team=red] run scoreboard players set 蓝队 diyu 1
+execute if entity @s[team=blue] run scoreboard players set 红队 diyu 1
+
 function kards:game/yongpaiku/fashu/diyu/2
 function kards:game/yongpaiku/fashu/diyu/replace with storage changdidaxiao

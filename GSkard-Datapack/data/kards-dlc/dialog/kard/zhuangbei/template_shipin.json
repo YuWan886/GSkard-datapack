@@ -1,0 +1,71 @@
+{
+    "type": "notice",
+    "title": {
+        "extra": [
+            {
+                "color": "gold",
+                "translate": "json.kards-dlc.dialog.kard.zhuangbei.main.1389",
+                "fallback": "模板：饰品"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.227",
+        "fallback": "5K "
+    },
+    "body": [
+        {
+            "type": "item",
+            "item": {
+                "id": "music_disc_13"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "plain_message",
+            "contents": {
+                "color": "gold",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.main.222",
+                "fallback": "装备牌"
+            },
+            "width": 1024
+        },
+        {
+            "type": "plain_message",
+            "contents": {
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "color": "gold",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.zhuangbei.haiguilinjia.1184",
+                        "fallback": "海龟鳞甲"
+                    },
+                    {
+                        "color": "gray",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.zhuangbei.haiguilinjia.1185",
+                        "fallback": "(增加护甲值与盔甲韧性)"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.zhuangbei.bianxiehuosai.1178",
+                "fallback": "获得一个"
+            },
+            "width": 1024
+        }
+    ],
+    "action": {
+        "label": {
+            "color": "green",
+            "translate": "json.kards-dlc.dialog.kard.zhuangbei.template_shipin.1390",
+            "fallback": "返回§c装备§a牌库-§5DLC"
+        },
+        "action": {
+            "type": "show_dialog",
+            "dialog": "kards-dlc:kard/zhuangbei/main"
+        }
+    }
+}

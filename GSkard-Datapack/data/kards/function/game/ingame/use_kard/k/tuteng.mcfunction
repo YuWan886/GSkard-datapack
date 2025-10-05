@@ -1,0 +1,40 @@
+execute if items entity @s[team=red] weapon.offhand #kards:kard[custom_data~{kards:'牛'}] if score @s kardCount >= #kard_niu kardCount unless entity @e[tag=tuteng,type=cow,team=red] run function kards:game/yongpaiku/tuteng/shengcheng/niu
+execute if items entity @s[team=blue] weapon.offhand #kards:kard[custom_data~{kards:'牛'}] if score @s kardCount >= #kard_niu kardCount unless entity @e[tag=tuteng,type=cow,team=blue] run function kards:game/yongpaiku/tuteng/shengcheng/niu
+
+execute if items entity @s[team=red] weapon.offhand #kards:kard[custom_data~{kards:'猪'}] if score @s kardCount >= #kard_zhu kardCount unless entity @e[tag=tuteng,type=pig,team=red] run function kards:game/yongpaiku/tuteng/shengcheng/zhu
+execute if items entity @s[team=blue] weapon.offhand #kards:kard[custom_data~{kards:'猪'}] if score @s kardCount >= #kard_zhu kardCount unless entity @e[tag=tuteng,type=pig,team=blue] run function kards:game/yongpaiku/tuteng/shengcheng/zhu
+
+execute if items entity @s[team=red] weapon.offhand #kards:kard[custom_data~{kards:'豹猫'}] if score @s kardCount >= #kard_baomao kardCount unless entity @e[tag=tuteng,type=ocelot,team=red] run function kards:game/yongpaiku/tuteng/shengcheng/baomao
+execute if items entity @s[team=blue] weapon.offhand #kards:kard[custom_data~{kards:'豹猫'}] if score @s kardCount >= #kard_baomao kardCount unless entity @e[tag=tuteng,type=ocelot,team=blue] run function kards:game/yongpaiku/tuteng/shengcheng/baomao
+
+execute if items entity @s[team=red] weapon.offhand #kards:kard[custom_data~{kards:'海龟'}] if score @s kardCount >= #kard_haigui kardCount unless entity @e[tag=tuteng,type=turtle,team=red] run function kards:game/yongpaiku/tuteng/shengcheng/haigui
+execute if items entity @s[team=blue] weapon.offhand #kards:kard[custom_data~{kards:'海龟'}] if score @s kardCount >= #kard_haigui kardCount unless entity @e[tag=tuteng,type=turtle,team=blue] run function kards:game/yongpaiku/tuteng/shengcheng/haigui
+
+execute if items entity @s[team=red] weapon.offhand #kards:kard[custom_data~{kards:'兔'}] if score @s kardCount >= #kard_tu kardCount unless entity @e[tag=tuteng,type=rabbit,team=red] run function kards:game/yongpaiku/tuteng/shengcheng/tu
+execute if items entity @s[team=blue] weapon.offhand #kards:kard[custom_data~{kards:'兔'}] if score @s kardCount >= #kard_tu kardCount unless entity @e[tag=tuteng,type=rabbit,team=blue] run function kards:game/yongpaiku/tuteng/shengcheng/tu
+
+execute if items entity @s[team=red] weapon.offhand #kards:kard[custom_data~{kards:'羊'}] if score @s kardCount >= #kard_yang kardCount unless entity @e[tag=tuteng,type=sheep,team=red] run function kards:game/yongpaiku/tuteng/shengcheng/yang
+execute if items entity @s[team=blue] weapon.offhand #kards:kard[custom_data~{kards:'羊'}] if score @s kardCount >= #kard_yang kardCount unless entity @e[tag=tuteng,type=sheep,team=blue] run function kards:game/yongpaiku/tuteng/shengcheng/yang
+
+execute if items entity @s[team=red] weapon.offhand #kards:kard[custom_data~{kards:'村民'}] if score @s kardCount >= #kard_cunmin kardCount unless entity @e[tag=tuteng,type=villager,team=red] unless entity @e[tag=tuteng,type=zombie,team=red] run function kards:game/yongpaiku/tuteng/shengcheng/cunmin
+execute if items entity @s[team=blue] weapon.offhand #kards:kard[custom_data~{kards:'村民'}] if score @s kardCount >= #kard_cunmin kardCount unless entity @e[tag=tuteng,type=villager,team=blue] unless entity @e[tag=tuteng,type=zombie,team=blue] run function kards:game/yongpaiku/tuteng/shengcheng/cunmin
+
+execute if items entity @s[team=red] weapon.offhand #kards:kard[custom_data~{kards:'鸡'}] if score @s kardCount >= #kard_ji kardCount unless entity @e[tag=tuteng,type=chicken,team=red] run function kards:game/yongpaiku/tuteng/shengcheng/ji
+execute if items entity @s[team=blue] weapon.offhand #kards:kard[custom_data~{kards:'鸡'}] if score @s kardCount >= #kard_ji kardCount unless entity @e[tag=tuteng,type=chicken,team=blue] run function kards:game/yongpaiku/tuteng/shengcheng/ji
+
+execute if items entity @s[team=red] weapon.offhand #kards:kard[custom_data~{kards:'流浪商人'}] if score @s kardCount >= #kard_liulangshangren kardCount unless entity @e[tag=tuteng,type=wandering_trader,team=red] run function kards:game/yongpaiku/tuteng/shengcheng/liulangshangren
+execute if items entity @s[team=blue] weapon.offhand #kards:kard[custom_data~{kards:'流浪商人'}] if score @s kardCount >= #kard_liulangshangren kardCount unless entity @e[tag=tuteng,type=wandering_trader,team=blue] run function kards:game/yongpaiku/tuteng/shengcheng/liulangshangren
+
+execute if items entity @s[team=red] weapon.offhand #kards:kard[custom_data~{kards:'铁傀儡'}] if score @s kardCount >= #kard_tiekuilei kardCount run function kards:game/yongpaiku/tuteng/shengcheng/tiekuilei
+execute if items entity @s[team=blue] weapon.offhand #kards:kard[custom_data~{kards:'铁傀儡'}] if score @s kardCount >= #kard_tiekuilei kardCount run function kards:game/yongpaiku/tuteng/shengcheng/tiekuilei
+
+execute if items entity @s[team=red] weapon.offhand #kards:kard[custom_data~{kards:'蘑菇牛'}] if score @s kardCount >= #kard_moguniu kardCount unless entity @e[tag=tuteng,type=mooshroom,team=red] run function kards:game/yongpaiku/tuteng/shengcheng/moguniu
+execute if items entity @s[team=blue] weapon.offhand #kards:kard[custom_data~{kards:'蘑菇牛'}] if score @s kardCount >= #kard_moguniu kardCount unless entity @e[tag=tuteng,type=mooshroom,team=blue] run function kards:game/yongpaiku/tuteng/shengcheng/moguniu
+
+execute if items entity @s[team=red] weapon.offhand #kards:kard[custom_data~{kards:'侦测贝'}] if score @s kardCount >= #kard_zhencebei kardCount unless entity @e[tag=tuteng,type=shulker,team=red] run function kards:game/yongpaiku/tuteng/shengcheng/zhencebei
+execute if items entity @s[team=blue] weapon.offhand #kards:kard[custom_data~{kards:'侦测贝'}] if score @s kardCount >= #kard_zhencebei kardCount unless entity @e[tag=tuteng,type=shulker,team=blue] run function kards:game/yongpaiku/tuteng/shengcheng/zhencebei
+
+execute if items entity @s[team=red] weapon.offhand #kards:kard[custom_data~{kards:'培养尸'}] if score @s kardCount >= #kard_peiyangshi kardCount unless entity @e[tag=tuteng,type=zombie,team=red] run function kards:game/yongpaiku/tuteng/shengcheng/peiyangshi
+execute if items entity @s[team=blue] weapon.offhand #kards:kard[custom_data~{kards:'培养尸'}] if score @s kardCount >= #kard_peiyangshi kardCount unless entity @e[tag=tuteng,type=zombie,team=blue] run function kards:game/yongpaiku/tuteng/shengcheng/peiyangshi
+
+function kards-dlc:kard/use/tuteng

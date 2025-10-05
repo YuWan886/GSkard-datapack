@@ -1,13 +1,75 @@
+execute store result score @s Talent_Random_1 run random value 1..20
+execute store result score @s Talent_Random_2 run random value 1..20
+execute store result score @s Talent_Random_3 run random value 1..20
 
-execute positioned 0 0 0 store result score 红队圈内人数 1 if entity @a[team=red,gamemode=adventure]
-execute positioned 0 0 0 store result score 蓝队圈内人数 1 if entity @a[team=blue,gamemode=adventure]
-#假如中立为400~600 默认500 1~399为红队 601~999为蓝队
-scoreboard players operation game zhanlin -= 红队圈内人数 1
-scoreboard players operation game zhanlin += 蓝队圈内人数 1
-#点内没人 
-execute positioned 0 0 0 unless entity @a if score game zhanlin matches 400..499 run scoreboard players add game zhanlin 1
-execute positioned 0 0 0 unless entity @a if score game zhanlin matches 501..600 run scoreboard players remove game zhanlin 1
+execute if score @s Talent_Random_1 = @s Talent_Random_2 run return run function kards:ceshi/3
+execute if score @s Talent_Random_2 = @s Talent_Random_3 run return run function kards:ceshi/3
+execute if score @s Talent_Random_3 = @s Talent_Random_1 run return run function kards:ceshi/3
 
-execute if score game zhanlin matches 1..399 run bossbar set zhanlin color red
-execute if score game zhanlin matches 400..600 run bossbar set zhanlin color white
-execute if score game zhanlin matches 1..399 run bossbar set zhanlin color blue
+execute store result score @s Talent_Random_general run data get storage kards:dialog temp.A
+execute if score @s Talent_Random_1 = @s Talent_Random_general run return run function kards:ceshi/3
+execute store result score @s Talent_Random_general run data get storage kards:dialog temp.B
+execute if score @s Talent_Random_1 = @s Talent_Random_general run return run function kards:ceshi/3
+execute store result score @s Talent_Random_general run data get storage kards:dialog temp.C
+execute if score @s Talent_Random_1 = @s Talent_Random_general run return run function kards:ceshi/3
+
+execute store result score @s Talent_Random_general run data get storage kards:dialog temp.A
+execute if score @s Talent_Random_2 = @s Talent_Random_general run return run function kards:ceshi/3
+execute store result score @s Talent_Random_general run data get storage kards:dialog temp.B
+execute if score @s Talent_Random_2 = @s Talent_Random_general run return run function kards:ceshi/3
+execute store result score @s Talent_Random_general run data get storage kards:dialog temp.C
+execute if score @s Talent_Random_2 = @s Talent_Random_general run return run function kards:ceshi/3
+
+execute store result score @s Talent_Random_general run data get storage kards:dialog temp.A
+execute if score @s Talent_Random_3 = @s Talent_Random_general run return run function kards:ceshi/3
+execute store result score @s Talent_Random_general run data get storage kards:dialog temp.B
+execute if score @s Talent_Random_3 = @s Talent_Random_general run return run function kards:ceshi/3
+execute store result score @s Talent_Random_general run data get storage kards:dialog temp.C
+execute if score @s Talent_Random_3 = @s Talent_Random_general run return run function kards:ceshi/3
+
+execute store result score @s Talent_Random_general run data get storage kards:dialog temp.a
+execute if score @s Talent_Random_1 = @s Talent_Random_general run return run function kards:ceshi/3
+execute store result score @s Talent_Random_general run data get storage kards:dialog temp.b
+execute if score @s Talent_Random_1 = @s Talent_Random_general run return run function kards:ceshi/3
+execute store result score @s Talent_Random_general run data get storage kards:dialog temp.c
+execute if score @s Talent_Random_1 = @s Talent_Random_general run return run function kards:ceshi/3
+
+execute store result score @s Talent_Random_general run data get storage kards:dialog temp.a
+execute if score @s Talent_Random_2 = @s Talent_Random_general run return run function kards:ceshi/3
+execute store result score @s Talent_Random_general run data get storage kards:dialog temp.b
+execute if score @s Talent_Random_2 = @s Talent_Random_general run return run function kards:ceshi/3
+execute store result score @s Talent_Random_general run data get storage kards:dialog temp.c
+execute if score @s Talent_Random_2 = @s Talent_Random_general run return run function kards:ceshi/3
+
+execute store result score @s Talent_Random_general run data get storage kards:dialog temp.a
+execute if score @s Talent_Random_3 = @s Talent_Random_general run return run function kards:ceshi/3
+execute store result score @s Talent_Random_general run data get storage kards:dialog temp.b
+execute if score @s Talent_Random_3 = @s Talent_Random_general run return run function kards:ceshi/3
+execute store result score @s Talent_Random_general run data get storage kards:dialog temp.c
+execute if score @s Talent_Random_3 = @s Talent_Random_general run return run function kards:ceshi/3
+
+execute store result score @s Talent_Random_general run data get storage kards:dialog temp.1
+execute if score @s Talent_Random_1 = @s Talent_Random_general run return run function kards:ceshi/3
+execute store result score @s Talent_Random_general run data get storage kards:dialog temp.2
+execute if score @s Talent_Random_1 = @s Talent_Random_general run return run function kards:ceshi/3
+execute store result score @s Talent_Random_general run data get storage kards:dialog temp.3
+execute if score @s Talent_Random_1 = @s Talent_Random_general run return run function kards:ceshi/3
+
+execute store result score @s Talent_Random_general run data get storage kards:dialog temp.1
+execute if score @s Talent_Random_2 = @s Talent_Random_general run return run function kards:ceshi/3
+execute store result score @s Talent_Random_general run data get storage kards:dialog temp.2
+execute if score @s Talent_Random_2 = @s Talent_Random_general run return run function kards:ceshi/3
+execute store result score @s Talent_Random_general run data get storage kards:dialog temp.3
+execute if score @s Talent_Random_2 = @s Talent_Random_general run return run function kards:ceshi/3
+
+execute store result score @s Talent_Random_general run data get storage kards:dialog temp.1
+execute if score @s Talent_Random_3 = @s Talent_Random_general run return run function kards:ceshi/3
+execute store result score @s Talent_Random_general run data get storage kards:dialog temp.2
+execute if score @s Talent_Random_3 = @s Talent_Random_general run return run function kards:ceshi/3
+execute store result score @s Talent_Random_general run data get storage kards:dialog temp.3
+execute if score @s Talent_Random_3 = @s Talent_Random_general run return run function kards:ceshi/3
+
+execute store result storage kards:dialog temp.1 int 1 run scoreboard players get @s Talent_Random_1
+execute store result storage kards:dialog temp.2 int 1 run scoreboard players get @s Talent_Random_2
+execute store result storage kards:dialog temp.3 int 1 run scoreboard players get @s Talent_Random_3
+

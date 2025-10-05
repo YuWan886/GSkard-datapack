@@ -1,0 +1,34 @@
+{
+    "type": "multi_action",
+    "title": {
+        "color": "dark_gray",
+        "bold": true,
+        "translate": "json.kards-dlc.dialog.kard.zuzhou.main.1391",
+        "fallback": "诅咒-§5DLC"
+    },
+    "exit_action": {
+        "label": {
+            "color": "green",
+            "translate": "json.kards-dlc.dialog.kard.zuzhou.main.1392",
+            "fallback": "返回§6主§a牌库-§8诅咒"
+        },
+        "action": {
+            "type": "show_dialog",
+            "dialog": "kards:paiku/zuzhou/main"
+        }
+    },
+    "columns": 5,
+    "actions": [
+        {
+            "label": {
+                "color": "dark_gray",
+                "translate": "json.kards-dlc.dialog.kard.zuzhou.main.1393",
+                "fallback": "模板：诅咒"
+            },
+            "action": {
+                "type": "show_dialog",
+                "dialog": "kards-dlc:kard/zuzhou/template_zuzhou"
+            }
+        }
+    ]
+}

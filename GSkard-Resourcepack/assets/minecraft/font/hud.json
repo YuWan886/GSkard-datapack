@@ -1,0 +1,58 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "kards:font/hud/regeneration.png",
+            "ascent": 8,
+            "height": 8,
+            "chars": [
+                "\uE001"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "kards:font/hud/absorption.png",
+            "ascent": 8,
+            "height": 8,
+            "chars": [
+                "\uE002"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "kards:font/hud/health_boost.png",
+            "ascent": 8,
+            "height": 8,
+            "chars": [
+                "\uE003"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "kards:font/hud/resistance.png",
+            "ascent": 8,
+            "height": 8,
+            "chars": [
+                "\uE004"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "kards:font/hud/speed.png",
+            "ascent": 8,
+            "height": 8,
+            "chars": [
+                "\uE005"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "kards:font/hud/strength.png",
+            "ascent": 8,
+            "height": 8,
+            "chars": [
+                "\uE006"
+            ]
+        }
+    ]
+}

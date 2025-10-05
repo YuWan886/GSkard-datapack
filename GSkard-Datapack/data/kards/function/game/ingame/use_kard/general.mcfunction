@@ -1,9 +1,20 @@
-execute as @a[scores={CanuseKard=1}] run function kards:game/ingame/use_kard/jiben
-execute as @a[scores={CanuseKard=1}] run function kards:game/ingame/use_kard/juntuan
-execute as @a[scores={CanuseKard=1}] run function kards:game/ingame/use_kard/zhuangbei
-execute as @a[scores={CanuseKard=1}] run function kards:game/ingame/use_kard/fashu
-execute as @a[scores={CanuseKard=1}] run function kards:game/ingame/use_kard/tuteng
-execute as @a[scores={CanuseKard=1}] run function kards:game/ingame/use_kard/shenji
-execute as @a[scores={CanuseKard=1}] run function kards:game/ingame/use_kard/zuzhou
-execute as @a[scores={CanuseKard=1}] run function kards:game/ingame/use_kard/xianjing
-execute as @a run function kards:game/ingame/use_kard/yansheng
+execute as @a[gamemode=!spectator,scores={CanuseKard=1}] run function kards:game/ingame/use_kard/k/jiben
+execute as @a[gamemode=!spectator,scores={CanuseKard=1}] run function kards:game/ingame/use_kard/k/juntuan
+execute as @a[gamemode=!spectator,scores={CanuseKard=1}] run function kards:game/ingame/use_kard/k/zhuangbei
+execute as @a[gamemode=!spectator,scores={CanuseKard=1}] run function kards:game/ingame/use_kard/k/fashu
+execute as @a[gamemode=!spectator,scores={CanuseKard=1}] run function kards:game/ingame/use_kard/k/tuteng
+execute as @a[gamemode=!spectator,scores={CanuseKard=1}] run function kards:game/ingame/use_kard/k/shenji
+execute as @a[gamemode=!spectator,scores={CanuseKard=1}] run function kards:game/ingame/use_kard/k/zuzhou
+execute as @a[gamemode=!spectator,scores={CanuseKard=1}] run function kards:game/ingame/use_kard/k/xianjing
+execute as @a[gamemode=!spectator,scores={CanuseKard=1}] run function kards:game/ingame/use_kard/k/yansheng
+
+execute as @a[gamemode=!spectator] run function kards:game/ingame/use_kard/kmax/jiben
+execute as @a[gamemode=!spectator] run function kards:game/ingame/use_kard/kmax/juntuan
+execute as @a[gamemode=!spectator] run function kards:game/ingame/use_kard/kmax/zhuangbei
+execute as @a[gamemode=!spectator] run function kards:game/ingame/use_kard/kmax/fashu
+execute as @a[gamemode=!spectator] run function kards:game/ingame/use_kard/kmax/tuteng
+execute as @a[gamemode=!spectator] run function kards:game/ingame/use_kard/kmax/shenji
+execute as @a[gamemode=!spectator] run function kards:game/ingame/use_kard/kmax/zuzhou
+execute as @a[gamemode=!spectator] run function kards:game/ingame/use_kard/kmax/xianjing
+
+execute as @a[gamemode=!spectator] run function kards:game/ingame/use_kard/yansheng

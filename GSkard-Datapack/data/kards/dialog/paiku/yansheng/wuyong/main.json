@@ -1,0 +1,66 @@
+{
+    "type": "minecraft:multi_action",
+    "title": {
+        "color": "gray",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.yansheng.main.1128",
+        "fallback": "无用牌系列"
+    },
+    "external_title": {
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
+    },
+    "body": [],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "exit_action": {
+        "label": {
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.yansheng.jinzijue.1116",
+            "fallback": "返回§7其他"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/yansheng/main"
+        }
+    },
+    "columns": 3,
+    "actions": [
+        {
+            "label": {
+                "color": "blue",
+                "translate": "json.kards.dialog.paiku.yansheng.wuyong.jiben.1173",
+                "fallback": "无用之基"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/yansheng/wuyong/jiben"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.yansheng.wuyong.fashu.1169",
+                "fallback": "无用之法"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/yansheng/wuyong/fashu"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "white",
+                "translate": "json.kards.dialog.paiku.yansheng.wuyong.main.1175",
+                "fallback": "无用之神"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/yansheng/wuyong/shenji"
+            },
+            "width": 75
+        }
+    ]
+}

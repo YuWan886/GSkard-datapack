@@ -1,5 +1,5 @@
 #进入
-execute positioned 52.0 231.0 -54.0 as @a[gamemode=!spectator,dx=5,dz=6,dy=1] run advancement grant @s only kards:chengjiu/lobby/find_running
+execute positioned 52.0 231.0 -54.0 as @a[gamemode=!spectator,dx=5,dz=6,dy=1] run advancement grant @s only kards:advancement/lobby/find_running
 execute positioned 52.0 231.0 -54.0 as @a[gamemode=!spectator,dx=5,dz=6,dy=1] run tp @s -83.50 -39.00 -90.5 0 ~
 #离开
 execute positioned -85.0 -47 -98 as @a[dx=3,dz=1,dy=3] at @s run function kards:lobby/run/boom
@@ -14,8 +14,8 @@ execute positioned -89.0 -60 -83.0 as @a[dx=57,dz=41,dy=21,gamemode=!spectator] 
 
 #完成
 execute positioned -41.0 -45 -65.0 as @a[dx=1,dz=1,dy=2,gamemode=adventure] at @s run function kards:lobby/run/finishes
-
 #计时
+scoreboard players add @a[tag=Running] RunningTime_adv 1
 scoreboard players add @a[tag=Running] RunningTime 1
 scoreboard players add @a[tag=Running] RunningTime_All 1
 scoreboard players add @a[tag=Running] RunningTime_Tick 5
@@ -33,11 +33,11 @@ execute as @a[tag=Running] if score @s RunningTime_Sec matches 60.. run scoreboa
 #execute as @a[tag=Running] run scoreboard players ation @s RunningTime_Min /= system RunningTime_Min
 
 
-execute as @a[tag=Running] if score @s RunningTime_Min matches 0 if score @s RunningTime_Sec matches ..9 run title @s actionbar [{translate: "lobby.run.finishes.1",color:"green"},{translate: "lobby.run.finishes.2",color:"green"},{score:{name:"@s",objective:"RunningTime_Sec"},color:"green"},{translate: "lobby.run.finishes.3",color:"green"},{score:{name:"@s",objective:"RunningTime_Tick"},color:"green"}]
-execute as @a[tag=Running] if score @s RunningTime_Min matches 0 if score @s RunningTime_Sec matches 10.. run title @s actionbar [{translate: "lobby.run.finishes.1",color:"green"},{translate: "lobby.run.finishes.3",color:"green"},{score:{name:"@s",objective:"RunningTime_Sec"},color:"green"},{translate: "lobby.run.finishes.3",color:"green"},{score:{name:"@s",objective:"RunningTime_Tick"},color:"green"}]
+execute as @a[tag=Running] if score @s RunningTime_Min matches 0 if score @s RunningTime_Sec matches ..9 run title @s actionbar [{translate: "kards.function.lobby.run.finishes.1", fallback: "00",color:"green"},{translate: "kards.function.lobby.run.finishes.2", fallback: ".0",color:"green"},{score:{name:"@s",objective:"RunningTime_Sec"},color:"green"},{translate: "kards.function.lobby.run.finishes.3", fallback: ".",color:"green"},{score:{name:"@s",objective:"RunningTime_Tick"},color:"green"}]
+execute as @a[tag=Running] if score @s RunningTime_Min matches 0 if score @s RunningTime_Sec matches 10.. run title @s actionbar [{translate: "kards.function.lobby.run.finishes.1", fallback: "00",color:"green"},{translate: "kards.function.lobby.run.finishes.3", fallback: ".",color:"green"},{score:{name:"@s",objective:"RunningTime_Sec"},color:"green"},{translate: "kards.function.lobby.run.finishes.3", fallback: ".",color:"green"},{score:{name:"@s",objective:"RunningTime_Tick"},color:"green"}]
 
-execute as @a[tag=Running] if score @s RunningTime_Min matches ..9 if score @s RunningTime_Sec matches ..9 run title @s actionbar [{translate: "game.yongpaiku.fashu.jinziqifeng.4",color:"green"},{score:{name:"@s",objective:"RunningTime_Min"},color:"green"},{translate: "lobby.run.finishes.2",color:"green"},{score:{name:"@s",objective:"RunningTime_Sec"},color:"green"},{translate: "lobby.run.finishes.3",color:"green"},{score:{name:"@s",objective:"RunningTime_Tick"},color:"green"}]
-execute as @a[tag=Running] if score @s RunningTime_Min matches ..9 if score @s RunningTime_Sec matches 10.. run title @s actionbar [{translate: "game.yongpaiku.fashu.jinziqifeng.4",color:"green"},{score:{name:"@s",objective:"RunningTime_Min"},color:"green"},{translate: "lobby.run.finishes.3",color:"green"},{score:{name:"@s",objective:"RunningTime_Sec"},color:"green"},{translate: "lobby.run.finishes.3",color:"green"},{score:{name:"@s",objective:"RunningTime_Tick"},color:"green"}]
+execute as @a[tag=Running] if score @s RunningTime_Min matches ..9 if score @s RunningTime_Sec matches ..9 run title @s actionbar [{translate: "kards.function.game.yongpaiku.fashu.jinziqifeng.3", fallback: "0",color:"green"},{score:{name:"@s",objective:"RunningTime_Min"},color:"green"},{translate: "kards.function.lobby.run.finishes.2", fallback: ".0",color:"green"},{score:{name:"@s",objective:"RunningTime_Sec"},color:"green"},{translate: "kards.function.lobby.run.finishes.3", fallback: ".",color:"green"},{score:{name:"@s",objective:"RunningTime_Tick"},color:"green"}]
+execute as @a[tag=Running] if score @s RunningTime_Min matches ..9 if score @s RunningTime_Sec matches 10.. run title @s actionbar [{translate: "kards.function.game.yongpaiku.fashu.jinziqifeng.3", fallback: "0",color:"green"},{score:{name:"@s",objective:"RunningTime_Min"},color:"green"},{translate: "kards.function.lobby.run.finishes.3", fallback: ".",color:"green"},{score:{name:"@s",objective:"RunningTime_Sec"},color:"green"},{translate: "kards.function.lobby.run.finishes.3", fallback: ".",color:"green"},{score:{name:"@s",objective:"RunningTime_Tick"},color:"green"}]
 
-execute as @a[tag=Running] if score @s RunningTime_Min matches 10.. if score @s RunningTime_Sec matches ..9 run title @s actionbar [{score:{name:"@s",objective:"RunningTime_Min"},color:"green"},{translate: "lobby.run.finishes.2",color:"green"},{score:{name:"@s",objective:"RunningTime_Sec"},color:"green"},{translate: "lobby.run.finishes.3",color:"green"},{score:{name:"@s",objective:"RunningTime_Tick"},color:"green"}]
-execute as @a[tag=Running] if score @s RunningTime_Min matches 10.. if score @s RunningTime_Sec matches 10.. run title @s actionbar [{score:{name:"@s",objective:"RunningTime_Min"},color:"green"},{translate: "lobby.run.finishes.3",color:"green"},{score:{name:"@s",objective:"RunningTime_Sec"},color:"green"},{translate: "lobby.run.finishes.3",color:"green"},{score:{name:"@s",objective:"RunningTime_Tick"},color:"green"}]
+execute as @a[tag=Running] if score @s RunningTime_Min matches 10.. if score @s RunningTime_Sec matches ..9 run title @s actionbar [{score:{name:"@s",objective:"RunningTime_Min"},color:"green"},{translate: "kards.function.lobby.run.finishes.2", fallback: ".0",color:"green"},{score:{name:"@s",objective:"RunningTime_Sec"},color:"green"},{translate: "kards.function.lobby.run.finishes.3", fallback: ".",color:"green"},{score:{name:"@s",objective:"RunningTime_Tick"},color:"green"}]
+execute as @a[tag=Running] if score @s RunningTime_Min matches 10.. if score @s RunningTime_Sec matches 10.. run title @s actionbar [{score:{name:"@s",objective:"RunningTime_Min"},color:"green"},{translate: "kards.function.lobby.run.finishes.3", fallback: ".",color:"green"},{score:{name:"@s",objective:"RunningTime_Sec"},color:"green"},{translate: "kards.function.lobby.run.finishes.3", fallback: ".",color:"green"},{score:{name:"@s",objective:"RunningTime_Tick"},color:"green"}]

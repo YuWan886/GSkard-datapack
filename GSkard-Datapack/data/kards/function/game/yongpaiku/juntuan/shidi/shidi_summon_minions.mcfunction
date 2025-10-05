@@ -1,0 +1,3 @@
+
+execute if entity @s[team=red] as @e[team=red,tag=!shidi_master,type=zombie] at @s run function kards:game/yongpaiku/juntuan/shidi/4
+execute if entity @s[team=blue] as @e[team=blue,tag=!shidi_master,type=zombie] at @s run function kards:game/yongpaiku/juntuan/shidi/4

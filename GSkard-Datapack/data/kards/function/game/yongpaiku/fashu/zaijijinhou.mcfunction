@@ -1,17 +1,13 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.yongpaiku.template.1",color:"gold"},{translate: "game.yongpaiku.fashu.zaijijinhou.1",color:"dark_purple",hover_event:{action:"show_text","value":"杀死敌方一个图腾"}}]
-item replace entity @s weapon.offhand with air
-scoreboard players operation @s kardCount -= #kard_zaijijinhou kardCount
-scoreboard players remove @s[scores={kujie=1..}] kardCount 1
-scoreboard players set @s pingbi 0
-scoreboard players add @s use_kard 1
-function kards:game/yongpaiku/xianjin/jiance/fashujiance
-execute if entity @s[team=red] if score 红队 xianjin_shufashixiao matches -1 run return run scoreboard players set 红队 xianjin_shufashixiao 0
-execute if entity @s[team=blue] if score 蓝队 xianjin_shufashixiao matches -1 run return run scoreboard players set 蓝队 xianjin_shufashixiao 0
-execute if entity @s[team=red] if score 红队 xianjin_youdi matches -1 run return run scoreboard players set 红队 xianjin_youdi 0
-execute if entity @s[team=blue] if score 蓝队 xianjin_youdi matches -1 run return run scoreboard players set 蓝队 xianjin_youdi 0
+function kards:game/yongpaiku/use_general/kard_general
 
-#红
+function kards:game/yongpaiku/xianjing/jiance/fashujiance
+scoreboard players operation @s kardCount -= #kard_zaijijinhou kardCount
+execute if entity @s[type=player] unless items entity @s weapon.offhand * run return fail
+item replace entity @s weapon.offhand with air
+
+execute if entity @s[team=red] unless entity @e[tag=tuteng,team=blue] run tellraw @a [{translate: "kards.function.game.yongpaiku.fashu.zaijijinhou.1", fallback: "[蓝队]滚木",color:"blue"},{translate: "kards.function.game.yongpaiku.fashu.zaijijinhou.2", fallback: "被杀死了！",color:"gold"}]
+execute if entity @s[team=blue] unless entity @e[tag=tuteng,team=red] run tellraw @a [{translate: "kards.function.game.yongpaiku.fashu.zaijijinhou.3", fallback: "[红队]滚木",color:"red"},{translate: "kards.function.game.yongpaiku.fashu.zaijijinhou.2", fallback: "被杀死了！",color:"gold"}]
+
 execute if entity @s[team=red] run kill @e[tag=tuteng,limit=1,team=blue,sort=random]
-#蓝
 execute if entity @s[team=blue] run kill @e[tag=tuteng,limit=1,team=red,sort=random]
 

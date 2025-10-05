@@ -1,0 +1,91 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "extra": [
+            {
+                "color": "light_purple",
+                "translate": "json.kards.dialog.paiku.fashu.main.302",
+                "fallback": "四季如春"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.sijiruchun.346",
+        "fallback": "7K "
+    },
+    "external_title": {
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "music_disc_mellohi"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "gold",
+                        "translate": "json.kards.dialog.paiku.fashu.shengchanling.335",
+                        "fallback": "2张牌"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.fashu.chunnuanhuakai.243",
+                "fallback": "抽"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "gold",
+                        "translate": "json.kards.dialog.paiku.fashu.sijiruchun.348",
+                        "fallback": "4K"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.fashu.sijiruchun.347",
+                "fallback": " 队伍其他玩家获得"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "gold",
+                        "translate": "json.kards.dialog.paiku.fashu.sijiruchun.350",
+                        "fallback": "你额外获得4K"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.fashu.sijiruchun.349",
+                "fallback": "若增加的费用总数小于等于8K 则"
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.232",
+            "fallback": "返回§d法术牌§a牌库"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/fashu/main"
+        }
+    }
+}

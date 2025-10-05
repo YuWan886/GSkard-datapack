@@ -1,0 +1,30 @@
+{
+    "parent": "kards:advancement/jiaocheng",
+    "display": {
+        "icon": {
+            "id": "minecraft:dispenser",
+            "count": 1
+        },
+        "title": {
+            "translate": "json.kards.advancement.advancement.lobby.shenmidayedian.39",
+            "fallback": "神秘打野点"
+        },
+        "description": {
+            "translate": "json.kards.advancement.advancement.lobby.shenmidayedian.40",
+            "fallback": "这是何处阿?"
+        },
+        "background": "minecraft:block/chiseled_tuff_bricks",
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "rewards": {
+        "function": "kards:advancement/lobby/shenmidayedian"
+    }
+}

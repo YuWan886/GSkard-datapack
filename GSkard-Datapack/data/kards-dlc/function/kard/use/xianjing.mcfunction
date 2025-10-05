@@ -1,0 +1,2 @@
+execute if entity @s[team=red] if score @s kardCount >= #kard_template_xianjing kardCount if items entity @s weapon.offhand #kards:kard[custom_data~{kards:'术法失效'}] unless score 蓝队 xianjin_shufashixiao matches 1 run function kards:game/yongpaiku/xianjing/used/shufashixiao
+execute if entity @s[team=blue] if score @s kardCount >= #kard_template_xianjing kardCount if items entity @s weapon.offhand #kards:kard[custom_data~{kards:'术法失效'}] unless score 红队 xianjin_shufashixiao matches 1 run function kards:game/yongpaiku/xianjing/used/shufashixiao

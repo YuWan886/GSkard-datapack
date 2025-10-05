@@ -1,0 +1,419 @@
+{
+    "type": "minecraft:multi_action",
+    "title": {
+        "color": "gold",
+        "bold": true,
+        "translate": "json.kards.dialog.setting.random_start.main.1259",
+        "fallback": "随机规则设置"
+    },
+    "external_title": {
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "contents": "\n\n\n\n\n\n\n\n\n\n\n"
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "columns": 5,
+    "actions": [
+        {
+            "label": {
+                "color": "green",
+                "translate": "json.kards.dialog.setting.random_start.main.1260",
+                "fallback": "宝库现世"
+            },
+            "tooltip": [
+                {
+                    "color": "gray",
+                    "translate": "json.kards.dialog.setting.random_start.main.1261",
+                    "fallback": "所有玩家抽取"
+                },
+                {
+                    "color": "green",
+                    "bold": true,
+                    "translate": "json.kards.dialog.setting.random_start.main.1262",
+                    "fallback": "[王之宝库]"
+                }
+            ],
+            "action": {
+                "type": "minecraft:run_command",
+                "command": "trigger dialog set 201"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "gold",
+                "translate": "json.kards.dialog.setting.random_start.main.1263",
+                "fallback": "藏宝库"
+            },
+            "tooltip": [
+                {
+                    "color": "gray",
+                    "translate": "json.kards.dialog.setting.random_start.main.1264",
+                    "fallback": "开局额外抽取"
+                },
+                {
+                    "color": "gold",
+                    "bold": true,
+                    "translate": "json.kards.dialog.setting.random_start.main.1265",
+                    "fallback": "3张神迹牌 每回合额外抽2张牌"
+                }
+            ],
+            "action": {
+                "type": "minecraft:run_command",
+                "command": "trigger dialog set 202"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "light_purple",
+                "translate": "json.kards.dialog.setting.random_start.main.1266",
+                "fallback": "魔法战争"
+            },
+            "tooltip": [
+                {
+                    "color": "gray",
+                    "translate": "json.kards.dialog.setting.random_start.main.1267",
+                    "fallback": "所有人抽取的卡变为"
+                },
+                {
+                    "color": "light_purple",
+                    "bold": true,
+                    "translate": "json.kards.dialog.setting.random_start.main.1268",
+                    "fallback": "法术卡"
+                }
+            ],
+            "action": {
+                "type": "minecraft:run_command",
+                "command": "trigger dialog set 203"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "white",
+                "translate": "json.kards.dialog.setting.random_start.main.1269",
+                "fallback": "神之战"
+            },
+            "tooltip": [
+                {
+                    "color": "gray",
+                    "translate": "json.kards.dialog.setting.random_start.main.1267",
+                    "fallback": "所有人抽取的卡变为"
+                },
+                {
+                    "color": "white",
+                    "bold": true,
+                    "translate": "json.kards.dialog.setting.random_start.main.1270",
+                    "fallback": "神迹卡"
+                }
+            ],
+            "action": {
+                "type": "minecraft:run_command",
+                "command": "trigger dialog set 204"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "green",
+                "translate": "json.kards.dialog.setting.random_start.main.1271",
+                "fallback": "无尽战争"
+            },
+            "tooltip": [
+                {
+                    "color": "gray",
+                    "translate": "json.kards.dialog.setting.random_start.main.1272",
+                    "fallback": "所有人的"
+                },
+                {
+                    "color": "green",
+                    "bold": true,
+                    "translate": "json.kards.dialog.setting.random_start.main.1273",
+                    "fallback": "Kmax被设为9999"
+                },
+                {
+                    "color": "gray",
+                    "bold": true,
+                    "translate": "json.kards.dialog.setting.random_start.main.1274",
+                    "fallback": " 每回合额外抽"
+                },
+                {
+                    "color": "green",
+                    "bold": true,
+                    "translate": "json.kards.dialog.setting.random_start.main.1275",
+                    "fallback": "3张牌"
+                }
+            ],
+            "action": {
+                "type": "minecraft:run_command",
+                "command": "trigger dialog set 205"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "red",
+                "translate": "json.kards.dialog.setting.random_start.main.1276",
+                "fallback": "嘎吱恐惧"
+            },
+            "tooltip": [
+                {
+                    "color": "red",
+                    "bold": true,
+                    "translate": "json.kards.dialog.setting.random_start.main.1277",
+                    "fallback": "两方场地中央生成一只移速增加的嘎吱怪"
+                }
+            ],
+            "action": {
+                "type": "minecraft:run_command",
+                "command": "trigger dialog set 206"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "green",
+                "translate": "json.kards.dialog.paiku.shenji.main.640",
+                "fallback": "墓园狂欢"
+            },
+            "tooltip": [
+                {
+                    "color": "gray",
+                    "translate": "json.kards.dialog.setting.random_start.main.1278",
+                    "fallback": "所有人默认使用"
+                },
+                {
+                    "color": "green",
+                    "bold": true,
+                    "translate": "json.kards.dialog.setting.random_start.main.1279",
+                    "fallback": "[墓园狂欢]"
+                }
+            ],
+            "action": {
+                "type": "minecraft:run_command",
+                "command": "trigger dialog set 207"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "red",
+                "translate": "json.kards.dialog.setting.random_start.main.1280",
+                "fallback": "狂轰滥炸"
+            },
+            "tooltip": [
+                {
+                    "color": "gray",
+                    "translate": "json.kards.dialog.setting.random_start.main.1281",
+                    "fallback": "所有人只能抽取到"
+                },
+                {
+                    "color": "red",
+                    "bold": true,
+                    "translate": "json.kards.dialog.setting.random_start.main.1282",
+                    "fallback": "[爆炸军团]"
+                }
+            ],
+            "action": {
+                "type": "minecraft:run_command",
+                "command": "trigger dialog set 208"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "gray",
+                "translate": "json.kards.dialog.setting.random_start.main.1283",
+                "fallback": "灾难之星"
+            },
+            "tooltip": [
+                {
+                    "color": "gray",
+                    "translate": "json.kards.dialog.setting.random_start.main.1284",
+                    "fallback": "讲述"
+                },
+                {
+                    "color": "gray",
+                    "translate": "json.kards.dialog.setting.random_start.main.1285",
+                    "fallback": "[河豚][雷暴][失重]"
+                },
+                {
+                    "color": "gray",
+                    "translate": "json.kards.dialog.setting.random_start.main.1286",
+                    "fallback": "的故事"
+                }
+            ],
+            "action": {
+                "type": "minecraft:run_command",
+                "command": "trigger dialog set 209"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "red",
+                "translate": "json.kards.dialog.setting.random_start.main.1287",
+                "fallback": "Move or Die"
+            },
+            "tooltip": [
+                {
+                    "color": "red",
+                    "bold": true,
+                    "translate": "json.kards.dialog.setting.random_start.main.1288",
+                    "fallback": "不动就会死!"
+                }
+            ],
+            "action": {
+                "type": "minecraft:run_command",
+                "command": "trigger dialog set 210"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "red",
+                "translate": "json.kards.dialog.setting.random_start.main.1289",
+                "fallback": "死神降临"
+            },
+            "tooltip": [
+                {
+                    "color": "red",
+                    "bold": true,
+                    "translate": "json.kards.dialog.setting.random_start.main.1290",
+                    "fallback": "11回合后 每回合杀死一个生命最低的玩家"
+                }
+            ],
+            "action": {
+                "type": "minecraft:run_command",
+                "command": "trigger dialog set 211"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "dark_green",
+                "translate": "json.kards.dialog.setting.random_start.main.1291",
+                "fallback": "舞会"
+            },
+            "tooltip": [
+                {
+                    "color": "gray",
+                    "bold": true,
+                    "translate": "json.kards.dialog.setting.random_start.main.1281",
+                    "fallback": "所有人只能抽取到"
+                },
+                {
+                    "color": "dark_green",
+                    "bold": true,
+                    "translate": "json.kards.dialog.setting.random_start.main.1292",
+                    "fallback": "[舞王僵尸]"
+                }
+            ],
+            "action": {
+                "type": "minecraft:run_command",
+                "command": "trigger dialog set 212"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "light_purple",
+                "translate": "json.kards.dialog.setting.random_start.main.1293",
+                "fallback": "电表倒转"
+            },
+            "tooltip": [
+                {
+                    "color": "gray",
+                    "bold": true,
+                    "translate": "json.kards.dialog.setting.random_start.main.1294",
+                    "fallback": "每使用1张牌 都有概率额外获得"
+                },
+                {
+                    "color": "light_purple",
+                    "bold": true,
+                    "translate": "json.kards.dialog.setting.random_start.main.1295",
+                    "fallback": "[春暖花开]"
+                },
+                {
+                    "color": "white",
+                    "bold": true,
+                    "translate": "json.kards.dialog.setting.random_start.main.1296",
+                    "fallback": "[好高骛远]"
+                },
+                {
+                    "color": "gold",
+                    "bold": true,
+                    "translate": "json.kards.dialog.setting.random_start.main.1297",
+                    "fallback": "6K"
+                }
+            ],
+            "action": {
+                "type": "minecraft:run_command",
+                "command": "trigger dialog set 213"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "white",
+                "translate": "json.kards.dialog.setting.random_start.main.1298",
+                "fallback": "无尽贪婪"
+            },
+            "tooltip": [
+                {
+                    "color": "gray",
+                    "bold": true,
+                    "translate": "json.kards.dialog.setting.random_start.main.1278",
+                    "fallback": "所有人默认使用"
+                },
+                {
+                    "color": "white",
+                    "bold": true,
+                    "translate": "json.kards.dialog.setting.random_start.main.1299",
+                    "fallback": "[贪欲魔盒]"
+                }
+            ],
+            "action": {
+                "type": "minecraft:run_command",
+                "command": "trigger dialog set 214"
+            },
+            "width": 75
+        }
+    ],
+    "exit_action": {
+        "label": {
+            "color": "gray",
+            "extra": [
+                {
+                    "color": "red",
+                    "translate": "json.kards.dialog.setting.random_start.main.1301",
+                    "fallback": "禁用"
+                },
+                {
+                    "color": "gray",
+                    "translate": "json.kards.dialog.jiaocheng.wanfa.3.174",
+                    "fallback": "或"
+                },
+                {
+                    "color": "green",
+                    "translate": "json.kards.dialog.setting.random_start.main.1302",
+                    "fallback": "启用"
+                }
+            ],
+            "translate": "json.kards.dialog.setting.random_start.main.1300",
+            "fallback": "点击以"
+        },
+        "action": {
+            "type": "minecraft:run_command",
+            "command": "trigger dialog set 200"
+        },
+        "width": 75
+    }
+}

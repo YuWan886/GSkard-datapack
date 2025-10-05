@@ -1,18 +1,21 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.yongpaiku.template.1",color:"gold"},{translate: "game.yongpaiku.juntuan.diyuzhihuo.1",color:"dark_green",hover_event:{action:"show_text","value":"在敌方召唤四只烈焰人"}}]
+function kards:game/yongpaiku/use_general/kard_general
+execute if entity @s[team=red] at @e[tag=blue_marker_2] run summon blaze ~ 5 ~ {Team:red,attributes:[{id:"follow_range",base:100}],Tags:["Mob_Start"]}
+execute if entity @s[team=red] at @e[tag=blue_marker_5] run summon blaze ~ 5 ~ {Team:red,attributes:[{id:"follow_range",base:100}],Tags:["Mob_Start"]}
+execute if entity @s[team=red] at @e[tag=blue_marker_9] run summon blaze ~ 5 ~ {Team:red,attributes:[{id:"follow_range",base:100}],Tags:["Mob_Start"]}
+execute if entity @s[team=red] at @e[tag=blue_marker_12] run summon blaze ~ 5 ~ {Team:red,attributes:[{id:"follow_range",base:100}],Tags:["Mob_Start"]}
 
-    #红队用
-    execute if entity @s[team=red] as @e[tag=2r] at @s run summon blaze ~ 0 ~ {Team:red}
-    execute if entity @s[team=red] as @e[tag=5r] at @s run summon blaze ~ 0 ~ {Team:red}
-    execute if entity @s[team=red] as @e[tag=9r] at @s run summon blaze ~ 0 ~ {Team:red}
-    execute if entity @s[team=red] as @e[tag=12r] at @s run summon blaze ~ 0 ~ {Team:red}
-    #蓝队用
-    execute if entity @s[team=blue] as @e[tag=2b] at @s run summon blaze ~ 0 ~ {Team:blue}
-    execute if entity @s[team=blue] as @e[tag=5b] at @s run summon blaze ~ 0 ~ {Team:blue}
-    execute if entity @s[team=blue] as @e[tag=9b] at @s run summon blaze ~ 0 ~ {Team:blue}
-    execute if entity @s[team=blue] as @e[tag=12b] at @s run summon blaze ~ 0 ~ {Team:blue}
-function kards:game/yongpaiku/xianjin/jiance/mobjiance
+execute if entity @s[team=blue] at @e[tag=red_marker_2] run summon blaze ~ 5 ~ {Team:blue,attributes:[{id:"follow_range",base:100}],Tags:["Mob_Start"]}
+execute if entity @s[team=blue] at @e[tag=red_marker_5] run summon blaze ~ 5 ~ {Team:blue,attributes:[{id:"follow_range",base:100}],Tags:["Mob_Start"]}
+execute if entity @s[team=blue] at @e[tag=red_marker_9] run summon blaze ~ 5 ~ {Team:blue,attributes:[{id:"follow_range",base:100}],Tags:["Mob_Start"]}
+execute if entity @s[team=blue] at @e[tag=red_marker_12] run summon blaze ~ 5 ~ {Team:blue,attributes:[{id:"follow_range",base:100}],Tags:["Mob_Start"]}
+
+execute if entity @s[team=red] store result score @s Mob_Count_Nether if entity @e[type=#kards:nether,team=red]
+execute if entity @s[team=blue] store result score @s Mob_Count_Nether if entity @e[type=#kards:nether,team=blue]
+
+execute if score @s Mob_Count_Nether matches 8.. as @e[tag=Mob_Start] run item replace entity @s armor.head with minecraft:iron_helmet[!attribute_modifiers,unbreakable={},enchantments={"thorns":5}]
+tag @e[tag=Mob_Start] remove Mob_Start
+scoreboard players reset @s Mob_Count_Nether
+
+function kards:game/yongpaiku/xianjing/jiance/mobjiance
 item replace entity @s weapon.offhand with air
 scoreboard players operation @s kardCount -= #kard_diyuzhihuo kardCount
-scoreboard players remove @s[scores={kujie=1..}] kardCount 1
-scoreboard players set @s pingbi 0
-scoreboard players add @s use_kard 1

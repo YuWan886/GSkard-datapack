@@ -1,5 +1,8 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.yongpaiku.template.1",color:"gold"},{translate: "game.yongpaiku.yansheng.longxi.1",color:"gold",hover_event:{action:"show_text","value":"获得一瓶龙息 一次性道具 可在任意时刻使用"}}]
-give @s minecraft:dragon_breath[item_name={translate: "game.paiku.yansheng.longxi.1",color:"gold"},lore=[[{translate: "game.yongpaiku.zhuangbei.longxi.1",color:"gold",italic:false}],[{translate: "game.yongpaiku.zhuangbei.longxi.2",color:"gray",italic:false},{translate: "game.paiku.yansheng.longxi.5",color:"gold",italic:false},{translate: "game.yongpaiku.zhuangbei.longxi.3",color:"gray",italic:false},{translate: "game.yongpaiku.zhuangbei.longxi.4",color:"red",italic:false}]],max_stack_size=1,custom_data={kards:'龙息'}]
+function kards:game/yongpaiku/use_general/kard_general
+
+
+
+function kards:game/paiku/yansheng/longxi
 
 item replace entity @s weapon.offhand with air
 scoreboard players operation @s kardCount -= #kard_longxi kardCount

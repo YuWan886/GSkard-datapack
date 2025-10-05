@@ -1,0 +1,1 @@
+execute if score @s random1 matches 27 run function kards-dlc:kard/type/jiben/template_jiben/give

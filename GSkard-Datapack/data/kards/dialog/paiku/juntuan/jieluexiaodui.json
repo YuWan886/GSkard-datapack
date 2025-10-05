@@ -1,0 +1,111 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "extra": [
+            {
+                "color": "dark_green",
+                "translate": "json.kards.dialog.paiku.juntuan.jieluexiaodui.478",
+                "fallback": "劫掠小队"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.sijiruchun.346",
+        "fallback": "7K "
+    },
+    "external_title": {
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "music_disc_cat"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "gold",
+                        "translate": "json.kards.dialog.paiku.juntuan.jieluexiaodui.479",
+                        "fallback": " 劫掠者"
+                    },
+                    {
+                        "color": "gray",
+                        "translate": "json.kards.dialog.paiku.juntuan.jieluexiaodui.480",
+                        "fallback": " 和1只"
+                    },
+                    {
+                        "color": "gold",
+                        "translate": "json.kards.dialog.paiku.jiben.weidaoshi.439",
+                        "fallback": " 卫道士"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.juntuan.errenchengjun.467",
+                "fallback": "召唤2只"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "red",
+                        "translate": "json.kards.dialog.paiku.juntuan.jieluexiaodui.482",
+                        "fallback": " 村民"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.juntuan.jieluexiaodui.481",
+                "fallback": "若存在敌方图腾"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "gold",
+                        "translate": "json.kards.dialog.paiku.juntuan.jieluexiaodui.479",
+                        "fallback": " 劫掠者"
+                    },
+                    {
+                        "color": "gray",
+                        "translate": "json.kards.dialog.paiku.juntuan.jieluexiaodui.484",
+                        "fallback": " 与1只"
+                    },
+                    {
+                        "color": "gold",
+                        "translate": "json.kards.dialog.paiku.jiben.weidaoshi.439",
+                        "fallback": " 卫道士"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.juntuan.jieluexiaodui.483",
+                "fallback": "额外召唤1只"
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.455",
+            "fallback": "返回§d军团牌§a牌库"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/juntuan/main"
+        }
+    }
+}

@@ -1,0 +1,96 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "extra": [
+            {
+                "color": "dark_green",
+                "translate": "json.kards.dialog.paiku.juntuan.main.504",
+                "fallback": "小猪快跑"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.sijiruchun.346",
+        "fallback": "7K "
+    },
+    "external_title": {
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "music_disc_cat"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "gold",
+                        "translate": "json.kards.dialog.paiku.jiben.youzhushou.443",
+                        "fallback": " 疣猪兽"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.juntuan.sanrenchengzhong.514",
+                "fallback": "召唤3只"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "green",
+                        "translate": "json.kards.dialog.paiku.juntuan.xiaozhukuaipao.587",
+                        "fallback": " 友方"
+                    },
+                    {
+                        "color": "gold",
+                        "translate": "json.kards.dialog.paiku.juntuan.xiaozhukuaipao.588",
+                        "fallback": " 猪灵"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.juntuan.xiaozhukuaipao.586",
+                "fallback": "若存在"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "gold",
+                        "translate": "json.kards.dialog.paiku.juntuan.xiaozhukuaipao.590",
+                        "fallback": " 骑乘上疣猪兽并使其改为远程攻击"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.juntuan.xiaozhukuaipao.589",
+                "fallback": "改为令至多3只友方猪灵"
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.455",
+            "fallback": "返回§d军团牌§a牌库"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/juntuan/main"
+        }
+    }
+}

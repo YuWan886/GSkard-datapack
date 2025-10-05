@@ -1,0 +1,5 @@
+item modify entity @s weapon.mainhand {function:"set_enchantments",enchantments:{"kards:fengxingzhe":1},add:true}
+execute store result score @s mainhand_enchantment_levels run data get entity @s SelectedItem.components."minecraft:enchantments".kards:fengxingzhe
+tellraw @s [{translate: "kards.function.enchantment.book.add_enchantment.bingshuangjingji.1", fallback: "成功为主手物品添加附魔",color:"green"},{translate: "kards.function.enchantment.book.add_enchantment.fengxingzhe.1", fallback: "风行者 I",color:"gold"},{translate: "kards.function.enchantment.book.add_enchantment.bingshuangjingji.3", fallback: "\n当前物品",color:"gray"},{translate: "json.kards.dialog.xp_shop.enchantment.main.1335", fallback: "风行者",color:"gold"},{translate: "kards.function.enchantment.book.add_enchantment.bingshuangjingji.4", fallback: "等级为",color:"gray"},{score:{name:"@s",objective:"mainhand_enchantment_levels"},color:"green"}]
+item replace entity @s weapon.offhand with air
+execute at @s run playsound block.enchantment_table.use player @s ~ ~ ~ 100 1

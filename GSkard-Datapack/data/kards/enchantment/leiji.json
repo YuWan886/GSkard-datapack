@@ -1,8 +1,6 @@
 {
     "anvil_cost": 8,
-    "description": {
-        "translate": "leiji.13"
-    },
+    "description": "雷击",
     "effects": {
         "minecraft:hit_block": [
             {

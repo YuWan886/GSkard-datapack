@@ -1,0 +1,7 @@
+{
+    "env": {
+        "gameVersion": "Latest release",
+        "dataSource": "fastly",
+        "useFilePolling": true
+    }
+}

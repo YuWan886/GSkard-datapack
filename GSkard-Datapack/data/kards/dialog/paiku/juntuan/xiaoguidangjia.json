@@ -1,0 +1,91 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "extra": [
+            {
+                "color": "dark_green",
+                "translate": "json.kards.dialog.paiku.juntuan.main.503",
+                "fallback": "小鬼当家"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.chunriying.245",
+        "fallback": "12K "
+    },
+    "external_title": {
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "music_disc_cat"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "gold",
+                        "translate": "json.kards.dialog.paiku.juntuan.xiaoguidangjia.581",
+                        "fallback": " 携带附魔击退与火焰附加的小僵尸"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.juntuan.sanrenchengzhong.514",
+                "fallback": "召唤3只"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "red",
+                        "translate": "json.kards.dialog.paiku.juntuan.xiaoguidangjia.583",
+                        "fallback": " 鸡"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.juntuan.xiaoguidangjia.582",
+                "fallback": "若存在友方图腾"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "extra": [
+                    {
+                        "color": "gold",
+                        "translate": "json.kards.dialog.paiku.juntuan.xiaoguidangjia.585",
+                        "fallback": " 移速增加的小鸡骑士"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.juntuan.xiaoguidangjia.584",
+                "fallback": "改为召唤"
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.juntuan.baozhajuntuan.455",
+            "fallback": "返回§d军团牌§a牌库"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/juntuan/main"
+        }
+    }
+}

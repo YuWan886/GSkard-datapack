@@ -1,0 +1,101 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "extra": [
+            {
+                "color": "red",
+                "translate": "json.kards.dialog.paiku.tuteng.main.714",
+                "fallback": "铁傀儡"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.tuteng.tiekuilei.741",
+        "fallback": "16K "
+    },
+    "external_title": {
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "music_disc_blocks"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "red",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.tuteng.baomao.681",
+                "fallback": "图腾牌"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.tuteng.tiekuilei.742",
+                "fallback": "在队伍区域中间生成铁傀儡"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.tuteng.baomao.683",
+                "fallback": "图腾存活效果："
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "color": "red",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.tuteng.tiekuilei.744",
+                        "fallback": "虚弱2"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.tuteng.tiekuilei.743",
+                "fallback": "1.在铁傀儡5格范围内的敌方怪物获得"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.tuteng.tiekuilei.745",
+                "fallback": "2.铁傀儡会主动攻击敌方使用的怪物"
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.tuteng.baomao.689",
+            "fallback": "返回§c图腾§a牌库"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/tuteng/main"
+        }
+    }
+}

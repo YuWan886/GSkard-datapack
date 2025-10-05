@@ -1,0 +1,96 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "color": "dark_red",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.yansheng.busituteng.baonu.1139",
+        "fallback": "暴怒图腾"
+    },
+    "external_title": {
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "totem_of_undying"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.yansheng.busituteng.baonu.1140",
+                "fallback": "触发后"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "dark_green",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.yansheng.busituteng.baonu.1141",
+                "fallback": " ♥+20 60s"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "dark_green",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.yansheng.busituteng.baonu.1142",
+                "fallback": " ♥+10"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "dark_green",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.yansheng.busituteng.baonu.1143",
+                "fallback": " 抗性提升5 10s"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "dark_green",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.yansheng.busituteng.baonu.1144",
+                "fallback": " 速度5 30s"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "dark_green",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.yansheng.busituteng.baonu.1145",
+                "fallback": " 力量5 30s"
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.yansheng.jinzijue.1116",
+            "fallback": "返回§7其他"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/yansheng/busituteng/main"
+        }
+    }
+}

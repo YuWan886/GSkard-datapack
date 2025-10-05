@@ -1,0 +1,53 @@
+{
+    "model": {
+        "type": "select",
+        "property": "main_hand",
+        "fallback": {
+            "type": "model",
+            "model": "kards:kingbox/diaolingtaidao/0"
+        },
+        "cases": [
+            {
+                "when": "right",
+                "model": {
+                    "type": "select",
+                    "property": "display_context",
+                    "fallback": {
+                        "type": "model",
+                        "model": "kards:kingbox/diaolingtaidao/dao"
+                    },
+                    "cases": [
+                        {
+                            "when": "firstperson_righthand",
+                            "model": {
+                                "type": "composite",
+                                "models": [
+                                    {
+                                        "type": "model",
+                                        "model": "kards:kingbox/diaolingtaidao/qiao"
+                                    },
+                                    {
+                                        "type": "model",
+                                        "model": "kards:kingbox/diaolingtaidao/dao"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "when": "firstperson_lefthand",
+                            "model": {
+                                "type": "composite",
+                                "models": [
+                                    {
+                                        "type": "model",
+                                        "model": "kards:kingbox/diaolingtaidao/dao"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

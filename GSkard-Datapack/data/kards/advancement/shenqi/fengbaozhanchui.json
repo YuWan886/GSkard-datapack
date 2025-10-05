@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "components": {
+                        "minecraft:custom_data": "{kards:'风暴战锤'}"
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "kards:game/yongpaiku/shenji/wangzhibaoku/fengbaozhanchui/1"
+    }
+}

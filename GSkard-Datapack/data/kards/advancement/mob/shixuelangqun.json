@@ -5,13 +5,13 @@
             "conditions": {
                 "damage": {
                     "source_entity": {
-                        "nbt": "{Tags:[\"嗜血狼群\"]}"
+                        "nbt": "{Tags:[\"shixuelangqun\"]}"
                     }
                 }
             }
         }
     },
     "rewards": {
-        "function": "kards:game/ingame/hurt/shixuelangqun"
+        "function": "kards:game/player/hurt/shixuelangqun"
     }
 }

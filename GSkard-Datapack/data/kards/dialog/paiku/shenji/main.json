@@ -1,0 +1,276 @@
+{
+    "type": "minecraft:multi_action",
+    "title": {
+        "color": "white",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.shenji.main.639",
+        "fallback": "神迹"
+    },
+    "external_title": {
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
+    },
+    "body": [],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "exit_action": {
+        "label": {
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.fashu.main.290",
+            "fallback": "返回§6主§a牌库"
+        },
+        "action": {
+            "type": "show_dialog",
+            "dialog": "kards:paiku/main"
+        }
+    },
+    "columns": 5,
+    "actions": [
+        {
+            "label": {
+                "color": "white",
+                "bold": true,
+                "translate": "json.kards.dialog.paiku.shenji.fanxiangfeileishen.602",
+                "fallback": "飞雷神•反"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/shenji/fanxiangfeileishen"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "white",
+                "bold": true,
+                "translate": "json.kards.dialog.paiku.shenji.feileishen.606",
+                "fallback": "飞雷神"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/shenji/feileishen"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "white",
+                "bold": true,
+                "translate": "json.kards.dialog.paiku.shenji.fuzhi.610",
+                "fallback": "复制"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/shenji/fuzhi"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "white",
+                "bold": true,
+                "translate": "json.kards.dialog.paiku.shenji.haogaowuyuan.612",
+                "fallback": "好高骛远"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/shenji/haogaowuyuan"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "white",
+                "bold": true,
+                "translate": "json.kards.dialog.paiku.shenji.huoliquankai.615",
+                "fallback": "火力全开"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/shenji/huoliquankai"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "white",
+                "bold": true,
+                "translate": "json.kards.dialog.paiku.shenji.jinfajiejie.622",
+                "fallback": "禁法结界"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/shenji/jinfajiejie"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "white",
+                "bold": true,
+                "translate": "json.kards.dialog.jiaocheng.wanfa.2.152",
+                "fallback": "绝处逢生"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/shenji/juechufengsheng"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "white",
+                "bold": true,
+                "translate": "json.kards.dialog.paiku.shenji.lairichanghuan.627",
+                "fallback": "来日偿还"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/shenji/lairichanghuan"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "white",
+                "bold": true,
+                "translate": "json.kards.dialog.paiku.shenji.linghungeshe.631",
+                "fallback": "灵魂割舍"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/shenji/linghungeshe"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "white",
+                "bold": true,
+                "translate": "json.kards.dialog.paiku.shenji.lingjia.635",
+                "fallback": "凌驾"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/shenji/lingjia"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "white",
+                "bold": true,
+                "translate": "json.kards.dialog.paiku.shenji.main.640",
+                "fallback": "墓园狂欢"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/shenji/muyuankuanghuan"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "white",
+                "bold": true,
+                "translate": "json.kards.dialog.paiku.shenji.main.641",
+                "fallback": "胜利号角"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/shenji/shenglihaojiao"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "white",
+                "bold": true,
+                "translate": "json.kards.dialog.paiku.shenji.main.642",
+                "fallback": "神之一手"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/shenji/shenzhiyishou"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "white",
+                "bold": true,
+                "translate": "json.kards.dialog.paiku.shenji.main.643",
+                "fallback": "时空崩塌"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/shenji/shikongbengta"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "white",
+                "bold": true,
+                "translate": "json.kards.dialog.paiku.shenji.main.644",
+                "fallback": "贪欲魔盒"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/shenji/tanyumohe"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "white",
+                "bold": true,
+                "translate": "json.kards.dialog.paiku.main.226",
+                "fallback": "王之宝库"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/shenji/wangzhibaoku"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "white",
+                "bold": true,
+                "translate": "json.kards.dialog.paiku.shenji.main.645",
+                "fallback": "虚空回响"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/shenji/xukonghuixiang"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "white",
+                "bold": true,
+                "translate": "json.kards.dialog.paiku.shenji.main.646",
+                "fallback": "幽谙降临"
+            },
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "kards:paiku/shenji/youanjianglin"
+            },
+            "width": 75
+        },
+        {
+            "label": {
+                "color": "white",
+                "translate": "json.kards.dialog.paiku.fashu.main.321",
+                "fallback": "DLC"
+            },
+            "action": {
+                "type": "show_dialog",
+                "dialog": "kards-dlc:kard/shenji/main"
+            },
+            "width": 75
+        }
+    ]
+}

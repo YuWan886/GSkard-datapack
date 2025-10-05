@@ -1,0 +1,65 @@
+{
+    "type": "notice",
+    "title": {
+        "extra": [
+            {
+                "color": "gold",
+                "translate": "json.kards-dlc.dialog.kard.zhuangbei.main.1388",
+                "fallback": "模板：装备"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.beishuiyizhan.227",
+        "fallback": "5K "
+    },
+    "body": [
+        {
+            "type": "item",
+            "item": {
+                "id": "music_disc_13"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "plain_message",
+            "contents": {
+                "color": "gold",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.main.222",
+                "fallback": "装备牌"
+            },
+            "width": 1024
+        },
+        {
+            "type": "plain_message",
+            "contents": {
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "color": "gold",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.zhuangbei.main.1201",
+                        "fallback": "铁斧"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.zhuangbei.jinjian.1191",
+                "fallback": "获得一把"
+            },
+            "width": 1024
+        }
+    ],
+    "action": {
+        "label": {
+            "color": "green",
+            "translate": "json.kards-dlc.dialog.kard.zhuangbei.template_shipin.1390",
+            "fallback": "返回§c装备§a牌库-§5DLC"
+        },
+        "action": {
+            "type": "show_dialog",
+            "dialog": "kards-dlc:kard/zhuangbei/main"
+        }
+    }
+}

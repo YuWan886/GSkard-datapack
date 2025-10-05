@@ -1,0 +1,88 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "color": "white",
+        "italic": false,
+        "translate": "json.kards.dialog.paiku.wangzhibaoku.main.894",
+        "fallback": "轻灵之语"
+    },
+    "external_title": {
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:bow",
+                "components": {
+                    "item_model": "kards:light_feather"
+                }
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "aqua",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.qinglingzhiyu.901",
+                "fallback": "风之庇护"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.qinglingzhiyu.902",
+                "fallback": "拿在手中时 获得38%移速加成"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "aqua",
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.qinglingzhiyu.903",
+                "fallback": "风袭"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.qinglingzhiyu.904",
+                "fallback": "使用轻灵之语近战攻击会使目标旋转1.75s"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.wangzhibaoku.qinglingzhiyu.905",
+                "fallback": "10s补充一次"
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.wangzhibaoku.diaolingtaidao.818",
+            "fallback": "返回§6王之宝库"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/wangzhibaoku/main"
+        }
+    }
+}

@@ -1,3 +1,3 @@
-tellraw @s {translate: "game.yongpaiku.yansheng.totem.hundun.3.1",color: "dark_gray"}
-execute if entity @s[team=red] at @s as @e[distance=..5,type=!player,type=!iron_golem,team=blue] run damage @s 20
-execute if entity @s[team=blue] at @s as @e[distance=..5,type=!player,type=!iron_golem,team=red] run damage @s 20
+
+tellraw @s [{translate: "kards.function.game.yongpaiku.yansheng.totem.hundun.3.1", fallback: "再获得一个",color:"gray",italic:false},{translate: "kards.function.game.paiku.yansheng.busituteng.hundun.5", fallback: "\"混沌图腾\"!",color:"gray",italic:false}]
+function kards:game/paiku/yansheng/busituteng/hundun

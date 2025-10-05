@@ -1,13 +1,17 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.yongpaiku.template.1",color:"gold"},{translate: "game.yongpaiku.juntuan.morilailing.1",color:"dark_green",hover_event:{action:"show_text","value":"在敌方召唤两只闪电苦力怕"}}]
-    #红队用
-    execute if entity @s[team=red] as @e[tag=5r] at @s run summon creeper ~ 0 ~ {powered:1b,Team:red}
-    execute if entity @s[team=red] as @e[tag=9r] at @s run summon creeper ~ 0 ~ {powered:1b,Team:red}
-    #蓝队用
-    execute if entity @s[team=blue] as @e[tag=5b] at @s run summon creeper ~ 0 ~ {powered:1b,Team:blue}
-    execute if entity @s[team=blue] as @e[tag=9b] at @s run summon creeper ~ 0 ~ {powered:1b,Team:blue}
-function kards:game/yongpaiku/xianjin/jiance/mobjiance
+function kards:game/yongpaiku/use_general/kard_general
+execute if entity @s[team=red] at @e[tag=blue_marker_5] run summon creeper ~ 0 ~ {powered:1b,Team:red,Tags:["morilailing"],Passengers:[{id:"item_display",billboard:"vertical",start_interpolation:0,interpolation_duration:40,item:{id:"creeper_head"},Tags:["Mob_Start","morilailing"]}]}
+execute if entity @s[team=red] at @e[tag=blue_marker_9] run summon creeper ~ 0 ~ {powered:1b,Team:red,Tags:["morilailing"],Passengers:[{id:"item_display",billboard:"vertical",start_interpolation:0,interpolation_duration:40,item:{id:"creeper_head"},Tags:["Mob_Start","morilailing"]}]}
+
+execute if entity @s[team=blue] at @e[tag=red_marker_5] run summon creeper ~ 0 ~ {powered:1b,Team:blue,Tags:["morilailing"],Passengers:[{id:"item_display",billboard:"vertical",start_interpolation:0,interpolation_duration:40,item:{id:"creeper_head"},Tags:["Mob_Start","morilailing"]}]}
+execute if entity @s[team=blue] at @e[tag=red_marker_9] run summon creeper ~ 0 ~ {powered:1b,Team:blue,Tags:["morilailing"],Passengers:[{id:"item_display",billboard:"vertical",start_interpolation:0,interpolation_duration:40,item:{id:"creeper_head"},Tags:["Mob_Start","morilailing"]}]}
+
+execute if entity @s[team=red] run team join red @e[tag=Mob_Start]
+execute if entity @s[team=blue] run team join blue @e[tag=Mob_Start]
+
+execute as @e[tag=Mob_Start] run data modify entity @s transformation.translation set value [0,0.5,0]
+
+tag @e[tag=Mob_Start] remove Mob_Start
+
+function kards:game/yongpaiku/xianjing/jiance/mobjiance
 item replace entity @s weapon.offhand with air
-scoreboard players operation @s kardCount -= #kard_morilailing kardCount
-scoreboard players remove @s[scores={kujie=1..}] kardCount 1
-scoreboard players set @s pingbi 0
-scoreboard players add @s use_kard 1
+scoreboard players operation @s kardCount -= #kard_morilailin kardCount

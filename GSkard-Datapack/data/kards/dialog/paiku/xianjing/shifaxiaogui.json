@@ -1,0 +1,97 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "extra": [
+            {
+                "color": "dark_aqua",
+                "translate": "json.kards.dialog.paiku.xianjing.main.1075",
+                "fallback": "施法小鬼"
+            }
+        ],
+        "color": "aqua",
+        "bold": true,
+        "translate": "json.kards.dialog.paiku.fashu.guohechaiqiao.263",
+        "fallback": "3K "
+    },
+    "external_title": {
+        "translate": "json.kards.dialog.first_join.1.71",
+        "fallback": ""
+    },
+    "body": [
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "music_disc_wait"
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "dark_aqua",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.xianjing.hewei.1057",
+                "fallback": "陷阱卡"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.xianjing.hewei.1058",
+                "fallback": "使用后埋下陷阱 敌方在达到条件时触发 触发后失效"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "color": "light_purple",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.main.220",
+                        "fallback": "法术牌"
+                    },
+                    {
+                        "color": "gray",
+                        "italic": false,
+                        "translate": "json.kards.dialog.paiku.xianjing.hewei.1061",
+                        "fallback": "时"
+                    }
+                ],
+                "translate": "json.kards.dialog.paiku.xianjing.hewei.1059",
+                "fallback": "条件：敌方任意玩家使用"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "gray",
+                "italic": false,
+                "translate": "json.kards.dialog.paiku.xianjing.shifaxiaogui.1089",
+                "fallback": "触发：在其脚下召唤一只加强的小僵尸"
+            },
+            "width": 1024
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "action": {
+        "label": {
+            "color": "green",
+            "translate": "json.kards.dialog.paiku.xianjing.hewei.1066",
+            "fallback": "返回§c陷阱§a牌库"
+        },
+        "action": {
+            "type": "minecraft:show_dialog",
+            "dialog": "kards:paiku/xianjing/main"
+        }
+    }
+}

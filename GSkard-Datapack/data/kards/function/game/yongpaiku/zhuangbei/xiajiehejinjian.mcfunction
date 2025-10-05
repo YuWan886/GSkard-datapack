@@ -1,7 +1,7 @@
-execute if score @s pingbi matches 0 run tellraw @a [{selector:"@s"},{translate: "game.yongpaiku.template.1",color:"gold"},{translate: "game.yongpaiku.zhuangbei.xiajiehejinjian.1",color:"gold"}]
-give @s minecraft:netherite_sword[minecraft:item_name={translate: "game.yongpaiku.zhuangbei.xiajiehejinjian.2",color:"dark_gray"},lore=[{translate: "game.yongpaiku.zhuangbei.xiajiehejinjian.3",color:"gray",italic:false},{translate: "game.yongpaiku.zhuangbei.xiajiehejinjian.4",color:"dark_gray",italic:true},{translate: "game.end.reset.11"},{translate: "game.start.wait_start.4",color:"gray",italic:false},{translate: "game.yongpaiku.shenji.wangzhibaoku.chuancichangji.give.5",color:"dark_green",italic:false},{translate: "game.yongpaiku.shenji.wangzhibaoku.shizhongjian.give.13",color:"dark_green",italic:false}],minecraft:attribute_modifiers=[{type:"attack_damage",amount:12,id:"1",operation:"add_value",slot:"mainhand"},{type:"attack_speed",amount:-2.4,slot:"mainhand",operation:"add_value",id:"1"}],custom_data={kards:'下界合金剑'},tooltip_display={hidden_components:["attribute_modifiers","unbreakable"]}]
+function kards:game/yongpaiku/use_general/kard_general
+
+
+
+give @s minecraft:netherite_sword[minecraft:custom_name={italic:false,translate: "json.kards.dialog.paiku.zhuangbei.main.1204", fallback: "下界合金剑",color:"dark_gray"},lore=[{translate: "kards.function.game.yongpaiku.zhuangbei.xiajiehejinjian.1", fallback: "潜能无限",color:"dark_gray",italic:true},{translate: "json.kards.dialog.first_join.1.71", fallback: ""},{translate: "kards.function.game.start.int.player.3", fallback: "在主手时：",color:"gray",italic:false},{translate: "kards.function.game.yongpaiku.shenji.wangzhibaoku.shizhongjian.give.4", fallback: " 12 攻击伤害",color:"dark_green",italic:false},{translate: "kards.function.game.yongpaiku.zhuangbei.jinjian.2", fallback: " 1.6 攻击速度",color:"dark_green",italic:false}],minecraft:attribute_modifiers=[{type:"attack_damage",amount:12,id:"1",operation:"add_value",slot:"mainhand"},{type:"attack_speed",amount:-2.4,slot:"mainhand",operation:"add_value",id:"1"}],minecraft:unbreakable={},custom_data={kards:'下界合金剑'},tooltip_display={hidden_components:["attribute_modifiers","unbreakable"]}]
 item replace entity @s weapon.offhand with air
 scoreboard players operation @s kardCount -= #kard_xiajiehejinjian kardCount
-scoreboard players remove @s[scores={kujie=1..}] kardCount 1
-scoreboard players set @s pingbi 0
-scoreboard players add @s use_kard 1

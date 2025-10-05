@@ -1,0 +1,120 @@
+{
+    "type": "minecraft:multi_action",
+    "title": [
+        {
+            "color": "gray",
+            "translate": "json.kards.dialog.ceshi.65",
+            "fallback": "你当前的构想 "
+        }
+    ],
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "color": "green",
+                "translate": "json.kards.dialog.ceshi.66",
+                "fallback": "点击以升级对应天赋"
+            },
+            "width": 1024
+        },
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:player_head",
+                "count": 1
+            },
+            "show_decorations": false,
+            "show_tooltip": false
+        }
+    ],
+    "actions": [
+        {
+            "label": [
+                {
+                    "translate": "json.kards.dialog.ceshi.67",
+                    "fallback": "生存天赋 消耗2点构想升级"
+                }
+            ],
+            "tooltip": [
+                {
+                    "color": "gold",
+                    "translate": "json.kards.dialog.ceshi.68",
+                    "fallback": "生存天赋\n"
+                },
+                {
+                    "color": "gold",
+                    "translate": "json.kards.dialog.ceshi.68",
+                    "fallback": "生存天赋\n"
+                },
+                {
+                    "color": "gray",
+                    "translate": "json.kards.dialog.ceshi.68",
+                    "fallback": "生存天赋\n"
+                },
+                {
+                    "color": "gray",
+                    "translate": "json.kards.dialog.ceshi.68",
+                    "fallback": "生存天赋\n"
+                },
+                {
+                    "color": "gray",
+                    "translate": "json.kards.dialog.ceshi.68",
+                    "fallback": "生存天赋\n"
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger dialog set 1000"
+            }
+        },
+        {
+            "label": [
+                {
+                    "translate": "json.kards.dialog.ceshi.69",
+                    "fallback": "战斗天赋 消耗4点构想升级"
+                }
+            ],
+            "tooltip": [
+                {
+                    "color": "gold",
+                    "translate": "json.kards.dialog.ceshi.70",
+                    "fallback": "战斗天赋\n"
+                },
+                {
+                    "color": "gold",
+                    "translate": "json.kards.dialog.ceshi.70",
+                    "fallback": "战斗天赋\n"
+                },
+                {
+                    "color": "gold",
+                    "translate": "json.kards.dialog.ceshi.70",
+                    "fallback": "战斗天赋\n"
+                },
+                {
+                    "color": "gold",
+                    "translate": "json.kards.dialog.ceshi.70",
+                    "fallback": "战斗天赋\n"
+                },
+                {
+                    "color": "gray",
+                    "translate": "json.kards.dialog.ceshi.70",
+                    "fallback": "战斗天赋\n"
+                }
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "trigger dialog set 1000"
+            }
+        }
+    ],
+    "columns": 3,
+    "pause": false,
+    "after_action": "none",
+    "exit_action": {
+        "label": "1",
+        "action": {
+            "type": "run_command",
+            "command": "trigger dialog set 1000"
+        }
+    }
+}

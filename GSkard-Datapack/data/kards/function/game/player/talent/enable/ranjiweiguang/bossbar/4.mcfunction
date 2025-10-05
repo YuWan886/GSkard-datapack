@@ -1,0 +1,1 @@
+$bossbar remove kards:ranjiweiguang_attack_time_$(UUID)

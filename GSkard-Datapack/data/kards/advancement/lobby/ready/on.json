@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": "minecraft:blaze_rod",
+                    "predicates": {
+                        "custom_data": "{kards:'准备'}"
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "kards:lobby/ready/on"
+    }
+}

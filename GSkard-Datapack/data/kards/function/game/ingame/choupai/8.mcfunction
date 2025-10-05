@@ -1,4 +1,4 @@
-execute store result score @s random8 run random value 1..13
+$execute store result score @s random8 run random value 1..$(xianjing)
 execute if score @s random8 matches 1 run function kards:game/paiku/xianjing/shufashixiao
 execute if score @s random8 matches 2 run function kards:game/paiku/xianjing/shifaxiaogui
 execute if score @s random8 matches 3 run function kards:game/paiku/xianjing/jingxiahezi
@@ -12,5 +12,8 @@ execute if score @s random8 matches 10 run function kards:game/paiku/xianjing/qi
 execute if score @s random8 matches 11 run function kards:game/paiku/xianjing/youdi
 execute if score @s random8 matches 12 run function kards:game/paiku/xianjing/qianjunyifa
 execute if score @s random8 matches 13 run function kards:game/paiku/xianjing/toulianghuanzhu
+
+execute if score @s random8 matches 14.. run function kards-dlc:kard/type/xianjing/ganeral
+
 scoreboard players set @s random8 0
-scoreboard players remove @s xianjingcishu 1
+scoreboard players remove @s xianjincishu 1

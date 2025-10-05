@@ -3,34 +3,62 @@ jump_strength 跳跃力度
     眩晕 001
     断腿 002
     冻结 003
+    春日影 004
+    巨人战争 005
+    小人国 006
 
 max_health 最大生命//森林之护本质上是盔甲自带的属性 不在此处记录
     禁字决 001-0010
     飞升护符 0011
+    巨人战争 0012
+    小人国 0013
+    贪欲魔盒 101
 
 attack_knockback 击退
-    轻灵之语 001
+
     便携活塞 002
 
 movement_speed 移速
     轻灵之语 001
+    春日影 002
+    永寒 003
     迅捷之羽 005
+    巨人战争 006
+    小人国 007
 
 minecraft:entity_interaction_range 实体距离
     天神石板甲 001
     寄生粘液 002
+    巨人战争 003
+    小人国 004
 
 armor 护甲值
     海龟鳞甲 001
+    破碎 002
 
 armor_toughness 盔甲韧性
     海龟鳞甲 001
+    破碎 002
 
 minecraft:attack_speed 攻击速度
     破碎剑刃 001
    
 minecraft:knockback_resistance
     鞋钉 001
+    天神石板甲 002
+
+minecraft:fly_speed
+    春日影 001
+
+safe_fall_distance
+    pvp虚空 001
+    巨人战争 002
+
+gravity
+    小人国 001
+
+minecraft:attack_damage
+    石中剑 001~010
 
 虚拟实体相关
 大多数用"#system"
@@ -44,7 +72,9 @@ minecraft:knockback_resistance
 9 8 7 6 5
     4
 3   2   1
+
     0
+    
 1   2   3      
     4        
 5 6 7 8 9
