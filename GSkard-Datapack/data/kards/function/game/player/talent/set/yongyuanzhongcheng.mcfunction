@@ -5,4 +5,5 @@ execute if score #system Talent_Random_Mode matches 1 run scoreboard players set
 execute if score #system Talent_Random_Mode matches 2 run scoreboard players set @s Talent_Enable 2
 
 # Tellraw
-tellraw @s [{text:"「永远忠诚」",color:aqua,bold:true},{text:"已开启!",color:gold,bold:true}]
+execute as @s[team=red] run tellraw @a[team=red,distance=0.1..] [{selector:"@s"},{text:"选择了",color:"gray"},{text:"永远忠诚",color:"aqua",hover_event:{action:"show_text",value:[{text:"在本局游戏内\n",color:"gray"},{text:"友方生物死后",color:"red"},{text:"你有8%的概率抽1张牌",color:"gold"}]}}]
+execute as @s[team=blue] run tellraw @a[team=blue,distance=0.1..] [{selector:"@s"},{text:"选择了",color:"gray"},{text:"永远忠诚",color:"aqua",hover_event:{action:"show_text",value:[{text:"在本局游戏内\n",color:"gray"},{text:"友方生物死后",color:"red"},{text:"你有8%的概率抽1张牌",color:"gold"}]}}]

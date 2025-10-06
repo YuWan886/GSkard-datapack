@@ -10,4 +10,5 @@ execute if score #system Talent_Random_Mode matches 2 run scoreboard players set
 execute at @s run function kards:game/player/talent/enable/huafanweijian/1
 
 # Tellraw
-tellraw @s [{text:"「化繁为简」",color:gray,bold:true},{text:"已开启!",color:gold,bold:true}]
+execute as @s[team=red] run tellraw @a[team=red,distance=0.1..] [{selector:"@s"},{text:"选择了",color:"gray"},{text:"化繁为简",color:"aqua",hover_event:{action:"show_text",value:[{text:"在本局游戏内",color:"gray"},{text:"你无法穿戴护甲\n",color:"red"},{text:"但",color:"gray"},{text:"护甲值+30 攻击伤害+40%\n",color:"gold"},{text:"且",color:"gray"},{text:"不会成为诅咒护甲的选中目标",color:"gold"}]}}]
+execute as @s[team=blue] run tellraw @a[team=blue,distance=0.1..] [{selector:"@s"},{text:"选择了",color:"gray"},{text:"化繁为简",color:"aqua",hover_event:{action:"show_text",value:[{text:"在本局游戏内",color:"gray"},{text:"你无法穿戴护甲\n",color:"red"},{text:"但",color:"gray"},{text:"护甲值+30 攻击伤害+40%\n",color:"gold"},{text:"且",color:"gray"},{text:"不会成为诅咒护甲的选中目标",color:"gold"}]}}]

@@ -5,4 +5,5 @@ execute if score #system Talent_Random_Mode matches 1 run scoreboard players set
 execute if score #system Talent_Random_Mode matches 2 run scoreboard players set @s Talent_Enable 2
 
 # Tellraw
-tellraw @s [{text:"「终焉之行」",color:light_purple,bold:true},{text:"已开启!",color:gold,bold:true}]
+execute as @s[team=red] run tellraw @a[team=red,distance=0.1..] [{selector:"@s"},{text:"选择了",color:"gray"},{text:"终焉之行",color:"dark_red",hover_event:{action:"show_text",value:[{text:"在本局游戏内 友方回合结束时\n",color:"gray"},{text:"统计本回合消耗的K/Kmax 取两值之和的1半\n",color:"gold"},{text:"分配等额无视护甲的伤害于敌方玩家",color:"gold"}]}}]
+execute as @s[team=blue] run tellraw @a[team=blue,distance=0.1..] [{selector:"@s"},{text:"选择了",color:"gray"},{text:"终焉之行",color:"dark_red",hover_event:{action:"show_text",value:[{text:"在本局游戏内 友方回合结束时\n",color:"gray"},{text:"统计本回合消耗的K/Kmax 取两值之和的1半\n",color:"gold"},{text:"分配等额无视护甲的伤害于敌方玩家",color:"gold"}]}}]

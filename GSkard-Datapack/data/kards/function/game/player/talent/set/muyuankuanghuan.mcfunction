@@ -6,4 +6,5 @@ execute if score #system Talent_Random_Mode matches 1 run scoreboard players set
 execute if score #system Talent_Random_Mode matches 2 run scoreboard players set @s Talent_Enable 2
 
 # Tellraw
-tellraw @s [{text:"「墓园狂欢」",color:white,bold:true},{text:"已开启!",color:gold,bold:true}]
+execute as @s[team=red] run tellraw @a[team=red,distance=0.1..] [{selector:"@s"},{text:"选择了",color:"gray"},{text:"墓园狂欢",color:"white",hover_event:{action:"show_text",value:[{text:"视为你使用了",color:"gray"},{text:"[墓园狂欢]\n",color:"white"},{text:"每回合开始时 无消耗自动使用5张",color:"gray"},{text:"<狂欢僵尸>",color:"blue"}]}}]
+execute as @s[team=blue] run tellraw @a[team=blue,distance=0.1..] [{selector:"@s"},{text:"选择了",color:"gray"},{text:"墓园狂欢",color:"white",hover_event:{action:"show_text",value:[{text:"视为你使用了",color:"gray"},{text:"[墓园狂欢]\n",color:"white"},{text:"每回合开始时 无消耗自动使用5张",color:"gray"},{text:"<狂欢僵尸>",color:"blue"}]}}]

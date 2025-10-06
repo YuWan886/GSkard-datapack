@@ -4,23 +4,30 @@
       "trigger": "minecraft:entity_hurt_player",
       "conditions": {
         "player": {
-          "nbt": "{Tags:[\"diaolingtaidao\"]}"
-        },
-        "damage": {
-          "blocked": true,
-          "type": {
-            "tags": [
-              {
-                "expected": false,
-                "id": "is_projectile"
+          "equipment": {
+            "mainhand": {
+              "items": "minecraft:netherite_sword",
+              "predicates": {
+                "minecraft:custom_data": "{kards:'凋零太刀'}"
               }
-            ]
+            }
           }
+      },
+      "damage": {
+        "blocked": true,
+        "type": {
+          "tags": [
+            {
+              "expected": false,
+              "id": "is_projectile"
+            }
+          ]
         }
       }
     }
-  },
-  "rewards": {
-    "function": "kards:game/player/shield/trigger_2"
   }
+},
+"rewards": {
+  "function": "kards:game/player/shield/trigger_2"
+}
 }

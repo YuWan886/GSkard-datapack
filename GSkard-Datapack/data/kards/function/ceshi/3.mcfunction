@@ -1,6 +1,6 @@
 execute store result score @s Talent_Random_1 run random value 1..20
 execute store result score @s Talent_Random_2 run random value 1..20
-execute store result score @s Talent_Random_3 run random value 1..20
+execute store result score @s Talent_Random_3 unless score @s arrow matches -2147483648..2147483647
 
 execute if score @s Talent_Random_1 = @s Talent_Random_2 run return run function kards:ceshi/3
 execute if score @s Talent_Random_2 = @s Talent_Random_3 run return run function kards:ceshi/3

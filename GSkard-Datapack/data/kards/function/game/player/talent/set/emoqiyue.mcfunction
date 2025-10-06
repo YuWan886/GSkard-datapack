@@ -5,4 +5,5 @@ execute if score #system Talent_Random_Mode matches 1 run scoreboard players set
 execute if score #system Talent_Random_Mode matches 2 run scoreboard players set @s Talent_Enable 2
 
 # Tellraw
-tellraw @s [{text:"「恶魔契约」",color:dark_gray,bold:true},{text:"已开启!",color:gold,bold:true}]
+execute as @s[team=red] run tellraw @a[team=red,distance=0.1..] [{selector:"@s"},{text:"选择了",color:"gray"},{text:"恶魔契约",color:"light_purple",hover_event:{action:"show_text",value:[{text:"每回合开始时",color:"gray"},{text:"[贪欲]\n",color:"white"},{text:"每1次使用贪欲增加层数\n",color:"light_purple"},{text:"改为\n",color:"gray"},{text:"每2次使用贪欲增加层数",color:"light_purple"}]}}]
+execute as @s[team=blue] run tellraw @a[team=blue,distance=0.1..] [{selector:"@s"},{text:"选择了",color:"gray"},{text:"不尽贪欲",color:"light_purple",hover_event:{action:"show_text",value:[{text:"视为你使用了",color:"gray"},{text:"[贪欲]\n",color:"white"},{text:"每1次使用贪欲增加层数\n",color:"light_purple"},{text:"改为\n",color:"gray"},{text:"每2次使用贪欲增加层数",color:"light_purple"}]}}]

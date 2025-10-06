@@ -71,6 +71,12 @@ tag @a remove TouXiang
 tag @a remove linghunshouge
 tag @a remove jinzijue
 tag @a remove zuzhouhujia
+scoreboard players reset jiangshuzhe
+
+kill @e[tag=JiangShuZhe_YeHuo]
+kill @e[tag=JiangShuZhe_yiming_Marker]
+
+tag @e remove JiangShuZhe_yiming_rided
 #重置陷阱
 scoreboard players reset 红队
 scoreboard players reset 蓝队
@@ -128,8 +134,8 @@ scoreboard players set * shengji_zuanshijian 0
 scoreboard players set * shengji_xiajiehejinjian 0
 scoreboard players set 人数 r_touxiang 0
 scoreboard players set 人数 b_touxiang 0
-scoreboard players reset 红队_讲述者
-scoreboard players reset 蓝队_讲述者
+scoreboard players reset red
+scoreboard players reset blue
 scoreboard players reset @a
 scoreboard players reset * r_death
 scoreboard players reset * b_death

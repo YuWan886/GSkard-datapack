@@ -1,4 +1,4 @@
-$bossbar add kards:duantui_$(UUID) [{text:"断腿",color:"white",bold:true}]
+$bossbar add kards:duantui_$(UUID) [{text:"断腿:减速 无法跳跃",color:"red",bold:true}]
 $bossbar set kards:duantui_$(UUID) players @s
 $bossbar set kards:duantui_$(UUID) visible true
 

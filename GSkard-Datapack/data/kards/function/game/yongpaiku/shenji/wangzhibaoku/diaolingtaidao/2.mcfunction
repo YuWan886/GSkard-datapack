@@ -2,8 +2,8 @@
 scoreboard players remove @s diaolingtaidao_tujing 1
 particle soul ~ ~ ~ 0.2 0.2 0.2 0 2 force @a
 
-execute if entity @s[team=red] at @s run tag @e[team=blue,distance=..2] add diaolingtaidao_hurt
-execute if entity @s[team=blue] at @s run tag @e[team=red,distance=..2] add diaolingtaidao_hurt
+execute if entity @s[team=red] at @s as @e[team=blue,distance=..2,tag=!spectator,type=!#kards:display] unless data entity @s {NoAI:1b} run tag @s add diaolingtaidao_hurt
+execute if entity @s[team=blue] at @s as @e[team=red,distance=..2,tag=!spectator,type=!#kards:display] unless data entity @s {NoAI:1b} run tag @s add diaolingtaidao_hurt
 
 execute if block ~ ~ ~ #air run tp @s ^ ^ ^0.25
 execute unless block ~ ~ ~ #air run scoreboard players set @s diaolingtaidao_tujing 0
