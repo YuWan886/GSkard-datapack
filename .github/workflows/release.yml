@@ -142,23 +142,28 @@ jobs:
     - name: Update permanent tags
       if: always()
       run: |
-        # 删除现有的常驻标签
-        git tag -d stable 2>/dev/null || true
-        git tag -d dev 2>/dev/null || true
-        git push origin --delete stable 2>/dev/null || true
-        git push origin --delete dev 2>/dev/null || true
-        
-        # 根据发布类型更新相应的常驻标签
+        # 根据发布类型更新相应的常驻标签和 release
         if [ "${{ steps.version.outputs.release_type }}" = "stable" ]; then
-          # 正式版本：更新 stable 标签
-          git tag stable ${{ steps.version.outputs.version }}
-          git push origin stable
-          echo "✓ Updated stable tag to ${{ steps.version.outputs.version }}"
+          # 正式版本：更新 stable 标签和 release
+          gh release create stable \
+            --title "Stable Release" \
+            --notes "Latest stable release: ${{ steps.version.outputs.version }}" \
+            --target ${{ steps.version.outputs.version }} \
+            dist/GSkard-Datapack.zip \
+            dist/GSkard-Resourcepack.zip \
+            dist/GSkard-Resourcepack-Music.zip
+          echo "✓ Updated stable release to ${{ steps.version.outputs.version }}"
         else
-          # 预览版本：更新 dev 标签
-          git tag dev ${{ steps.version.outputs.version }}
-          git push origin dev
-          echo "✓ Updated dev tag to ${{ steps.version.outputs.version }}"
+          # 预览版本：更新 dev 标签和 release
+          gh release create dev \
+            --title "Development Release" \
+            --notes "Latest development release: ${{ steps.version.outputs.version }}" \
+            --target ${{ steps.version.outputs.version }} \
+            --prerelease \
+            dist/GSkard-Datapack.zip \
+            dist/GSkard-Resourcepack.zip \
+            dist/GSkard-Resourcepack-Music.zip
+          echo "✓ Updated dev release to ${{ steps.version.outputs.version }}"
         fi
         
     - name: Cleanup
