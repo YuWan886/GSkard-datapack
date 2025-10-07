@@ -142,23 +142,51 @@ jobs:
     - name: Update permanent tags
       if: always()
       run: |
-        # 删除现有的常驻标签
-        git tag -d stable 2>/dev/null || true
-        git tag -d dev 2>/dev/null || true
-        git push origin --delete stable 2>/dev/null || true
-        git push origin --delete dev 2>/dev/null || true
-        
-        # 根据发布类型更新相应的常驻标签
+        # 根据发布类型更新相应的常驻标签和 release
         if [ "${{ steps.version.outputs.release_type }}" = "stable" ]; then
-          # 正式版本：更新 stable 标签
-          git tag stable ${{ steps.version.outputs.version }}
-          git push origin stable
-          echo "✓ Updated stable tag to ${{ steps.version.outputs.version }}"
+          # 正式版本：更新 stable 标签和 release
+          # 检查 stable release 是否存在
+          if gh release view stable >/dev/null 2>&1; then
+            # 如果存在，则编辑现有 release
+            gh release edit stable \
+              --title "Stable Release" \
+              --notes "Latest stable release: ${{ steps.version.outputs.version }}" \
+              --target ${{ steps.version.outputs.version }}
+            echo "✓ Edited existing stable release to ${{ steps.version.outputs.version }}"
+          else
+            # 如果不存在，则创建新 release
+            gh release create stable \
+              --title "Stable Release" \
+              --notes "Latest stable release: ${{ steps.version.outputs.version }}" \
+              --target ${{ steps.version.outputs.version }} \
+              dist/GSkard-Datapack.zip \
+              dist/GSkard-Resourcepack.zip \
+              dist/GSkard-Resourcepack-Music.zip
+            echo "✓ Created new stable release to ${{ steps.version.outputs.version }}"
+          fi
         else
-          # 预览版本：更新 dev 标签
-          git tag dev ${{ steps.version.outputs.version }}
-          git push origin dev
-          echo "✓ Updated dev tag to ${{ steps.version.outputs.version }}"
+          # 预览版本：更新 dev 标签和 release
+          # 检查 dev release 是否存在
+          if gh release view dev >/dev/null 2>&1; then
+            # 如果存在，则编辑现有 release
+            gh release edit dev \
+              --title "Development Release" \
+              --notes "Latest development release: ${{ steps.version.outputs.version }}" \
+              --target ${{ steps.version.outputs.version }} \
+              --prerelease
+            echo "✓ Edited existing dev release to ${{ steps.version.outputs.version }}"
+          else
+            # 如果不存在，则创建新 release
+            gh release create dev \
+              --title "Development Release" \
+              --notes "Latest development release: ${{ steps.version.outputs.version }}" \
+              --target ${{ steps.version.outputs.version }} \
+              --prerelease \
+              dist/GSkard-Datapack.zip \
+              dist/GSkard-Resourcepack.zip \
+              dist/GSkard-Resourcepack-Music.zip
+            echo "✓ Created new dev release to ${{ steps.version.outputs.version }}"
+          fi
         fi
         
     - name: Cleanup
