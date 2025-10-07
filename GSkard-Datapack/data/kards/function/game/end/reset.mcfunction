@@ -56,7 +56,7 @@ team empty blue
 team empty red
 team join lobby @a
 #重生点
-spawnpoint @a 59 226 -26 -90
+spawnpoint @a 59 226 -26 0 -90
 #设置难度为和平
 difficulty peaceful
 #清生物
