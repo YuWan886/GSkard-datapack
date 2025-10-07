@@ -1,11 +1,31 @@
-name: Create Release on Push
+name: Create Release
 
 on:
   push:
-    branches: [ main, master ]
+    branches: [ main ]
+  pull_request:
+    types: [closed]
+    branches: [ main ]
+  workflow_dispatch:
+    inputs:
+      release_type:
+        description: 'Release type'
+        required: true
+        default: 'preview'
+        type: choice
+        options:
+        - preview
+        - stable
+      custom_version:
+        description: 'Custom version (optional)'
+        required: false
+        type: string
 
 permissions:
   contents: write
+
+env:
+  BASE_VERSION: "1.53"
 
 jobs:
   build:
@@ -17,66 +37,77 @@ jobs:
       with:
         fetch-depth: 0
         
-    - name: Setup Git
+    - name: Setup Git and GitHub CLI
       run: |
         git config --global user.name 'GitHub Actions'
         git config --global user.email 'actions@github.com'
         
-    - name: Get version from commit
+        # 使用 apt 的官方源安装 GitHub CLI
+        sudo apt-get update && sudo apt-get install -y gh
+        echo "${{ secrets.GITHUB_TOKEN }}" | gh auth login --with-token
+        
+    - name: Determine version and release type
       id: version
       run: |
-        # 获取最新的tag，如果没有则使用1.53作为基础
-        LATEST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "1.53")
-        echo "Latest tag: $LATEST_TAG"
+        # 获取最新 tag，如果不存在使用基础版本
+        LATEST_TAG=$(git tag -l | sort -V | tail -n1 || echo "${{ env.BASE_VERSION }}")
         
-        # 解析版本号（移除可能存在的v前缀）
-        VERSION=$(echo $LATEST_TAG | sed 's/^v//')
-        MAJOR=$(echo $VERSION | cut -d. -f1)
-        MINOR=$(echo $VERSION | cut -d. -f2)
-        PATCH=$(echo $VERSION | cut -d. -f3)
+        # 解析版本号
+        VERSION="$LATEST_TAG"
+        MAJOR=$(echo "$VERSION" | cut -d. -f1)
+        MINOR=$(echo "$VERSION" | cut -d. -f2)
+        PATCH=$(echo "$VERSION" | cut -d. -f3)
         
-        # 如果没有patch版本，说明是大版本（如1.53），创建第一个patch版本
-        if [ -z "$PATCH" ]; then
-          NEW_VERSION="${MAJOR}.${MINOR}.1"
-          echo "New version: $NEW_VERSION"
-          echo "This is a preview release for testing"
-          echo "release_type=preview" >> $GITHUB_OUTPUT
+        # 初始化输出变量
+        NEW_VERSION=""
+        RELEASE_TYPE=""
+        
+        if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+          # 手动触发：使用自定义版本或按规则递增
+          if [ -n "${{ github.event.inputs.custom_version }}" ]; then
+            NEW_VERSION="${{ github.event.inputs.custom_version }}"
+          else
+            if [ -z "$PATCH" ]; then
+              NEW_VERSION="${MAJOR}.$((MINOR + 1))"
+            else
+              NEW_VERSION="${MAJOR}.${MINOR}.$((PATCH + 1))"
+            fi
+          fi
+          RELEASE_TYPE="${{ github.event.inputs.release_type }}"
         else
-          # 如果有patch版本，说明是小版本（如1.53.1），递增patch版本
-          NEW_PATCH=$((PATCH + 1))
-          NEW_VERSION="${MAJOR}.${MINOR}.${NEW_PATCH}"
-          echo "New version: $NEW_VERSION"
-          echo "This is a preview release for testing"
-          echo "release_type=preview" >> $GITHUB_OUTPUT
+          # 自动触发：根据当前版本决定新版本和类型
+          # 检查当前版本的release是否存在
+          RELEASE_EXISTS=$(gh release view "$LATEST_TAG" 2>/dev/null && echo "true" || echo "false")
+          
+          if [ -z "$PATCH" ]; then
+            # 大版本（如 1.53）
+            if [ "$RELEASE_EXISTS" = "false" ]; then
+              NEW_VERSION="${MAJOR}.${MINOR}"
+              RELEASE_TYPE="stable"
+            else
+              NEW_VERSION="${MAJOR}.${MINOR}.1"
+              RELEASE_TYPE="preview"
+            fi
+          else
+            # 小版本（如 1.53.4）
+            NEW_VERSION="${MAJOR}.${MINOR}.$((PATCH + 1))"
+            RELEASE_TYPE="preview"
+          fi
         fi
         
-        # 输出详细信息用于调试
-        echo "Major: $MAJOR, Minor: $MINOR, Previous Patch: $PATCH, New Version: $NEW_VERSION"
-        
+        # 输出版本信息
         echo "version=$NEW_VERSION" >> $GITHUB_OUTPUT
+        echo "release_type=$RELEASE_TYPE" >> $GITHUB_OUTPUT
+        echo "Latest tag: $LATEST_TAG | New Version: $NEW_VERSION | Type: $RELEASE_TYPE"
         
-    - name: Create zip archives
+    - name: Create distribution archives
       run: |
-        # 创建临时目录
         mkdir -p dist
         
-        # 压缩 GSkard-Datapack
-        cd GSkard-Datapack
-        zip -r ../dist/GSkard-Datapack.zip .
-        cd ..
-        
-        # 压缩 GSkard-Resourcepack
-        cd GSkard-Resourcepack
-        zip -r ../dist/GSkard-Resourcepack.zip .
-        cd ..
-        
-        # 压缩 GSkard-Resourcepack-Music
-        cd GSkard-Resourcepack-Music
-        zip -r ../dist/GSkard-Resourcepack-Music.zip .
-        cd ..
-        
-        # 列出创建的zip文件
-        ls -la dist/
+        for dir in GSkard-Datapack GSkard-Resourcepack GSkard-Resourcepack-Music; do
+          zip -qr "dist/${dir}.zip" "$dir"
+          echo "✓ Created dist/${dir}.zip"
+        done
         
     - name: Create Release
       uses: softprops/action-gh-release@v1
@@ -84,12 +115,14 @@ jobs:
         tag_name: ${{ steps.version.outputs.version }}
         name: ${{ steps.version.outputs.version }}
         body: |
-          ${{ steps.version.outputs.release_type == 'stable' && '正式版本' || '预览版本' }} ${{ steps.version.outputs.version }}
+          ## ${{ steps.version.outputs.release_type == 'stable' && '✅ 正式版本' || '📋📋 预览版本' }}
           
-          ${{ steps.version.outputs.release_type == 'stable' && '这是一个稳定版本，可以用于生产环境。' || '这是一个预览版本，用于测试目的。' }}
+          版本号: ${{ steps.version.outputs.version }}
           
-          更新内容：
-          ${{ github.event.head_commit.message }}
+          ${{ steps.version.outputs.release_type == 'stable' && '这是一个稳定版本，推荐用于生产环境。' || '这是一个预览版本，用于测试目的。' }}
+          
+          **更新信息**:
+          ${{ github.event.head_commit.message || github.event.pull_request.title || '手动发布' }}
           
         files: |
           dist/GSkard-Datapack.zip
@@ -101,4 +134,5 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
     - name: Cleanup
+      if: always()
       run: rm -rf dist
