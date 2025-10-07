@@ -40,6 +40,9 @@ GSkard-datapack/
 └── script/                 # 脚本文件
 ```
 
-## DLC
+## 相关链接
 
-查看[DLC文档](./GSkard-Datapack/data/kards-dlc/README.md)
+- [wiki](https://hartgs.yw-games.top)
+- [GSkard-Modpack](https://modrinth.com/modpack/gskard-modpack)
+- [MineBBS](https://www.minebbs.com/resources/gskard-pvp-pve.10186)
+- 查看[DLC文档](./GSkard-Datapack/data/kards-dlc/README.md)
