@@ -113,7 +113,7 @@ jobs:
         mkdir -p dist
         
         for dir in GSkard-Datapack GSkard-Resourcepack GSkard-Resourcepack-Music; do
-          zip -qr "dist/${dir}.zip" "$dir"
+          cd "$dir" && zip -qr "../dist/${dir}.zip" . && cd ..
           echo "✓ Created dist/${dir}.zip"
         done
         
