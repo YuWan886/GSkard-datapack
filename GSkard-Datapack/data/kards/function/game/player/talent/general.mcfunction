@@ -1,7 +1,7 @@
 #燃己为光
 execute as @a[tag=Talent_ranjiweiguang,gamemode=spectator] run function kards:game/player/talent/enable/ranjiweiguang/bossbar/1
 execute as @a[tag=Talent_ranjiweiguang,gamemode=spectator] store result score @s Spectator_Pos.Y run data get entity @s Pos[1]
-execute as @a[tag=Talent_ranjiweiguang,gamemode=spectator] unless score @s Spectator_Pos.Y matches 8..12 at @s run tp @s ~ 9 ~ ~ ~
+execute as @a[tag=Talent_ranjiweiguang,gamemode=spectator] unless score @s Spectator_Pos.Y matches 5..12 at @s run tp @s ~ 9 ~ ~ ~
 scoreboard players add @a[tag=Talent_ranjiweiguang,gamemode=spectator] Talent_ranjiweiguang_Attack_Time 1
 execute as @a[tag=Talent_ranjiweiguang,scores={Talent_ranjiweiguang_Attack_Time=100..}] at @s run function kards:game/player/talent/enable/ranjiweiguang/2
 scoreboard players add @e[tag=Talent_ranjiweiguang,gamemode=spectator] Talent_ranjiweiguang_Ball_LifeTime 1

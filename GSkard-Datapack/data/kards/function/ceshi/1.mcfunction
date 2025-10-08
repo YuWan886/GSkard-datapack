@@ -1,2 +1,4 @@
-advancement revoke @s only kards:ceshi
-give @s goat_horn[item_name={"text":"生命法杖"},custom_data={life_staff:1},instrument={sound_event:"none",range:1,description:{text:"生命法杖","color":"green"},use_duration:1}]
+execute as @e[tag=ceshi] store result score @s temp run data get entity @s HurtTime
+execute as @e[tag=ceshi] if score @s temp matches 9 run function kards:ceshi/2
+
+execute as @e[tag=ceshi] if data entity @s {HurtTime:9s} run function kards:ceshi/2

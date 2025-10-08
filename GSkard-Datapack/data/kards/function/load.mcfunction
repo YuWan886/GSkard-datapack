@@ -186,6 +186,7 @@ scoreboard objectives add PoJia dummy
 scoreboard objectives add shizhongjian_template_1 dummy
 scoreboard objectives add shizhongjian_template_2 dummy
 scoreboard objectives add shizhongjian_template_3 dummy
+scoreboard objectives add enchantment_zhiming_UUID dummy
 scoreboard objectives add enchantment_zhiming_cishu dummy
 scoreboard objectives add fengbaozhanchui_xuneng_Time dummy
 scoreboard objectives add fengbaozhanchui_xuneng dummy
@@ -323,6 +324,13 @@ scoreboard objectives add Ready_Num dummy
 scoreboard objectives add chuandai_xjhj dummy
 scoreboard objectives add Color dummy
 scoreboard objectives add tuteng_Health dummy
+scoreboard objectives add tuteng_Health_last dummy
+scoreboard objectives add tuteng_Health_temp1 dummy
+scoreboard objectives add tuteng_Health_temp2 dummy
+scoreboard objectives add tuteng_Health_temp1_ dummy
+scoreboard objectives add tuteng_Health_temp2_ dummy
+scoreboard objectives add tuteng_Health_temp1_last dummy
+scoreboard objectives add tuteng_Health_temp2_last dummy
 scoreboard objectives add hurt_lindongzhikai dummy
 scoreboard objectives add stophurt_lindongzhikai dummy
 scoreboard objectives add in_lindongzhikai dummy

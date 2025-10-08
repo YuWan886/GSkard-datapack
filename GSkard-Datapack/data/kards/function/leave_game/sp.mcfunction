@@ -42,7 +42,7 @@ attribute @s safe_fall_distance base reset
 execute at @s run summon minecraft:firework_rocket ~ ~ ~
 team leave @s
 tellraw @a [{text: "欢迎老登",color:"gold"},{selector:"@s",color:"white"},{text: "再次进入游戏",color:"gold"}]
-tellraw @a ["",{color:"gold",bold:true,text:"官方链接："},{color:"dark_purple",bold:true,text:"[WIKI]",click_event:{action:"open_url",url:"https://hartgs.yw-games.top"},hover_event:{action:"show_text",value:["",{text:"点击查看 GSkard WIKI"}]}},{color:"gold",bold:true,text:" "},{color:"blue",bold:true,text:"[QQ]",click_event:{action:"open_url",url:"https://qm.qq.com/q/keCUAnEEca"},hover_event:{action:"show_text",value:["",{text:"点击加入 GSkard 官方群聊"}]}},{bold:true,text:" "},{color:"black",bold:true,text:"[oopz]",click_event:{action:"open_url",url:"https://oopz.cn/i/NiDL0U"},hover_event:{action:"show_text",value:["",{text:"点击加入 GSkard 官方语音"}]}},{bold:true,text:" "},{color:"dark_red",bold:true,text:"[BUG]",click_event:{action:"open_url",url:"https://docs.qq.com/smartsheet/DWHp5SWxGWGt5Q1RO"},hover_event:{action:"show_text",value:["",{text:"点击反馈BUG"}]}}]
+tellraw @a ["",{bold:true,click_event:{action:"open_url",url:"https://oopz.cn/i/MXc224"},text:"点我加入",extra:[{color:"gold",text:"GSkard"},"的",{color:"dark_green",text:"oopz"}]}]
 team join Spectator @s
 gamemode spectator @s
 tp @s @r[gamemode=adventure]

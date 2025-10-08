@@ -361,11 +361,11 @@ execute if score #system Talent_Random_Mode matches 1 if score @s Talent_Random_
 
 execute if score #system Talent_Random_Mode matches 1 if score @s Talent_Random_1 matches 24 \
     run data modify storage kards dialog._."actions" append value {\
-        "label": [{"text":"","color":"aqua"}],\
+        "label": [{"text":"好人寥寥","color":"aqua"}],\
         "tooltip": [\
         {"text":"在本局游戏内\n","color":"gray"},\
         {"text":"你每次使用非","color":"gold"},{"text":"[衍生牌]","color":"aqua"},{"text":"时\n","color":"gold"},\
-        {"text":"有15%的概率抽取1张同种类的卡牌\n","color":"gold"},\
+        {"text":"有15%的概率抽取1张同种类的卡牌","color":"gold"},\
         ],\
         "action": {\
             "type": "run_command",\
@@ -736,11 +736,11 @@ execute if score #system Talent_Random_Mode matches 1 if score @s Talent_Random_
 
 execute if score #system Talent_Random_Mode matches 1 if score @s Talent_Random_2 matches 24 \
     run data modify storage kards dialog._."actions" append value {\
-        "label": [{"text":"","color":"aqua"}],\
+        "label": [{"text":"好人寥寥","color":"aqua"}],\
         "tooltip": [\
         {"text":"在本局游戏内\n","color":"gray"},\
         {"text":"你每次使用非","color":"gold"},{"text":"[衍生牌]","color":"aqua"},{"text":"时\n","color":"gold"},\
-        {"text":"有15%的概率抽取1张同种类的卡牌\n","color":"gold"},\
+        {"text":"有15%的概率抽取1张同种类的卡牌","color":"gold"},\
         ],\
         "action": {\
             "type": "run_command",\
@@ -1111,11 +1111,11 @@ execute if score #system Talent_Random_Mode matches 1 if score @s Talent_Random_
 
 execute if score #system Talent_Random_Mode matches 1 if score @s Talent_Random_3 matches 24 \
     run data modify storage kards dialog._."actions" append value {\
-        "label": [{"text":"","color":"aqua"}],\
+        "label": [{"text":"好人寥寥","color":"aqua"}],\
         "tooltip": [\
         {"text":"在本局游戏内\n","color":"gray"},\
         {"text":"你每次使用非","color":"gold"},{"text":"[衍生牌]","color":"aqua"},{"text":"时\n","color":"gold"},\
-        {"text":"有15%的概率抽取1张同种类的卡牌\n","color":"gold"},\
+        {"text":"有15%的概率抽取1张同种类的卡牌","color":"gold"},\
         ],\
         "action": {\
             "type": "run_command",\
@@ -1486,11 +1486,11 @@ execute if score #system Talent_Random_Mode matches 2 if score @s Talent_Random_
 
 execute if score #system Talent_Random_Mode matches 2 if score @s Talent_Random_4 matches 24 \
     run data modify storage kards dialog._."actions" append value {\
-        "label": [{"text":"","color":"aqua"}],\
+        "label": [{"text":"好人寥寥","color":"aqua"}],\
         "tooltip": [\
         {"text":"在本局游戏内\n","color":"gray"},\
         {"text":"你每次使用非","color":"gold"},{"text":"[衍生牌]","color":"aqua"},{"text":"时\n","color":"gold"},\
-        {"text":"有15%的概率抽取1张同种类的卡牌\n","color":"gold"},\
+        {"text":"有15%的概率抽取1张同种类的卡牌","color":"gold"},\
         ],\
         "action": {\
             "type": "run_command",\
@@ -1861,11 +1861,11 @@ execute if score #system Talent_Random_Mode matches 2 if score @s Talent_Random_
 
 execute if score #system Talent_Random_Mode matches 2 if score @s Talent_Random_5 matches 24 \
     run data modify storage kards dialog._."actions" append value {\
-        "label": [{"text":"","color":"aqua"}],\
+        "label": [{"text":"好人寥寥","color":"aqua"}],\
         "tooltip": [\
         {"text":"在本局游戏内\n","color":"gray"},\
         {"text":"你每次使用非","color":"gold"},{"text":"[衍生牌]","color":"aqua"},{"text":"时\n","color":"gold"},\
-        {"text":"有15%的概率抽取1张同种类的卡牌\n","color":"gold"},\
+        {"text":"有15%的概率抽取1张同种类的卡牌","color":"gold"},\
         ],\
         "action": {\
             "type": "run_command",\
@@ -2234,11 +2234,11 @@ execute if score #system Talent_Random_Mode matches 2 if score @s Talent_Random_
 
 execute if score #system Talent_Random_Mode matches 2 if score @s Talent_Random_6 matches 24 \
     run data modify storage kards dialog._."actions" append value {\
-        "label": [{"text":"","color":"aqua"}],\
+        "label": [{"text":"好人寥寥","color":"aqua"}],\
         "tooltip": [\
         {"text":"在本局游戏内\n","color":"gray"},\
         {"text":"你每次使用非","color":"gold"},{"text":"[衍生牌]","color":"aqua"},{"text":"时\n","color":"gold"},\
-        {"text":"有15%的概率抽取1张同种类的卡牌\n","color":"gold"},\
+        {"text":"有15%的概率抽取1张同种类的卡牌","color":"gold"},\
         ],\
         "action": {\
             "type": "run_command",\

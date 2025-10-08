@@ -7,6 +7,7 @@ attribute @s max_health modifier remove talent-5
 attribute @s armor modifier remove talent-6
 attribute @s attack_damage modifier remove talent-7
 ## Tags
+tag @s remove Talent_kapaiji
 tag @s remove Talent_xukongcunzhe
 tag @s remove Talent_bujintanyu
 tag @s remove Talent_muyuankuanghuan
