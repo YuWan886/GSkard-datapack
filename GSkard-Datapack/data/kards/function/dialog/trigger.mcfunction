@@ -53,4 +53,4 @@ execute if score @s dialog matches 1020 run return run function kards:game/playe
 execute if score @s dialog matches 1021 run return run function kards:game/player/talent/set/qiongbingduwu
 execute if score @s dialog matches 1022 run return run function kards:game/player/talent/set/zhanshudaji
 execute if score @s dialog matches 1023 run return run function kards:game/player/talent/set/shanjizhanfa
-execute if score @s dialog matches 10204 run return run function kards:game/player/talent/set/haorenliaoliao
+execute if score @s dialog matches 1024 run return run function kards:game/player/talent/set/haorenliaoliao
